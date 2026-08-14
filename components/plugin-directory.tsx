@@ -13,6 +13,7 @@ import {
 import { ARTALK_SITE_NAME, getPluginArtalkPageKey, getPluginArtalkPageUrl } from "@/lib/artalk";
 
 type DirectoryCategory = "all" | PluginCategory;
+type DirectorySort = "featured" | "stars" | "name";
 type CopyState = "idle" | "copied" | "failed";
 type LikeState = "idle" | "loading" | "error";
 
@@ -25,11 +26,11 @@ function withValue(template: string, value: string | number) {
   return template.replace("{count}", String(value)).replace("{name}", String(value));
 }
 
-function withCategory(template: string, category: string, count: number) {
+function withCategory(template: string, category: string, count: string | number) {
   return template.replace("{category}", category).replace("{count}", String(count));
 }
 
-function withNameAndCount(template: string, name: string, count: number) {
+function withNameAndCount(template: string, name: string, count: string | number) {
   return template.replace("{name}", name).replace("{count}", String(count));
 }
 
@@ -65,6 +66,10 @@ function isPluginCategory(value: string | null): value is PluginCategory {
   return value !== null && categories.some((item) => item.id === value);
 }
 
+function isDirectorySort(value: string | null): value is DirectorySort {
+  return value === "featured" || value === "stars" || value === "name";
+}
+
 async function copyText(value: string) {
   if (navigator.clipboard?.writeText) {
     await navigator.clipboard.writeText(value);
@@ -83,7 +88,7 @@ async function copyText(value: string) {
   if (!copied) throw new Error("Copy command failed");
 }
 
-function PluginRow({
+function PluginCard({
   plugin,
   onOpenComments,
 }: {
@@ -95,6 +100,7 @@ function PluginRow({
   const [likeCount, setLikeCount] = useState<number | null>(null);
   const { locale, text } = useLocale();
   const category = categoryById[plugin.category];
+  const numberFormat = useMemo(() => new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en-US"), [locale]);
 
   async function handleCopy() {
     try {
@@ -158,92 +164,78 @@ function PluginRow({
       : "";
   const likeLabel = likeCount === null
     ? withValue(text.likeButton, plugin.name)
-    : withNameAndCount(text.likeButtonCount, plugin.name, likeCount);
+    : withNameAndCount(text.likeButtonCount, plugin.name, numberFormat.format(likeCount));
   const likeStatusId = `plugin-like-status-${plugin.id}`;
 
   return (
-    <article className="plugin-row">
+    <article className="plugin-card">
+      <div className="plugin-card-heading">
+        <div className="plugin-card-tags">
+          <span className="category-tag">{category.label[locale]}</span>
+          {plugin.featured ? <span className="featured-tag">{text.featured}</span> : null}
+        </div>
+        <h3><a className="plugin-title" href={plugin.repoUrl} target="_blank" rel="noreferrer">{plugin.name}</a></h3>
+      </div>
       <a
-        className="plugin-row-main"
+        className="plugin-repository"
         href={plugin.repoUrl}
         target="_blank"
         rel="noreferrer"
         aria-label={withValue(text.openRepository, plugin.name)}
       >
-        <div className="plugin-row-heading">
-          <h3>{plugin.name}</h3>
-          <span className="category-tag">{category.label[locale]}</span>
-        </div>
-        <p className="plugin-repository">
-          <span>{text.originalRepository}</span>
-          <code>{plugin.repository}</code>
-          {plugin.stars > 0 ? (
-            <span className="plugin-stars" title={withValue(text.starCount, plugin.stars)}>
-              <span aria-hidden="true">★</span>
-              <span>{withValue(text.stars, plugin.stars)}</span>
-            </span>
-          ) : null}
-        </p>
-        <p className="plugin-description">{plugin.description[locale]}</p>
-        <p className="verification" title={text.communityDetail}>
-          <strong>{text.communityDiscovered}</strong>
-          <span>{text.communityDetail}</span>
-        </p>
+        {plugin.repository}
       </a>
-      <div className="plugin-row-actions">
-        <code className="install-command">{plugin.installCommand}</code>
-        <div className="row-command-actions">
-          <button
-            type="button"
-            className="row-action"
-            aria-label={withValue(text.copyInstallFor, plugin.name)}
-            onClick={handleCopy}
-          >
-            {copyState === "copied" ? text.copied : text.copyInstall}
-          </button>
-          <a
-            className="row-action"
-            href={plugin.repoUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={withValue(text.githubFor, plugin.name)}
-          >
-            {text.viewGithub}
-          </a>
-          <div className="plugin-like-control">
-            <button
-              type="button"
-              className="row-icon-action row-icon-action-like"
-              aria-busy={likeState === "loading"}
-              aria-describedby={likeMessage ? likeStatusId : undefined}
-              aria-label={likeLabel}
-              title={likeLabel}
-              onClick={handleLike}
-              disabled={likeState === "loading"}
-            >
-              <span aria-hidden="true">♥</span>
-            </button>
-            {likeCount !== null ? <span className="row-like-count" aria-hidden="true">{likeCount}</span> : null}
-            {likeMessage ? (
-              <span id={likeStatusId} className="plugin-like-status" data-state={likeState} role="status">
-                {likeMessage}
-              </span>
-            ) : null}
-          </div>
-          <button
-            type="button"
-            className="row-icon-action"
-            aria-label={withValue(text.openCommentsPanel, plugin.name)}
-            title={withValue(text.openCommentsPanel, plugin.name)}
-            onClick={() => onOpenComments(plugin)}
-          >
-            <span aria-hidden="true">✎</span>
-          </button>
+      {plugin.stars > 0 ? (
+        <div className="plugin-meta">
+          <span className="plugin-stars" title={withValue(text.starCount, numberFormat.format(plugin.stars))}>
+            <span aria-hidden="true">★</span> {numberFormat.format(plugin.stars)} {text.starsLabel}
+          </span>
         </div>
-        <p className="copy-status" aria-live="polite">
-          {copyStatus}
-        </p>
+      ) : null}
+      <p className="plugin-description">{plugin.description[locale]}</p>
+      <div className="plugin-card-actions">
+        <button
+          type="button"
+          className="card-action card-action-primary"
+          aria-label={withValue(text.copyInstallFor, plugin.name)}
+          onClick={handleCopy}
+        >
+          {copyState === "copied" ? text.copied : copyState === "failed" ? text.copyFailed : text.copyInstall}
+        </button>
+        <a
+          className="card-action"
+          href={plugin.repoUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={withValue(text.githubFor, plugin.name)}
+        >
+          {text.viewGithub}
+        </a>
+        <button
+          type="button"
+          className="card-icon-action card-icon-action-like"
+          aria-busy={likeState === "loading"}
+          aria-describedby={likeMessage ? likeStatusId : undefined}
+          aria-label={likeLabel}
+          title={likeLabel}
+          onClick={handleLike}
+          disabled={likeState === "loading"}
+        >
+          <span aria-hidden="true">&#9829;</span>
+          {likeCount !== null ? <span className="card-like-count" aria-hidden="true">{numberFormat.format(likeCount)}</span> : null}
+        </button>
+        <button
+          type="button"
+          className="card-icon-action"
+          aria-label={withValue(text.openCommentsPanel, plugin.name)}
+          title={withValue(text.openCommentsPanel, plugin.name)}
+          onClick={() => onOpenComments(plugin)}
+        >
+          <span aria-hidden="true">&#9998;</span>
+        </button>
       </div>
+      {likeMessage ? <span id={likeStatusId} className="plugin-like-status" data-state={likeState} role="status">{likeMessage}</span> : null}
+      <p className="copy-status" aria-live="polite">{copyStatus}</p>
     </article>
   );
 }
@@ -251,15 +243,21 @@ function PluginRow({
 export function PluginDirectory() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<DirectoryCategory>("all");
+  const [sort, setSort] = useState<DirectorySort>("featured");
+  const [featuredOnly, setFeaturedOnly] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [feedbackTarget, setFeedbackTarget] = useState<Plugin | null>(null);
   const { locale, text } = useLocale();
+  const numberFormat = useMemo(() => new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en-US"), [locale]);
 
   const readUrlFilters = useCallback(() => {
     const params = new URLSearchParams(window.location.search);
     const urlCategory = params.get("cat");
+    const urlSort = params.get("sort");
     setQuery(params.get("q") ?? "");
     setCategory(isPluginCategory(urlCategory) ? urlCategory : "all");
+    setSort(isDirectorySort(urlSort) ? urlSort : "featured");
+    setFeaturedOnly(params.get("featured") === "1");
   }, []);
 
   useEffect(() => {
@@ -274,145 +272,184 @@ export function PluginDirectory() {
     };
   }, [readUrlFilters]);
 
-  const updateUrl = useCallback((nextQuery: string, nextCategory: DirectoryCategory, mode: "push" | "replace") => {
-    const url = new URL(window.location.href);
-    const trimmedQuery = nextQuery.trim();
+  const updateUrl = useCallback(
+    (
+      nextQuery: string,
+      nextCategory: DirectoryCategory,
+      nextSort: DirectorySort,
+      nextFeaturedOnly: boolean,
+      mode: "push" | "replace",
+    ) => {
+      const url = new URL(window.location.href);
+      const trimmedQuery = nextQuery.trim();
+      if (trimmedQuery) {
+        url.searchParams.set("q", trimmedQuery);
+      } else {
+        url.searchParams.delete("q");
+      }
+      if (nextCategory === "all") {
+        url.searchParams.delete("cat");
+      } else {
+        url.searchParams.set("cat", nextCategory);
+      }
+      if (nextSort === "featured") {
+        url.searchParams.delete("sort");
+      } else {
+        url.searchParams.set("sort", nextSort);
+      }
+      if (nextFeaturedOnly) {
+        url.searchParams.set("featured", "1");
+      } else {
+        url.searchParams.delete("featured");
+      }
+      window.history[mode === "push" ? "pushState" : "replaceState"]({}, "", url);
+    },
+    [],
+  );
 
-    if (trimmedQuery) url.searchParams.set("q", trimmedQuery);
-    else url.searchParams.delete("q");
+  const handleQueryChange = (value: string) => {
+    setQuery(value);
+    if (hydrated) updateUrl(value, category, sort, featuredOnly, "replace");
+  };
 
-    if (nextCategory === "all") url.searchParams.delete("cat");
-    else url.searchParams.set("cat", nextCategory);
+  const handleCategoryChange = (value: DirectoryCategory) => {
+    setCategory(value);
+    if (hydrated) updateUrl(query, value, sort, featuredOnly, "push");
+  };
 
-    if (mode === "push") window.history.pushState({}, "", url);
-    else window.history.replaceState({}, "", url);
-  }, []);
+  const handleSortChange = (value: DirectorySort) => {
+    setSort(value);
+    if (hydrated) updateUrl(query, category, value, featuredOnly, "push");
+  };
 
-  const setSearch = useCallback((nextQuery: string) => {
-    setQuery(nextQuery);
-    updateUrl(nextQuery, category, "replace");
-  }, [category, updateUrl]);
+  const handleFeaturedChange = (value: boolean) => {
+    setFeaturedOnly(value);
+    if (hydrated) updateUrl(query, category, sort, value, "push");
+  };
 
-  const setCategoryFilter = useCallback((nextCategory: DirectoryCategory) => {
-    setCategory(nextCategory);
-    updateUrl(query, nextCategory, "push");
-  }, [query, updateUrl]);
-
-  const clearFilters = useCallback(() => {
+  const clearFilters = () => {
     setQuery("");
     setCategory("all");
-    updateUrl("", "all", "push");
-  }, [updateUrl]);
-
-  const openComments = useCallback((plugin: Plugin) => {
-    setFeedbackTarget(plugin);
-  }, []);
-
-  const closeFeedback = useCallback(() => setFeedbackTarget(null), []);
+    setSort("featured");
+    setFeaturedOnly(false);
+    if (hydrated) updateUrl("", "all", "featured", false, "push");
+  };
 
   const filteredPlugins = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
-    return plugins.filter((plugin) => {
-      const matchesCategory = category === "all" || plugin.category === category;
-      const searchable = [
+    const normalizedQuery = query.trim().toLocaleLowerCase(locale === "zh" ? "zh-CN" : "en-US");
+    const matching = plugins.filter((plugin) => {
+      if (category !== "all" && plugin.category !== category) return false;
+      if (featuredOnly && !plugin.featured) return false;
+      if (!normalizedQuery) return true;
+      const pluginCategory = categoryById[plugin.category];
+      return [
         plugin.name,
         plugin.repository,
-        plugin.description[locale],
-        categoryById[plugin.category].label[locale],
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      return matchesCategory && (!normalizedQuery || searchable.includes(normalizedQuery));
+        plugin.description.en,
+        plugin.description.zh,
+        pluginCategory.label.en,
+        pluginCategory.label.zh,
+      ].some((value) => value.toLocaleLowerCase(locale === "zh" ? "zh-CN" : "en-US").includes(normalizedQuery));
     });
-  }, [category, locale, query]);
 
-  const filtersActive = query.trim().length > 0 || category !== "all";
+    return matching.sort((left, right) => {
+      if (sort === "featured" && left.featured !== right.featured) return left.featured ? -1 : 1;
+      if (sort === "stars" || sort === "featured") {
+        if (left.stars !== right.stars) return right.stars - left.stars;
+      }
+      return left.name.localeCompare(right.name, locale === "zh" ? "zh-CN" : "en-US", { sensitivity: "base" });
+    });
+  }, [category, featuredOnly, locale, query, sort]);
+
+  const featuredCount = useMemo(() => plugins.filter((plugin) => plugin.featured).length, []);
 
   return (
     <section id="directory" className="directory-section" aria-labelledby="directory-title">
-      <div className="directory-heading">
-        <div>
+      <header className="directory-header">
+        <div className="directory-header-copy">
           <p className="directory-kicker">{text.directoryKicker}</p>
           <h1 id="directory-title">{text.searchTitle}</h1>
+          <p>{text.searchCopy}</p>
         </div>
-        <p>{text.searchCopy}</p>
-      </div>
+        <dl className="directory-stats" aria-label={text.directoryStats}>
+          <div className="directory-stat"><dt>{text.statsPlugins}</dt><dd>{numberFormat.format(plugins.length)}</dd></div>
+          <div className="directory-stat"><dt>{text.statsCategories}</dt><dd>{numberFormat.format(categories.length)}</dd></div>
+          <div className="directory-stat"><dt>{text.statsFeatured}</dt><dd>{numberFormat.format(featuredCount)}</dd></div>
+        </dl>
+      </header>
 
-      <div className="directory-toolbar">
-        <div className="search-field">
-          <label htmlFor="plugin-search">{text.search}</label>
-          <input
-            id="plugin-search"
-            type="search"
-            value={query}
-            onChange={(event) => setSearch(event.target.value)}
-            placeholder={text.searchPlaceholder}
-          />
-        </div>
-        <div className="directory-result-line">
-          <p className="result-count" aria-live="polite">
-            {withValue(text.resultPhrase, filteredPlugins.length)}
-          </p>
-          {filtersActive ? (
-            <button type="button" className="clear-filters" onClick={clearFilters}>
-              {text.clearFilters}
-            </button>
-          ) : null}
-        </div>
-        <div className="category-tabs" role="group" aria-label={text.categoryTabsAria}>
+      <div className="directory-workbench">
+        <nav className="category-rail" aria-label={text.categoryTabsAria}>
+          <p className="rail-label">{text.categoryNavigation}</p>
           <button
             type="button"
-            className="category-tab"
+            className="category-nav-button"
             aria-pressed={category === "all"}
-            aria-label={withCategory(text.categoryTabAria, text.allCategories, plugins.length)}
-            onClick={() => setCategoryFilter("all")}
+            aria-label={withCategory(text.categoryTabAria, text.allCategories, numberFormat.format(plugins.length))}
+            onClick={() => handleCategoryChange("all")}
           >
-            <span>{text.allCategories}</span>
-            <span className="tab-count">{plugins.length}</span>
+            <span>{text.allCategories}</span><span>{numberFormat.format(plugins.length)}</span>
           </button>
           {categories.map((item) => {
             const count = plugins.filter((plugin) => plugin.category === item.id).length;
+            const label = item.label[locale];
             return (
               <button
-                key={item.id}
                 type="button"
-                className="category-tab"
+                className="category-nav-button"
                 aria-pressed={category === item.id}
-                aria-label={withCategory(text.categoryTabAria, item.label[locale], count)}
-                onClick={() => setCategoryFilter(item.id)}
+                aria-label={withCategory(text.categoryTabAria, label, numberFormat.format(count))}
+                key={item.id}
+                onClick={() => handleCategoryChange(item.id)}
               >
-                <span>{item.label[locale]}</span>
-                <span className="tab-count">{count}</span>
+                <span>{label}</span><span>{numberFormat.format(count)}</span>
               </button>
             );
           })}
+        </nav>
+
+        <div className="catalog-panel">
+          <div className="catalog-toolbar">
+            <div className="search-field">
+              <label htmlFor="plugin-search">{text.search}</label>
+              <input
+                id="plugin-search"
+                type="search"
+                value={query}
+                onChange={(event) => handleQueryChange(event.target.value)}
+                name="plugin-search"
+                autoComplete="off"
+                placeholder={text.searchPlaceholder}
+              />
+            </div>
+            <div className="sort-field">
+              <label htmlFor="plugin-sort">{text.sortLabel}</label>
+              <select id="plugin-sort" name="plugin-sort" value={sort} onChange={(event) => handleSortChange(event.target.value as DirectorySort)}>
+                <option value="featured">{text.sortFeatured}</option>
+                <option value="stars">{text.sortStars}</option>
+                <option value="name">{text.sortName}</option>
+              </select>
+            </div>
+            <label className="featured-filter">
+              <input type="checkbox" checked={featuredOnly} onChange={(event) => handleFeaturedChange(event.target.checked)} />
+              <span>{text.featuredOnly}</span>
+            </label>
+          </div>
+          <div className="directory-result-line">
+            <p className="result-count" aria-live="polite">{withValue(text.resultPhrase, numberFormat.format(filteredPlugins.length))}</p>
+            {query || category !== "all" || sort !== "featured" || featuredOnly ? (
+              <button type="button" className="clear-filters" onClick={clearFilters}>{text.clearFilters}</button>
+            ) : null}
+          </div>
+          {filteredPlugins.length > 0 ? (
+            <div className="plugin-grid">
+              {filteredPlugins.map((plugin) => <PluginCard key={plugin.id} plugin={plugin} onOpenComments={setFeedbackTarget} />)}
+            </div>
+          ) : <p className="no-results">{text.noResults}</p>}
         </div>
       </div>
 
-      {filteredPlugins.length > 0 ? (
-        <div className="plugin-list" aria-busy={!hydrated}>
-          {filteredPlugins.map((plugin) => (
-            <PluginRow key={plugin.id} plugin={plugin} onOpenComments={openComments} />
-          ))}
-        </div>
-      ) : (
-        <div className="empty-state" role="status">
-          <p>{text.noResults}</p>
-          {filtersActive ? (
-            <button type="button" className="clear-filters" onClick={clearFilters}>
-              {text.clearFilters}
-            </button>
-          ) : null}
-        </div>
-      )}
-
-      <PluginFeedbackDialog
-        key={feedbackTarget?.id ?? "closed"}
-        plugin={feedbackTarget}
-        onClose={closeFeedback}
-      />
+      {feedbackTarget ? <PluginFeedbackDialog plugin={feedbackTarget} onClose={() => setFeedbackTarget(null)} /> : null}
     </section>
   );
 }
