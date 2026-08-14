@@ -16,8 +16,7 @@ export function HomeShell() {
     <main className="site-shell">
       <header className="topbar">
         <a className="brand" href="#directory" aria-label={text.brandAria}>
-          <Image className="brand-icon" src="/deepseek-icon.ico" width={28} height={28} alt="" priority />
-          <Image className="brand-wordmark" src="/deepseek-wordmark.png" width={69} height={15} alt="DeepSeek" />
+          <Image className="brand-wordmark" src="/deepseek-wordmark.png" width={69} height={15} alt="DeepSeek" priority />
           <span className="brand-divider" aria-hidden="true" />
           <span className="brand-name">Awesome DSH Plugins</span>
           <span className="catalog-count">{withCount(text.catalogCount, plugins.length)}</span>

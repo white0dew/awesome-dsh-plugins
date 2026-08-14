@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { PluginFeedbackDialog } from "@/components/plugin-feedback-dialog";
+import { PluginFeedbackDialog, type FeedbackPanelFocus } from "@/components/plugin-feedback-dialog";
 import { useLocale } from "@/components/locale-provider";
 import {
   categories,
@@ -46,10 +46,10 @@ async function copyText(value: string) {
 
 function PluginRow({
   plugin,
-  onDiscuss,
+  onOpenFeedback,
 }: {
   plugin: Plugin;
-  onDiscuss: (plugin: Plugin) => void;
+  onOpenFeedback: (plugin: Plugin, focus: FeedbackPanelFocus) => void;
 }) {
   const [copyState, setCopyState] = useState<CopyState>("idle");
   const { locale, text } = useLocale();
@@ -88,6 +88,12 @@ function PluginRow({
         <p className="plugin-repository">
           <span>{text.originalRepository}</span>
           <code>{plugin.repository}</code>
+          {plugin.stars > 0 ? (
+            <span className="plugin-stars" title={withValue(text.starCount, plugin.stars)}>
+              <span aria-hidden="true">★</span>
+              <span>{withValue(text.stars, plugin.stars)}</span>
+            </span>
+          ) : null}
         </p>
         <p className="plugin-description">{plugin.description[locale]}</p>
         <p className="verification" title={text.communityDetail}>
@@ -117,11 +123,21 @@ function PluginRow({
           </a>
           <button
             type="button"
-            className="row-action row-action-discuss"
-            aria-label={withValue(text.discussVoteFor, plugin.name)}
-            onClick={() => onDiscuss(plugin)}
+            className="row-icon-action row-icon-action-like"
+            aria-label={withValue(text.openLikesPanel, plugin.name)}
+            title={withValue(text.openLikesPanel, plugin.name)}
+            onClick={() => onOpenFeedback(plugin, "likes")}
           >
-            {text.discussVote}
+            <span aria-hidden="true">♥</span>
+          </button>
+          <button
+            type="button"
+            className="row-icon-action"
+            aria-label={withValue(text.openCommentsPanel, plugin.name)}
+            title={withValue(text.openCommentsPanel, plugin.name)}
+            onClick={() => onOpenFeedback(plugin, "comments")}
+          >
+            <span aria-hidden="true">✎</span>
           </button>
         </div>
         <p className="copy-status" aria-live="polite">
@@ -136,7 +152,10 @@ export function PluginDirectory() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<DirectoryCategory>("all");
   const [hydrated, setHydrated] = useState(false);
-  const [feedbackPlugin, setFeedbackPlugin] = useState<Plugin | null>(null);
+  const [feedbackTarget, setFeedbackTarget] = useState<{
+    plugin: Plugin;
+    focus: FeedbackPanelFocus;
+  } | null>(null);
   const { locale, text } = useLocale();
 
   const readUrlFilters = useCallback(() => {
@@ -188,7 +207,11 @@ export function PluginDirectory() {
     updateUrl("", "all", "push");
   }, [updateUrl]);
 
-  const closeFeedback = useCallback(() => setFeedbackPlugin(null), []);
+  const openFeedback = useCallback((plugin: Plugin, focus: FeedbackPanelFocus) => {
+    setFeedbackTarget({ plugin, focus });
+  }, []);
+
+  const closeFeedback = useCallback(() => setFeedbackTarget(null), []);
 
   const filteredPlugins = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -274,7 +297,7 @@ export function PluginDirectory() {
       {filteredPlugins.length > 0 ? (
         <div className="plugin-list" aria-busy={!hydrated}>
           {filteredPlugins.map((plugin) => (
-            <PluginRow key={plugin.id} plugin={plugin} onDiscuss={setFeedbackPlugin} />
+            <PluginRow key={plugin.id} plugin={plugin} onOpenFeedback={openFeedback} />
           ))}
         </div>
       ) : (
@@ -288,7 +311,12 @@ export function PluginDirectory() {
         </div>
       )}
 
-      <PluginFeedbackDialog key={feedbackPlugin?.id ?? "closed"} plugin={feedbackPlugin} onClose={closeFeedback} />
+      <PluginFeedbackDialog
+        key={feedbackTarget ? `${feedbackTarget.plugin.id}-${feedbackTarget.focus}` : "closed"}
+        plugin={feedbackTarget?.plugin ?? null}
+        initialFocus={feedbackTarget?.focus ?? "comments"}
+        onClose={closeFeedback}
+      />
     </section>
   );
 }

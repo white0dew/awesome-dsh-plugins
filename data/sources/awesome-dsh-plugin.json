@@ -56,7 +56,8 @@
     "zh": "Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。"
    },
    "install": "dsh plugin --profile web add github:openma-ai/deepseek-harness-tui",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 7
   },
   {
    "name": "dsh-at-file",
@@ -332,7 +333,8 @@
     "zh": "Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"
    },
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 615
   },
   {
    "name": "DSH-better-sidebar",
@@ -440,7 +442,8 @@
     "zh": "跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。"
    },
    "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 3
   },
   {
    "name": "nowledge-mem-deepseek-harness",
@@ -548,7 +551,8 @@
     "zh": "一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。"
    },
    "install": "dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-vision-toolkit",
@@ -764,7 +768,8 @@
     "zh": "doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-cowork",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-skillport",
@@ -836,7 +841,8 @@
     "zh": "持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。"
    },
    "install": "dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-recommend",
@@ -848,7 +854,8 @@
     "zh": "DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。"
    },
    "install": "dsh plugin --profile web add github:zp-home/dsh-recommend",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 6
   },
   {
    "name": "modlens",
@@ -872,7 +879,8 @@
     "zh": "会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。"
    },
    "install": "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 6
   },
   {
    "name": "dsh-code-intel",
@@ -884,7 +892,8 @@
     "zh": "用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-code-intel",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-subagent-tools",
@@ -896,7 +905,8 @@
     "zh": "子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。"
    },
    "install": "dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-subagent-cwd",
@@ -908,7 +918,8 @@
     "zh": "在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。"
    },
    "install": "dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-voice",
@@ -932,7 +943,8 @@
     "zh": "类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-docker",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-excel-vera-plugin",
@@ -944,7 +956,8 @@
     "zh": "检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。"
    },
    "install": "dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh_workflow",
@@ -1088,7 +1101,8 @@
     "zh": "增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-specflow",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-open-in-vscode",
@@ -1136,7 +1150,8 @@
     "zh": "ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。"
    },
    "install": "dsh plugin --profile web add github:openma-ai/deepseek-harness-acp",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 4
   },
   {
    "name": "telegram",
@@ -1208,7 +1223,8 @@
     "zh": "微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。"
    },
    "install": "dsh plugin --profile web add github:BiBoyang/dsh-im-bridge",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "fabric",
@@ -1436,7 +1452,8 @@
     "zh": "全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。"
    },
    "install": "dsh plugin --profile web add github:Areium/dsh-fail-logger",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 4
   },
   {
    "name": "dsh-eval-harness",
@@ -1448,7 +1465,8 @@
     "zh": "DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。"
    },
    "install": "dsh plugin --profile web add github:BiBoyang/dsh-eval-harness",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "oh-dsh",
@@ -1472,7 +1490,8 @@
     "zh": "面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。"
    },
    "install": "dsh plugin --profile web add github:BrambleXu/dsh-annotate",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 2
   },
   {
    "name": "dsh-prompt-profile",
@@ -1484,7 +1503,8 @@
     "zh": "DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。"
    },
    "install": "dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-revdiff",
@@ -1496,7 +1516,8 @@
     "zh": "DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。"
    },
    "install": "dsh plugin --profile web add github:BrambleXu/dsh-revdiff",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-gitflow",
@@ -1508,7 +1529,8 @@
     "zh": "增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-gitflow",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-guardian",
@@ -1520,7 +1542,8 @@
     "zh": "增加危险操作策略检查、输出脱敏和安全审查工作流。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-guardian",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-plugin-manager",
@@ -1532,7 +1555,8 @@
     "zh": "`dsh pm` 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-tmuxctl",
@@ -1544,7 +1568,8 @@
     "zh": "掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-updater-ui",
@@ -1556,7 +1581,8 @@
     "zh": "设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。"
    },
    "install": "dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 4
   },
   {
    "name": "dsh-ads",

@@ -51,6 +51,56 @@ if (categories.length !== 10) {
   errors.push(`expected 10 categories, found ${categories.length}`);
 }
 
+const firstSourceRepositories = new Set();
+const firstSourceStars = new Map();
+if (Array.isArray(firstInput.plugins)) {
+  for (let index = 0; index < firstInput.plugins.length; index += 1) {
+    const record = firstInput.plugins[index];
+    if (typeof record?.owner !== "string" || typeof record?.name !== "string") {
+      errors.push(`first-source record ${index + 1} is missing owner or name`);
+      continue;
+    }
+    const repository = `${record.owner}/${record.name}`.toLowerCase();
+    firstSourceRepositories.add(repository);
+    if (record.stars === undefined) continue;
+    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
+      errors.push(`${record.owner}/${record.name}: stars must be a finite nonnegative integer`);
+      continue;
+    }
+    firstSourceStars.set(repository, record.stars);
+  }
+}
+
+const secondSourceStars = new Map();
+if (Array.isArray(secondInput.plugins)) {
+  for (let index = 0; index < secondInput.plugins.length; index += 1) {
+    const record = secondInput.plugins[index];
+    if (typeof record?.fullName !== "string") {
+      errors.push(`second-source record ${index + 1} is missing fullName`);
+      continue;
+    }
+    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
+      errors.push(`${record.fullName}: stars must be a finite nonnegative integer`);
+      continue;
+    }
+    secondSourceStars.set(record.fullName.toLowerCase(), record.stars);
+  }
+}
+
+if (firstSourceRepositories.size !== 138) {
+  errors.push(`expected 138 unique first-source repositories, found ${firstSourceRepositories.size}`);
+}
+if (secondSourceStars.size !== 334) {
+  errors.push(`expected 334 second-source star records, found ${secondSourceStars.size}`);
+}
+const firstSourceOnly = [...firstSourceRepositories].filter((repository) => !secondSourceStars.has(repository));
+if (firstSourceOnly.length !== 26) {
+  errors.push(`expected 26 first-source-only records, found ${firstSourceOnly.length}`);
+}
+if (firstSourceOnly.some((repository) => !firstSourceStars.has(repository))) {
+  errors.push("every first-source-only record must have a star count");
+}
+
 for (const category of categories) {
   for (const locale of ["en", "zh"]) {
     if (!category.label[locale]?.trim() || !category.description[locale]?.trim()) {
@@ -82,6 +132,17 @@ for (const plugin of plugins) {
   }
   if (plugin.installCommand !== `dsh plugin --profile web add github:${plugin.repository}`) {
     errors.push(`${plugin.id}: install command must exactly match repository`);
+  }
+  if (typeof plugin.stars !== "number" || !Number.isFinite(plugin.stars) || !Number.isInteger(plugin.stars) || plugin.stars < 0) {
+    errors.push(`${plugin.id}: stars must be a finite nonnegative integer`);
+  }
+  const expectedStars = firstSourceRepositories.has(repositoryKey)
+    ? secondSourceStars.get(repositoryKey) ?? firstSourceStars.get(repositoryKey)
+    : secondSourceStars.get(repositoryKey);
+  if (expectedStars === undefined) {
+    errors.push(`${plugin.id}: stars must come from a source snapshot`);
+  } else if (plugin.stars !== expectedStars) {
+    errors.push(`${plugin.id}: stars must match the source snapshot`);
   }
   if (!categoryIds.has(plugin.category) || !categoryById[plugin.category]) {
     errors.push(`${plugin.id}: unknown category`);

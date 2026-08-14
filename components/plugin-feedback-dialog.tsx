@@ -16,6 +16,10 @@ type PageVote = {
 
 type VoteStatus = "loading" | "ready" | "unavailable" | "error";
 
+export type FeedbackPanelFocus = "likes" | "comments";
+
+const artalkSiteName = "Awesome DSH Plugins";
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
 }
@@ -30,7 +34,15 @@ function readPageVote(payload: unknown): PageVote | null {
   if (!data || !isRecord(data.page)) return null;
 
   const { id, vote_up: up } = data.page;
-  return typeof id === "number" && Number.isFinite(id) && typeof up === "number" && Number.isFinite(up)
+  return (
+    typeof id === "number" &&
+    Number.isFinite(id) &&
+    Number.isInteger(id) &&
+    id > 0 &&
+    typeof up === "number" &&
+    Number.isFinite(up) &&
+    up >= 0
+  )
     ? { id, up }
     : null;
 }
@@ -39,7 +51,7 @@ function readVoteCount(payload: unknown): number | null {
   const data = unwrapResponse(payload);
   if (!data) return null;
   const up = data.up;
-  return typeof up === "number" && Number.isFinite(up) ? up : null;
+  return typeof up === "number" && Number.isFinite(up) && up >= 0 ? up : null;
 }
 
 function withValue(template: string, value: string | number) {
@@ -48,21 +60,26 @@ function withValue(template: string, value: string | number) {
 
 export function PluginFeedbackDialog({
   plugin,
+  initialFocus,
   onClose,
 }: {
   plugin: Plugin | null;
+  initialFocus: FeedbackPanelFocus;
   onClose: () => void;
 }) {
   const { locale, text } = useLocale();
   const titleId = useId();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const likesSectionRef = useRef<HTMLElement>(null);
+  const commentsSectionRef = useRef<HTMLElement>(null);
+  const likeButtonRef = useRef<HTMLButtonElement>(null);
   const artalkContainerRef = useRef<HTMLDivElement>(null);
   const artalkInstanceRef = useRef<ArtalkInstance | null>(null);
   const [pageVote, setPageVote] = useState<PageVote | null>(null);
   const [voteStatus, setVoteStatus] = useState<VoteStatus>("loading");
   const [isVoting, setIsVoting] = useState(false);
   const [voteFailed, setVoteFailed] = useState(false);
-  const [commentsUnavailable, setCommentsUnavailable] = useState(false);
+  const [commentsError, setCommentsError] = useState(false);
 
   const close = useCallback(() => onClose(), [onClose]);
   const pageKey = plugin ? `plugin:${plugin.repository}` : "";
@@ -85,11 +102,25 @@ export function PluginFeedbackDialog({
   useEffect(() => {
     if (!plugin) return;
 
+    const focusTarget = initialFocus === "likes" ? likesSectionRef.current : commentsSectionRef.current;
+    const focusTimer = window.setTimeout(() => {
+      focusTarget?.scrollIntoView({ block: "nearest" });
+      focusTarget?.focus({ preventScroll: true });
+    }, 0);
+
+    return () => {
+      window.clearTimeout(focusTimer);
+    };
+  }, [initialFocus, plugin]);
+
+  useEffect(() => {
+    if (!plugin) return;
+
     const controller = new AbortController();
     let mounted = true;
 
     const params = new URLSearchParams({
-      site_name: "Awesome DSH Plugins",
+      site_name: artalkSiteName,
       page_key: pageKey,
       page_title: plugin.name,
       page_url: pageUrl,
@@ -111,7 +142,6 @@ export function PluginFeedbackDialog({
         if (!mounted || (error instanceof DOMException && error.name === "AbortError")) return;
         setPageVote(null);
         setVoteStatus("error");
-        setCommentsUnavailable(true);
       });
 
     return () => {
@@ -121,7 +151,13 @@ export function PluginFeedbackDialog({
   }, [pageKey, pageUrl, plugin]);
 
   useEffect(() => {
-    if (!plugin || voteStatus === "loading" || !artalkContainerRef.current) return;
+    if (initialFocus === "likes" && pageVote) {
+      likeButtonRef.current?.focus({ preventScroll: true });
+    }
+  }, [initialFocus, pageVote]);
+
+  useEffect(() => {
+    if (!plugin || !artalkContainerRef.current) return;
 
     let mounted = true;
     let instance: ArtalkInstance | null = null;
@@ -129,10 +165,11 @@ export function PluginFeedbackDialog({
     void import("artalk")
       .then(({ default: Artalk }) => {
         if (!mounted || !artalkContainerRef.current) return;
+
         instance = Artalk.init({
           el: artalkContainerRef.current,
           server: "/artalk",
-          site: "Awesome DSH Plugins",
+          site: artalkSiteName,
           pageKey,
           pageTitle: plugin.name,
           locale: locale === "zh" ? "zh-CN" : "en",
@@ -142,6 +179,8 @@ export function PluginFeedbackDialog({
           pvAdd: false,
           useBackendConf: false,
           listFetchParamsModifier(params) {
+            params.site_name = artalkSiteName;
+            params.page_key = pageKey;
             params.page_title = plugin.name;
             params.page_url = pageUrl;
           },
@@ -149,7 +188,7 @@ export function PluginFeedbackDialog({
         artalkInstanceRef.current = instance;
       })
       .catch(() => {
-        if (mounted) setCommentsUnavailable(true);
+        if (mounted) setCommentsError(true);
       });
 
     return () => {
@@ -157,7 +196,7 @@ export function PluginFeedbackDialog({
       instance?.destroy();
       if (artalkInstanceRef.current === instance) artalkInstanceRef.current = null;
     };
-  }, [locale, pageKey, pageUrl, plugin, voteStatus]);
+  }, [locale, pageKey, pageUrl, plugin]);
 
   if (!plugin) return null;
 
@@ -184,15 +223,11 @@ export function PluginFeedbackDialog({
     }
   }
 
-  const voteMessage = voteStatus === "loading"
-    ? text.voteLoading
-    : voteStatus === "unavailable"
-      ? text.voteUnavailable
-      : voteStatus === "error"
-        ? text.voteError
-        : voteFailed
-          ? text.voteError
-          : "";
+  const likesMessage = voteStatus === "unavailable"
+    ? text.likesUnavailable
+    : voteStatus === "error" || voteFailed
+      ? text.likesError
+      : "";
 
   return (
     <div
@@ -206,25 +241,36 @@ export function PluginFeedbackDialog({
         <header className="feedback-dialog-header">
           <div>
             <p className="dialog-kicker">{plugin.repository}</p>
-            <h2 id={titleId}>{withValue(text.dialogTitle, plugin.name)}</h2>
+            <h2 id={titleId}>{withValue(text.feedbackPanelTitle, plugin.name)}</h2>
           </div>
-          <button ref={closeButtonRef} type="button" className="dialog-close" aria-label={text.closeDialog} onClick={close}>
+          <button ref={closeButtonRef} type="button" className="dialog-close" aria-label={text.closePanel} onClick={close}>
             <span aria-hidden="true">x</span>
           </button>
         </header>
 
-        <div className="feedback-vote" aria-live="polite">
+        <section
+          ref={likesSectionRef}
+          className="feedback-likes-section"
+          tabIndex={-1}
+          aria-labelledby={`${titleId}-likes`}
+        >
+          <h3 id={`${titleId}-likes`}>{text.likes}</h3>
           {pageVote ? (
-            <button type="button" className="vote-button" onClick={handleVote} disabled={isVoting}>
-              {isVoting ? text.voteLoading : withValue(text.voteButton, pageVote.up)}
+            <button ref={likeButtonRef} type="button" className="vote-button" onClick={handleVote} disabled={isVoting}>
+              {withValue(text.likeButton, pageVote.up)}
             </button>
           ) : null}
-          {voteMessage ? <p className="feedback-status" role="status">{voteMessage}</p> : null}
-        </div>
+          {likesMessage ? <p className="feedback-status" role="status">{likesMessage}</p> : null}
+        </section>
 
-        <section className="feedback-comments-section" aria-labelledby={`${titleId}-comments`}>
-          <h3 id={`${titleId}-comments`}>{text.commentsLabel}</h3>
-          {commentsUnavailable ? <p className="feedback-status" role="status">{text.commentsUnavailable}</p> : null}
+        <section
+          ref={commentsSectionRef}
+          className="feedback-comments-section"
+          tabIndex={-1}
+          aria-labelledby={`${titleId}-comments`}
+        >
+          <h3 id={`${titleId}-comments`}>{text.comments}</h3>
+          {commentsError ? <p className="feedback-status" role="status">{text.commentsError}</p> : null}
           <div ref={artalkContainerRef} className="feedback-comments" />
         </section>
       </section>
