@@ -363,3 +363,11 @@ Repository: `zimixvx/dsh-archive-manager`
 A minimal DeepSeek Harness Web plugin that lists archived sessions and permanently deletes an archived session directory after explicit confirmation.
 
 Install: `dsh plugin --profile web add github:zimixvx/dsh-archive-manager`
+
+### [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import)
+
+Repository: `Nwflower/dsh-chat-import`
+
+Import full-fidelity conversation histories from 13 coding agents (Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode / ZCode / Grok Build / OpenClaw / Pi / Hermes / Kimi) as resumable DeepSeek Harness sessions, with reverse export/sync back to Claude Code.
+
+Install: `dsh plugin --profile web add github:Nwflower/dsh-chat-import`
