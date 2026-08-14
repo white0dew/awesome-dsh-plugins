@@ -471,6 +471,12 @@ function renderReadme(plugins, groupedRecords, locale) {
       ? "需要添加插件或修正信息？请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 或[提交 issue](https://github.com/white0dew/awesome-dsh-plugins/issues/new)。"
       : "Have a plugin to add or a correction to suggest? See [CONTRIBUTING.md](CONTRIBUTING.md) or [open an issue](https://github.com/white0dew/awesome-dsh-plugins/issues/new).",
     "",
+    isChinese ? "## 致谢" : "## Thanks",
+    "",
+    isChinese
+      ? "感谢 [LinuxDO 社区](https://linux.do/) 的支持与交流。"
+      : "Thanks to the [Linux Do community](https://linux.do/) for the support and exchange.",
+    "",
     "## License",
     "",
     "[MIT](LICENSE)",

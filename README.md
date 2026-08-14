@@ -38,6 +38,10 @@ This directory lists 360 plugins. It is not an official DeepSeek property and do
 
 Have a plugin to add or a correction to suggest? See [CONTRIBUTING.md](CONTRIBUTING.md) or [open an issue](https://github.com/white0dew/awesome-dsh-plugins/issues/new).
 
+## Thanks
+
+Thanks to the [Linux Do community](https://linux.do/) for the support and exchange.
+
 ## License
 
 [MIT](LICENSE)

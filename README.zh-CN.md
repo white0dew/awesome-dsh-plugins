@@ -38,6 +38,10 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 需要添加插件或修正信息？请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 或[提交 issue](https://github.com/white0dew/awesome-dsh-plugins/issues/new)。
 
+## 致谢
+
+感谢 [LinuxDO 社区](https://linux.do/) 的支持与交流。
+
 ## License
 
 [MIT](LICENSE)
