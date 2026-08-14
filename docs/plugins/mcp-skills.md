@@ -3,6 +3,13 @@
 Model Context Protocol servers, skills, and extensibility packages.
 
 **29 catalog entries** · [Back to all categories](index.md)
+### [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)
+
+Repository: `dhicoc/dsh-reverse-skill`
+
+Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router. Installable via `dsh plugin add github:dhicoc/dsh-reverse-skill`.
+
+Install: `dsh plugin --profile web add github:dhicoc/dsh-reverse-skill`
 
 ### [dsh-mcp-manager](https://github.com/1a125/dsh-mcp-manager)
 
