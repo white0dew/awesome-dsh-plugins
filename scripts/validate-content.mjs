@@ -13,11 +13,13 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const rootDirectory = path.resolve(scriptDirectory, "..");
 const firstInputPath = path.join(rootDirectory, "data", "sources", "awesome-dsh-plugin.json");
 const secondInputPath = path.join(rootDirectory, "data", "sources", "github-plugin-catalog.json");
+const reviewedAdditionsInputPath = path.join(rootDirectory, "data", "sources", "reviewed-catalog-additions.json");
 const docsDirectory = path.join(rootDirectory, "docs", "plugins");
 
-const [firstInput, secondInput] = await Promise.all([
+const [firstInput, secondInput, reviewedAdditionsInput] = await Promise.all([
   readFile(firstInputPath, "utf8").then(JSON.parse),
   readFile(secondInputPath, "utf8").then(JSON.parse),
+  readFile(reviewedAdditionsInputPath, "utf8").then(JSON.parse),
 ]);
 
 const errors = [];
@@ -36,8 +38,11 @@ if (!Array.isArray(firstInput.plugins) || firstInput.plugins.length !== 138) {
 if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
   errors.push("second catalog input must contain exactly 334 records");
 }
-if (plugins.length !== 360) {
-  errors.push(`expected exactly 360 normalized plugins, found ${plugins.length}`);
+if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.records.length !== 2) {
+  errors.push("reviewed catalog additions input must contain exactly 2 records");
+}
+if (plugins.length !== 362) {
+  errors.push(`expected exactly 362 normalized plugins, found ${plugins.length}`);
 }
 if (categories.length !== 10) {
   errors.push(`expected 10 categories, found ${categories.length}`);
@@ -79,11 +84,70 @@ if (Array.isArray(secondInput.plugins)) {
   }
 }
 
+const reviewedAdditionsByRepository = new Map();
+if (Array.isArray(reviewedAdditionsInput.records)) {
+  for (let index = 0; index < reviewedAdditionsInput.records.length; index += 1) {
+    const record = reviewedAdditionsInput.records[index];
+    if (typeof record?.name !== "string" || !record.name.trim()) {
+      errors.push(`reviewed catalog addition ${index + 1} is missing a name`);
+    }
+    const github = record?.github;
+    if (typeof github?.repository !== "string" || !repositoryName.test(github.repository)) {
+      errors.push(`reviewed catalog addition ${index + 1} must have an owner/repo GitHub record`);
+      continue;
+    }
+    if (github.url !== `https://github.com/${github.repository}`) {
+      errors.push(`${github.repository}: GitHub URL must exactly match repository`);
+    }
+    if (github.license !== undefined && (typeof github.license !== "string" || !github.license.trim())) {
+      errors.push(`${github.repository}: GitHub license must be a nonempty string when present`);
+    }
+    if (!categoryIds.has(record?.category)) {
+      errors.push(`${github.repository}: unknown category`);
+    }
+    for (const locale of ["en", "zh"]) {
+      if (typeof record?.description?.[locale] !== "string" || !record.description[locale].trim()) {
+        errors.push(`${github.repository}: ${locale} description must not be empty`);
+      }
+    }
+    if (typeof record?.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
+      errors.push(`${github.repository}: stars must be a finite nonnegative integer`);
+    }
+
+    const action = record?.primaryAction;
+    if (action?.type === "copy-install") {
+      if (typeof action.command !== "string" || !action.command.trim()) {
+        errors.push(`${github.repository}: copy-install action must have a command`);
+      }
+    } else if (action?.type === "external-download") {
+      if (typeof action.url !== "string" || !/^https:\/\/\S+$/.test(action.url)) {
+        errors.push(`${github.repository}: external-download action must have an HTTPS URL`);
+      }
+      for (const locale of ["en", "zh"]) {
+        if (typeof action.label?.[locale] !== "string" || !action.label[locale].trim()) {
+          errors.push(`${github.repository}: external-download action must have a ${locale} label`);
+        }
+      }
+    } else {
+      errors.push(`${github.repository}: primary action must be copy-install or external-download`);
+    }
+
+    const repositoryKey = github.repository.toLowerCase();
+    if (reviewedAdditionsByRepository.has(repositoryKey)) {
+      errors.push(`${github.repository}: duplicate reviewed catalog addition`);
+    }
+    reviewedAdditionsByRepository.set(repositoryKey, record);
+  }
+}
+
 if (firstSourceRepositories.size !== 138) {
   errors.push(`expected 138 unique first-source repositories, found ${firstSourceRepositories.size}`);
 }
 if (secondSourceStars.size !== 334) {
   errors.push(`expected 334 second-source star records, found ${secondSourceStars.size}`);
+}
+if (reviewedAdditionsByRepository.size !== 2) {
+  errors.push(`expected 2 unique reviewed catalog additions, found ${reviewedAdditionsByRepository.size}`);
 }
 const firstSourceOnly = [...firstSourceRepositories].filter((repository) => !secondSourceStars.has(repository));
 if (firstSourceOnly.length !== 26) {
@@ -122,15 +186,39 @@ for (const plugin of plugins) {
   if (plugin.repoUrl !== `https://github.com/${plugin.repository}`) {
     errors.push(`${plugin.id}: repoUrl must exactly match repository`);
   }
-  if (plugin.installCommand !== `dsh plugin --profile web add github:${plugin.repository}`) {
-    errors.push(`${plugin.id}: install command must exactly match repository`);
+  const reviewedAddition = reviewedAdditionsByRepository.get(repositoryKey);
+  if (reviewedAddition) {
+    if (plugin.primaryAction?.type !== reviewedAddition.primaryAction?.type) {
+      errors.push(`${plugin.id}: primary action must match the reviewed addition`);
+    } else if (
+      plugin.primaryAction.type === "copy-install"
+      && plugin.primaryAction.command !== reviewedAddition.primaryAction.command
+    ) {
+      errors.push(`${plugin.id}: copy-install command must match the reviewed addition`);
+    } else if (
+      plugin.primaryAction.type === "external-download"
+      && (
+        plugin.primaryAction.url !== reviewedAddition.primaryAction.url
+        || plugin.primaryAction.label?.en !== reviewedAddition.primaryAction.label?.en
+        || plugin.primaryAction.label?.zh !== reviewedAddition.primaryAction.label?.zh
+      )
+    ) {
+      errors.push(`${plugin.id}: external-download action must match the reviewed addition`);
+    }
+  } else if (
+    plugin.primaryAction?.type !== "copy-install"
+    || plugin.primaryAction.command !== `dsh plugin --profile web add github:${plugin.repository}`
+  ) {
+    errors.push(`${plugin.id}: copy-install command must exactly match repository`);
   }
   if (typeof plugin.stars !== "number" || !Number.isFinite(plugin.stars) || !Number.isInteger(plugin.stars) || plugin.stars < 0) {
     errors.push(`${plugin.id}: stars must be a finite nonnegative integer`);
   }
-  const expectedStars = firstSourceRepositories.has(repositoryKey)
-    ? secondSourceStars.get(repositoryKey) ?? firstSourceStars.get(repositoryKey)
-    : secondSourceStars.get(repositoryKey);
+  const expectedStars = reviewedAddition
+    ? reviewedAddition.stars
+    : firstSourceRepositories.has(repositoryKey)
+      ? secondSourceStars.get(repositoryKey) ?? firstSourceStars.get(repositoryKey)
+      : secondSourceStars.get(repositoryKey);
   if (expectedStars === undefined) {
     errors.push(`${plugin.id}: stars must come from a source snapshot`);
   } else if (plugin.stars !== expectedStars) {

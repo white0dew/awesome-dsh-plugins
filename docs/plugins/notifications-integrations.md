@@ -2,7 +2,7 @@
 
 Messaging, notifications, and connections to external services.
 
-**21 plugins** · [Back to all categories](index.md)
+**21 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp)
 

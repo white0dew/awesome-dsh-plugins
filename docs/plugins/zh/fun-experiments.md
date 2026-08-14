@@ -2,7 +2,7 @@
 
 有趣、特别且具探索性的项目。
 
-**11 个插件** · [返回全部分类](index.md)
+**11 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin)
 

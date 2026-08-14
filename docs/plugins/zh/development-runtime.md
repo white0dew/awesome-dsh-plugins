@@ -2,7 +2,7 @@
 
 开发工具、Shell、容器、测试与运行时支持。
 
-**44 个插件** · [返回全部分类](index.md)
+**44 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-code-check](https://github.com/a179-sanae/dsh-code-check)
 

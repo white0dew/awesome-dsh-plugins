@@ -10,6 +10,7 @@ const docsDirectory = path.join(rootDirectory, "docs", "plugins");
 
 const firstSourcePath = path.join(sourceDirectory, "awesome-dsh-plugin.json");
 const secondSourcePath = path.join(sourceDirectory, "github-plugin-catalog.json");
+const reviewedAdditionsSourcePath = path.join(sourceDirectory, "reviewed-catalog-additions.json");
 const generatedContentPath = path.join(contentDirectory, "plugins.generated.ts");
 const generatedReadmePath = path.join(rootDirectory, "README.md");
 const generatedChineseReadmePath = path.join(rootDirectory, "README.zh-CN.md");
@@ -253,6 +254,43 @@ function sourceStarsByRepository(snapshot) {
   return starsByRepository;
 }
 
+function normalizedPrimaryAction(value, label) {
+  const action = asObject(value, `${label} primary action`);
+  if (action.type === "copy-install") {
+    if (typeof action.command !== "string" || !action.command.trim()) {
+      fail(`${label} copy-install action is missing a command`);
+    }
+    return { type: "copy-install", command: action.command };
+  }
+
+  if (action.type === "external-download") {
+    if (typeof action.url !== "string" || !action.url.trim()) {
+      fail(`${label} external-download action is missing a URL`);
+    }
+    let url;
+    try {
+      url = new URL(action.url);
+    } catch {
+      fail(`${label} external-download action has an invalid URL`);
+    }
+    if (url.protocol !== "https:") {
+      fail(`${label} external-download action must use an HTTPS URL`);
+    }
+
+    const localizedLabel = asObject(action.label, `${label} external-download label`);
+    const labelByLocale = {};
+    for (const locale of ["en", "zh"]) {
+      if (typeof localizedLabel[locale] !== "string" || !localizedLabel[locale].trim()) {
+        fail(`${label} external-download action is missing a ${locale} label`);
+      }
+      labelByLocale[locale] = localizedLabel[locale].trim();
+    }
+    return { type: "external-download", url: action.url, label: labelByLocale };
+  }
+
+  fail(`${label} has an unknown primary action type`);
+}
+
 function normalizeFirstSource(snapshot, seenRepositories, secondSourceStars) {
   const plugins = snapshot.plugins;
   if (!Array.isArray(plugins)) {
@@ -299,7 +337,7 @@ function normalizeFirstSource(snapshot, seenRepositories, secondSourceStars) {
         zh: cleanDescription(record.description?.zh, `${repository} Chinese`),
       },
       category: categoryId,
-      installCommand: record.install,
+      primaryAction: { type: "copy-install", command: record.install },
       stars,
       featured: featuredRepositories.has(repositoryKey),
       latest: record.added === snapshot.updated,
@@ -346,13 +384,64 @@ function normalizeSecondSource(snapshot, seenRepositories) {
       repoUrl: record.url,
       description: { en: originalDescription, zh: originalDescription },
       category: classifySecondSourceRecord(record),
-      installCommand: installCommand(repository),
+      primaryAction: { type: "copy-install", command: installCommand(repository) },
       stars: record.stars,
       featured: featuredRepositories.has(repositoryKey),
       latest: Boolean(updatedDate && typeof record.pushedAt === "string" && record.pushedAt.slice(0, 10) === updatedDate),
     });
   }
   return normalized;
+}
+
+function normalizeReviewedAdditions(snapshot, seenRepositories) {
+  const records = snapshot.records;
+  if (!Array.isArray(records)) {
+    fail("reviewed-catalog-additions.json does not have a records array");
+  }
+  if (records.length !== 2) {
+    fail(`expected 2 reviewed catalog additions, found ${records.length}`);
+  }
+
+  return records.map((record, index) => {
+    asObject(record, `reviewed catalog addition ${index + 1}`);
+    if (typeof record.name !== "string" || !record.name.trim()) {
+      fail(`reviewed catalog addition ${index + 1} is missing a name`);
+    }
+    const github = asObject(record.github, `${record.name} GitHub metadata`);
+    if (typeof github.repository !== "string" || typeof github.url !== "string") {
+      fail(`${record.name} GitHub metadata is missing repository or URL`);
+    }
+    if (github.license !== undefined && (typeof github.license !== "string" || !github.license.trim())) {
+      fail(`${record.name} GitHub metadata has an invalid license`);
+    }
+    validateDirectGithubRecord({ repository: github.repository, url: github.url, label: record.name });
+    if (typeof record.category !== "string" || !categoryById.has(record.category)) {
+      fail(`${github.repository} has an unknown reviewed-addition category`);
+    }
+    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
+      fail(`${github.repository} is missing a finite nonnegative integer star count`);
+    }
+    const repositoryKey = github.repository.toLowerCase();
+    if (seenRepositories.has(repositoryKey)) {
+      fail(`${github.repository} duplicates an existing source record`);
+    }
+    seenRepositories.add(repositoryKey);
+
+    return {
+      name: record.name,
+      repository: github.repository,
+      repoUrl: github.url,
+      description: {
+        en: cleanDescription(record.description?.en, `${github.repository} English`),
+        zh: cleanDescription(record.description?.zh, `${github.repository} Chinese`),
+      },
+      category: record.category,
+      primaryAction: normalizedPrimaryAction(record.primaryAction, github.repository),
+      stars: record.stars,
+      featured: featuredRepositories.has(repositoryKey),
+      latest: false,
+    };
+  });
 }
 
 function quote(value) {
@@ -368,7 +457,7 @@ function renderPlugin(plugin) {
     `    repository: ${quote(plugin.repository)},`,
     `    description: ${quote(plugin.description)},`,
     `    category: ${quote(plugin.category)},`,
-    `    installCommand: ${quote(plugin.installCommand)},`,
+    `    primaryAction: ${quote(plugin.primaryAction)},`,
     `    stars: ${plugin.stars},`,
     "    verification: {",
     '      state: "community-discovered",',
@@ -392,7 +481,7 @@ function renderContentModule(plugins) {
     ].join("\n"))
     .join("\n");
 
-  return `// This file is generated by scripts/generate-content.mjs. Do not edit manually.\n\nexport type LocalizedText = {\n  en: string;\n  zh: string;\n};\n\nexport const categories = [\n${renderedCategories}\n] as const satisfies readonly {\n  id: string;\n  label: LocalizedText;\n  description: LocalizedText;\n  file: string;\n}[];\n\nexport type PluginCategory = (typeof categories)[number]["id"];\nexport type PluginCategoryDefinition = (typeof categories)[number];\n\nexport const categoryById = Object.fromEntries(\n  categories.map((category) => [category.id, category]),\n) as Record<PluginCategory, PluginCategoryDefinition>;\n\nexport const verificationStates = ["community-discovered"] as const;\n\nexport type VerificationState = (typeof verificationStates)[number];\n\nexport type PluginVerification = {\n  state: VerificationState;\n  detail: string;\n};\n\nexport type Plugin = {\n  id: string;\n  name: string;\n  repoUrl: string;\n  repository: string;\n  description: LocalizedText;\n  category: PluginCategory;\n  installCommand: string;\n  stars: number;\n  verification: PluginVerification;\n  featured: boolean;\n  latest: boolean;\n};\n\nconst communityDiscoveredDetail = ${quote(communityDiscoveredDetail)};\n\nexport const plugins = [\n${plugins.map(renderPlugin).join("\n")}\n] as const satisfies readonly Plugin[];\n`;
+  return `// This file is generated by scripts/generate-content.mjs. Do not edit manually.\n\nexport type LocalizedText = {\n  en: string;\n  zh: string;\n};\n\nexport const categories = [\n${renderedCategories}\n] as const satisfies readonly {\n  id: string;\n  label: LocalizedText;\n  description: LocalizedText;\n  file: string;\n}[];\n\nexport type PluginCategory = (typeof categories)[number]["id"];\nexport type PluginCategoryDefinition = (typeof categories)[number];\n\nexport const categoryById = Object.fromEntries(\n  categories.map((category) => [category.id, category]),\n) as Record<PluginCategory, PluginCategoryDefinition>;\n\nexport const verificationStates = ["community-discovered"] as const;\n\nexport type VerificationState = (typeof verificationStates)[number];\n\nexport type PluginVerification = {\n  state: VerificationState;\n  detail: string;\n};\n\nexport type PluginPrimaryAction =\n  | { type: "copy-install"; command: string }\n  | { type: "external-download"; url: string; label: LocalizedText };\n\nexport type Plugin = {\n  id: string;\n  name: string;\n  repoUrl: string;\n  repository: string;\n  description: LocalizedText;\n  category: PluginCategory;\n  primaryAction: PluginPrimaryAction;\n  stars: number;\n  verification: PluginVerification;\n  featured: boolean;\n  latest: boolean;\n};\n\nconst communityDiscoveredDetail = ${quote(communityDiscoveredDetail)};\n\nexport const plugins = [\n${plugins.map(renderPlugin).join("\n")}\n] as const satisfies readonly Plugin[];\n`;
 }
 
 function markdownText(value) {
@@ -400,6 +489,10 @@ function markdownText(value) {
 }
 
 function renderRecord(record, locale) {
+  const action = record.primaryAction.type === "copy-install"
+    ? `Install: \`${record.primaryAction.command}\``
+    : `${locale === "zh" ? "下载" : "Download"}: [${markdownText(record.primaryAction.label[locale])}](${record.primaryAction.url})`;
+
   return [
     `### [${markdownText(record.name)}](${record.repoUrl})`,
     "",
@@ -407,7 +500,7 @@ function renderRecord(record, locale) {
     "",
     record.description[locale],
     "",
-    `Install: \`${record.installCommand}\``,
+    action,
     "",
   ].join("\n");
 }
@@ -420,8 +513,8 @@ function renderCategoryPage(category, records, locale) {
     category.description[locale],
     "",
     isChinese
-      ? `**${records.length} 个插件** · [返回全部分类](index.md)`
-      : `**${records.length} plugins** · [Back to all categories](index.md)`,
+      ? `**${records.length} 个目录条目** · [返回全部分类](index.md)`
+      : `**${records.length} catalog entries** · [Back to all categories](index.md)`,
     "",
     records.map((record) => renderRecord(record, locale)).join("\n"),
   ].join("\n");
@@ -438,10 +531,10 @@ function renderIndexPage(groupedRecords, locale) {
     isChinese ? "# DSH 插件目录" : "# DSH plugin directory",
     "",
     isChinese
-      ? "按能力浏览目录。每个分类页面都列出插件的原始 GitHub 仓库和安装命令。"
-      : "Browse the catalog by capability. Each category page lists every plugin's original GitHub repository and install command.",
+      ? "按能力浏览目录。每个分类页面都列出条目的原始 GitHub 仓库和主要操作。"
+      : "Browse the catalog by capability. Each category page lists every entry's original GitHub repository and primary action.",
     "",
-    isChinese ? "| 分类 | 插件数 | 内容 |" : "| Category | Plugins | What you will find |",
+    isChinese ? "| 分类 | 条目数 | 内容 |" : "| Category | Entries | What you will find |",
     "| --- | ---: | --- |",
     ...rows,
     "",
@@ -464,17 +557,17 @@ function renderReadme(plugins, groupedRecords, locale) {
     isChinese ? "[English](README.md)" : "[简体中文](README.zh-CN.md)",
     "",
     isChinese
-      ? "一个独立的 DeepSeek Harness (DSH) 插件目录，提供每个插件原始 GitHub 仓库的直接链接和可复制的安装命令。"
-      : "An independent directory of DeepSeek Harness (DSH) plugins, with direct links to each plugin's original GitHub repository and copy-ready install commands.",
+      ? "一个独立的 DeepSeek Harness (DSH) 目录，提供插件和相关工具的原始 GitHub 仓库直接链接，以及相应的主要操作。"
+      : "An independent directory of DeepSeek Harness (DSH) plugins and related tools, with direct links to each original GitHub repository and its primary action.",
     "",
     "- **Live site:** https://dsh.reshub.vip",
     "- **Repository:** https://github.com/white0dew/awesome-dsh-plugins",
     "",
-    isChinese ? "## 浏览与安装" : "## Browse and install",
+    isChinese ? "## 浏览与使用" : "## Browse and use",
     "",
     isChinese
-      ? "浏览[完整插件目录](docs/plugins/zh/index.md)，选择分类，并在安装前查看插件仓库。"
-      : "Browse the [full plugin directory](docs/plugins/index.md), choose a category, then review a plugin's repository before installing it.",
+      ? "浏览[完整目录](docs/plugins/zh/index.md)，选择分类，并在安装插件或下载相关工具前查看其仓库。"
+      : "Browse the [full directory](docs/plugins/index.md), choose a category, then review a repository before installing a plugin or downloading a related tool.",
     "",
     "```bash",
     "dsh plugin --profile web add github:OWNER/REPOSITORY",
@@ -482,15 +575,15 @@ function renderReadme(plugins, groupedRecords, locale) {
     "",
     isChinese ? "## 分类" : "## Categories",
     "",
-    isChinese ? "| 分类 | 插件数 |" : "| Category | Plugins |",
+    isChinese ? "| 分类 | 条目数 |" : "| Category | Entries |",
     "| --- | ---: |",
     ...rows,
     "",
     isChinese ? "## 独立说明" : "## Independence",
     "",
     isChinese
-      ? `本目录收录 ${plugins.length} 个插件，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。`
-      : `This directory lists ${plugins.length} plugins. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.`,
+      ? `本目录收录 ${plugins.length} 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。`
+      : `This directory lists ${plugins.length} catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.`,
     "",
     isChinese ? "## 参与贡献" : "## Contribute",
     "",
@@ -513,15 +606,17 @@ function renderReadme(plugins, groupedRecords, locale) {
 
 const firstSnapshot = JSON.parse(await readFile(firstSourcePath, "utf8"));
 const secondSnapshot = JSON.parse(await readFile(secondSourcePath, "utf8"));
+const reviewedAdditionsSnapshot = JSON.parse(await readFile(reviewedAdditionsSourcePath, "utf8"));
 const secondSourceStars = sourceStarsByRepository(secondSnapshot);
 const seenRepositories = new Set();
 const normalizedPlugins = [
   ...normalizeFirstSource(firstSnapshot, seenRepositories, secondSourceStars),
   ...normalizeSecondSource(secondSnapshot, seenRepositories),
+  ...normalizeReviewedAdditions(reviewedAdditionsSnapshot, seenRepositories),
 ].sort(compareRepositories);
 
-if (normalizedPlugins.length !== 360) {
-  fail(`expected exactly 360 unique repositories after deduplication, found ${normalizedPlugins.length}`);
+if (normalizedPlugins.length !== 362) {
+  fail(`expected exactly 362 unique repositories after deduplication, found ${normalizedPlugins.length}`);
 }
 
 for (const repository of featuredRepositories) {

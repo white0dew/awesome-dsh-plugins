@@ -2,7 +2,7 @@
 
 图像、音频、视频、OCR 与其他多模态能力。
 
-**20 个插件** · [返回全部分类](index.md)
+**20 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-vision-sidecar](https://github.com/121103qwq/dsh-vision-sidecar)
 

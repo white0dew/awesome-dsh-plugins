@@ -2,7 +2,7 @@
 
 对话历史、上下文、持久化与记忆辅助工具。
 
-**45 个插件** · [返回全部分类](index.md)
+**45 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor)
 

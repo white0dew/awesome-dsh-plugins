@@ -2,7 +2,7 @@
 
 Model Context Protocol servers, skills, and extensibility packages.
 
-**29 plugins** · [Back to all categories](index.md)
+**29 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-mcp-manager](https://github.com/1a125/dsh-mcp-manager)
 

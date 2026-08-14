@@ -1,0 +1,45 @@
+{
+  "name": "reviewed-catalog-additions",
+  "updated": "2026-08-14",
+  "records": [
+    {
+      "name": "dsh-outline",
+      "github": {
+        "repository": "urzeye/dsh-outline",
+        "url": "https://github.com/urzeye/dsh-outline",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A DSH Web plugin that keeps a real-time outline in sync with the conversation.",
+        "zh": "为 DSH Web 实时同步对话大纲的插件。"
+      },
+      "category": "ui-themes",
+      "stars": 2,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "npx @deepseek-ai/dsh plugin --profile web add dsh-outline"
+      }
+    },
+    {
+      "name": "DSH-Desktop",
+      "github": {
+        "repository": "wuxjian/DSH-Desktop",
+        "url": "https://github.com/wuxjian/DSH-Desktop"
+      },
+      "description": {
+        "en": "A Tauri 2 and Vanilla TypeScript Windows desktop launcher that starts or embeds dsh web, checks and upgrades DSH, and provides a 3.03 MB Windows installer.",
+        "zh": "基于 Tauri 2 和 Vanilla TypeScript 的 Windows 桌面启动器，可启动或嵌入 dsh web，检查并升级 DSH，并提供 3.03 MB 的 Windows 安装包。"
+      },
+      "category": "ui-themes",
+      "stars": 0,
+      "primaryAction": {
+        "type": "external-download",
+        "url": "https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe",
+        "label": {
+          "en": "Download for Windows",
+          "zh": "下载 Windows 安装包"
+        }
+      }
+    }
+  ]
+}

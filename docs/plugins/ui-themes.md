@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**31 plugins** · [Back to all categories](index.md)
+**33 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -220,6 +220,14 @@ Right-side dot-timeline rail: jump between user messages.
 
 Install: `dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone`
 
+### [dsh-outline](https://github.com/urzeye/dsh-outline)
+
+Repository: `urzeye/dsh-outline`
+
+A DSH Web plugin that keeps a real-time outline in sync with the conversation.
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add dsh-outline`
+
 ### [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator)
 
 Repository: `vibeinging/dsh-turn-navigator`
@@ -243,6 +251,14 @@ Repository: `vlln/dsh-task-status`
 Background task status bar: progress plus live output tail on the chat page.
 
 Install: `dsh plugin --profile web add github:vlln/dsh-task-status`
+
+### [DSH-Desktop](https://github.com/wuxjian/DSH-Desktop)
+
+Repository: `wuxjian/DSH-Desktop`
+
+A Tauri 2 and Vanilla TypeScript Windows desktop launcher that starts or embeds dsh web, checks and upgrades DSH, and provides a 3.03 MB Windows installer.
+
+Download: [Download for Windows](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 

@@ -31,7 +31,7 @@ export default function OpenGraphImage() {
             Direct routes to DSH plugins.
           </div>
           <div style={{ color: "#b8d3d9", display: "flex", fontSize: 30 }}>
-            360 original GitHub repositories with copy-ready install commands.
+            362 original GitHub repositories with clear primary actions.
           </div>
         </div>
         <div style={{ color: "#eacb80", display: "flex", fontSize: 22 }}>

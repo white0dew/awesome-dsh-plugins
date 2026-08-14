@@ -2,7 +2,7 @@
 
 Automation, orchestration, prompts, and agent workflows.
 
-**33 plugins** · [Back to all categories](index.md)
+**33 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge)
 

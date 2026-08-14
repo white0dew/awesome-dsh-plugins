@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**44 plugins** · [Back to all categories](index.md)
+**44 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-code-check](https://github.com/a179-sanae/dsh-code-check)
 

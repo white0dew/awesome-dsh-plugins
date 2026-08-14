@@ -2,7 +2,7 @@
 
 浏览器控制、网页研究、抓取和搜索辅助工具。
 
-**9 个插件** · [返回全部分类](index.md)
+**9 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)
 

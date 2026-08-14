@@ -2,7 +2,7 @@
 
 Image, audio, video, OCR, and other multimodal capabilities.
 
-**20 plugins** · [Back to all categories](index.md)
+**20 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-vision-sidecar](https://github.com/121103qwq/dsh-vision-sidecar)
 

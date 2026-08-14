@@ -1,10 +1,10 @@
 # DSH plugin directory
 
-Browse the catalog by capability. Each category page lists every plugin's original GitHub repository and install command.
+Browse the catalog by capability. Each category page lists every entry's original GitHub repository and primary action.
 
-| Category | Plugins | What you will find |
+| Category | Entries | What you will find |
 | --- | ---: | --- |
-| [UI & Themes](ui-themes.md) | 31 | Interfaces, terminal clients, themes, and presentation improvements. |
+| [UI & Themes](ui-themes.md) | 33 | Interfaces, terminal clients, themes, and presentation improvements. |
 | [Sessions & Memory](sessions-memory.md) | 45 | Conversation history, context, persistence, and memory helpers. |
 | [Tools & Capabilities](tools-capabilities.md) | 117 | Focused utilities and capability extensions for everyday work. |
 | [Workflow & Agents](workflow-agents.md) | 33 | Automation, orchestration, prompts, and agent workflows. |

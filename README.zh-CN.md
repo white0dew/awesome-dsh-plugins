@@ -2,14 +2,14 @@
 
 [English](README.md)
 
-一个独立的 DeepSeek Harness (DSH) 插件目录，提供每个插件原始 GitHub 仓库的直接链接和可复制的安装命令。
+一个独立的 DeepSeek Harness (DSH) 目录，提供插件和相关工具的原始 GitHub 仓库直接链接，以及相应的主要操作。
 
 - **Live site:** https://dsh.reshub.vip
 - **Repository:** https://github.com/white0dew/awesome-dsh-plugins
 
-## 浏览与安装
+## 浏览与使用
 
-浏览[完整插件目录](docs/plugins/zh/index.md)，选择分类，并在安装前查看插件仓库。
+浏览[完整目录](docs/plugins/zh/index.md)，选择分类，并在安装插件或下载相关工具前查看其仓库。
 
 ```bash
 dsh plugin --profile web add github:OWNER/REPOSITORY
@@ -17,9 +17,9 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## 分类
 
-| 分类 | 插件数 |
+| 分类 | 条目数 |
 | --- | ---: |
-| [界面与主题](docs/plugins/zh/ui-themes.md) | 31 |
+| [界面与主题](docs/plugins/zh/ui-themes.md) | 33 |
 | [会话与记忆](docs/plugins/zh/sessions-memory.md) | 45 |
 | [工具与能力](docs/plugins/zh/tools-capabilities.md) | 117 |
 | [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 33 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## 独立说明
 
-本目录收录 360 个插件，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 362 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 

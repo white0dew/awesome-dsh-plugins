@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**31 个插件** · [返回全部分类](index.md)
+**33 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -220,6 +220,14 @@ Repository: `SnowCrescenter-tech/dsh-milestone`
 
 Install: `dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone`
 
+### [dsh-outline](https://github.com/urzeye/dsh-outline)
+
+Repository: `urzeye/dsh-outline`
+
+为 DSH Web 实时同步对话大纲的插件。
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add dsh-outline`
+
 ### [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator)
 
 Repository: `vibeinging/dsh-turn-navigator`
@@ -243,6 +251,14 @@ Repository: `vlln/dsh-task-status`
 后台任务状态条：对话页任务进度 + 实时输出 tail。
 
 Install: `dsh plugin --profile web add github:vlln/dsh-task-status`
+
+### [DSH-Desktop](https://github.com/wuxjian/DSH-Desktop)
+
+Repository: `wuxjian/DSH-Desktop`
+
+基于 Tauri 2 和 Vanilla TypeScript 的 Windows 桌面启动器，可启动或嵌入 dsh web，检查并升级 DSH，并提供 3.03 MB 的 Windows 安装包。
+
+下载: [下载 Windows 安装包](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 

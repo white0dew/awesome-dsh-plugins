@@ -2,7 +2,7 @@
 
 Focused utilities and capability extensions for everyday work.
 
-**117 plugins** · [Back to all categories](index.md)
+**117 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt)
 

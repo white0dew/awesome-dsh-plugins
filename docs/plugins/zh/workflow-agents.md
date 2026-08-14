@@ -2,7 +2,7 @@
 
 自动化、编排、提示词与智能体工作流。
 
-**33 个插件** · [返回全部分类](index.md)
+**33 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge)
 

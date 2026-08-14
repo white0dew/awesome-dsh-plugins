@@ -2,7 +2,7 @@
 
 消息、通知以及外部服务连接。
 
-**21 个插件** · [返回全部分类](index.md)
+**21 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp)
 

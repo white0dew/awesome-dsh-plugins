@@ -2,7 +2,7 @@
 
 Playful, unusual, and exploratory community projects.
 
-**11 plugins** · [Back to all categories](index.md)
+**11 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin)
 

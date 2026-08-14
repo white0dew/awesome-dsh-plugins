@@ -214,8 +214,10 @@ function PluginCard({
   }, [requestArtalkPage]);
 
   async function handleCopy() {
+    if (plugin.primaryAction.type !== "copy-install") return;
+
     try {
-      await copyText(plugin.installCommand);
+      await copyText(plugin.primaryAction.command);
       setCopyState("copied");
       window.setTimeout(() => setCopyState("idle"), 1800);
     } catch {
@@ -297,24 +299,34 @@ function PluginCard({
       >
         {plugin.repository}
       </a>
-      {plugin.stars > 0 ? (
-        <div className="plugin-meta">
-          <span className="plugin-stars" title={withValue(text.starCount, numberFormat.format(plugin.stars))}>
-            <span aria-hidden="true">★</span> {numberFormat.format(plugin.stars)} {text.starsLabel}
-          </span>
-        </div>
-      ) : null}
+      <div className="plugin-meta">
+        <span className="plugin-stars" title={withValue(text.starCount, numberFormat.format(plugin.stars))}>
+          <span aria-hidden="true">🌟</span> {numberFormat.format(plugin.stars)} {text.starsLabel}
+        </span>
+      </div>
       <p className="plugin-description">{plugin.description[locale]}</p>
       <div className="plugin-card-actions">
         <div className="plugin-primary-actions">
-          <button
-            type="button"
-            className="card-action card-action-primary"
-            aria-label={withValue(text.copyInstallFor, plugin.name)}
-            onClick={handleCopy}
-          >
-            {copyState === "copied" ? text.copied : copyState === "failed" ? text.copyFailed : text.copyInstall}
-          </button>
+          {plugin.primaryAction.type === "copy-install" ? (
+            <button
+              type="button"
+              className="card-action card-action-primary"
+              aria-label={withValue(text.copyInstallFor, plugin.name)}
+              onClick={handleCopy}
+            >
+              {copyState === "copied" ? text.copied : copyState === "failed" ? text.copyFailed : text.copyInstall}
+            </button>
+          ) : (
+            <a
+              className="card-action card-action-primary"
+              href={plugin.primaryAction.url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${plugin.primaryAction.label[locale]}: ${plugin.name}`}
+            >
+              {plugin.primaryAction.label[locale]}
+            </a>
+          )}
           <a
             className="card-action"
             href={plugin.repoUrl}

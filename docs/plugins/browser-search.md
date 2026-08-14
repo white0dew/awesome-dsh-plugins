@@ -2,7 +2,7 @@
 
 Browser control, web research, crawling, and search helpers.
 
-**9 plugins** · [Back to all categories](index.md)
+**9 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)
 

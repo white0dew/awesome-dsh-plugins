@@ -2,7 +2,7 @@
 
 Model Context Protocol 服务、技能与扩展包。
 
-**29 个插件** · [返回全部分类](index.md)
+**29 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-mcp-manager](https://github.com/1a125/dsh-mcp-manager)
 

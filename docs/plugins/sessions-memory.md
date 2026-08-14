@@ -2,7 +2,7 @@
 
 Conversation history, context, persistence, and memory helpers.
 
-**45 plugins** · [Back to all categories](index.md)
+**45 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor)
 

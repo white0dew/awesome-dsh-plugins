@@ -2,7 +2,7 @@
 
 面向日常工作的实用工具和能力扩展。
 
-**117 个插件** · [返回全部分类](index.md)
+**117 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt)
 
