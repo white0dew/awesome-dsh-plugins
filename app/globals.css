@@ -1,16 +1,16 @@
 :root {
-  --abyss: #061820;
-  --deep: #082530;
-  --surface: #0c303d;
-  --surface-raised: #103a48;
-  --ink: #effaff;
-  --muted: #b7d1d6;
-  --quiet: #7ca5ae;
-  --line: #245565;
-  --aqua: #83d7e6;
-  --aqua-strong: #d2f5f6;
-  --sand: #e8c878;
-  --danger: #f2a99b;
+  --abyss: #edf4f8;
+  --deep: #f6fafc;
+  --surface: #e1edf4;
+  --surface-raised: #d3e5ef;
+  --ink: #102a3a;
+  --muted: #355568;
+  --quiet: #526f80;
+  --line: #b6cad6;
+  --aqua: #1f6fb2;
+  --aqua-strong: #0e4775;
+  --sand: #1f6fb2;
+  --danger: #a63e36;
   --display: "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
   --body: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", "Microsoft YaHei", monospace;
@@ -22,6 +22,8 @@
 
 html {
   background: var(--abyss);
+  color: var(--ink);
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
@@ -37,20 +39,28 @@ a {
 }
 
 button,
-input {
+input,
+select,
+textarea {
+  background: var(--deep);
+  color: var(--ink);
   font: inherit;
 }
 
 button,
 a,
-input {
+input,
+select,
+textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
 button:focus-visible,
 a:focus-visible,
-input:focus-visible {
-  outline: 3px solid var(--sand);
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--aqua);
   outline-offset: 3px;
 }
 
@@ -138,7 +148,7 @@ input:focus-visible {
 }
 
 .locale-control button {
-  background: transparent;
+  background: var(--deep);
   border: 0;
   color: var(--muted);
   cursor: pointer;
@@ -255,7 +265,7 @@ h3 {
 }
 
 .clear-filters {
-  background: transparent;
+  background: var(--abyss);
   border: 0;
   color: var(--aqua);
   font-size: 12px;
@@ -346,7 +356,7 @@ h3 {
 
 .feedback-dialog-backdrop {
   align-items: stretch;
-  background: rgba(2, 12, 16, 0.78);
+  background: rgba(16, 42, 58, 0.36);
   display: flex;
   justify-content: flex-end;
   inset: 0;
@@ -357,7 +367,7 @@ h3 {
 .feedback-dialog {
   background: var(--deep);
   border-left: 1px solid var(--line);
-  box-shadow: -12px 0 28px rgba(0, 0, 0, 0.28);
+  box-shadow: -12px 0 28px rgba(25, 60, 80, 0.18);
   display: flex;
   flex-direction: column;
   max-width: 680px;
@@ -383,7 +393,7 @@ h3 {
 
 .dialog-close {
   align-items: center;
-  background: transparent;
+  background: var(--deep);
   border: 1px solid var(--line);
   color: var(--muted);
   display: inline-flex;
@@ -442,7 +452,8 @@ h3 {
 }
 
 .feedback-comments .atk-textarea,
-.feedback-comments input {
+.feedback-comments input,
+.feedback-comments select {
   background: var(--abyss);
   border-color: var(--line);
   color: var(--ink);
@@ -499,10 +510,6 @@ h3 {
     padding: 18px;
   }
 }
-html {
-  color-scheme: dark;
-}
-
 button,
 input,
 select,
@@ -599,7 +606,7 @@ a {
 
 .category-nav-button {
   align-items: center;
-  background: transparent;
+  background: var(--abyss);
   border: 1px solid transparent;
   color: var(--muted);
   cursor: pointer;
@@ -807,7 +814,7 @@ a {
 .card-action,
 .card-icon-action {
   align-items: center;
-  background: transparent;
+  background: var(--deep);
   border: 1px solid var(--line);
   border-radius: 2px;
   color: var(--muted);
