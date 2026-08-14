@@ -344,12 +344,12 @@ function PluginCard({
         </button>
         <button
           type="button"
-          className="card-icon-action"
+          className="card-icon-action card-icon-action-comment"
           aria-label={withValue(text.openCommentsPanel, plugin.name)}
           title={withValue(text.openCommentsPanel, plugin.name)}
           onClick={() => onOpenComments(plugin)}
         >
-          <span aria-hidden="true">&#9998;</span>
+          <span aria-hidden="true">&#128488;&#65038;</span>
         </button>
       </div>
       {likeMessage ? <span id={likeStatusId} className="plugin-like-status" data-state={likeState} role="status">{likeMessage}</span> : null}
