@@ -3,15 +3,15 @@ import { categories, plugins } from "@/content/plugins.generated";
 
 const sourceLinks = [
   {
-    label: "awesome-dsh-plugin/awesome-dsh-plugin",
+    label: "Imported launch source: awesome-dsh-plugin/awesome-dsh-plugin",
     href: "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
   },
   {
-    label: "0xsline/awesome-deepseek-harness",
+    label: "Ecosystem watchlist: 0xsline/awesome-deepseek-harness",
     href: "https://github.com/0xsline/awesome-deepseek-harness",
   },
   {
-    label: "dongsheng123132/awesome-dsh-plugins",
+    label: "Ecosystem watchlist: dongsheng123132/awesome-dsh-plugins",
     href: "https://github.com/dongsheng123132/awesome-dsh-plugins",
   },
 ];
@@ -101,13 +101,13 @@ export default function HomePage() {
 
       <section id="sources" className="about-section" aria-labelledby="sources-title">
         <div>
-          <h2 id="sources-title">Built from live GitHub ecosystem sources.</h2>
+          <h2 id="sources-title">A public GitHub launch snapshot, with ecosystem watchlists.</h2>
         </div>
         <div className="about-copy about-stack">
           <p>
             This site tracks <strong>DeepSeek Harness plugins</strong> as a searchable catalog, not a static README dump.
-            The launch snapshot is generated from public GitHub plugin lists and normalized into one schema for names,
-            categories, install commands, and provenance.
+            The current launch batch is normalized from a public GitHub catalog. Other public lists are watchlists for
+            future additions and duplicate checks, while every current listing preserves a direct source link.
           </p>
           <ul className="about-list">
             {sourceLinks.map((source) => (
