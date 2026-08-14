@@ -1,0 +1,54 @@
+name: Submit a DSH plugin
+description: Suggest a public DeepSeek Harness plugin for the directory.
+title: "Plugin submission: "
+labels:
+  - plugin-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please submit a public GitHub repository. A listing is not an endorsement or security review.
+  - type: input
+    id: repository
+    attributes:
+      label: GitHub repository URL
+      description: Use the direct HTTPS URL for the owner/repository.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: install-command
+    attributes:
+      label: Install command
+      description: Use the documented DSH GitHub install form.
+      placeholder: dsh plugin --profile web add github:owner/repository
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Terminal interface
+        - Developer experience
+        - Visual output
+        - Vision and OCR
+        - Web interface
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Factual description
+      description: Briefly describe what the plugin does without unverifiable claims.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I understand that a directory listing is not an endorsement or security review.
+          required: true
+        - label: I have not claimed structural verification unless I checked dsh.bundle.patch and its referenced patch file.
+          required: true
