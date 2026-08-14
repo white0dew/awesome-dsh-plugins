@@ -306,51 +306,55 @@ function PluginCard({
       ) : null}
       <p className="plugin-description">{plugin.description[locale]}</p>
       <div className="plugin-card-actions">
-        <button
-          type="button"
-          className="card-action card-action-primary"
-          aria-label={withValue(text.copyInstallFor, plugin.name)}
-          onClick={handleCopy}
-        >
-          {copyState === "copied" ? text.copied : copyState === "failed" ? text.copyFailed : text.copyInstall}
-        </button>
-        <a
-          className="card-action"
-          href={plugin.repoUrl}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={withValue(text.githubFor, plugin.name)}
-        >
-          {text.viewGithub}
-        </a>
-        <button
-          type="button"
-          className="card-icon-action card-icon-action-like"
-          aria-busy={likeState === "loading"}
-          aria-describedby={likeMessage ? likeStatusId : undefined}
-          aria-label={likeLabel}
-          title={likeLabel}
-          onClick={handleLike}
-          disabled={likeState === "loading"}
-        >
-          <span aria-hidden="true">&#9829;</span>
-          {likeCount !== null ? (
-            <span className="card-like-count" aria-hidden="true">{numberFormat.format(likeCount)}</span>
-          ) : (
-            <span className="card-like-loading" role="status" aria-label={withValue(text.likeCountLoading, plugin.name)}>
-              <span aria-hidden="true" />
-            </span>
-          )}
-        </button>
-        <button
-          type="button"
-          className="card-icon-action card-icon-action-comment"
-          aria-label={withValue(text.openCommentsPanel, plugin.name)}
-          title={withValue(text.openCommentsPanel, plugin.name)}
-          onClick={() => onOpenComments(plugin)}
-        >
-          <span aria-hidden="true">&#128488;&#65038;</span>
-        </button>
+        <div className="plugin-primary-actions">
+          <button
+            type="button"
+            className="card-action card-action-primary"
+            aria-label={withValue(text.copyInstallFor, plugin.name)}
+            onClick={handleCopy}
+          >
+            {copyState === "copied" ? text.copied : copyState === "failed" ? text.copyFailed : text.copyInstall}
+          </button>
+          <a
+            className="card-action"
+            href={plugin.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={withValue(text.githubFor, plugin.name)}
+          >
+            {text.viewGithub}
+          </a>
+        </div>
+        <div className="plugin-feedback-actions">
+          <button
+            type="button"
+            className="card-icon-action card-icon-action-like"
+            aria-busy={likeState === "loading"}
+            aria-describedby={likeMessage ? likeStatusId : undefined}
+            aria-label={likeLabel}
+            title={likeLabel}
+            onClick={handleLike}
+            disabled={likeState === "loading"}
+          >
+            <span aria-hidden="true">&#9829;</span>
+            {likeCount !== null ? (
+              <span className="card-like-count" aria-hidden="true">{numberFormat.format(likeCount)}</span>
+            ) : (
+              <span className="card-like-loading" role="status" aria-label={withValue(text.likeCountLoading, plugin.name)}>
+                <span aria-hidden="true" />
+              </span>
+            )}
+          </button>
+          <button
+            type="button"
+            className="card-icon-action card-icon-action-comment"
+            aria-label={withValue(text.openCommentsPanel, plugin.name)}
+            title={withValue(text.openCommentsPanel, plugin.name)}
+            onClick={() => onOpenComments(plugin)}
+          >
+            <span aria-hidden="true">&#128488;&#65038;</span>
+          </button>
+        </div>
       </div>
       {likeMessage ? <span id={likeStatusId} className="plugin-like-status" data-state={likeState} role="status">{likeMessage}</span> : null}
       <p className="copy-status" aria-live="polite">{copyStatus}</p>
