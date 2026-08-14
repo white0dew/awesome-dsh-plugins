@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { siteDescription, siteName, siteUrl } from "@/lib/site";
+import "artalk/Artalk.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteName,
   title: {
-    default: "Awesome DSH Plugins | DeepSeek Harness plugin directory",
+    default: "Awesome DSH Plugins | Direct GitHub tool directory",
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   keywords: [
-    "DeepSeek Harness plugins",
+    "DeepSeek Harness tools",
     "DSH plugins",
-    "DeepSeek Harness plugin directory",
-    "awesome DSH plugins",
-    "GitHub",
-    "DeepSeek Harness GitHub plugins",
+    "GitHub tool directory",
   ],
   alternates: {
     canonical: "/",
@@ -35,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName,
-    title: "Awesome DSH Plugins | Direct DeepSeek Harness plugins",
+    title: "Awesome DSH Plugins | Direct GitHub tool directory",
     description: siteDescription,
     images: [
       {
@@ -48,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Awesome DSH Plugins | Direct DeepSeek Harness plugins",
+    title: "Awesome DSH Plugins | Direct GitHub tool directory",
     description: siteDescription,
     images: ["/opengraph-image"],
   },

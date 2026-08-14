@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { PluginFeedbackDialog } from "@/components/plugin-feedback-dialog";
 import { useLocale } from "@/components/locale-provider";
 import {
   categories,
@@ -10,9 +11,20 @@ import {
   type PluginCategory,
 } from "@/content/plugins.generated";
 
-type PluginDirectoryProps = {
-  featuredPlugins: readonly Plugin[];
-};
+type DirectoryCategory = "all" | PluginCategory;
+type CopyState = "idle" | "copied" | "failed";
+
+function withValue(template: string, value: string | number) {
+  return template.replace("{count}", String(value)).replace("{name}", String(value));
+}
+
+function withCategory(template: string, category: string, count: number) {
+  return template.replace("{category}", category).replace("{count}", String(count));
+}
+
+function isPluginCategory(value: string | null): value is PluginCategory {
+  return value !== null && categories.some((item) => item.id === value);
+}
 
 async function copyText(value: string) {
   if (navigator.clipboard?.writeText) {
@@ -26,62 +38,157 @@ async function copyText(value: string) {
   textArea.style.opacity = "0";
   document.body.appendChild(textArea);
   textArea.select();
-  document.execCommand("copy");
+  const copied = document.execCommand("copy");
   textArea.remove();
+
+  if (!copied) throw new Error("Copy command failed");
 }
 
-function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: boolean }) {
-  const [copied, setCopied] = useState(false);
+function PluginRow({
+  plugin,
+  onDiscuss,
+}: {
+  plugin: Plugin;
+  onDiscuss: (plugin: Plugin) => void;
+}) {
+  const [copyState, setCopyState] = useState<CopyState>("idle");
   const { locale, text } = useLocale();
   const category = categoryById[plugin.category];
 
   async function handleCopy() {
     try {
       await copyText(plugin.installCommand);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1800);
+      setCopyState("copied");
+      window.setTimeout(() => setCopyState("idle"), 1800);
     } catch {
-      setCopied(false);
+      setCopyState("failed");
+      window.setTimeout(() => setCopyState("idle"), 2600);
     }
   }
 
-  return (
-    <article className={featured ? "plugin-card plugin-card-featured" : "plugin-card"}>
-      <div className="card-heading">
-        <div>
-          <p className="card-kicker">{category.label[locale]}</p>
-          <h3>{plugin.name}</h3>
-        </div>
-        {plugin.latest ? <span className="new-label">{text.recentlyIndexed}</span> : null}
-      </div>
+  const copyStatus = copyState === "copied"
+    ? withValue(text.copyStatus, plugin.name)
+    : copyState === "failed"
+      ? withValue(text.copyError, plugin.name)
+      : "";
 
-      <p className="card-meta">
-        <code>{plugin.repository}</code>
-      </p>
-      <p className="plugin-description">{plugin.description[locale]}</p>
-      <p className="verification" title={plugin.verification.detail}>
-        <span aria-hidden="true" />
-        {text.communityDiscovered}
-      </p>
-      <div className="install-block">
-        <code>{plugin.installCommand}</code>
-      </div>
-      <div className="card-actions">
-        <button type="button" className="copy-button" onClick={handleCopy}>
-          {copied ? text.copied : text.copyInstall}
-        </button>
-        <a href={plugin.repoUrl} target="_blank" rel="noreferrer">
-          {text.viewGithub}
-        </a>
+  return (
+    <article className="plugin-row">
+      <a
+        className="plugin-row-main"
+        href={plugin.repoUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={withValue(text.openRepository, plugin.name)}
+      >
+        <div className="plugin-row-heading">
+          <h3>{plugin.name}</h3>
+          <span className="category-tag">{category.label[locale]}</span>
+        </div>
+        <p className="plugin-repository">
+          <span>{text.originalRepository}</span>
+          <code>{plugin.repository}</code>
+        </p>
+        <p className="plugin-description">{plugin.description[locale]}</p>
+        <p className="verification" title={text.communityDetail}>
+          <strong>{text.communityDiscovered}</strong>
+          <span>{text.communityDetail}</span>
+        </p>
+      </a>
+      <div className="plugin-row-actions">
+        <code className="install-command">{plugin.installCommand}</code>
+        <div className="row-command-actions">
+          <button
+            type="button"
+            className="row-action"
+            aria-label={withValue(text.copyInstallFor, plugin.name)}
+            onClick={handleCopy}
+          >
+            {copyState === "copied" ? text.copied : text.copyInstall}
+          </button>
+          <a
+            className="row-action"
+            href={plugin.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={withValue(text.githubFor, plugin.name)}
+          >
+            {text.viewGithub}
+          </a>
+          <button
+            type="button"
+            className="row-action row-action-discuss"
+            aria-label={withValue(text.discussVoteFor, plugin.name)}
+            onClick={() => onDiscuss(plugin)}
+          >
+            {text.discussVote}
+          </button>
+        </div>
+        <p className="copy-status" aria-live="polite">
+          {copyStatus}
+        </p>
       </div>
     </article>
   );
 }
 
-export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
+export function PluginDirectory() {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<"all" | PluginCategory>("all");
+  const [category, setCategory] = useState<DirectoryCategory>("all");
+  const [hydrated, setHydrated] = useState(false);
+  const [feedbackPlugin, setFeedbackPlugin] = useState<Plugin | null>(null);
   const { locale, text } = useLocale();
+
+  const readUrlFilters = useCallback(() => {
+    const params = new URLSearchParams(window.location.search);
+    const urlCategory = params.get("cat");
+    setQuery(params.get("q") ?? "");
+    setCategory(isPluginCategory(urlCategory) ? urlCategory : "all");
+  }, []);
+
+  useEffect(() => {
+    const hydrationTimer = window.setTimeout(() => {
+      readUrlFilters();
+      setHydrated(true);
+    }, 0);
+    window.addEventListener("popstate", readUrlFilters);
+    return () => {
+      window.clearTimeout(hydrationTimer);
+      window.removeEventListener("popstate", readUrlFilters);
+    };
+  }, [readUrlFilters]);
+
+  const updateUrl = useCallback((nextQuery: string, nextCategory: DirectoryCategory, mode: "push" | "replace") => {
+    const url = new URL(window.location.href);
+    const trimmedQuery = nextQuery.trim();
+
+    if (trimmedQuery) url.searchParams.set("q", trimmedQuery);
+    else url.searchParams.delete("q");
+
+    if (nextCategory === "all") url.searchParams.delete("cat");
+    else url.searchParams.set("cat", nextCategory);
+
+    if (mode === "push") window.history.pushState({}, "", url);
+    else window.history.replaceState({}, "", url);
+  }, []);
+
+  const setSearch = useCallback((nextQuery: string) => {
+    setQuery(nextQuery);
+    updateUrl(nextQuery, category, "replace");
+  }, [category, updateUrl]);
+
+  const setCategoryFilter = useCallback((nextCategory: DirectoryCategory) => {
+    setCategory(nextCategory);
+    updateUrl(query, nextCategory, "push");
+  }, [query, updateUrl]);
+
+  const clearFilters = useCallback(() => {
+    setQuery("");
+    setCategory("all");
+    updateUrl("", "all", "push");
+  }, [updateUrl]);
+
+  const closeFeedback = useCallback(() => setFeedbackPlugin(null), []);
 
   const filteredPlugins = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -101,87 +208,87 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
     });
   }, [category, locale, query]);
 
-  const resultLabel = locale === "zh" ? text.plugins : filteredPlugins.length === 1 ? text.plugin : text.plugins;
+  const filtersActive = query.trim().length > 0 || category !== "all";
 
   return (
-    <>
-      <section className="featured-section" aria-labelledby="featured-title">
-        <div className="section-heading">
-          <div>
-            <h2 id="featured-title">{text.featuredTitle}</h2>
-          </div>
-          <p>{text.featuredCopy}</p>
+    <section id="directory" className="directory-section" aria-labelledby="directory-title">
+      <div className="directory-heading">
+        <div>
+          <p className="directory-kicker">{text.directoryKicker}</p>
+          <h1 id="directory-title">{text.searchTitle}</h1>
         </div>
-        <div className="featured-grid">
-          {featuredPlugins.map((plugin) => (
-            <PluginCard key={plugin.id} plugin={plugin} featured />
-          ))}
+        <p>{text.searchCopy}</p>
+      </div>
+
+      <div className="directory-toolbar">
+        <div className="search-field">
+          <label htmlFor="plugin-search">{text.search}</label>
+          <input
+            id="plugin-search"
+            type="search"
+            value={query}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder={text.searchPlaceholder}
+          />
         </div>
-      </section>
-
-      <section id="directory" className="directory-section" aria-labelledby="directory-title">
-        <div className="directory-heading">
-          <div>
-            <h2 id="directory-title">{text.searchTitle}</h2>
-          </div>
-          <p id="directory-description">{text.searchCopy}</p>
-        </div>
-
-        <details className="filter-panel" aria-describedby="directory-description">
-          <summary>{text.filters}</summary>
-          <div className="filter-bar">
-            <div className="search-field">
-              <label htmlFor="plugin-search">{text.search}</label>
-              <input
-                id="plugin-search"
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder={text.searchPlaceholder}
-              />
-            </div>
-            <div className="category-field">
-              <label htmlFor="category-filter">{text.category}</label>
-              <select
-                id="category-filter"
-                value={category}
-                onChange={(event) => setCategory(event.target.value as "all" | PluginCategory)}
-              >
-                <option value="all">{text.allCategories}</option>
-                {categories.map((item) => (
-                  <option key={item.id} value={item.id}>
-                    {item.label[locale]}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <p className="result-count" aria-live="polite">
-              {filteredPlugins.length} {resultLabel}
-            </p>
-          </div>
-        </details>
-
-        {filteredPlugins.length > 0 ? (
-          <div className="plugin-grid">
-            {filteredPlugins.map((plugin) => (
-              <PluginCard key={plugin.id} plugin={plugin} />
-            ))}
-          </div>
-        ) : (
-          <div className="empty-state" role="status">
-            <p>{text.noResults}</p>
-            <button
-              type="button"
-              onClick={() => {
-                setQuery("");
-                setCategory("all");
-              }}
-            >
+        <div className="directory-result-line">
+          <p className="result-count" aria-live="polite">
+            {withValue(text.resultPhrase, filteredPlugins.length)}
+          </p>
+          {filtersActive ? (
+            <button type="button" className="clear-filters" onClick={clearFilters}>
               {text.clearFilters}
             </button>
-          </div>
-        )}
-      </section>
-    </>
+          ) : null}
+        </div>
+        <div className="category-tabs" role="group" aria-label={text.categoryTabsAria}>
+          <button
+            type="button"
+            className="category-tab"
+            aria-pressed={category === "all"}
+            aria-label={withCategory(text.categoryTabAria, text.allCategories, plugins.length)}
+            onClick={() => setCategoryFilter("all")}
+          >
+            <span>{text.allCategories}</span>
+            <span className="tab-count">{plugins.length}</span>
+          </button>
+          {categories.map((item) => {
+            const count = plugins.filter((plugin) => plugin.category === item.id).length;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                className="category-tab"
+                aria-pressed={category === item.id}
+                aria-label={withCategory(text.categoryTabAria, item.label[locale], count)}
+                onClick={() => setCategoryFilter(item.id)}
+              >
+                <span>{item.label[locale]}</span>
+                <span className="tab-count">{count}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {filteredPlugins.length > 0 ? (
+        <div className="plugin-list" aria-busy={!hydrated}>
+          {filteredPlugins.map((plugin) => (
+            <PluginRow key={plugin.id} plugin={plugin} onDiscuss={setFeedbackPlugin} />
+          ))}
+        </div>
+      ) : (
+        <div className="empty-state" role="status">
+          <p>{text.noResults}</p>
+          {filtersActive ? (
+            <button type="button" className="clear-filters" onClick={clearFilters}>
+              {text.clearFilters}
+            </button>
+          ) : null}
+        </div>
+      )}
+
+      <PluginFeedbackDialog key={feedbackPlugin?.id ?? "closed"} plugin={feedbackPlugin} onClose={closeFeedback} />
+    </section>
   );
 }
