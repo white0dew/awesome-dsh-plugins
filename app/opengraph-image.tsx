@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 
+export const dynamic = "force-static";
 export const alt = "Awesome DSH Plugins - DeepSeek Harness Plugin Directory";
 export const size = {
   width: 1200,
