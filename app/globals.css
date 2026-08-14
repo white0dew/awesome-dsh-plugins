@@ -56,8 +56,9 @@ input:focus-visible {
 
 .site-shell {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1280px;
   min-height: 100vh;
+  padding-inline: clamp(24px, 5vw, 72px);
 }
 
 .topbar {
@@ -68,7 +69,7 @@ input:focus-visible {
   gap: 20px;
   justify-content: space-between;
   min-height: 58px;
-  padding: 10px 32px;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -160,7 +161,7 @@ input:focus-visible {
 }
 
 .directory-section {
-  padding: 34px 32px 52px;
+  padding: 34px 0 52px;
 }
 
 .directory-heading {
@@ -492,6 +493,33 @@ h3 {
   color: var(--sand);
 }
 
+.row-icon-action-like:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.plugin-like-control {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+}
+
+.row-like-count {
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.plugin-like-status {
+  color: var(--quiet);
+  font-size: 11px;
+  line-height: 1.3;
+  max-width: 180px;
+}
+
+.plugin-like-status[data-state="error"] {
+  color: var(--danger);
+}
+
 .copy-status {
   color: var(--quiet);
   font-size: 11px;
@@ -570,32 +598,6 @@ h3 {
   color: var(--aqua-strong);
 }
 
-.feedback-likes-section {
-  border-bottom: 1px solid var(--line);
-  padding: 16px 0;
-}
-
-.vote-button {
-  background: var(--aqua);
-  border: 1px solid var(--aqua);
-  border-radius: 2px;
-  color: var(--abyss);
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-  min-height: 31px;
-  padding: 5px 8px;
-}
-
-.vote-button:hover:not(:disabled) {
-  background: var(--aqua-strong);
-}
-
-.vote-button:disabled {
-  cursor: wait;
-  opacity: 0.65;
-}
-
 .feedback-status {
   color: var(--quiet);
   font-size: 12px;
@@ -607,7 +609,6 @@ h3 {
   padding-top: 18px;
 }
 
-.feedback-likes-section > h3,
 .feedback-comments-section > h3 {
   font-size: 16px;
   margin-bottom: 12px;
@@ -654,7 +655,7 @@ h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px 14px;
-    padding: 10px 18px;
+    padding: 10px 0;
   }
 
   .brand {
@@ -666,7 +667,7 @@ h3 {
   }
 
   .directory-section {
-    padding: 24px 18px 36px;
+    padding: 24px 0 36px;
   }
 
   .directory-heading {

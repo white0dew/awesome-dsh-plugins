@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { PluginFeedbackDialog, type FeedbackPanelFocus } from "@/components/plugin-feedback-dialog";
+import { PluginFeedbackDialog } from "@/components/plugin-feedback-dialog";
 import { useLocale } from "@/components/locale-provider";
 import {
   categories,
@@ -10,9 +10,16 @@ import {
   type Plugin,
   type PluginCategory,
 } from "@/content/plugins.generated";
+import { ARTALK_SITE_NAME, getPluginArtalkPageKey, getPluginArtalkPageUrl } from "@/lib/artalk";
 
 type DirectoryCategory = "all" | PluginCategory;
 type CopyState = "idle" | "copied" | "failed";
+type LikeState = "idle" | "loading" | "error";
+
+type ArtalkPage = {
+  id: number;
+  up: number | null;
+};
 
 function withValue(template: string, value: string | number) {
   return template.replace("{count}", String(value)).replace("{name}", String(value));
@@ -20,6 +27,38 @@ function withValue(template: string, value: string | number) {
 
 function withCategory(template: string, category: string, count: number) {
   return template.replace("{category}", category).replace("{count}", String(count));
+}
+
+function withNameAndCount(template: string, name: string, count: number) {
+  return template.replace("{name}", name).replace("{count}", String(count));
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function unwrapArtalkResponse(payload: unknown): Record<string, unknown> | null {
+  if (!isRecord(payload)) return null;
+  return isRecord(payload.data) ? payload.data : payload;
+}
+
+function readArtalkPage(payload: unknown): ArtalkPage | null {
+  const data = unwrapArtalkResponse(payload);
+  if (!data || !isRecord(data.page)) return null;
+
+  const { id, vote_up: up } = data.page;
+  if (typeof id !== "number" || !Number.isInteger(id) || id <= 0) return null;
+
+  return {
+    id,
+    up: typeof up === "number" && Number.isFinite(up) && up >= 0 ? up : null,
+  };
+}
+
+function readVoteCount(payload: unknown): number | null {
+  const data = unwrapArtalkResponse(payload);
+  const up = data?.up;
+  return typeof up === "number" && Number.isFinite(up) && up >= 0 ? up : null;
 }
 
 function isPluginCategory(value: string | null): value is PluginCategory {
@@ -46,12 +85,14 @@ async function copyText(value: string) {
 
 function PluginRow({
   plugin,
-  onOpenFeedback,
+  onOpenComments,
 }: {
   plugin: Plugin;
-  onOpenFeedback: (plugin: Plugin, focus: FeedbackPanelFocus) => void;
+  onOpenComments: (plugin: Plugin) => void;
 }) {
   const [copyState, setCopyState] = useState<CopyState>("idle");
+  const [likeState, setLikeState] = useState<LikeState>("idle");
+  const [likeCount, setLikeCount] = useState<number | null>(null);
   const { locale, text } = useLocale();
   const category = categoryById[plugin.category];
 
@@ -66,11 +107,59 @@ function PluginRow({
     }
   }
 
+  async function handleLike() {
+    if (likeState === "loading") return;
+
+    setLikeState("loading");
+    try {
+      const pageKey = getPluginArtalkPageKey(plugin);
+      const pageUrl = getPluginArtalkPageUrl(plugin);
+      const params = new URLSearchParams({
+        site_name: ARTALK_SITE_NAME,
+        page_key: pageKey,
+        page_title: plugin.name,
+        page_url: pageUrl,
+        limit: "0",
+      });
+      const pageResponse = await fetch(`/artalk/api/v2/comments?${params.toString()}`);
+      if (!pageResponse.ok) throw new Error("Artalk page request failed");
+
+      const pagePayload: unknown = await pageResponse.json();
+      const page = readArtalkPage(pagePayload);
+      if (!page) throw new Error("Artalk response is missing a valid page id");
+      if (page.up !== null) setLikeCount(page.up);
+
+      const voteResponse = await fetch(`/artalk/api/v2/votes/page_up/${page.id}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({}),
+      });
+      if (!voteResponse.ok) throw new Error("Artalk vote request failed");
+
+      const votePayload: unknown = await voteResponse.json();
+      const up = readVoteCount(votePayload);
+      if (up === null) throw new Error("Artalk vote response is missing a count");
+      setLikeCount(up);
+      setLikeState("idle");
+    } catch {
+      setLikeState("error");
+    }
+  }
+
   const copyStatus = copyState === "copied"
     ? withValue(text.copyStatus, plugin.name)
     : copyState === "failed"
       ? withValue(text.copyError, plugin.name)
       : "";
+  const likeMessage = likeState === "loading"
+    ? text.likeLoading
+    : likeState === "error"
+      ? text.likeError
+      : "";
+  const likeLabel = likeCount === null
+    ? withValue(text.likeButton, plugin.name)
+    : withNameAndCount(text.likeButtonCount, plugin.name, likeCount);
+  const likeStatusId = `plugin-like-status-${plugin.id}`;
 
   return (
     <article className="plugin-row">
@@ -121,21 +210,32 @@ function PluginRow({
           >
             {text.viewGithub}
           </a>
-          <button
-            type="button"
-            className="row-icon-action row-icon-action-like"
-            aria-label={withValue(text.openLikesPanel, plugin.name)}
-            title={withValue(text.openLikesPanel, plugin.name)}
-            onClick={() => onOpenFeedback(plugin, "likes")}
-          >
-            <span aria-hidden="true">♥</span>
-          </button>
+          <div className="plugin-like-control">
+            <button
+              type="button"
+              className="row-icon-action row-icon-action-like"
+              aria-busy={likeState === "loading"}
+              aria-describedby={likeMessage ? likeStatusId : undefined}
+              aria-label={likeLabel}
+              title={likeLabel}
+              onClick={handleLike}
+              disabled={likeState === "loading"}
+            >
+              <span aria-hidden="true">♥</span>
+            </button>
+            {likeCount !== null ? <span className="row-like-count" aria-hidden="true">{likeCount}</span> : null}
+            {likeMessage ? (
+              <span id={likeStatusId} className="plugin-like-status" data-state={likeState} role="status">
+                {likeMessage}
+              </span>
+            ) : null}
+          </div>
           <button
             type="button"
             className="row-icon-action"
             aria-label={withValue(text.openCommentsPanel, plugin.name)}
             title={withValue(text.openCommentsPanel, plugin.name)}
-            onClick={() => onOpenFeedback(plugin, "comments")}
+            onClick={() => onOpenComments(plugin)}
           >
             <span aria-hidden="true">✎</span>
           </button>
@@ -152,10 +252,7 @@ export function PluginDirectory() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<DirectoryCategory>("all");
   const [hydrated, setHydrated] = useState(false);
-  const [feedbackTarget, setFeedbackTarget] = useState<{
-    plugin: Plugin;
-    focus: FeedbackPanelFocus;
-  } | null>(null);
+  const [feedbackTarget, setFeedbackTarget] = useState<Plugin | null>(null);
   const { locale, text } = useLocale();
 
   const readUrlFilters = useCallback(() => {
@@ -207,8 +304,8 @@ export function PluginDirectory() {
     updateUrl("", "all", "push");
   }, [updateUrl]);
 
-  const openFeedback = useCallback((plugin: Plugin, focus: FeedbackPanelFocus) => {
-    setFeedbackTarget({ plugin, focus });
+  const openComments = useCallback((plugin: Plugin) => {
+    setFeedbackTarget(plugin);
   }, []);
 
   const closeFeedback = useCallback(() => setFeedbackTarget(null), []);
@@ -297,7 +394,7 @@ export function PluginDirectory() {
       {filteredPlugins.length > 0 ? (
         <div className="plugin-list" aria-busy={!hydrated}>
           {filteredPlugins.map((plugin) => (
-            <PluginRow key={plugin.id} plugin={plugin} onOpenFeedback={openFeedback} />
+            <PluginRow key={plugin.id} plugin={plugin} onOpenComments={openComments} />
           ))}
         </div>
       ) : (
@@ -312,9 +409,8 @@ export function PluginDirectory() {
       )}
 
       <PluginFeedbackDialog
-        key={feedbackTarget ? `${feedbackTarget.plugin.id}-${feedbackTarget.focus}` : "closed"}
-        plugin={feedbackTarget?.plugin ?? null}
-        initialFocus={feedbackTarget?.focus ?? "comments"}
+        key={feedbackTarget?.id ?? "closed"}
+        plugin={feedbackTarget}
         onClose={closeFeedback}
       />
     </section>

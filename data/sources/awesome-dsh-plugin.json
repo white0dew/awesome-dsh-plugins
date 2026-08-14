@@ -44,7 +44,8 @@
     "zh": "DeepSeek Harness 的终端 UI（TUI）。"
    },
    "install": "dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 108
   },
   {
    "name": "deepseek-harness-tui",
@@ -57,7 +58,7 @@
    },
    "install": "dsh plugin --profile web add github:openma-ai/deepseek-harness-tui",
    "added": "2026-08-14",
-   "stars": 7
+   "stars": 8
   },
   {
    "name": "dsh-at-file",
@@ -69,7 +70,8 @@
     "zh": "Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-at-file",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 93
   },
   {
    "name": "ui-status-label",
@@ -81,7 +83,8 @@
     "zh": "把鲸鱼娘思考时的 \"deep diving\" 状态文案自定义成任意你想要的样子。"
    },
    "install": "dsh plugin --profile web add github:alingalingling/ui-status-label",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 26
   },
   {
    "name": "dsh-openpencil",
@@ -93,7 +96,8 @@
     "zh": "OpenPencil 设计预览与编辑插件。"
    },
    "install": "dsh plugin --profile web add github:ZSeven-W/dsh-openpencil",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 60
   },
   {
    "name": "dsh-visualize",
@@ -105,7 +109,8 @@
     "zh": "对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。"
    },
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-visualize",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 67
   },
   {
    "name": "dsh-side-panel",
@@ -117,7 +122,8 @@
     "zh": "侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。"
    },
    "install": "dsh plugin --profile web add github:ccq1/dsh-side-panel",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 15
   },
   {
    "name": "dsh-focus-chat",
@@ -129,7 +135,8 @@
     "zh": "「聚焦会话」精简视图，只关注最终产出结果。"
    },
    "install": "dsh plugin --profile web add github:dingyi222666/dsh-focus-chat",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 11
   },
   {
    "name": "dsh-genui",
@@ -141,7 +148,8 @@
     "zh": "助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-genui",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 57
   },
   {
    "name": "dsh-annotation",
@@ -153,7 +161,8 @@
     "zh": "选中文字→批注→随消息发送，回复按批注逐条对照。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-annotation",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 27
   },
   {
    "name": "dsh-navbar",
@@ -165,7 +174,8 @@
     "zh": "对话节点导航条，右缘节点串快速跳转 user 消息。"
    },
    "install": "dsh plugin --profile web add github:vlln/dsh-navbar",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 12
   },
   {
    "name": "dsh-task-status",
@@ -177,7 +187,8 @@
     "zh": "后台任务状态条：对话页任务进度 + 实时输出 tail。"
    },
    "install": "dsh plugin --profile web add github:vlln/dsh-task-status",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 7
   },
   {
    "name": "dsh-web-archive",
@@ -189,7 +200,8 @@
     "zh": "折叠对话中的 Think、Bash 等「无用消息」。"
    },
    "install": "dsh plugin --profile web add github:renat3u/dsh-web-archive",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-spotlight",
@@ -201,7 +213,8 @@
     "zh": "键盘优先的命令面板（command palette）。"
    },
    "install": "dsh plugin --profile web add github:0xsline/dsh-spotlight",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-101",
@@ -213,7 +226,8 @@
     "zh": "DSH 文档阅读模式。"
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-101",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-drag-and-drop",
@@ -225,7 +239,8 @@
     "zh": "跨平台文件拖拽与原始路径插入，无需复制文件。"
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-drag-and-drop",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-deeplink",
@@ -237,7 +252,8 @@
     "zh": "`?session=` / `?workspace=` 深链直达指定项目对话。"
    },
    "install": "dsh plugin --profile web add github:qyw233/dsh-deeplink",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-diff-viewer",
@@ -249,7 +265,8 @@
     "zh": "PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。"
    },
    "install": "dsh plugin --profile web add github:lehhair/dsh-diff-viewer",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "ex-setting",
@@ -261,7 +278,8 @@
     "zh": "DSH 的设置扩展。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/ex-setting",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "web-components",
@@ -273,7 +291,8 @@
     "zh": "Web Components 支持。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/web-components",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-turn-navigator",
@@ -285,7 +304,8 @@
     "zh": "对话轮次导航。"
    },
    "install": "dsh plugin --profile web add github:vibeinging/dsh-turn-navigator",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-milestone",
@@ -297,7 +317,8 @@
     "zh": "右侧圆点时间轴导航条，点击跳转到任意用户消息。"
    },
    "install": "dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 7
   },
   {
    "name": "dsh-balance-meter",
@@ -309,7 +330,8 @@
     "zh": "输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。"
    },
    "install": "dsh plugin --profile web add github:Ghost011118/dsh-balance-meter",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 10
   },
   {
    "name": "ds-api-usage",
@@ -321,7 +343,8 @@
     "zh": "在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。"
    },
    "install": "dsh plugin --profile web add github:Sev7een/ds-api-usage",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 6
   },
   {
    "name": "dsh-TUI",
@@ -334,7 +357,7 @@
    },
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14",
-   "stars": 615
+   "stars": 669
   },
   {
    "name": "DSH-better-sidebar",
@@ -346,7 +369,8 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 571
   },
   {
    "name": "dsh-sticky-disclosure",
@@ -358,7 +382,8 @@
     "zh": "一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。"
    },
    "install": "dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 2
   },
   {
    "name": "dsh-turn-rewind",
@@ -370,7 +395,8 @@
     "zh": "对话回退：基于持久 Change Ledger 回滚会话与工作区状态。"
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-turn-rewind",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 33
   },
   {
    "name": "dsh-crosstalk",
@@ -382,7 +408,8 @@
     "zh": "跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "distill",
@@ -394,7 +421,8 @@
     "zh": "自动对话蒸馏：后台 subagent 反省 + 技能 create/update。"
    },
    "install": "dsh plugin --profile web add github:LoserFox/distill",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 15
   },
   {
    "name": "dsh-share",
@@ -406,7 +434,8 @@
     "zh": "一键分享你的对话。"
    },
    "install": "dsh plugin --profile web add github:hellodigua/dsh-share",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 14
   },
   {
    "name": "dsh-message-edit",
@@ -418,7 +447,8 @@
     "zh": "基于分支的消息编辑、reroll、重试与版本时间线。"
    },
    "install": "dsh plugin --profile web add github:Moeblack/dsh-message-edit",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 16
   },
   {
    "name": "dsh-mnemon",
@@ -430,7 +460,8 @@
     "zh": "Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-mnemon",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 5
   },
   {
    "name": "dsh-mneme",
@@ -443,7 +474,7 @@
    },
    "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
    "added": "2026-08-14",
-   "stars": 3
+   "stars": 5
   },
   {
    "name": "nowledge-mem-deepseek-harness",
@@ -455,7 +486,8 @@
     "zh": "给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。"
    },
    "install": "dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 4
   },
   {
    "name": "dsh-memory",
@@ -467,7 +499,8 @@
     "zh": "基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-memory",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 2
   },
   {
    "name": "dsh-sidechain",
@@ -479,7 +512,8 @@
     "zh": "`/side` 持续性侧会话与 `/btw` 一次性侧问，在临时 fork 中运行、不写入主会话历史。"
    },
    "install": "dsh plugin --profile web add github:Buyi-wsgzg/dsh-sidechain",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-conversation-share",
@@ -491,7 +525,8 @@
     "zh": "分享任意段落的对话。"
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-conversation-share",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-explain",
@@ -503,7 +538,8 @@
     "zh": "本地优先学习模式：跨会话全局学习线程、按来源讲解。"
    },
    "install": "dsh plugin --profile web add github:yuezengwu/dsh-explain",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-prompt-studio",
@@ -515,7 +551,8 @@
     "zh": "带实时预览的用户/内置 system prompt 分节编辑器。"
    },
    "install": "dsh plugin --profile web add github:Moeblack/dsh-prompt-studio",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-chat-import",
@@ -527,7 +564,8 @@
     "zh": "把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话。"
    },
    "install": "dsh plugin --profile web add github:Nwflower/dsh-chat-import",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 16
   },
   {
    "name": "dsh-interconnect",
@@ -539,7 +577,8 @@
     "zh": "跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"
    },
    "install": "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 22
   },
   {
    "name": "dsh-bash-terminal",
@@ -564,7 +603,8 @@
     "zh": "让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。"
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-vision-toolkit",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 274
   },
   {
    "name": "dsh-custom-tool",
@@ -576,7 +616,8 @@
     "zh": "用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-custom-tool",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 20
   },
   {
    "name": "dsh-computer-use",
@@ -588,7 +629,8 @@
     "zh": "macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。"
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-computer-use",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 15
   },
   {
    "name": "dsh-data-agent",
@@ -600,7 +642,8 @@
     "zh": "让 AI 帮你连数据库、写 SQL。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-data-agent",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 11
   },
   {
    "name": "dsh-toolkit",
@@ -612,7 +655,8 @@
     "zh": "零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-toolkit",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 14
   },
   {
    "name": "dsh-tool-csv",
@@ -624,7 +668,8 @@
     "zh": "CSV 解析/查询/统计/转换（RFC 4180），零依赖状态机解析器。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-tool-calculator",
@@ -636,7 +681,8 @@
     "zh": "安全的数学表达式求值器，零依赖递归下降解析器。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-tool-diff",
@@ -648,7 +694,8 @@
     "zh": "文本/JSON/CSV/Markdown 结构化比较与 unified diff。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-encoding",
@@ -660,7 +707,8 @@
     "zh": "base64/url/hex 编解码、常用哈希、UUID 生成。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-json",
@@ -672,7 +720,8 @@
     "zh": "JMESPath 子集 JSON 查询。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-json",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-markdown",
@@ -684,7 +733,8 @@
     "zh": "HTML↔Markdown 转换、GFM 表格规范化、目录生成。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-regex",
@@ -696,7 +746,8 @@
     "zh": "正则测试/提取/安全替换/静态解释（不执行代码）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-schema",
@@ -708,7 +759,8 @@
     "zh": "JSON Schema 验证：validate/paths/explain/normalize。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-tool-stat",
@@ -720,7 +772,8 @@
     "zh": "描述统计/百分位数/频数分布/相关性。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-tool-time",
@@ -732,7 +785,8 @@
     "zh": "严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-time",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-kb-sieve",
@@ -744,7 +798,8 @@
     "zh": "从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-plugin-mineru",
@@ -756,7 +811,8 @@
     "zh": "向模型暴露 MineRU 文档解析工具。"
    },
    "install": "dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 7
   },
   {
    "name": "dsh-cowork",
@@ -781,7 +837,8 @@
     "zh": "把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-skillport",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-tool-search",
@@ -793,7 +850,8 @@
     "zh": "按 agent 的按需工具发现与渐进式 schema 披露。"
    },
    "install": "dsh plugin --profile web add github:vibeinging/dsh-tool-search",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-openmaic",
@@ -805,7 +863,8 @@
     "zh": "OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。"
    },
    "install": "dsh plugin --profile web add github:THU-MAIC/dsh-openmaic",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 5
   },
   {
    "name": "dsh-scholar",
@@ -817,7 +876,8 @@
     "zh": "学术助手插件。"
    },
    "install": "dsh plugin --profile web add github:lzszq/dsh-scholar",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "dsh-apple-mode",
@@ -829,7 +889,8 @@
     "zh": "DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。"
    },
    "install": "dsh plugin --profile web add github:jihongboo/dsh-apple-mode",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-continual-evolve",
@@ -867,7 +928,8 @@
     "zh": "为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"
    },
    "install": "dsh plugin --profile web add github:liustack/modlens",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1021
   },
   {
    "name": "dsh-find-plugin",
@@ -880,7 +942,7 @@
    },
    "install": "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin",
    "added": "2026-08-14",
-   "stars": 6
+   "stars": 7
   },
   {
    "name": "dsh-code-intel",
@@ -931,7 +993,8 @@
     "zh": "语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-voice",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-docker",
@@ -957,7 +1020,7 @@
    },
    "install": "dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin",
    "added": "2026-08-14",
-   "stars": 1
+   "stars": 2
   },
   {
    "name": "dsh_workflow",
@@ -969,7 +1032,8 @@
     "zh": "把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。"
    },
    "install": "dsh plugin --profile web add github:icetomoyo/dsh_workflow",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 52
   },
   {
    "name": "dsh-agent-teams",
@@ -981,7 +1045,8 @@
     "zh": "AgentTeams 多智能体团队。"
    },
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 193
   },
   {
    "name": "dsh-automation",
@@ -993,7 +1058,8 @@
     "zh": "定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。"
    },
    "install": "dsh plugin --profile web add github:titanwings/dsh-automation",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 23
   },
   {
    "name": "dsh-routines",
@@ -1005,7 +1071,8 @@
     "zh": "定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-routines",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-plannotator",
@@ -1017,7 +1084,8 @@
     "zh": "计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。"
    },
    "install": "dsh plugin --profile web add github:titanwings/dsh-plannotator",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-loop",
@@ -1029,7 +1097,8 @@
     "zh": "定时循环：`/loop` 命令 + loop 工具 + 活动状态条。"
    },
    "install": "dsh plugin --profile web add github:vlln/dsh-loop",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-sentinel",
@@ -1041,7 +1110,8 @@
     "zh": "条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。"
    },
    "install": "dsh plugin --profile web add github:fuhefei/dsh-sentinel",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-deep-research",
@@ -1053,7 +1123,8 @@
     "zh": "自适应深度研究编排器（基于官方 workflow 引擎）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-deep-research",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 7
   },
   {
    "name": "dsh-inspect",
@@ -1065,7 +1136,8 @@
     "zh": "发现问题→修复交付→质量复查的对抗式闭环工具集。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-inspect",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-track",
@@ -1077,7 +1149,8 @@
     "zh": "嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。"
    },
    "install": "dsh plugin --profile web add github:fakechris/dsh-track",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-advisor",
@@ -1089,7 +1162,8 @@
     "zh": "搭配一个副模型，每轮被动审查并注入见解。"
    },
    "install": "dsh plugin --profile web add github:btspoony/dsh-advisor",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-specflow",
@@ -1114,7 +1188,8 @@
     "zh": "从 Web GUI 一键在 VS Code 中打开工作区目录。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-open-in-vscode",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 37
   },
   {
    "name": "dsh-notification",
@@ -1126,7 +1201,8 @@
     "zh": "回合完成桌面通知，按结果分控 + 关键词过滤。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-notification",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 32
   },
   {
    "name": "dsh-acp-for-bitfun",
@@ -1138,7 +1214,8 @@
     "zh": "BitFun 与 DSH 的 ACP 交互对接。"
    },
    "install": "dsh plugin --profile web add github:bobleer/dsh-acp-for-bitfun",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "deepseek-harness-acp",
@@ -1163,7 +1240,8 @@
     "zh": "Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。"
    },
    "install": "dsh plugin --profile web add github:LoserFox/telegram",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 6
   },
   {
    "name": "dsh-chatnode-wechat",
@@ -1175,7 +1253,8 @@
     "zh": "通过 iLink 网关在微信里与 DSH agent 聊天、监控与审批：双向文本、会话切换、进度摘要与编号审批提示。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-chatnode-wechat",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 1
   },
   {
    "name": "dsh-session-notification",
@@ -1187,7 +1266,8 @@
     "zh": "会话完成等四种状态的通知响应，支持浏览器提示。"
    },
    "install": "dsh plugin --profile web add github:dingyi222666/dsh-session-notification",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-web-ui-notify",
@@ -1199,7 +1279,8 @@
     "zh": "桌面通知提醒。"
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-web-ui-notify",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 6
   },
   {
    "name": "dsh-webbridge",
@@ -1211,7 +1292,8 @@
     "zh": "DSH 结合 Kimi WebBridge。"
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-webbridge",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-im-bridge",
@@ -1236,7 +1318,8 @@
     "zh": "类似 MC Fabric 的 hook 处理器。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/fabric",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 8
   },
   {
    "name": "dsh-git-identity",
@@ -1248,7 +1331,8 @@
     "zh": "git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。"
    },
    "install": "dsh plugin --profile web add github:LoserFox/dsh-git-identity",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 7
   },
   {
    "name": "dsh-context-doctor",
@@ -1260,7 +1344,8 @@
     "zh": "上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。"
    },
    "install": "dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 6
   },
   {
    "name": "dsh-plugin-check",
@@ -1272,7 +1357,8 @@
     "zh": "插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 14
   },
   {
    "name": "dsh-security-audit",
@@ -1284,7 +1370,8 @@
     "zh": "本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-security-audit",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "dsh-session-health",
@@ -1296,7 +1383,8 @@
     "zh": "会话文件帧级扫描诊断（torn/损坏/空会话检测）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-session-health",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 8
   },
   {
    "name": "dsh-evolve",
@@ -1308,7 +1396,8 @@
     "zh": "自进化：agent 在会话内给自己热挂载/卸载持久化插件。"
    },
    "install": "dsh plugin --profile web add github:william-jin-cmu/dsh-evolve",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-trace",
@@ -1320,7 +1409,8 @@
     "zh": "遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。"
    },
    "install": "dsh plugin --profile web add github:vibeinging/dsh-trace",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "sandbox-micro",
@@ -1332,7 +1422,8 @@
     "zh": "microsandbox 沙箱支持。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/sandbox-micro",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "sandbox-mxc",
@@ -1344,7 +1435,8 @@
     "zh": "微软跨平台沙盒支持。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/sandbox-mxc",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "sandbox-nono",
@@ -1356,7 +1448,8 @@
     "zh": "nono 沙盒支持。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/sandbox-nono",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-agent-budget",
@@ -1368,7 +1461,8 @@
     "zh": "agent 树 token 预算管理。"
    },
    "install": "dsh plugin --profile web add github:vibeinging/dsh-agent-budget",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-llm-fallbacks",
@@ -1380,7 +1474,8 @@
     "zh": "基于角色的模型重试与备用策略。"
    },
    "install": "dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-polyglot",
@@ -1392,7 +1487,8 @@
     "zh": "DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-polyglot",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 0
   },
   {
    "name": "dsh-tool-approval",
@@ -1404,7 +1500,8 @@
     "zh": "手动审批模式（Manual/Ask Mode）。"
    },
    "install": "dsh plugin --profile web add github:ilharp/dsh-tool-approval",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "plugin-template",
@@ -1416,7 +1513,8 @@
     "zh": "插件模板仓库（基于 turtle-ui 官方仓库）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/plugin-template",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 5
   },
   {
    "name": "Qwen-MM-Plugins",
@@ -1428,7 +1526,8 @@
     "zh": "Qwen 多模态插件支持。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 3
   },
   {
    "name": "dsh-tps",
@@ -1440,7 +1539,8 @@
     "zh": "TPS 指标插件。"
    },
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-tps",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 1
   },
   {
    "name": "dsh-fail-logger",
@@ -1478,7 +1578,8 @@
     "zh": "社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。"
    },
    "install": "dsh plugin --profile web add github:hust-open-atom-club/oh-dsh",
-   "added": "2026-08-14"
+   "added": "2026-08-14",
+   "stars": 140
   },
   {
    "name": "dsh-annotate",
@@ -1491,7 +1592,7 @@
    },
    "install": "dsh plugin --profile web add github:BrambleXu/dsh-annotate",
    "added": "2026-08-14",
-   "stars": 2
+   "stars": 3
   },
   {
    "name": "dsh-prompt-profile",
@@ -1594,7 +1695,8 @@
     "zh": "2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。"
    },
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-ads",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 268
   },
   {
    "name": "dsh-gomoku",
@@ -1606,7 +1708,8 @@
     "zh": "与 AI 下五子棋，也可让 AI 对局比棋力。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-gomoku",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 10
   },
   {
    "name": "dsh-stock-market",
@@ -1618,7 +1721,8 @@
     "zh": "有效解决了写代码的时候账户不能同时亏钱的 BUG。"
    },
    "install": "dsh plugin --profile web add github:AnacondaKC/dsh-stock-market",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "dsh-emoji",
@@ -1630,7 +1734,8 @@
     "zh": "为 AI 回复自动添加表情。"
    },
    "install": "dsh plugin --profile web add github:hellodigua/dsh-emoji",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "dsh-minigames",
@@ -1642,7 +1747,8 @@
     "zh": "右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。"
    },
    "install": "dsh plugin --profile web add github:lhh010/dsh-minigames",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 11
   },
   {
    "name": "dsh-stickers",
@@ -1654,7 +1760,8 @@
     "zh": "用户与 agent 双向表情贴纸互动。"
    },
    "install": "dsh plugin --profile web add github:william-jin-cmu/dsh-stickers",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 9
   },
   {
    "name": "whale-girl",
@@ -1666,7 +1773,8 @@
     "zh": "桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。"
    },
    "install": "dsh plugin --profile web add github:vlln/whale-girl",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 103
   },
   {
    "name": "deepseek-manners",
@@ -1678,7 +1786,8 @@
     "zh": "给每次消息后注入感谢语，做个有礼貌的人。"
    },
    "install": "dsh plugin --profile web add github:Moeblack/deepseek-manners",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-plugin-d399",
@@ -1690,7 +1799,8 @@
     "zh": "模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。"
    },
    "install": "dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-d399",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 4
   },
   {
    "name": "dsh-auto-chess",
@@ -1702,7 +1812,8 @@
     "zh": "自走棋：人机对战或双 AI 对弈。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-auto-chess",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   },
   {
    "name": "dsh-douyin",
@@ -1714,7 +1825,8 @@
     "zh": "侧栏短视频：原生播放器、系列导航、精确历史回放。"
    },
    "install": "dsh plugin --profile web add github:AnacondaKC/dsh-douyin",
-   "added": "2026-08-13"
+   "added": "2026-08-13",
+   "stars": 2
   }
  ]
 }
