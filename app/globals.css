@@ -460,22 +460,6 @@ h3 {
   background: var(--teal);
 }
 
-.source-note {
-  color: var(--quiet);
-  font-size: 12px;
-  line-height: 1.4;
-  margin: 0 0 16px;
-}
-
-.source-note a {
-  color: var(--muted);
-  text-underline-offset: 3px;
-}
-
-.source-note a:hover {
-  color: var(--teal);
-}
-
 .install-block {
   background: #070f1a;
   border: 1px solid #203a5d;

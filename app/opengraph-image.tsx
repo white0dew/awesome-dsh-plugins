@@ -33,11 +33,11 @@ export default function OpenGraphImage() {
             DeepSeek Harness plugins, tracked in one place.
           </div>
           <div style={{ color: "#bfd2e6", display: "flex", fontSize: 30 }}>
-            Awesome DSH Plugins surfaces install commands, categories, and source links from the public ecosystem.
+            Awesome DSH Plugins surfaces categories, install commands, and direct original GitHub repositories.
           </div>
         </div>
         <div style={{ color: "#7bb5ff", display: "flex", fontSize: 22 }}>
-          GitHub sources. Searchable catalog. Independent community index.
+          Original GitHub repositories. Searchable catalog. Independent community index.
         </div>
       </div>
     ),

@@ -61,7 +61,7 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
           <p className="card-kicker">{category.label}</p>
           <h3>{plugin.name}</h3>
         </div>
-        {plugin.latest ? <span className="new-label">Latest source batch</span> : null}
+        {plugin.latest ? <span className="new-label">Recently indexed</span> : null}
       </div>
 
       <p className="card-meta">
@@ -69,9 +69,6 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
       </p>
       <p className="plugin-description">{plugin.description}</p>
       <VerificationLabel plugin={plugin} />
-      <p className="source-note">
-        Source snapshot: <a href={plugin.source.url} target="_blank" rel="noreferrer">{plugin.source.name}</a>
-      </p>
       <div className="install-block">
         <code>{plugin.installCommand}</code>
       </div>
@@ -100,7 +97,6 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
         plugin.name,
         plugin.repository,
         plugin.description,
-        plugin.source.name,
         categoryById[plugin.category].label,
       ]
         .join(" ")

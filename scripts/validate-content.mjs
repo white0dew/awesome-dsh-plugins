@@ -10,33 +10,41 @@ import {
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const rootDirectory = path.resolve(scriptDirectory, "..");
-const sourcePath = path.join(
+const firstInputPath = path.join(
   rootDirectory,
   "data/sources/awesome-dsh-plugin.json",
 );
-const sourceSnapshot = JSON.parse(await readFile(sourcePath, "utf8"));
+const secondInputPath = path.join(
+  rootDirectory,
+  "data/sources/github-plugin-catalog.json",
+);
+
+const [firstInput, secondInput] = await Promise.all([
+  readFile(firstInputPath, "utf8").then(JSON.parse),
+  readFile(secondInputPath, "utf8").then(JSON.parse),
+]);
 
 const errors = [];
 const githubUrl = /^https:\/\/github\.com\/([^/\s]+)\/([^/\s]+)$/;
 const repositoryName = /^[^/\s]+\/[^/\s]+$/;
-const installCommand = /^dsh plugin --profile web add github:([^/\s]+)\/([^/\s]+)$/;
 const categoryIds = new Set(categories.map((category) => category.id));
-const allowedVerificationStates = new Set(verificationStates);
+const verificationStateIds = new Set(verificationStates);
 const seenIds = new Set();
 const seenRepositories = new Set();
 const expectedVerificationDetail =
-  "Community discovered. Structural bundle checks have not been done.";
+  "An original repository was indexed; this is not a security review, compatibility guarantee, or endorsement.";
 
-if (!Array.isArray(sourceSnapshot.plugins) || sourceSnapshot.plugins.length !== 138) {
-  errors.push("source snapshot must contain exactly 138 public plugin records");
+if (!Array.isArray(firstInput.plugins) || firstInput.plugins.length !== 138) {
+  errors.push("first catalog input must contain exactly 138 records");
 }
-
-if (plugins.length < 100) {
-  errors.push(`expected at least 100 plugins, found ${plugins.length}`);
+if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
+  errors.push("second catalog input must contain exactly 334 records");
 }
-
-if (plugins.length !== sourceSnapshot.plugins?.length) {
-  errors.push("generated plugin count must match the source snapshot");
+if (plugins.length !== 360) {
+  errors.push(`expected exactly 360 normalized plugins, found ${plugins.length}`);
+}
+if (categories.length !== 10) {
+  errors.push(`expected 10 categories, found ${categories.length}`);
 }
 
 for (const plugin of plugins) {
@@ -45,65 +53,44 @@ for (const plugin of plugins) {
   }
   seenIds.add(plugin.id);
 
-  if (seenRepositories.has(plugin.repository)) {
+  const repositoryKey = plugin.repository.toLowerCase();
+  if (seenRepositories.has(repositoryKey)) {
     errors.push(`${plugin.id}: duplicate repository`);
   }
-  seenRepositories.add(plugin.repository);
-
-  const urlMatch = githubUrl.exec(plugin.repoUrl);
-  if (!urlMatch) {
-    errors.push(`${plugin.id}: repoUrl must be an exact HTTPS github.com owner/repo URL`);
-  }
+  seenRepositories.add(repositoryKey);
 
   if (!repositoryName.test(plugin.repository)) {
     errors.push(`${plugin.id}: repository must use owner/repo form`);
   }
-
+  if (!githubUrl.test(plugin.repoUrl)) {
+    errors.push(`${plugin.id}: repoUrl must be an exact HTTPS github.com owner/repo URL`);
+  }
   if (plugin.repoUrl !== `https://github.com/${plugin.repository}`) {
     errors.push(`${plugin.id}: repoUrl must exactly match repository`);
   }
-
-  if (!installCommand.test(plugin.installCommand)) {
-    errors.push(`${plugin.id}: install command must use the expected GitHub form`);
-  }
-
   if (
     plugin.installCommand !==
     `dsh plugin --profile web add github:${plugin.repository}`
   ) {
     errors.push(`${plugin.id}: install command must exactly match repository`);
   }
-
   if (!categoryIds.has(plugin.category) || !categoryById[plugin.category]) {
-    errors.push(`${plugin.id}: category is not in the category collection`);
+    errors.push(`${plugin.id}: unknown category`);
   }
-
-  if (!allowedVerificationStates.has(plugin.verification.state)) {
+  if (plugin.verification.state !== "community-discovered") {
+    errors.push(`${plugin.id}: verification state must be community-discovered`);
+  }
+  if (!verificationStateIds.has(plugin.verification.state)) {
     errors.push(`${plugin.id}: verification state is not allowed`);
   }
-
-  if (
-    plugin.verification.state !== "community-discovered" ||
-    plugin.verification.detail !== expectedVerificationDetail
-  ) {
-    errors.push(`${plugin.id}: verification must state that structural bundle checks have not been done`);
+  if (plugin.verification.detail !== expectedVerificationDetail) {
+    errors.push(`${plugin.id}: verification detail does not match the catalog policy`);
   }
-
-  if (!plugin.description.trim()) {
+  if (typeof plugin.description !== "string" || !plugin.description.trim()) {
     errors.push(`${plugin.id}: description must not be empty`);
   }
-
-  if (!plugin.source.name.trim() || !plugin.source.url.trim()) {
-    errors.push(`${plugin.id}: source name and URL must not be empty`);
-  }
-
-  try {
-    const sourceUrl = new URL(plugin.source.url);
-    if (sourceUrl.protocol !== "https:") {
-      errors.push(`${plugin.id}: source URL must use HTTPS`);
-    }
-  } catch {
-    errors.push(`${plugin.id}: source URL must be valid`);
+  if (Object.hasOwn(plugin, "source")) {
+    errors.push(`${plugin.id}: public plugin records must not expose catalog provenance`);
   }
 }
 
@@ -120,13 +107,9 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-const categorySummary = categories.map((category) => ({
-  label: category.label,
-  count: plugins.filter((plugin) => plugin.category === category.id).length,
-}));
-
 console.log(`Content validation passed for ${plugins.length} plugins.`);
 console.log("Category summary:");
-for (const category of categorySummary) {
-  console.log(`- ${category.label}: ${category.count}`);
+for (const category of categories) {
+  const count = plugins.filter((plugin) => plugin.category === category.id).length;
+  console.log(`- ${category.label}: ${count}`);
 }
