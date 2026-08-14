@@ -19,20 +19,20 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 | 分类 | 条目数 |
 | --- | ---: |
-| [界面与主题](docs/plugins/zh/ui-themes.md) | 33 |
-| [会话与记忆](docs/plugins/zh/sessions-memory.md) | 45 |
-| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 117 |
-| [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 33 |
-| [通知与集成](docs/plugins/zh/notifications-integrations.md) | 21 |
-| [开发与运行时](docs/plugins/zh/development-runtime.md) | 44 |
-| [浏览器与搜索](docs/plugins/zh/browser-search.md) | 9 |
-| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 29 |
-| [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 20 |
-| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 11 |
+| [界面与主题](docs/plugins/zh/ui-themes.md) | 60 |
+| [会话与记忆](docs/plugins/zh/sessions-memory.md) | 135 |
+| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 507 |
+| [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 136 |
+| [通知与集成](docs/plugins/zh/notifications-integrations.md) | 51 |
+| [开发与运行时](docs/plugins/zh/development-runtime.md) | 179 |
+| [浏览器与搜索](docs/plugins/zh/browser-search.md) | 34 |
+| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 125 |
+| [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 74 |
+| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 20 |
 
 ## 独立说明
 
-本目录收录 362 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 1321 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 

@@ -14,12 +14,14 @@ const rootDirectory = path.resolve(scriptDirectory, "..");
 const firstInputPath = path.join(rootDirectory, "data", "sources", "awesome-dsh-plugin.json");
 const secondInputPath = path.join(rootDirectory, "data", "sources", "github-plugin-catalog.json");
 const reviewedAdditionsInputPath = path.join(rootDirectory, "data", "sources", "reviewed-catalog-additions.json");
+const upstreamAwesomeDeepseekHarnessInputPath = path.join(rootDirectory, "data", "sources", "upstream-awesome-deepseek-harness.json");
 const docsDirectory = path.join(rootDirectory, "docs", "plugins");
 
-const [firstInput, secondInput, reviewedAdditionsInput] = await Promise.all([
+const [firstInput, secondInput, reviewedAdditionsInput, upstreamAwesomeDeepseekHarnessInput] = await Promise.all([
   readFile(firstInputPath, "utf8").then(JSON.parse),
   readFile(secondInputPath, "utf8").then(JSON.parse),
   readFile(reviewedAdditionsInputPath, "utf8").then(JSON.parse),
+  readFile(upstreamAwesomeDeepseekHarnessInputPath, "utf8").then(JSON.parse),
 ]);
 
 const errors = [];
@@ -41,8 +43,12 @@ if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
 if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.records.length !== 2) {
   errors.push("reviewed catalog additions input must contain exactly 2 records");
 }
-if (plugins.length !== 362) {
-  errors.push(`expected exactly 362 normalized plugins, found ${plugins.length}`);
+if (!Array.isArray(upstreamAwesomeDeepseekHarnessInput.records)) {
+  errors.push("upstream awesome-deepseek-harness input must contain a records array");
+}
+const expectedPluginCount = 362 + (Array.isArray(upstreamAwesomeDeepseekHarnessInput.records) ? upstreamAwesomeDeepseekHarnessInput.records.length : 0);
+if (plugins.length !== expectedPluginCount) {
+  errors.push(`expected exactly ${expectedPluginCount} normalized plugins, found ${plugins.length}`);
 }
 if (categories.length !== 10) {
   errors.push(`expected 10 categories, found ${categories.length}`);
@@ -140,6 +146,45 @@ if (Array.isArray(reviewedAdditionsInput.records)) {
   }
 }
 
+const upstreamAwesomeDeepseekHarnessByRepository = new Map();
+if (typeof upstreamAwesomeDeepseekHarnessInput?.name !== "string" || !upstreamAwesomeDeepseekHarnessInput.name.trim()) {
+  errors.push("upstream awesome-deepseek-harness input is missing a name");
+}
+if (typeof upstreamAwesomeDeepseekHarnessInput?.repository !== "string" || !repositoryName.test(upstreamAwesomeDeepseekHarnessInput.repository)) {
+  errors.push("upstream awesome-deepseek-harness input has invalid repository metadata");
+} else if (upstreamAwesomeDeepseekHarnessInput.url !== `https://github.com/${upstreamAwesomeDeepseekHarnessInput.repository}`) {
+  errors.push("upstream awesome-deepseek-harness input has invalid URL metadata");
+}
+if (typeof upstreamAwesomeDeepseekHarnessInput?.snapshotGeneratedAt !== "string" || !upstreamAwesomeDeepseekHarnessInput.snapshotGeneratedAt.trim()) {
+  errors.push("upstream awesome-deepseek-harness input is missing snapshotGeneratedAt");
+}
+if (Array.isArray(upstreamAwesomeDeepseekHarnessInput.records)) {
+  for (let index = 0; index < upstreamAwesomeDeepseekHarnessInput.records.length; index += 1) {
+    const record = upstreamAwesomeDeepseekHarnessInput.records[index];
+    if (typeof record?.repository !== "string" || !repositoryName.test(record.repository)) {
+      errors.push(`upstream record ${index + 1} must have an owner/repo GitHub record`);
+      continue;
+    }
+    if (record.url !== `https://github.com/${record.repository}`) {
+      errors.push(`${record.repository}: upstream URL must exactly match repository`);
+    }
+    if (typeof record.description !== "string" || !record.description.trim()) {
+      errors.push(`${record.repository}: upstream description must not be empty`);
+    }
+    if (!categoryIds.has(record.category)) {
+      errors.push(`${record.repository}: upstream category is unknown`);
+    }
+    if (record.stars !== 0) {
+      errors.push(`${record.repository}: upstream star count must be zero`);
+    }
+    const repositoryKey = record.repository.toLowerCase();
+    if (upstreamAwesomeDeepseekHarnessByRepository.has(repositoryKey)) {
+      errors.push(`${record.repository}: duplicate upstream record`);
+    }
+    upstreamAwesomeDeepseekHarnessByRepository.set(repositoryKey, record);
+  }
+}
+
 if (firstSourceRepositories.size !== 138) {
   errors.push(`expected 138 unique first-source repositories, found ${firstSourceRepositories.size}`);
 }
@@ -148,6 +193,11 @@ if (secondSourceStars.size !== 334) {
 }
 if (reviewedAdditionsByRepository.size !== 2) {
   errors.push(`expected 2 unique reviewed catalog additions, found ${reviewedAdditionsByRepository.size}`);
+}
+for (const repository of upstreamAwesomeDeepseekHarnessByRepository.keys()) {
+  if (firstSourceRepositories.has(repository) || secondSourceStars.has(repository) || reviewedAdditionsByRepository.has(repository)) {
+    errors.push(`${repository}: upstream record duplicates an existing source record`);
+  }
 }
 const firstSourceOnly = [...firstSourceRepositories].filter((repository) => !secondSourceStars.has(repository));
 if (firstSourceOnly.length !== 26) {
@@ -187,6 +237,7 @@ for (const plugin of plugins) {
     errors.push(`${plugin.id}: repoUrl must exactly match repository`);
   }
   const reviewedAddition = reviewedAdditionsByRepository.get(repositoryKey);
+  const upstreamRecord = upstreamAwesomeDeepseekHarnessByRepository.get(repositoryKey);
   if (reviewedAddition) {
     if (plugin.primaryAction?.type !== reviewedAddition.primaryAction?.type) {
       errors.push(`${plugin.id}: primary action must match the reviewed addition`);
@@ -216,6 +267,8 @@ for (const plugin of plugins) {
   }
   const expectedStars = reviewedAddition
     ? reviewedAddition.stars
+    : upstreamRecord
+      ? upstreamRecord.stars
     : firstSourceRepositories.has(repositoryKey)
       ? secondSourceStars.get(repositoryKey) ?? firstSourceStars.get(repositoryKey)
       : secondSourceStars.get(repositoryKey);
@@ -243,6 +296,12 @@ for (const plugin of plugins) {
     if (Object.hasOwn(plugin, forbiddenProperty)) {
       errors.push(`${plugin.id}: public plugin records must not expose ${forbiddenProperty}`);
     }
+  }
+}
+
+for (const repository of upstreamAwesomeDeepseekHarnessByRepository.keys()) {
+  if (!seenRepositories.has(repository)) {
+    errors.push(`${repository}: upstream record is missing from generated plugins`);
   }
 }
 

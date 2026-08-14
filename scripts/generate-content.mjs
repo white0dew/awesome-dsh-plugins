@@ -11,6 +11,7 @@ const docsDirectory = path.join(rootDirectory, "docs", "plugins");
 const firstSourcePath = path.join(sourceDirectory, "awesome-dsh-plugin.json");
 const secondSourcePath = path.join(sourceDirectory, "github-plugin-catalog.json");
 const reviewedAdditionsSourcePath = path.join(sourceDirectory, "reviewed-catalog-additions.json");
+const upstreamAwesomeDeepseekHarnessSourcePath = path.join(sourceDirectory, "upstream-awesome-deepseek-harness.json");
 const generatedContentPath = path.join(contentDirectory, "plugins.generated.ts");
 const generatedReadmePath = path.join(rootDirectory, "README.md");
 const generatedChineseReadmePath = path.join(rootDirectory, "README.zh-CN.md");
@@ -444,6 +445,58 @@ function normalizeReviewedAdditions(snapshot, seenRepositories) {
   });
 }
 
+function normalizeUpstreamAwesomeDeepseekHarness(snapshot, seenRepositories) {
+  if (typeof snapshot.name !== "string" || !snapshot.name.trim()) {
+    fail("upstream-awesome-deepseek-harness.json is missing a name");
+  }
+  if (typeof snapshot.repository !== "string" || typeof snapshot.url !== "string") {
+    fail("upstream-awesome-deepseek-harness.json is missing repository metadata");
+  }
+  validateDirectGithubRecord({
+    repository: snapshot.repository,
+    url: snapshot.url,
+    label: "upstream-awesome-deepseek-harness.json",
+  });
+  if (typeof snapshot.snapshotGeneratedAt !== "string" || !snapshot.snapshotGeneratedAt.trim()) {
+    fail("upstream-awesome-deepseek-harness.json is missing snapshotGeneratedAt");
+  }
+  if (!Array.isArray(snapshot.records)) {
+    fail("upstream-awesome-deepseek-harness.json does not have a records array");
+  }
+
+  return snapshot.records.map((record, index) => {
+    asObject(record, `upstream record ${index + 1}`);
+    if (typeof record.repository !== "string" || typeof record.url !== "string") {
+      fail(`upstream record ${index + 1} is missing repository or URL`);
+    }
+    validateDirectGithubRecord({ repository: record.repository, url: record.url, label: record.repository });
+    if (typeof record.category !== "string" || !categoryById.has(record.category)) {
+      fail(`${record.repository} has an unknown upstream category`);
+    }
+    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars !== 0) {
+      fail(`${record.repository} must have a zero star count in the upstream snapshot`);
+    }
+    const repositoryKey = record.repository.toLowerCase();
+    if (seenRepositories.has(repositoryKey)) {
+      fail(`${record.repository} duplicates an existing source record`);
+    }
+    seenRepositories.add(repositoryKey);
+    const description = cleanDescription(record.description, record.repository);
+
+    return {
+      name: record.repository.slice(record.repository.indexOf("/") + 1),
+      repository: record.repository,
+      repoUrl: record.url,
+      description: { en: description, zh: description },
+      category: record.category,
+      primaryAction: { type: "copy-install", command: installCommand(record.repository) },
+      stars: record.stars,
+      featured: featuredRepositories.has(repositoryKey),
+      latest: false,
+    };
+  });
+}
+
 function quote(value) {
   return JSON.stringify(value);
 }
@@ -607,16 +660,19 @@ function renderReadme(plugins, groupedRecords, locale) {
 const firstSnapshot = JSON.parse(await readFile(firstSourcePath, "utf8"));
 const secondSnapshot = JSON.parse(await readFile(secondSourcePath, "utf8"));
 const reviewedAdditionsSnapshot = JSON.parse(await readFile(reviewedAdditionsSourcePath, "utf8"));
+const upstreamAwesomeDeepseekHarnessSnapshot = JSON.parse(await readFile(upstreamAwesomeDeepseekHarnessSourcePath, "utf8"));
 const secondSourceStars = sourceStarsByRepository(secondSnapshot);
 const seenRepositories = new Set();
 const normalizedPlugins = [
   ...normalizeFirstSource(firstSnapshot, seenRepositories, secondSourceStars),
   ...normalizeSecondSource(secondSnapshot, seenRepositories),
   ...normalizeReviewedAdditions(reviewedAdditionsSnapshot, seenRepositories),
+  ...normalizeUpstreamAwesomeDeepseekHarness(upstreamAwesomeDeepseekHarnessSnapshot, seenRepositories),
 ].sort(compareRepositories);
 
-if (normalizedPlugins.length !== 362) {
-  fail(`expected exactly 362 unique repositories after deduplication, found ${normalizedPlugins.length}`);
+const expectedPluginCount = 362 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
+if (normalizedPlugins.length !== expectedPluginCount) {
+  fail(`expected exactly ${expectedPluginCount} unique repositories after deduplication, found ${normalizedPlugins.length}`);
 }
 
 for (const repository of featuredRepositories) {

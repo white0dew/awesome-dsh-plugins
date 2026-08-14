@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**33 catalog entries** · [Back to all categories](index.md)
+**60 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -12,6 +12,14 @@ Keyboard-first command palette for the DSH Web UI.
 
 Install: `dsh plugin --profile web add github:0xsline/dsh-spotlight`
 
+### [dsh-usage-dashboard](https://github.com/1690834643/dsh-usage-dashboard)
+
+Repository: `1690834643/dsh-usage-dashboard`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:1690834643/dsh-usage-dashboard`
+
 ### [ui-status-label](https://github.com/alingalingling/ui-status-label)
 
 Repository: `alingalingling/ui-status-label`
@@ -19,6 +27,22 @@ Repository: `alingalingling/ui-status-label`
 Customize the "deep diving" thinking status label to anything you like.
 
 Install: `dsh plugin --profile web add github:alingalingling/ui-status-label`
+
+### [dsh-plugin-gouden-leeuw-theme](https://github.com/andy294753951/dsh-plugin-gouden-leeuw-theme)
+
+Repository: `andy294753951/dsh-plugin-gouden-leeuw-theme`
+
+Unofficial Gouden Leeuw moonlit sanctuary theme for the DeepSeek Harness web UI
+
+Install: `dsh plugin --profile web add github:andy294753951/dsh-plugin-gouden-leeuw-theme`
+
+### [dsh-dashboard](https://github.com/baiyun200/dsh-dashboard)
+
+Repository: `baiyun200/dsh-dashboard`
+
+DSH 插件看板 · DeepSeek Harness 插件生态可视化（shadcn/ui，每日自动构建部署）
+
+Install: `dsh plugin --profile web add github:baiyun200/dsh-dashboard`
 
 ### [dsh-101](https://github.com/bill9109/dsh-101)
 
@@ -36,6 +60,14 @@ Cross-platform file drag-and-drop with raw path insertion, no file copying.
 
 Install: `dsh plugin --profile web add github:bill9109/dsh-drag-and-drop`
 
+### [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing)
+
+Repository: `bpc-oss/dsh-web-billing`
+
+RMB/USD token-billing plugin for DeepSeek Harness (dsh web): official-policy auto pricing with peak/off-peak hours, per-message ledger, account balance, locale-driven currency display. 人民币/美元 token 计费插件
+
+Install: `dsh plugin --profile web add github:bpc-oss/dsh-web-billing`
+
 ### [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI)
 
 Repository: `ccch1mneyyy/dsh-TUI`
@@ -43,6 +75,14 @@ Repository: `ccch1mneyyy/dsh-TUI`
 Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.
 
 Install: `dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI`
+
+### [dsh-working-activity](https://github.com/ccch1mneyyy/dsh-working-activity)
+
+Repository: `ccch1mneyyy/dsh-working-activity`
+
+DSH 实时模型工作状态行：俏皮思考文案、运行中的工具、回合总结、自我叙述（⏵）- 用于 TUI 提示栏与 Web UI
+
+Install: `dsh plugin --profile web add github:ccch1mneyyy/dsh-working-activity`
 
 ### [dsh-side-panel](https://github.com/ccq1/dsh-side-panel)
 
@@ -52,6 +92,30 @@ Side panel with file browser, terminal, and Git review for quick file previews.
 
 Install: `dsh plugin --profile web add github:ccq1/dsh-side-panel`
 
+### [dsh-claude-theme](https://github.com/chajiuqqq/dsh-claude-theme)
+
+Repository: `chajiuqqq/dsh-claude-theme`
+
+dsh的claude风格界面
+
+Install: `dsh plugin --profile web add github:chajiuqqq/dsh-claude-theme`
+
+### [dsh-grok-tui](https://github.com/chen-001/dsh-grok-tui)
+
+Repository: `chen-001/dsh-grok-tui`
+
+Use dsh via grok-build's TUI.
+
+Install: `dsh plugin --profile web add github:chen-001/dsh-grok-tui`
+
+### [dsh-claude-tui](https://github.com/cogine-ai/dsh-claude-tui)
+
+Repository: `cogine-ai/dsh-claude-tui`
+
+Claude Code TUI for DeepSeek Harness
+
+Install: `dsh plugin --profile web add github:cogine-ai/dsh-claude-tui`
+
 ### [dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat)
 
 Repository: `dingyi222666/dsh-focus-chat`
@@ -59,6 +123,78 @@ Repository: `dingyi222666/dsh-focus-chat`
 A "focus chat" minimal view that shows only final outputs.
 
 Install: `dsh plugin --profile web add github:dingyi222666/dsh-focus-chat`
+
+### [dsh-theme-neko](https://github.com/drfccv/dsh-theme-neko)
+
+Repository: `drfccv/dsh-theme-neko`
+
+A Nachoneko (甘城猫猫) themed skin for the DeepSeek Harness web GUI.
+
+Install: `dsh plugin --profile web add github:drfccv/dsh-theme-neko`
+
+### [inferglow](https://github.com/drscrewdriver/inferglow)
+
+Repository: `drscrewdriver/inferglow`
+
+go 语言实现的ai 基座+ tui +server系统
+
+Install: `dsh plugin --profile web add github:drscrewdriver/inferglow`
+
+### [dsh-activity-plugin](https://github.com/dsh-external/dsh-activity-plugin)
+
+Repository: `dsh-external/dsh-activity-plugin`
+
+Activity dashboard：会话视图 Tab 显示跨会话代码与使用统计（自包含 dshClient UI 插件）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-activity-plugin`
+
+### [dsh-cc-tui](https://github.com/dsh-external/dsh-cc-tui)
+
+Repository: `dsh-external/dsh-cc-tui`
+
+Claude Code 风格全屏交互终端插件（像素鲸鱼顶栏、流光大字、思考流式展开、Esc 回滚、TPS 仪表）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-cc-tui`
+
+### [dsh-grok-tui](https://github.com/dsh-external/dsh-grok-tui)
+
+Repository: `dsh-external/dsh-grok-tui`
+
+通过 grok-build 的 TUI 使用 dsh（WIP 占位）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-grok-tui`
+
+### [dsh-opencode-server](https://github.com/dsh-external/dsh-opencode-server)
+
+Repository: `dsh-external/dsh-opencode-server`
+
+opencode 桥接插件：为 dsh web 实现 opencode API 最小子集，opencode attach 即得丝滑 TUI
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-opencode-server`
+
+### [dsh-skins](https://github.com/dsh-external/dsh-skins)
+
+Repository: `dsh-external/dsh-skins`
+
+Web 换肤插件仓库：ThemeService 第三方皮肤
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-skins`
+
+### [dsh-tui](https://github.com/dsh-external/dsh-tui)
+
+Repository: `dsh-external/dsh-tui`
+
+DSH TUI 实现（WIP 占位）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-tui`
+
+### [dsh-tui-front-door](https://github.com/dsh-external/dsh-tui-front-door)
+
+Repository: `dsh-external/dsh-tui-front-door`
+
+独立 dsh TUI 前门：ink REPL + 按键绑定引擎 + 会话缝（bundle）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-tui-front-door`
 
 ### [dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter)
 
@@ -92,6 +228,14 @@ A terminal UI (TUI) for DeepSeek Harness.
 
 Install: `dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui`
 
+### [dhs-theme-plugin](https://github.com/kongxiangyiren/dhs-theme-plugin)
+
+Repository: `kongxiangyiren/dhs-theme-plugin`
+
+dsh 主题管理插件
+
+Install: `dsh plugin --profile web add github:kongxiangyiren/dhs-theme-plugin`
+
 ### [dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer)
 
 Repository: `lehhair/dsh-diff-viewer`
@@ -108,6 +252,14 @@ DeepSeek API balance overlay for DeepSeek Harness
 
 Install: `dsh plugin --profile web add github:Liu-ty/dsh-balance-display`
 
+### [dsh-theme-ti](https://github.com/longyu065/dsh-theme-ti)
+
+Repository: `longyu065/dsh-theme-ti`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:longyu065/dsh-theme-ti`
+
 ### [dsh-webUI-Glass-Theme](https://github.com/makuralymi/dsh-webUI-Glass-Theme)
 
 Repository: `makuralymi/dsh-webUI-Glass-Theme`
@@ -116,6 +268,22 @@ Global frosted-glass (backdrop blur) theme plugin for the dsh web UI
 
 Install: `dsh plugin --profile web add github:makuralymi/dsh-webUI-Glass-Theme`
 
+### [dsh-theme-taffy](https://github.com/misaki14987/dsh-theme-taffy)
+
+Repository: `misaki14987/dsh-theme-taffy`
+
+我不是雏草姬
+
+Install: `dsh plugin --profile web add github:misaki14987/dsh-theme-taffy`
+
+### [dsh-desktop](https://github.com/mrbbbaixue/dsh-desktop)
+
+Repository: `mrbbbaixue/dsh-desktop`
+
+.NET 10 WPF + WebView2 desktop launcher for DeepSeek Harness (dsh): managed child process, tray controls, HiDPI, native title bar theme following
+
+Install: `dsh plugin --profile web add github:mrbbbaixue/dsh-desktop`
+
 ### [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)
 
 Repository: `Nagi-ovo/dsh-visualize`
@@ -123,6 +291,14 @@ Repository: `Nagi-ovo/dsh-visualize`
 In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.
 
 Install: `dsh plugin --profile web add github:Nagi-ovo/dsh-visualize`
+
+### [dsh-eva-theme-plugin](https://github.com/oceanxuikun/dsh-eva-theme-plugin)
+
+Repository: `oceanxuikun/dsh-eva-theme-plugin`
+
+Evangelion-inspired theme plugin for DSH WebUI, featuring Unit-00, Unit-01, and Unit-02 themes with immersive backgrounds and mecha-style UI effects.
+
+Install: `dsh plugin --profile web add github:oceanxuikun/dsh-eva-theme-plugin`
 
 ### [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)
 
@@ -188,6 +364,14 @@ A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directl
 
 Install: `dsh plugin --profile web add github:openma-ai/deepseek-harness-tui`
 
+### [deepseek-harness-themes](https://github.com/orxz/deepseek-harness-themes)
+
+Repository: `orxz/deepseek-harness-themes`
+
+A collection of UI themes for deepseek-harness.
+
+Install: `dsh plugin --profile web add github:orxz/deepseek-harness-themes`
+
 ### [dsh-deeplink](https://github.com/qyw233/dsh-deeplink)
 
 Repository: `qyw233/dsh-deeplink`
@@ -195,6 +379,14 @@ Repository: `qyw233/dsh-deeplink`
 Deep links: open a specific session or workspace via ?session= / ?workspace=.
 
 Install: `dsh plugin --profile web add github:qyw233/dsh-deeplink`
+
+### [dsh-theme-palettes](https://github.com/rainbowdashy/dsh-theme-palettes)
+
+Repository: `rainbowdashy/dsh-theme-palettes`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:rainbowdashy/dsh-theme-palettes`
 
 ### [dsh-web-archive](https://github.com/renat3u/dsh-web-archive)
 
@@ -219,6 +411,14 @@ Repository: `SnowCrescenter-tech/dsh-milestone`
 Right-side dot-timeline rail: jump between user messages.
 
 Install: `dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone`
+
+### [freestyle-dsh-theme](https://github.com/suzike/freestyle-dsh-theme)
+
+Repository: `suzike/freestyle-dsh-theme`
+
+DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）
+
+Install: `dsh plugin --profile web add github:suzike/freestyle-dsh-theme`
 
 ### [dsh-outline](https://github.com/urzeye/dsh-outline)
 
@@ -252,6 +452,14 @@ Background task status bar: progress plus live output tail on the chat page.
 
 Install: `dsh plugin --profile web add github:vlln/dsh-task-status`
 
+### [dsh-themes](https://github.com/wenliang9527/dsh-themes)
+
+Repository: `wenliang9527/dsh-themes`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:wenliang9527/dsh-themes`
+
 ### [DSH-Desktop](https://github.com/wuxjian/DSH-Desktop)
 
 Repository: `wuxjian/DSH-Desktop`
@@ -259,6 +467,14 @@ Repository: `wuxjian/DSH-Desktop`
 A Tauri 2 and Vanilla TypeScript Windows desktop launcher that starts or embeds dsh web, checks and upgrades DSH, and provides a 3.03 MB Windows installer.
 
 Download: [Download for Windows](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
+
+### [dsh-tui](https://github.com/xiaoshihou514/dsh-tui)
+
+Repository: `xiaoshihou514/dsh-tui`
+
+DeepSeek Harness: TUI
+
+Install: `dsh plugin --profile web add github:xiaoshihou514/dsh-tui`
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 

@@ -2,7 +2,7 @@
 
 消息、通知以及外部服务连接。
 
-**21 个目录条目** · [返回全部分类](index.md)
+**51 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp)
 
@@ -68,6 +68,14 @@ DSH Relay 让你可以通过 Telegram 远程与 DeepSeek Harness 对话，并接
 
 Install: `dsh plugin --profile web add github:congchuanling-dot/DSH-Telegram-Relay`
 
+### [dsh-onlyne](https://github.com/dbydd/dsh-onlyne)
+
+Repository: `dbydd/dsh-onlyne`
+
+IM gateway for DeepSeek Harness agents - send and receive QQ, WeChat, Feishu and Telegram messages from dsh sessions.
+
+Install: `dsh plugin --profile web add github:dbydd/dsh-onlyne`
+
 ### [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification)
 
 Repository: `dingyi222666/dsh-session-notification`
@@ -75,6 +83,142 @@ Repository: `dingyi222666/dsh-session-notification`
 会话完成等四种状态的通知响应，支持浏览器提示。
 
 Install: `dsh plugin --profile web add github:dingyi222666/dsh-session-notification`
+
+### [dsh-feishu-bot](https://github.com/dsh-external/dsh-feishu-bot)
+
+Repository: `dsh-external/dsh-feishu-bot`
+
+飞书 remote channel
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-feishu-bot`
+
+### [dsh-feishu-notify](https://github.com/dsh-external/dsh-feishu-notify)
+
+Repository: `dsh-external/dsh-feishu-notify`
+
+飞书通知：会话结束 / 需要等待输入
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-feishu-notify`
+
+### [dsh-ica](https://github.com/dsh-external/dsh-ica)
+
+Repository: `dsh-external/dsh-ica`
+
+dsh 接 icalingua（QQ 客户端）前端（推断：IM 渠道，待作者确认）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-ica`
+
+### [dsh-mnemon](https://github.com/dsh-external/dsh-mnemon)
+
+Repository: `dsh-external/dsh-mnemon`
+
+Mnemonic 记忆层（integration with mnemon-dev/mnemon，分类推断）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-mnemon`
+
+### [dsh-spec-kit](https://github.com/dsh-external/dsh-spec-kit)
+
+Repository: `dsh-external/dsh-spec-kit`
+
+Reserved DSH integration for GitHub Spec Kit：规范驱动需求/规划/任务/实现工作流（空仓库占位，分类推断）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-spec-kit`
+
+### [dsh-superpowers](https://github.com/dsh-external/dsh-superpowers)
+
+Repository: `dsh-external/dsh-superpowers`
+
+Reserved DSH integration for Superpowers：可复用 agent 技能与结构化软件开发工作流（空仓库占位，分类推断）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-superpowers`
+
+### [dsh-vscode](https://github.com/dsh-external/dsh-vscode)
+
+Repository: `dsh-external/dsh-vscode`
+
+原生 VS Code 聊天集成（Native VS Code chat integration for DeepSeek Harness）
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-vscode`
+
+### [dsh-wecom-bot](https://github.com/dsh-external/dsh-wecom-bot)
+
+Repository: `dsh-external/dsh-wecom-bot`
+
+企业微信 remote channel
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-wecom-bot`
+
+### [dsh-weixin-bot](https://github.com/dsh-external/dsh-weixin-bot)
+
+Repository: `dsh-external/dsh-weixin-bot`
+
+微信 remote channel
+
+Install: `dsh plugin --profile web add github:dsh-external/dsh-weixin-bot`
+
+### [qqbot](https://github.com/dsh-external/qqbot)
+
+Repository: `dsh-external/qqbot`
+
+QQ remote channel
+
+Install: `dsh plugin --profile web add github:dsh-external/qqbot`
+
+### [telegram](https://github.com/dsh-external/telegram)
+
+Repository: `dsh-external/telegram`
+
+Telegram Bot API 桥接（长轮询、per-chat 会话）
+
+Install: `dsh plugin --profile web add github:dsh-external/telegram`
+
+### [tg-bot](https://github.com/dsh-external/tg-bot)
+
+Repository: `dsh-external/tg-bot`
+
+Telegram remote channel
+
+Install: `dsh plugin --profile web add github:dsh-external/tg-bot`
+
+### [dsh-plugin-wechat](https://github.com/gnulife/dsh-plugin-wechat)
+
+Repository: `gnulife/dsh-plugin-wechat`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:gnulife/dsh-plugin-wechat`
+
+### [dsh-vsc-integration](https://github.com/harcochen/dsh-vsc-integration)
+
+Repository: `harcochen/dsh-vsc-integration`
+
+Deepseek-Harness Vscode Integration
+
+Install: `dsh plugin --profile web add github:harcochen/dsh-vsc-integration`
+
+### [dsh-notify](https://github.com/haytham818/dsh-notify)
+
+Repository: `haytham818/dsh-notify`
+
+DSH system notification plugin: desktop notifications when an agent finishes a task, errors, asks a question, or waits for approval (dsh 系统通知插件)
+
+Install: `dsh plugin --profile web add github:haytham818/dsh-notify`
+
+### [dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel)
+
+Repository: `hi-wenw/dsh-telegram-channel`
+
+DeepSeek Harness Telegram mobile remote: bind live Web sessions (Codex-style). Install: dsh plugin add github:hi-wenw/dsh-telegram-channel
+
+Install: `dsh plugin --profile web add github:hi-wenw/dsh-telegram-channel`
+
+### [news-agent](https://github.com/huawolf/news-agent)
+
+Repository: `huawolf/news-agent`
+
+AI-powered personal news aggregator with LLM scoring, Web console, and push notifications to Feishu/Discord.
+
+Install: `dsh plugin --profile web add github:huawolf/news-agent`
 
 ### [dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge)
 
@@ -108,6 +252,14 @@ Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。
 
 Install: `dsh plugin --profile web add github:LoserFox/telegram`
 
+### [dsh-messager](https://github.com/ly6170/dsh-messager)
+
+Repository: `ly6170/dsh-messager`
+
+基于Deepseek Harness+DeepSeek开发的适用于Deepseek Harness的消息提醒信使，可使用第三方通道（暂时飞书webhook）进行推送
+
+Install: `dsh plugin --profile web add github:ly6170/dsh-messager`
+
 ### [dsh-win-notify](https://github.com/MuziIsabel/dsh-win-notify)
 
 Repository: `MuziIsabel/dsh-win-notify`
@@ -115,6 +267,22 @@ Repository: `MuziIsabel/dsh-win-notify`
 DSH plugin: Windows toast notification with sound when an agent task completes
 
 Install: `dsh plugin --profile web add github:MuziIsabel/dsh-win-notify`
+
+### [dsh-github-integration](https://github.com/omdsh-dev/dsh-github-integration)
+
+Repository: `omdsh-dev/dsh-github-integration`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:omdsh-dev/dsh-github-integration`
+
+### [dsh-lark](https://github.com/omdsh-dev/dsh-lark)
+
+Repository: `omdsh-dev/dsh-lark`
+
+Lark/Feishu IM bot channel for DeepSeek Harness: chats drive agents, replies and approvals return as messages and cards \| 飞书 DeepSeek Harness 插件
+
+Install: `dsh plugin --profile web add github:omdsh-dev/dsh-lark`
 
 ### [dsh-notification](https://github.com/omdsh-dev/dsh-notification)
 
@@ -156,6 +324,14 @@ GitHub integration for DeepSeek Harness: create PRs, review PRs in background jo
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-github`
 
+### [dsh-lark-bot](https://github.com/plutokeating/dsh-lark-bot)
+
+Repository: `plutokeating/dsh-lark-bot`
+
+dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，含完整项目工作区管理。A bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark with full workspace management. deepseek · deepseek harness · feishu · lark · bridge · bot
+
+Install: `dsh plugin --profile web add github:plutokeating/dsh-lark-bot`
+
 ### [dsh-lark](https://github.com/Roy-oss1/dsh-lark)
 
 Repository: `Roy-oss1/dsh-lark`
@@ -164,6 +340,54 @@ Lark/Feishu IM bot channel for DeepSeek Harness: chats drive agents, replies and
 
 Install: `dsh plugin --profile web add github:Roy-oss1/dsh-lark`
 
+### [dsh-desktop](https://github.com/snowcrescenter-tech/dsh-desktop)
+
+Repository: `snowcrescenter-tech/dsh-desktop`
+
+DeepSeek Harness 桌面版 - 原生 Windows 桌面壳（无边框窗口 / 系统托盘 / 原生通知 / 单实例 / 开机自启）\| Native Windows desktop shell for DeepSeek Harness (frameless window, tray, native notifications, single-instance, auto-launch)
+
+Install: `dsh plugin --profile web add github:snowcrescenter-tech/dsh-desktop`
+
+### [dsh-calendar](https://github.com/stardustlc666/dsh-calendar)
+
+Repository: `stardustlc666/dsh-calendar`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:stardustlc666/dsh-calendar`
+
+### [dsh-dingtalk](https://github.com/stardustlc666/dsh-dingtalk)
+
+Repository: `stardustlc666/dsh-dingtalk`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:stardustlc666/dsh-dingtalk`
+
+### [dsh-email](https://github.com/stardustlc666/dsh-email)
+
+Repository: `stardustlc666/dsh-email`
+
+DeepSeek Harness 邮件插件：emaillist/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。
+
+Install: `dsh plugin --profile web add github:stardustlc666/dsh-email`
+
+### [dsh-slack](https://github.com/stardustlc666/dsh-slack)
+
+Repository: `stardustlc666/dsh-slack`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:stardustlc666/dsh-slack`
+
+### [dsh-wechat-notify](https://github.com/wssfk12138/dsh-wechat-notify)
+
+Repository: `wssfk12138/dsh-wechat-notify`
+
+DeepSeek Harness 插件：为 agent 新增 wechatnotify 工具，让 AI 通过本机 ClawBot 微信通道主动给你发通知（任务完成 / 需决策时），中文可靠、掉线自提示。
+
+Install: `dsh plugin --profile web add github:wssfk12138/dsh-wechat-notify`
+
 ### [dsh2wechat](https://github.com/wuyuanjiang1/dsh2wechat)
 
 Repository: `wuyuanjiang1/dsh2wechat`
@@ -171,3 +395,19 @@ Repository: `wuyuanjiang1/dsh2wechat`
 DeepSeek Harness 微信 ClawBot 消息桥插件
 
 Install: `dsh plugin --profile web add github:wuyuanjiang1/dsh2wechat`
+
+### [dsh-notify](https://github.com/yangyongzhen/dsh-notify)
+
+Repository: `yangyongzhen/dsh-notify`
+
+Task-completion notifications for DeepSeek Harness: ServerChan / DingTalk / Feishu / generic webhooks. dsh plugin.
+
+Install: `dsh plugin --profile web add github:yangyongzhen/dsh-notify`
+
+### [dsh-telegram](https://github.com/yuko0331/dsh-telegram)
+
+Repository: `yuko0331/dsh-telegram`
+
+通过 Telegram 私聊远程使用和查看 DeepSeek Harness
+
+Install: `dsh plugin --profile web add github:yuko0331/dsh-telegram`

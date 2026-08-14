@@ -19,20 +19,20 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 | Category | Entries |
 | --- | ---: |
-| [UI & Themes](docs/plugins/ui-themes.md) | 33 |
-| [Sessions & Memory](docs/plugins/sessions-memory.md) | 45 |
-| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 117 |
-| [Workflow & Agents](docs/plugins/workflow-agents.md) | 33 |
-| [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 21 |
-| [Development & Runtime](docs/plugins/development-runtime.md) | 44 |
-| [Browser & Search](docs/plugins/browser-search.md) | 9 |
-| [MCP & Skills](docs/plugins/mcp-skills.md) | 29 |
-| [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 20 |
-| [Fun & Experiments](docs/plugins/fun-experiments.md) | 11 |
+| [UI & Themes](docs/plugins/ui-themes.md) | 60 |
+| [Sessions & Memory](docs/plugins/sessions-memory.md) | 135 |
+| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 507 |
+| [Workflow & Agents](docs/plugins/workflow-agents.md) | 136 |
+| [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 51 |
+| [Development & Runtime](docs/plugins/development-runtime.md) | 179 |
+| [Browser & Search](docs/plugins/browser-search.md) | 34 |
+| [MCP & Skills](docs/plugins/mcp-skills.md) | 125 |
+| [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 74 |
+| [Fun & Experiments](docs/plugins/fun-experiments.md) | 20 |
 
 ## Independence
 
-This directory lists 362 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
+This directory lists 1321 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 
