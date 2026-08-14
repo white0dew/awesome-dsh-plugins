@@ -1,0 +1,18 @@
+# DSH 插件目录
+
+按能力浏览目录。每个分类页面都列出插件的原始 GitHub 仓库和安装命令。
+
+| 分类 | 插件数 | 内容 |
+| --- | ---: | --- |
+| [界面与主题](ui-themes.md) | 31 | 界面、终端客户端、主题和展示体验增强。 |
+| [会话与记忆](sessions-memory.md) | 45 | 对话历史、上下文、持久化与记忆辅助工具。 |
+| [工具与能力](tools-capabilities.md) | 117 | 面向日常工作的实用工具和能力扩展。 |
+| [工作流与智能体](workflow-agents.md) | 33 | 自动化、编排、提示词与智能体工作流。 |
+| [通知与集成](notifications-integrations.md) | 21 | 消息、通知以及外部服务连接。 |
+| [开发与运行时](development-runtime.md) | 44 | 开发工具、Shell、容器、测试与运行时支持。 |
+| [浏览器与搜索](browser-search.md) | 9 | 浏览器控制、网页研究、抓取和搜索辅助工具。 |
+| [MCP 与技能](mcp-skills.md) | 29 | Model Context Protocol 服务、技能与扩展包。 |
+| [多模态与视觉](multimodal-vision.md) | 20 | 图像、音频、视频、OCR 与其他多模态能力。 |
+| [趣味与实验](fun-experiments.md) | 11 | 有趣、特别且具探索性的项目。 |
+
+[返回 Awesome DSH Plugins](../../../README.zh-CN.md)

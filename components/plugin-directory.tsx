@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useLocale } from "@/components/locale-provider";
 import {
   categories,
   categoryById,
@@ -29,19 +30,9 @@ async function copyText(value: string) {
   textArea.remove();
 }
 
-function VerificationLabel({ plugin }: { plugin: Plugin }) {
-  const isStructural = plugin.verification.state !== "community-discovered";
-
-  return (
-    <p className="verification" title={plugin.verification.detail}>
-      <span className={isStructural ? "verification-dot verified" : "verification-dot"} aria-hidden="true" />
-      <span>{isStructural ? "Structurally verified" : "Community discovered"}</span>
-    </p>
-  );
-}
-
 function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: boolean }) {
   const [copied, setCopied] = useState(false);
+  const { locale, text } = useLocale();
   const category = categoryById[plugin.category];
 
   async function handleCopy() {
@@ -58,26 +49,29 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
     <article className={featured ? "plugin-card plugin-card-featured" : "plugin-card"}>
       <div className="card-heading">
         <div>
-          <p className="card-kicker">{category.label}</p>
+          <p className="card-kicker">{category.label[locale]}</p>
           <h3>{plugin.name}</h3>
         </div>
-        {plugin.latest ? <span className="new-label">Recently indexed</span> : null}
+        {plugin.latest ? <span className="new-label">{text.recentlyIndexed}</span> : null}
       </div>
 
       <p className="card-meta">
         <code>{plugin.repository}</code>
       </p>
-      <p className="plugin-description">{plugin.description}</p>
-      <VerificationLabel plugin={plugin} />
+      <p className="plugin-description">{plugin.description[locale]}</p>
+      <p className="verification" title={plugin.verification.detail}>
+        <span aria-hidden="true" />
+        {text.communityDiscovered}
+      </p>
       <div className="install-block">
         <code>{plugin.installCommand}</code>
       </div>
       <div className="card-actions">
         <button type="button" className="copy-button" onClick={handleCopy}>
-          {copied ? "Copied" : "Copy install command"}
+          {copied ? text.copied : text.copyInstall}
         </button>
         <a href={plugin.repoUrl} target="_blank" rel="noreferrer">
-          View on GitHub
+          {text.viewGithub}
         </a>
       </div>
     </article>
@@ -87,6 +81,7 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
 export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<"all" | PluginCategory>("all");
+  const { locale, text } = useLocale();
 
   const filteredPlugins = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -96,26 +91,26 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
       const searchable = [
         plugin.name,
         plugin.repository,
-        plugin.description,
-        categoryById[plugin.category].label,
+        plugin.description[locale],
+        categoryById[plugin.category].label[locale],
       ]
         .join(" ")
         .toLowerCase();
 
       return matchesCategory && (!normalizedQuery || searchable.includes(normalizedQuery));
     });
-  }, [category, query]);
+  }, [category, locale, query]);
+
+  const resultLabel = locale === "zh" ? text.plugins : filteredPlugins.length === 1 ? text.plugin : text.plugins;
 
   return (
     <>
       <section className="featured-section" aria-labelledby="featured-title">
         <div className="section-heading">
           <div>
-            <h2 id="featured-title">Featured DeepSeek Harness plugins</h2>
+            <h2 id="featured-title">{text.featuredTitle}</h2>
           </div>
-          <p>
-            A fast starting pack across terminal UI, file context, visualization, vision, and messaging for teams exploring the DSH ecosystem.
-          </p>
+          <p>{text.featuredCopy}</p>
         </div>
         <div className="featured-grid">
           {featuredPlugins.map((plugin) => (
@@ -127,43 +122,44 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
       <section id="directory" className="directory-section" aria-labelledby="directory-title">
         <div className="directory-heading">
           <div>
-            <h2 id="directory-title">Search the public DSH plugin catalog</h2>
+            <h2 id="directory-title">{text.searchTitle}</h2>
           </div>
-          <p id="directory-description">
-            Filter by capability, repository, or category across {plugins.length} GitHub listings in this DeepSeek Harness plugin directory.
-          </p>
+          <p id="directory-description">{text.searchCopy}</p>
         </div>
 
-        <div className="filter-bar" aria-describedby="directory-description">
-          <div className="search-field">
-            <label htmlFor="plugin-search">Search plugins</label>
-            <input
-              id="plugin-search"
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Try browser, memory, TUI, GitHub, or vision"
-            />
+        <details className="filter-panel" aria-describedby="directory-description">
+          <summary>{text.filters}</summary>
+          <div className="filter-bar">
+            <div className="search-field">
+              <label htmlFor="plugin-search">{text.search}</label>
+              <input
+                id="plugin-search"
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder={text.searchPlaceholder}
+              />
+            </div>
+            <div className="category-field">
+              <label htmlFor="category-filter">{text.category}</label>
+              <select
+                id="category-filter"
+                value={category}
+                onChange={(event) => setCategory(event.target.value as "all" | PluginCategory)}
+              >
+                <option value="all">{text.allCategories}</option>
+                {categories.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.label[locale]}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <p className="result-count" aria-live="polite">
+              {filteredPlugins.length} {resultLabel}
+            </p>
           </div>
-          <div className="category-field">
-            <label htmlFor="category-filter">Category</label>
-            <select
-              id="category-filter"
-              value={category}
-              onChange={(event) => setCategory(event.target.value as "all" | PluginCategory)}
-            >
-              <option value="all">All categories</option>
-              {categories.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.label}
-                </option>
-              ))}
-            </select>
-          </div>
-          <p className="result-count" aria-live="polite">
-            {filteredPlugins.length} {filteredPlugins.length === 1 ? "plugin" : "plugins"}
-          </p>
-        </div>
+        </details>
 
         {filteredPlugins.length > 0 ? (
           <div className="plugin-grid">
@@ -173,7 +169,7 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
           </div>
         ) : (
           <div className="empty-state" role="status">
-            <p>No plugins match this search.</p>
+            <p>{text.noResults}</p>
             <button
               type="button"
               onClick={() => {
@@ -181,7 +177,7 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
                 setCategory("all");
               }}
             >
-              Clear filters
+              {text.clearFilters}
             </button>
           </div>
         )}

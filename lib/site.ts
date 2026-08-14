@@ -4,4 +4,4 @@ export const siteUrl = "https://dsh.reshub.vip";
 export const siteName = "Awesome DSH Plugins";
 
 export const siteDescription =
-  "Awesome DSH Plugins is a public GitHub directory for DeepSeek Harness plugins, DSH plugins, install commands, and ecosystem discovery.";
+  "An independent DeepSeek Harness plugin directory with direct GitHub repositories and copy-ready install commands.";

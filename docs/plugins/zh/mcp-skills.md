@@ -1,8 +1,8 @@
-# MCP & Skills
+# MCP 与技能
 
-Model Context Protocol servers, skills, and extensibility packages.
+Model Context Protocol 服务、技能与扩展包。
 
-**29 plugins** · [Back to all categories](index.md)
+**29 个插件** · [返回全部分类](index.md)
 
 ### [dsh-mcp-manager](https://github.com/1a125/dsh-mcp-manager)
 

@@ -1,8 +1,8 @@
-# Development & Runtime
+# 开发与运行时
 
-Developer tooling, shells, containers, testing, and runtime support.
+开发工具、Shell、容器、测试与运行时支持。
 
-**44 plugins** · [Back to all categories](index.md)
+**44 个插件** · [返回全部分类](index.md)
 
 ### [dsh-code-check](https://github.com/a179-sanae/dsh-code-check)
 
@@ -16,7 +16,7 @@ Install: `dsh plugin --profile web add github:a179-sanae/dsh-code-check`
 
 Repository: `Areium/dsh-fail-logger`
 
-Auto-log failed tool calls across native tools, PTC runcode, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.
+全模式调用工具失败自动实录：把原生工具 / PTC runcode / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。
 
 Install: `dsh plugin --profile web add github:Areium/dsh-fail-logger`
 
@@ -24,7 +24,7 @@ Install: `dsh plugin --profile web add github:Areium/dsh-fail-logger`
 
 Repository: `BiBoyang/dsh-eval-harness`
 
-Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.
+DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。
 
 Install: `dsh plugin --profile web add github:BiBoyang/dsh-eval-harness`
 
@@ -32,7 +32,7 @@ Install: `dsh plugin --profile web add github:BiBoyang/dsh-eval-harness`
 
 Repository: `BrambleXu/dsh-annotate`
 
-Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.
+面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。
 
 Install: `dsh plugin --profile web add github:BrambleXu/dsh-annotate`
 
@@ -40,7 +40,7 @@ Install: `dsh plugin --profile web add github:BrambleXu/dsh-annotate`
 
 Repository: `BrambleXu/dsh-prompt-profile`
 
-Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.
+DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。
 
 Install: `dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile`
 
@@ -48,7 +48,7 @@ Install: `dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile`
 
 Repository: `BrambleXu/dsh-revdiff`
 
-Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.
+DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。
 
 Install: `dsh plugin --profile web add github:BrambleXu/dsh-revdiff`
 
@@ -56,7 +56,7 @@ Install: `dsh plugin --profile web add github:BrambleXu/dsh-revdiff`
 
 Repository: `btspoony/dsh-llm-fallbacks`
 
-Role-based LLM retry & fallback strategies.
+基于角色的模型重试与备用策略。
 
 Install: `dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks`
 
@@ -104,7 +104,7 @@ Install: `dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-interpreters
 
 Repository: `hust-open-atom-club/oh-dsh`
 
-Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.
+社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。
 
 Install: `dsh plugin --profile web add github:hust-open-atom-club/oh-dsh`
 
@@ -112,7 +112,7 @@ Install: `dsh plugin --profile web add github:hust-open-atom-club/oh-dsh`
 
 Repository: `ilharp/dsh-tool-approval`
 
-Manual approval mode ("Manual Mode" / "Ask Mode").
+手动审批模式（Manual/Ask Mode）。
 
 Install: `dsh plugin --profile web add github:ilharp/dsh-tool-approval`
 
@@ -120,7 +120,7 @@ Install: `dsh plugin --profile web add github:ilharp/dsh-tool-approval`
 
 Repository: `Jesse-njx/dsh-plugin-manager`
 
-The dsh pm plugin manager: multi-origin search (awesome list + GitHub + npm), install/remove/update per profile, and a doctor audit of manifests, bundle patches, and version drift.
+dsh pm 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager`
 
@@ -128,7 +128,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager`
 
 Repository: `Jesse-njx/dsh-polyglot`
 
-The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.
+DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-polyglot`
 
@@ -136,7 +136,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-polyglot`
 
 Repository: `Jesse-njx/dsh-tmuxctl`
 
-Take control of your tmux panes: list/send-keys/capture, run long jobs in a pane with watch mode, and approval-gated destructive commands.
+掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl`
 
@@ -152,7 +152,7 @@ Install: `dsh plugin --profile web add github:jiruidai/dsh-meta-orchestrator`
 
 Repository: `lonelymoon87/dsh-gitflow`
 
-Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.
+增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。
 
 Install: `dsh plugin --profile web add github:lonelymoon87/dsh-gitflow`
 
@@ -160,7 +160,7 @@ Install: `dsh plugin --profile web add github:lonelymoon87/dsh-gitflow`
 
 Repository: `lonelymoon87/dsh-guardian`
 
-Adds dangerous-operation policy checks, output redaction, and a security-review workflow.
+增加危险操作策略检查、输出脱敏和安全审查工作流。
 
 Install: `dsh plugin --profile web add github:lonelymoon87/dsh-guardian`
 
@@ -168,7 +168,7 @@ Install: `dsh plugin --profile web add github:lonelymoon87/dsh-guardian`
 
 Repository: `LoserFox/dsh-git-identity`
 
-Pin Git commits to the environment's own author identity; env-var injection overrides all git config settings.
+git 提交固定使用环境自身作者身份，环境变量注入压过一切 git config 设置。
 
 Install: `dsh plugin --profile web add github:LoserFox/dsh-git-identity`
 
@@ -184,7 +184,7 @@ Install: `dsh plugin --profile web add github:lxj808624/dsh-tool-git`
 
 Repository: `omdsh-dev/dsh-plugin-check`
 
-Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.
+插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check`
 
@@ -192,7 +192,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check`
 
 Repository: `omdsh-dev/dsh-security-audit`
 
-Local security audit: config, plugin origins, sessions, network exposure - read-only redacted risk report.
+本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-security-audit`
 
@@ -200,7 +200,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-security-audit`
 
 Repository: `omdsh-dev/dsh-session-health`
 
-Frame-level scan diagnostics for session files (torn/corrupt/empty detection).
+会话文件帧级扫描诊断（torn/损坏/空会话检测）。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-session-health`
 
@@ -208,7 +208,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-session-health`
 
 Repository: `omdsh-dev/fabric`
 
-An MC-Fabric-style hook processor.
+类似 MC Fabric 的 hook 处理器。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/fabric`
 
@@ -216,7 +216,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/fabric`
 
 Repository: `omdsh-dev/plugin-template`
 
-Plugin template repo (based on the official turtle-ui repo).
+插件模板仓库（基于 turtle-ui 官方仓库）。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/plugin-template`
 
@@ -224,7 +224,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/plugin-template`
 
 Repository: `omdsh-dev/Qwen-MM-Plugins`
 
-Qwen multi-modal plugin support.
+Qwen 多模态插件支持。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins`
 
@@ -232,7 +232,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins`
 
 Repository: `omdsh-dev/sandbox-micro`
 
-Support for the microsandbox backend.
+microsandbox 沙箱支持。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/sandbox-micro`
 
@@ -240,7 +240,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/sandbox-micro`
 
 Repository: `omdsh-dev/sandbox-mxc`
 
-Microsoft cross-platform sandbox support.
+微软跨平台沙盒支持。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/sandbox-mxc`
 
@@ -248,7 +248,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/sandbox-mxc`
 
 Repository: `omdsh-dev/sandbox-nono`
 
-Support for the nono sandbox backend.
+nono 沙盒支持。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/sandbox-nono`
 
@@ -296,7 +296,7 @@ Install: `dsh plugin --profile web add github:skitse/dsh-dev-actions`
 
 Repository: `Small-tailqwq/dsh-tps`
 
-A TPS metrics plugin.
+TPS 指标插件。
 
 Install: `dsh plugin --profile web add github:Small-tailqwq/dsh-tps`
 
@@ -312,7 +312,7 @@ Install: `dsh plugin --profile web add github:suimi8/dsh-test-runner`
 
 Repository: `vibeinging/dsh-agent-budget`
 
-Agent-tree token budget management.
+agent 树 token 预算管理。
 
 Install: `dsh plugin --profile web add github:vibeinging/dsh-agent-budget`
 
@@ -320,7 +320,7 @@ Install: `dsh plugin --profile web add github:vibeinging/dsh-agent-budget`
 
 Repository: `vibeinging/dsh-trace`
 
-Telemetry backend exporting turns, model steps, and tool calls to yiTrace.
+遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。
 
 Install: `dsh plugin --profile web add github:vibeinging/dsh-trace`
 
@@ -336,7 +336,7 @@ Install: `dsh plugin --profile web add github:walavave/dsh-git`
 
 Repository: `william-jin-cmu/dsh-evolve`
 
-Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.
+自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 
 Install: `dsh plugin --profile web add github:william-jin-cmu/dsh-evolve`
 
@@ -344,7 +344,7 @@ Install: `dsh plugin --profile web add github:william-jin-cmu/dsh-evolve`
 
 Repository: `xingyingyuzhui/dsh-updater-ui`
 
-DSH self-updater in the settings page: one-click check/pull (git pull --ff-only), auto background checks, version diff and changelog preview with a red-dot reminder.
+设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
 
 Install: `dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui`
 
@@ -352,6 +352,6 @@ Install: `dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui`
 
 Repository: `Zhenyu98/dsh-context-doctor`
 
-Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.
+上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
 
 Install: `dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor`

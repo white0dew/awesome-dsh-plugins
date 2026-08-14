@@ -1,8 +1,8 @@
-# Tools & Capabilities
+# 工具与能力
 
-Focused utilities and capability extensions for everyday work.
+面向日常工作的实用工具和能力扩展。
 
-**117 plugins** · [Back to all categories](index.md)
+**117 个插件** · [返回全部分类](index.md)
 
 ### [dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt)
 
@@ -64,7 +64,7 @@ Install: `dsh plugin --profile web add github:AnacondaKC/dsh-custom-css`
 
 Repository: `Anionex/dsh-computer-use`
 
-Accessibility-first macOS computer use: fresh observations, stale-state rejection, scoped permissions, and safe input.
+macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。
 
 Install: `dsh plugin --profile web add github:Anionex/dsh-computer-use`
 
@@ -72,7 +72,7 @@ Install: `dsh plugin --profile web add github:Anionex/dsh-computer-use`
 
 Repository: `Anionex/dsh-vision-toolkit`
 
-Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.
+让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。
 
 Install: `dsh plugin --profile web add github:Anionex/dsh-vision-toolkit`
 
@@ -80,7 +80,7 @@ Install: `dsh plugin --profile web add github:Anionex/dsh-vision-toolkit`
 
 Repository: `awesome-dsh-plugin/dsh-find-plugin`
 
-Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.
+会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。
 
 Install: `dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin`
 
@@ -288,7 +288,7 @@ Install: `dsh plugin --profile web add github:havingautism/dsh-ultra-ui`
 
 Repository: `hccccc01333/dsh-excel-vera-plugin`
 
-Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.
+检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。
 
 Install: `dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin`
 
@@ -320,7 +320,7 @@ Install: `dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-anti-ads`
 
 Repository: `HuanLinOTO/dsh-plugin-mineru`
 
-Expose MineRU document parsing tools to the model.
+向模型暴露 MineRU 文档解析工具。
 
 Install: `dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru`
 
@@ -352,7 +352,7 @@ Install: `dsh plugin --profile web add github:jelly-000/dsh-balance-monitor`
 
 Repository: `Jesse-njx/dsh-cowork`
 
-Bounded, cell-addressed docread/docwrite for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.
+docread/docwrite：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-cowork`
 
@@ -360,7 +360,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-cowork`
 
 Repository: `Jesse-njx/dsh-docker`
 
-Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.
+类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-docker`
 
@@ -368,7 +368,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-docker`
 
 Repository: `Jesse-njx/dsh-skillport`
 
-Bring your existing Agent Skills (SKILL.md) library to DSH: discover skills across Claude/Codex/Cursor/Gemini paths, inject a progressive-disclosure index, and load bodies on demand.
+把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-skillport`
 
@@ -376,7 +376,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-skillport`
 
 Repository: `Jesse-njx/dsh-voice`
 
-Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under /.dsh/voice.
+语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 /.dsh/voice。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-voice`
 
@@ -392,7 +392,7 @@ Install: `dsh plugin --profile web add github:jiesou/dsh-stream-rules`
 
 Repository: `jihongboo/dsh-apple-mode`
 
-Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).
+DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。
 
 Install: `dsh plugin --profile web add github:jihongboo/dsh-apple-mode`
 
@@ -496,7 +496,7 @@ Install: `dsh plugin --profile web add github:LingLambda/dsh-undo`
 
 Repository: `liustack/modlens`
 
-Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).
+为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
 
 Install: `dsh plugin --profile web add github:liustack/modlens`
 
@@ -504,7 +504,7 @@ Install: `dsh plugin --profile web add github:liustack/modlens`
 
 Repository: `lonelymoon87/dsh-code-intel`
 
-Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.
+用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。
 
 Install: `dsh plugin --profile web add github:lonelymoon87/dsh-code-intel`
 
@@ -512,7 +512,7 @@ Install: `dsh plugin --profile web add github:lonelymoon87/dsh-code-intel`
 
 Repository: `lynx-gt/dsh-subagent-cwd`
 
-dsh-subagent-tools plus a per-call cwd for subagents, shipped with the two in-process provider patches it requires.
+在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。
 
 Install: `dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd`
 
@@ -520,7 +520,7 @@ Install: `dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd`
 
 Repository: `lynx-gt/dsh-subagent-tools`
 
-Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.
+子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。
 
 Install: `dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools`
 
@@ -528,7 +528,7 @@ Install: `dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools`
 
 Repository: `lzszq/dsh-scholar`
 
-Academic assistant plugin.
+学术助手插件。
 
 Install: `dsh plugin --profile web add github:lzszq/dsh-scholar`
 
@@ -536,7 +536,7 @@ Install: `dsh plugin --profile web add github:lzszq/dsh-scholar`
 
 Repository: `MAXeaglet/dsh-bash-terminal`
 
-One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.
+一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。
 
 Install: `dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal`
 
@@ -568,7 +568,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/7d7d`
 
 Repository: `omdsh-dev/dsh-custom-tool`
 
-Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
+用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-custom-tool`
 
@@ -592,7 +592,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-daily-progress`
 
 Repository: `omdsh-dev/dsh-data-agent`
 
-Let the AI connect to databases and write SQL for you.
+让 AI 帮你连数据库、写 SQL。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-data-agent`
 
@@ -608,7 +608,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-hub`
 
 Repository: `omdsh-dev/dsh-kb-sieve`
 
-Build auditable KB packs (SQLite FTS5) from md/txt/docx/pdf with deterministic retrieval and original-text reading.
+从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve`
 
@@ -632,7 +632,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-scout`
 
 Repository: `omdsh-dev/dsh-tool-calculator`
 
-Safe math expression evaluator, zero-dependency recursive-descent parser.
+安全的数学表达式求值器，零依赖递归下降解析器。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator`
 
@@ -640,7 +640,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator`
 
 Repository: `omdsh-dev/dsh-tool-csv`
 
-Parse/query/aggregate/convert CSV (RFC 4180) with a zero-dependency state-machine parser.
+CSV 解析/查询/统计/转换（RFC 4180），零依赖状态机解析器。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv`
 
@@ -648,7 +648,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv`
 
 Repository: `omdsh-dev/dsh-tool-diff`
 
-Structured comparison and unified diffs for text/JSON/CSV/Markdown.
+文本/JSON/CSV/Markdown 结构化比较与 unified diff。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff`
 
@@ -656,7 +656,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff`
 
 Repository: `omdsh-dev/dsh-tool-encoding`
 
-base64/url/hex encoding, common hashes, and UUID generation.
+base64/url/hex 编解码、常用哈希、UUID 生成。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding`
 
@@ -664,7 +664,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding`
 
 Repository: `omdsh-dev/dsh-tool-json`
 
-JSON queries with a JMESPath subset.
+JMESPath 子集 JSON 查询。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-json`
 
@@ -672,7 +672,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-json`
 
 Repository: `omdsh-dev/dsh-tool-markdown`
 
-HTML↔Markdown conversion, GFM table normalization, and TOC generation.
+HTML↔Markdown 转换、GFM 表格规范化、目录生成。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown`
 
@@ -680,7 +680,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown`
 
 Repository: `omdsh-dev/dsh-tool-regex`
 
-Test/extract/safe-replace/statically explain regexes without executing code.
+正则测试/提取/安全替换/静态解释（不执行代码）。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex`
 
@@ -688,7 +688,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex`
 
 Repository: `omdsh-dev/dsh-tool-schema`
 
-JSON Schema validation: validate/paths/explain/normalize.
+JSON Schema 验证：validate/paths/explain/normalize。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema`
 
@@ -696,7 +696,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema`
 
 Repository: `omdsh-dev/dsh-tool-stat`
 
-Descriptive statistics, percentiles, frequency distributions, and correlation.
+描述统计/百分位数/频数分布/相关性。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat`
 
@@ -704,7 +704,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat`
 
 Repository: `omdsh-dev/dsh-tool-time`
 
-Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.
+严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-time`
 
@@ -712,7 +712,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-time`
 
 Repository: `omdsh-dev/dsh-toolkit`
 
-Zero-dependency toolkit: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema - ten deterministic tools in one install.
+零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-toolkit`
 
@@ -824,7 +824,7 @@ Install: `dsh plugin --profile web add github:TecFancy/dsh-deeptutor`
 
 Repository: `THU-MAIC/dsh-openmaic`
 
-OpenMAIC: classrooms, slides, interactive widgets, and Socratic teaching.
+OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。
 
 Install: `dsh plugin --profile web add github:THU-MAIC/dsh-openmaic`
 
@@ -848,7 +848,7 @@ Install: `dsh plugin --profile web add github:turtle1999/turtle-ui`
 
 Repository: `vibeinging/dsh-tool-search`
 
-Per-agent on-demand tool discovery and progressive schema disclosure.
+按 agent 的按需工具发现与渐进式 schema 披露。
 
 Install: `dsh plugin --profile web add github:vibeinging/dsh-tool-search`
 
@@ -928,7 +928,7 @@ Install: `dsh plugin --profile web add github:zjl88858/dsh-huadongbianzuqi`
 
 Repository: `ZK-Andy/dsh-continual-evolve`
 
-Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.
+持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。
 
 Install: `dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve`
 
@@ -936,6 +936,6 @@ Install: `dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve`
 
 Repository: `zp-home/dsh-recommend`
 
-Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.
+DSH 插件透明排行与推荐：每日自动抓取 dsh-plugin 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 
 Install: `dsh plugin --profile web add github:zp-home/dsh-recommend`

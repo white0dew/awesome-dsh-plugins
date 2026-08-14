@@ -1,6 +1,6 @@
 # DSH plugin directory
 
-Browse the catalog by capability. Each category page lists every indexed plugin with its original GitHub repository and install command.
+Browse the catalog by capability. Each category page lists every plugin's original GitHub repository and install command.
 
 | Category | Plugins | What you will find |
 | --- | ---: | --- |

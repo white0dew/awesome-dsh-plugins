@@ -1,8 +1,8 @@
-# Browser & Search
+# 浏览器与搜索
 
-Browser control, web research, crawling, and search helpers.
+浏览器控制、网页研究、抓取和搜索辅助工具。
 
-**9 plugins** · [Back to all categories](index.md)
+**9 个插件** · [返回全部分类](index.md)
 
 ### [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)
 

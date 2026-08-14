@@ -1,6 +1,8 @@
 # Awesome DSH Plugins
 
-A community-maintained directory of DeepSeek Harness (DSH) plugins, with direct links to each plugin's original GitHub repository and copy-ready install commands.
+[简体中文](README.zh-CN.md)
+
+An independent directory of DeepSeek Harness (DSH) plugins, with direct links to each plugin's original GitHub repository and copy-ready install commands.
 
 - **Live site:** https://dsh.reshub.vip
 - **Repository:** https://github.com/white0dew/awesome-dsh-plugins
@@ -28,9 +30,9 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 20 |
 | [Fun & Experiments](docs/plugins/fun-experiments.md) | 11 |
 
-## Community note
+## Independence
 
-All 360 entries are **community-discovered**. An original repository was indexed; this is not a security review, compatibility guarantee, or endorsement.
+This directory lists 360 plugins. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 

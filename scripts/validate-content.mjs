@@ -1,4 +1,5 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
+import { constants } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
@@ -10,14 +11,17 @@ import {
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const rootDirectory = path.resolve(scriptDirectory, "..");
-const firstInputPath = path.join(
-  rootDirectory,
-  "data/sources/awesome-dsh-plugin.json",
-);
-const secondInputPath = path.join(
-  rootDirectory,
-  "data/sources/github-plugin-catalog.json",
-);
+const firstInputPath = path.join(rootDirectory, "data", "sources", "awesome-dsh-plugin.json");
+const secondInputPath = path.join(rootDirectory, "data", "sources", "github-plugin-catalog.json");
+const docsDirectory = path.join(rootDirectory, "docs", "plugins");
+const featuredRepositories = new Set([
+  "nagi-ovo/dsh-visualize",
+  "omdsh-dev/dsh-mnemon",
+  "anionex/dsh-vision-toolkit",
+  "jesse-njx/dsh-chatnode-wechat",
+  "omdsh-dev/dsh-at-file",
+  "huiliyi37/dsh-tianshu-tui",
+]);
 
 const [firstInput, secondInput] = await Promise.all([
   readFile(firstInputPath, "utf8").then(JSON.parse),
@@ -47,6 +51,14 @@ if (categories.length !== 10) {
   errors.push(`expected 10 categories, found ${categories.length}`);
 }
 
+for (const category of categories) {
+  for (const locale of ["en", "zh"]) {
+    if (!category.label[locale]?.trim() || !category.description[locale]?.trim()) {
+      errors.push(`${category.id}: missing ${locale} category text`);
+    }
+  }
+}
+
 for (const plugin of plugins) {
   if (seenIds.has(plugin.id)) {
     errors.push(`${plugin.id}: duplicate id`);
@@ -68,35 +80,52 @@ for (const plugin of plugins) {
   if (plugin.repoUrl !== `https://github.com/${plugin.repository}`) {
     errors.push(`${plugin.id}: repoUrl must exactly match repository`);
   }
-  if (
-    plugin.installCommand !==
-    `dsh plugin --profile web add github:${plugin.repository}`
-  ) {
+  if (plugin.installCommand !== `dsh plugin --profile web add github:${plugin.repository}`) {
     errors.push(`${plugin.id}: install command must exactly match repository`);
   }
   if (!categoryIds.has(plugin.category) || !categoryById[plugin.category]) {
     errors.push(`${plugin.id}: unknown category`);
   }
-  if (plugin.verification.state !== "community-discovered") {
-    errors.push(`${plugin.id}: verification state must be community-discovered`);
+  for (const locale of ["en", "zh"]) {
+    if (typeof plugin.description?.[locale] !== "string" || !plugin.description[locale].trim()) {
+      errors.push(`${plugin.id}: ${locale} description must not be empty`);
+    }
   }
-  if (!verificationStateIds.has(plugin.verification.state)) {
-    errors.push(`${plugin.id}: verification state is not allowed`);
+  if (
+    plugin.verification.state !== "community-discovered" ||
+    !verificationStateIds.has(plugin.verification.state) ||
+    plugin.verification.detail !== expectedVerificationDetail
+  ) {
+    errors.push(`${plugin.id}: verification must match the community-discovered policy`);
   }
-  if (plugin.verification.detail !== expectedVerificationDetail) {
-    errors.push(`${plugin.id}: verification detail does not match the catalog policy`);
-  }
-  if (typeof plugin.description !== "string" || !plugin.description.trim()) {
-    errors.push(`${plugin.id}: description must not be empty`);
-  }
-  if (Object.hasOwn(plugin, "source")) {
-    errors.push(`${plugin.id}: public plugin records must not expose catalog provenance`);
+  for (const forbiddenProperty of ["source", "provenance"]) {
+    if (Object.hasOwn(plugin, forbiddenProperty)) {
+      errors.push(`${plugin.id}: public plugin records must not expose ${forbiddenProperty}`);
+    }
   }
 }
 
-const featuredCount = plugins.filter((plugin) => plugin.featured).length;
-if (featuredCount !== 6) {
-  errors.push(`expected exactly 6 featured plugins, found ${featuredCount}`);
+const featured = plugins.filter((plugin) => plugin.featured);
+if (featured.length !== 6) {
+  errors.push(`expected exactly 6 featured plugins, found ${featured.length}`);
+}
+if (featured.some((plugin) => !featuredRepositories.has(plugin.repository.toLowerCase()))) {
+  errors.push("featured plugins must match the six approved repositories");
+}
+if (featuredRepositories.size !== featured.length) {
+  errors.push("one or more approved featured repositories are missing");
+}
+
+const chineseDocumentation = [
+  path.join(docsDirectory, "zh", "index.md"),
+  ...categories.map((category) => path.join(docsDirectory, "zh", category.file)),
+];
+for (const documentationPath of chineseDocumentation) {
+  try {
+    await access(documentationPath, constants.R_OK);
+  } catch {
+    errors.push(`missing generated Chinese documentation: ${path.relative(rootDirectory, documentationPath)}`);
+  }
 }
 
 if (errors.length > 0) {
@@ -107,9 +136,9 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`Content validation passed for ${plugins.length} plugins.`);
+console.log(`Content validation passed for ${plugins.length} bilingual plugins.`);
 console.log("Category summary:");
 for (const category of categories) {
   const count = plugins.filter((plugin) => plugin.category === category.id).length;
-  console.log(`- ${category.label}: ${count}`);
+  console.log(`- ${category.label.en}: ${count}`);
 }

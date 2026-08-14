@@ -1,8 +1,8 @@
-# Workflow & Agents
+# 工作流与智能体
 
-Automation, orchestration, prompts, and agent workflows.
+自动化、编排、提示词与智能体工作流。
 
-**33 plugins** · [Back to all categories](index.md)
+**33 个插件** · [返回全部分类](index.md)
 
 ### [dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge)
 
@@ -32,7 +32,7 @@ Install: `dsh plugin --profile web add github:alison-xx/deepseek-harness-flow`
 
 Repository: `btspoony/dsh-advisor`
 
-Pair a second model that passively reviews each turn and injects notes.
+搭配一个副模型，每轮被动审查并注入见解。
 
 Install: `dsh plugin --profile web add github:btspoony/dsh-advisor`
 
@@ -56,7 +56,7 @@ Install: `dsh plugin --profile web add github:f0909172434/dsh-plugin-verified-se
 
 Repository: `fakechris/dsh-track`
 
-Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.
+嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。
 
 Install: `dsh plugin --profile web add github:fakechris/dsh-track`
 
@@ -64,7 +64,7 @@ Install: `dsh plugin --profile web add github:fakechris/dsh-track`
 
 Repository: `fuhefei/dsh-sentinel`
 
-Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.
+条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。
 
 Install: `dsh plugin --profile web add github:fuhefei/dsh-sentinel`
 
@@ -112,7 +112,7 @@ Install: `dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-spur`
 
 Repository: `icetomoyo/dsh_workflow`
 
-UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.
+把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。
 
 Install: `dsh plugin --profile web add github:icetomoyo/dsh_workflow`
 
@@ -120,7 +120,7 @@ Install: `dsh plugin --profile web add github:icetomoyo/dsh_workflow`
 
 Repository: `Jesse-njx/dsh-routines`
 
-Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.
+定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-routines`
 
@@ -128,7 +128,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-routines`
 
 Repository: `lonelymoon87/dsh-specflow`
 
-Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.
+增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
 
 Install: `dsh plugin --profile web add github:lonelymoon87/dsh-specflow`
 
@@ -136,7 +136,7 @@ Install: `dsh plugin --profile web add github:lonelymoon87/dsh-specflow`
 
 Repository: `NanmiCoder/dsh-agent-teams`
 
-AgentTeams multi-agent teams.
+AgentTeams 多智能体团队。
 
 Install: `dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams`
 
@@ -144,7 +144,7 @@ Install: `dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams`
 
 Repository: `omdsh-dev/dsh-deep-research`
 
-Adaptive deep-research orchestrator built on the official workflow engine.
+自适应深度研究编排器（基于官方 workflow 引擎）。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-deep-research`
 
@@ -152,7 +152,7 @@ Install: `dsh plugin --profile web add github:omdsh-dev/dsh-deep-research`
 
 Repository: `omdsh-dev/dsh-inspect`
 
-Adversarial checkup → fix → review loop toolset.
+发现问题→修复交付→质量复查的对抗式闭环工具集。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-inspect`
 
@@ -200,7 +200,7 @@ Install: `dsh plugin --profile web add github:tappass/dsh-governance`
 
 Repository: `titanwings/dsh-automation`
 
-Scheduled coding runs in fresh agent sessions with auditable history.
+定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。
 
 Install: `dsh plugin --profile web add github:titanwings/dsh-automation`
 
@@ -208,7 +208,7 @@ Install: `dsh plugin --profile web add github:titanwings/dsh-automation`
 
 Repository: `titanwings/dsh-plannotator`
 
-Plan review with anchored annotations and structured feedback back to the agent.
+计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。
 
 Install: `dsh plugin --profile web add github:titanwings/dsh-plannotator`
 
@@ -216,7 +216,7 @@ Install: `dsh plugin --profile web add github:titanwings/dsh-plannotator`
 
 Repository: `vlln/dsh-loop`
 
-Recurring loops: /loop command + loop tool + activity status bar.
+定时循环：/loop 命令 + loop 工具 + 活动状态条。
 
 Install: `dsh plugin --profile web add github:vlln/dsh-loop`
 

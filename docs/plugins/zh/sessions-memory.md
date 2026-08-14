@@ -1,8 +1,8 @@
-# Sessions & Memory
+# 会话与记忆
 
-Conversation history, context, persistence, and memory helpers.
+对话历史、上下文、持久化与记忆辅助工具。
 
-**45 plugins** · [Back to all categories](index.md)
+**45 个插件** · [返回全部分类](index.md)
 
 ### [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor)
 
@@ -16,7 +16,7 @@ Install: `dsh plugin --profile web add github:030611/dsh-telemetry-redactor`
 
 Repository: `Anionex/dsh-turn-rewind`
 
-Rewind conversation and workspace state, powered by a persistent Change Ledger.
+对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
 
 Install: `dsh plugin --profile web add github:Anionex/dsh-turn-rewind`
 
@@ -40,7 +40,7 @@ Install: `dsh plugin --profile web add github:ben7am1n/dsh-memory`
 
 Repository: `bill9109/dsh-conversation-share`
 
-Share any excerpt of a conversation.
+分享任意段落的对话。
 
 Install: `dsh plugin --profile web add github:bill9109/dsh-conversation-share`
 
@@ -56,7 +56,7 @@ Install: `dsh plugin --profile web add github:bitterSmilezzz/dsh-model-selector`
 
 Repository: `Buyi-wsgzg/dsh-sidechain`
 
-/side persistent side sessions and /btw one-shot side questions, run in a temporary fork without touching main history.
+/side 持续性侧会话与 /btw 一次性侧问，在临时 fork 中运行、不写入主会话历史。
 
 Install: `dsh plugin --profile web add github:Buyi-wsgzg/dsh-sidechain`
 
@@ -64,7 +64,7 @@ Install: `dsh plugin --profile web add github:Buyi-wsgzg/dsh-sidechain`
 
 Repository: `Chinesezjc/dsh-interconnect`
 
-Cross-instance message and event handoff between DSH instances via an interconnect server.
+跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。
 
 Install: `dsh plugin --profile web add github:Chinesezjc/dsh-interconnect`
 
@@ -104,7 +104,7 @@ Install: `dsh plugin --profile web add github:havingautism/dsh-notebooks`
 
 Repository: `hellodigua/dsh-share`
 
-Share your conversations with one click.
+一键分享你的对话。
 
 Install: `dsh plugin --profile web add github:hellodigua/dsh-share`
 
@@ -128,7 +128,7 @@ Install: `dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-yet-another-
 
 Repository: `Jesse-njx/dsh-crosstalk`
 
-Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.
+跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk`
 
@@ -136,7 +136,7 @@ Install: `dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk`
 
 Repository: `Jesse-njx/dsh-memory`
 
-Cited memory over DSH's lossless session log: distilled facts carry (sessionId, eventRange) citations that expand back to the exact original log excerpt.
+基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 (sessionId, eventRange) 引用，可随时展开回原始日志片段。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-memory`
 
@@ -160,7 +160,7 @@ Install: `dsh plugin --profile web add github:longyu065/dsh-session-index`
 
 Repository: `LoserFox/distill`
 
-Automatic conversation distillation: background subagent reflection + skill create/update.
+自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
 
 Install: `dsh plugin --profile web add github:LoserFox/distill`
 
@@ -168,7 +168,7 @@ Install: `dsh plugin --profile web add github:LoserFox/distill`
 
 Repository: `modusensus/dsh-mneme`
 
-Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.
+跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。
 
 Install: `dsh plugin --profile web add github:modusensus/dsh-mneme`
 
@@ -176,7 +176,7 @@ Install: `dsh plugin --profile web add github:modusensus/dsh-mneme`
 
 Repository: `Moeblack/dsh-message-edit`
 
-Branch-based message editing, reroll, retry, and a version timeline.
+基于分支的消息编辑、reroll、重试与版本时间线。
 
 Install: `dsh plugin --profile web add github:Moeblack/dsh-message-edit`
 
@@ -184,7 +184,7 @@ Install: `dsh plugin --profile web add github:Moeblack/dsh-message-edit`
 
 Repository: `Moeblack/dsh-prompt-studio`
 
-Edit user and built-in system-prompt sections with live preview.
+带实时预览的用户/内置 system prompt 分节编辑器。
 
 Install: `dsh plugin --profile web add github:Moeblack/dsh-prompt-studio`
 
@@ -216,7 +216,7 @@ Install: `dsh plugin --profile web add github:morlay/session-persistence-rdb`
 
 Repository: `nowledge-co/nowledge-mem-deepseek-harness`
 
-One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.
+给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。
 
 Install: `dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness`
 
@@ -224,7 +224,7 @@ Install: `dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-
 
 Repository: `Nwflower/dsh-chat-import`
 
-Import Claude Code / Codex / ChatGPT / Cursor chat histories as resumable DeepSeek Harness sessions.
+把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话。
 
 Install: `dsh plugin --profile web add github:Nwflower/dsh-chat-import`
 
@@ -232,7 +232,7 @@ Install: `dsh plugin --profile web add github:Nwflower/dsh-chat-import`
 
 Repository: `omdsh-dev/dsh-mnemon`
 
-Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).
+Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-mnemon`
 
@@ -344,7 +344,7 @@ Install: `dsh plugin --profile web add github:XYZ1024-alt/dsh-side-panel`
 
 Repository: `yuezengwu/dsh-explain`
 
-Local-first learning mode: cross-session learning threads with per-origin explanations.
+本地优先学习模式：跨会话全局学习线程、按来源讲解。
 
 Install: `dsh plugin --profile web add github:yuezengwu/dsh-explain`
 

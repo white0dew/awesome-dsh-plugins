@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteName,
   title: {
-    default: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
+    default: "Awesome DSH Plugins | DeepSeek Harness plugin directory",
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
@@ -21,12 +21,21 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/",
+    languages: {
+      en: "/?lang=en",
+      "zh-CN": "/?lang=zh",
+    },
+  },
+  icons: {
+    icon: [{ url: "/deepseek-icon.ico", type: "image/x-icon" }],
+    shortcut: "/deepseek-icon.ico",
+    apple: "/deepseek-icon.ico",
   },
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName,
-    title: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
+    title: "Awesome DSH Plugins | Direct DeepSeek Harness plugins",
     description: siteDescription,
     images: [
       {
@@ -39,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
+    title: "Awesome DSH Plugins | Direct DeepSeek Harness plugins",
     description: siteDescription,
     images: ["/opengraph-image"],
   },
