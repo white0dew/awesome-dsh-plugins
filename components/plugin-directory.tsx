@@ -129,7 +129,7 @@ function PluginRow({
       if (!page) throw new Error("Artalk response is missing a valid page id");
       if (page.up !== null) setLikeCount(page.up);
 
-      const voteResponse = await fetch(`/artalk/api/v2/votes/page_up/${page.id}`, {
+      const voteResponse = await fetch(`/artalk/api/v2/votes/page/${page.id}/up`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({}),
