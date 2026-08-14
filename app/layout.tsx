@@ -5,11 +5,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: siteName,
   title: {
-    default: "Awesome DSH Plugins | DeepSeek Harness Plugin Directory",
+    default: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
+  keywords: [
+    "DeepSeek Harness plugins",
+    "DSH plugins",
+    "DeepSeek Harness plugin directory",
+    "awesome DSH plugins",
+    "GitHub",
+    "DeepSeek Harness GitHub plugins",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -17,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName,
-    title: "Awesome DSH Plugins | DeepSeek Harness Plugin Directory",
+    title: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
     description: siteDescription,
     images: [
       {
@@ -30,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Awesome DSH Plugins | DeepSeek Harness Plugin Directory",
+    title: "Awesome DSH Plugins | DeepSeek Harness plugins on GitHub",
     description: siteDescription,
     images: ["/opengraph-image"],
   },

@@ -2,12 +2,14 @@
   "name": "awesome-dsh-plugins",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "validate-content": "node scripts/validate-content.ts"
+    "generate-content": "node scripts/generate-content.mjs",
+    "validate-content": "node scripts/validate-content.mjs"
   },
   "dependencies": {
     "next": "16.2.11",

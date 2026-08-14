@@ -7,7 +7,7 @@ import {
   plugins,
   type Plugin,
   type PluginCategory,
-} from "@/content/plugins";
+} from "@/content/plugins.generated";
 
 type PluginDirectoryProps = {
   featuredPlugins: readonly Plugin[];
@@ -30,7 +30,7 @@ async function copyText(value: string) {
 }
 
 function VerificationLabel({ plugin }: { plugin: Plugin }) {
-  const isStructural = plugin.verification.state === "structurally-verified";
+  const isStructural = plugin.verification.state !== "community-discovered";
 
   return (
     <p className="verification" title={plugin.verification.detail}>
@@ -61,10 +61,17 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
           <p className="card-kicker">{category.label}</p>
           <h3>{plugin.name}</h3>
         </div>
-        {plugin.latest ? <span className="new-label">New to index</span> : null}
+        {plugin.latest ? <span className="new-label">Latest source batch</span> : null}
       </div>
+
+      <p className="card-meta">
+        <code>{plugin.repository}</code>
+      </p>
       <p className="plugin-description">{plugin.description}</p>
       <VerificationLabel plugin={plugin} />
+      <p className="source-note">
+        Source snapshot: <a href={plugin.source.url} target="_blank" rel="noreferrer">{plugin.source.name}</a>
+      </p>
       <div className="install-block">
         <code>{plugin.installCommand}</code>
       </div>
@@ -73,7 +80,7 @@ function PluginCard({ plugin, featured = false }: { plugin: Plugin; featured?: b
           {copied ? "Copied" : "Copy install command"}
         </button>
         <a href={plugin.repoUrl} target="_blank" rel="noreferrer">
-          Source code
+          View on GitHub
         </a>
       </div>
     </article>
@@ -93,6 +100,7 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
         plugin.name,
         plugin.repository,
         plugin.description,
+        plugin.source.name,
         categoryById[plugin.category].label,
       ]
         .join(" ")
@@ -107,23 +115,27 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
       <section className="featured-section" aria-labelledby="featured-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Selected for launch</p>
-            <h2 id="featured-title">Featured plugins</h2>
+            <h2 id="featured-title">Featured DeepSeek Harness plugins</h2>
           </div>
-          <p>Useful entry points across terminal, coding, and visual DSH workflows.</p>
+          <p>
+            A fast starting pack across terminal UI, file context, visualization, vision, and messaging for teams exploring the DSH ecosystem.
+          </p>
         </div>
         <div className="featured-grid">
-          {featuredPlugins.map((plugin) => <PluginCard key={plugin.id} plugin={plugin} featured />)}
+          {featuredPlugins.map((plugin) => (
+            <PluginCard key={plugin.id} plugin={plugin} featured />
+          ))}
         </div>
       </section>
 
       <section id="directory" className="directory-section" aria-labelledby="directory-title">
         <div className="directory-heading">
           <div>
-            <p className="eyebrow">Browse the collection</p>
-            <h2 id="directory-title">All DeepSeek Harness plugins</h2>
+            <h2 id="directory-title">Search the public DSH plugin catalog</h2>
           </div>
-          <p id="directory-description">Search by name, repository, capability, or category.</p>
+          <p id="directory-description">
+            Filter by capability, repository, or category across {plugins.length} GitHub listings in this DeepSeek Harness plugin directory.
+          </p>
         </div>
 
         <div className="filter-bar" aria-describedby="directory-description">
@@ -134,7 +146,7 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Try vision, sidebar, or @file"
+              placeholder="Try browser, memory, TUI, GitHub, or vision"
             />
           </div>
           <div className="category-field">
@@ -146,7 +158,9 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
             >
               <option value="all">All categories</option>
               {categories.map((item) => (
-                <option key={item.id} value={item.id}>{item.label}</option>
+                <option key={item.id} value={item.id}>
+                  {item.label}
+                </option>
               ))}
             </select>
           </div>
@@ -157,12 +171,20 @@ export function PluginDirectory({ featuredPlugins }: PluginDirectoryProps) {
 
         {filteredPlugins.length > 0 ? (
           <div className="plugin-grid">
-            {filteredPlugins.map((plugin) => <PluginCard key={plugin.id} plugin={plugin} />)}
+            {filteredPlugins.map((plugin) => (
+              <PluginCard key={plugin.id} plugin={plugin} />
+            ))}
           </div>
         ) : (
           <div className="empty-state" role="status">
             <p>No plugins match this search.</p>
-            <button type="button" onClick={() => { setQuery(""); setCategory("all"); }}>
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setCategory("all");
+              }}
+            >
               Clear filters
             </button>
           </div>
