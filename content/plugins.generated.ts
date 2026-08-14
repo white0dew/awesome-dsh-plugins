@@ -439,7 +439,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: false,
   },
   {
@@ -2007,7 +2007,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: false,
   },
   {
@@ -2167,7 +2167,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: true,
   },
   {
@@ -3175,7 +3175,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: false,
   },
   {
@@ -3287,7 +3287,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: false,
   },
   {
@@ -3575,7 +3575,7 @@ export const plugins = [
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
-    featured: true,
+    featured: false,
     latest: false,
   },
   {

@@ -14,14 +14,6 @@ const rootDirectory = path.resolve(scriptDirectory, "..");
 const firstInputPath = path.join(rootDirectory, "data", "sources", "awesome-dsh-plugin.json");
 const secondInputPath = path.join(rootDirectory, "data", "sources", "github-plugin-catalog.json");
 const docsDirectory = path.join(rootDirectory, "docs", "plugins");
-const featuredRepositories = new Set([
-  "nagi-ovo/dsh-visualize",
-  "omdsh-dev/dsh-mnemon",
-  "anionex/dsh-vision-toolkit",
-  "jesse-njx/dsh-chatnode-wechat",
-  "omdsh-dev/dsh-at-file",
-  "huiliyi37/dsh-tianshu-tui",
-]);
 
 const [firstInput, secondInput] = await Promise.all([
   readFile(firstInputPath, "utf8").then(JSON.parse),
@@ -164,17 +156,6 @@ for (const plugin of plugins) {
       errors.push(`${plugin.id}: public plugin records must not expose ${forbiddenProperty}`);
     }
   }
-}
-
-const featured = plugins.filter((plugin) => plugin.featured);
-if (featured.length !== 6) {
-  errors.push(`expected exactly 6 featured plugins, found ${featured.length}`);
-}
-if (featured.some((plugin) => !featuredRepositories.has(plugin.repository.toLowerCase()))) {
-  errors.push("featured plugins must match the six approved repositories");
-}
-if (featuredRepositories.size !== featured.length) {
-  errors.push("one or more approved featured repositories are missing");
 }
 
 const chineseDocumentation = [

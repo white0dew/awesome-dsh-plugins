@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PluginFeedbackDialog } from "@/components/plugin-feedback-dialog";
 import { useLocale } from "@/components/locale-provider";
 import {
@@ -19,7 +19,7 @@ type LikeState = "idle" | "loading" | "error";
 
 type ArtalkPage = {
   id: number;
-  up: number | null;
+  up: number;
 };
 
 function withValue(template: string, value: string | number) {
@@ -50,10 +50,9 @@ function readArtalkPage(payload: unknown): ArtalkPage | null {
   const { id, vote_up: up } = data.page;
   if (typeof id !== "number" || !Number.isInteger(id) || id <= 0) return null;
 
-  return {
-    id,
-    up: typeof up === "number" && Number.isFinite(up) && up >= 0 ? up : null,
-  };
+  if (typeof up !== "number" || !Number.isFinite(up) || up < 0) return null;
+
+  return { id, up };
 }
 
 function readVoteCount(payload: unknown): number | null {
@@ -67,7 +66,54 @@ function isPluginCategory(value: string | null): value is PluginCategory {
 }
 
 function isDirectorySort(value: string | null): value is DirectorySort {
-  return value === "featured" || value === "stars" || value === "name";
+  return value === "stars" || value === "name" || (hasFeaturedPlugins && value === "featured");
+}
+
+const featuredCount = plugins.filter((plugin) => plugin.featured).length;
+const hasFeaturedPlugins = featuredCount > 0;
+const defaultDirectorySort: DirectorySort = hasFeaturedPlugins ? "featured" : "stars";
+const pluginCardVisibilityHandlers = new Map<Element, () => void>();
+let pluginCardVisibilityObserver: IntersectionObserver | null = null;
+
+function observePluginCardVisibility(card: Element, onVisible: () => void) {
+  if (!pluginCardVisibilityObserver) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+
+          const handler = pluginCardVisibilityHandlers.get(entry.target);
+          if (!handler) continue;
+
+          pluginCardVisibilityHandlers.delete(entry.target);
+          observer.unobserve(entry.target);
+          handler();
+        }
+
+        if (pluginCardVisibilityHandlers.size === 0) {
+          observer.disconnect();
+          if (pluginCardVisibilityObserver === observer) pluginCardVisibilityObserver = null;
+        }
+      },
+      { root: null, rootMargin: "480px 0px", threshold: 0 },
+    );
+    pluginCardVisibilityObserver = observer;
+  }
+
+  const observer = pluginCardVisibilityObserver;
+  pluginCardVisibilityHandlers.set(card, onVisible);
+  observer.observe(card);
+
+  return () => {
+    if (pluginCardVisibilityHandlers.get(card) !== onVisible) return;
+
+    pluginCardVisibilityHandlers.delete(card);
+    observer.unobserve(card);
+    if (pluginCardVisibilityHandlers.size === 0) {
+      observer.disconnect();
+      if (pluginCardVisibilityObserver === observer) pluginCardVisibilityObserver = null;
+    }
+  };
 }
 
 async function copyText(value: string) {
@@ -98,9 +144,74 @@ function PluginCard({
   const [copyState, setCopyState] = useState<CopyState>("idle");
   const [likeState, setLikeState] = useState<LikeState>("idle");
   const [likeCount, setLikeCount] = useState<number | null>(null);
+  const cardRef = useRef<HTMLElement>(null);
+  const isMountedRef = useRef(false);
+  const artalkPageRef = useRef<ArtalkPage | null>(null);
+  const artalkPageRequestRef = useRef<Promise<ArtalkPage> | null>(null);
+  const artalkPageAbortControllerRef = useRef<AbortController | null>(null);
+  const voteRequestRef = useRef<Promise<void> | null>(null);
+  const voteAbortControllerRef = useRef<AbortController | null>(null);
   const { locale, text } = useLocale();
   const category = categoryById[plugin.category];
   const numberFormat = useMemo(() => new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en-US"), [locale]);
+
+  const requestArtalkPage = useCallback(() => {
+    if (artalkPageRef.current) return Promise.resolve(artalkPageRef.current);
+    if (artalkPageRequestRef.current) return artalkPageRequestRef.current;
+
+    const controller = new AbortController();
+    artalkPageAbortControllerRef.current = controller;
+    const pageKey = getPluginArtalkPageKey(plugin);
+    const pageUrl = getPluginArtalkPageUrl(plugin);
+    const params = new URLSearchParams({
+      site_name: ARTALK_SITE_NAME,
+      page_key: pageKey,
+      page_title: plugin.name,
+      page_url: pageUrl,
+      limit: "0",
+    });
+    const request = (async () => {
+      const response = await fetch(`/artalk/api/v2/comments?${params.toString()}`, {
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error("Artalk page request failed");
+
+      const payload: unknown = await response.json();
+      const page = readArtalkPage(payload);
+      if (!page) throw new Error("Artalk response is missing a valid page id or vote count");
+
+      artalkPageRef.current = page;
+      if (isMountedRef.current) setLikeCount(page.up);
+      return page;
+    })();
+
+    artalkPageRequestRef.current = request;
+    void request.finally(() => {
+      if (artalkPageRequestRef.current === request) artalkPageRequestRef.current = null;
+      if (artalkPageAbortControllerRef.current === controller) artalkPageAbortControllerRef.current = null;
+    }).catch(() => undefined);
+
+    return request;
+  }, [plugin]);
+
+  useEffect(() => {
+    isMountedRef.current = true;
+
+    return () => {
+      isMountedRef.current = false;
+      artalkPageAbortControllerRef.current?.abort();
+      voteAbortControllerRef.current?.abort();
+    };
+  }, []);
+
+  useEffect(() => {
+    const card = cardRef.current;
+    if (!card) return;
+
+    return observePluginCardVisibility(card, () => {
+      void requestArtalkPage().catch(() => undefined);
+    });
+  }, [requestArtalkPage]);
 
   async function handleCopy() {
     try {
@@ -114,41 +225,43 @@ function PluginCard({
   }
 
   async function handleLike() {
-    if (likeState === "loading") return;
+    if (likeState === "loading" || voteRequestRef.current) return;
 
     setLikeState("loading");
+    const voteRequest = (async () => {
+      try {
+        const page = await requestArtalkPage();
+        if (isMountedRef.current) setLikeCount(page.up);
+
+        const controller = new AbortController();
+        voteAbortControllerRef.current = controller;
+        const voteResponse = await fetch(`/artalk/api/v2/votes/page/${page.id}/up`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({}),
+          signal: controller.signal,
+        });
+        if (!voteResponse.ok) throw new Error("Artalk vote request failed");
+
+        const votePayload: unknown = await voteResponse.json();
+        const up = readVoteCount(votePayload);
+        if (up === null) throw new Error("Artalk vote response is missing a count");
+        if (isMountedRef.current) {
+          setLikeCount(up);
+          setLikeState("idle");
+        }
+      } catch {
+        if (isMountedRef.current) setLikeState("error");
+      } finally {
+        voteAbortControllerRef.current = null;
+      }
+    })();
+
+    voteRequestRef.current = voteRequest;
     try {
-      const pageKey = getPluginArtalkPageKey(plugin);
-      const pageUrl = getPluginArtalkPageUrl(plugin);
-      const params = new URLSearchParams({
-        site_name: ARTALK_SITE_NAME,
-        page_key: pageKey,
-        page_title: plugin.name,
-        page_url: pageUrl,
-        limit: "0",
-      });
-      const pageResponse = await fetch(`/artalk/api/v2/comments?${params.toString()}`);
-      if (!pageResponse.ok) throw new Error("Artalk page request failed");
-
-      const pagePayload: unknown = await pageResponse.json();
-      const page = readArtalkPage(pagePayload);
-      if (!page) throw new Error("Artalk response is missing a valid page id");
-      if (page.up !== null) setLikeCount(page.up);
-
-      const voteResponse = await fetch(`/artalk/api/v2/votes/page/${page.id}/up`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
-      });
-      if (!voteResponse.ok) throw new Error("Artalk vote request failed");
-
-      const votePayload: unknown = await voteResponse.json();
-      const up = readVoteCount(votePayload);
-      if (up === null) throw new Error("Artalk vote response is missing a count");
-      setLikeCount(up);
-      setLikeState("idle");
-    } catch {
-      setLikeState("error");
+      await voteRequest;
+    } finally {
+      if (voteRequestRef.current === voteRequest) voteRequestRef.current = null;
     }
   }
 
@@ -168,11 +281,10 @@ function PluginCard({
   const likeStatusId = `plugin-like-status-${plugin.id}`;
 
   return (
-    <article className="plugin-card">
+    <article ref={cardRef} className="plugin-card">
       <div className="plugin-card-heading">
         <div className="plugin-card-tags">
           <span className="category-tag">{category.label[locale]}</span>
-          {plugin.featured ? <span className="featured-tag">{text.featured}</span> : null}
         </div>
         <h3><a className="plugin-title" href={plugin.repoUrl} target="_blank" rel="noreferrer">{plugin.name}</a></h3>
       </div>
@@ -222,7 +334,13 @@ function PluginCard({
           disabled={likeState === "loading"}
         >
           <span aria-hidden="true">&#9829;</span>
-          {likeCount !== null ? <span className="card-like-count" aria-hidden="true">{numberFormat.format(likeCount)}</span> : null}
+          {likeCount !== null ? (
+            <span className="card-like-count" aria-hidden="true">{numberFormat.format(likeCount)}</span>
+          ) : (
+            <span className="card-like-loading" role="status" aria-label={withValue(text.likeCountLoading, plugin.name)}>
+              <span aria-hidden="true" />
+            </span>
+          )}
         </button>
         <button
           type="button"
@@ -243,7 +361,7 @@ function PluginCard({
 export function PluginDirectory() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<DirectoryCategory>("all");
-  const [sort, setSort] = useState<DirectorySort>("featured");
+  const [sort, setSort] = useState<DirectorySort>(defaultDirectorySort);
   const [featuredOnly, setFeaturedOnly] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [feedbackTarget, setFeedbackTarget] = useState<Plugin | null>(null);
@@ -256,8 +374,8 @@ export function PluginDirectory() {
     const urlSort = params.get("sort");
     setQuery(params.get("q") ?? "");
     setCategory(isPluginCategory(urlCategory) ? urlCategory : "all");
-    setSort(isDirectorySort(urlSort) ? urlSort : "featured");
-    setFeaturedOnly(params.get("featured") === "1");
+    setSort(isDirectorySort(urlSort) ? urlSort : defaultDirectorySort);
+    setFeaturedOnly(hasFeaturedPlugins && params.get("featured") === "1");
   }, []);
 
   useEffect(() => {
@@ -292,12 +410,12 @@ export function PluginDirectory() {
       } else {
         url.searchParams.set("cat", nextCategory);
       }
-      if (nextSort === "featured") {
+      if (nextSort === defaultDirectorySort) {
         url.searchParams.delete("sort");
       } else {
         url.searchParams.set("sort", nextSort);
       }
-      if (nextFeaturedOnly) {
+      if (hasFeaturedPlugins && nextFeaturedOnly) {
         url.searchParams.set("featured", "1");
       } else {
         url.searchParams.delete("featured");
@@ -330,16 +448,16 @@ export function PluginDirectory() {
   const clearFilters = () => {
     setQuery("");
     setCategory("all");
-    setSort("featured");
+    setSort(defaultDirectorySort);
     setFeaturedOnly(false);
-    if (hydrated) updateUrl("", "all", "featured", false, "push");
+    if (hydrated) updateUrl("", "all", defaultDirectorySort, false, "push");
   };
 
   const filteredPlugins = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase(locale === "zh" ? "zh-CN" : "en-US");
     const matching = plugins.filter((plugin) => {
       if (category !== "all" && plugin.category !== category) return false;
-      if (featuredOnly && !plugin.featured) return false;
+      if (hasFeaturedPlugins && featuredOnly && !plugin.featured) return false;
       if (!normalizedQuery) return true;
       const pluginCategory = categoryById[plugin.category];
       return [
@@ -361,8 +479,6 @@ export function PluginDirectory() {
     });
   }, [category, featuredOnly, locale, query, sort]);
 
-  const featuredCount = useMemo(() => plugins.filter((plugin) => plugin.featured).length, []);
-
   return (
     <section id="directory" className="directory-section" aria-labelledby="directory-title">
       <header className="directory-header">
@@ -374,7 +490,7 @@ export function PluginDirectory() {
         <dl className="directory-stats" aria-label={text.directoryStats}>
           <div className="directory-stat"><dt>{text.statsPlugins}</dt><dd>{numberFormat.format(plugins.length)}</dd></div>
           <div className="directory-stat"><dt>{text.statsCategories}</dt><dd>{numberFormat.format(categories.length)}</dd></div>
-          <div className="directory-stat"><dt>{text.statsFeatured}</dt><dd>{numberFormat.format(featuredCount)}</dd></div>
+          {hasFeaturedPlugins ? <div className="directory-stat"><dt>{text.statsFeatured}</dt><dd>{numberFormat.format(featuredCount)}</dd></div> : null}
         </dl>
       </header>
 
@@ -425,19 +541,21 @@ export function PluginDirectory() {
             <div className="sort-field">
               <label htmlFor="plugin-sort">{text.sortLabel}</label>
               <select id="plugin-sort" name="plugin-sort" value={sort} onChange={(event) => handleSortChange(event.target.value as DirectorySort)}>
-                <option value="featured">{text.sortFeatured}</option>
+                {hasFeaturedPlugins ? <option value="featured">{text.sortFeatured}</option> : null}
                 <option value="stars">{text.sortStars}</option>
                 <option value="name">{text.sortName}</option>
               </select>
             </div>
-            <label className="featured-filter">
-              <input type="checkbox" checked={featuredOnly} onChange={(event) => handleFeaturedChange(event.target.checked)} />
-              <span>{text.featuredOnly}</span>
-            </label>
+            {hasFeaturedPlugins ? (
+              <label className="featured-filter">
+                <input type="checkbox" checked={featuredOnly} onChange={(event) => handleFeaturedChange(event.target.checked)} />
+                <span>{text.featuredOnly}</span>
+              </label>
+            ) : null}
           </div>
           <div className="directory-result-line">
             <p className="result-count" aria-live="polite">{withValue(text.resultPhrase, numberFormat.format(filteredPlugins.length))}</p>
-            {query || category !== "all" || sort !== "featured" || featuredOnly ? (
+            {query || category !== "all" || sort !== defaultDirectorySort || featuredOnly ? (
               <button type="button" className="clear-filters" onClick={clearFilters}>{text.clearFilters}</button>
             ) : null}
           </div>

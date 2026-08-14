@@ -119,12 +119,7 @@ const firstCategoryMap = new Map([
 ]);
 
 const featuredRepositories = new Set([
-  "nagi-ovo/dsh-visualize",
-  "omdsh-dev/dsh-mnemon",
-  "anionex/dsh-vision-toolkit",
-  "jesse-njx/dsh-chatnode-wechat",
-  "omdsh-dev/dsh-at-file",
-  "huiliyi37/dsh-tianshu-tui",
+  // Future manual recommendations go here.
 ]);
 
 const communityDiscoveredDetail =
@@ -533,10 +528,6 @@ for (const repository of featuredRepositories) {
   if (!seenRepositories.has(repository)) {
     fail(`featured repository is not present: ${repository}`);
   }
-}
-
-if (normalizedPlugins.filter((plugin) => plugin.featured).length !== 6) {
-  fail("exactly six repositories must be featured");
 }
 
 const usedIds = new Set();

@@ -743,8 +743,7 @@ a {
   margin-bottom: 8px;
 }
 
-.category-tag,
-.featured-tag {
+.category-tag {
   border: 1px solid var(--line);
   color: var(--aqua);
   display: inline-flex;
@@ -752,11 +751,6 @@ a {
   font-size: 10px;
   line-height: 1;
   padding: 4px 6px;
-}
-
-.featured-tag {
-  border-color: var(--sand);
-  color: var(--sand);
 }
 
 .plugin-title {
@@ -853,6 +847,35 @@ a {
 .card-like-count {
   font-family: var(--mono);
   font-size: 10px;
+}
+
+.card-like-loading {
+  align-items: center;
+  display: inline-flex;
+  height: 10px;
+  justify-content: center;
+  width: 10px;
+}
+
+.card-like-loading span {
+  animation: card-like-loading-spin 700ms linear infinite;
+  border: 1px solid currentcolor;
+  border-left-color: transparent;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+@keyframes card-like-loading-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-like-loading span {
+    animation: none;
+  }
 }
 
 .copy-status,
