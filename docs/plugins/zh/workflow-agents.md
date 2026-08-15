@@ -752,7 +752,7 @@ Install: `dsh plugin --profile web add github:tttrz/dsh-wecom`
 
 Repository: `uddoo/dsh-dashboard`
 
-Symphony-compatible Linear issue orchestrator and native operations dashboard for DeepSeek Harness.
+Symphony-inspired multi-provider task orchestrator and native operations dashboard for DeepSeek Harness. Supports Linear, GitHub, Jira, Asana, GitLab, and local tasks. 受 Symphony 启发的 DeepSeek Harness...
 
 Install: `dsh plugin --profile web add github:uddoo/dsh-dashboard`
 
