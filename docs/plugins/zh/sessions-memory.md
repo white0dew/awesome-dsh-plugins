@@ -480,7 +480,7 @@ Install: `dsh plugin --profile web add github:luaphes/dsh-web-attention-badge`
 
 Repository: `mnemon-dev/mnemon`
 
-LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with Claude Code, OpenClaw, and any CLI agent.
+LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime.
 
 Install: `dsh plugin --profile web add github:mnemon-dev/mnemon`
 

@@ -21,10 +21,10 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | --- | ---: |
 | [UI & Themes](docs/plugins/ui-themes.md) | 46 |
 | [Sessions & Memory](docs/plugins/sessions-memory.md) | 105 |
-| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 399 |
+| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 226 |
 | [Workflow & Agents](docs/plugins/workflow-agents.md) | 109 |
 | [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 46 |
-| [Development & Runtime](docs/plugins/development-runtime.md) | 548 |
+| [Development & Runtime](docs/plugins/development-runtime.md) | 721 |
 | [Browser & Search](docs/plugins/browser-search.md) | 24 |
 | [MCP & Skills](docs/plugins/mcp-skills.md) | 94 |
 | [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 46 |

@@ -304,7 +304,7 @@ Install: `dsh plugin --profile web add github:dsh-external/toybox`
 
 Repository: `fishquito7/dsh-skill-viewer`
 
-DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add
+DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add（Web界面的skill管理工具）
 
 Install: `dsh plugin --profile web add github:fishquito7/dsh-skill-viewer`
 

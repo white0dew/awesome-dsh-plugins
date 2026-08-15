@@ -320,7 +320,7 @@ Install: `dsh plugin --profile web add github:snowcrescenter-tech/dsh-desktop`
 
 Repository: `stardustlc666/dsh-calendar`
 
-暂无描述
+DeepSeek Harness 日历插件：calendarlist/create/update/delete/search 五工具，CalDAV 协议支持 Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件自动展开，插件级 proxyUrl 代理，配置缺失不崩启动；纯 Node 全平台。· CalDAV calendar tools for DeepSeek Harness agents.
 
 Install: `dsh plugin --profile web add github:stardustlc666/dsh-calendar`
 
@@ -328,7 +328,7 @@ Install: `dsh plugin --profile web add github:stardustlc666/dsh-calendar`
 
 Repository: `stardustlc666/dsh-dingtalk`
 
-暂无描述
+DeepSeek Harness 钉钉群机器人通知插件：dingtalknotify/dingtalktext 两工具，自定义机器人 webhook + HMAC 加签安全模式，手写签名实现、零运行时依赖；纯 Node 全平台。· DingTalk group-robot notifications for DeepSeek Harness agents.
 
 Install: `dsh plugin --profile web add github:stardustlc666/dsh-dingtalk`
 
@@ -336,7 +336,7 @@ Install: `dsh plugin --profile web add github:stardustlc666/dsh-dingtalk`
 
 Repository: `stardustlc666/dsh-email`
 
-DeepSeek Harness 邮件插件：emaillist/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。
+DeepSeek Harness 邮件插件：emaillist/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。· IMAP/SMTP email tools for DeepSeek Harness agents.
 
 Install: `dsh plugin --profile web add github:stardustlc666/dsh-email`
 
@@ -344,7 +344,7 @@ Install: `dsh plugin --profile web add github:stardustlc666/dsh-email`
 
 Repository: `stardustlc666/dsh-slack`
 
-暂无描述
+DeepSeek Harness Slack 插件：slacknotify/channels/inbox/reply 四工具，Socket Mode 免公网回调收消息，收件箱队列 + 线程回复，支持自定义 slackApiUrl 对接代理网关；内置假 Slack 服务器做协议级验收测试。· Two-way Slack messaging for DeepSeek Harness agents.
 
 Install: `dsh plugin --profile web add github:stardustlc666/dsh-slack`
 

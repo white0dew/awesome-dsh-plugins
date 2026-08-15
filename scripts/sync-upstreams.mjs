@@ -68,12 +68,152 @@ const EMOJI_HEADING_TO_CATEGORY = new Map([
   ["🔬 研究", "development-runtime"],
 ]);
 
+const VALID_CATEGORY_IDS = new Set([
+  ...SECTION_TO_CATEGORY.values(),
+  ...EMOJI_HEADING_TO_CATEGORY.values(),
+]);
+const REPOSITORY_PATTERN = /^[a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+$/;
+const GENERIC_DESCRIPTION_PATTERNS = [
+  /^(?:a )?(?:deepseek harness|dsh) (?:plugin|extension)[.!。]?$/i,
+  /^(?:dsh[- ]?plugin|plugin)[.!。]?$/i,
+  /^(?:no description(?: available)?|暂无描述)[.!。]?$/i,
+];
+
 function fail(message) {
   throw new Error(`sync-upstreams: ${message}`);
 }
 
 function isRecord(value) {
   return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isRepository(value) {
+  return typeof value === "string" && REPOSITORY_PATTERN.test(value);
+}
+
+function fallbackDescription(repository) {
+  return `A DSH plugin from ${repository}`;
+}
+
+function descriptionStrength(description, repository) {
+  const normalized = cleanDescription(description);
+  if (!normalized || normalized === fallbackDescription(repository)) {
+    return 0;
+  }
+  if (GENERIC_DESCRIPTION_PATTERNS.some((pattern) => pattern.test(normalized))) {
+    return 0;
+  }
+
+  const contentLength = normalized.replace(/[^\p{L}\p{N}]/gu, "").length;
+  return contentLength >= 16 ? contentLength : 0;
+}
+
+function isStrongerDescription(existingDescription, incomingDescription, repository) {
+  return descriptionStrength(incomingDescription, repository) > descriptionStrength(existingDescription, repository);
+}
+
+function isStrongerCategory(existingCategory, incomingCategory, incomingCategoryIsExplicit) {
+  return incomingCategoryIsExplicit
+    && VALID_CATEGORY_IDS.has(incomingCategory)
+    && existingCategory === "tools-capabilities"
+    && incomingCategory !== "tools-capabilities";
+}
+
+function updateExistingRecord(existing, incoming) {
+  const description = isStrongerDescription(existing.description, incoming.description, existing.repository)
+    ? cleanDescription(incoming.description)
+    : existing.description;
+  const category = isStrongerCategory(existing.category, incoming.category, incoming.categoryIsExplicit)
+    ? incoming.category
+    : existing.category;
+
+  return {
+    record: {
+      ...existing,
+      description,
+      category,
+    },
+    updated: description !== existing.description || category !== existing.category,
+  };
+}
+
+function validateExistingSnapshot(snapshot) {
+  if (!isRecord(snapshot)) {
+    fail("upstream snapshot must be a JSON object");
+  }
+  if (typeof snapshot.name !== "string" || !snapshot.name.trim()) {
+    fail("upstream snapshot is missing a name");
+  }
+  if (snapshot.repository !== UPSTREAM_REPOSITORY || snapshot.url !== UPSTREAM_URL_META) {
+    fail("upstream snapshot has unexpected repository metadata");
+  }
+  if (typeof snapshot.snapshotGeneratedAt !== "string" || !snapshot.snapshotGeneratedAt.trim()) {
+    fail("upstream snapshot is missing snapshotGeneratedAt");
+  }
+  if (!Array.isArray(snapshot.records)) {
+    fail("upstream snapshot must contain a records array");
+  }
+
+  const seenRepositories = new Set();
+  snapshot.records.forEach((record, index) => {
+    if (!isRecord(record)) {
+      fail(`upstream snapshot record ${index + 1} must be an object`);
+    }
+    if (!isRepository(record.repository) || record.url !== `https://github.com/${record.repository}`) {
+      fail(`upstream snapshot record ${index + 1} has invalid repository metadata`);
+    }
+    if (typeof record.description !== "string" || !record.description.trim()) {
+      fail(`upstream snapshot record ${index + 1} is missing a description`);
+    }
+    if (typeof record.category !== "string" || !VALID_CATEGORY_IDS.has(record.category)) {
+      fail(`upstream snapshot record ${index + 1} has an invalid category`);
+    }
+    if (!Number.isInteger(record.stars) || record.stars < 0) {
+      fail(`upstream snapshot record ${index + 1} has an invalid star count`);
+    }
+
+    const key = record.repository.toLowerCase();
+    if (seenRepositories.has(key)) {
+      fail(`upstream snapshot contains duplicate repository ${record.repository}`);
+    }
+    seenRepositories.add(key);
+  });
+}
+
+async function readJson(filePath, label) {
+  let source;
+  try {
+    source = await readFile(filePath, "utf8");
+  } catch (error) {
+    fail(`could not read ${label}: ${error instanceof Error ? error.message : "unknown error"}`);
+  }
+
+  try {
+    return { source, value: JSON.parse(source) };
+  } catch (error) {
+    fail(`could not parse ${label}: ${error instanceof Error ? error.message : "invalid JSON"}`);
+  }
+}
+
+async function readExistingSnapshot() {
+  let source;
+  try {
+    source = await readFile(UPSTREAM_SNAPSHOT_PATH, "utf8");
+  } catch (error) {
+    if (isRecord(error) && error.code === "ENOENT") {
+      return { source: null, snapshot: null };
+    }
+    fail(`could not read upstream snapshot: ${error instanceof Error ? error.message : "unknown error"}`);
+  }
+
+  let snapshot;
+  try {
+    snapshot = JSON.parse(source);
+  } catch (error) {
+    fail(`could not parse upstream snapshot: ${error instanceof Error ? error.message : "invalid JSON"}`);
+  }
+  validateExistingSnapshot(snapshot);
+  return { source, snapshot };
 }
 
 /**
@@ -132,9 +272,14 @@ function cleanDescription(text) {
  * Parse the upstream CATALOG.md table format.
  */
 function parseCatalog(markdown) {
+  if (typeof markdown !== "string") {
+    fail("upstream CATALOG.md must be text");
+  }
+
   const lines = markdown.split(/\r?\n/);
   const entries = [];
   let currentCategory = "tools-capabilities";
+  let currentCategoryIsExplicit = false;
   let inTable = false;
 
   for (let i = 0; i < lines.length; i++) {
@@ -146,6 +291,7 @@ function parseCatalog(markdown) {
       for (const [prefix, category] of EMOJI_HEADING_TO_CATEGORY) {
         if (line.includes(prefix)) {
           currentCategory = category;
+          currentCategoryIsExplicit = true;
           matched = true;
           break;
         }
@@ -154,6 +300,7 @@ function parseCatalog(markdown) {
         const normalized = normalizeHeading(line);
         if (SECTION_TO_CATEGORY.has(normalized)) {
           currentCategory = SECTION_TO_CATEGORY.get(normalized);
+          currentCategoryIsExplicit = true;
         }
       }
       continue;
@@ -181,8 +328,9 @@ function parseCatalog(markdown) {
           entries.push({
             repository,
             url: `https://github.com/${repository}`,
-            description: description || `A DSH plugin from ${repository}`,
+            description,
             category: currentCategory,
+            categoryIsExplicit: currentCategoryIsExplicit,
           });
         }
       }
@@ -199,7 +347,7 @@ function parseCatalog(markdown) {
 async function buildExclusionSet() {
   const excluded = new Set();
 
-  const firstSource = JSON.parse(await readFile(FIRST_SOURCE_PATH, "utf8"));
+  const { value: firstSource } = await readJson(FIRST_SOURCE_PATH, "awesome-dsh-plugin.json");
   if (Array.isArray(firstSource.plugins)) {
     for (const record of firstSource.plugins) {
       if (record.owner && record.name) {
@@ -208,7 +356,7 @@ async function buildExclusionSet() {
     }
   }
 
-  const secondSource = JSON.parse(await readFile(SECOND_SOURCE_PATH, "utf8"));
+  const { value: secondSource } = await readJson(SECOND_SOURCE_PATH, "github-plugin-catalog.json");
   if (Array.isArray(secondSource.plugins)) {
     for (const record of secondSource.plugins) {
       if (record.fullName) {
@@ -217,7 +365,7 @@ async function buildExclusionSet() {
     }
   }
 
-  const reviewedSource = JSON.parse(await readFile(REVIEWED_PATH, "utf8"));
+  const { value: reviewedSource } = await readJson(REVIEWED_PATH, "reviewed-catalog-additions.json");
   if (Array.isArray(reviewedSource.records)) {
     for (const record of reviewedSource.records) {
       if (record.github?.repository) {
@@ -249,38 +397,36 @@ async function main() {
   // Build exclusion set from manually curated sources
   const excludedRepos = await buildExclusionSet();
 
-  // Read existing snapshot
-  let existingSnapshot;
-  let existingSource;
-  try {
-    existingSource = await readFile(UPSTREAM_SNAPSHOT_PATH, "utf8");
-    existingSnapshot = JSON.parse(existingSource);
-  } catch {
-    existingSnapshot = null;
-    existingSource = null;
-  }
+  // Read and validate all source JSON before the only source-file write below.
+  const { snapshot: existingSnapshot, source: existingSource } = await readExistingSnapshot();
 
-  // Build lookup maps from existing snapshot
+  // Start from the existing snapshot so upstream removal never removes a record.
   const existingByKey = new Map();
-  if (isRecord(existingSnapshot) && Array.isArray(existingSnapshot.records)) {
+  if (existingSnapshot) {
     for (const record of existingSnapshot.records) {
-      if (record.repository) {
-        existingByKey.set(record.repository.toLowerCase(), record);
-      }
+      existingByKey.set(record.repository.toLowerCase(), record);
     }
   }
+  const mergedByKey = new Map(existingByKey);
 
-  // Record counts
   let newCount = 0;
+  let updatedCount = 0;
+  let retainedCount = 0;
   let unchangedCount = 0;
   let excludedCount = 0;
 
-  // Merge: preserve existing records, add new ones
+  // Merge valid, non-manual upstream entries into the retained snapshot.
   const seenKeys = new Set();
-  const mergedRecords = [];
+  const matchedExistingKeys = new Set();
 
   for (const entry of parsedEntries) {
     const key = entry.repository.toLowerCase();
+
+    // Skip duplicates within the parsed entries.
+    if (seenKeys.has(key)) {
+      continue;
+    }
+    seenKeys.add(key);
 
     // Skip excluded repos from manually curated sources
     if (excludedRepos.has(key)) {
@@ -288,30 +434,21 @@ async function main() {
       continue;
     }
 
-    // Skip duplicates within the parsed entries
-    if (seenKeys.has(key)) {
-      continue;
-    }
-    seenKeys.add(key);
-
     const existing = existingByKey.get(key);
     if (existing) {
-      // Preserve existing record data entirely
-      mergedRecords.push({
-        repository: existing.repository,
-        url: existing.url,
-        description: existing.description,
-        category: existing.category,
-        stars: existing.stars,
-      });
-      existingByKey.delete(key);
-      unchangedCount++;
+      const { record, updated } = updateExistingRecord(existing, entry);
+      mergedByKey.set(key, record);
+      matchedExistingKeys.add(key);
+      if (updated) {
+        updatedCount++;
+      } else {
+        unchangedCount++;
+      }
     } else {
-      // New record from upstream
-      mergedRecords.push({
+      mergedByKey.set(key, {
         repository: entry.repository,
         url: entry.url,
-        description: entry.description,
+        description: entry.description || fallbackDescription(entry.repository),
         category: entry.category,
         stars: 0,
       });
@@ -319,8 +456,8 @@ async function main() {
     }
   }
 
-  // Records that were in the existing snapshot but not in the upstream catalog
-  const removedCount = existingByKey.size;
+  retainedCount = existingByKey.size - matchedExistingKeys.size;
+  const mergedRecords = [...mergedByKey.values()];
 
   // Sort records deterministically by repository (lowercase)
   mergedRecords.sort((a, b) => {
@@ -367,8 +504,10 @@ async function main() {
   console.log("sync-upstreams: summary");
   console.log(`  discovered: ${discoveredUnique.size} unique repos from upstream CATALOG.md`);
   console.log(`  new:        ${newCount} records added from upstream`);
-  console.log(`  removed:    ${removedCount} records no longer in upstream catalog`);
-  console.log(`  preserved:  ${unchangedCount} existing records preserved`);
+  console.log(`  updated:    ${updatedCount} existing records with stronger upstream metadata`);
+  console.log(`  retained:   ${retainedCount} existing records kept without an eligible upstream update`);
+  console.log("  removed:    0 records (merge-only policy)");
+  console.log(`  unchanged:  ${unchangedCount} matching existing records`);
   console.log(`  excluded:   ${excludedCount} repos filtered (already in manually curated sources)`);
   console.log(`  total:      ${mergedRecords.length} records in snapshot`);
   if (contentChanged) {
