@@ -2,7 +2,7 @@
 
 有趣、特别且具探索性的项目。
 
-**20 个目录条目** · [返回全部分类](index.md)
+**19 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin)
 
@@ -123,14 +123,6 @@ Repository: `omdsh-dev/dsh-gomoku`
 与 AI 下五子棋，也可让 AI 对局比棋力。
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-gomoku`
-
-### [galgame-skin](https://github.com/shmilyol/galgame-skin)
-
-Repository: `shmilyol/galgame-skin`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:shmilyol/galgame-skin`
 
 ### [dsh-music-plugin](https://github.com/syy-shark/dsh-music-plugin)
 

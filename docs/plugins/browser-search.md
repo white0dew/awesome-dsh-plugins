@@ -2,23 +2,7 @@
 
 Browser control, web research, crawling, and search helpers.
 
-**34 catalog entries** · [Back to all categories](index.md)
-
-### [dsh-notify-plugins](https://github.com/1514100951/dsh-notify-plugins)
-
-Repository: `1514100951/dsh-notify-plugins`
-
-DeepSeek Harness desktop notification plugins: browser + native Windows toasts on task finish/error, blocking waits (approval/question/plan-review), and background job settlement
-
-Install: `dsh plugin --profile web add github:1514100951/dsh-notify-plugins`
-
-### [dsh-browser](https://github.com/anweat/dsh-browser)
-
-Repository: `anweat/dsh-browser`
-
-Self-contained browser runtime plugin for DeepSeek Harness - bundles Playwright (chromium) and OpenCLI as plugin-local dependencies, exposes a browser service and interactive browser tools.
-
-Install: `dsh plugin --profile web add github:anweat/dsh-browser`
+**24 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)
 
@@ -44,14 +28,6 @@ Playwright browser automation for DeepSeek Harness｜面向 DeepSeek Harness 的
 
 Install: `dsh plugin --profile web add github:clizo1209/dsh-playwright-browser`
 
-### [dsh-web-search-firecrawl](https://github.com/crayonlu/dsh-web-search-firecrawl)
-
-Repository: `crayonlu/dsh-web-search-firecrawl`
-
-Firecrawl-backed web search provider for DeepSeek Harness (ctx.web) - no DeepSeek API key required
-
-Install: `dsh plugin --profile web add github:crayonlu/dsh-web-search-firecrawl`
-
 ### [dsh-web-search-tavily](https://github.com/crayonlu/dsh-web-search-tavily)
 
 Repository: `crayonlu/dsh-web-search-tavily`
@@ -59,14 +35,6 @@ Repository: `crayonlu/dsh-web-search-tavily`
 Tavily-backed web search provider for DeepSeek Harness (ctx.web) - no DeepSeek API key required
 
 Install: `dsh plugin --profile web add github:crayonlu/dsh-web-search-tavily`
-
-### [dsh-plugin-browser](https://github.com/criscolthecoder/dsh-plugin-browser)
-
-Repository: `criscolthecoder/dsh-plugin-browser`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:criscolthecoder/dsh-plugin-browser`
 
 ### [dsh-browser](https://github.com/dsh-external/dsh-browser)
 
@@ -148,14 +116,6 @@ Skin switcher + custom wallpaper for DeepSeek Harness (dsh): curated --dsw-alias
 
 Install: `dsh plugin --profile web add github:kingao294/dsh-skin`
 
-### [dsh-tool-browser](https://github.com/mashedpotato817/dsh-tool-browser)
-
-Repository: `mashedpotato817/dsh-tool-browser`
-
-Native browser automation tools for DeepSeek Harness, powered by Playwright + Edge
-
-Install: `dsh plugin --profile web add github:mashedpotato817/dsh-tool-browser`
-
 ### [dsh-playwright-cli](https://github.com/mitao-su/dsh-playwright-cli)
 
 Repository: `mitao-su/dsh-playwright-cli`
@@ -163,30 +123,6 @@ Repository: `mitao-su/dsh-playwright-cli`
 DeepSeek Harness (DSH) host plugin wrapping the Playwright CLI: install browsers, run tests, open the HTML report from the agent loop.
 
 Install: `dsh plugin --profile web add github:mitao-su/dsh-playwright-cli`
-
-### [dsh-playwright-native](https://github.com/mitao-su/dsh-playwright-native)
-
-Repository: `mitao-su/dsh-playwright-native`
-
-把原生 Playwright CLI 注册为 DeepSeek Harness 透传工具（dsh-plugin）
-
-Install: `dsh plugin --profile web add github:mitao-su/dsh-playwright-native`
-
-### [dsh-web-search-tavily](https://github.com/nitrazepam01/dsh-web-search-tavily)
-
-Repository: `nitrazepam01/dsh-web-search-tavily`
-
-Tavily-backed web search provider bundle for DeepSeek Harness (dsh) with hot-switchable backend (Tavily / DeepSeek search)
-
-Install: `dsh plugin --profile web add github:nitrazepam01/dsh-web-search-tavily`
-
-### [dsh-tool-browser](https://github.com/omdsh-dev/dsh-tool-browser)
-
-Repository: `omdsh-dev/dsh-tool-browser`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:omdsh-dev/dsh-tool-browser`
 
 ### [dsh-browser-control](https://github.com/PangYiMing/dsh-browser-control)
 
@@ -220,14 +156,6 @@ DSH 真实浏览器插件：通过 Kimi WebBridge 让 Agent 操作用户已登�
 
 Install: `dsh plugin --profile web add github:titanwings/dsh-better-browser`
 
-### [dsh-web-search-exa](https://github.com/tonydua/dsh-web-search-exa)
-
-Repository: `tonydua/dsh-web-search-exa`
-
-A DeepSeek Harness community project from the trusted upstream catalog snapshot.
-
-Install: `dsh plugin --profile web add github:tonydua/dsh-web-search-exa`
-
 ### [dsh-webfetch](https://github.com/tyeclipse/dsh-webfetch)
 
 Repository: `tyeclipse/dsh-webfetch`
@@ -235,14 +163,6 @@ Repository: `tyeclipse/dsh-webfetch`
 Web page reader for DeepSeek Harness (dsh): fetch any URL and extract clean Markdown / plain text plus a link inventory - zero runtime dependencies, read-only
 
 Install: `dsh plugin --profile web add github:tyeclipse/dsh-webfetch`
-
-### [dsh-cookie-bridge](https://github.com/xiaoheizi1212/dsh-cookie-bridge)
-
-Repository: `xiaoheizi1212/dsh-cookie-bridge`
-
-Chrome extension that exports plaintext cookies to dsh-computer-use over localhost (no App-Bound decryption needed).
-
-Install: `dsh plugin --profile web add github:xiaoheizi1212/dsh-cookie-bridge`
 
 ### [dsh-web-search-firecrawl](https://github.com/yangzhe1003/dsh-web-search-firecrawl)
 

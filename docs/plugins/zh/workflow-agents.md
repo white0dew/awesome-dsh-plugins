@@ -2,7 +2,7 @@
 
 自动化、编排、提示词与智能体工作流。
 
-**136 个目录条目** · [返回全部分类](index.md)
+**109 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-plugin-greet](https://github.com/0lidaxiang/dsh-plugin-greet)
 
@@ -28,14 +28,6 @@ Agentic Control Plane for DeepSeek Harness - policy-check every tool call before
 
 Install: `dsh plugin --profile web add github:agentic-control-plane/dsh-acp-plugin`
 
-### [dsh-yuzuha-prompts-manager](https://github.com/airrcat/dsh-yuzuha-prompts-manager)
-
-Repository: `airrcat/dsh-yuzuha-prompts-manager`
-
-a plugin for manage prompts in deepseek harness.
-
-Install: `dsh plugin --profile web add github:airrcat/dsh-yuzuha-prompts-manager`
-
 ### [claude-paper](https://github.com/alaliqing/claude-paper)
 
 Repository: `alaliqing/claude-paper`
@@ -60,30 +52,6 @@ Visual workflows and multi-model evaluation for DeepSeek Harness
 
 Install: `dsh plugin --profile web add github:alison-xx/deepseek-harness-flow`
 
-### [deep_option](https://github.com/alyosha28/deep_option)
-
-Repository: `alyosha28/deep_option`
-
-港美股期权研究与风险 Agent（公开 origin-available 原型）
-
-Install: `dsh plugin --profile web add github:alyosha28/deep_option`
-
-### [logicprobe](https://github.com/amethystluna/logicprobe)
-
-Repository: `amethystluna/logicprobe`
-
-Claim verification for AI coding agents - 7 structural + 7 adversarial logic-primitive probes against design docs & refactoring plans \| AI 编程助手声明核查插件:对设计文档与重构计划做逻辑原语验证(7 结构 + 7 对抗探针) for Claude Code, Codex, Cursor,...
-
-Install: `dsh plugin --profile web add github:amethystluna/logicprobe`
-
-### [dsh-multi-cot](https://github.com/aprilwizard/dsh-multi-cot)
-
-Repository: `aprilwizard/dsh-multi-cot`
-
-Multi-CoT plugin for DeepSeek Harness: multi-sampled test-time compute, internal voting, and a plan/execute/review workflow
-
-Install: `dsh plugin --profile web add github:aprilwizard/dsh-multi-cot`
-
 ### [deepseek-harness-ux](https://github.com/ayuanwong/deepseek-harness-ux)
 
 Repository: `ayuanwong/deepseek-harness-ux`
@@ -91,14 +59,6 @@ Repository: `ayuanwong/deepseek-harness-ux`
 长任务，不刷屏：关键进度清晰可见，完成后自动折叠，详情随时展开。 Long agent tasks, without transcript clutter: focused progress, auto-folded history, details on demand.
 
 Install: `dsh plugin --profile web add github:ayuanwong/deepseek-harness-ux`
-
-### [design-playbook](https://github.com/bandersnatch0x/design-playbook)
-
-Repository: `bandersnatch0x/design-playbook`
-
-Design I/O plugin for Claude Code & coding agents - declarations + contracts that make UI generation constrained, reviewable, and recirculatable. Not a style pack; composes with ui-ux-pro-max + frontend-design.
-
-Install: `dsh plugin --profile web add github:bandersnatch0x/design-playbook`
 
 ### [dsh-advisor](https://github.com/btspoony/dsh-advisor)
 
@@ -108,14 +68,6 @@ Repository: `btspoony/dsh-advisor`
 
 Install: `dsh plugin --profile web add github:btspoony/dsh-advisor`
 
-### [dsh-legal-dashboard](https://github.com/byronleeeee/dsh-legal-dashboard)
-
-Repository: `byronleeeee/dsh-legal-dashboard`
-
-Matter-aware legal workspace dashboard and document agent tools for DeepSeek Harness
-
-Install: `dsh plugin --profile web add github:byronleeeee/dsh-legal-dashboard`
-
 ### [dsh-plugin-pet](https://github.com/c-ling/dsh-plugin-pet)
 
 Repository: `c-ling/dsh-plugin-pet`
@@ -123,14 +75,6 @@ Repository: `c-ling/dsh-plugin-pet`
 DeepSeek Harness 桌面电子宠物插件：跟随 agent 状态变换心情的内置/自定义/Codex 精灵图伙伴。
 
 Install: `dsh plugin --profile web add github:c-ling/dsh-plugin-pet`
-
-### [dsh-schedule](https://github.com/csiroqa/dsh-schedule)
-
-Repository: `csiroqa/dsh-schedule`
-
-DeepSeek Harness（DSH）定时任务 + 状态监控插件：按 cron 时间表自动触发 Agent 执行任务，/status 与设置页仪表盘查看系统与 harness 综合状态。Scheduled tasks (cron) + status monitoring plugin for DeepSeek Harness.
-
-Install: `dsh plugin --profile web add github:csiroqa/dsh-schedule`
 
 ### [dsh-llm-wiki](https://github.com/detpecca/dsh-llm-wiki)
 
@@ -468,14 +412,6 @@ DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调�
 
 Install: `dsh plugin --profile web add github:electricitysheep/dsh-handbook`
 
-### [dsh-proof](https://github.com/evilirving/dsh-proof)
-
-Repository: `evilirving/dsh-proof`
-
-Read-only acceptance layer for DeepSeek Harness: a verifier gates every turn and steers gaps back into the agent.
-
-Install: `dsh plugin --profile web add github:evilirving/dsh-proof`
-
 ### [dsh-plugin-verified-search](https://github.com/f0909172434/dsh-plugin-verified-search)
 
 Repository: `f0909172434/dsh-plugin-verified-search`
@@ -491,30 +427,6 @@ Repository: `fakechris/dsh-track`
 嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。
 
 Install: `dsh plugin --profile web add github:fakechris/dsh-track`
-
-### [dsh-agent-arcade](https://github.com/fff122/dsh-agent-arcade)
-
-Repository: `fff122/dsh-agent-arcade`
-
-Deterministic Agent-played Snake game for DeepSeek Harness.
-
-Install: `dsh plugin --profile web add github:fff122/dsh-agent-arcade`
-
-### [dsh-prompt-presets](https://github.com/fff122/dsh-prompt-presets)
-
-Repository: `fff122/dsh-prompt-presets`
-
-Local reusable prompt presets for DeepSeek Harness.
-
-Install: `dsh plugin --profile web add github:fff122/dsh-prompt-presets`
-
-### [blocker-notify](https://github.com/frost-reed/blocker-notify)
-
-Repository: `frost-reed/blocker-notify`
-
-dsh-blocker-notify - Real-time attention alerts for DeepSeek Harness: a global banner + flashing workspace entries when the agent is blocked (approval request / sandbox denial).
-
-Install: `dsh plugin --profile web add github:frost-reed/blocker-notify`
 
 ### [dsh-sentinel](https://github.com/fuhefei/dsh-sentinel)
 
@@ -596,14 +508,6 @@ Repository: `icetomoyo/dsh_workflow`
 
 Install: `dsh plugin --profile web add github:icetomoyo/dsh_workflow`
 
-### [ai-keyboard](https://github.com/imtheolin/ai-keyboard)
-
-Repository: `imtheolin/ai-keyboard`
-
-Putting prompts at your fingertips
-
-Install: `dsh plugin --profile web add github:imtheolin/ai-keyboard`
-
 ### [dsh-routines](https://github.com/Jesse-njx/dsh-routines)
 
 Repository: `Jesse-njx/dsh-routines`
@@ -611,22 +515,6 @@ Repository: `Jesse-njx/dsh-routines`
 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
 
 Install: `dsh plugin --profile web add github:Jesse-njx/dsh-routines`
-
-### [deepagent](https://github.com/justinhuangai/deepagent)
-
-Repository: `justinhuangai/deepagent`
-
-The agent that gets your work done. Built on DeepSeek Harness: Everything is a Plugin. 帮你完成工作的智能体。基于 DeepSeek Harness 构建：一切皆插件。
-
-Install: `dsh plugin --profile web add github:justinhuangai/deepagent`
-
-### [vscode-deepseek-harness](https://github.com/kalynnka/vscode-deepseek-harness)
-
-Repository: `kalynnka/vscode-deepseek-harness`
-
-Unofficial: drive your own DeepSeek Harness (dsh) as a native VS Code chat agent, beside Claude Code and Codex.
-
-Install: `dsh plugin --profile web add github:kalynnka/vscode-deepseek-harness`
 
 ### [dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent)
 
@@ -644,14 +532,6 @@ oh-my-dsh：面向 DSH (DeepSeek Harness) 的插件生态--700+ 插件，只通�
 
 Install: `dsh plugin --profile web add github:laplaceyoung/oh-my-dsh`
 
-### [dsh-minecraft-dev](https://github.com/leawind/dsh-minecraft-dev)
-
-Repository: `leawind/dsh-minecraft-dev`
-
-一个面向 Minecraft 模组开发的 DeepSeek Harness Agent 预设
-
-Install: `dsh plugin --profile web add github:leawind/dsh-minecraft-dev`
-
 ### [dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet)
 
 Repository: `liyupi/dsh-kun-like-pet`
@@ -667,14 +547,6 @@ Repository: `lonelymoon87/dsh-specflow`
 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
 
 Install: `dsh plugin --profile web add github:lonelymoon87/dsh-specflow`
-
-### [dsh-password-prompt](https://github.com/magiccrazyman/dsh-password-prompt)
-
-Repository: `magiccrazyman/dsh-password-prompt`
-
-DeepSeek Harness plugin: masked password panel in the Web GUI (passwordprompt tool) - bundle + dual-face plugin
-
-Install: `dsh plugin --profile web add github:magiccrazyman/dsh-password-prompt`
 
 ### [gitcontribute](https://github.com/morluto/gitcontribute)
 
@@ -788,14 +660,6 @@ a coding Agent from pi. ∞ providers, sub-agents, hashline edits, and a permiss
 
 Install: `dsh plugin --profile web add github:pulseaiclub/phi`
 
-### [dsh-plugin-verify](https://github.com/qing3a/dsh-plugin-verify)
-
-Repository: `qing3a/dsh-plugin-verify`
-
-验证 DSH 插件的 CLI：一条命令跑 mock-llm 完整 agent 循环，检查 waterfall 链与零副作用，产出验证报告
-
-Install: `dsh plugin --profile web add github:qing3a/dsh-plugin-verify`
-
 ### [vibemeter](https://github.com/rangeking/vibemeter)
 
 Repository: `rangeking/vibemeter`
@@ -820,22 +684,6 @@ SecurStack adapter for DeepSeek Harness: run repository security scans, policy g
 
 Install: `dsh plugin --profile web add github:securstack/securstack-dsh-plugin`
 
-### [dsh-plugin-automations](https://github.com/sev7een/dsh-plugin-automations)
-
-Repository: `sev7een/dsh-plugin-automations`
-
-Scheduled tasks plugin for DeepSeek Harness Web Profile
-
-Install: `dsh plugin --profile web add github:sev7een/dsh-plugin-automations`
-
-### [dsh-agent-eval](https://github.com/shawnsiao/dsh-agent-eval)
-
-Repository: `shawnsiao/dsh-agent-eval`
-
-Planned repeatable agent and plugin regression evaluation for DeepSeek Harness
-
-Install: `dsh plugin --profile web add github:shawnsiao/dsh-agent-eval`
-
 ### [falsify-dsh](https://github.com/shi275773124/falsify-dsh)
 
 Repository: `shi275773124/falsify-dsh`
@@ -851,30 +699,6 @@ Repository: `sikao-engine/kimix`
 The next-gen lightweight coding agent cli
 
 Install: `dsh plugin --profile web add github:sikao-engine/kimix`
-
-### [dash](https://github.com/songqikong/dash)
-
-Repository: `songqikong/dash`
-
-DASH - Deepseek Agentic Service Harness
-
-Install: `dsh plugin --profile web add github:songqikong/dash`
-
-### [dsh-suggest-prompt](https://github.com/studyzy/dsh-suggest-prompt)
-
-Repository: `studyzy/dsh-suggest-prompt`
-
-dsh-plugin suggest next prompt
-
-Install: `dsh plugin --profile web add github:studyzy/dsh-suggest-prompt`
-
-### [dsh-tool-hackernews](https://github.com/tanf1ng/dsh-tool-hackernews)
-
-Repository: `tanf1ng/dsh-tool-hackernews`
-
-Hacker News tool suite (hntopstories, hnsearch, hnitem) for DeepSeek Harness agents
-
-Install: `dsh plugin --profile web add github:tanf1ng/dsh-tool-hackernews`
 
 ### [dsh-governance](https://github.com/tappass/dsh-governance)
 
@@ -915,22 +739,6 @@ Repository: `titanwings/dsh-plannotator`
 计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。
 
 Install: `dsh plugin --profile web add github:titanwings/dsh-plannotator`
-
-### [dsh-slice-agent-loop](https://github.com/tt-wang/dsh-slice-agent-loop)
-
-Repository: `tt-wang/dsh-slice-agent-loop`
-
-A drop-in DeepSeek Harness agent loop whose context engine is a bounded slice instead of a growing transcript
-
-Install: `dsh plugin --profile web add github:tt-wang/dsh-slice-agent-loop`
-
-### [dsh-gatedflow](https://github.com/tttrz/dsh-gatedflow)
-
-Repository: `tttrz/dsh-gatedflow`
-
-Gated, durable human-in-the-loop workflow engine for DeepSeek Harness.
-
-Install: `dsh plugin --profile web add github:tttrz/dsh-gatedflow`
 
 ### [dsh-wecom](https://github.com/tttrz/dsh-wecom)
 
@@ -1020,14 +828,6 @@ DSH plugin: edit the system prompt (deployment persona) from the Settings page, 
 
 Install: `dsh plugin --profile web add github:Xilin3/dsh-prompt-persona`
 
-### [dsh-llm-proxy](https://github.com/ye-yu-mo/dsh-llm-proxy)
-
-Repository: `ye-yu-mo/dsh-llm-proxy`
-
-DeepSeek Harness (dsh) 全局 HTTP 代理插件：undici setGlobalDispatcher + EnvHttpProxyAgent，配置化、热切换、可观测
-
-Install: `dsh plugin --profile web add github:ye-yu-mo/dsh-llm-proxy`
-
 ### [dsh-smarthome](https://github.com/ylifeonlyonce/dsh-smarthome)
 
 Repository: `ylifeonlyonce/dsh-smarthome`
@@ -1036,14 +836,6 @@ Home Assistant control for DeepSeek Harness agents - approval-gated lights, swit
 
 Install: `dsh plugin --profile web add github:ylifeonlyonce/dsh-smarthome`
 
-### [kph](https://github.com/ylouis8/kph)
-
-Repository: `ylouis8/kph`
-
-基于dsh的量化研究agent，驱动真实回测与交易。
-
-Install: `dsh plugin --profile web add github:ylouis8/kph`
-
 ### [dsh-prime-agent](https://github.com/yoke233/dsh-prime-agent)
 
 Repository: `yoke233/dsh-prime-agent`
@@ -1051,14 +843,6 @@ Repository: `yoke233/dsh-prime-agent`
 Prime Agent-inspired persistent RLM control plane for DeepSeek Harness Code Mode
 
 Install: `dsh plugin --profile web add github:yoke233/dsh-prime-agent`
-
-### [governed-workflow-for-dsh](https://github.com/zcx369658780/governed-workflow-for-dsh)
-
-Repository: `zcx369658780/governed-workflow-for-dsh`
-
-Policy-enforced, evidence-first governed workflows for DeepSeek Harness agents.
-
-Install: `dsh plugin --profile web add github:zcx369658780/governed-workflow-for-dsh`
 
 ### [allinluna](https://github.com/zenx0x/allinluna)
 

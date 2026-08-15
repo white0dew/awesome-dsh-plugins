@@ -1,0 +1,61 @@
+name: Sync Upstream Catalogs
+
+on:
+  schedule:
+    # Twice daily: 02:20 UTC and 14:20 UTC (10:20 / 22:20 Beijing)
+    - cron: "20 2,14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync upstream catalogs (no personal token needed)
+        run: npm run sync-upstreams
+
+      - name: Generate content
+        run: npm run generate-content
+
+      - name: Validate content
+        run: npm run validate-content
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sources/ scripts/ package.json package-lock.json content/ docs/ README.md README.zh-CN.md
+          git diff --cached --quiet || git commit -m "chore: sync upstream plugin catalogs"
+          git push

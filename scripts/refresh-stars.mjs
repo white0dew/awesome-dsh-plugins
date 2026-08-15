@@ -7,6 +7,8 @@ const rootDirectory = path.resolve(scriptDirectory, "..");
 const sourceDirectory = path.join(rootDirectory, "data", "sources");
 const firstSourcePath = path.join(sourceDirectory, "awesome-dsh-plugin.json");
 const secondSourcePath = path.join(sourceDirectory, "github-plugin-catalog.json");
+const reviewedPath = path.join(sourceDirectory, "reviewed-catalog-additions.json");
+const upstreamPath = path.join(sourceDirectory, "upstream-awesome-deepseek-harness.json");
 const token = process.env.GITHUB_TOKEN?.trim() || process.env.GH_TOKEN?.trim();
 const batchSize = 100;
 const unavailableRepositoryErrorPrefix = "Could not resolve to a Repository with the name";
@@ -50,13 +52,27 @@ function repositoryFromSecondSource(record, index) {
   return record.fullName;
 }
 
+function repositoryFromReviewedSource(record, index) {
+  if (!isRecord(record) || !isRecord(record.github) || typeof record.github.repository !== "string") {
+    fail(`reviewed-catalog-additions.json entry ${index + 1} is missing github.repository.`);
+  }
+  return record.github.repository;
+}
+
+function repositoryFromUpstreamSource(record, index) {
+  if (!isRecord(record) || typeof record.repository !== "string") {
+    fail(`upstream-awesome-deepseek-harness.json entry ${index + 1} is missing repository.`);
+  }
+  return record.repository;
+}
+
 function splitRepository(repository) {
   const match = /^([^/\s]+)\/([^/\s]+)$/.exec(repository);
   if (!match) fail(`invalid GitHub repository: ${repository}`);
   return { owner: match[1], name: match[2] };
 }
 
-function uniqueRepositories(firstSnapshot, secondSnapshot) {
+function uniqueRepositories(firstSnapshot, secondSnapshot, reviewedSnapshot, upstreamSnapshot) {
   const repositories = new Map();
   const add = (repository) => {
     const key = repository.toLowerCase();
@@ -65,6 +81,12 @@ function uniqueRepositories(firstSnapshot, secondSnapshot) {
 
   firstSnapshot.plugins.forEach((record, index) => add(repositoryFromFirstSource(record, index)));
   secondSnapshot.plugins.forEach((record, index) => add(repositoryFromSecondSource(record, index)));
+  if (isRecord(reviewedSnapshot) && Array.isArray(reviewedSnapshot.records)) {
+    reviewedSnapshot.records.forEach((record, index) => add(repositoryFromReviewedSource(record, index)));
+  }
+  if (isRecord(upstreamSnapshot) && Array.isArray(upstreamSnapshot.records)) {
+    upstreamSnapshot.records.forEach((record, index) => add(repositoryFromUpstreamSource(record, index)));
+  }
   return [...repositories.values()];
 }
 
@@ -168,6 +190,38 @@ function updateSecondSnapshot(snapshot, starsByRepository, unavailableRepositori
   return changed;
 }
 
+function updateReviewedSnapshot(snapshot, starsByRepository, unavailableRepositories) {
+  let changed = 0;
+  if (!isRecord(snapshot) || !Array.isArray(snapshot.records)) return changed;
+  for (const [index, record] of snapshot.records.entries()) {
+    const repository = repositoryFromReviewedSource(record, index);
+    const stars = starsByRepository.get(repository.toLowerCase());
+    if (stars === undefined) {
+      if (unavailableRepositories.has(repository.toLowerCase())) continue;
+      fail(`missing fetched stars for ${repository}.`);
+    }
+    if (record.stars !== stars) changed += 1;
+    record.stars = stars;
+  }
+  return changed;
+}
+
+function updateUpstreamSnapshot(snapshot, starsByRepository, unavailableRepositories) {
+  let changed = 0;
+  if (!isRecord(snapshot) || !Array.isArray(snapshot.records)) return changed;
+  for (const [index, record] of snapshot.records.entries()) {
+    const repository = repositoryFromUpstreamSource(record, index);
+    const stars = starsByRepository.get(repository.toLowerCase());
+    if (stars === undefined) {
+      if (unavailableRepositories.has(repository.toLowerCase())) continue;
+      fail(`missing fetched stars for ${repository}.`);
+    }
+    if (record.stars !== stars) changed += 1;
+    record.stars = stars;
+  }
+  return changed;
+}
+
 function indentationOf(source) {
   return source.match(/\n([ \t]+)"/)?.[1] ?? "  ";
 }
@@ -176,13 +230,17 @@ function serialize(snapshot, source) {
   return `${JSON.stringify(snapshot, null, indentationOf(source))}${source.endsWith("\n") ? "\n" : ""}`;
 }
 
-const [firstSource, secondSource] = await Promise.all([
+const [firstSource, secondSource, reviewedSource, upstreamSource] = await Promise.all([
   readFile(firstSourcePath, "utf8"),
   readFile(secondSourcePath, "utf8"),
+  readFile(reviewedPath, "utf8").catch(() => null),
+  readFile(upstreamPath, "utf8").catch(() => null),
 ]);
 const firstSnapshot = readSnapshot(JSON.parse(firstSource), "awesome-dsh-plugin.json");
 const secondSnapshot = readSnapshot(JSON.parse(secondSource), "github-plugin-catalog.json");
-const repositories = uniqueRepositories(firstSnapshot, secondSnapshot);
+const reviewedSnapshot = reviewedSource ? JSON.parse(reviewedSource) : null;
+const upstreamSnapshot = upstreamSource ? JSON.parse(upstreamSource) : null;
+const repositories = uniqueRepositories(firstSnapshot, secondSnapshot, reviewedSnapshot, upstreamSnapshot);
 const repositoryBatches = batches(repositories, batchSize);
 const starsByRepository = new Map();
 const unavailableRepositories = new Map();
@@ -211,11 +269,29 @@ if (unavailableRepositories.size > 0) {
 const unavailableKeys = new Set(unavailableRepositories.keys());
 const firstChanged = updateFirstSnapshot(firstSnapshot, starsByRepository, unavailableKeys);
 const secondChanged = updateSecondSnapshot(secondSnapshot, starsByRepository, unavailableKeys);
+let reviewedChanged = 0;
+let upstreamChanged = 0;
+if (reviewedSource && reviewedSnapshot) {
+  reviewedChanged = updateReviewedSnapshot(reviewedSnapshot, starsByRepository, unavailableKeys);
+}
+if (upstreamSource && upstreamSnapshot) {
+  upstreamChanged = updateUpstreamSnapshot(upstreamSnapshot, starsByRepository, unavailableKeys);
+}
+
 await Promise.all([
   writeFile(firstSourcePath, serialize(firstSnapshot, firstSource), "utf8"),
   writeFile(secondSourcePath, serialize(secondSnapshot, secondSource), "utf8"),
+  reviewedSource && reviewedSnapshot
+    ? writeFile(reviewedPath, serialize(reviewedSnapshot, reviewedSource), "utf8")
+    : Promise.resolve(),
+  upstreamSource && upstreamSnapshot
+    ? writeFile(upstreamPath, serialize(upstreamSnapshot, upstreamSource), "utf8")
+    : Promise.resolve(),
 ]);
 
 console.log(
-  `refresh-stars: updated ${firstChanged}/${firstSnapshot.plugins.length} records in awesome-dsh-plugin.json and ${secondChanged}/${secondSnapshot.plugins.length} records in github-plugin-catalog.json.`,
+  `refresh-stars: updated ${firstChanged}/${firstSnapshot.plugins.length} in awesome-dsh-plugin.json, ` +
+  `${secondChanged}/${secondSnapshot.plugins.length} in github-plugin-catalog.json, ` +
+  `${reviewedChanged}/${reviewedSnapshot?.records?.length ?? 0} in reviewed-catalog-additions.json, ` +
+  `${upstreamChanged}/${upstreamSnapshot?.records?.length ?? 0} in upstream-awesome-deepseek-harness.json.`,
 );

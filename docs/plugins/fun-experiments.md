@@ -2,7 +2,7 @@
 
 Playful, unusual, and exploratory community projects.
 
-**20 catalog entries** · [Back to all categories](index.md)
+**19 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin)
 
@@ -123,14 +123,6 @@ Repository: `omdsh-dev/dsh-gomoku`
 Play Gomoku against the AI, or let two AIs battle it out.
 
 Install: `dsh plugin --profile web add github:omdsh-dev/dsh-gomoku`
-
-### [galgame-skin](https://github.com/shmilyol/galgame-skin)
-
-Repository: `shmilyol/galgame-skin`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:shmilyol/galgame-skin`
 
 ### [dsh-music-plugin](https://github.com/syy-shark/dsh-music-plugin)
 

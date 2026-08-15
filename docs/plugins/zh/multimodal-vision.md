@@ -2,7 +2,7 @@
 
 图像、音频、视频、OCR 与其他多模态能力。
 
-**74 个目录条目** · [返回全部分类](index.md)
+**46 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-vision-sidecar](https://github.com/121103qwq/dsh-vision-sidecar)
 
@@ -12,14 +12,6 @@ Hosted free vision sidecar for DeepSeek Harness with durable session evidence
 
 Install: `dsh plugin --profile web add github:121103qwq/dsh-vision-sidecar`
 
-### [dsh-whale-subagent](https://github.com/1while1/dsh-whale-subagent)
-
-Repository: `1while1/dsh-whale-subagent`
-
-A whale-girl themed subagent nest for the DeepSeek Harness, featuring pixel-animated subagent cards, real-time THINK/TODO tracking, and a model-selectable subagentex tool.
-
-Install: `dsh plugin --profile web add github:1while1/dsh-whale-subagent`
-
 ### [deepseek-hsrness-devkit](https://github.com/2472786266-spec/deepseek-hsrness-devkit)
 
 Repository: `2472786266-spec/deepseek-hsrness-devkit`
@@ -27,46 +19,6 @@ Repository: `2472786266-spec/deepseek-hsrness-devkit`
 DSH DevKit: multimodal gallery + multi-agent supervision console (DeepSeek Harness dynamic Cordis plugin)
 
 Install: `dsh plugin --profile web add github:2472786266-spec/deepseek-hsrness-devkit`
-
-### [dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech)
-
-Repository: `anweat/dsh-voice-webspeech`
-
-A DeepSeek Harness community project from the trusted upstream catalog snapshot.
-
-Install: `dsh plugin --profile web add github:anweat/dsh-voice-webspeech`
-
-### [dsh-soundscape](https://github.com/blaczz/dsh-soundscape)
-
-Repository: `blaczz/dsh-soundscape`
-
-DeepSeek Harness Web UI soundscape: turn-complete celebration (synth chime + confetti), blocked/approval alerts, error buzz, typing ambience. Zero audio assets, zero core changes, plus a ctx.soundscape service.
-
-Install: `dsh plugin --profile web add github:blaczz/dsh-soundscape`
-
-### [dsh-image-theme](https://github.com/carpon39038/dsh-image-theme)
-
-Repository: `carpon39038/dsh-image-theme`
-
-Warp-inspired image-to-theme plugin for DeepSeek Harness: upload a background, extract a palette, and apply a glass UI.
-
-Install: `dsh plugin --profile web add github:carpon39038/dsh-image-theme`
-
-### [dsh-image-to-path](https://github.com/cesaryike/dsh-image-to-path)
-
-Repository: `cesaryike/dsh-image-to-path`
-
-DSH 插件:让纯文本模型对话也能拖图/贴图--图片自动保存到会话工作区,以文件路径交给模型(多模态模型不受影响)
-
-Install: `dsh plugin --profile web add github:cesaryike/dsh-image-to-path`
-
-### [dsh-mimo-agent-tools](https://github.com/ch1bug/dsh-mimo-agent-tools)
-
-Repository: `ch1bug/dsh-mimo-agent-tools`
-
-Xiaomi MiMo search + multimodal tools for DeepSeek Harness agents: mimosearch/vision/audio/video/asr/tts
-
-Install: `dsh plugin --profile web add github:ch1bug/dsh-mimo-agent-tools`
 
 ### [dskin](https://github.com/dancingmemory/dskin)
 
@@ -108,22 +60,6 @@ Repository: `dsh-external/dsh-voice-chat`
 
 Install: `dsh plugin --profile web add github:dsh-external/dsh-voice-chat`
 
-### [dsh-plugin-mm-vision](https://github.com/elohia/dsh-plugin-mm-vision)
-
-Repository: `elohia/dsh-plugin-mm-vision`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:elohia/dsh-plugin-mm-vision`
-
-### [pi-mm-vision](https://github.com/elohia/pi-mm-vision)
-
-Repository: `elohia/pi-mm-vision`
-
-Synesthesia Encoder (通感编码器) - give any text-only LLM (DeepSeek, etc.) the ability to see images via structured spatial text encoding. A Pi agent extension.
-
-Install: `dsh plugin --profile web add github:elohia/pi-mm-vision`
-
 ### [dsh-plugin-deepeye](https://github.com/Favio8/dsh-plugin-deepeye)
 
 Repository: `Favio8/dsh-plugin-deepeye`
@@ -148,22 +84,6 @@ Voice-to-text input plugin for the DeepSeek Harness Web UI
 
 Install: `dsh plugin --profile web add github:forrestahha/dsh-voice-input`
 
-### [deepseek-eyes](https://github.com/fryghost/deepseek-eyes)
-
-Repository: `fryghost/deepseek-eyes`
-
-Community plugin for DeepSeek Harness: give text-only models eyes - paste images natively, described via an OpenAI-compatible vision API
-
-Install: `dsh plugin --profile web add github:fryghost/deepseek-eyes`
-
-### [doubao-vision-dsh](https://github.com/hawkongz/doubao-vision-dsh)
-
-Repository: `hawkongz/doubao-vision-dsh`
-
-让纯文本模型通过桌面豆包看见聊天图片的 DeepSeek Harness 宿主插件(CDP 桥接,全预设生效,识别可取消)
-
-Install: `dsh plugin --profile web add github:hawkongz/doubao-vision-dsh`
-
 ### [dsh-her-eyes](https://github.com/huashenglian/dsh-her-eyes)
 
 Repository: `huashenglian/dsh-her-eyes`
@@ -171,14 +91,6 @@ Repository: `huashenglian/dsh-her-eyes`
 一个可以让ai自动调用VLM(多模态模型)进行视觉分析的dsh插件。A dsh plugin that allows AI to automatically invoke VLMs (multimodal models) for visual analysis.
 
 Install: `dsh plugin --profile web add github:huashenglian/dsh-her-eyes`
-
-### [dsh-mimo-vision-hint](https://github.com/isekai-mfu/dsh-mimo-vision-hint)
-
-Repository: `isekai-mfu/dsh-mimo-vision-hint`
-
-DSH plugin: dispatch image-recognition tasks to an opencode-go mimo-v2.5 subagent via system-prompt injection
-
-Install: `dsh plugin --profile web add github:isekai-mfu/dsh-mimo-vision-hint`
 
 ### [dsh-sound-effects-plugin](https://github.com/JasonJin2006/dsh-sound-effects-plugin)
 
@@ -251,14 +163,6 @@ Repository: `nexu-io/open-design`
 🎨 The open-origin Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video - real files,...
 
 Install: `dsh plugin --profile web add github:nexu-io/open-design`
-
-### [dsh-container](https://github.com/niyueee/dsh-container)
-
-Repository: `niyueee/dsh-container`
-
-DeepSeek Harness (dsh) container image: universal dev-container base, dsh auto-update on boot, compose + Quadlet examples
-
-Install: `dsh plugin --profile web add github:niyueee/dsh-container`
 
 ### [dsh-vision](https://github.com/oil-oil/dsh-vision)
 
@@ -340,14 +244,6 @@ Repository: `picgo/picgo-core`
 
 Install: `dsh plugin --profile web add github:picgo/picgo-core`
 
-### [dsh-audio-dub](https://github.com/pinch-eng/dsh-audio-dub)
-
-Repository: `pinch-eng/dsh-audio-dub`
-
-Dub video and audio into 10 languages with voice cloning, from a DeepSeek Harness agent \| DSH 视频/音频配音插件
-
-Install: `dsh plugin --profile web add github:pinch-eng/dsh-audio-dub`
-
 ### [dsh-cloudflare-browser-run](https://github.com/RealAlexandreAI/dsh-cloudflare-browser-run)
 
 Repository: `RealAlexandreAI/dsh-cloudflare-browser-run`
@@ -380,22 +276,6 @@ Per-model capability declaration for DeepSeek Harness: reasoning-effort levels (
 
 Install: `dsh plugin --profile web add github:sanshanya/better-model-provider`
 
-### [dsh-tool-vision](https://github.com/scorp1o117/dsh-tool-vision)
-
-Repository: `scorp1o117/dsh-tool-vision`
-
-Vision model for DeepSeek Harness \| DeepSeek Harness 外置视觉模型插件
-
-Install: `dsh plugin --profile web add github:scorp1o117/dsh-tool-vision`
-
-### [deepseek-harness-vision-plugin](https://github.com/sjscy05/deepseek-harness-vision-plugin)
-
-Repository: `sjscy05/deepseek-harness-vision-plugin`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:sjscy05/deepseek-harness-vision-plugin`
-
 ### [deepseek-harness-qqbot](https://github.com/sliverp/deepseek-harness-qqbot)
 
 Repository: `sliverp/deepseek-harness-qqbot`
@@ -411,38 +291,6 @@ Repository: `sliverp/deepseek-harness-wecom`
 WeCom AI Bot text and image bridge for DeepSeek Harness
 
 Install: `dsh plugin --profile web add github:sliverp/deepseek-harness-wecom`
-
-### [ds-vision-plugin](https://github.com/sorwcyra/ds-vision-plugin)
-
-Repository: `sorwcyra/ds-vision-plugin`
-
-Paste images into DeepSeek Harness with a four-model vision race, OCR, and an automatic text bridge.
-
-Install: `dsh plugin --profile web add github:sorwcyra/ds-vision-plugin`
-
-### [dsh-plugin-vision](https://github.com/tdf1995/dsh-plugin-vision)
-
-Repository: `tdf1995/dsh-plugin-vision`
-
-A DeepSeek Harness community project from the trusted upstream catalog snapshot.
-
-Install: `dsh plugin --profile web add github:tdf1995/dsh-plugin-vision`
-
-### [dsh-vision-lmstudio](https://github.com/tiankundai/dsh-vision-lmstudio)
-
-Repository: `tiankundai/dsh-vision-lmstudio`
-
-让你能通过deepseek harness调用LM studio加载的本地视觉模型
-
-Install: `dsh plugin --profile web add github:tiankundai/dsh-vision-lmstudio`
-
-### [dsh-see-image](https://github.com/tiefeiyu/dsh-see-image)
-
-Repository: `tiefeiyu/dsh-see-image`
-
-A seeimage vision tool plugin for DeepSeek Harness - describe images through any OpenAI-compatible vision model (GitHub Copilot, OpenAI, Ollama, vLLM, LM Studio).
-
-Install: `dsh plugin --profile web add github:tiefeiyu/dsh-see-image`
 
 ### [dsh-ui-appearance](https://github.com/tqsy114514/dsh-ui-appearance)
 
@@ -476,54 +324,6 @@ dsh 插件：给纯文本 DeepSeek 加视觉--viewimage 工具桥接任意 OpenA
 
 Install: `dsh plugin --profile web add github:william-jin-cmu/dsh-vision`
 
-### [dsh-computer-use](https://github.com/xiaoheizi1212/dsh-computer-use)
-
-Repository: `xiaoheizi1212/dsh-computer-use`
-
-Model-agnostic Computer Use for DeepSeek Harness: isolated browser, Windows native helper, third-party vision perception, and a Chrome Cookie Bridge.
-
-Install: `dsh plugin --profile web add github:xiaoheizi1212/dsh-computer-use`
-
-### [dsh-vision](https://github.com/xiaoshihou514/dsh-vision)
-
-Repository: `xiaoshihou514/dsh-vision`
-
-DeepSeek Harness: vision
-
-Install: `dsh plugin --profile web add github:xiaoshihou514/dsh-vision`
-
-### [dsh-vision-bridge](https://github.com/xieweikang123/dsh-vision-bridge)
-
-Repository: `xieweikang123/dsh-vision-bridge`
-
-Give a text-only dsh model eyes: pasted images recognized into text via an OpenAI-compatible vision endpoint.
-
-Install: `dsh plugin --profile web add github:xieweikang123/dsh-vision-bridge`
-
-### [deepseek-visionary](https://github.com/xlight/deepseek-visionary)
-
-Repository: `xlight/deepseek-visionary`
-
-使用 DeepSeek 官方多模态视觉模型让你的 Agent 不再眼瞎（支持 DSH、Zed、OpenCode、Codex、Claude Code、Cursor、Claude Desktop）
-
-Install: `dsh plugin --profile web add github:xlight/deepseek-visionary`
-
-### [dsh-plugin-browser](https://github.com/xu1132/dsh-plugin-browser)
-
-Repository: `xu1132/dsh-plugin-browser`
-
-A DeepSeek Harness community plugin that drives a headless Playwright browser: rendered page text, screenshots, and page automation
-
-Install: `dsh plugin --profile web add github:xu1132/dsh-plugin-browser`
-
-### [slcatwujian-dsh-vision-plugin](https://github.com/yan5236/slcatwujian-dsh-vision-plugin)
-
-Repository: `yan5236/slcatwujian-dsh-vision-plugin`
-
-让不支持图片输入的主模型通过已配置的视觉模型理解图片的 DSH 插件：自动桥接、像素坐标描述、visionask 追问工具与设置页
-
-Install: `dsh plugin --profile web add github:yan5236/slcatwujian-dsh-vision-plugin`
-
 ### [dsh-pixel-whale](https://github.com/yoke233/dsh-pixel-whale)
 
 Repository: `yoke233/dsh-pixel-whale`
@@ -539,30 +339,6 @@ Repository: `ysr666/dsh-vision-router`
 Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no...
 
 Install: `dsh plugin --profile web add github:ysr666/dsh-vision-router`
-
-### [dsh-skin](https://github.com/yugitan/dsh-skin)
-
-Repository: `yugitan/dsh-skin`
-
-Customizable skinning plugin for DeepSeek Harness Web UI - gradient presets, image wallpapers, translucency, accent colors, persisted in user settings
-
-Install: `dsh plugin --profile web add github:yugitan/dsh-skin`
-
-### [dsh-ui-spec](https://github.com/yumimanji/dsh-ui-spec)
-
-Repository: `yumimanji/dsh-ui-spec`
-
-DeepSeek Harness plugin: turn UI screenshots into structured, implementation-grade web frontend specs. Deterministic geometry (sharp) + optional vision-model semantics, merged into one JSON + Markdown spec.
-
-Install: `dsh plugin --profile web add github:yumimanji/dsh-ui-spec`
-
-### [dsh-vision-helper](https://github.com/yuuz12/dsh-vision-helper)
-
-Repository: `yuuz12/dsh-vision-helper`
-
-DeepSeek Harness Vision Helper/DeepSeek Harness 视觉辅助方案
-
-Install: `dsh plugin --profile web add github:yuuz12/dsh-vision-helper`
 
 ### [dsh-blue-whale-maid](https://github.com/yuxino/dsh-blue-whale-maid)
 

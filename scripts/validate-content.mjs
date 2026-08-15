@@ -43,10 +43,10 @@ if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
 if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.records.length !== 2) {
   errors.push("reviewed catalog additions input must contain exactly 2 records");
 }
-if (!Array.isArray(upstreamAwesomeDeepseekHarnessInput.records)) {
-  errors.push("upstream awesome-deepseek-harness input must contain a records array");
+if (!Array.isArray(upstreamAwesomeDeepseekHarnessInput.records) || upstreamAwesomeDeepseekHarnessInput.records.length === 0) {
+  errors.push("upstream awesome-deepseek-harness input must contain a non-empty records array");
 }
-const expectedPluginCount = 362 + (Array.isArray(upstreamAwesomeDeepseekHarnessInput.records) ? upstreamAwesomeDeepseekHarnessInput.records.length : 0);
+const expectedPluginCount = 362 + upstreamAwesomeDeepseekHarnessInput.records.length;
 if (plugins.length !== expectedPluginCount) {
   errors.push(`expected exactly ${expectedPluginCount} normalized plugins, found ${plugins.length}`);
 }
@@ -174,8 +174,8 @@ if (Array.isArray(upstreamAwesomeDeepseekHarnessInput.records)) {
     if (!categoryIds.has(record.category)) {
       errors.push(`${record.repository}: upstream category is unknown`);
     }
-    if (record.stars !== 0) {
-      errors.push(`${record.repository}: upstream star count must be zero`);
+    if (record.stars !== undefined && (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0)) {
+      errors.push(`${record.repository}: upstream stars must be a nonnegative integer when present`);
     }
     const repositoryKey = record.repository.toLowerCase();
     if (upstreamAwesomeDeepseekHarnessByRepository.has(repositoryKey)) {

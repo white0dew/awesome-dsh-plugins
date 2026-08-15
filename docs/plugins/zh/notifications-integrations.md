@@ -2,7 +2,7 @@
 
 消息、通知以及外部服务连接。
 
-**51 个目录条目** · [返回全部分类](index.md)
+**46 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp)
 
@@ -67,14 +67,6 @@ Repository: `congchuanling-dot/DSH-Telegram-Relay`
 DSH Relay 让你可以通过 Telegram 远程与 DeepSeek Harness 对话，并接收通知。DSH Relay turns Telegram into a remote conversation and notification channel for DeepSeek Harness.
 
 Install: `dsh plugin --profile web add github:congchuanling-dot/DSH-Telegram-Relay`
-
-### [dsh-onlyne](https://github.com/dbydd/dsh-onlyne)
-
-Repository: `dbydd/dsh-onlyne`
-
-IM gateway for DeepSeek Harness agents - send and receive QQ, WeChat, Feishu and Telegram messages from dsh sessions.
-
-Install: `dsh plugin --profile web add github:dbydd/dsh-onlyne`
 
 ### [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification)
 
@@ -196,14 +188,6 @@ Deepseek-Harness Vscode Integration
 
 Install: `dsh plugin --profile web add github:harcochen/dsh-vsc-integration`
 
-### [dsh-notify](https://github.com/haytham818/dsh-notify)
-
-Repository: `haytham818/dsh-notify`
-
-DSH system notification plugin: desktop notifications when an agent finishes a task, errors, asks a question, or waits for approval (dsh 系统通知插件)
-
-Install: `dsh plugin --profile web add github:haytham818/dsh-notify`
-
 ### [dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel)
 
 Repository: `hi-wenw/dsh-telegram-channel`
@@ -252,14 +236,6 @@ Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。
 
 Install: `dsh plugin --profile web add github:LoserFox/telegram`
 
-### [dsh-messager](https://github.com/ly6170/dsh-messager)
-
-Repository: `ly6170/dsh-messager`
-
-基于Deepseek Harness+DeepSeek开发的适用于Deepseek Harness的消息提醒信使，可使用第三方通道（暂时飞书webhook）进行推送
-
-Install: `dsh plugin --profile web add github:ly6170/dsh-messager`
-
 ### [dsh-win-notify](https://github.com/MuziIsabel/dsh-win-notify)
 
 Repository: `MuziIsabel/dsh-win-notify`
@@ -267,14 +243,6 @@ Repository: `MuziIsabel/dsh-win-notify`
 DSH plugin: Windows toast notification with sound when an agent task completes
 
 Install: `dsh plugin --profile web add github:MuziIsabel/dsh-win-notify`
-
-### [dsh-github-integration](https://github.com/omdsh-dev/dsh-github-integration)
-
-Repository: `omdsh-dev/dsh-github-integration`
-
-暂无描述
-
-Install: `dsh plugin --profile web add github:omdsh-dev/dsh-github-integration`
 
 ### [dsh-lark](https://github.com/omdsh-dev/dsh-lark)
 
@@ -395,14 +363,6 @@ Repository: `wuyuanjiang1/dsh2wechat`
 DeepSeek Harness 微信 ClawBot 消息桥插件
 
 Install: `dsh plugin --profile web add github:wuyuanjiang1/dsh2wechat`
-
-### [dsh-notify](https://github.com/yangyongzhen/dsh-notify)
-
-Repository: `yangyongzhen/dsh-notify`
-
-Task-completion notifications for DeepSeek Harness: ServerChan / DingTalk / Feishu / generic webhooks. dsh plugin.
-
-Install: `dsh plugin --profile web add github:yangyongzhen/dsh-notify`
 
 ### [dsh-telegram](https://github.com/yuko0331/dsh-telegram)
 
