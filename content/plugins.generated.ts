@@ -1244,7 +1244,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "argonaut790-dsh-deepseek-vision",
@@ -1404,7 +1404,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "awesomehou-dsh-plugin-marketplace",
@@ -1756,7 +1756,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "biboyang-dsh-im-bridge",
@@ -1772,7 +1772,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "bilbillm-dsh-motion",
@@ -2188,7 +2188,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "bramblexu-dsh-prompt-profile",
@@ -2204,7 +2204,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "bramblexu-dsh-revdiff",
@@ -2220,7 +2220,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "brittanistrehlowll-oss-dsh-quota-panel",
@@ -2572,7 +2572,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "ccq1-dsh-side-panel",
@@ -2924,7 +2924,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "chisaalter-deepseek-harness-desktop",
@@ -3731,16 +3731,16 @@ export const plugins = [
     name: "dsh-reverse-skill",
     repoUrl: "https://github.com/dhicoc/dsh-reverse-skill",
     repository: "dhicoc/dsh-reverse-skill",
-    description: {"en":"Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin - reverse engineering, authorized pentesting and security research skill pack.","zh":"Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin - reverse engineering, authorized pentesting and security research skill pack."},
-    category: "development-runtime",
+    description: {"en":"Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin - reverse engineering, authorized pentesting and security research skill pack.","zh":"完整的逆向技能包（85 个 SKILL.md），作为 DeepSeek Harness (dsh) Cordis 插件 - 逆向工程、授权渗透测试和安全研究技能包。"},
+    category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dhicoc/dsh-reverse-skill"},
-    stars: 0,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: false,
+    latest: true,
   },
   {
     id: "dietcokewithsugar-dsh-user-experience",
@@ -9372,7 +9372,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "giantgkl-dsh-cost",
@@ -9740,7 +9740,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "hanaayane-dsh-reasoning-effort",
@@ -9948,7 +9948,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "hccccc01333-dsh-report-html",
@@ -10684,7 +10684,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "hxyz486-dsh-archived-conversations",
@@ -11196,7 +11196,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-cowork",
@@ -11212,7 +11212,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-crosstalk",
@@ -11228,7 +11228,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-docker",
@@ -11244,7 +11244,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-memory",
@@ -11260,7 +11260,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-plugin-manager",
@@ -11276,7 +11276,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-polyglot",
@@ -11292,7 +11292,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-routines",
@@ -11308,7 +11308,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-skillport",
@@ -11324,7 +11324,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-tmuxctl",
@@ -11340,7 +11340,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jesse-njx-dsh-voice",
@@ -11356,7 +11356,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jiangnanquan-dsh-ux",
@@ -11468,7 +11468,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "jingbiaomei-tokdash",
@@ -12511,6 +12511,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "leechen298-code2skill",
+    name: "Code2Skill",
+    repoUrl: "https://github.com/leechen298/Code2Skill",
+    repository: "leechen298/Code2Skill",
+    description: {"en":"Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.","zh":"从现有代码生成 Function、MCP、Agent Skill 和离线测试包，可安装为 DeepSeek Harness 插件包。"},
+    category: "development-runtime",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:leechen298/Code2Skill#v1.1.3"},
+    stars: 2,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: true,
+  },
+  {
     id: "leemancheung-dsh-token-usage",
     name: "dsh-token-usage",
     repoUrl: "https://github.com/LeemanCheung/dsh-token-usage",
@@ -13196,7 +13212,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "liustack-modsearch",
@@ -13340,7 +13356,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "lonelymoon87-dsh-gitflow",
@@ -13356,7 +13372,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "lonelymoon87-dsh-guardian",
@@ -13372,7 +13388,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "lonelymoon87-dsh-specflow",
@@ -13388,7 +13404,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "longyu065-dsh-desktop",
@@ -13756,7 +13772,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "lynx-gt-dsh-subagent-tools",
@@ -13772,7 +13788,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "lzszq-dsh-scholar",
@@ -13900,7 +13916,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "maxeaglet-dsh-plugin-manager",
@@ -14252,7 +14268,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "moeblack-deepseek-manners",
@@ -15036,7 +15052,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "nutshellai-tech-mobius",
@@ -15260,7 +15276,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "omdsh-dev-dsh-book2skill",
@@ -16268,7 +16284,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "openma-ai-deepseek-harness-tui",
@@ -16284,7 +16300,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "openma-ai-open-managed-agents",
@@ -17868,7 +17884,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "severuszh-dsh-notify-windows",
@@ -21260,7 +21276,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "xiongjiamu-dsh-atomgit",
@@ -22956,7 +22972,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "zouyuanqing-dsh-vision-primitives",
@@ -22988,7 +23004,7 @@ export const plugins = [
       detail: communityDiscoveredDetail,
     },
     featured: false,
-    latest: true,
+    latest: false,
   },
   {
     id: "zrui-c-dsh-computer-use",

@@ -6,7 +6,7 @@
 | --- | ---: | --- |
 | [界面与主题](ui-themes.md) | 46 | 界面、终端客户端、主题和展示体验增强。 |
 | [会话与记忆](sessions-memory.md) | 105 | 对话历史、上下文、持久化与记忆辅助工具。 |
-| [工具与能力](tools-capabilities.md) | 226 | 面向日常工作的实用工具和能力扩展。 |
+| [工具与能力](tools-capabilities.md) | 227 | 面向日常工作的实用工具和能力扩展。 |
 | [工作流与智能体](workflow-agents.md) | 109 | 自动化、编排、提示词与智能体工作流。 |
 | [通知与集成](notifications-integrations.md) | 46 | 消息、通知以及外部服务连接。 |
 | [开发与运行时](development-runtime.md) | 721 | 开发工具、Shell、容器、测试与运行时支持。 |

@@ -21,7 +21,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | --- | ---: |
 | [界面与主题](docs/plugins/zh/ui-themes.md) | 46 |
 | [会话与记忆](docs/plugins/zh/sessions-memory.md) | 105 |
-| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 226 |
+| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 227 |
 | [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 109 |
 | [通知与集成](docs/plugins/zh/notifications-integrations.md) | 46 |
 | [开发与运行时](docs/plugins/zh/development-runtime.md) | 721 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## 独立说明
 
-本目录收录 1436 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 1437 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 

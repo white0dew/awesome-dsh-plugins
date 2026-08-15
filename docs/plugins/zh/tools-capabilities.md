@@ -2,7 +2,7 @@
 
 面向日常工作的实用工具和能力扩展。
 
-**226 个目录条目** · [返回全部分类](index.md)
+**227 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt)
 
@@ -171,6 +171,14 @@ Repository: `Demogorgon314/dsh-resume-plugin`
 让 DeepSeek Harness 安全读取并继续 Codex 与 Claude Code 的历史会话。
 
 Install: `dsh plugin --profile web add github:Demogorgon314/dsh-resume-plugin`
+
+### [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)
+
+Repository: `dhicoc/dsh-reverse-skill`
+
+完整的逆向技能包（85 个 SKILL.md），作为 DeepSeek Harness (dsh) Cordis 插件 - 逆向工程、授权渗透测试和安全研究技能包。
+
+Install: `dsh plugin --profile web add github:dhicoc/dsh-reverse-skill`
 
 ### [dsh-usage-cost](https://github.com/Dino6021/dsh-usage-cost)
 

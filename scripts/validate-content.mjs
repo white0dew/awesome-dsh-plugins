@@ -27,6 +27,11 @@ const [firstInput, secondInput, reviewedAdditionsInput, upstreamAwesomeDeepseekH
 const errors = [];
 const githubUrl = /^https:\/\/github\.com\/([^/\s]+)\/([^/\s]+)$/;
 const repositoryName = /^[^/\s]+\/[^/\s]+$/;
+const isValidInstallCommand = (command, repository) => {
+  const escapedRepository = repository.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return typeof command === "string"
+    && new RegExp(`^dsh plugin --profile web add github:${escapedRepository}(?:#[^\\s#]+)?$`).test(command);
+};
 const categoryIds = new Set(categories.map((category) => category.id));
 const verificationStateIds = new Set(verificationStates);
 const seenIds = new Set();
@@ -34,8 +39,8 @@ const seenRepositories = new Set();
 const expectedVerificationDetail =
   "An original repository was indexed; this is not a security review, compatibility guarantee, or endorsement.";
 
-if (!Array.isArray(firstInput.plugins) || firstInput.plugins.length !== 138) {
-  errors.push("first catalog input must contain exactly 138 records");
+if (!Array.isArray(firstInput.plugins) || firstInput.plugins.length !== 140) {
+  errors.push("first catalog input must contain exactly 140 records");
 }
 if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
   errors.push("second catalog input must contain exactly 334 records");
@@ -46,7 +51,7 @@ if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.rec
 if (!Array.isArray(upstreamAwesomeDeepseekHarnessInput.records) || upstreamAwesomeDeepseekHarnessInput.records.length === 0) {
   errors.push("upstream awesome-deepseek-harness input must contain a non-empty records array");
 }
-const expectedPluginCount = 362 + upstreamAwesomeDeepseekHarnessInput.records.length;
+const expectedPluginCount = 364 + upstreamAwesomeDeepseekHarnessInput.records.length;
 if (plugins.length !== expectedPluginCount) {
   errors.push(`expected exactly ${expectedPluginCount} normalized plugins, found ${plugins.length}`);
 }
@@ -56,6 +61,7 @@ if (categories.length !== 10) {
 
 const firstSourceRepositories = new Set();
 const firstSourceStars = new Map();
+const firstSourceInstallCommands = new Map();
 if (Array.isArray(firstInput.plugins)) {
   for (let index = 0; index < firstInput.plugins.length; index += 1) {
     const record = firstInput.plugins[index];
@@ -65,6 +71,10 @@ if (Array.isArray(firstInput.plugins)) {
     }
     const repository = `${record.owner}/${record.name}`.toLowerCase();
     firstSourceRepositories.add(repository);
+    if (!isValidInstallCommand(record.install, `${record.owner}/${record.name}`)) {
+      errors.push(`${record.owner}/${record.name}: install must use the standard command with an optional nonempty #version-or-ref suffix`);
+    }
+    firstSourceInstallCommands.set(repository, record.install);
     if (record.stars === undefined) continue;
     if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
       errors.push(`${record.owner}/${record.name}: stars must be a finite nonnegative integer`);
@@ -185,8 +195,8 @@ if (Array.isArray(upstreamAwesomeDeepseekHarnessInput.records)) {
   }
 }
 
-if (firstSourceRepositories.size !== 138) {
-  errors.push(`expected 138 unique first-source repositories, found ${firstSourceRepositories.size}`);
+if (firstSourceRepositories.size !== 140) {
+  errors.push(`expected 140 unique first-source repositories, found ${firstSourceRepositories.size}`);
 }
 if (secondSourceStars.size !== 334) {
   errors.push(`expected 334 second-source star records, found ${secondSourceStars.size}`);
@@ -200,8 +210,8 @@ for (const repository of upstreamAwesomeDeepseekHarnessByRepository.keys()) {
   }
 }
 const firstSourceOnly = [...firstSourceRepositories].filter((repository) => !secondSourceStars.has(repository));
-if (firstSourceOnly.length !== 26) {
-  errors.push(`expected 26 first-source-only records, found ${firstSourceOnly.length}`);
+if (firstSourceOnly.length !== 28) {
+  errors.push(`expected 28 first-source-only records, found ${firstSourceOnly.length}`);
 }
 if (firstSourceOnly.some((repository) => !firstSourceStars.has(repository))) {
   errors.push("every first-source-only record must have a star count");
@@ -256,11 +266,15 @@ for (const plugin of plugins) {
     ) {
       errors.push(`${plugin.id}: external-download action must match the reviewed addition`);
     }
+  } else if (plugin.primaryAction?.type !== "copy-install") {
+    errors.push(`${plugin.id}: primary action must be copy-install`);
+  } else if (!isValidInstallCommand(plugin.primaryAction.command, plugin.repository)) {
+    errors.push(`${plugin.id}: copy-install command must use the standard command with an optional nonempty #version-or-ref suffix`);
   } else if (
-    plugin.primaryAction?.type !== "copy-install"
-    || plugin.primaryAction.command !== `dsh plugin --profile web add github:${plugin.repository}`
+    firstSourceInstallCommands.has(repositoryKey)
+    && plugin.primaryAction.command !== firstSourceInstallCommands.get(repositoryKey)
   ) {
-    errors.push(`${plugin.id}: copy-install command must exactly match repository`);
+    errors.push(`${plugin.id}: copy-install command must exactly match the first-source command`);
   }
   if (typeof plugin.stars !== "number" || !Number.isFinite(plugin.stars) || !Number.isInteger(plugin.stars) || plugin.stars < 0) {
     errors.push(`${plugin.id}: stars must be a finite nonnegative integer`);

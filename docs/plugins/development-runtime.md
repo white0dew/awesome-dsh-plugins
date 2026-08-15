@@ -1116,14 +1116,6 @@ DeepSeek Harness provider for GPT models using managed ChatGPT OAuth through Cod
 
 Install: `dsh plugin --profile web add github:DGPisces/dsh-openai-oauth`
 
-### [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)
-
-Repository: `dhicoc/dsh-reverse-skill`
-
-Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin - reverse engineering, authorized pentesting and security research skill pack.
-
-Install: `dsh plugin --profile web add github:dhicoc/dsh-reverse-skill`
-
 ### [dsh-user-experience](https://github.com/dietcokewithsugar/dsh-user-experience)
 
 Repository: `dietcokewithsugar/dsh-user-experience`
@@ -2851,6 +2843,14 @@ Repository: `lee259/dsh-workbench`
 A Codex-like file workspace for DeepSeek Harness Web with read-only previews and real DSH write/edit diffs.
 
 Install: `dsh plugin --profile web add github:lee259/dsh-workbench`
+
+### [Code2Skill](https://github.com/leechen298/Code2Skill)
+
+Repository: `leechen298/Code2Skill`
+
+Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.
+
+Install: `dsh plugin --profile web add github:leechen298/Code2Skill#v1.1.3`
 
 ### [dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage)
 

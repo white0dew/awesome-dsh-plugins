@@ -1104,13 +1104,6 @@
       "stars": 0
     },
     {
-      "repository": "dhicoc/dsh-reverse-skill",
-      "url": "https://github.com/dhicoc/dsh-reverse-skill",
-      "description": "Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack.",
-      "category": "development-runtime",
-      "stars": 0
-    },
-    {
       "repository": "dietcokewithsugar/dsh-user-experience",
       "url": "https://github.com/dietcokewithsugar/dsh-user-experience",
       "description": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and suggests fixes.",

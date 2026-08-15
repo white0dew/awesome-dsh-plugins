@@ -21,7 +21,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | --- | ---: |
 | [UI & Themes](docs/plugins/ui-themes.md) | 46 |
 | [Sessions & Memory](docs/plugins/sessions-memory.md) | 105 |
-| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 226 |
+| [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 227 |
 | [Workflow & Agents](docs/plugins/workflow-agents.md) | 109 |
 | [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 46 |
 | [Development & Runtime](docs/plugins/development-runtime.md) | 721 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## Independence
 
-This directory lists 1436 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
+This directory lists 1437 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 

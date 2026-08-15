@@ -181,6 +181,12 @@ function installCommand(repository) {
   return `dsh plugin --profile web add github:${repository}`;
 }
 
+function isValidInstallCommand(command, repository) {
+  const escapedRepository = repository.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return typeof command === "string"
+    && new RegExp(`^dsh plugin --profile web add github:${escapedRepository}(?:#[^\\s#]+)?$`).test(command);
+}
+
 function pluginIdFor(repository, usedIds) {
   const baseId = repository
     .toLowerCase()
@@ -297,8 +303,8 @@ function normalizeFirstSource(snapshot, seenRepositories, secondSourceStars) {
   if (!Array.isArray(plugins)) {
     fail("awesome-dsh-plugin.json does not have a plugins array");
   }
-  if (plugins.length !== 138) {
-    fail(`expected 138 first-source entries, found ${plugins.length}`);
+  if (plugins.length !== 140) {
+    fail(`expected 140 first-source entries, found ${plugins.length}`);
   }
 
   return plugins.map((record, index) => {
@@ -310,9 +316,8 @@ function normalizeFirstSource(snapshot, seenRepositories, secondSourceStars) {
     }
     const repository = `${record.owner}/${record.name}`;
     validateDirectGithubRecord({ repository, url: record.url, label: repository });
-    const expectedInstall = installCommand(repository);
-    if (record.install !== expectedInstall) {
-      fail(`${repository} does not use the exact install command ${expectedInstall}`);
+    if (!isValidInstallCommand(record.install, repository)) {
+      fail(`${repository} must use the standard install command with an optional nonempty #version-or-ref suffix`);
     }
     const categoryId = firstCategoryMap.get(record.category);
     if (!categoryId) {
@@ -670,7 +675,7 @@ const normalizedPlugins = [
   ...normalizeUpstreamAwesomeDeepseekHarness(upstreamAwesomeDeepseekHarnessSnapshot, seenRepositories),
 ].sort(compareRepositories);
 
-const expectedPluginCount = 362 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
+const expectedPluginCount = 364 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
 if (normalizedPlugins.length !== expectedPluginCount) {
   fail(`expected exactly ${expectedPluginCount} unique repositories after deduplication, found ${normalizedPlugins.length}`);
 }
