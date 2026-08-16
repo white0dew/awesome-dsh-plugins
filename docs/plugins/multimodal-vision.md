@@ -160,7 +160,7 @@ Install: `dsh plugin --profile web add github:MC5lan/dsh-multimodal`
 
 Repository: `nexu-io/open-design`
 
-🎨 The open-origin Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video - real files,...
+🎨 Best DeepSeek Harness Design Plugin. The open-origin Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images &...
 
 Install: `dsh plugin --profile web add github:nexu-io/open-design`
 

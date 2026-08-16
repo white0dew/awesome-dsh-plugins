@@ -544,7 +544,7 @@ Install: `dsh plugin --profile web add github:morluto/leantoken`
 
 Repository: `nextindie/deepseek-harness-for-vs-code`
 
-Use DeepSeek Harness in VS Code like ChatGPT/Copilot: @dsh in native chat, standalone views, cross-project sessions, shared via DSH API. Auto-starts server.
+DeepSeek Harness for VS Code: @dsh chat participant, sidebar & standalone chat, plan mode, goals, subagents, turn-level Git rollback, workspaces/jobs/settings panels, 13-language UI.
 
 Install: `dsh plugin --profile web add github:nextindie/deepseek-harness-for-vs-code`
 
