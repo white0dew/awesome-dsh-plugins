@@ -20783,6 +20783,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "sjh9714-dsh-what-changed",
+    name: "dsh-what-changed",
+    repoUrl: "https://github.com/sjh9714/dsh-what-changed",
+    repository: "sjh9714/dsh-what-changed",
+    description: {"en":"A DSH Web plugin that summarizes files written during a session and compares the workspace with HEAD for review.","zh":"用于汇总 DSH Web 会话文件写入，并将工作区与 HEAD 对比以便审阅的插件。"},
+    category: "development-runtime",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sjh9714/dsh-what-changed"},
+    stars: 2,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "sjh9714-dsh-win32",
     name: "dsh-win32",
     repoUrl: "https://github.com/sjh9714/dsh-win32",

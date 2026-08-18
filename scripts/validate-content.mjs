@@ -45,13 +45,13 @@ if (!Array.isArray(firstInput.plugins) || firstInput.plugins.length !== 140) {
 if (!Array.isArray(secondInput.plugins) || secondInput.plugins.length !== 334) {
   errors.push("second catalog input must contain exactly 334 records");
 }
-if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.records.length !== 2) {
-  errors.push("reviewed catalog additions input must contain exactly 2 records");
+if (!Array.isArray(reviewedAdditionsInput.records) || reviewedAdditionsInput.records.length !== 3) {
+  errors.push("reviewed catalog additions input must contain exactly 3 records");
 }
 if (!Array.isArray(upstreamAwesomeDeepseekHarnessInput.records) || upstreamAwesomeDeepseekHarnessInput.records.length === 0) {
   errors.push("upstream awesome-deepseek-harness input must contain a non-empty records array");
 }
-const expectedPluginCount = 364 + upstreamAwesomeDeepseekHarnessInput.records.length;
+const expectedPluginCount = 365 + upstreamAwesomeDeepseekHarnessInput.records.length;
 if (plugins.length !== expectedPluginCount) {
   errors.push(`expected exactly ${expectedPluginCount} normalized plugins, found ${plugins.length}`);
 }
@@ -201,8 +201,8 @@ if (firstSourceRepositories.size !== 140) {
 if (secondSourceStars.size !== 334) {
   errors.push(`expected 334 second-source star records, found ${secondSourceStars.size}`);
 }
-if (reviewedAdditionsByRepository.size !== 2) {
-  errors.push(`expected 2 unique reviewed catalog additions, found ${reviewedAdditionsByRepository.size}`);
+if (reviewedAdditionsByRepository.size !== 3) {
+  errors.push(`expected 3 unique reviewed catalog additions, found ${reviewedAdditionsByRepository.size}`);
 }
 for (const repository of upstreamAwesomeDeepseekHarnessByRepository.keys()) {
   if (firstSourceRepositories.has(repository) || secondSourceStars.has(repository) || reviewedAdditionsByRepository.has(repository)) {

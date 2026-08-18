@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**953 catalog entries** · [Back to all categories](index.md)
+**954 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -5555,6 +5555,14 @@ Repository: `sjh9714/dsh-movein`
 Move your whole Claude Code setup into DeepSeek Harness (DSH) with one command. Skills, MCP, hooks, instructions. 从 Claude Code 拎包入住 DSH
 
 Install: `dsh plugin --profile web add github:sjh9714/dsh-movein`
+
+### [dsh-what-changed](https://github.com/sjh9714/dsh-what-changed)
+
+Repository: `sjh9714/dsh-what-changed`
+
+A DSH Web plugin that summarizes files written during a session and compares the workspace with HEAD for review.
+
+Install: `dsh plugin --profile web add github:sjh9714/dsh-what-changed`
 
 ### [dsh-win32](https://github.com/sjh9714/dsh-win32)
 

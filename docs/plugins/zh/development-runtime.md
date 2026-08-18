@@ -2,7 +2,7 @@
 
 开发工具、Shell、容器、测试与运行时支持。
 
-**953 个目录条目** · [返回全部分类](index.md)
+**954 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -5555,6 +5555,14 @@ Repository: `sjh9714/dsh-movein`
 Move your whole Claude Code setup into DeepSeek Harness (DSH) with one command. Skills, MCP, hooks, instructions. 从 Claude Code 拎包入住 DSH
 
 Install: `dsh plugin --profile web add github:sjh9714/dsh-movein`
+
+### [dsh-what-changed](https://github.com/sjh9714/dsh-what-changed)
+
+Repository: `sjh9714/dsh-what-changed`
+
+用于汇总 DSH Web 会话文件写入，并将工作区与 HEAD 对比以便审阅的插件。
+
+Install: `dsh plugin --profile web add github:sjh9714/dsh-what-changed`
 
 ### [dsh-win32](https://github.com/sjh9714/dsh-win32)
 

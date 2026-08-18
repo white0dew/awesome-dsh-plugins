@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-14",
+  "updated": "2026-08-18",
   "records": [
     {
       "name": "dsh-outline",
@@ -39,6 +39,24 @@
           "en": "Download for Windows",
           "zh": "下载 Windows 安装包"
         }
+      }
+    },
+    {
+      "name": "dsh-what-changed",
+      "github": {
+        "repository": "sjh9714/dsh-what-changed",
+        "url": "https://github.com/sjh9714/dsh-what-changed",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A DSH Web plugin that summarizes files written during a session and compares the workspace with HEAD for review.",
+        "zh": "用于汇总 DSH Web 会话文件写入，并将工作区与 HEAD 对比以便审阅的插件。"
+      },
+      "category": "development-runtime",
+      "stars": 2,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:sjh9714/dsh-what-changed"
       }
     }
   ]
