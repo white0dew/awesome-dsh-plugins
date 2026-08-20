@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-18",
+  "updated": "2026-08-20",
   "records": [
     {
       "name": "dsh-outline",
@@ -57,6 +57,28 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:sjh9714/dsh-what-changed"
+      }
+    },
+    {
+      "name": "dsh-plugin-store",
+      "github": {
+        "repository": "sandbaseai/dsh-plugin-store",
+        "url": "https://github.com/sandbaseai/dsh-plugin-store",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A native Store interface for DSH Settings with live catalog search, tag filters, ranking, catalog-gated installation, and installed-plugin inventory.",
+        "zh": "集成在 DSH 设置中的原生插件商店，支持实时目录搜索、标签筛选、排行、目录状态门控安装和已安装插件清单。"
+      },
+      "category": "ui-themes",
+      "stars": 1,
+      "primaryAction": {
+        "type": "external-download",
+        "url": "https://github.com/sandbaseai/dsh-plugin-store/releases/download/v0.1.0-preview.5/sandbaseai-dsh-plugin-store-0.1.0-preview.5.tgz",
+        "label": {
+          "en": "Download Preview 5 package",
+          "zh": "下载 Preview 5 安装包"
+        }
       }
     }
   ]
