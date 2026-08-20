@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**46 个目录条目** · [返回全部分类](index.md)
+**47 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -299,6 +299,14 @@ Repository: `renat3u/dsh-web-archive`
 折叠对话中的 Think、Bash 等「无用消息」。
 
 Install: `dsh plugin --profile web add github:renat3u/dsh-web-archive`
+
+### [dsh-plugin-store](https://github.com/sandbaseai/dsh-plugin-store)
+
+Repository: `sandbaseai/dsh-plugin-store`
+
+集成在 DSH 设置中的原生插件商店，支持实时目录搜索、标签筛选、排行、目录状态门控安装和已安装插件清单。
+
+下载: [下载 Preview 5 安装包](https://github.com/sandbaseai/dsh-plugin-store/releases/download/v0.1.0-preview.5/sandbaseai-dsh-plugin-store-0.1.0-preview.5.tgz)
 
 ### [ds-api-usage](https://github.com/Sev7een/ds-api-usage)
 

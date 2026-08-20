@@ -23487,6 +23487,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "sandbaseai-dsh-plugin-store",
+    name: "dsh-plugin-store",
+    repoUrl: "https://github.com/sandbaseai/dsh-plugin-store",
+    repository: "sandbaseai/dsh-plugin-store",
+    description: {"en":"A native Store interface for DSH Settings with live catalog search, tag filters, ranking, catalog-gated installation, and installed-plugin inventory.","zh":"集成在 DSH 设置中的原生插件商店，支持实时目录搜索、标签筛选、排行、目录状态门控安装和已安装插件清单。"},
+    category: "ui-themes",
+    primaryAction: {"type":"external-download","url":"https://github.com/sandbaseai/dsh-plugin-store/releases/download/v0.1.0-preview.5/sandbaseai-dsh-plugin-store-0.1.0-preview.5.tgz","label":{"en":"Download Preview 5 package","zh":"下载 Preview 5 安装包"}},
+    stars: 1,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "sandbaseai-sandbase-harness",
     name: "sandbase-harness",
     repoUrl: "https://github.com/sandbaseai/sandbase-harness",

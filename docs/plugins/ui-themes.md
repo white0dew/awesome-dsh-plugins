@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**46 catalog entries** · [Back to all categories](index.md)
+**47 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -299,6 +299,14 @@ Repository: `renat3u/dsh-web-archive`
 Collapse noisy messages (Think, Bash, etc.) in conversations.
 
 Install: `dsh plugin --profile web add github:renat3u/dsh-web-archive`
+
+### [dsh-plugin-store](https://github.com/sandbaseai/dsh-plugin-store)
+
+Repository: `sandbaseai/dsh-plugin-store`
+
+A native Store interface for DSH Settings with live catalog search, tag filters, ranking, catalog-gated installation, and installed-plugin inventory.
+
+Download: [Download Preview 5 package](https://github.com/sandbaseai/dsh-plugin-store/releases/download/v0.1.0-preview.5/sandbaseai-dsh-plugin-store-0.1.0-preview.5.tgz)
 
 ### [ds-api-usage](https://github.com/Sev7een/ds-api-usage)
 
