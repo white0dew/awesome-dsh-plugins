@@ -144,7 +144,7 @@ Install: `dsh plugin --profile web add github:RealAlexandreAI/dsh-all-search`
 
 Repository: `ruler4396/dsh-launcher`
 
-Lightweight Windows launcher for DeepSeek Harness: silent autostart at logon + a minimal WebView2 window instead of a full browser
+DeepSeek Harness（dsh）Windows 轻量启动器：双击即用，克制的原生体验 / Lightweight Windows launcher for DeepSeek Harness (dsh) - double-click to run, native & restrained
 
 Install: `dsh plugin --profile web add github:ruler4396/dsh-launcher`
 

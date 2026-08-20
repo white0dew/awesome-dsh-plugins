@@ -296,7 +296,7 @@ Install: `dsh plugin --profile web add github:PerryLink/dsh-github`
 
 Repository: `plutokeating/dsh-lark-bot`
 
-dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，含完整项目工作区管理、并行任务、多角色 Agent、会话归档与安全网守护（dsh 崩溃后飞书仍可自救）。A bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark with full workspace management, parallel...
+dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，扫码即用：流式卡片、项目工作区、并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理与安全网守护（dsh 崩溃后飞书仍可自救）。A scan-to-connect bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark: streaming...
 
 Install: `dsh plugin --profile web add github:plutokeating/dsh-lark-bot`
 

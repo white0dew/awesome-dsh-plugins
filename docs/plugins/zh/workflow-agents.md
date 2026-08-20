@@ -864,7 +864,7 @@ Install: `dsh plugin --profile web add github:zhaoscsc/dsh-wikilink`
 
 Repository: `zhoushoujianwork/easyeda-agent`
 
-暂无描述
+嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」-- 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 \ EasyEDA Pro automation: the hands of your AI harness - typed schematic/PCB...
 
 Install: `dsh plugin --profile web add github:zhoushoujianwork/easyeda-agent`
 

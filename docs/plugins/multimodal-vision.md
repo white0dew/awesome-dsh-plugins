@@ -144,7 +144,7 @@ Install: `dsh plugin --profile web add github:loudmore/dsh-drop-to-path`
 
 Repository: `lum1104/dsh-browser`
 
-dsh plugin: Chrome sidebar extension that lets DSH operate your browser directly-no vision capabilities required. dsh 插件：一款 Chrome 侧边栏扩展程序，可让 DSH 直接操控您的浏览器--无需视觉能力。
+dsh plugin: Chrome sidebar extension that lets DeepSeek Harness operate your browser directly, no vision capabilities required. 一款 Chrome 侧边栏扩展程序，可让 DeepSeek Harness 直接操控您的浏览器，无需视觉能力。
 
 Install: `dsh plugin --profile web add github:lum1104/dsh-browser`
 

@@ -88,7 +88,7 @@ Install: `dsh plugin --profile web add github:biuboomc/dsh-plugin-consult`
 
 Repository: `bowenliang123/dsh-context`
 
-A DeepSeek Harness plugin for Context insight panel - a Context tab in the web UI showing what the model's context window is made of and how it evolves.
+Best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the context...
 
 Install: `dsh plugin --profile web add github:bowenliang123/dsh-context`
 
@@ -712,7 +712,7 @@ Install: `dsh plugin --profile web add github:smanx/dsh-conversation-indicator`
 
 Repository: `text2future/flowix`
 
-Notes for you, Memory for your agents.
+Notes for you, Memory for your agents. / 内置 Deepseek harness Agent / 适用 办公 & 写作 & Coding
 
 Install: `dsh plugin --profile web add github:text2future/flowix`
 

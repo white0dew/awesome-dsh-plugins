@@ -64,7 +64,7 @@ Install: `dsh plugin --profile web add github:bobleer/deepseek-harness-plugin-mc
 
 Repository: `btspoony/mstar-harness`
 
-A Skill-driven Harness/Loop Engineering Workflow Agent Plugin
+An omni-plugin for harness engineering workflows with multi-agents, programmatic gates and skills.
 
 Install: `dsh plugin --profile web add github:btspoony/mstar-harness`
 
@@ -528,7 +528,7 @@ Install: `dsh plugin --profile web add github:PerryLink/dsh-claude-move`
 
 Repository: `perrylink/dsh-mcp-panel`
 
-Read-only runtime management panel for the official DeepSeek Harness MCP client: /mcp command + Settings MCP tab with status, tools, errors, reconnect counts, sanitized display and controlled patch suggestions...
+MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a...
 
 Install: `dsh plugin --profile web add github:perrylink/dsh-mcp-panel`
 
