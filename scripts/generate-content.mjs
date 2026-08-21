@@ -478,8 +478,8 @@ function normalizeUpstreamAwesomeDeepseekHarness(snapshot, seenRepositories) {
     if (typeof record.category !== "string" || !categoryById.has(record.category)) {
       fail(`${record.repository} has an unknown upstream category`);
     }
-    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars !== 0) {
-      fail(`${record.repository} must have a zero star count in the upstream snapshot`);
+    if (typeof record.stars !== "number" || !Number.isFinite(record.stars) || !Number.isInteger(record.stars) || record.stars < 0) {
+      fail(`${record.repository} has an invalid star count in the upstream snapshot`);
     }
     const repositoryKey = record.repository.toLowerCase();
     if (seenRepositories.has(repositoryKey)) {

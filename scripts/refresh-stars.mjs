@@ -11,6 +11,8 @@ const reviewedPath = path.join(sourceDirectory, "reviewed-catalog-additions.json
 const upstreamPath = path.join(sourceDirectory, "upstream-awesome-deepseek-harness.json");
 const token = process.env.GITHUB_TOKEN?.trim() || process.env.GH_TOKEN?.trim();
 const batchSize = 100;
+const maxFetchAttempts = 4;
+const fetchRetryDelaysMs = [1000, 2000, 4000];
 const unavailableRepositoryErrorPrefix = "Could not resolve to a Repository with the name";
 
 if (!token) {
@@ -112,16 +114,27 @@ function buildQuery(batch) {
 }
 
 async function fetchBatch(batch) {
-  const response = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-      "X-GitHub-Api-Version": "2022-11-28",
-    },
-    body: JSON.stringify(buildQuery(batch)),
-  });
+  let response;
+  for (let attempt = 0; attempt < maxFetchAttempts; attempt += 1) {
+    try {
+      response = await fetch("https://api.github.com/graphql", {
+        method: "POST",
+        headers: {
+          Accept: "application/vnd.github+json",
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+        body: JSON.stringify(buildQuery(batch)),
+      });
+      break;
+    } catch (error) {
+      if (attempt === maxFetchAttempts - 1) throw error;
+      const delayMs = fetchRetryDelaysMs[attempt];
+      console.log(`refresh-stars: fetch attempt ${attempt + 1}/${maxFetchAttempts} failed; retrying in ${delayMs / 1000}s.`);
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+    }
+  }
   const payload = await response.json().catch(() => null);
   if (!response.ok) {
     const message = isRecord(payload) && typeof payload.message === "string" ? `: ${payload.message}` : "";
