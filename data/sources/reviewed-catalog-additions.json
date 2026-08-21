@@ -14,7 +14,7 @@
         "zh": "为 DSH Web 实时同步对话大纲的插件。"
       },
       "category": "ui-themes",
-      "stars": 2,
+      "stars": 14,
       "primaryAction": {
         "type": "copy-install",
         "command": "npx @deepseek-ai/dsh plugin --profile web add dsh-outline"
@@ -31,7 +31,7 @@
         "zh": "基于 Tauri 2 和 Vanilla TypeScript 的 Windows 桌面启动器，可启动或嵌入 dsh web，检查并升级 DSH，并提供 3.03 MB 的 Windows 安装包。"
       },
       "category": "ui-themes",
-      "stars": 0,
+      "stars": 1,
       "primaryAction": {
         "type": "external-download",
         "url": "https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe",

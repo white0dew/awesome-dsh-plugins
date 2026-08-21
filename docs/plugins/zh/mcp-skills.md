@@ -568,7 +568,7 @@ Install: `dsh plugin --profile web add github:RRRosmontis/dsh-qwen-mm`
 
 Repository: `sandbaseai/sandbase-harness`
 
-Open-origin CMA-compatible agent runtime for any model, with MCP tools, sandboxed sessions, audit, replay, and a local console. Includes a native DeepSeek Harness bundle over stdio MCP.
+Local-first AI agent runtime with sandboxed sessions, MCP tools, memory, credentials, audit/replay, and a built-in console. Run OpenAI, Anthropic, MiniMax, DeepSeek V4, and OpenAI-compatible models on your...
 
 Install: `dsh plugin --profile web add github:sandbaseai/sandbase-harness`
 

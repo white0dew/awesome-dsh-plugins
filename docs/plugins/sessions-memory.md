@@ -88,7 +88,7 @@ Install: `dsh plugin --profile web add github:biuboomc/dsh-plugin-consult`
 
 Repository: `bowenliang123/dsh-context`
 
-Best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the context...
+The best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the...
 
 Install: `dsh plugin --profile web add github:bowenliang123/dsh-context`
 
