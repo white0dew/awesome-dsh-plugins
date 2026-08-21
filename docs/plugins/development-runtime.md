@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**1312 catalog entries** · [Back to all categories](index.md)
+**1326 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -924,6 +924,14 @@ Repository: `badai147/dsh-global-rules`
 
 Install: `dsh plugin --profile web add github:badai147/dsh-global-rules`
 
+### [dsh-plugin-pack-web](https://github.com/baihejiangnan/dsh-plugin-pack-web)
+
+Repository: `baihejiangnan/dsh-plugin-pack-web`
+
+DeepSeek Harness 插件包 · Profile/Web 一键复刻 \ DSH Plugin Pack
+
+Install: `dsh plugin --profile web add github:baihejiangnan/dsh-plugin-pack-web`
+
 ### [dsh-session-context-menu](https://github.com/baihejiangnan/dsh-session-context-menu)
 
 Repository: `baihejiangnan/dsh-session-context-menu`
@@ -1128,7 +1136,7 @@ Install: `dsh plugin --profile web add github:Blank-not-black/dsh-Remote`
 
 Repository: `BlockRunAI/dsh-clawrouter`
 
-A safety gate for DeepSeek Harness: a stronger model reviews dangerous tool calls before they run. Plus vision and 67 models from one wallet, paid per request over x402.
+A safety gate for DeepSeek Harness: a stronger model reviews dangerous tool calls before they run. Plus vision and BlockRun's full model catalog from one wallet, paid per request over x402.
 
 Install: `dsh plugin --profile web add github:BlockRunAI/dsh-clawrouter`
 
@@ -1163,6 +1171,22 @@ Repository: `boxeryao/dsh-mini-tui`
 DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime.
 
 Install: `dsh plugin --profile web add github:boxeryao/dsh-mini-tui`
+
+### [dsh-fork-to-preset](https://github.com/bpc-oss/dsh-fork-to-preset)
+
+Repository: `bpc-oss/dsh-fork-to-preset`
+
+将任意 DeepSeek Harness 会话分叉到另一 Agent 预设：会话页头提供预设选择器，创建继承已完成轮次的新子会话
+
+Install: `dsh plugin --profile web add github:bpc-oss/dsh-fork-to-preset`
+
+### [dsh-routed-subagent](https://github.com/bpc-oss/dsh-routed-subagent)
+
+Repository: `bpc-oss/dsh-routed-subagent`
+
+从任意会话在任意 Agent 预设上运行一次性子代理：支持按调用覆盖模型/提供商、模型预检与外部 CLI 引擎，并提供后台任务和可续接会话
+
+Install: `dsh plugin --profile web add github:bpc-oss/dsh-routed-subagent`
 
 ### [DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace)
 
@@ -1411,6 +1435,14 @@ Repository: `cdxiaodong/dsh-guardian`
 暂无描述
 
 Install: `dsh plugin --profile web add github:cdxiaodong/dsh-guardian`
+
+### [dsh-island](https://github.com/cdxiaodong/dsh-island)
+
+Repository: `cdxiaodong/dsh-island`
+
+把 DeepSeek Harness(DSH) agent 实时状态桥接到 CodeIsland 刘海面板 - sessions/tools/approvals on the Dynamic Island
+
+Install: `dsh plugin --profile web add github:cdxiaodong/dsh-island`
 
 ### [dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector)
 
@@ -2027,6 +2059,14 @@ Repository: `Da-Mie/dsh-beacons`
 Right-edge prompt navigator (Codex/OpenChamber-style scrub rail with scroll-spy) plus Windows toast notifications - a DeepSeek Harness plugin
 
 Install: `dsh plugin --profile web add github:Da-Mie/dsh-beacons`
+
+### [star-deepseek-harness-desktop](https://github.com/dabaicai001/star-deepseek-harness-desktop)
+
+Repository: `dabaicai001/star-deepseek-harness-desktop`
+
+StarHub 是一款跨平台桌面应用（Tauri 2 + Rust 主进程 + DeepSeek Harness React 工作台 + Go Sidecar），把开发运维日常高频工具整合到同一个窗口 -- 数据库、SSH/SFTP、Docker 面板与 AI 助手。目标是减少在 Navicat、Xshell、Portainer、文件管理器和 AI 对话窗口之间来回切换的成本。 前端架构：基于 DeepSeek Harness...
+
+Install: `dsh plugin --profile web add github:dabaicai001/star-deepseek-harness-desktop`
 
 ### [dsh-plugin-deepseek-pricing](https://github.com/dasooul03/dsh-plugin-deepseek-pricing)
 
@@ -3208,7 +3248,7 @@ Install: `dsh plugin --profile web add github:Fishquito7/dsh-skill-mcp-panel`
 
 Repository: `Fishsb/dsh-prompt-enhancer`
 
-DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 🔁 DSH 服务异常一键重启
+DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 💬 语音识别（说完自动停·云端/本地双引擎）· 附 🔁 服务异常一键重启
 
 Install: `dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer`
 
@@ -3363,6 +3403,14 @@ Repository: `freestylefly/wesight`
 Open-origin desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent setup and custom LLM model routing.
 
 Install: `dsh plugin --profile web add github:freestylefly/wesight`
+
+### [dsh-at-file](https://github.com/FSMargoo/dsh-at-file)
+
+Repository: `FSMargoo/dsh-at-file`
+
+Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.
+
+Install: `dsh plugin --profile web add github:FSMargoo/dsh-at-file`
 
 ### [dsh_kline](https://github.com/FTShare-Lab/dsh_kline)
 
@@ -4156,6 +4204,14 @@ Systematically clarify intent, challenge assumptions, resolve contradictions, an
 
 Install: `dsh plugin --profile web add github:Inference1/clarify-intent-and-establish-shared-understanding`
 
+### [dsh-serial-console](https://github.com/InfinitePersistence/dsh-serial-console)
+
+Repository: `InfinitePersistence/dsh-serial-console`
+
+Unofficial DeepSeek Harness plugin for board serial console, logging, and model-visible interaction.
+
+Install: `dsh plugin --profile web add github:InfinitePersistence/dsh-serial-console`
+
 ### [DeepSeekHarness----Desktop](https://github.com/InkWord01/DeepSeekHarness----Desktop)
 
 Repository: `InkWord01/DeepSeekHarness----Desktop`
@@ -4587,6 +4643,14 @@ Repository: `kangjinghang/dsh-xueqiu`
 雪球 mini 行情面板 - DeepSeek Harness 免登录 A股/港美股实时行情、K线、分时、热榜、7x24快讯。可拖拽悬浮面板，交易时段智能刷新。
 
 Install: `dsh plugin --profile web add github:kangjinghang/dsh-xueqiu`
+
+### [dsh-network-settings](https://github.com/kanneiren/dsh-network-settings)
+
+Repository: `kanneiren/dsh-network-settings`
+
+DSH Network Settings: Windows / WSL network path diagnostics and safe repair for DeepSeek Harness.
+
+Install: `dsh plugin --profile web add github:kanneiren/dsh-network-settings`
 
 ### [DSH-EvoResearch](https://github.com/Karbo123/DSH-EvoResearch)
 
@@ -5371,6 +5435,14 @@ Repository: `linshule/dsh-balance`
 DeepSeek API 余额 + OpenCodeGo 余量实时显示插件（dsh web GUI）：可拖拽双段徽章与详情弹层 + DeepSeek/OpenCodeGo 两个设置页；Key 仅存本机 /.dsh/ds-balance.json，OpenCodeGo Key 自动读取 DSH 凭据
 
 Install: `dsh plugin --profile web add github:linshule/dsh-balance`
+
+### [dsh_plugins](https://github.com/linyufeng123456/dsh_plugins)
+
+Repository: `linyufeng123456/dsh_plugins`
+
+DSH plugin: whale-purse 桌宠--DeepSeek 余额 + 多订阅用量/花费监视 + 精灵动画桌宠 + 后台任务进度卡。DeepSeek Harness (DSH) 插件 / desktop pet for usage tracking.
+
+Install: `dsh plugin --profile web add github:linyufeng123456/dsh_plugins`
 
 ### [dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager)
 
@@ -7500,6 +7572,14 @@ A plugin that adds a desktop pet to your DeepSeek Harness, supporting the Codex 
 
 Install: `dsh plugin --profile web add github:sereinmono/dsh-desktop-pet`
 
+### [dsh-memory](https://github.com/seriousz158/dsh-memory)
+
+Repository: `seriousz158/dsh-memory`
+
+暂无描述
+
+Install: `dsh plugin --profile web add github:seriousz158/dsh-memory`
+
 ### [dsh-node-nav](https://github.com/Seryta/dsh-node-nav)
 
 Repository: `Seryta/dsh-node-nav`
@@ -7652,6 +7732,14 @@ Make any project AI-agent-ready in one command. Adaptive tech stack detection (7
 
 Install: `dsh plugin --profile web add github:shuguang1994/project-blueprint`
 
+### [dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal)
+
+Repository: `siberiah2o/dsh-plugin-terminal`
+
+Bottom terminal panel plugin for DeepSeek Harness (DSH Web GUI)
+
+Install: `dsh plugin --profile web add github:siberiah2o/dsh-plugin-terminal`
+
 ### [dsh-deepseek-vision](https://github.com/siegfly/dsh-deepseek-vision)
 
 Repository: `siegfly/dsh-deepseek-vision`
@@ -7731,6 +7819,14 @@ Repository: `skr311/dsh-codex-pet`
 dsh-codex-pet · DSH 桌面宠物插件 - 导入精灵图序列帧宠物，悬浮浮层渲染 + Agent 状态联动
 
 Install: `dsh plugin --profile web add github:skr311/dsh-codex-pet`
+
+### [hedgehog](https://github.com/skyf0xx/hedgehog)
+
+Repository: `skyf0xx/hedgehog`
+
+AI-driven development with power. Faster builds, fewer tokens, cleaner code. Hedgehog builds a task dependency graph from your spec-driven, BMAD-METHOD plan, so Claude Code, Cursor & Gemini CLI stay locked to it. A...
+
+Install: `dsh plugin --profile web add github:skyf0xx/hedgehog`
 
 ### [dsh-wechat-maid](https://github.com/skylar-fei/dsh-wechat-maid)
 
@@ -8036,6 +8132,14 @@ Repository: `starsstreaming/beautiCode`
 
 Install: `dsh plugin --profile web add github:starsstreaming/beautiCode`
 
+### [dsh-webui](https://github.com/statem-li/dsh-webui)
+
+Repository: `statem-li/dsh-webui`
+
+DeepSeek Harness 会话增强全家桶：视图图块/消息导航、对话退回与文件回退、工具调用聚合、Markdown 渲染、模型推理等级同步、AnySearch 网页搜索、本地记忆、用量工作台、技能管理、文件浏览器、供应商设置、AI 浏览器、生图/辅助视觉、邮箱验证码、网络代理、任务完成提示音、中文思考、审批提醒、峰谷时刻卡片。
+
+Install: `dsh plugin --profile web add github:statem-li/dsh-webui`
+
 ### [dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin)
 
 Repository: `stevenx65/dsh-balance-plugin`
@@ -8104,7 +8208,7 @@ Install: `dsh plugin --profile web add github:sulfide2085/dsh-skill-manager`
 
 Repository: `summer1238/dsh-remote-web-gateway`
 
-手机远程 DeepSeek Harness：扫码即可继续使用电脑上的 DSH，无需远程桌面 / SSH / 公网 IP，支持一次性配对、独立设备授权与随时撤销。
+手机平板远程 DeepSeek Harness：扫码即可继续使用电脑上的 DSH，无需远程桌面 / SSH / 公网 IP，支持一次性配对、Github授权加密登录，独立设备授权与随时撤销，实现远程连接很简单，但安全才是我们所想要的。
 
 Install: `dsh plugin --profile web add github:summer1238/dsh-remote-web-gateway`
 
@@ -9507,6 +9611,14 @@ Repository: `xiaoxiaosrm/dsh-mattpocock-skills`
 Unofficial DSH port of mattpocock/skills - Engineering (18) + Productivity (7) skills as a DeepSeek Harness bundle plugin. MIT, © Matt Pocock. Star the upstream repo!
 
 Install: `dsh plugin --profile web add github:xiaoxiaosrm/dsh-mattpocock-skills`
+
+### [dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager)
+
+Repository: `xiaoyangcheng84-svg/dsh-skin-manager`
+
+一个可以管理皮肤的dsh插件
+
+Install: `dsh plugin --profile web add github:xiaoyangcheng84-svg/dsh-skin-manager`
 
 ### [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup)
 

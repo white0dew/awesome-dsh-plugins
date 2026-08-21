@@ -24,7 +24,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [Tools & Capabilities](docs/plugins/tools-capabilities.md) | 227 |
 | [Workflow & Agents](docs/plugins/workflow-agents.md) | 109 |
 | [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 46 |
-| [Development & Runtime](docs/plugins/development-runtime.md) | 1312 |
+| [Development & Runtime](docs/plugins/development-runtime.md) | 1326 |
 | [Browser & Search](docs/plugins/browser-search.md) | 24 |
 | [MCP & Skills](docs/plugins/mcp-skills.md) | 94 |
 | [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 46 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## Independence
 
-This directory lists 2029 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
+This directory lists 2043 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 
