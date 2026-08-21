@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**46 个目录条目** · [返回全部分类](index.md)
+**47 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -59,6 +59,14 @@ Repository: `ccq1/dsh-side-panel`
 侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。
 
 Install: `dsh plugin --profile web add github:ccq1/dsh-side-panel`
+
+### [dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything)
+
+Repository: `Chael-Chael/dsh-reference-anything`
+
+增强 DSH @ 菜单，统一引用命令、Skills、文件、DSH 会话与外部 Chatbot 平台对话。
+
+Install: `dsh plugin --profile web add dsh-reference-anything`
 
 ### [dsh-grok-tui](https://github.com/chen-001/dsh-grok-tui)
 

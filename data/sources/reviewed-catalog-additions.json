@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-18",
+  "updated": "2026-08-21",
   "records": [
     {
       "name": "dsh-outline",
@@ -57,6 +57,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:sjh9714/dsh-what-changed"
+      }
+    },
+    {
+      "name": "dsh-reference-anything",
+      "github": {
+        "repository": "Chael-Chael/dsh-reference-anything",
+        "url": "https://github.com/Chael-Chael/dsh-reference-anything",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Enhances the DSH @ menu to reference commands, skills, files, DSH sessions, and external chatbot conversations.",
+        "zh": "增强 DSH @ 菜单，统一引用命令、Skills、文件、DSH 会话与外部 Chatbot 平台对话。"
+      },
+      "category": "ui-themes",
+      "stars": 5,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add dsh-reference-anything"
       }
     }
   ]

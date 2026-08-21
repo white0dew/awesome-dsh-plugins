@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**46 catalog entries** · [Back to all categories](index.md)
+**47 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -59,6 +59,14 @@ Repository: `ccq1/dsh-side-panel`
 Side panel with file browser, terminal, and Git review for quick file previews.
 
 Install: `dsh plugin --profile web add github:ccq1/dsh-side-panel`
+
+### [dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything)
+
+Repository: `Chael-Chael/dsh-reference-anything`
+
+Enhances the DSH @ menu to reference commands, skills, files, DSH sessions, and external chatbot conversations.
+
+Install: `dsh plugin --profile web add dsh-reference-anything`
 
 ### [dsh-grok-tui](https://github.com/chen-001/dsh-grok-tui)
 

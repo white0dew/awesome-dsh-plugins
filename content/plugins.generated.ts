@@ -3935,6 +3935,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "chael-chael-dsh-reference-anything",
+    name: "dsh-reference-anything",
+    repoUrl: "https://github.com/Chael-Chael/dsh-reference-anything",
+    repository: "Chael-Chael/dsh-reference-anything",
+    description: {"en":"Enhances the DSH @ menu to reference commands, skills, files, DSH sessions, and external chatbot conversations.","zh":"增强 DSH @ 菜单，统一引用命令、Skills、文件、DSH 会话与外部 Chatbot 平台对话。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add dsh-reference-anything"},
+    stars: 5,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "chang-tong-dsh-import-agents",
     name: "dsh-import-agents",
     repoUrl: "https://github.com/Chang-Tong/dsh-import-agents",
