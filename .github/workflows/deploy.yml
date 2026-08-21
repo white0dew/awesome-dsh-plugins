@@ -1,0 +1,49 @@
+name: Deploy dsh Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-dsh-site
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to dsh.reshub.vip via SSH
+        env:
+          DEPLOY_HOST: ${{ secrets.DSH_DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DSH_DEPLOY_USER }}
+          DEPLOY_KEY: ${{ secrets.DSH_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Replace static site contents (fresh _next hashed assets; keep any .well-known)
+          tar czf - -C out . | ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" \
+            'cd /www/wwwroot/dsh.reshub.vip && rm -rf _next && tar xzf - --no-same-owner --no-same-permissions && rm -rf /tmp/dsh-deploy-ok && touch /tmp/dsh-deploy-ok'
+          echo "Deploy finished."
