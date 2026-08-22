@@ -2,7 +2,7 @@
 
 Messaging, notifications, and connections to external services.
 
-**46 catalog entries** · [Back to all categories](index.md)
+**47 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp)
 
@@ -363,6 +363,14 @@ Repository: `wuyuanjiang1/dsh2wechat`
 DeepSeek Harness 微信 ClawBot 消息桥插件
 
 Install: `dsh plugin --profile web add github:wuyuanjiang1/dsh2wechat`
+
+### [dsh-voice-gate](https://github.com/yangfei222666-9/dsh-voice-gate)
+
+Repository: `yangfei222666-9/dsh-voice-gate`
+
+语音门:手机按住说话→自动转文字→发送到 DSH 会话;零第三方依赖单文件,PWA 加主屏,Token 鉴权(v0.4.0,38 契约测试)
+
+Install: `dsh plugin --profile web add github:yangfei222666-9/dsh-voice-gate`
 
 ### [dsh-telegram](https://github.com/yuko0331/dsh-telegram)
 

@@ -2,7 +2,7 @@
   "name": "awesome-deepseek-harness upstream snapshot",
   "repository": "0xsline/awesome-deepseek-harness",
   "url": "https://github.com/0xsline/awesome-deepseek-harness",
-  "snapshotGeneratedAt": "2026-08-21T14:56:58.382Z",
+  "snapshotGeneratedAt": "2026-08-22T14:42:18.321Z",
   "records": [
     {
       "repository": "01virex/dsh-status-rotator",
@@ -1517,6 +1517,13 @@
       "stars": 44
     },
     {
+      "repository": "Chu-m/dsh-chat-continue",
+      "url": "https://github.com/Chu-m/dsh-chat-continue",
+      "description": "失败 API 请求自动重试，按可配置的 HTTP 状态码和错误码规则保持 DSH 对话连续",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "Chu-Xin-r/wanjiqi-meme",
       "url": "https://github.com/Chu-Xin-r/wanjiqi-meme",
       "description": "玩机器(6657直播间)烂梗 Skill：22771条真实弹幕烂梗蒸馏成AI Skill，生成玩机器式弹幕/解说吐槽/CS×DOTA双料梗",
@@ -1998,6 +2005,13 @@
       "description": "DeepSeek Harness: Everything is a Plugin.",
       "category": "development-runtime",
       "stars": 177862
+    },
+    {
+      "repository": "delef/dsh-free-web-search",
+      "url": "https://github.com/delef/dsh-free-web-search",
+      "description": "免费网页搜索：10 个引擎、自动回退链、时间筛选、GitHub/Reddit 平台搜索、网页抓取、LRU 缓存与设置界面，基础使用无需 API Key",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "detongz/dsh-client-ui-obsidian-memory",
@@ -7096,6 +7110,13 @@
       "stars": 10867
     },
     {
+      "repository": "menotbobbybrown/create-dsh-app",
+      "url": "https://github.com/menotbobbybrown/create-dsh-app",
+      "description": "DeepSeek Harness Agent 与插件的一行命令脚手架生成器",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "MeowLynxSea/dsh-cot-summerization",
       "url": "https://github.com/MeowLynxSea/dsh-cot-summerization",
       "description": "暂无描述",
@@ -7500,6 +7521,13 @@
       "description": "DeepSeek Harness (DSH) 插件整合中心：动态发现、打标分类、重叠/兼容检测、一键启停与失效检测",
       "category": "development-runtime",
       "stars": 10
+    },
+    {
+      "repository": "Mutx163/dsh-model-memory",
+      "url": "https://github.com/Mutx163/dsh-model-memory",
+      "description": "自定义 API 模型的思考强度档位管理与跨会话偏好记忆：设置页直接切换 low/medium/high/max，并按渠道自动恢复上次模型与强度",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "MuWinds/dsh-archived-sessions",
@@ -8018,6 +8046,13 @@
       "description": "Encrypted credential vault for DeepSeek Harness — AES-256-GCM + TOTP, model tools + Settings UI",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "oxgbl/dsh-no-cmd-launcher",
+      "url": "https://github.com/oxgbl/dsh-no-cmd-launcher",
+      "description": "Windows 后台启动器：无命令行窗口运行 DSH Web，提供桌面启动/停止快捷方式及 npm/CLI 安装",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "paean-ai/8x-skills",
@@ -8769,6 +8804,13 @@
       "stars": 13
     },
     {
+      "repository": "SeerableOfficial/dsh-web-search-toggle",
+      "url": "https://github.com/SeerableOfficial/dsh-web-search-toggle",
+      "description": "会话级网页搜索开关：启用后引导 Agent 在回答前先检索网页",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "senmuuuuw/dsh-group-photo",
       "url": "https://github.com/senmuuuuw/dsh-group-photo",
       "description": "DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装）",
@@ -8879,6 +8921,13 @@
       "description": "DSH（DeepSeek Harness）对话工具插件：拖拽任意文件进入对话 + 选中文本引用。",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "sheep-programmer/dsh-web-search-free",
+      "url": "https://github.com/sheep-programmer/dsh-web-search-free",
+      "description": "DSH 免费网页搜索：匿名免 Key 的 Parallel 默认后端与 Exa 备用后端，附设置开关和兼容 Claude Code/Codex 的 MCP 服务器",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "SheltonLiu-N/nano-cordis",
@@ -10512,6 +10561,13 @@
       "stars": 6
     },
     {
+      "repository": "woosh2010/dsh-usage-dashboard",
+      "url": "https://github.com/woosh2010/dsh-usage-dashboard",
+      "description": "峰谷计费坞与用量分析仪表盘：Token、成本和模型统计，趋势与结构图表，跨会话历史及时间/会话/模型筛选",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "worldwonderer/oh-story-dsh",
       "url": "https://github.com/worldwonderer/oh-story-dsh",
       "description": "A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
@@ -10958,6 +11014,20 @@
       "description": "Give any AI agent the ability to code",
       "category": "mcp-skills",
       "stars": 847
+    },
+    {
+      "repository": "yangfei222666-9/dsh-paper-trade",
+      "url": "https://github.com/yangfei222666-9/dsh-paper-trade",
+      "description": "模拟盘交易:哈希链防篡改账本+零依赖 CLI,14 契约测试(纸面交易,非实盘)",
+      "category": "tools-capabilities",
+      "stars": 0
+    },
+    {
+      "repository": "yangfei222666-9/dsh-voice-gate",
+      "url": "https://github.com/yangfei222666-9/dsh-voice-gate",
+      "description": "语音门:手机按住说话→自动转文字→发送到 DSH 会话;零第三方依赖单文件,PWA 加主屏,Token 鉴权(v0.4.0,38 契约测试)",
+      "category": "notifications-integrations",
+      "stars": 0
     },
     {
       "repository": "yanglongyun/ramify-dsh",

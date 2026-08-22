@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**1326 catalog entries** · [Back to all categories](index.md)
+**1334 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -1660,6 +1660,14 @@ Compact DeepSeek Harness desktop host. macOS downloads under 90 MB with Tauri; W
 
 Install: `dsh plugin --profile web add github:chokwinlee/deepseek-harness-desktop`
 
+### [dsh-chat-continue](https://github.com/Chu-m/dsh-chat-continue)
+
+Repository: `Chu-m/dsh-chat-continue`
+
+失败 API 请求自动重试，按可配置的 HTTP 状态码和错误码规则保持 DSH 对话连续
+
+Install: `dsh plugin --profile web add github:Chu-m/dsh-chat-continue`
+
 ### [wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme)
 
 Repository: `Chu-Xin-r/wanjiqi-meme`
@@ -2147,6 +2155,14 @@ Repository: `deepseek-ai/deepseek-harness`
 DeepSeek Harness: Everything is a Plugin.
 
 Install: `dsh plugin --profile web add github:deepseek-ai/deepseek-harness`
+
+### [dsh-free-web-search](https://github.com/delef/dsh-free-web-search)
+
+Repository: `delef/dsh-free-web-search`
+
+免费网页搜索：10 个引擎、自动回退链、时间筛选、GitHub/Reddit 平台搜索、网页抓取、LRU 缓存与设置界面，基础使用无需 API Key
+
+Install: `dsh plugin --profile web add github:delef/dsh-free-web-search`
 
 ### [dsh-client-ui-obsidian-memory](https://github.com/detongz/dsh-client-ui-obsidian-memory)
 
@@ -5908,6 +5924,14 @@ Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-ret
 
 Install: `dsh plugin --profile web add github:MemTensor/MemOS`
 
+### [create-dsh-app](https://github.com/menotbobbybrown/create-dsh-app)
+
+Repository: `menotbobbybrown/create-dsh-app`
+
+DeepSeek Harness Agent 与插件的一行命令脚手架生成器
+
+Install: `dsh plugin --profile web add github:menotbobbybrown/create-dsh-app`
+
 ### [dsh-cot-summerization](https://github.com/MeowLynxSea/dsh-cot-summerization)
 
 Repository: `MeowLynxSea/dsh-cot-summerization`
@@ -6307,6 +6331,14 @@ Repository: `MutaLucem/dsh-plugin-integration`
 DeepSeek Harness (DSH) 插件整合中心：动态发现、打标分类、重叠/兼容检测、一键启停与失效检测
 
 Install: `dsh plugin --profile web add github:MutaLucem/dsh-plugin-integration`
+
+### [dsh-model-memory](https://github.com/Mutx163/dsh-model-memory)
+
+Repository: `Mutx163/dsh-model-memory`
+
+自定义 API 模型的思考强度档位管理与跨会话偏好记忆：设置页直接切换 low/medium/high/max，并按渠道自动恢复上次模型与强度
+
+Install: `dsh plugin --profile web add github:Mutx163/dsh-model-memory`
 
 ### [dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions)
 
@@ -6875,6 +6907,14 @@ Repository: `Ox0400/dsh-vault`
 Encrypted credential vault for DeepSeek Harness - AES-256-GCM + TOTP, model tools + Settings UI
 
 Install: `dsh plugin --profile web add github:Ox0400/dsh-vault`
+
+### [dsh-no-cmd-launcher](https://github.com/oxgbl/dsh-no-cmd-launcher)
+
+Repository: `oxgbl/dsh-no-cmd-launcher`
+
+Windows 后台启动器：无命令行窗口运行 DSH Web，提供桌面启动/停止快捷方式及 npm/CLI 安装
+
+Install: `dsh plugin --profile web add github:oxgbl/dsh-no-cmd-launcher`
 
 ### [dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude)
 
@@ -7556,6 +7596,14 @@ Package manager for AI agent assets - 42 skills, 5 CLIs, 1 plugin. Skills for AI
 
 Install: `dsh plugin --profile web add github:seed-forge/harness-ai-kit`
 
+### [dsh-web-search-toggle](https://github.com/SeerableOfficial/dsh-web-search-toggle)
+
+Repository: `SeerableOfficial/dsh-web-search-toggle`
+
+会话级网页搜索开关：启用后引导 Agent 在回答前先检索网页
+
+Install: `dsh plugin --profile web add github:SeerableOfficial/dsh-web-search-toggle`
+
 ### [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)
 
 Repository: `SenmuuuuW/dsh-whale-report`
@@ -7659,6 +7707,14 @@ Repository: `sharkymew/dsh-utility-tools`
 DSH（DeepSeek Harness）对话工具插件：拖拽任意文件进入对话 + 选中文本引用。
 
 Install: `dsh plugin --profile web add github:sharkymew/dsh-utility-tools`
+
+### [dsh-web-search-free](https://github.com/sheep-programmer/dsh-web-search-free)
+
+Repository: `sheep-programmer/dsh-web-search-free`
+
+DSH 免费网页搜索：匿名免 Key 的 Parallel 默认后端与 Exa 备用后端，附设置开关和兼容 Claude Code/Codex 的 MCP 服务器
+
+Install: `dsh plugin --profile web add github:sheep-programmer/dsh-web-search-free`
 
 ### [dsh-co-authored-by](https://github.com/shelken/dsh-co-authored-by)
 
@@ -9315,6 +9371,14 @@ Repository: `woooooooooolf/ser2mcp`
 UART serial port MCP server: expose local serial ports to AI assistants as standard MCP tools（串口转 MCP 服务器，以最适合 AI 的方式提供串口读写支持）
 
 Install: `dsh plugin --profile web add github:woooooooooolf/ser2mcp`
+
+### [dsh-usage-dashboard](https://github.com/woosh2010/dsh-usage-dashboard)
+
+Repository: `woosh2010/dsh-usage-dashboard`
+
+峰谷计费坞与用量分析仪表盘：Token、成本和模型统计，趋势与结构图表，跨会话历史及时间/会话/模型筛选
+
+Install: `dsh plugin --profile web add github:woosh2010/dsh-usage-dashboard`
 
 ### [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)
 

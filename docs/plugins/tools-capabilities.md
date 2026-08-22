@@ -2,7 +2,7 @@
 
 Focused utilities and capability extensions for everyday work.
 
-**227 catalog entries** · [Back to all categories](index.md)
+**228 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt)
 
@@ -1747,6 +1747,14 @@ Repository: `Yan-Zero/dsh-codex`
 Use your ChatGPT subscription in DeepSeek Harness through OpenAI's Codex sign-in flow
 
 Install: `dsh plugin --profile web add github:Yan-Zero/dsh-codex`
+
+### [dsh-paper-trade](https://github.com/yangfei222666-9/dsh-paper-trade)
+
+Repository: `yangfei222666-9/dsh-paper-trade`
+
+模拟盘交易:哈希链防篡改账本+零依赖 CLI,14 契约测试(纸面交易,非实盘)
+
+Install: `dsh plugin --profile web add github:yangfei222666-9/dsh-paper-trade`
 
 ### [dsh-ramify](https://github.com/yanglongyun/dsh-ramify)
 
