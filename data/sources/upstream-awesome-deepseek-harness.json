@@ -2,7 +2,7 @@
   "name": "awesome-deepseek-harness upstream snapshot",
   "repository": "0xsline/awesome-deepseek-harness",
   "url": "https://github.com/0xsline/awesome-deepseek-harness",
-  "snapshotGeneratedAt": "2026-08-22T14:42:18.321Z",
+  "snapshotGeneratedAt": "2026-08-23T14:44:28.858Z",
   "records": [
     {
       "repository": "01virex/dsh-status-rotator",
@@ -38,6 +38,20 @@
       "description": "DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.",
       "category": "development-runtime",
       "stars": 782
+    },
+    {
+      "repository": "10086ggqq/dsh_theme_terraria",
+      "url": "https://github.com/10086ggqq/dsh_theme_terraria",
+      "description": "把 DeepSeek Harness 的 AI 编码控制台变成泰拉瑞亚像素世界——向导陪你写代码，真实对话、工具审批、难度切换，单文件零依赖。",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "1014029855/dsh-context-lens",
+      "url": "https://github.com/1014029855/dsh-context-lens",
+      "description": "检查、度量、搜索和比较 DeepSeek Harness 组装的 provider-neutral 上下文",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "131CDA1/dsh-scrape-webpage",
@@ -159,6 +173,13 @@
       "stars": 3
     },
     {
+      "repository": "398894496-arch/runtime36",
+      "url": "https://github.com/398894496-arch/runtime36",
+      "description": "DSH-KRouter — Agent knowledge OS. Self-evolution. Timer on by default; API key or subscription is the key. First qualifying day auto-provisional; second accepted task → formal. Correction-first. Retrieval is the lock, not the product. Cursor, Codex, Claude Code, DeepSeek Harness.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "54xkeee/dsh-vision",
       "url": "https://github.com/54xkeee/dsh-vision",
       "description": "Vision for DeepSeek Harness: Doubao Web by default (zero-cost, no API key), Antigravity IDE quota (flash/pro), any IDE CLI, Gemini — auto detail escalation, evidence memory",
@@ -262,6 +283,13 @@
       "description": "暂无描述",
       "category": "development-runtime",
       "stars": 7
+    },
+    {
+      "repository": "Aa728848/dsh-llm-verifier",
+      "url": "https://github.com/Aa728848/dsh-llm-verifier",
+      "description": "Configurable DSH-native LLM verifier with a Web settings page",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "aaravarr/dsh-subagent-max",
@@ -376,6 +404,13 @@
       "stars": 12
     },
     {
+      "repository": "ai-daming/clickvibe",
+      "url": "https://github.com/ai-daming/clickvibe",
+      "description": "暂无描述",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "ai-shushu/dsh-quota-meter",
       "url": "https://github.com/ai-shushu/dsh-quota-meter",
       "description": "Per-session quota meter for DSH: real-token billing, live progress bar, budget blocking, configurable multi-model pricing. 会话额度监控：真实记账、进度条、额度拦截、价目可配。",
@@ -388,6 +423,13 @@
       "description": "暂无描述",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "Aik358/dsh-anchored-monitor",
+      "url": "https://github.com/Aik358/dsh-anchored-monitor",
+      "description": "Real-time chain-of-thought anchoring monitor & intervention plugin for DeepSeek Harness: three-band (spec/mixed/react) fingerprint detection, L1 hint / L2 reset / L3 restart interventions, liquid-glass web overlay + rheostat bar, standalone monitor process with JSONL experiment logs.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Aik358/dsh-auto-memory",
@@ -423,6 +465,13 @@
       "description": "A macOS-only native account-pool and provider plugin for DeepSeek Harness.",
       "category": "development-runtime",
       "stars": 73
+    },
+    {
+      "repository": "Akimiya-z/codex-guard",
+      "url": "https://github.com/Akimiya-z/codex-guard",
+      "description": "Quality gate for AI/Codex-generated pull requests: blocks TODO leftovers, leaked secrets, sloppy commits and red CI before they reach main.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "akira399/dsh-godot-skill",
@@ -586,6 +635,13 @@
       "stars": 7
     },
     {
+      "repository": "amlyczz/dsh-agy-link",
+      "url": "https://github.com/amlyczz/dsh-agy-link",
+      "description": "Google Antigravity (agy CLI) models for DeepSeek Harness — streaming chat, thinking, tool activity, usage, in-GUI Google OAuth login",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "amlyczz/dsh-lark-link",
       "url": "https://github.com/amlyczz/dsh-lark-link",
       "description": "High-reliability Feishu/Lark bridge for DeepSeek Harness — QR one-click auth, multi-mode agents, card-based commands, zero-loss outbox, media in/out, session-log doctor, reusable DSH Web GUI",
@@ -619,6 +675,13 @@
       "description": "AI approval answerer for DeepSeek Harness (DSH) using the unified LLM route with fail-closed policy checks.",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "Angel2518975237/deepseek-harness-hello-kitty-suite",
+      "url": "https://github.com/Angel2518975237/deepseek-harness-hello-kitty-suite",
+      "description": "DeepSeek Harness 的粉色 Hello Kitty 主题皮肤与任务完成/提问提醒插件",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "angeloszou/graphlint",
@@ -717,6 +780,13 @@
       "description": "DSH Web GUI常用词箱子，方便项目常用词的存储和粘贴 \\| DSH Web GUI Common Words Box – for storing and pasting frequently used project terms.\"",
       "category": "development-runtime",
       "stars": 4
+    },
+    {
+      "repository": "ARFCON/dsh-hotplug-hub",
+      "url": "https://github.com/ARFCON/dsh-hotplug-hub",
+      "description": "DSH - Dseam",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Argonaut790/dsh-deepseek-vision",
@@ -838,6 +908,13 @@
       "stars": 117
     },
     {
+      "repository": "Ayase34/wallpaper-plugin",
+      "url": "https://github.com/Ayase34/wallpaper-plugin",
+      "description": "DeepSeek Harness的壁纸管理插件",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "ayuanwong/deepseek-harness-ux",
       "url": "https://github.com/ayuanwong/deepseek-harness-ux",
       "description": "长任务，不刷屏：关键进度清晰可见，完成后自动折叠，详情随时展开。 Long agent tasks, without transcript clutter: focused progress, auto-folded history, details on demand.",
@@ -850,6 +927,13 @@
       "description": "长任务，不刷屏：关键进度清晰可见，完成后自动折叠，详情随时展开。 Long agent tasks, without transcript clutter: focused progress, auto-folded history, details on demand.",
       "category": "development-runtime",
       "stars": 14
+    },
+    {
+      "repository": "B1lli/dsh-plugin-bench",
+      "url": "https://github.com/B1lli/dsh-plugin-bench",
+      "description": "证据化、类型感知的 DSH 插件质量评测：按 artifact 与完整 commit 绑定八维质量区间和证据账本，输出 Markdown/SVG 评分卡",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "baaai123/solo-memory",
@@ -1167,6 +1251,13 @@
       "stars": 4
     },
     {
+      "repository": "buguoshixc/dsh-user-message-navigator",
+      "url": "https://github.com/buguoshixc/dsh-user-message-navigator",
+      "description": "Codex 风格的用户消息导航侧栏",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "buhuikongpan/dsh-pluginmanager",
       "url": "https://github.com/buhuikongpan/dsh-pluginmanager",
       "description": "DSH 分层插件管理器：原生插件按 系统层/WebUI 层/工具层 只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。",
@@ -1433,6 +1524,13 @@
       "stars": 30
     },
     {
+      "repository": "chensl139-ok/dsh-archived-panel",
+      "url": "https://github.com/chensl139-ok/dsh-archived-panel",
+      "description": "侧边栏已归档面板：查看、打开和取消归档会话",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "chenw2759-wq/dsh-IDE",
       "url": "https://github.com/chenw2759-wq/dsh-IDE",
       "description": "dsh-IDE 把 DeepSeek Harness（DSH）网页版升级成一站式 IDE：JupyterLab 式文件树、带语法高亮的代码编辑、多格式预览、Trae 风格红绿 diff 和内置终端，再加上「本地大脑、远程手脚」的 SSH 远程工作区，让 AI 直接在本机操控远程服务器，全程零配置文件改动。",
@@ -1487,6 +1585,13 @@
       "description": "Local prompt-injection and secret-exfiltration firewall for DeepSeek Harness.",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "chidaic/dsh-light-memory",
+      "url": "https://github.com/chidaic/dsh-light-memory",
+      "description": "四个 Markdown 文件和 append/distill 动作组成的轻量记忆系统",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "chiro2001/dsh-oc",
@@ -1610,7 +1715,7 @@
     {
       "repository": "Clarklevis1995/dsh-mobile",
       "url": "https://github.com/Clarklevis1995/dsh-mobile",
-      "description": "暂无描述",
+      "description": "DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生 iOS 客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言",
       "category": "development-runtime",
       "stars": 7
     },
@@ -1919,6 +2024,20 @@
       "repository": "dabaicai001/star-deepseek-harness-desktop",
       "url": "https://github.com/dabaicai001/star-deepseek-harness-desktop",
       "description": "StarHub 是一款跨平台桌面应用（Tauri 2 + Rust 主进程 + DeepSeek Harness React 工作台 + Go Sidecar），把开发运维日常高频工具整合到同一个窗口 —— 数据库、SSH/SFTP、Docker 面板与 AI 助手。目标是减少在 Navicat、Xshell、Portainer、文件管理器和 AI 对话窗口之间来回切换的成本。 前端架构：基于 DeepSeek Harness 原生 React 工作台（/starhub-react 路由）。资产、设置、SSH 终端、SFTP、数据库",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "daha1216/dsh-plugin-collection",
+      "url": "https://github.com/daha1216/dsh-plugin-collection",
+      "description": "A collection of plugins for DeepSeek Harness (DSH)",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "daha1216/dsh-skill-adult-tension-narrative",
+      "url": "https://github.com/daha1216/dsh-skill-adult-tension-narrative",
+      "description": "DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲与张力引擎、随机开局可预锁、时间推进、全维 YAML 存档。仅限虚构成年人。",
       "category": "development-runtime",
       "stars": 0
     },
@@ -4177,6 +4296,13 @@
       "stars": 4
     },
     {
+      "repository": "dsh-tauri-desk/deepseek-harness-desktop",
+      "url": "https://github.com/dsh-tauri-desk/deepseek-harness-desktop",
+      "description": "DeepSeek Harness Tauri 桌面版 \\ Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "dsh-tui/dsh-tui",
       "url": "https://github.com/dsh-tui/dsh-tui",
       "description": "Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle",
@@ -4338,6 +4464,13 @@
       "stars": 8
     },
     {
+      "repository": "ericshang98/Perfect-Web-Clone",
+      "url": "https://github.com/ericshang98/Perfect-Web-Clone",
+      "description": "Pixel-perfect clones of any webpage. Paste a URL, get a measured Vite + React replica.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "ericwong5021/deepseek-plugin-store",
       "url": "https://github.com/ericwong5021/deepseek-plugin-store",
       "description": "DeepSeek Harness 独立社区插件商店：发现、安装并提交经过验证的插件、工具与扩展。 \\| Independent community plugin directory.",
@@ -4378,6 +4511,13 @@
       "description": "本地优先 AI 小说创作工作台，提供 Windows/macOS 桌面版与 DeepSeek Harness 插件开发预览，支持角色、大纲、章节蓝图、审稿修稿和本地模型。",
       "category": "development-runtime",
       "stars": 422
+    },
+    {
+      "repository": "EthanYoQ/Invoice-Downloader",
+      "url": "https://github.com/EthanYoQ/Invoice-Downloader",
+      "description": "InvoiceFlowAI：Windows 与 macOS 发票助手，自动下载邮箱电子发票、OCR 识别、分类归档并生成 Excel 报销汇总；可安装为 DeepSeek Harness 插件。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "euanguo/dsh-studio",
@@ -4422,6 +4562,13 @@
       "stars": 18
     },
     {
+      "repository": "ExElectron/dsh-tool-hongtou",
+      "url": "https://github.com/ExElectron/dsh-tool-hongtou",
+      "description": "DeepSeek Harness 红头公文插件：两阶段解耦流水线（LLM 结构化提纲 + 确定性 Word 2003 XML 版式渲染）生成标准红头公文",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "f0909172434/dsh-deepseek-girl-pet",
       "url": "https://github.com/f0909172434/dsh-deepseek-girl-pet",
       "description": "Animated deepseek girl desktop pet plugin for DeepSeek Harness",
@@ -4443,6 +4590,13 @@
       "stars": 3
     },
     {
+      "repository": "FeatherHunter/dsh-mattpocock-skills-deck",
+      "url": "https://github.com/FeatherHunter/dsh-mattpocock-skills-deck",
+      "description": "拨开迷雾看见终点，剩下的交给任务栏。Part the fog, see the end — the task bar handles the rest. 🎮 mattpocock/skills 的 DSH 游戏任务系统：map 拨迷雾，任务栏推进一步。A game-like mission system for Matt Pocock skills in DeepSeek Harness. More by @FeatherHunter: 🎨 dsh-opencode-palette · ⚡ dsh-prompt",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "FeatherHunter/dsh-opencode-palette",
       "url": "https://github.com/FeatherHunter/dsh-opencode-palette",
       "description": "🎨 看腻了 DSH 默认皮肤？34 款 opencode 经典配色一键换上——tokyonight、dracula、gruvbox、matrix、rose-pine……即点即换，重启不丢。34 opencode themes for DeepSeek Harness, one click, persisted. More by @FeatherHunter: ⚡ dsh-prompt · 🧠 dsh-mattpocock-skills-deck",
@@ -4452,7 +4606,7 @@
     {
       "repository": "feibi-mochi/deepseek-harness-control-center",
       "url": "https://github.com/feibi-mochi/deepseek-harness-control-center",
-      "description": "DeepSeek Harness account monitoring, usage accounting, completion alerts, official recharge, flexible layout, and agent-assisted session controls. / 账户监控、提醒、充值与会话控制中心",
+      "description": "DeepSeek Harness control center for balance, usage, peak/off-peak pricing, encrypted multi-account switching, health checks, reminders, recharge, and session controls. / 余额、用量、峰谷计费、加密多账户、健康检查、提醒、充值与会话控制",
       "category": "development-runtime",
       "stars": 59
     },
@@ -4975,6 +5129,13 @@
       "stars": 6
     },
     {
+      "repository": "guo6x/dsh-pilot",
+      "url": "https://github.com/guo6x/dsh-pilot",
+      "description": "Give your DSH agent hands: drive a real browser (Edge/Chrome over CDP) from the chat — ref-driven clicking, per-session browsers, and a live cockpit panel. Zero runtime deps, no API key.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "Guojiz/gitlearnos",
       "url": "https://github.com/Guojiz/gitlearnos",
       "description": "Git-native AI learning OS with a GitLearnOS-exclusive DeepSeek Harness panel, targeted practice, local RAG, and learner-owned memory.",
@@ -5439,7 +5600,7 @@
     {
       "repository": "hyqibot/A-share-Ai",
       "url": "https://github.com/hyqibot/A-share-Ai",
-      "description": "幻银量化A股阿法狗AlphaHYQi，100%由ai自主驱动的实盘交易机器。接入自产龙虾iClaw，手机端一句话控制四大模型同时干活。获取方法：前往https://hyqibot.com/card-shop.html 购服务卡即可获得软件，详情README.md。 A股Ai炒股大赛历史排行（模拟基金）：https://hyqibot.github.io/A-share-Ai/reports/report.html A股Ai炒股大赛历史排行（全市场）：https://hyqibot.github.io/A-share-Ai/reportsall/report.html 实时播报：https://hyqibot.github.io/A-sh",
+      "description": "幻银量化A股阿法狗AlphaHYQi，100%由ai自主驱动的实盘交易机器。接入自产龙虾iClaw，手机端一句话控制四大模型同时干活。获取方法：前往https://hyqibot.com/card-shop.html 购服务卡即可获得软件，详情README.md。 A股Ai炒股大赛历史排行（模拟基金）：https://hyqibot.github.io/A-share-Ai/reports/report.html A股Ai炒股大赛历史排行（全市场）：https://hyqibot.github.io/A-share-Ai/reportsall/report.html 实时播报：https://hyqibot.github.io/A-share-Ai",
       "category": "development-runtime",
       "stars": 128
     },
@@ -5449,6 +5610,13 @@
       "description": "A token-free desktop client for the DeepSeek Harness，enjoy！为 DeepSeek Harness (DSH) 生态打造的全免Token费的桌面端 ，极简极易。内置多模态+顶尖工具链能力的大模型 HYQi（Flash / Pro / Image / Video）：生图+生视频均免token费，无需API， 有疑问可二维码进社区交流",
       "category": "development-runtime",
       "stars": 22
+    },
+    {
+      "repository": "hytime/dsh-thinking-effort",
+      "url": "https://github.com/hytime/dsh-thinking-effort",
+      "description": "Configurable reasoning levels for hand-declared DSH llm-pi-ai models, with bilingual settings and subagent defaults.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "iamaanahmad/everything-kiro",
@@ -5603,6 +5771,13 @@
       "description": "Official Pencil (pen.dev) canvas inside DeepSeek Harness: conversation-bound workspaces, live agent edits, and 7 MCP design tools — headless engine + browser editor.",
       "category": "development-runtime",
       "stars": 10
+    },
+    {
+      "repository": "Iwctwbh/dsh-flowglass",
+      "url": "https://github.com/Iwctwbh/dsh-flowglass",
+      "description": "流镜 Flowglass — DeepSeek Harness session flowgraph，实时可视化消息、工具组、子代理分支与步骤详情。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "iyllyt/dsh-btw",
@@ -5808,6 +5983,13 @@
       "stars": 9
     },
     {
+      "repository": "jsdvjx/dsh-strata",
+      "url": "https://github.com/jsdvjx/dsh-strata",
+      "description": "Session strata for the DeepSeek Harness Web GUI: the transcript's scrollbar becomes a to-scale, colour-coded map of the whole run, with your own messages emphasised and clickable anchors.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "JUANWANG-BUAA/dsh-full-remote",
       "url": "https://github.com/JUANWANG-BUAA/dsh-full-remote",
       "description": "Auditable, token-gated DeepSeek Harness remote gateway: mobile QR access, per-device sessions, Host/Origin rewrite, settings/credentials/directory support.",
@@ -5908,7 +6090,7 @@
     {
       "repository": "kanneiren/dsh-network-settings",
       "url": "https://github.com/kanneiren/dsh-network-settings",
-      "description": "DSH Network Settings: Windows / WSL network path diagnostics and safe repair for DeepSeek Harness.",
+      "description": "DSH网络设置插件 \\ DeepSeek Harness network diagnostics, proxy detection and repair for Windows/WSL/MacOS",
       "category": "development-runtime",
       "stars": 0
     },
@@ -6149,6 +6331,13 @@
       "description": "Android Mobile GUI Agent plugin for DeepSeek Harness with ADB control, iterative verification, approvals, and a Web mobile view",
       "category": "workflow-agents",
       "stars": 8
+    },
+    {
+      "repository": "kw78/dsh-office-tools",
+      "url": "https://github.com/kw78/dsh-office-tools",
+      "description": "Model-facing Office tools for DeepSeek Harness: Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) create/read/update with workspace-safe paths and PPT image embedding.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "kxh4892636/pi-deepseek-anchor",
@@ -6734,7 +6923,7 @@
     {
       "repository": "liustack/modsearch",
       "url": "https://github.com/liustack/modsearch",
-      "description": "The web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Ask the web or X, get structured JSON evidence. \\ 🥇 全网最强的 DeepSeek Harness 联网搜索插件🥇。为不能联网的模型补上搜索。问网页或 X，拿回结构化 JSON 证据（搜索、抓取、引用）。",
+      "description": "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. \\ 🥇 全网最强的 DeepSeek Harness 免费联网搜索插件，免费免注册免 API key。为不能联网的模型补上搜索，问网页或 X，拿回结构化 JSON 证据（搜索、抓取、引用）。",
       "category": "development-runtime",
       "stars": 205
     },
@@ -6744,6 +6933,13 @@
       "description": "Stable, editable PPTX generation for AI agents — semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。",
       "category": "development-runtime",
       "stars": 7
+    },
+    {
+      "repository": "liustack/pptpress",
+      "url": "https://github.com/liustack/pptpress",
+      "description": "Stable, editable PPTX generation for AI agents — semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "liuup/dsh-latex-tools",
@@ -6970,6 +7166,13 @@
       "stars": 65
     },
     {
+      "repository": "lywusichen/dsh-sidebar-buttons",
+      "url": "https://github.com/lywusichen/dsh-sidebar-buttons",
+      "description": "管理左下侧栏按钮：拖拽排序、显隐控制、更多菜单和统一按钮高度",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "lzbaclz/dsh-conversation-outline",
       "url": "https://github.com/lzbaclz/dsh-conversation-outline",
       "description": "Codex-style conversation outline for DeepSeek Harness Web: a right-edge rail with hover preview and click-to-jump",
@@ -7166,6 +7369,13 @@
       "stars": 38
     },
     {
+      "repository": "mianyoubiaoqing/dsh-Mmem",
+      "url": "https://github.com/mianyoubiaoqing/dsh-Mmem",
+      "description": "这是一个支持同dsh进程多记忆空间的dsh记忆插件",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "MiaoQichuan/new-litigation-visualization",
       "url": "https://github.com/MiaoQichuan/new-litigation-visualization",
       "description": "把法律画出来 · Make the Law Visible —— 给法律人的诉讼可视化工具集：把凌乱的诉讼图重画成能进材料的图，或直接读案件材料画准一张时间轴。Claude Skill / DeepSeek Harness 通用。",
@@ -7178,6 +7388,20 @@
       "description": "DSH agency agents 基于 DeepSeek Harness 的全行业智能体",
       "category": "development-runtime",
       "stars": 12
+    },
+    {
+      "repository": "MichengAI/dsh-archive-manager",
+      "url": "https://github.com/MichengAI/dsh-archive-manager",
+      "description": "DSH Archive Manager 基于 DeepSeek Harness 的归档会话管理插件",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "MichengAI/dsh-codex-desktop",
+      "url": "https://github.com/MichengAI/dsh-codex-desktop",
+      "description": "DeepSeek Harness Codex 跨平台桌面版，无需提前安装任何环境，开箱即用",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "MichengAI/dsh-codex-ui",
@@ -7215,6 +7439,13 @@
       "stars": 2
     },
     {
+      "repository": "Mikuzjc/dsh-office-for-mso",
+      "url": "https://github.com/Mikuzjc/dsh-office-for-mso",
+      "description": "通过 Office 加载项控制已打开的 Word、Excel、PowerPoint，提供 33 个动作",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "Minara-AI/minara-skills",
       "url": "https://github.com/Minara-AI/minara-skills",
       "description": "The skills for trading, to make your agent earn for you.",
@@ -7241,6 +7472,13 @@
       "description": "DSH Review Mode plugin: multi-dimension code health scoring + radar chart + review history (DSH 审查模式插件)",
       "category": "development-runtime",
       "stars": 1
+    },
+    {
+      "repository": "mingzeng21/dsh-obsidian",
+      "url": "https://github.com/mingzeng21/dsh-obsidian",
+      "description": "Connect DeepSeek Harness (dsh) to a local Obsidian vault: search, read, write, move, and trash notes.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "minivv/dsh-agent-skills",
@@ -7353,6 +7591,13 @@
       "description": "Tavily-powered optional search tool for DeepSeek Harness (rc.7 plugin management): multi-key rotation/failover, usage gauge, settings card in Plugins → configuration; the built-in websearch is never replaced. \\ DSH Tavily 可选高级搜索工具（rc.7 插件管理）：多 Key 轮换/故障转移、用量仪表盘、插件配置页设置卡片；内置 websearch 永不替换。",
       "category": "development-runtime",
       "stars": 6
+    },
+    {
+      "repository": "Molunerfinn/PicGo",
+      "url": "https://github.com/Molunerfinn/PicGo",
+      "description": ":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Mombrane/dsh-subagent-monitor",
@@ -7656,6 +7901,13 @@
       "stars": 23
     },
     {
+      "repository": "Nicholas023/vision-exp-tile",
+      "url": "https://github.com/Nicholas023/vision-exp-tile",
+      "description": "面向视觉大模型的大图智能识图插件：800×800 无损切块识别、本地 OCR、可选 DirectML/CUDA/OpenVINO GPU 加速并自动回退 CPU",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "nicolas-zhao-4/dsh-reply-nav",
       "url": "https://github.com/nicolas-zhao-4/dsh-reply-nav",
       "description": "a history navigator for deepseek-harness",
@@ -7696,6 +7948,13 @@
       "description": "DSH plugin: VS Code-style file-tree explorer (git decorations, preview, diff, drag-to-reference); install via dsh plugin --profile web add.",
       "category": "development-runtime",
       "stars": 8
+    },
+    {
+      "repository": "nocobase/nocobase",
+      "url": "https://github.com/nocobase/nocobase",
+      "description": "NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface, so you get both speed and reliability.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Noelune/dsh-agent-relay",
@@ -7752,6 +8011,13 @@
       "description": "暂无描述",
       "category": "development-runtime",
       "stars": 28
+    },
+    {
+      "repository": "notload/dsh-session-toc",
+      "url": "https://github.com/notload/dsh-session-toc",
+      "description": "会话页右侧常驻、可折叠目录栏：按用户消息定位并高亮当前条目",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "nowint/oh-my-dsh",
@@ -7936,6 +8202,13 @@
       "stars": 92
     },
     {
+      "repository": "omdsh-dev/stent",
+      "url": "https://github.com/omdsh-dev/stent",
+      "description": "灵感来源于MC Fabric的Cordis/DSH hook处理器",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "OneZero-Y/dsh-plugin-kit",
       "url": "https://github.com/OneZero-Y/dsh-plugin-kit",
       "description": "Agent skills and a working template for building standalone DeepSeek Harness (DSH) plugins",
@@ -7987,7 +8260,7 @@
     {
       "repository": "openma-ai/Martty",
       "url": "https://github.com/openma-ai/Martty",
-      "description": "deepseek-harness-tui before. Self-Improvement TUI Plugin of DeepSeek Harness. Everything Here Is Also A Plugin. dsh-tui",
+      "description": "deepseek-harness-tui（dsh-tui） before. Self-Improvement TUI Plugin of DeepSeek Harness. Everything Here Is Also A Plugin. Martty is a ACP client.",
       "category": "development-runtime",
       "stars": 46
     },
@@ -8118,6 +8391,13 @@
       "stars": 6
     },
     {
+      "repository": "peiyuwang54/deepseek-harness-cli",
+      "url": "https://github.com/peiyuwang54/deepseek-harness-cli",
+      "description": "DeepSeek CLI (UnOfficial)",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "pengpengyi92/dsh-quant",
       "url": "https://github.com/pengpengyi92/dsh-quant",
       "description": "\"🐳 Dsh-Quant: The Everything-Plugin Ai native Quant OS \"",
@@ -8144,6 +8424,13 @@
       "description": "Deep reading & summarization workflow for books/papers/videos/web — plugin parsers, MapReduce deep-read, JSON Schema output, Obsidian-ready (DSH)",
       "category": "development-runtime",
       "stars": 20
+    },
+    {
+      "repository": "PensiveFei/dsh-secure-audit",
+      "url": "https://github.com/PensiveFei/dsh-secure-audit",
+      "description": "Read-only security & compliance plugin for DeepSeek Harness: prompt-injection detection, Chinese-PII redaction, and local configuration audit with redacted, reproducible reports.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "PerryLink/dsh-auto-review",
@@ -8251,6 +8538,20 @@
       "stars": 13
     },
     {
+      "repository": "photon-hq/dsh-imessage",
+      "url": "https://github.com/photon-hq/dsh-imessage",
+      "description": "Photon-hosted iMessage transport and settings UI for DeepSeek Harness",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "Physicolor/dsh-ui-harmonizer",
+      "url": "https://github.com/Physicolor/dsh-ui-harmonizer",
+      "description": "Web UI polish layer for DeepSeek Harness: normalizes unfinished or self-contradictory official UI, reconciles style conflicts between installed plugins, and unifies the visual language via official design tokens.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "Physicolor/harness-ui-enhancer",
       "url": "https://github.com/Physicolor/harness-ui-enhancer",
       "description": "Web UI polish layer for DeepSeek Harness: normalizes unfinished or self-contradictory official UI, reconciles style conflicts between installed plugins, and unifies the visual language via official design tokens.",
@@ -8305,6 +8606,13 @@
       "description": "dsh-plugin-pixluna \\ 让 DSH 自己看涩图！",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "PKUfudawei/dsh-capability-menu",
+      "url": "https://github.com/PKUfudawei/dsh-capability-menu",
+      "description": "Unified capability menu for DeepSeek Harness: manage exposure level (context footprint) and execution mode of MCP tools & skills via Exposed/Progressive/Blocked tiers.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "player-minepig/dsh-llm-codex-oauth",
@@ -8445,6 +8753,13 @@
       "description": "暂无描述",
       "category": "development-runtime",
       "stars": 6
+    },
+    {
+      "repository": "qkycir-123/dsh-run2skill",
+      "url": "https://github.com/qkycir-123/dsh-run2skill",
+      "description": "DSH-native, local-first Run-to-Skill plugin for DeepSeek Harness",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "quan2005/dsh-plugin-jinji",
@@ -8648,6 +8963,13 @@
       "description": "Community Docker and Kubernetes packaging for DeepSeek Harness (@deepseek-ai/dsh), with a hardened image, Compose stack, Helm chart, Web UI, and headless CLI.",
       "category": "multimodal-vision",
       "stars": 27
+    },
+    {
+      "repository": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Rxiain/dsh-openviking",
@@ -8897,7 +9219,7 @@
     {
       "repository": "shaobeichen/dsh-pocket",
       "url": "https://github.com/shaobeichen/dsh-pocket",
-      "description": "把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）",
+      "description": "把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）Put DeepSeek Harness in your pocket: run dsh web on your computer and access it synchronously by scanning a QR code on your phone (LAN + public network, real‑time screen mirroring)",
       "category": "development-runtime",
       "stars": 303
     },
@@ -9028,6 +9350,27 @@
       "stars": 4
     },
     {
+      "repository": "SimonMedy/DSH-Mobile",
+      "url": "https://github.com/SimonMedy/DSH-Mobile",
+      "description": "Unofficial community mobile client for the DeepSeek Harness Web UI.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "SiriLee/dsh-rewind",
+      "url": "https://github.com/SiriLee/dsh-rewind",
+      "description": "DeepSeek Harness plugin: in-place conversation rewind in the same session window (Claude Code /rewind semantics) + optional file restore",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "siweina/dsh-novel-writer",
+      "url": "https://github.com/siweina/dsh-novel-writer",
+      "description": "DSH / DeepSeek Harness 小说写作助手插件：章节库管理、句式模式分析（九类句式/情感曲线/风格指纹）、风格自检、伏笔登记、批量导入、续写辅助。Novel writing assistant plugin for DeepSeek Harness: chapter library, sentence pattern analysis, style check, plot tracking, batch import, AI-assisted novel writing. dsh-plugin novel-writing ai-writing",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "sjh9714/dsh-movein",
       "url": "https://github.com/sjh9714/dsh-movein",
       "description": "Migrate your whole Claude Code or Codex setup into DeepSeek Harness (DSH) with one command. Import skills, slash commands, MCP servers, hooks, subagents, permission rules. 一键迁移导入 Claude Code 配置，从 Claude Code 拎包入住 DSH",
@@ -9040,6 +9383,13 @@
       "description": "First-class Windows for DeepSeek Harness: persistent Git Bash Minimal mode, doctor for install traps, one-command setup \\ 让 DSH 在 Windows 上成为一等公民",
       "category": "development-runtime",
       "stars": 14
+    },
+    {
+      "repository": "sjlgg/dsh-free-web-search",
+      "url": "https://github.com/sjlgg/dsh-free-web-search",
+      "description": "DeepSeek Harness 免费网页搜索插件",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "SkillNerds/xskill",
@@ -9058,7 +9408,7 @@
     {
       "repository": "skyf0xx/hedgehog",
       "url": "https://github.com/skyf0xx/hedgehog",
-      "description": "AI-driven development with power. Faster builds, fewer tokens, cleaner code. Hedgehog builds a task dependency graph from your spec-driven, BMAD-METHOD plan, so Claude Code, Cursor & Gemini CLI stay locked to it. A CLI-enforced state machine for agentic coding. Now builds DSH-Plugins.",
+      "description": "HEDGEHOG codes Cleaner, Faster and with Fewer Tokens. Hedgehog's AI-driven development builds a task dependency graph from your spec-driven, BMAD-METHOD plan, so Claude Code, Cursor & Gemini CLI stay locked to it. A CLI-enforced state machine for agentic coding. Now builds DeepSeek DSH Plugins. DeepSeek Harness、DSH 插件、AI 编程、BMAD 方法",
       "category": "development-runtime",
       "stars": 0
     },
@@ -9147,6 +9497,13 @@
       "stars": 12
     },
     {
+      "repository": "smanx/dsh-proxy",
+      "url": "https://github.com/smanx/dsh-proxy",
+      "description": "HTTP + WebSocket 反向代理：把局域网端口转发到本地 DSH 服务",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "snowcrescenter-tech/dsh-desktop",
       "url": "https://github.com/snowcrescenter-tech/dsh-desktop",
       "description": "DeepSeek Harness 桌面版 — 原生 Windows 桌面壳（无边框窗口 / 系统托盘 / 原生通知 / 单实例 / 开机自启）\\| Native Windows desktop shell for DeepSeek Harness (frameless window, tray, native notifications, single-instance, auto-launch)",
@@ -9224,11 +9581,25 @@
       "stars": 5
     },
     {
+      "repository": "spirits001/dsh-user-message-rail",
+      "url": "https://github.com/spirits001/dsh-user-message-rail",
+      "description": "窗口左侧用户消息刻度轨，支持悬停预览和跳转",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "spirtxiaoqi7/mindspace-dsh-local-rag",
       "url": "https://github.com/spirtxiaoqi7/mindspace-dsh-local-rag",
       "description": "ARPM-derived local hybrid RAG plugin for DeepSeek Harness",
       "category": "development-runtime",
       "stars": 3
+    },
+    {
+      "repository": "SpookySandwich/dsh-plugin-message-edit",
+      "url": "https://github.com/SpookySandwich/dsh-plugin-message-edit",
+      "description": "编辑已发送消息并从该轮次回溯分叉：版本计数器、轮次级版本树，以及 ChatGPT/DeepSeek/Claude 控件布局",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "SpookySandwich/dsh-plugin-smooth-stream",
@@ -9285,6 +9656,13 @@
       "description": "Fully local document intelligence for DeepSeek Harness. Parse PDF, Office files, images, and scanned documents with offline OCR. \\ DeepSeek Harness 全本地文档智能插件，支持 PDF、Office、图片与离线 OCR",
       "category": "development-runtime",
       "stars": 10
+    },
+    {
+      "repository": "sqs404/dsh-portable",
+      "url": "https://github.com/sqs404/dsh-portable",
+      "description": "DeepSeek Harness 免安装便携版（Windows）：官方 npm 包 + 内置 Node.js，双击 exe 即用，拷贝到任意 64 位 Windows 电脑独立运行",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "StarChen-Cycler/octie-dsh-plugin",
@@ -9404,6 +9782,13 @@
       "description": "The World's First Unified Virtual Filesystem For AI Agents",
       "category": "development-runtime",
       "stars": 3545
+    },
+    {
+      "repository": "StvLi/dsh-ros2",
+      "url": "https://github.com/StvLi/dsh-ros2",
+      "description": "The Deepseek Harness ROS 2 plugin can be used to efficiently diagnose issues and perform joint debugging.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "sugarforever/dsh-lark",
@@ -9567,11 +9952,25 @@
       "stars": 4
     },
     {
+      "repository": "T-Auto/dsh-ecosystem-spec",
+      "url": "https://github.com/T-Auto/dsh-ecosystem-spec",
+      "description": "deepseek-harness TUI Plugin Access and Implementation Standards / deepseek-harness终端交互生态插件准入规范与实施标准",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "Tabbit-Browser/dsh-plugin",
       "url": "https://github.com/Tabbit-Browser/dsh-plugin",
       "description": "Tabbit Broser plugins for Deepseek Harness",
       "category": "development-runtime",
       "stars": 90
+    },
+    {
+      "repository": "Tabbit-Browser/dsh-tabbit",
+      "url": "https://github.com/Tabbit-Browser/dsh-tabbit",
+      "description": "Tabbit Browser plugins for Deepseek Harness",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "taichuy/deepseek-harness-auth",
@@ -9679,6 +10078,13 @@
       "stars": 10
     },
     {
+      "repository": "Thanksgiver233/dsh-mobile",
+      "url": "https://github.com/Thanksgiver233/dsh-mobile",
+      "description": "DeepSeek Harness Mobile 是 DeepSeek Harness 的 Android 原生应用，将原本仅支持 PC 浏览器的 AI Agent 框架完整迁移至移动端。采用 Kotlin + Jetpack Compose 开发，内置 Node.js ARM64 二进制和 dsh CLI，实现零依赖安装——下载 APK 即可运行，无需 Root、Termux 或额外环境配置。应用覆盖网页端全部核心功能：多会话管理、流式对话、插件市场、模型设置等，并针对竖屏触控体验深度优化。技术上采用 MVVM 架构、Dagger Hilt 依赖注入、Room 本地数据库，后台 Foreground Service 确保引擎持续运行，支持离线场景和弱网环境自动重连。",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "the-beating-light-of-the-nail/dsh-meme-hub",
       "url": "https://github.com/the-beating-light-of-the-nail/dsh-meme-hub",
       "description": "🐋 The meme side of DeepSeek Harness — 贪玩蓝鲸/QQ2006/whale girls/mini-games · A curated tour of the wildest dsh plugins",
@@ -9756,6 +10162,13 @@
       "stars": 7
     },
     {
+      "repository": "TiantianFlow/dsh-one-gateway",
+      "url": "https://github.com/TiantianFlow/dsh-one-gateway",
+      "description": "Private DSH One Gateway — loopback, identity-first ingress for DeepSeek Harness",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "TiantianFlow/dsh-tailscale-gateway",
       "url": "https://github.com/TiantianFlow/dsh-tailscale-gateway",
       "description": "Private Tailscale access for DeepSeek Harness Web: exact user allowlists, loopback-only gateway, and guarded Serve setup",
@@ -9789,6 +10202,13 @@
       "description": "J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) — https://space.bilibili.com/3494375382321675",
       "category": "development-runtime",
       "stars": 3000
+    },
+    {
+      "repository": "Tiger3807861189/J-Space-Cognition-Suite-V3.7",
+      "url": "https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.7",
+      "description": "J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) — https://space.bilibili.com/3494375382321675",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "timeance/dsh-approve-for-me",
@@ -9833,6 +10253,13 @@
       "stars": 797
     },
     {
+      "repository": "Tokeii0/dsh-lovelyaudit",
+      "url": "https://github.com/Tokeii0/dsh-lovelyaudit",
+      "description": "DSH web plugin: 黑盒/代审 sidebar workspace (P0–P7, per-finding SRC reports).",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "tokentopo-ai/dsh-octo",
       "url": "https://github.com/tokentopo-ai/dsh-octo",
       "description": "an heterogeneous multi-agent collaboration skill designed for dsh",
@@ -9866,6 +10293,13 @@
       "description": "TongFlow — multimodal workflow studio and engine (canvas + Python plugin engine) and dsh-tongflow, the DeepSeek Harness studio plugin",
       "category": "development-runtime",
       "stars": 898
+    },
+    {
+      "repository": "tonyd2wild/DeepSeek-Harness-Browser",
+      "url": "https://github.com/tonyd2wild/DeepSeek-Harness-Browser",
+      "description": "An in-app browser pane for DeepSeek Harness — real Chrome over CDP, plus rendered previews of local files, markdown and PDFs.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "TonyDua/dsh-web-search-exa",
@@ -9931,6 +10365,13 @@
       "stars": 2
     },
     {
+      "repository": "TsFreddie/dsh-compaction-instant",
+      "url": "https://github.com/TsFreddie/dsh-compaction-instant",
+      "description": "LLM-free lossless compaction engine for DeepSeek Harness",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "tsonglew/dsh-media-preview",
       "url": "https://github.com/tsonglew/dsh-media-preview",
       "description": "Audio/video preview viewer for dsh-better-sidebar: native playback with Range-seeking streaming route",
@@ -9994,6 +10435,13 @@
       "stars": 3
     },
     {
+      "repository": "Ultronen/dsh-archived-chats",
+      "url": "https://github.com/Ultronen/dsh-archived-chats",
+      "description": "DeepSeek Harness 已归档会话管理页：在设置里查看、搜索、取消归档、删除已归档的聊天，按项目分组。An Archived Chats settings page for DeepSeek Harness: browse, search, unarchive, and delete archived sessions, grouped by workspace.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "unclecode/toolshrink",
       "url": "https://github.com/unclecode/toolshrink",
       "description": "Cut large agent tool output by what it means, not by where it was cut. 13 content-aware reducers + DeepSeek Harness plugin.",
@@ -10024,7 +10472,7 @@
     {
       "repository": "UNLINEARITY/dsh-code",
       "url": "https://github.com/UNLINEARITY/dsh-code",
-      "description": "Claude-Code-style TUI bundle for DeepSeek Harness. 充分结合 DSH 的核心机制和高级特性与Codex CLI 、Claude Code 等主流交互机制，打造的 DSH-Code. （注：支持DSH 特殊模式，插件系统，模型管理，子代理会话，Deepseek 官方 API 特殊动画）",
+      "description": "Claude-Code-style TUI bundle for DeepSeek Harness. 充分结合 DSH 的核心机制和高级特性与Codex CLI 、Claude Code 等主流交互机制，打造的 DSH-Code. （对齐DSH官方上游最新版本！持续更新中！支持DSH 特殊模式，插件系统，模型管理，子代理管理，切换模型特殊动画）",
       "category": "development-runtime",
       "stars": 27
     },
@@ -10092,11 +10540,25 @@
       "stars": 2
     },
     {
+      "repository": "Vesna-Strivozha/DSH-LLM-wiki-plugin",
+      "url": "https://github.com/Vesna-Strivozha/DSH-LLM-wiki-plugin",
+      "description": "基于 Karpathy wiki 方法论的 LLM wiki 插件",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "vibeinging/deepseek-harness-desktop-app",
       "url": "https://github.com/vibeinging/deepseek-harness-desktop-app",
       "description": "DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.",
       "category": "development-runtime",
       "stars": 610
+    },
+    {
+      "repository": "vibeinging/dsh-desktop",
+      "url": "https://github.com/vibeinging/dsh-desktop",
+      "description": "DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "vibeinging/dsh-work",
@@ -10150,7 +10612,7 @@
     {
       "repository": "Vladimir-Human/humanizer-ru",
       "url": "https://github.com/Vladimir-Human/humanizer-ru",
-      "description": "Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста. 38 паттернов, 39 regex-маркеров с реестром доказательств, слепые парные прогоны, файловый слой снятия C2PA/EXIF/XMP \\ Russian AI-writing humanizer skill with file metadata cleaning",
+      "description": "Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста. 38 паттернов, 39 regex-маркеров с реестром доказательств, слепые парные прогоны, файловый слой снятия C2PA/EXIF/XMP. Пакет на PyPI и онлайн-демо \\ Russian AI-writing humanizer skill, PyPI: humanizer-ru, live demo",
       "category": "development-runtime",
       "stars": 110
     },
@@ -10183,6 +10645,13 @@
       "stars": 5
     },
     {
+      "repository": "volcengine/ark-cli",
+      "url": "https://github.com/volcengine/ark-cli",
+      "description": "The fastest way to put Volcengine Ark in your terminal and your AI agent — go from prompt to generated media, multimodal answer, or deployed endpoint in a single command, no API glue code.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "volcengine/OpenViking",
       "url": "https://github.com/volcengine/OpenViking",
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
@@ -10195,6 +10664,13 @@
       "description": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
       "category": "development-runtime",
       "stars": 934
+    },
+    {
+      "repository": "vshulcz/deja-vu",
+      "url": "https://github.com/vshulcz/deja-vu",
+      "description": "Memory for coding agents — Claude Code, Codex, Cursor and 17 others. Indexes the sessions they already wrote to disk, including months from before you installed it, and recalls them in any of them. No LLM, no embeddings, one local Go binary.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "vulcan626/dsh-pet",
@@ -10253,6 +10729,13 @@
       "stars": 6
     },
     {
+      "repository": "Walvez/dsh-codex-sync",
+      "url": "https://github.com/Walvez/dsh-codex-sync",
+      "description": "One-tap Codex move-in to DSH: auto-import project chats, two-way Skills & MCP sync.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "wangshunnn/oh-my-dsh",
       "url": "https://github.com/wangshunnn/oh-my-dsh",
       "description": "🐋 All you need is oh-my-dsh ｜ DeepSeek Harness 社区插件索引与精选（自动更新）",
@@ -10281,6 +10764,13 @@
       "stars": 6
     },
     {
+      "repository": "wangyuanchuan2022/dsh-prompt-optimizer",
+      "url": "https://github.com/wangyuanchuan2022/dsh-prompt-optimizer",
+      "description": "输入框工具行的一键提示词优化按钮，重写草稿并支持长文本",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "wangzhuo-coding/geo-content-optimizer",
       "url": "https://github.com/wangzhuo-coding/geo-content-optimizer",
       "description": "GEO生成式引擎优化智能体 — 7类关键词+七层架构+EE-A-T权威框架+8维度降痕改写",
@@ -10307,6 +10797,13 @@
       "description": "Stock analysis extension for Pi Agent — lightweight market data tools + strategy skills",
       "category": "development-runtime",
       "stars": 11
+    },
+    {
+      "repository": "webkubor/dsh-bloom-theme",
+      "url": "https://github.com/webkubor/dsh-bloom-theme",
+      "description": "DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Wechsels/dsh-zotero-wiki",
@@ -10358,6 +10855,13 @@
       "stars": 8
     },
     {
+      "repository": "welsione/dsh-model-router",
+      "url": "https://github.com/welsione/dsh-model-router",
+      "description": "统一模型路由：一个逻辑 ModelID 连接多个服务商，首 token 故障切换与冷却、健康排序、按用途自动选择三档，并支持候选推理强度和设置页管理",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "wenbin-wb/dsh-bridge",
       "url": "https://github.com/wenbin-wb/dsh-bridge",
       "description": "DeepSeek Harness 多通道远程访问插件 \\ 手机扫码秒连本地 AI、微信/QQ 直接对话、流式输出、按钮交互、多工作区切换、会话持久化 \\ 无需公网服务器，支持局域网直连、Cloudflare 隧道、自建隧道 \\ QQ Bot + 微信 ClawBot",
@@ -10391,6 +10895,13 @@
       "description": "DeepSeekHarness桌面端打包",
       "category": "development-runtime",
       "stars": 67
+    },
+    {
+      "repository": "Whale-Zhang/dsh-complete-chime",
+      "url": "https://github.com/Whale-Zhang/dsh-complete-chime",
+      "description": "对话轮次完成时播放提示音，内置音效并支持设置页上传自定义音效",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "white0dew/awesome-dsh-plugins",
@@ -10477,6 +10988,13 @@
       "stars": 9
     },
     {
+      "repository": "WilliamShi666/dsh-multiple-chat-panels",
+      "url": "https://github.com/WilliamShi666/dsh-multiple-chat-panels",
+      "description": "DeepSeek Harness 多对话面板：并排查看并与多个 Agent 会话同时交互。",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "windlx/paper_plane_x",
       "url": "https://github.com/windlx/paper_plane_x",
       "description": "Paper Plane X 是一个面向科研阅读、论文处理和综述写作的本地优先工作台。它把 PDF 解析、结构化论文抽取、事实核查、项目文件、文献检索和外部 Agent 工具串成一条可复用的研究流水线。",
@@ -10507,7 +11025,7 @@
     {
       "repository": "WizisCool/dsh-ears",
       "url": "https://github.com/WizisCool/dsh-ears",
-      "description": "Voice input plugin for DeepSeek Harness (dsh): Supports voice input plugins with polishing and multiple backends.",
+      "description": "A voice-input plugin for DeepSeek Harness that supports multiple ASR backends and polishing through dsh's own LLM route.",
       "category": "development-runtime",
       "stars": 7
     },
@@ -10617,6 +11135,13 @@
       "stars": 8
     },
     {
+      "repository": "wsz987/dsh-channels",
+      "url": "https://github.com/wsz987/dsh-channels",
+      "description": "把微信 / QQ / 钉钉 / 飞书 / Telegram 接入 DeepSeek Harness：统一配置、扫码授权，直接在各 IM 与 Agent 对话；支持图片与文件收发，Agent 可读取 PDF、DOCX、XLSX 和文本内容。",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "WTStarMark/QAQ",
       "url": "https://github.com/WTStarMark/QAQ",
       "description": "QAQ: a launch resilience guard for DeepSeek Harness (DSH). Supervises dsh web, reads the real DOM via headless Chrome + CDP to catch host crashes and UI red-screens, and auto-rolls-back to the last known-good config. DSH 启动容灾守卫，检测宿主崩溃与 UI 红屏，自动回滚到最近一次成功配置。非侵入、一键懒人脚本、结构化日志。",
@@ -10671,6 +11196,13 @@
       "description": "Fail-closed Feishu (Lark) channel bridge for DeepSeek Harness (dsh) — chat with a bot, get agent turns back. Opt-in human-in-the-loop bash approval (Allow/Deny cards, fail-closed timeout), one-message /pair onboarding, webhook signature/timestamp/replay verification, daily latest-SDK canary. Community plugin, not DeepSeek-official.",
       "category": "development-runtime",
       "stars": 5
+    },
+    {
+      "repository": "WZZNNE/DSH-CyberWorkStation",
+      "url": "https://github.com/WZZNNE/DSH-CyberWorkStation",
+      "description": "DSH CyberWorkStation — one-click DeepSeek Harness (dsh) bundle: cyberpunk desktop launcher, SillyTavern-grade Control Deck, 8 production plugins, AI skin studio & markets. Vendored core rc.8, run setup.cmd and go. 一键部署的 dsh 赛博工作站整合包。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "x118111/prompt-optimizer",
@@ -10729,9 +11261,16 @@
       "stars": 41
     },
     {
+      "repository": "xi-zhao/OpenQuantum",
+      "url": "https://github.com/xi-zhao/OpenQuantum",
+      "description": "Open-source quantum Agent workspace with a desktop client, Web UI, messaging, Qiskit/MCP tools, and scientific validation",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "xiajiajun516/dsh-config-manager",
       "url": "https://github.com/xiajiajun516/dsh-config-manager",
-      "description": "Backup / export / import / migrate your DeepSeek Harness (DSH) configuration - dual-face Cordis plugin (host engine + Web UI). One-click restore on any machine.",
+      "description": "DeepSeek Harness (DSH) backup & restore plugin — export, import, migrate and sync your complete DSH configuration, plugins, MCP servers, skills and workspace. One-click migration to another machine.",
       "category": "development-runtime",
       "stars": 7
     },
@@ -10846,6 +11385,13 @@
       "description": "Backup DeepSeek Harness user data with one command: /backup, scheduled auto-backup, sha256 checksums and rotation. 一键备份 DSH 数据，支持定时自动备份。",
       "category": "development-runtime",
       "stars": 6
+    },
+    {
+      "repository": "xiaozhe7772222/dsh-opencode-zen",
+      "url": "https://github.com/xiaozhe7772222/dsh-opencode-zen",
+      "description": "0 元接入 6 个免费大模型：OpenCode Zen 免费档模型零配置接入 DeepSeek Harness，免注册免充值，内置 6 个免费模型，多 Key 轮换与限流退避。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "xiehuan123/dsh-deepread",
@@ -10974,6 +11520,13 @@
       "stars": 4
     },
     {
+      "repository": "xuedai-mayi/dsh-wenshan",
+      "url": "https://github.com/xuedai-mayi/dsh-wenshan",
+      "description": "问山：DeepSeek Harness 地理野外实习知识图谱插件与非官方二次开发项目",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "xuender/dsh-history",
       "url": "https://github.com/xuender/dsh-history",
       "description": "Recall and re-run the current session's command history with ↑/↓ keys in the DSH Web composer.",
@@ -10986,6 +11539,13 @@
       "description": "DeepSeek Harness 的 SDR 数字员工插件：九阶段外贸获客 SOP、结构性人工审批、客户去重、持久化知识检索与审计日志，默认 dry-run 安全演示。",
       "category": "development-runtime",
       "stars": 24
+    },
+    {
+      "repository": "XuXcode/dsh-loghud",
+      "url": "https://github.com/XuXcode/dsh-loghud",
+      "description": "Spring Boot 错误实时 HUD，并提供可选 AI 诊断",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "xwh-01/dsh-mediacrawler",
@@ -11170,6 +11730,20 @@
       "stars": 4
     },
     {
+      "repository": "yjh051108/dsh-router-standard",
+      "url": "https://github.com/yjh051108/dsh-router-standard",
+      "description": "Task-aware reasoning-mode router for DeepSeek Harness: three measured behavior bands (spec/mixed/react) with phase-transition evidence, persona + first-turn tool injection, agent-visible tuning. Dual-attractor policy paper included.",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
+      "repository": "yjh051108/dsh-routing-suite",
+      "url": "https://github.com/yjh051108/dsh-routing-suite",
+      "description": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "ykennen/dsh-zh-output",
       "url": "https://github.com/ykennen/dsh-zh-output",
       "description": "DeepSeek Harness 中文输出插件：强制中文思考与输出的中文预设",
@@ -11233,6 +11807,13 @@
       "stars": 8
     },
     {
+      "repository": "YRN-playmaker/dsh-wallpaper_share",
+      "url": "https://github.com/YRN-playmaker/dsh-wallpaper_share",
+      "description": "一键同步壁纸引擎各类动态场景壁纸的插件，设置应用启动项。A \"wallpaper engine\" synchronization plugin mounted on the deepseek harness can synchronize static wallpapers",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "ysr666/dsh-vision-router",
       "url": "https://github.com/ysr666/dsh-vision-router",
       "description": "Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no Python, image turns work like ordinary tool-calling turns.",
@@ -11266,6 +11847,13 @@
       "description": "Right-side file panel for DeepSeek Harness — auto-popup when the agent creates or downloads files, with image/text preview, reveal-in-folder and open actions. Bilingual · MIT",
       "category": "development-runtime",
       "stars": 4
+    },
+    {
+      "repository": "yuc16/PatentRadar",
+      "url": "https://github.com/yuc16/PatentRadar",
+      "description": "专利侵权分析系统 —— 输入专利公开号，产出竞品侵权分析报告；同时打包成 skill，可被任意 agent（codex，claude code 等） 调用。",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "Yuer6327/NoLetMe",
@@ -11345,6 +11933,13 @@
       "stars": 11
     },
     {
+      "repository": "yxxbc/dsh-balance-plugin",
+      "url": "https://github.com/yxxbc/dsh-balance-plugin",
+      "description": "deepSeek 余额监控与用量统计（DSH 动态 Cordis 插件）：余额监控 · 官方充值入口 · 用量统计 · 三方插件管理",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "yyh-001/dsh-companion",
       "url": "https://github.com/yyh-001/dsh-companion",
       "description": "DeepSeek 陪伴模式插件 —— 人设、记忆、聊得下去：SOUL 人格 + Hermes 长期记忆，可选 QQ 通道",
@@ -11413,6 +12008,13 @@
       "description": "基于deepseek-harness（dsh）的手机网页优化插件，修复了部分网页与手机端不适配的问题；",
       "category": "development-runtime",
       "stars": 10
+    },
+    {
+      "repository": "z953218350/dsh-history-tree",
+      "url": "https://github.com/z953218350/dsh-history-tree",
+      "description": "Codex-style conversation turn timeline and hover history overview for DSH Web UI",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "z953218350/dsh-np-ppt",
@@ -11641,7 +12243,7 @@
     {
       "repository": "zhu1090093659/dsh-web-ui",
       "url": "https://github.com/zhu1090093659/dsh-web-ui",
-      "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
+      "description": "DeepSeek Harness（DSH）Web GUI 插件与皮肤生态：一切皆插件。任务看板、移动端远程与 SSH 运维构筑开发工作台；皮肤经 WebGL 深度优化，更支持 Wallpaper Engine 壁纸；皮肤、宠物、插件由 DSH 大市场一键安装，正迈向 DSH 创意工坊。A pluggable plugin-skin ecosystem for the DSH Web GUI - Task board, remote mobile UI, SSH ops, WebGL-optimized skins with Wallpaper Engine wallpapers - becoming a DSH creative workshop.",
       "category": "development-runtime",
       "stars": 5309
     },
@@ -11723,6 +12325,13 @@
       "stars": 197
     },
     {
+      "repository": "zmh2000829/DSH-agent-bridge",
+      "url": "https://github.com/zmh2000829/DSH-agent-bridge",
+      "description": "通过 ACP 在 DeepSeek Harness Web 中使用 Grok Build",
+      "category": "development-runtime",
+      "stars": 0
+    },
+    {
       "repository": "zoahdev/dsh-github-intelligence",
       "url": "https://github.com/zoahdev/dsh-github-intelligence",
       "description": "The most comprehensive developer-intelligence integration for DeepSeek Harness: 196+ read-only tools across 16 developer ecosystems (GitHub, GitLab, Gitee, npm, PyPI, crates.io, Docker Hub, Hugging Face, Hacker News, Stack Overflow, Reddit, dev.to, RubyGems, NuGet, Go, ArXiv) with rate-limit-friendly caching.",
@@ -11749,6 +12358,13 @@
       "description": "Text-first browser & background macOS control for DeepSeek Harness (DSH): target the right process and window without taking the user's pointer. 为 DSH 提供文本优先的电脑控制：后台操作 Chromium 与 macOS，不抢前台、不移动鼠标。",
       "category": "development-runtime",
       "stars": 21
+    },
+    {
+      "repository": "ZSeven-W/dsh-android",
+      "url": "https://github.com/ZSeven-W/dsh-android",
+      "description": "DeepSeek Harness plugin for Android — build, run, and interact with a live emulator or USB device stream inside a conversation, driven entirely through adb.",
+      "category": "development-runtime",
+      "stars": 0
     },
     {
       "repository": "ZSeven-W/dsh-crew",
