@@ -36175,6 +36175,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "yeyeyeyeshifu-dsh-session-hotkeys",
+    name: "dsh-session-hotkeys",
+    repoUrl: "https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys",
+    repository: "YEYEYEYESHIFU/dsh-session-hotkeys",
+    description: {"en":"Session hotkeys for the DSH Web GUI: switch sessions like browser tabs (positional Alt+1-9, pinned slots, previous/next), keyboard model switching, alternate send, and archive confirmation, with every binding...","zh":"会话热键：像切浏览器标签页一样用键盘管理 DSH Web 会话（Alt+1-9 顺序切换、固定槽位、上/下一个、新建/归档/重命名、键盘模型切换与备用发送），键位可在面板录制重绑，Windows/macOS 双预设。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-session-hotkeys"},
+    stars: 3,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "yflmq001-dsh-cost-tracker",
     name: "dsh-cost-tracker",
     repoUrl: "https://github.com/yflmq001/dsh-cost-tracker",

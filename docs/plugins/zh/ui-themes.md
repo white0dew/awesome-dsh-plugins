@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**47 个目录条目** · [返回全部分类](index.md)
+**48 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -371,6 +371,14 @@ Repository: `wuxjian/DSH-Desktop`
 基于 Tauri 2 和 Vanilla TypeScript 的 Windows 桌面启动器，可启动或嵌入 dsh web，检查并升级 DSH，并提供 3.03 MB 的 Windows 安装包。
 
 下载: [下载 Windows 安装包](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
+
+### [dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys)
+
+Repository: `YEYEYEYESHIFU/dsh-session-hotkeys`
+
+会话热键：像切浏览器标签页一样用键盘管理 DSH Web 会话（Alt+1-9 顺序切换、固定槽位、上/下一个、新建/归档/重命名、键盘模型切换与备用发送），键位可在面板录制重绑，Windows/macOS 双预设。
+
+Install: `dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-session-hotkeys`
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 

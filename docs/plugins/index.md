@@ -4,7 +4,7 @@ Browse the catalog by capability. Each category page lists every entry's origina
 
 | Category | Entries | What you will find |
 | --- | ---: | --- |
-| [UI & Themes](ui-themes.md) | 47 | Interfaces, terminal clients, themes, and presentation improvements. |
+| [UI & Themes](ui-themes.md) | 48 | Interfaces, terminal clients, themes, and presentation improvements. |
 | [Sessions & Memory](sessions-memory.md) | 105 | Conversation history, context, persistence, and memory helpers. |
 | [Tools & Capabilities](tools-capabilities.md) | 228 | Focused utilities and capability extensions for everyday work. |
 | [Workflow & Agents](workflow-agents.md) | 109 | Automation, orchestration, prompts, and agent workflows. |
