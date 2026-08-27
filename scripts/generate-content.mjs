@@ -356,8 +356,8 @@ function normalizeSecondSource(snapshot, seenRepositories) {
   if (!Array.isArray(plugins)) {
     fail("github-plugin-catalog.json does not have a plugins array");
   }
-  if (plugins.length !== 334) {
-    fail(`expected 334 second-source entries, found ${plugins.length}`);
+  if (plugins.length !== 8522) {
+    fail(`expected 8522 second-source entries, found ${plugins.length}`);
   }
 
   const updatedDate = typeof snapshot.updatedAt === "string" ? snapshot.updatedAt.slice(0, 10) : "";
@@ -404,8 +404,8 @@ function normalizeReviewedAdditions(snapshot, seenRepositories) {
   if (!Array.isArray(records)) {
     fail("reviewed-catalog-additions.json does not have a records array");
   }
-  if (records.length !== 4) {
-    fail(`expected 4 reviewed catalog additions, found ${records.length}`);
+  if (records.length !== 6) {
+    fail(`expected 6 reviewed catalog additions, found ${records.length}`);
   }
 
   return records.map((record, index) => {
@@ -675,7 +675,7 @@ const normalizedPlugins = [
   ...normalizeUpstreamAwesomeDeepseekHarness(upstreamAwesomeDeepseekHarnessSnapshot, seenRepositories),
 ].sort(compareRepositories);
 
-const expectedPluginCount = 366 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
+const expectedPluginCount = 8556 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
 if (normalizedPlugins.length !== expectedPluginCount) {
   fail(`expected exactly ${expectedPluginCount} unique repositories after deduplication, found ${normalizedPlugins.length}`);
 }

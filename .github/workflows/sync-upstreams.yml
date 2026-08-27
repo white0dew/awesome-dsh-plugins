@@ -30,6 +30,11 @@ jobs:
       - name: Sync upstream catalogs (no personal token needed)
         run: npm run sync-upstreams
 
+      - name: Sync GitHub topic catalog (dsh-plugin, direct pull)
+        run: npm run sync-github-topic
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate content
         run: npm run generate-content
 

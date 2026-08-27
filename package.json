@@ -11,7 +11,8 @@
     "generate-content": "node scripts/generate-content.mjs",
     "validate-content": "node scripts/validate-content.mjs",
     "refresh-stars": "node scripts/refresh-stars.mjs",
-    "sync-upstreams": "node scripts/sync-upstreams.mjs"
+    "sync-upstreams": "node scripts/sync-upstreams.mjs",
+    "sync-github-topic": "node scripts/sync-github-topic.mjs"
   },
   "dependencies": {
     "artalk": "^2.9.1",
