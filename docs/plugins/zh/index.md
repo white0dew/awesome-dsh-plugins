@@ -9,7 +9,7 @@
 | [工具与能力](tools-capabilities.md) | 228 | 面向日常工作的实用工具和能力扩展。 |
 | [工作流与智能体](workflow-agents.md) | 109 | 自动化、编排、提示词与智能体工作流。 |
 | [通知与集成](notifications-integrations.md) | 47 | 消息、通知以及外部服务连接。 |
-| [开发与运行时](development-runtime.md) | 1862 | 开发工具、Shell、容器、测试与运行时支持。 |
+| [开发与运行时](development-runtime.md) | 1925 | 开发工具、Shell、容器、测试与运行时支持。 |
 | [浏览器与搜索](browser-search.md) | 24 | 浏览器控制、网页研究、抓取和搜索辅助工具。 |
 | [MCP 与技能](mcp-skills.md) | 94 | Model Context Protocol 服务、技能与扩展包。 |
 | [多模态与视觉](multimodal-vision.md) | 46 | 图像、音频、视频、OCR 与其他多模态能力。 |
