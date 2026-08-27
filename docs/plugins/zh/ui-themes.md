@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**47 个目录条目** · [返回全部分类](index.md)
+**48 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -371,6 +371,14 @@ Repository: `wuxjian/DSH-Desktop`
 基于 Tauri 2 和 Vanilla TypeScript 的 Windows 桌面启动器，可启动或嵌入 dsh web，检查并升级 DSH，并提供 3.03 MB 的 Windows 安装包。
 
 下载: [下载 Windows 安装包](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
+
+### [dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view)
+
+Repository: `YEYEYEYESHIFU/dsh-result-only-view`
+
+DSH Web 的「只看结果」开关：折叠思考与工具调用过程行，对话只留用户消息与最终回复；运行中显示实时摘要芯片，回合后痕迹行可点击展开并支持悬停预览、自动/手动折叠，上下文注入行同样折叠。
+
+Install: `dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view`
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 

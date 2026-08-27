@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-21",
+  "updated": "2026-08-27",
   "records": [
     {
       "name": "dsh-outline",
@@ -75,6 +75,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add dsh-reference-anything"
+      }
+    },
+    {
+      "name": "dsh-result-only-view",
+      "github": {
+        "repository": "YEYEYEYESHIFU/dsh-result-only-view",
+        "url": "https://github.com/YEYEYEYESHIFU/dsh-result-only-view",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Results-only view toggle for the DSH Web GUI: folds thinking and tool-call process rows so conversations show only user messages and final replies, with live summary chips for running steps, a click-to-expand turn trace with hover-peek, auto/manual fold modes, and context-injection rows folded too.",
+        "zh": "DSH Web 的「只看结果」开关：折叠思考与工具调用过程行，对话只留用户消息与最终回复；运行中显示实时摘要芯片，回合后痕迹行可点击展开并支持悬停预览、自动/手动折叠，上下文注入行同样折叠。"
+      },
+      "category": "ui-themes",
+      "stars": 2,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"
       }
     }
   ]

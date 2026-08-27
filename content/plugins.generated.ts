@@ -38655,6 +38655,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "yeyeyeyeshifu-dsh-result-only-view",
+    name: "dsh-result-only-view",
+    repoUrl: "https://github.com/YEYEYEYESHIFU/dsh-result-only-view",
+    repository: "YEYEYEYESHIFU/dsh-result-only-view",
+    description: {"en":"Results-only view toggle for the DSH Web GUI: folds thinking and tool-call process rows so conversations show only user messages and final replies, with live summary chips for running steps, a click-to-expand turn...","zh":"DSH Web 的「只看结果」开关：折叠思考与工具调用过程行，对话只留用户消息与最终回复；运行中显示实时摘要芯片，回合后痕迹行可点击展开并支持悬停预览、自动/手动折叠，上下文注入行同样折叠。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"},
+    stars: 2,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "yflmq001-dsh-cost-tracker",
     name: "dsh-cost-tracker",
     repoUrl: "https://github.com/yflmq001/dsh-cost-tracker",

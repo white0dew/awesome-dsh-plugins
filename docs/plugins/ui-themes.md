@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**47 catalog entries** · [Back to all categories](index.md)
+**48 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-spotlight](https://github.com/0xsline/dsh-spotlight)
 
@@ -371,6 +371,14 @@ Repository: `wuxjian/DSH-Desktop`
 A Tauri 2 and Vanilla TypeScript Windows desktop launcher that starts or embeds dsh web, checks and upgrades DSH, and provides a 3.03 MB Windows installer.
 
 Download: [Download for Windows](https://github.com/wuxjian/DSH-Desktop/releases/download/0.1.0/DSH-Desktop_0.1.0_x64-setup.exe)
+
+### [dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view)
+
+Repository: `YEYEYEYESHIFU/dsh-result-only-view`
+
+Results-only view toggle for the DSH Web GUI: folds thinking and tool-call process rows so conversations show only user messages and final replies, with live summary chips for running steps, a click-to-expand turn...
+
+Install: `dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view`
 
 ### [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)
 
