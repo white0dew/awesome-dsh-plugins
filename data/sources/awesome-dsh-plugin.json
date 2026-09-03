@@ -45,7 +45,7 @@
    },
    "install": "dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui",
    "added": "2026-08-13",
-   "stars": 252
+   "stars": 250
   },
   {
    "name": "deepseek-harness-tui",
@@ -58,7 +58,7 @@
    },
    "install": "dsh plugin --profile web add github:openma-ai/deepseek-harness-tui",
    "added": "2026-08-14",
-   "stars": 67
+   "stars": 69
   },
   {
    "name": "dsh-at-file",
@@ -71,7 +71,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-at-file",
    "added": "2026-08-13",
-   "stars": 500
+   "stars": 504
   },
   {
    "name": "ui-status-label",
@@ -97,7 +97,7 @@
    },
    "install": "dsh plugin --profile web add github:ZSeven-W/dsh-openpencil",
    "added": "2026-08-13",
-   "stars": 156
+   "stars": 161
   },
   {
    "name": "dsh-visualize",
@@ -110,7 +110,7 @@
    },
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-visualize",
    "added": "2026-08-13",
-   "stars": 238
+   "stars": 253
   },
   {
    "name": "dsh-side-panel",
@@ -149,7 +149,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-genui",
    "added": "2026-08-13",
-   "stars": 384
+   "stars": 393
   },
   {
    "name": "dsh-annotation",
@@ -162,7 +162,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-annotation",
    "added": "2026-08-13",
-   "stars": 105
+   "stars": 108
   },
   {
    "name": "dsh-navbar",
@@ -175,7 +175,7 @@
    },
    "install": "dsh plugin --profile web add github:vlln/dsh-navbar",
    "added": "2026-08-13",
-   "stars": 59
+   "stars": 57
   },
   {
    "name": "dsh-task-status",
@@ -214,7 +214,7 @@
    },
    "install": "dsh plugin --profile web add github:0xsline/dsh-spotlight",
    "added": "2026-08-13",
-   "stars": 19
+   "stars": 20
   },
   {
    "name": "dsh-101",
@@ -318,7 +318,7 @@
    },
    "install": "dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone",
    "added": "2026-08-13",
-   "stars": 24
+   "stars": 25
   },
   {
    "name": "dsh-balance-meter",
@@ -357,7 +357,7 @@
    },
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14",
-   "stars": 2758
+   "stars": 2791
   },
   {
    "name": "DSH-better-sidebar",
@@ -370,7 +370,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
    "added": "2026-08-14",
-   "stars": 3196
+   "stars": 3271
   },
   {
    "name": "dsh-sticky-disclosure",
@@ -396,7 +396,7 @@
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-turn-rewind",
    "added": "2026-08-13",
-   "stars": 108
+   "stars": 110
   },
   {
    "name": "dsh-crosstalk",
@@ -422,7 +422,7 @@
    },
    "install": "dsh plugin --profile web add github:LoserFox/distill",
    "added": "2026-08-13",
-   "stars": 24
+   "stars": 25
   },
   {
    "name": "dsh-share",
@@ -461,7 +461,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-mnemon",
    "added": "2026-08-13",
-   "stars": 306
+   "stars": 317
   },
   {
    "name": "dsh-mneme",
@@ -474,7 +474,7 @@
    },
    "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
    "added": "2026-08-14",
-   "stars": 68
+   "stars": 73
   },
   {
    "name": "nowledge-mem-deepseek-harness",
@@ -513,7 +513,7 @@
    },
    "install": "dsh plugin --profile web add github:Buyi-wsgzg/dsh-sidechain",
    "added": "2026-08-13",
-   "stars": 12
+   "stars": 14
   },
   {
    "name": "dsh-conversation-share",
@@ -565,7 +565,7 @@
    },
    "install": "dsh plugin --profile web add github:Nwflower/dsh-chat-import",
    "added": "2026-08-13",
-   "stars": 127
+   "stars": 132
   },
   {
    "name": "dsh-interconnect",
@@ -604,7 +604,7 @@
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-vision-toolkit",
    "added": "2026-08-13",
-   "stars": 847
+   "stars": 849
   },
   {
    "name": "dsh-custom-tool",
@@ -630,7 +630,7 @@
    },
    "install": "dsh plugin --profile web add github:Anionex/dsh-computer-use",
    "added": "2026-08-13",
-   "stars": 35
+   "stars": 36
   },
   {
    "name": "dsh-data-agent",
@@ -643,7 +643,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-data-agent",
    "added": "2026-08-13",
-   "stars": 186
+   "stars": 183
   },
   {
    "name": "dsh-toolkit",
@@ -669,7 +669,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv",
    "added": "2026-08-13",
-   "stars": 4
+   "stars": 5
   },
   {
    "name": "dsh-tool-calculator",
@@ -682,7 +682,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator",
    "added": "2026-08-13",
-   "stars": 8
+   "stars": 9
   },
   {
    "name": "dsh-tool-diff",
@@ -695,7 +695,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff",
    "added": "2026-08-13",
-   "stars": 4
+   "stars": 5
   },
   {
    "name": "dsh-tool-encoding",
@@ -708,7 +708,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding",
    "added": "2026-08-13",
-   "stars": 3
+   "stars": 4
   },
   {
    "name": "dsh-tool-json",
@@ -721,7 +721,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-json",
    "added": "2026-08-13",
-   "stars": 3
+   "stars": 4
   },
   {
    "name": "dsh-tool-markdown",
@@ -747,7 +747,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex",
    "added": "2026-08-13",
-   "stars": 3
+   "stars": 4
   },
   {
    "name": "dsh-tool-schema",
@@ -760,7 +760,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema",
    "added": "2026-08-13",
-   "stars": 3
+   "stars": 4
   },
   {
    "name": "dsh-tool-stat",
@@ -773,7 +773,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat",
    "added": "2026-08-13",
-   "stars": 6
+   "stars": 7
   },
   {
    "name": "dsh-tool-time",
@@ -786,7 +786,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-tool-time",
    "added": "2026-08-13",
-   "stars": 4
+   "stars": 5
   },
   {
    "name": "dsh-kb-sieve",
@@ -799,7 +799,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve",
    "added": "2026-08-13",
-   "stars": 2
+   "stars": 3
   },
   {
    "name": "dsh-plugin-mineru",
@@ -864,7 +864,7 @@
    },
    "install": "dsh plugin --profile web add github:THU-MAIC/dsh-openmaic",
    "added": "2026-08-13",
-   "stars": 39
+   "stars": 45
   },
   {
    "name": "dsh-scholar",
@@ -877,7 +877,7 @@
    },
    "install": "dsh plugin --profile web add github:lzszq/dsh-scholar",
    "added": "2026-08-13",
-   "stars": 28
+   "stars": 32
   },
   {
    "name": "dsh-apple-mode",
@@ -916,7 +916,7 @@
    },
    "install": "dsh plugin --profile web add github:zp-home/dsh-recommend",
    "added": "2026-08-14",
-   "stars": 19
+   "stars": 20
   },
   {
    "name": "modlens",
@@ -929,7 +929,7 @@
    },
    "install": "dsh plugin --profile web add github:liustack/modlens",
    "added": "2026-08-14",
-   "stars": 3818
+   "stars": 3843
   },
   {
    "name": "dsh-find-plugin",
@@ -942,7 +942,7 @@
    },
    "install": "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin",
    "added": "2026-08-14",
-   "stars": 108
+   "stars": 118
   },
   {
    "name": "dsh-code-intel",
@@ -955,7 +955,7 @@
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-code-intel",
    "added": "2026-08-14",
-   "stars": 1
+   "stars": 2
   },
   {
    "name": "dsh-subagent-tools",
@@ -1007,7 +1007,7 @@
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-docker",
    "added": "2026-08-14",
-   "stars": 1
+   "stars": 2
   },
   {
    "name": "dsh-excel-vera-plugin",
@@ -1033,7 +1033,7 @@
    },
    "install": "dsh plugin --profile web add github:icetomoyo/dsh_workflow",
    "added": "2026-08-13",
-   "stars": 112
+   "stars": 114
   },
   {
    "name": "dsh-agent-teams",
@@ -1046,7 +1046,7 @@
    },
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
    "added": "2026-08-13",
-   "stars": 1243
+   "stars": 1316
   },
   {
    "name": "dsh-automation",
@@ -1059,7 +1059,7 @@
    },
    "install": "dsh plugin --profile web add github:titanwings/dsh-automation",
    "added": "2026-08-13",
-   "stars": 85
+   "stars": 86
   },
   {
    "name": "dsh-routines",
@@ -1098,7 +1098,7 @@
    },
    "install": "dsh plugin --profile web add github:vlln/dsh-loop",
    "added": "2026-08-13",
-   "stars": 5
+   "stars": 6
   },
   {
    "name": "dsh-sentinel",
@@ -1163,7 +1163,7 @@
    },
    "install": "dsh plugin --profile web add github:btspoony/dsh-advisor",
    "added": "2026-08-13",
-   "stars": 19
+   "stars": 18
   },
   {
    "name": "dsh-specflow",
@@ -1202,7 +1202,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-notification",
    "added": "2026-08-13",
-   "stars": 78
+   "stars": 80
   },
   {
    "name": "dsh-acp-for-bitfun",
@@ -1280,7 +1280,7 @@
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-web-ui-notify",
    "added": "2026-08-13",
-   "stars": 23
+   "stars": 24
   },
   {
    "name": "dsh-webbridge",
@@ -1319,7 +1319,7 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/fabric",
    "added": "2026-08-13",
-   "stars": 18
+   "stars": 19
   },
   {
    "name": "dsh-git-identity",
@@ -1345,7 +1345,7 @@
    },
    "install": "dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor",
    "added": "2026-08-13",
-   "stars": 26
+   "stars": 28
   },
   {
    "name": "dsh-plugin-check",
@@ -1397,7 +1397,7 @@
    },
    "install": "dsh plugin --profile web add github:william-jin-cmu/dsh-evolve",
    "added": "2026-08-13",
-   "stars": 12
+   "stars": 13
   },
   {
    "name": "dsh-trace",
@@ -1566,7 +1566,7 @@
    },
    "install": "dsh plugin --profile web add github:BiBoyang/dsh-eval-harness",
    "added": "2026-08-14",
-   "stars": 13
+   "stars": 14
   },
   {
    "name": "oh-dsh",
@@ -1579,7 +1579,7 @@
    },
    "install": "dsh plugin --profile web add github:hust-open-atom-club/oh-dsh",
    "added": "2026-08-14",
-   "stars": 298
+   "stars": 300
   },
   {
    "name": "dsh-annotate",
@@ -1696,7 +1696,7 @@
    },
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-ads",
    "added": "2026-08-13",
-   "stars": 596
+   "stars": 601
   },
   {
    "name": "dsh-gomoku",
@@ -1735,7 +1735,7 @@
    },
    "install": "dsh plugin --profile web add github:hellodigua/dsh-emoji",
    "added": "2026-08-13",
-   "stars": 41
+   "stars": 42
   },
   {
    "name": "dsh-minigames",
@@ -1774,7 +1774,7 @@
    },
    "install": "dsh plugin --profile web add github:vlln/whale-girl",
    "added": "2026-08-13",
-   "stars": 301
+   "stars": 305
   },
   {
    "name": "deepseek-manners",
@@ -1839,7 +1839,7 @@
    },
    "install": "dsh plugin --profile web add github:dhicoc/dsh-reverse-skill",
    "added": "2026-08-15",
-   "stars": 102
+   "stars": 114
   },
   {
    "name": "Code2Skill",
