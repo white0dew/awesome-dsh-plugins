@@ -2,7 +2,7 @@
 
 Conversation history, context, persistence, and memory helpers.
 
-**934 catalog entries** · [Back to all categories](index.md)
+**935 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-project-memory](https://github.com/00080000/dsh-project-memory)
 
@@ -6323,6 +6323,14 @@ Repository: `weibaohui/dsh-plugin-scheduled-items`
 DeepSeek Harness plugin: cron-driven scheduled items with a full-page management UI. Each item carries a title, a prompt, and a croner expression; executions spawn a fresh agent session in a bound workspace (or the...
 
 Install: `dsh plugin --profile web add github:weibaohui/dsh-plugin-scheduled-items`
+
+### [hermes-loop](https://github.com/weibaohui/hermes-loop)
+
+Repository: `weibaohui/hermes-loop`
+
+Automatic post-conversation retrospective that distills useful experience into reusable skills for the skill library, with approval mode and skill-library governance (archive/restore, never deletes directly).
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add @weibaohui/hermes-loop`
 
 ### [dsh-conversation-density-map](https://github.com/weien666/dsh-conversation-density-map)
 

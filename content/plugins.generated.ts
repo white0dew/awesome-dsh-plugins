@@ -149279,6 +149279,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "weibaohui-hermes-loop",
+    name: "hermes-loop",
+    repoUrl: "https://github.com/weibaohui/hermes-loop",
+    repository: "weibaohui/hermes-loop",
+    description: {"en":"Automatic post-conversation retrospective that distills useful experience into reusable skills for the skill library, with approval mode and skill-library governance (archive/restore, never deletes directly).","zh":"自动复盘：对话收尾后自动把有价值的经验蒸馏成可复用技能存入技能库，支持信号加速触发、审批模式与技能库治理（归档/恢复，永不直接删除）。"},
+    category: "sessions-memory",
+    primaryAction: {"type":"copy-install","command":"npx @deepseek-ai/dsh plugin --profile web add @weibaohui/hermes-loop"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "weichi-ai-dshd",
     name: "dshd",
     repoUrl: "https://github.com/weichi-ai/dshd",

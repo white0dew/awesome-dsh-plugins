@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-27",
+  "updated": "2026-09-05",
   "records": [
     {
       "name": "dsh-outline",
@@ -111,6 +111,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"
+      }
+    },
+    {
+      "name": "hermes-loop",
+      "github": {
+        "repository": "weibaohui/hermes-loop",
+        "url": "https://github.com/weibaohui/hermes-loop",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Automatic post-conversation retrospective that distills useful experience into reusable skills for the skill library, with approval mode and skill-library governance (archive/restore, never deletes directly).",
+        "zh": "自动复盘：对话收尾后自动把有价值的经验蒸馏成可复用技能存入技能库，支持信号加速触发、审批模式与技能库治理（归档/恢复，永不直接删除）。"
+      },
+      "category": "sessions-memory",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "npx @deepseek-ai/dsh plugin --profile web add @weibaohui/hermes-loop"
       }
     }
   ]
