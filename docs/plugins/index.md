@@ -13,6 +13,6 @@ Browse the catalog by capability. Each category page lists every entry's origina
 | [Browser & Search](browser-search.md) | 238 | Browser control, web research, crawling, and search helpers. |
 | [MCP & Skills](mcp-skills.md) | 691 | Model Context Protocol servers, skills, and extensibility packages. |
 | [Multimodal & Vision](multimodal-vision.md) | 614 | Image, audio, video, OCR, and other multimodal capabilities. |
-| [Fun & Experiments](fun-experiments.md) | 90 | Playful, unusual, and exploratory community projects. |
+| [Fun & Experiments](fun-experiments.md) | 91 | Playful, unusual, and exploratory community projects. |
 
 [Back to Awesome DSH Plugins](../../README.md)

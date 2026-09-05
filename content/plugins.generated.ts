@@ -149279,6 +149279,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "weibaohui-dsh-xiuxian",
+    name: "dsh-xiuxian",
+    repoUrl: "https://github.com/weibaohui/dsh-xiuxian",
+    repository: "weibaohui/dsh-xiuxian",
+    description: {"en":"Xianxia desktop pets tied to live agent sessions: pixel-style companions appear as subagents spawn (up to 3 on screen), with storage-bag collection, a right-click artifact menu, a pet gallery, and Codex pet-format...","zh":"修仙陪伴桌宠：MC 像素风桌宠与 agent 会话实时联动，子代理启动时化身宠物现身（最多 3 只同屏），支持储物袋收藏、右键法宝菜单与图鉴选宠，可导出 Codex 桌宠格式。"},
+    category: "fun-experiments",
+    primaryAction: {"type":"copy-install","command":"npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-xiuxian"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "weichi-ai-dshd",
     name: "dshd",
     repoUrl: "https://github.com/weichi-ai/dshd",

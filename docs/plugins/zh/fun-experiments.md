@@ -2,7 +2,7 @@
 
 有趣、特别且具探索性的项目。
 
-**90 个目录条目** · [返回全部分类](index.md)
+**91 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-ima-plugin](https://github.com/ABccgh/dsh-ima-plugin)
 
@@ -619,6 +619,14 @@ Repository: `wanghaonan3333-web/dsh-idea-jar`
 A floating, persistent creative idea jar for DeepSeek Harness Web.
 
 Install: `dsh plugin --profile web add github:wanghaonan3333-web/dsh-idea-jar`
+
+### [dsh-xiuxian](https://github.com/weibaohui/dsh-xiuxian)
+
+Repository: `weibaohui/dsh-xiuxian`
+
+修仙陪伴桌宠：MC 像素风桌宠与 agent 会话实时联动，子代理启动时化身宠物现身（最多 3 只同屏），支持储物袋收藏、右键法宝菜单与图鉴选宠，可导出 Codex 桌宠格式。
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-xiuxian`
 
 ### [dsh-guandan](https://github.com/wenbobodley/dsh-guandan)
 

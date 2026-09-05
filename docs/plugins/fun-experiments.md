@@ -2,7 +2,7 @@
 
 Playful, unusual, and exploratory community projects.
 
-**90 catalog entries** · [Back to all categories](index.md)
+**91 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-ima-plugin](https://github.com/ABccgh/dsh-ima-plugin)
 
@@ -619,6 +619,14 @@ Repository: `wanghaonan3333-web/dsh-idea-jar`
 A floating, persistent creative idea jar for DeepSeek Harness Web.
 
 Install: `dsh plugin --profile web add github:wanghaonan3333-web/dsh-idea-jar`
+
+### [dsh-xiuxian](https://github.com/weibaohui/dsh-xiuxian)
+
+Repository: `weibaohui/dsh-xiuxian`
+
+Xianxia desktop pets tied to live agent sessions: pixel-style companions appear as subagents spawn (up to 3 on screen), with storage-bag collection, a right-click artifact menu, a pet gallery, and Codex pet-format...
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-xiuxian`
 
 ### [dsh-guandan](https://github.com/wenbobodley/dsh-guandan)
 

@@ -28,11 +28,11 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [Browser & Search](docs/plugins/browser-search.md) | 238 |
 | [MCP & Skills](docs/plugins/mcp-skills.md) | 691 |
 | [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 614 |
-| [Fun & Experiments](docs/plugins/fun-experiments.md) | 90 |
+| [Fun & Experiments](docs/plugins/fun-experiments.md) | 91 |
 
 ## Independence
 
-This directory lists 10771 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
+This directory lists 10772 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 

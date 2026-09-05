@@ -28,11 +28,11 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [浏览器与搜索](docs/plugins/zh/browser-search.md) | 238 |
 | [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 691 |
 | [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 614 |
-| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 90 |
+| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 91 |
 
 ## 独立说明
 
-本目录收录 10771 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 10772 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 

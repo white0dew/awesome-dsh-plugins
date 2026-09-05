@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-27",
+  "updated": "2026-09-05",
   "records": [
     {
       "name": "dsh-outline",
@@ -111,6 +111,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"
+      }
+    },
+    {
+      "name": "dsh-xiuxian",
+      "github": {
+        "repository": "weibaohui/dsh-xiuxian",
+        "url": "https://github.com/weibaohui/dsh-xiuxian",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Xianxia desktop pets tied to live agent sessions: pixel-style companions appear as subagents spawn (up to 3 on screen), with storage-bag collection, a right-click artifact menu, a pet gallery, and Codex pet-format export.",
+        "zh": "修仙陪伴桌宠：MC 像素风桌宠与 agent 会话实时联动，子代理启动时化身宠物现身（最多 3 只同屏），支持储物袋收藏、右键法宝菜单与图鉴选宠，可导出 Codex 桌宠格式。"
+      },
+      "category": "fun-experiments",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-xiuxian"
       }
     }
   ]
