@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-27",
+  "updated": "2026-09-05",
   "records": [
     {
       "name": "dsh-outline",
@@ -111,6 +111,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"
+      }
+    },
+    {
+      "name": "dsh-continue",
+      "github": {
+        "repository": "weibaohui/dsh-continue",
+        "url": "https://github.com/weibaohui/dsh-continue",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Auto-resume for interrupted agent sessions: an ordered rule table routes by failure type (rate limit, quota, auth, context overflow, crashed orphan) into backoff retry, model switch, resume after compaction, or stop-loss notification, with a visual rule editor and activity log.",
+        "zh": "自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由到退避重试、换模型、压缩上下文后继续或止损通知，规则可视化编辑，全程活动日志。"
+      },
+      "category": "workflow-agents",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-continue"
       }
     }
   ]

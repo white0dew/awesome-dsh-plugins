@@ -149263,6 +149263,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "weibaohui-dsh-continue",
+    name: "dsh-continue",
+    repoUrl: "https://github.com/weibaohui/dsh-continue",
+    repository: "weibaohui/dsh-continue",
+    description: {"en":"Auto-resume for interrupted agent sessions: an ordered rule table routes by failure type (rate limit, quota, auth, context overflow, crashed orphan) into backoff retry, model switch, resume after compaction, or...","zh":"自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由到退避重试、换模型、压缩上下文后继续或止损通知，规则可视化编辑，全程活动日志。"},
+    category: "workflow-agents",
+    primaryAction: {"type":"copy-install","command":"npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-continue"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "weibaohui-dsh-plugin-scheduled-items",
     name: "dsh-plugin-scheduled-items",
     repoUrl: "https://github.com/weibaohui/dsh-plugin-scheduled-items",

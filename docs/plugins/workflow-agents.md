@@ -2,7 +2,7 @@
 
 Automation, orchestration, prompts, and agent workflows.
 
-**761 catalog entries** · [Back to all categories](index.md)
+**762 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-prompt-boost](https://github.com/060625dfy/dsh-prompt-boost)
 
@@ -5235,6 +5235,14 @@ Repository: `Web0926/dsh-llm-verifier`
 DeepSeek Harness plugin that validates and ranks 3/5 independent coding-agent patches before approval-gated apply.
 
 Install: `dsh plugin --profile web add github:Web0926/dsh-llm-verifier`
+
+### [dsh-continue](https://github.com/weibaohui/dsh-continue)
+
+Repository: `weibaohui/dsh-continue`
+
+Auto-resume for interrupted agent sessions: an ordered rule table routes by failure type (rate limit, quota, auth, context overflow, crashed orphan) into backoff retry, model switch, resume after compaction, or...
+
+Install: `npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-continue`
 
 ### [dsh-product-delivery-workflow](https://github.com/wellorbetter/dsh-product-delivery-workflow)
 
