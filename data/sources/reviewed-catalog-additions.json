@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-08-27",
+  "updated": "2026-09-05",
   "records": [
     {
       "name": "dsh-outline",
@@ -111,6 +111,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:YEYEYEYESHIFU/dsh-result-only-view"
+      }
+    },
+    {
+      "name": "dsh-settings-ui",
+      "github": {
+        "repository": "weibaohui/dsh-settings-ui",
+        "url": "https://github.com/weibaohui/dsh-settings-ui",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Customizes the DSH native settings window: preset or custom sizes, fullscreen, background transparency, and theme, solid-color, or image backgrounds, with a floating ball for quick access; saved in the local browser.",
+        "zh": "设置界面自定义：调整原生设置窗口大小（全屏/预置/自定义宽高）、背景透明度与背景（主题/颜色/图片），悬浮球即开即调，存本机浏览器。"
+      },
+      "category": "ui-themes",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-settings-ui"
       }
     }
   ]

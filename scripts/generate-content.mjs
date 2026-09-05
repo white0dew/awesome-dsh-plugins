@@ -404,8 +404,8 @@ function normalizeReviewedAdditions(snapshot, seenRepositories) {
   if (!Array.isArray(records)) {
     fail("reviewed-catalog-additions.json does not have a records array");
   }
-  if (records.length !== 6) {
-    fail(`expected 6 reviewed catalog additions, found ${records.length}`);
+  if (records.length !== 7) {
+    fail(`expected 7 reviewed catalog additions, found ${records.length}`);
   }
 
   return records.map((record, index) => {
@@ -675,7 +675,7 @@ const normalizedPlugins = [
   ...normalizeUpstreamAwesomeDeepseekHarness(upstreamAwesomeDeepseekHarnessSnapshot, seenRepositories),
 ].sort(compareRepositories);
 
-const expectedPluginCount = 8556 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
+const expectedPluginCount = 8557 + upstreamAwesomeDeepseekHarnessSnapshot.records.length;
 if (normalizedPlugins.length !== expectedPluginCount) {
   fail(`expected exactly ${expectedPluginCount} unique repositories after deduplication, found ${normalizedPlugins.length}`);
 }

@@ -19,7 +19,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 | 分类 | 条目数 |
 | --- | ---: |
-| [界面与主题](docs/plugins/zh/ui-themes.md) | 286 |
+| [界面与主题](docs/plugins/zh/ui-themes.md) | 287 |
 | [会话与记忆](docs/plugins/zh/sessions-memory.md) | 934 |
 | [工具与能力](docs/plugins/zh/tools-capabilities.md) | 4433 |
 | [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 761 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## 独立说明
 
-本目录收录 10771 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 10772 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 

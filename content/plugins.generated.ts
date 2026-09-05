@@ -149279,6 +149279,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "weibaohui-dsh-settings-ui",
+    name: "dsh-settings-ui",
+    repoUrl: "https://github.com/weibaohui/dsh-settings-ui",
+    repository: "weibaohui/dsh-settings-ui",
+    description: {"en":"Customizes the DSH native settings window: preset or custom sizes, fullscreen, background transparency, and theme, solid-color, or image backgrounds, with a floating ball for quick access; saved in the local browser.","zh":"设置界面自定义：调整原生设置窗口大小（全屏/预置/自定义宽高）、背景透明度与背景（主题/颜色/图片），悬浮球即开即调，存本机浏览器。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"npx @deepseek-ai/dsh plugin --profile web add @weibaohui/dsh-settings-ui"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "weichi-ai-dshd",
     name: "dshd",
     repoUrl: "https://github.com/weichi-ai/dshd",
