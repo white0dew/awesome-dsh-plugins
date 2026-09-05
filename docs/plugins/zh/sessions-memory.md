@@ -2,7 +2,7 @@
 
 对话历史、上下文、持久化与记忆辅助工具。
 
-**934 个目录条目** · [返回全部分类](index.md)
+**935 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-project-memory](https://github.com/00080000/dsh-project-memory)
 
@@ -6323,6 +6323,14 @@ Repository: `weibaohui/dsh-plugin-scheduled-items`
 DeepSeek Harness plugin: cron-driven scheduled items with a full-page management UI. Each item carries a title, a prompt, and a croner expression; executions spawn a fresh agent session in a bound workspace (or the...
 
 Install: `dsh plugin --profile web add github:weibaohui/dsh-plugin-scheduled-items`
+
+### [hermes-loop](https://github.com/weibaohui/hermes-loop)
+
+Repository: `weibaohui/hermes-loop`
+
+自动复盘：会话收尾后自动把有价值经验蒸馏成可复用技能存入技能库，支持审批模式与归档/恢复治理，不直接删除技能。
+
+Install: `dsh plugin --profile web add github:weibaohui/hermes-loop`
 
 ### [dsh-conversation-density-map](https://github.com/weien666/dsh-conversation-density-map)
 

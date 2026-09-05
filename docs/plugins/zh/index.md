@@ -4,15 +4,15 @@
 
 | 分类 | 条目数 | 内容 |
 | --- | ---: | --- |
-| [界面与主题](ui-themes.md) | 286 | 界面、终端客户端、主题和展示体验增强。 |
-| [会话与记忆](sessions-memory.md) | 934 | 对话历史、上下文、持久化与记忆辅助工具。 |
+| [界面与主题](ui-themes.md) | 287 | 界面、终端客户端、主题和展示体验增强。 |
+| [会话与记忆](sessions-memory.md) | 935 | 对话历史、上下文、持久化与记忆辅助工具。 |
 | [工具与能力](tools-capabilities.md) | 4433 | 面向日常工作的实用工具和能力扩展。 |
-| [工作流与智能体](workflow-agents.md) | 761 | 自动化、编排、提示词与智能体工作流。 |
+| [工作流与智能体](workflow-agents.md) | 762 | 自动化、编排、提示词与智能体工作流。 |
 | [通知与集成](notifications-integrations.md) | 285 | 消息、通知以及外部服务连接。 |
 | [开发与运行时](development-runtime.md) | 2439 | 开发工具、Shell、容器、测试与运行时支持。 |
 | [浏览器与搜索](browser-search.md) | 238 | 浏览器控制、网页研究、抓取和搜索辅助工具。 |
 | [MCP 与技能](mcp-skills.md) | 691 | Model Context Protocol 服务、技能与扩展包。 |
 | [多模态与视觉](multimodal-vision.md) | 614 | 图像、音频、视频、OCR 与其他多模态能力。 |
-| [趣味与实验](fun-experiments.md) | 90 | 有趣、特别且具探索性的项目。 |
+| [趣味与实验](fun-experiments.md) | 91 | 有趣、特别且具探索性的项目。 |
 
 [返回 Awesome DSH Plugins](../../../README.zh-CN.md)

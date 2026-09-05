@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**286 个目录条目** · [返回全部分类](index.md)
+**287 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -1939,6 +1939,14 @@ Repository: `watericetangcw/dsh-page-preview`
 A Cordis plugin that enables DeepSeek Harness to proactively preview and display web pages.
 
 Install: `dsh plugin --profile web add github:watericetangcw/dsh-page-preview`
+
+### [dsh-settings-ui](https://github.com/weibaohui/dsh-settings-ui)
+
+Repository: `weibaohui/dsh-settings-ui`
+
+设置界面自定义：调整原生设置窗口大小（全屏/预置/自定义宽高）、背景透明度与背景（主题/颜色/图片），悬浮球即开即调，配置存本机浏览器。
+
+Install: `dsh plugin --profile web add github:weibaohui/dsh-settings-ui`
 
 ### [dsh-opencode-go-pool](https://github.com/whitelonng/dsh-opencode-go-pool)
 

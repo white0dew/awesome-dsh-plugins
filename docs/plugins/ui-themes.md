@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**286 catalog entries** · [Back to all categories](index.md)
+**287 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -1939,6 +1939,14 @@ Repository: `watericetangcw/dsh-page-preview`
 A Cordis plugin that enables DeepSeek Harness to proactively preview and display web pages.
 
 Install: `dsh plugin --profile web add github:watericetangcw/dsh-page-preview`
+
+### [dsh-settings-ui](https://github.com/weibaohui/dsh-settings-ui)
+
+Repository: `weibaohui/dsh-settings-ui`
+
+Customizes the native DSH settings window: preset or custom sizes, fullscreen, background transparency and backgrounds (theme, color, or image), with a floating ball for quick access; saved in the local browser.
+
+Install: `dsh plugin --profile web add github:weibaohui/dsh-settings-ui`
 
 ### [dsh-opencode-go-pool](https://github.com/whitelonng/dsh-opencode-go-pool)
 

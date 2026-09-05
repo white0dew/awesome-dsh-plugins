@@ -2,7 +2,7 @@
 
 自动化、编排、提示词与智能体工作流。
 
-**761 个目录条目** · [返回全部分类](index.md)
+**762 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-prompt-boost](https://github.com/060625dfy/dsh-prompt-boost)
 
@@ -5235,6 +5235,14 @@ Repository: `Web0926/dsh-llm-verifier`
 DeepSeek Harness plugin that validates and ranks 3/5 independent coding-agent patches before approval-gated apply.
 
 Install: `dsh plugin --profile web add github:Web0926/dsh-llm-verifier`
+
+### [dsh-continue](https://github.com/weibaohui/dsh-continue)
+
+Repository: `weibaohui/dsh-continue`
+
+自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由到退避重试、换模型、压缩上下文后继续或止损通知。
+
+Install: `dsh plugin --profile web add github:weibaohui/dsh-continue`
 
 ### [dsh-product-delivery-workflow](https://github.com/wellorbetter/dsh-product-delivery-workflow)
 
