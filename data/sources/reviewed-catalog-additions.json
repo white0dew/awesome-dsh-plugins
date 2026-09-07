@@ -71,7 +71,7 @@
         "zh": "增强 DSH @ 菜单，统一引用命令、Skills、文件、DSH 会话与外部 Chatbot 平台对话。"
       },
       "category": "ui-themes",
-      "stars": 12,
+      "stars": 13,
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add dsh-reference-anything"
@@ -143,7 +143,7 @@
         "zh": "自动复盘：会话收尾后自动把有价值经验蒸馏成可复用技能存入技能库，支持审批模式与归档/恢复治理，不直接删除技能。"
       },
       "category": "sessions-memory",
-      "stars": 0,
+      "stars": 1,
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:weibaohui/hermes-loop"
