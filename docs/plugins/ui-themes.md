@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**287 catalog entries** · [Back to all categories](index.md)
+**288 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -827,6 +827,14 @@ Repository: `hunter118/dsh-s7r`
 A System 7-inspired desktop interface for DeepSeek Harness (DSH)
 
 Install: `dsh plugin --profile web add github:hunter118/dsh-s7r`
+
+### [dsh-remote-dsh](https://github.com/hutao562/dsh-remote-dsh)
+
+Repository: `hutao562/dsh-remote-dsh`
+
+Adds a row at the top of the sidebar that switches the whole Web GUI to another DSH host reached over a loopback port, with that host's session state on the row (running, unread activity, or waiting for your answer).
+
+Install: `dsh plugin --profile web add github:hutao562/dsh-remote-dsh`
 
 ### [dsh-columbina-theme](https://github.com/hyposelen1a/dsh-columbina-theme)
 

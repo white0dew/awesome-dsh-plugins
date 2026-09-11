@@ -55487,6 +55487,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "hutao562-dsh-remote-dsh",
+    name: "dsh-remote-dsh",
+    repoUrl: "https://github.com/hutao562/dsh-remote-dsh",
+    repository: "hutao562/dsh-remote-dsh",
+    description: {"en":"Adds a row at the top of the sidebar that switches the whole Web GUI to another DSH host reached over a loopback port, with that host's session state on the row (running, unread activity, or waiting for your answer).","zh":"在侧边栏顶部加一行，点击后整页切换成另一台 DSH 主机的 Web GUI（通过回环端口访问），并在该行显示那台主机的会话状态（运行中、有新活动、正等你回答）。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hutao562/dsh-remote-dsh"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "huxint-dsh-team",
     name: "dsh-team",
     repoUrl: "https://github.com/huxint/dsh-team",
