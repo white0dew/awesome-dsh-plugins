@@ -21,14 +21,14 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | --- | ---: |
 | [界面与主题](docs/plugins/zh/ui-themes.md) | 287 |
 | [会话与记忆](docs/plugins/zh/sessions-memory.md) | 935 |
-| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 4433 |
-| [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 762 |
-| [通知与集成](docs/plugins/zh/notifications-integrations.md) | 285 |
-| [开发与运行时](docs/plugins/zh/development-runtime.md) | 2439 |
+| [工具与能力](docs/plugins/zh/tools-capabilities.md) | 4439 |
+| [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 761 |
+| [通知与集成](docs/plugins/zh/notifications-integrations.md) | 282 |
+| [开发与运行时](docs/plugins/zh/development-runtime.md) | 2441 |
 | [浏览器与搜索](docs/plugins/zh/browser-search.md) | 238 |
-| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 691 |
+| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 688 |
 | [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 614 |
-| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 91 |
+| [趣味与实验](docs/plugins/zh/fun-experiments.md) | 90 |
 
 ## 独立说明
 

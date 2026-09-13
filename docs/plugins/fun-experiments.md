@@ -2,7 +2,7 @@
 
 Playful, unusual, and exploratory community projects.
 
-**91 catalog entries** · [Back to all categories](index.md)
+**90 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-ima-plugin](https://github.com/ABccgh/dsh-ima-plugin)
 
@@ -419,14 +419,6 @@ Repository: `pengpengyi92/dsh-quant-ui`
 Jane Street-style quant workbench for dsh-quant - K-lines, equity curves, fund simulation cards, metric selector (Lightweight Charts)
 
 Install: `dsh plugin --profile web add github:pengpengyi92/dsh-quant-ui`
-
-### [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research)
-
-Repository: `PerryLink/dsh-fund-research`
-
-DeepSeek Harness plugin: deterministic research reports for Chinese public mutual funds
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-fund-research`
 
 ### [moyu_games](https://github.com/pwping/moyu_games)
 

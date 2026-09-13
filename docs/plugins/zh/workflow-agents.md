@@ -2,7 +2,7 @@
 
 自动化、编排、提示词与智能体工作流。
 
-**762 个目录条目** · [返回全部分类](index.md)
+**761 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-prompt-boost](https://github.com/060625dfy/dsh-prompt-boost)
 
@@ -4060,21 +4060,13 @@ Automatic Flash/Pro routing for DeepSeek Harness subagent calls: light tasks go 
 
 Install: `dsh plugin --profile web add github:penguin-oo/dsh-delegate-router`
 
-### [dsh-defend](https://github.com/PerryLink/dsh-defend)
+### [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research)
 
-Repository: `PerryLink/dsh-defend`
+Repository: `PerryLink/dsh-fund-research`
 
-Prompt-injection, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events
+DeepSeek Harness plugin: deterministic research pipeline for Chinese public mutual funds - collects fund data from public sites (Tiantian Fund, Eastmoney), computes deterministic metrics (manager profile, holdings...
 
-Install: `dsh plugin --profile web add github:PerryLink/dsh-defend`
-
-### [dsh-observe](https://github.com/PerryLink/dsh-observe)
-
-Repository: `PerryLink/dsh-observe`
-
-OpenTelemetry and Langfuse observability exporter for DeepSeek Harness: turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with backoff
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-observe`
+Install: `dsh plugin --profile web add github:PerryLink/dsh-fund-research`
 
 ### [dsh-prompt-optimize](https://github.com/peterliucius/dsh-prompt-optimize)
 
