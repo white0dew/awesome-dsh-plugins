@@ -4660,14 +4660,6 @@ Interactive long-session background agents for DeepSeek Harness: start a durable
 
 Install: `dsh plugin --profile web add github:perrylink/dsh-background-agents`
 
-### [dsh-budget](https://github.com/PerryLink/dsh-budget)
-
-Repository: `PerryLink/dsh-budget`
-
-Cost governance for DeepSeek Harness: aggregated token/cost metering per model, session and day, budget caps with threshold alerts and over-limit policies, carbon footprint estimation, per-model latency benchmarks, a...
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-budget`
-
 ### [dsh-checkpoint-rewind](https://github.com/perrylink/dsh-checkpoint-rewind)
 
 Repository: `perrylink/dsh-checkpoint-rewind`
@@ -4675,6 +4667,14 @@ Repository: `perrylink/dsh-checkpoint-rewind`
 Claude Code /rewind for DeepSeek Harness - git-first workspace snapshots before every mutation, turn-boundary session forks, one-shot /rewind restore. A dsh-plugin capability seam.
 
 Install: `dsh plugin --profile web add github:perrylink/dsh-checkpoint-rewind`
+
+### [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)
+
+Repository: `PerryLink/dsh-claude-move`
+
+Four-origin migration wizard for DeepSeek Harness: moves Claude Code, Codex, OpenCode and Hermes sessions, memories, instructions and slash commands into DSH as resumable sessions (/move wizard, approval-gated,...
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-claude-move`
 
 ### [dsh-memento](https://github.com/PerryLink/dsh-memento)
 

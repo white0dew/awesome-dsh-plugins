@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-09-05",
+  "updated": "2026-09-14",
   "records": [
     {
       "name": "dsh-outline",
@@ -183,6 +183,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:weibaohui/dsh-settings-ui"
+      }
+    },
+    {
+      "name": "dsh-remote-dsh",
+      "github": {
+        "repository": "hutao562/dsh-remote-dsh",
+        "url": "https://github.com/hutao562/dsh-remote-dsh",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Adds a row at the top of the sidebar that turns the whole page into another host's DSH Web GUI reached over a loopback port (ssh -L, or frpc stcp/xtcp), with a state dot showing whether that remote is running, has new activity, or is waiting for you.",
+        "zh": "在侧边栏顶部加一行「远程」，点击后整页切换成另一台主机的 DSH Web GUI（经回环端口访问，如 ssh -L 或 frpc stcp/xtcp），该行显示对端状态：运行中、有新活动或正在等待你回答。"
+      },
+      "category": "ui-themes",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:hutao562/dsh-remote-dsh"
       }
     }
   ]

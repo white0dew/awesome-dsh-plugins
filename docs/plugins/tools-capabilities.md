@@ -2,7 +2,7 @@
 
 Focused utilities and capability extensions for everyday work.
 
-**4433 catalog entries** · [Back to all categories](index.md)
+**4439 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-foxy-jumpscare](https://github.com/01Virex/dsh-foxy-jumpscare)
 
@@ -16532,6 +16532,14 @@ DeepSeek Harness (DSH) 待办事项插件：从对话中识别关键事项--自�
 
 Install: `dsh plugin --profile web add github:perry-ai/dsh-todo-list`
 
+### [dsh-budget](https://github.com/PerryLink/dsh-budget)
+
+Repository: `PerryLink/dsh-budget`
+
+Cost governance for DeepSeek Harness: aggregated token/cost metering per model and day, budget caps with threshold alerts and over-limit policies, carbon footprint estimation, per-model latency benchmarks, a Settings...
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-budget`
+
 ### [dsh-click](https://github.com/PerryLink/dsh-click)
 
 Repository: `PerryLink/dsh-click`
@@ -16548,6 +16556,14 @@ DeepSeek Harness plugin: deterministic data profiling, cleaning, and verificatio
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-data-quality`
 
+### [dsh-defend](https://github.com/PerryLink/dsh-defend)
+
+Repository: `PerryLink/dsh-defend`
+
+Injection-attack, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-defend`
+
 ### [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck)
 
 Repository: `PerryLink/dsh-doublecheck`
@@ -16556,13 +16572,45 @@ Double-check before you ship: grill the requirements, test the implementation, p
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-doublecheck`
 
+### [dsh-fast](https://github.com/PerryLink/dsh-fast)
+
+Repository: `PerryLink/dsh-fast`
+
+Read-only performance diagnostics for DeepSeek Harness: load/restore timing, spill-hit counts, compaction count and trigger, context-injection volume, and LLM cache hit rate - surfaced via /fast and the fastreport tool.
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-fast`
+
+### [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research)
+
+Repository: `PerryLink/dsh-industry-research`
+
+Industry and company research domain pack for DeepSeek Harness: research methodologies, an industry-chain structure model, policy/news tracking, company scan cards, and auditable research reports. Research only - not...
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-industry-research`
+
 ### [dsh-kit](https://github.com/PerryLink/dsh-kit)
 
 Repository: `PerryLink/dsh-kit`
 
-One-command starter pack: install all 33 PerryLink DeepSeek Harness plugins
+One-command starter pack for DeepSeek Harness: install-all.sh / install-all.ps1 install the PerryLink plugin family into one profile; the scripts are idempotent and safe to re-run.
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-kit`
+
+### [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai)
+
+Repository: `PerryLink/dsh-local-ai`
+
+Local-model (Ollama) support for DeepSeek Harness: discover, pull, remove, and inspect local models, route requests by task type or keyword with automatic fallback to the cloud, plus a /ollama status overview.
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-local-ai`
+
+### [dsh-mask](https://github.com/PerryLink/dsh-mask)
+
+Repository: `PerryLink/dsh-mask`
+
+PII masking middleware for DeepSeek Harness: anonymizes contact identifiers (names, phones, addresses, ID cards, bank cards, keys) to placeholders before they reach the model, and exposes /mask and the masktest tool.
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-mask`
 
 ### [dsh-research-report](https://github.com/PerryLink/dsh-research-report)
 

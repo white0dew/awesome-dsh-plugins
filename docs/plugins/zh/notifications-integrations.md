@@ -2,7 +2,7 @@
 
 消息、通知以及外部服务连接。
 
-**285 个目录条目** · [返回全部分类](index.md)
+**282 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-discord-richpresence](https://github.com/0QwQ0/dsh-discord-richpresence)
 
@@ -1507,30 +1507,6 @@ Repository: `pany0593/dsh-ui-notifications`
 System notifications for the DeepSeek Harness web GUI - OS-level popups for finished turns and pending interactions (approvals, questions, plan reviews). · DSH Web 界面系统通知：回合结束、待处理授权/提问/计划审核时弹出系统级提醒。
 
 Install: `dsh plugin --profile web add github:pany0593/dsh-ui-notifications`
-
-### [dsh-github](https://github.com/PerryLink/dsh-github)
-
-Repository: `PerryLink/dsh-github`
-
-GitHub integration for DeepSeek Harness: create PRs, review PRs in background jobs, read issues - every write gated by human approval
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-github`
-
-### [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai)
-
-Repository: `PerryLink/dsh-local-ai`
-
-Local-model (Ollama) integration for DeepSeek Harness: discover, pull, remove, and inspect local models, route requests to them by task type or keyword with automatic fallback to the cloud, and get a one-shot status...
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-local-ai`
-
-### [dsh-mask](https://github.com/PerryLink/dsh-mask)
-
-Repository: `PerryLink/dsh-mask`
-
-PII masking middleware for DeepSeek Harness: anonymize names, phones, emails, ID cards, bank cards, keys, and addresses to placeholders before they reach the model, restore them at the display layer, keep the restore...
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-mask`
 
 ### [dsh-pi-kit](https://github.com/Pidreamleaves/dsh-pi-kit)
 

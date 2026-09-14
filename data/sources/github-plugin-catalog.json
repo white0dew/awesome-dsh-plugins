@@ -1460,7 +1460,7 @@
     {
       "fullName": "PerryLink/dsh-claude-move",
       "url": "https://github.com/PerryLink/dsh-claude-move",
-      "description": "DeepSeek Harness (dsh) plugin: migrate Claude Code sessions, memory, skills and CLAUDE.md into DSH with seamless resume (claude_scan / import_claude / resume-claude / web panel)",
+      "description": "Four-source migration wizard for DeepSeek Harness: moves Claude Code, Codex, OpenCode and Hermes sessions, memories, instructions and slash commands into DSH as resumable sessions (/move wizard, approval-gated, idempotent).",
       "stars": 16,
       "pushedAt": "2026-08-13T19:25:13Z",
       "license": "Apache-2.0",
@@ -4148,7 +4148,7 @@
     {
       "fullName": "PerryLink/dsh-github",
       "url": "https://github.com/PerryLink/dsh-github",
-      "description": "GitHub integration for DeepSeek Harness: create PRs, review PRs in background jobs, read issues - every write gated by human approval",
+      "description": "GitHub CI and PR tooling for DeepSeek Harness: composite action.yml, PR review bot with idempotent inline comments and a status-check gate, plus approval-gated PR/issue/repo/file tools for git workflows.",
       "stars": 6,
       "pushedAt": "2026-08-13T19:24:43Z",
       "license": "Apache-2.0",
@@ -4722,7 +4722,7 @@
     {
       "fullName": "PerryLink/dsh-industry-research",
       "url": "https://github.com/PerryLink/dsh-industry-research",
-      "description": "Industry and company research domain pack for DeepSeek Harness: methodology skills, industry chain mapping, public-source policy/news tracking, company research cards, and auditable research reports. Research only - not investment advice.",
+      "description": "Industry and company research domain pack for DeepSeek Harness: research methodologies, an industry-chain structure model, policy/news tracking, company scan cards, and auditable research reports. Research only - not investment advice.",
       "stars": 64,
       "pushedAt": "2026-08-26T14:47:27Z",
       "license": "Apache-2.0",
@@ -7830,7 +7830,7 @@
     {
       "fullName": "PerryLink/dsh-fund-research",
       "url": "https://github.com/PerryLink/dsh-fund-research",
-      "description": "DeepSeek Harness plugin: deterministic research reports for Chinese public mutual funds",
+      "description": "DeepSeek Harness plugin: deterministic research pipeline for Chinese public mutual funds - collects fund data from public sites (Tiantian Fund, Eastmoney), computes deterministic metrics (manager profile, holdings penetration, style attribution, performance decomposition), and seals versioned Markdown reports with hashed data snapshots. Research only - not investment advice.",
       "stars": 25,
       "pushedAt": "2026-08-26T14:58:15Z",
       "license": "Apache-2.0",
@@ -10952,7 +10952,7 @@
     {
       "fullName": "PerryLink/dsh-defend",
       "url": "https://github.com/PerryLink/dsh-defend",
-      "description": "Prompt-injection, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events",
+      "description": "Injection-attack, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events",
       "stars": 6,
       "pushedAt": "2026-08-26T14:38:57Z",
       "license": "Apache-2.0",
@@ -17420,7 +17420,7 @@
     {
       "fullName": "PerryLink/dsh-library",
       "url": "https://github.com/PerryLink/dsh-library",
-      "description": "Local document knowledge base for DeepSeek Harness: library_add/remove/list, hybrid semantic+keyword library_search with diversity re-ranking, relevance filtering and lost-in-the-middle avoidance, citation-aware injection, library_cite_check and library_diagnose — SQLite-backed index via the storage domain, local embedding, zero model downloads.",
+      "description": "Local document knowledge base for DeepSeek Harness: library_add/remove/list, hybrid semantic+keyword library_search, citation-aware injection, and library_cite_check - SQLite-backed index with local embedding.",
       "stars": 7,
       "pushedAt": "2026-08-27T11:49:38Z",
       "license": "Apache-2.0",
@@ -17434,7 +17434,7 @@
     {
       "fullName": "PerryLink/dsh-local-ai",
       "url": "https://github.com/PerryLink/dsh-local-ai",
-      "description": "Local-model (Ollama) integration for DeepSeek Harness: discover, pull, remove, and inspect local models, route requests to them by task type or keyword with automatic fallback to the cloud, and get a one-shot status overview via /ollama.",
+      "description": "Local-model (Ollama) support for DeepSeek Harness: discover, pull, remove, and inspect local models, route requests by task type or keyword with automatic fallback to the cloud, plus a /ollama status overview.",
       "stars": 6,
       "pushedAt": "2026-08-26T14:58:37Z",
       "license": "Apache-2.0",
@@ -17448,7 +17448,7 @@
     {
       "fullName": "PerryLink/dsh-mask",
       "url": "https://github.com/PerryLink/dsh-mask",
-      "description": "PII masking middleware for DeepSeek Harness: anonymize names, phones, emails, ID cards, bank cards, keys, and addresses to placeholders before they reach the model, restore them at the display layer, keep the restore table only in memory and a controlled storage domain, never log plaintext, and expose /mask and the mask_test tool",
+      "description": "PII masking middleware for DeepSeek Harness: anonymizes contact identifiers (names, phones, addresses, ID cards, bank cards, keys) to placeholders before they reach the model, and exposes /mask and the mask_test tool.",
       "stars": 6,
       "pushedAt": "2026-08-26T14:50:38Z",
       "license": "Apache-2.0",
@@ -32302,7 +32302,7 @@
     {
       "fullName": "PerryLink/dsh-fast",
       "url": "https://github.com/PerryLink/dsh-fast",
-      "description": "Read-only performance diagnostics for DeepSeek Harness: session load/restore timing, spill-hit counts, compaction count and trigger, context-injection volume (AGENTS.md/skills/tool-schema token share), and LLM cache hit rate — surfaced via /fast, persisted as reconstructable session events with async sampling off the model path.",
+      "description": "Read-only performance diagnostics for DeepSeek Harness: load/restore timing, spill-hit counts, compaction count and trigger, context-injection volume, and LLM cache hit rate - surfaced via /fast and the fast_report tool.",
       "stars": 4,
       "pushedAt": "2026-08-26T14:58:32Z",
       "license": "Apache-2.0",
@@ -32316,7 +32316,7 @@
     {
       "fullName": "PerryLink/dsh-observe",
       "url": "https://github.com/PerryLink/dsh-observe",
-      "description": "OpenTelemetry and Langfuse observability exporter for DeepSeek Harness: turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with backoff",
+      "description": "Observability exporter for DeepSeek Harness (OpenTelemetry, Langfuse): turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with backoff - developer tooling for runtime observability.",
       "stars": 5,
       "pushedAt": "2026-08-26T14:58:56Z",
       "license": "Apache-2.0",
@@ -59406,7 +59406,7 @@
     {
       "fullName": "PerryLink/dsh-budget",
       "url": "https://github.com/PerryLink/dsh-budget",
-      "description": "Cost governance for DeepSeek Harness: aggregated token/cost metering per model, session and day, budget caps with threshold alerts and over-limit policies, carbon footprint estimation, per-model latency benchmarks, a Settings budget tab, and the /budget command",
+      "description": "Cost governance for DeepSeek Harness: aggregated token/cost metering per model and day, budget caps with threshold alerts and over-limit policies, carbon footprint estimation, per-model latency benchmarks, a Settings budget tab, and the /budget command.",
       "stars": 5,
       "pushedAt": "2026-08-27T12:13:03Z",
       "license": "Apache-2.0",
@@ -59420,7 +59420,7 @@
     {
       "fullName": "PerryLink/dsh-draw",
       "url": "https://github.com/PerryLink/dsh-draw",
-      "description": "Unified static-image generation router for DeepSeek Harness: one image_generate tool with standard parameters, config-driven engine routing (OpenAI Images, Zhipu CogView, and any compatible endpoint) with health-aware fallback, durable workspace attachments, per-session quota accounting, and a Plugins settings panel",
+      "description": "Unified static-image generation router for DeepSeek Harness: one image_generate tool with standard parameters, config-driven engine routing (OpenAI Images, Zhipu CogView, and any compatible endpoint) with health-aware fallback, durable workspace attachments, per-session quota accounting, and a Plugins settings panel.",
       "stars": 5,
       "pushedAt": "2026-08-27T11:43:51Z",
       "license": "Apache-2.0",
@@ -59434,7 +59434,7 @@
     {
       "fullName": "PerryLink/dsh-kit",
       "url": "https://github.com/PerryLink/dsh-kit",
-      "description": "One-command starter pack: install all 33 PerryLink DeepSeek Harness plugins",
+      "description": "One-command starter pack for DeepSeek Harness: install-all.sh / install-all.ps1 install the PerryLink plugin family into one profile; the scripts are idempotent and safe to re-run.",
       "stars": 5,
       "pushedAt": "2026-08-22T10:22:02Z",
       "license": "Apache-2.0",
@@ -59448,7 +59448,7 @@
     {
       "fullName": "PerryLink/dsh-score",
       "url": "https://github.com/PerryLink/dsh-score",
-      "description": "Multi-dimensional quality scoring for DeepSeek Harness plugins: scores a repo or npm package across install success (consuming dsh-test-drive results), maintenance activity, documentation completeness, security scan, and protocol compliance — every conclusion backed by real CLI evidence with audit timestamps.",
+      "description": "Multi-dimensional quality scoring for DeepSeek Harness plugins: scores a repo or npm package across install success (consuming dsh-test-drive results), maintenance activity, documentation completeness, security scan, and protocol compliance - every conclusion backed by real CLI evidence with audit timestamps.",
       "stars": 4,
       "pushedAt": "2026-08-26T14:46:01Z",
       "license": "Apache-2.0",
@@ -59462,7 +59462,7 @@
     {
       "fullName": "PerryLink/dsh-test-drive",
       "url": "https://github.com/PerryLink/dsh-test-drive",
-      "description": "Isolated install-and-smoke test drives for DeepSeek Harness plugins: installs a repo or npm package into a throwaway DSH_HOME profile, verifies the bundle patch layer and boot logs, records a structured pass/fail result matrix (JSON/Markdown) for scoring pipelines, and quarantines every temp directory it owns",
+      "description": "Isolated install-and-smoke test drives for DeepSeek Harness plugins: installs a repo or npm package into a throwaway DSH_HOME profile, verifies the bundle patch layer and boot logs, and records a structured pass/fail result matrix for scoring pipelines.",
       "stars": 3,
       "pushedAt": "2026-08-26T14:42:06Z",
       "license": "Apache-2.0",

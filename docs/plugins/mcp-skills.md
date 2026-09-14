@@ -2,7 +2,7 @@
 
 Model Context Protocol servers, skills, and extensibility packages.
 
-**691 catalog entries** · [Back to all categories](index.md)
+**688 catalog entries** · [Back to all categories](index.md)
 
 ### [ybkk-AIOS](https://github.com/01men/ybkk-AIOS)
 
@@ -3731,30 +3731,6 @@ Repository: `pengzhou267-ai/dsh-shop-assistant`
 DeepSeek Harness ecommerce plugin: CSV batch review replies, reproducible product scoring, Chinese skills, store-policy KB.
 
 Install: `dsh plugin --profile web add github:pengzhou267-ai/dsh-shop-assistant`
-
-### [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)
-
-Repository: `PerryLink/dsh-claude-move`
-
-DeepSeek Harness (dsh) plugin: migrate Claude Code sessions, memory, skills and CLAUDE.md into DSH with seamless resume (claudescan / importclaude / resume-claude / web panel)
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-claude-move`
-
-### [dsh-fast](https://github.com/PerryLink/dsh-fast)
-
-Repository: `PerryLink/dsh-fast`
-
-Read-only performance diagnostics for DeepSeek Harness: session load/restore timing, spill-hit counts, compaction count and trigger, context-injection volume (AGENTS.md/skills/tool-schema token share), and LLM cache...
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-fast`
-
-### [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research)
-
-Repository: `PerryLink/dsh-industry-research`
-
-Industry and company research domain pack for DeepSeek Harness: methodology skills, industry chain mapping, public-origin policy/news tracking, company research cards, and auditable research reports. Research only -...
-
-Install: `dsh plugin --profile web add github:PerryLink/dsh-industry-research`
 
 ### [dsh-mcp-panel](https://github.com/perrylink/dsh-mcp-panel)
 

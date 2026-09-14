@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**287 个目录条目** · [返回全部分类](index.md)
+**288 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -827,6 +827,14 @@ Repository: `hunter118/dsh-s7r`
 A System 7-inspired desktop interface for DeepSeek Harness (DSH)
 
 Install: `dsh plugin --profile web add github:hunter118/dsh-s7r`
+
+### [dsh-remote-dsh](https://github.com/hutao562/dsh-remote-dsh)
+
+Repository: `hutao562/dsh-remote-dsh`
+
+在侧边栏顶部加一行「远程」，点击后整页切换成另一台主机的 DSH Web GUI（经回环端口访问，如 ssh -L 或 frpc stcp/xtcp），该行显示对端状态：运行中、有新活动或正在等待你回答。
+
+Install: `dsh plugin --profile web add github:hutao562/dsh-remote-dsh`
 
 ### [dsh-columbina-theme](https://github.com/hyposelen1a/dsh-columbina-theme)
 

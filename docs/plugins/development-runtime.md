@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**2439 catalog entries** · [Back to all categories](index.md)
+**2441 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -12292,11 +12292,19 @@ Terminal-style input history for the DeepSeek Harness web composer: edge-first a
 
 Install: `dsh plugin --profile web add github:perrylink/dsh-composer-history`
 
+### [dsh-github](https://github.com/PerryLink/dsh-github)
+
+Repository: `PerryLink/dsh-github`
+
+GitHub CI and PR tooling for DeepSeek Harness: composite action.yml, PR review bot with idempotent inline comments and a status-check gate, plus approval-gated PR/issue/repo/file tools for git workflows.
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-github`
+
 ### [dsh-library](https://github.com/PerryLink/dsh-library)
 
 Repository: `PerryLink/dsh-library`
 
-Local document knowledge base for DeepSeek Harness: libraryadd/remove/list, hybrid semantic+keyword librarysearch with diversity re-ranking, relevance filtering and lost-in-the-middle avoidance, citation-aware...
+Local document knowledge base for DeepSeek Harness: libraryadd/remove/list, hybrid semantic+keyword librarysearch, citation-aware injection, and librarycitecheck - SQLite-backed index with local embedding.
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-library`
 
@@ -12307,6 +12315,14 @@ Repository: `PerryLink/dsh-lsp-actions`
 LSP action surface for DeepSeek Harness: diagnostics, formatting, completion, code actions, symbols, signature help, inlay hints, and rename tools over language servers
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-lsp-actions`
+
+### [dsh-observe](https://github.com/PerryLink/dsh-observe)
+
+Repository: `PerryLink/dsh-observe`
+
+Observability exporter for DeepSeek Harness (OpenTelemetry, Langfuse): turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with...
+
+Install: `dsh plugin --profile web add github:PerryLink/dsh-observe`
 
 ### [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide)
 
@@ -12328,7 +12344,7 @@ Install: `dsh plugin --profile web add github:PerryLink/dsh-score`
 
 Repository: `PerryLink/dsh-test-drive`
 
-Isolated install-and-smoke test drives for DeepSeek Harness plugins: installs a repo or npm package into a throwaway DSHHOME profile, verifies the bundle patch layer and boot logs, records a structured pass/fail...
+Isolated install-and-smoke test drives for DeepSeek Harness plugins: installs a repo or npm package into a throwaway DSHHOME profile, verifies the bundle patch layer and boot logs, and records a structured pass/fail...
 
 Install: `dsh plugin --profile web add github:PerryLink/dsh-test-drive`
 
