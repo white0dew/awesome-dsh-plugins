@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**2441 catalog entries** · [Back to all categories](index.md)
+**2442 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -12683,6 +12683,14 @@ Repository: `qichuang321/dsh-plugin-browser`
 暂无描述
 
 Install: `dsh plugin --profile web add github:qichuang321/dsh-plugin-browser`
+
+### [dsh-gemini-pool](https://github.com/qikairo7/dsh-gemini-pool)
+
+Repository: `qikairo7/dsh-gemini-pool`
+
+Multi-account Google Gemini provider for DSH: picks accounts by remaining quota, backs off exponentially on 429, and probes disabled accounts in the background.
+
+Install: `dsh plugin --profile web add github:qikairo7/dsh-gemini-pool`
 
 ### [dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game)
 

@@ -2,7 +2,7 @@
 
 开发工具、Shell、容器、测试与运行时支持。
 
-**2441 个目录条目** · [返回全部分类](index.md)
+**2442 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -12683,6 +12683,14 @@ Repository: `qichuang321/dsh-plugin-browser`
 暂无描述
 
 Install: `dsh plugin --profile web add github:qichuang321/dsh-plugin-browser`
+
+### [dsh-gemini-pool](https://github.com/qikairo7/dsh-gemini-pool)
+
+Repository: `qikairo7/dsh-gemini-pool`
+
+多账号 Google Gemini 提供商：按剩余额度挑选账号，遇 429 指数退避切换，后台探活已禁用账号。
+
+Install: `dsh plugin --profile web add github:qikairo7/dsh-gemini-pool`
 
 ### [dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game)
 

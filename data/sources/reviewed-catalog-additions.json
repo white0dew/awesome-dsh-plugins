@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-09-14",
+  "updated": "2026-09-26",
   "records": [
     {
       "name": "dsh-outline",
@@ -201,6 +201,24 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:hutao562/dsh-remote-dsh"
+      }
+    },
+    {
+      "name": "dsh-gemini-pool",
+      "github": {
+        "repository": "qikairo7/dsh-gemini-pool",
+        "url": "https://github.com/qikairo7/dsh-gemini-pool",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "Multi-account Google Gemini provider for DSH: picks accounts by remaining quota, backs off exponentially on 429, and probes disabled accounts in the background.",
+        "zh": "多账号 Google Gemini 提供商：按剩余额度挑选账号，遇 429 指数退避切换，后台探活已禁用账号。"
+      },
+      "category": "development-runtime",
+      "stars": 0,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:qikairo7/dsh-gemini-pool"
       }
     }
   ]

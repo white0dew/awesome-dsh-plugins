@@ -100879,6 +100879,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "qikairo7-dsh-gemini-pool",
+    name: "dsh-gemini-pool",
+    repoUrl: "https://github.com/qikairo7/dsh-gemini-pool",
+    repository: "qikairo7/dsh-gemini-pool",
+    description: {"en":"Multi-account Google Gemini provider for DSH: picks accounts by remaining quota, backs off exponentially on 429, and probes disabled accounts in the background.","zh":"多账号 Google Gemini 提供商：按剩余额度挑选账号，遇 429 指数退避切换，后台探活已禁用账号。"},
+    category: "development-runtime",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:qikairo7/dsh-gemini-pool"},
+    stars: 0,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "qimidandapigu-dsh-xiaotangyuan-game",
     name: "dsh-xiaotangyuan-game",
     repoUrl: "https://github.com/qimidandapigu/dsh-xiaotangyuan-game",

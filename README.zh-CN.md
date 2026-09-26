@@ -24,7 +24,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [工具与能力](docs/plugins/zh/tools-capabilities.md) | 4439 |
 | [工作流与智能体](docs/plugins/zh/workflow-agents.md) | 761 |
 | [通知与集成](docs/plugins/zh/notifications-integrations.md) | 282 |
-| [开发与运行时](docs/plugins/zh/development-runtime.md) | 2441 |
+| [开发与运行时](docs/plugins/zh/development-runtime.md) | 2442 |
 | [浏览器与搜索](docs/plugins/zh/browser-search.md) | 238 |
 | [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 688 |
 | [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 614 |
@@ -32,7 +32,7 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 
 ## 独立说明
 
-本目录收录 10776 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 10777 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 
