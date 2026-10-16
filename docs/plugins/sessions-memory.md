@@ -2,7 +2,7 @@
 
 Conversation history, context, persistence, and memory helpers.
 
-**935 catalog entries** · [Back to all categories](index.md)
+**936 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-project-memory](https://github.com/00080000/dsh-project-memory)
 
@@ -7099,6 +7099,14 @@ Repository: `YLingHao/dsh-codeui`
 A workbench for programmers to review code and track changes, featuring a conversation navigation rail for jumping to any earlier turn in the...
 
 Install: `dsh plugin --profile web add github:YLingHao/dsh-codeui`
+
+### [dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity)
+
+Repository: `ymck-x/dsh-session-continuity`
+
+A DSH plugin that carries a small continuity pointer across a session boundary: at the start of a new session it names the previous session and any handoff file, and reuses DSH's own compaction summary when there is...
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-session-continuity`
 
 ### [dsh-agentmemory](https://github.com/Yogioo/dsh-agentmemory)
 
