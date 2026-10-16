@@ -2,7 +2,7 @@
 
 Model Context Protocol 服务、技能与扩展包。
 
-**688 个目录条目** · [返回全部分类](index.md)
+**689 个目录条目** · [返回全部分类](index.md)
 
 ### [ybkk-AIOS](https://github.com/01men/ybkk-AIOS)
 
@@ -5139,6 +5139,14 @@ Repository: `YiyuZh/dsh-skillflux`
 DeepSeek Harness 动态 Skill 运行时管理器，自动发现、路由、挂载和卸载 Agent Skills
 
 Install: `dsh plugin --profile web add github:YiyuZh/dsh-skillflux`
+
+### [dsh-skill-starter](https://github.com/ymck-x/dsh-skill-starter)
+
+Repository: `ymck-x/dsh-skill-starter`
+
+DSH 技能管理器：自带 6 个基础技能与 20 个中文工程流程技能包（拷问需求、拆票、TDD、双轴代码审查、复盘），按「你遇到的问题」分组；升级技能包不会覆盖你改过的文件。
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-skill-starter`
 
 ### [deepseek-mcp-plugin](https://github.com/YNM10086/deepseek-mcp-plugin)
 

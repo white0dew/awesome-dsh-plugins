@@ -2,7 +2,7 @@
 
 对话历史、上下文、持久化与记忆辅助工具。
 
-**935 个目录条目** · [返回全部分类](index.md)
+**936 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-project-memory](https://github.com/00080000/dsh-project-memory)
 
@@ -7099,6 +7099,14 @@ Repository: `YLingHao/dsh-codeui`
 A workbench for programmers to review code and track changes, featuring a conversation navigation rail for jumping to any earlier turn in the...
 
 Install: `dsh plugin --profile web add github:YLingHao/dsh-codeui`
+
+### [dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity)
+
+Repository: `ymck-x/dsh-session-continuity`
+
+在新会话开头注入一条很小的接续指针：上一个会话是谁、工作区有没有交接文档；没有交接文档时复用 DSH 已有的压缩摘要，不调用模型。
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-session-continuity`
 
 ### [dsh-agentmemory](https://github.com/Yogioo/dsh-agentmemory)
 

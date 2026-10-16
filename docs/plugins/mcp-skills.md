@@ -2,7 +2,7 @@
 
 Model Context Protocol servers, skills, and extensibility packages.
 
-**688 catalog entries** · [Back to all categories](index.md)
+**689 catalog entries** · [Back to all categories](index.md)
 
 ### [ybkk-AIOS](https://github.com/01men/ybkk-AIOS)
 
@@ -5139,6 +5139,14 @@ Repository: `YiyuZh/dsh-skillflux`
 DeepSeek Harness 动态 Skill 运行时管理器，自动发现、路由、挂载和卸载 Agent Skills
 
 Install: `dsh plugin --profile web add github:YiyuZh/dsh-skillflux`
+
+### [dsh-skill-starter](https://github.com/ymck-x/dsh-skill-starter)
+
+Repository: `ymck-x/dsh-skill-starter`
+
+A DSH skill manager: 6 built-in skills plus a 20-skill Chinese engineering pack (requirements grilling, ticketing, TDD, two-axis code review, retro), grouped by the situation you are in. Upgrading a pack never...
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-skill-starter`
 
 ### [deepseek-mcp-plugin](https://github.com/YNM10086/deepseek-mcp-plugin)
 

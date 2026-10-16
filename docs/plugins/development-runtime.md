@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**2441 catalog entries** · [Back to all categories](index.md)
+**2442 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -18163,6 +18163,14 @@ Repository: `ylwl1997/noatmark-dsh-plugin`
 NoAtMark text hygiene as a DeepSeek Harness (dsh) plugin - sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV injection.
 
 Install: `dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin`
+
+### [dsh-plugin-index](https://github.com/ymck-x/dsh-plugin-index)
+
+Repository: `ymck-x/dsh-plugin-index`
+
+A DSH settings panel that browses and one-click installs third-party plugins from a catalogue whose membership is decided by machine-checking the dsh.bundle.patch declaration in each candidate's package.json, rather...
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-plugin-index`
 
 ### [dsh-client-masquerade](https://github.com/ymh0000123/dsh-client-masquerade)
 

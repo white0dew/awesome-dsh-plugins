@@ -2,7 +2,7 @@
 
 开发工具、Shell、容器、测试与运行时支持。
 
-**2441 个目录条目** · [返回全部分类](index.md)
+**2442 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -18163,6 +18163,14 @@ Repository: `ylwl1997/noatmark-dsh-plugin`
 NoAtMark text hygiene as a DeepSeek Harness (dsh) plugin - sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV injection.
 
 Install: `dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin`
+
+### [dsh-plugin-index](https://github.com/ymck-x/dsh-plugin-index)
+
+Repository: `ymck-x/dsh-plugin-index`
+
+DSH 设置页里的插件索引：收录与否由机器校验每个候选仓库 package.json 里的 dsh.bundle.patch 声明决定，而不是看星数，支持一键安装。
+
+Install: `dsh plugin --profile web add github:ymck-x/dsh-plugin-index`
 
 ### [dsh-client-masquerade](https://github.com/ymh0000123/dsh-client-masquerade)
 

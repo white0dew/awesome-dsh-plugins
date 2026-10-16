@@ -1,6 +1,6 @@
 {
   "name": "reviewed-catalog-additions",
-  "updated": "2026-09-14",
+  "updated": "2026-10-16",
   "records": [
     {
       "name": "dsh-outline",
@@ -201,6 +201,60 @@
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:hutao562/dsh-remote-dsh"
+      }
+    },
+    {
+      "name": "dsh-session-continuity",
+      "github": {
+        "repository": "ymck-x/dsh-session-continuity",
+        "url": "https://github.com/ymck-x/dsh-session-continuity",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A DSH plugin that carries a small continuity pointer across a session boundary: at the start of a new session it names the previous session and any handoff file, and reuses DSH's own compaction summary when there is no handoff file. It calls no model.",
+        "zh": "在新会话开头注入一条很小的接续指针：上一个会话是谁、工作区有没有交接文档；没有交接文档时复用 DSH 已有的压缩摘要，不调用模型。"
+      },
+      "category": "sessions-memory",
+      "stars": 1,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:ymck-x/dsh-session-continuity"
+      }
+    },
+    {
+      "name": "dsh-plugin-index",
+      "github": {
+        "repository": "ymck-x/dsh-plugin-index",
+        "url": "https://github.com/ymck-x/dsh-plugin-index",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A DSH settings panel that browses and one-click installs third-party plugins from a catalogue whose membership is decided by machine-checking the dsh.bundle.patch declaration in each candidate's package.json, rather than by star count.",
+        "zh": "DSH 设置页里的插件索引：收录与否由机器校验每个候选仓库 package.json 里的 dsh.bundle.patch 声明决定，而不是看星数，支持一键安装。"
+      },
+      "category": "development-runtime",
+      "stars": 1,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:ymck-x/dsh-plugin-index"
+      }
+    },
+    {
+      "name": "dsh-skill-starter",
+      "github": {
+        "repository": "ymck-x/dsh-skill-starter",
+        "url": "https://github.com/ymck-x/dsh-skill-starter",
+        "license": "MIT"
+      },
+      "description": {
+        "en": "A DSH skill manager: 6 built-in skills plus a 20-skill Chinese engineering pack (requirements grilling, ticketing, TDD, two-axis code review, retro), grouped by the situation you are in. Upgrading a pack never overwrites files you edited.",
+        "zh": "DSH 技能管理器：自带 6 个基础技能与 20 个中文工程流程技能包（拷问需求、拆票、TDD、双轴代码审查、复盘），按「你遇到的问题」分组；升级技能包不会覆盖你改过的文件。"
+      },
+      "category": "mcp-skills",
+      "stars": 1,
+      "primaryAction": {
+        "type": "copy-install",
+        "command": "dsh plugin --profile web add github:ymck-x/dsh-skill-starter"
       }
     }
   ]
