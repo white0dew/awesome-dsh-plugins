@@ -2,7 +2,7 @@
 
 Developer tooling, shells, containers, testing, and runtime support.
 
-**2441 catalog entries** · [Back to all categories](index.md)
+**2442 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -14107,6 +14107,14 @@ Repository: `skyf0xx/hedgehog`
 HEDGEHOG codes Cleaner, Faster and with Fewer Tokens. Hedgehog's AI-driven development builds a task dependency graph from your spec-driven, BMAD-METHOD plan, so Claude Code, Cursor & Gemini CLI stay locked to it. A...
 
 Install: `dsh plugin --profile web add github:skyf0xx/hedgehog`
+
+### [dsh-version-guard](https://github.com/skyjjgw/dsh-version-guard)
+
+Repository: `skyjjgw/dsh-version-guard`
+
+Snapshots plugin versions and profile configuration, with an independent recovery page to restore a known-good configuration when DSH cannot start.
+
+Install: `dsh plugin --profile web add github:skyjjgw/dsh-version-guard`
 
 ### [dsh-wechat-maid](https://github.com/skylar-fei/dsh-wechat-maid)
 
