@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**288 catalog entries** · [Back to all categories](index.md)
+**289 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -931,6 +931,14 @@ Repository: `jkcltc/dsh-chat-flow-re-layout`
 DeepSeek Harness web UI plugin that folds settled tool calls, context and reasoning into compact horizontal chips. Pure CSS, zero build.
 
 Install: `dsh plugin --profile web add github:jkcltc/dsh-chat-flow-re-layout`
+
+### [dsh-hold-to-dictate](https://github.com/jryang1997/dsh-hold-to-dictate)
+
+Repository: `jryang1997/dsh-hold-to-dictate`
+
+Hold-to-talk dictation in the composer that reuses the official voice-input bundle's speech service: long-press the input box, release to write the transcript into the draft, and it never sends.
+
+Install: `dsh plugin --profile web add github:jryang1997/dsh-hold-to-dictate`
 
 ### [dsh-show-me-how-much](https://github.com/kam74515-boop/dsh-show-me-how-much)
 

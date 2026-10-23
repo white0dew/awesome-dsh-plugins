@@ -63823,6 +63823,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "jryang1997-dsh-hold-to-dictate",
+    name: "dsh-hold-to-dictate",
+    repoUrl: "https://github.com/jryang1997/dsh-hold-to-dictate",
+    repository: "jryang1997/dsh-hold-to-dictate",
+    description: {"en":"Hold-to-talk dictation in the composer that reuses the official voice-input bundle's speech service: long-press the input box, release to write the transcript into the draft, and it never sends.","zh":"输入框长按听写，复用官方语音输入模块已挂载的语音服务：长按输入框，松开后把转写写入草稿，不会自动发送。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jryang1997/dsh-hold-to-dictate"},
+    stars: 2,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "js2hou-dsh-mcp-manager",
     name: "dsh-mcp-manager",
     repoUrl: "https://github.com/Js2Hou/dsh-mcp-manager",
