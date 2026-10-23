@@ -63823,6 +63823,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "jryang1997-dsh-ascii-whales",
+    name: "dsh-ascii-whales",
+    repoUrl: "https://github.com/jryang1997/dsh-ascii-whales",
+    repository: "jryang1997/dsh-ascii-whales",
+    description: {"en":"Overhead conversation background with five whale species formed from custom text or ASCII, shaded cells, frosted content cards, input-box avoidance, independent dives, spouts, ripples, wind, and cloud shadows.","zh":"海面正上方俯视的对话背景，支持用自定义文字或 ASCII 组成五种鲸类，含彩色字格、内容框毛玻璃、输入框避让、独立下潜、喷水、尾拍涟漪、风纹与云影。"},
+    category: "ui-themes",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jryang1997/dsh-ascii-whales"},
+    stars: 1,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "js2hou-dsh-mcp-manager",
     name: "dsh-mcp-manager",
     repoUrl: "https://github.com/Js2Hou/dsh-mcp-manager",
