@@ -2,7 +2,7 @@
 
 Model Context Protocol 服务、技能与扩展包。
 
-**688 个目录条目** · [返回全部分类](index.md)
+**689 个目录条目** · [返回全部分类](index.md)
 
 ### [ybkk-AIOS](https://github.com/01men/ybkk-AIOS)
 
@@ -2115,6 +2115,14 @@ Repository: `humblebanana/dsh-record-replay`
 DeepSeek Harness record macOS desktop workflows by demonstration and turn them into agent skills (open-record-replay skill + orr tools)
 
 Install: `dsh plugin --profile web add github:humblebanana/dsh-record-replay`
+
+### [dsh-mcp-tools](https://github.com/hxlog/dsh-mcp-tools)
+
+Repository: `hxlog/dsh-mcp-tools`
+
+DSH 设置内的 MCP 服务器与工具管理器：添加 streamable-http 或 stdio 服务器，像 Postman 一样逐行填写请求头，测试连通性，并按工具开关--停用的工具不会注册进模型。
+
+Install: `dsh plugin --profile web add github:hxlog/dsh-mcp-tools`
 
 ### [dsh-plugins](https://github.com/hyls9527/dsh-plugins)
 

@@ -2,7 +2,7 @@
 
 Model Context Protocol servers, skills, and extensibility packages.
 
-**688 catalog entries** · [Back to all categories](index.md)
+**689 catalog entries** · [Back to all categories](index.md)
 
 ### [ybkk-AIOS](https://github.com/01men/ybkk-AIOS)
 
@@ -2115,6 +2115,14 @@ Repository: `humblebanana/dsh-record-replay`
 DeepSeek Harness record macOS desktop workflows by demonstration and turn them into agent skills (open-record-replay skill + orr tools)
 
 Install: `dsh plugin --profile web add github:humblebanana/dsh-record-replay`
+
+### [dsh-mcp-tools](https://github.com/hxlog/dsh-mcp-tools)
+
+Repository: `hxlog/dsh-mcp-tools`
+
+MCP server and tool manager inside DSH settings: add streamable-http or stdio servers, fill header rows Postman-style, test connectivity, and switch individual tools off so disabled tools never reach the model.
+
+Install: `dsh plugin --profile web add github:hxlog/dsh-mcp-tools`
 
 ### [dsh-plugins](https://github.com/hyls9527/dsh-plugins)
 

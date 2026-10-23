@@ -11,7 +11,7 @@
 | [通知与集成](notifications-integrations.md) | 282 | 消息、通知以及外部服务连接。 |
 | [开发与运行时](development-runtime.md) | 2441 | 开发工具、Shell、容器、测试与运行时支持。 |
 | [浏览器与搜索](browser-search.md) | 238 | 浏览器控制、网页研究、抓取和搜索辅助工具。 |
-| [MCP 与技能](mcp-skills.md) | 688 | Model Context Protocol 服务、技能与扩展包。 |
+| [MCP 与技能](mcp-skills.md) | 689 | Model Context Protocol 服务、技能与扩展包。 |
 | [多模态与视觉](multimodal-vision.md) | 614 | 图像、音频、视频、OCR 与其他多模态能力。 |
 | [趣味与实验](fun-experiments.md) | 90 | 有趣、特别且具探索性的项目。 |
 
