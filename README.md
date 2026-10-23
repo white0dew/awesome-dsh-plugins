@@ -26,13 +26,13 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [Notifications & Integrations](docs/plugins/notifications-integrations.md) | 282 |
 | [Development & Runtime](docs/plugins/development-runtime.md) | 2441 |
 | [Browser & Search](docs/plugins/browser-search.md) | 238 |
-| [MCP & Skills](docs/plugins/mcp-skills.md) | 688 |
+| [MCP & Skills](docs/plugins/mcp-skills.md) | 689 |
 | [Multimodal & Vision](docs/plugins/multimodal-vision.md) | 614 |
 | [Fun & Experiments](docs/plugins/fun-experiments.md) | 90 |
 
 ## Independence
 
-This directory lists 10776 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
+This directory lists 10777 catalog entries. It is not an official DeepSeek property and does not represent a security review, compatibility guarantee, or endorsement.
 
 ## Contribute
 

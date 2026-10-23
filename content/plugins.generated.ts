@@ -55647,6 +55647,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "hxlog-dsh-mcp-tools",
+    name: "dsh-mcp-tools",
+    repoUrl: "https://github.com/hxlog/dsh-mcp-tools",
+    repository: "hxlog/dsh-mcp-tools",
+    description: {"en":"MCP server and tool manager inside DSH settings: add streamable-http or stdio servers, fill header rows Postman-style, test connectivity, and switch individual tools off so disabled tools never reach the model.","zh":"DSH 设置内的 MCP 服务器与工具管理器：添加 streamable-http 或 stdio 服务器，像 Postman 一样逐行填写请求头，测试连通性，并按工具开关--停用的工具不会注册进模型。"},
+    category: "mcp-skills",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hxlog/dsh-mcp-tools"},
+    stars: 3,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "hxt9805-dsh-remote-tailscale",
     name: "dsh-remote-tailscale",
     repoUrl: "https://github.com/hxt9805/dsh-remote-tailscale",

@@ -26,13 +26,13 @@ dsh plugin --profile web add github:OWNER/REPOSITORY
 | [通知与集成](docs/plugins/zh/notifications-integrations.md) | 282 |
 | [开发与运行时](docs/plugins/zh/development-runtime.md) | 2441 |
 | [浏览器与搜索](docs/plugins/zh/browser-search.md) | 238 |
-| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 688 |
+| [MCP 与技能](docs/plugins/zh/mcp-skills.md) | 689 |
 | [多模态与视觉](docs/plugins/zh/multimodal-vision.md) | 614 |
 | [趣味与实验](docs/plugins/zh/fun-experiments.md) | 90 |
 
 ## 独立说明
 
-本目录收录 10776 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
+本目录收录 10777 个条目，并非 DeepSeek 官方产品，也不代表安全审查、兼容性保证或认可。
 
 ## 参与贡献
 
