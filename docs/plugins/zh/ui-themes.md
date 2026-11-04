@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**288 个目录条目** · [返回全部分类](index.md)
+**289 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -931,6 +931,14 @@ Repository: `jkcltc/dsh-chat-flow-re-layout`
 DeepSeek Harness web UI plugin that folds settled tool calls, context and reasoning into compact horizontal chips. Pure CSS, zero build.
 
 Install: `dsh plugin --profile web add github:jkcltc/dsh-chat-flow-re-layout`
+
+### [dsh-hold-to-dictate](https://github.com/jryang1997/dsh-hold-to-dictate)
+
+Repository: `jryang1997/dsh-hold-to-dictate`
+
+输入框长按听写，复用官方语音输入模块已挂载的语音服务：长按输入框，松开后把转写写入草稿，不会自动发送。
+
+Install: `dsh plugin --profile web add github:jryang1997/dsh-hold-to-dictate`
 
 ### [dsh-show-me-how-much](https://github.com/kam74515-boop/dsh-show-me-how-much)
 
