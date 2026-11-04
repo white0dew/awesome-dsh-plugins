@@ -2,7 +2,7 @@
 
 Interfaces, terminal clients, themes, and presentation improvements.
 
-**288 catalog entries** · [Back to all categories](index.md)
+**289 catalog entries** · [Back to all categories](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -931,6 +931,14 @@ Repository: `jkcltc/dsh-chat-flow-re-layout`
 DeepSeek Harness web UI plugin that folds settled tool calls, context and reasoning into compact horizontal chips. Pure CSS, zero build.
 
 Install: `dsh plugin --profile web add github:jkcltc/dsh-chat-flow-re-layout`
+
+### [dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales)
+
+Repository: `jryang1997/dsh-ascii-whales`
+
+Overhead conversation background with five whale species formed from custom text or ASCII, shaded cells, frosted content cards, input-box avoidance, independent dives, spouts, ripples, wind, and cloud shadows.
+
+Install: `dsh plugin --profile web add github:jryang1997/dsh-ascii-whales`
 
 ### [dsh-show-me-how-much](https://github.com/kam74515-boop/dsh-show-me-how-much)
 

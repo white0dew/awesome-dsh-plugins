@@ -2,7 +2,7 @@
 
 界面、终端客户端、主题和展示体验增强。
 
-**288 个目录条目** · [返回全部分类](index.md)
+**289 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin)
 
@@ -931,6 +931,14 @@ Repository: `jkcltc/dsh-chat-flow-re-layout`
 DeepSeek Harness web UI plugin that folds settled tool calls, context and reasoning into compact horizontal chips. Pure CSS, zero build.
 
 Install: `dsh plugin --profile web add github:jkcltc/dsh-chat-flow-re-layout`
+
+### [dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales)
+
+Repository: `jryang1997/dsh-ascii-whales`
+
+海面正上方俯视的对话背景，支持用自定义文字或 ASCII 组成五种鲸类，含彩色字格、内容框毛玻璃、输入框避让、独立下潜、喷水、尾拍涟漪、风纹与云影。
+
+Install: `dsh plugin --profile web add github:jryang1997/dsh-ascii-whales`
 
 ### [dsh-show-me-how-much](https://github.com/kam74515-boop/dsh-show-me-how-much)
 
