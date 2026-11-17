@@ -118,7 +118,7 @@ export const plugins = [
     description: {"en":"Read-time project memory plugin for DeepSeek Harness (dsh)","zh":"Read-time project memory plugin for DeepSeek Harness (dsh)"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:00080000/dsh-project-memory"},
-    stars: 33,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166,7 +166,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness (dsh) web plugin that replaces the \"Deep diving…\" turn-status label with phase-aware, typewriter-animated, rainbow-gradient phrases - all configurable from a JSON file.","zh":"A DeepSeek Harness (dsh) web plugin that replaces the \"Deep diving…\" turn-status label with phase-aware, typewriter-animated, rainbow-gradient phrases - all configurable from a JSON file."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:01virex/dsh-status-rotator"},
-    stars: 229,
+    stars: 233,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -374,7 +374,7 @@ export const plugins = [
     description: {"en":"DSH workspace/chat enhancement menu: pin, rename, open in file explorer, archive, fork, copy, new window. Settings integrated into General.","zh":"DSH workspace/chat enhancement menu: pin, rename, open in file explorer, archive, fork, copy, new window. Settings integrated into General."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:0imzero/dsh-workspace-menu"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -502,7 +502,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web UI 认证网关插件：登录门禁、用户管理、管理员专属模型/Key 配置、数据隔离 · Authentication gate for the DeepSeek Harness Web UI: login gate, user management, admin-only model/API-key config, data isolation","zh":"DeepSeek Harness Web UI 认证网关插件：登录门禁、用户管理、管理员专属模型/Key 配置、数据隔离 · Authentication gate for the DeepSeek Harness Web UI: login gate, user management, admin-only model/API-key config, data isolation"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:0QwQ0/dsh-ui-auth"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -598,7 +598,7 @@ export const plugins = [
     description: {"en":"Native iOS client for DeepSeek Harness (dsh). Answer your agent from your phone - the relay only ever sees ciphertext.","zh":"Native iOS client for DeepSeek Harness (dsh). Answer your agent from your phone - the relay only ever sees ciphertext."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:0x5446/reins"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -694,7 +694,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.","zh":"DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:0xsline/awesome-deepseek-harness"},
-    stars: 1347,
+    stars: 1381,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -742,7 +742,7 @@ export const plugins = [
     description: {"en":"把 DeepSeek Harness 的 AI 编码控制台变成泰拉瑞亚像素世界--向导陪你写代码，真实对话、工具审批、难度切换，单文件零依赖。","zh":"把 DeepSeek Harness 的 AI 编码控制台变成泰拉瑞亚像素世界--向导陪你写代码，真实对话、工具审批、难度切换，单文件零依赖。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:10086ggqq/dsh_theme_terraria"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -1078,7 +1078,7 @@ export const plugins = [
     description: {"en":"Self-contained Trellis workflow trigger for DeepSeek Harness (DSH / Cordis)","zh":"Self-contained Trellis workflow trigger for DeepSeek Harness (DSH / Cordis)"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:1264459640/dsh-trellis"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -1366,7 +1366,7 @@ export const plugins = [
     description: {"en":"将千星沙箱（原神千星奇域）知识库接入 Deepseek Harness 的插件","zh":"将千星沙箱（原神千星奇域）知识库接入 Deepseek Harness 的插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:1475505/dsh-plugin-miliastra-toolbox"},
-    stars: 34,
+    stars: 35,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -1478,7 +1478,7 @@ export const plugins = [
     description: {"en":"Edge TTS voice plugin for DeepSeek Harness: read assistant replies aloud, auto-read toggle, voice settings panel (free, no API key)","zh":"Edge TTS voice plugin for DeepSeek Harness: read assistant replies aloud, auto-read toggle, voice settings panel (free, no API key)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:1624318455/dsh-plugin-tts"},
-    stars: 56,
+    stars: 61,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -1494,7 +1494,7 @@ export const plugins = [
     description: {"en":"Mimir - 一站式科研工作台插件：LaTeX 论文边写边编译、arXiv 文献管理、实验追踪、指标图表、GPU 服务器 SSH 任务编排，管理科研全周期。An open-origin research workbench plugin for the whole research cycle.","zh":"Mimir - 一站式科研工作台插件：LaTeX 论文边写边编译、arXiv 文献管理、实验追踪、指标图表、GPU 服务器 SSH 任务编排，管理科研全周期。An open-origin research workbench plugin for the whole research cycle."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:1692775560/dsh-Mimir-Academic-research"},
-    stars: 564,
+    stars: 569,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -2550,7 +2550,7 @@ export const plugins = [
     description: {"en":"仿 Claude Code 推理等级滑块 DSH 插件","zh":"仿 Claude Code 推理等级滑块 DSH 插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:2768651338/dsh-effort-slider"},
-    stars: 22,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -2614,7 +2614,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 插件市场 · 持续收录 1000+ DSH 插件：中文搜索 + 实用五维评分 + 一键安装。Web 版与 DSH 侧边栏插件双形态。Plugin marketplace for DeepSeek Harness: 1000+ plugins, Chinese search, 5-dim scoring, one-click install.","zh":"DeepSeek Harness 插件市场 · 持续收录 1000+ DSH 插件：中文搜索 + 实用五维评分 + 一键安装。Web 版与 DSH 侧边栏插件双形态。Plugin marketplace for DeepSeek Harness: 1000+ plugins, Chinese search, 5-dim scoring, one-click install."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:2BingLing/dsh-market"},
-    stars: 205,
+    stars: 214,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -2758,7 +2758,7 @@ export const plugins = [
     description: {"en":"DSH Markdown sidebar viewer and editor with block- and text-range annotations for structured revision requests.","zh":"DSH Markdown sidebar viewer and editor with block- and text-range annotations for structured revision requests."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:3361805598-gif/dsh-md-annotator"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -2854,7 +2854,7 @@ export const plugins = [
     description: {"en":"DSH-KRouter - Agent knowledge OS. Self-evolution. Timer on by default; API key or subscription is the key. First qualifying day auto-provisional; second accepted task → formal. Correction-first. Retrieval is the...","zh":"DSH-KRouter - Agent knowledge OS. Self-evolution. Timer on by default; API key or subscription is the key. First qualifying day auto-provisional; second accepted task → formal. Correction-first. Retrieval is the..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:398894496-arch/runtime36"},
-    stars: 49,
+    stars: 73,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -2886,7 +2886,7 @@ export const plugins = [
     description: {"en":"Rust SDK for DSH(Deepseek Harness)","zh":"Rust SDK for DSH(Deepseek Harness)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:42ch-dev/dsh-rust-sdk"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -3462,7 +3462,7 @@ export const plugins = [
     description: {"en":"WSL workspace support for DeepSeek Harness--无缝的 WSL 工作区使用体验，无需在 WSL 之中再安装一个dsh，安装该插件后在 GUI 里直接添加 WSL 工作区即可。WSL workspace support for DeepSeek Harness - Enjoy a seamless WSL workspace experience without needing to...","zh":"WSL workspace support for DeepSeek Harness--无缝的 WSL 工作区使用体验，无需在 WSL 之中再安装一个dsh，安装该插件后在 GUI 里直接添加 WSL 工作区即可。WSL workspace support for DeepSeek Harness - Enjoy a seamless WSL workspace experience without needing to..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:6Mikao9/dsh-wsl-workspace"},
-    stars: 114,
+    stars: 123,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -3574,7 +3574,7 @@ export const plugins = [
     description: {"en":"这是一个专业级的 DSH（DeepSeek Harness）代码审查技能插件，由 7DGroup 团队开发，专为 AI 辅助代码审查场景设计。基于 TypeScript + Cordis 开发，以组合包（bundle）形式安装，通过 ctx.skills 注册 7d-code-reviewer 技能：五步审查流程、严重/中等/轻微三级问题分级、四维度评分标准，文本摘要与 HTML 报告双输出。零核心改动--安装即启用，移除...","zh":"这是一个专业级的 DSH（DeepSeek Harness）代码审查技能插件，由 7DGroup 团队开发，专为 AI 辅助代码审查场景设计。基于 TypeScript + Cordis 开发，以组合包（bundle）形式安装，通过 ctx.skills 注册 7d-code-reviewer 技能：五步审查流程、严重/中等/轻微三级问题分级、四维度评分标准，文本摘要与 HTML 报告双输出。零核心改动--安装即启用，移除..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:7dgroup-ai/dsh-skill-7d-code-reviewer"},
-    stars: 13,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -3734,7 +3734,7 @@ export const plugins = [
     description: {"en":"Academic writing toolkit for DeepSeek Harness agents: paper outlines, title/abstract skeletons, GB/T 7714 / APA / MLA citations, phrasing QA, and a pre-submission checklist","zh":"Academic writing toolkit for DeepSeek Harness agents: paper outlines, title/abstract skeletons, GB/T 7714 / APA / MLA citations, phrasing QA, and a pre-submission checklist"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:863683348/dsh-plugin-academic-writing"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -3782,7 +3782,7 @@ export const plugins = [
     description: {"en":"Finance data toolkit for DeepSeek Harness agents: number/currency formatting (incl. Chinese wan/yi units), return & CAGR math, valuation and profitability ratios, PV/FV, risk metrics, and a data-quality checklist","zh":"Finance data toolkit for DeepSeek Harness agents: number/currency formatting (incl. Chinese wan/yi units), return & CAGR math, valuation and profitability ratios, PV/FV, risk metrics, and a data-quality checklist"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:863683348/dsh-plugin-finance-data"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -4182,7 +4182,7 @@ export const plugins = [
     description: {"en":"Computer Use 插件：虚拟鼠标真人操作 for DeepSeek Harness（screenobserve + computerclick 等 11 个模型友好工具，跨平台 cua-driver 引擎）","zh":"Computer Use 插件：虚拟鼠标真人操作 for DeepSeek Harness（screenobserve + computerclick 等 11 个模型友好工具，跨平台 cua-driver 引擎）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:988hj7tczd-oss/dsh-computer-use"},
-    stars: 68,
+    stars: 69,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -4246,7 +4246,7 @@ export const plugins = [
     description: {"en":"Out-of-the-box per-language LSP configuration packs for DeepSeek Harness: 12 Cordis plugins (one per language) reusing the shared @deepseek-ai/dsh-lsp-stdio + @deepseek-ai/dsh-tool-lsp base","zh":"Out-of-the-box per-language LSP configuration packs for DeepSeek Harness: 12 Cordis plugins (one per language) reusing the shared @deepseek-ai/dsh-lsp-stdio + @deepseek-ai/dsh-tool-lsp base"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:988hj7tczd-oss/dsh-lsp-packs"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -4646,7 +4646,7 @@ export const plugins = [
     description: {"en":"Multi-provider Web Search & Fetch for DeepSeek Harness - Tavily, Exa, Firecrawl, Brave, You.com, Jina & SearXNG with fallback and native settings UI.","zh":"Multi-provider Web Search & Fetch for DeepSeek Harness - Tavily, Exa, Firecrawl, Brave, You.com, Jina & SearXNG with fallback and native settings UI."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:A3Boy/dsh-web-tools"},
-    stars: 41,
+    stars: 42,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -4678,7 +4678,7 @@ export const plugins = [
     description: {"en":"DSH 实现 workbuddy 同款选择 skill 功能 \\ WorkBuddy-style skill picker for DeepSeek Harness: pick a skill in the composer, insert the official /skill-name gesture, and DSH loads it with your message.","zh":"DSH 实现 workbuddy 同款选择 skill 功能 \\ WorkBuddy-style skill picker for DeepSeek Harness: pick a skill in the composer, insert the official /skill-name gesture, and DSH loads it with your message."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:a735624258/dsh-skill-picker"},
-    stars: 44,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -5062,7 +5062,7 @@ export const plugins = [
     description: {"en":"Read-only Agent work-path observer for DeepSeek Harness","zh":"Read-only Agent work-path observer for DeepSeek Harness"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:aa2246740/dsh-watcher"},
-    stars: 123,
+    stars: 124,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -5078,7 +5078,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness port of official pstack playbooks and principles","zh":"DeepSeek Harness port of official pstack playbooks and principles"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:aa2246740/pstack-dsh"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -5094,7 +5094,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Aa728848/dsh-chatgpt-subscription"},
-    stars: 91,
+    stars: 99,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -5670,7 +5670,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) Web plugin","zh":"DeepSeek Harness (dsh) Web plugin"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AcidGr/dsh-web-lan-access"},
-    stars: 41,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -5878,7 +5878,7 @@ export const plugins = [
     description: {"en":"DSH 插件雷达与精选榜：多路自动发现 9000+ 候选，容器真实安装路径运行级实测（四档判定），精选 Top 50 · 11 类人工策展，全量索引 PLUGINS-ALL.md，自动更新。","zh":"DSH 插件雷达与精选榜：多路自动发现 9000+ 候选，容器真实安装路径运行级实测（四档判定），精选 Top 50 · 11 类人工策展，全量索引 PLUGINS-ALL.md，自动更新。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AdamPlatin123/awesome-dsh-plugins"},
-    stars: 1501,
+    stars: 1506,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6022,7 +6022,7 @@ export const plugins = [
     description: {"en":"Deepseek Harness、Openclaw知识图谱记忆插件。2026年4月受邀发布在清华大学讨论会。Knowledge Graph + Memory；Knowledge Graph Context Engine for OpenClaw - extracts structured triples from conversations, compresses context 75%, enables...","zh":"Deepseek Harness、Openclaw知识图谱记忆插件。2026年4月受邀发布在清华大学讨论会。Knowledge Graph + Memory；Knowledge Graph Context Engine for OpenClaw - extracts structured triples from conversations, compresses context 75%, enables..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:adoresever/graph-memory"},
-    stars: 674,
+    stars: 675,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6070,7 +6070,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 破甲一体化安全分析插件：Android · Web · Native · Protocol · Malware · AI-Security 全领域聚合（9 bundle + 1 preset）","zh":"DeepSeek Harness 破甲一体化安全分析插件：Android · Web · Native · Protocol · Malware · AI-Security 全领域聚合（9 bundle + 1 preset）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ADWMC/helm-d"},
-    stars: 1194,
+    stars: 1338,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6326,7 +6326,7 @@ export const plugins = [
     description: {"en":"A debugging framework for agentic AI systems: diagnose failures, attribute root causes, recover with evidence, and validate fixes through reruns.","zh":"A debugging framework for agentic AI systems: diagnose failures, attribute root causes, recover with evidence, and validate fixes through reruns."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AgentDebugX/AgentDebugX"},
-    stars: 72,
+    stars: 74,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6390,7 +6390,7 @@ export const plugins = [
     description: {"en":"AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop. Designed to work well with your own Claude subscriptions...","zh":"AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop. Designed to work well with your own Claude subscriptions..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:agentrq/agentrq"},
-    stars: 1181,
+    stars: 1193,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6422,7 +6422,7 @@ export const plugins = [
     description: {"en":"ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.","zh":"ReMe: Memory Management Kit for Agents - Remember Me, Refine Me."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:agentscope-ai/ReMe"},
-    stars: 3790,
+    stars: 3813,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6470,7 +6470,7 @@ export const plugins = [
     description: {"en":"A focused, keyboard-first DeepSeek coding agent built on the plugin architecture of DeepSeek Harness and inspired by the interaction quality of oh-my-pi.","zh":"A focused, keyboard-first DeepSeek coding agent built on the plugin architecture of DeepSeek Harness and inspired by the interaction quality of oh-my-pi."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:agi-fans/oh-my-dsh"},
-    stars: 32,
+    stars: 34,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -6886,7 +6886,7 @@ export const plugins = [
     description: {"en":"DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。An auto-memory plugin for the DeepSeek Harness Web GUI: three-layer memory (user-level / project notes / daily logs) with automatic injection and...","zh":"DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。An auto-memory plugin for the DeepSeek Harness Web GUI: three-layer memory (user-level / project notes / daily logs) with automatic injection and..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Aik358/dsh-auto-memory"},
-    stars: 195,
+    stars: 204,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7078,7 +7078,7 @@ export const plugins = [
     description: {"en":"全栈更新管理：对 DeepSeek Harness 主程序与每个已装第三方插件做 npm/GitHub 双源 semver 比对，GUI 横幅随系统语言（中/英）提示可更新插件；一键更新主程序或任意插件，自动备份可回滚，更新后看门狗自动重启服务。Whole-stack update management for DeepSeek Harness: dual-origin semver checks of the main...","zh":"全栈更新管理：对 DeepSeek Harness 主程序与每个已装第三方插件做 npm/GitHub 双源 semver 比对，GUI 横幅随系统语言（中/英）提示可更新插件；一键更新主程序或任意插件，自动备份可回滚，更新后看门狗自动重启服务。Whole-stack update management for DeepSeek Harness: dual-origin semver checks of the main..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Airmetro/dsh-update-checker"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7126,7 +7126,7 @@ export const plugins = [
     description: {"en":"🌊 Persistent dock & fully-customizable balance/usage panel for DeepSeek Harness - activity heatmap, dual-channel comparison, local-only & privacy-first","zh":"🌊 Persistent dock & fully-customizable balance/usage panel for DeepSeek Harness - activity heatmap, dual-channel comparison, local-only & privacy-first"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Aisland-SJL/dsh-usage"},
-    stars: 148,
+    stars: 153,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7142,7 +7142,7 @@ export const plugins = [
     description: {"en":"🖥️ Agent-project workbench for DeepSeek Harness - sidebar app drawer + dockable split workspace + a live control room watching every project.","zh":"🖥️ Agent-project workbench for DeepSeek Harness - sidebar app drawer + dockable split workspace + a live control room watching every project."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Aisland-SJL/dsh-worktable"},
-    stars: 859,
+    stars: 881,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7174,7 +7174,7 @@ export const plugins = [
     description: {"en":"A macOS-only native account-pool and provider plugin for DeepSeek Harness.","zh":"A macOS-only native account-pool and provider plugin for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AITabby/dockyard-dsh"},
-    stars: 77,
+    stars: 81,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7398,7 +7398,7 @@ export const plugins = [
     description: {"en":"Godot Engine 4.x 全栈游戏开发技能插件 for DeepSeek Harness (DSH) - registers the godot-4-development skill at runtime","zh":"Godot Engine 4.x 全栈游戏开发技能插件 for DeepSeek Harness (DSH) - registers the godot-4-development skill at runtime"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:akira399/dsh-godot-skill"},
-    stars: 63,
+    stars: 70,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7430,7 +7430,7 @@ export const plugins = [
     description: {"en":"大肥鱼的小说工坊 - DSH 网络小说创作插件：九阶段门禁式创作流程 + 世界书设定注入 + 本地书籍导入 + AI 一键润色 + 去AI味 + 黄金三章诊断 + 百万字一致性 + 市场调研与模板复制。","zh":"大肥鱼的小说工坊 - DSH 网络小说创作插件：九阶段门禁式创作流程 + 世界书设定注入 + 本地书籍导入 + AI 一键润色 + 去AI味 + 黄金三章诊断 + 百万字一致性 + 市场调研与模板复制。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:akira399/dsh-novel-writer"},
-    stars: 113,
+    stars: 121,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7494,7 +7494,7 @@ export const plugins = [
     description: {"en":"Free vision & image generation for DeepSeek Harness - paste an image into any chat, even text-only sessions. GLM-4V-Flash / Qwen3-VL / Gemini failover chain, ModLens-style structured evidence, Kolors generation....","zh":"Free vision & image generation for DeepSeek Harness - paste an image into any chat, even text-only sessions. GLM-4V-Flash / Qwen3-VL / Gemini failover chain, ModLens-style structured evidence, Kolors generation...."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:akqwpeter-prog/dsh-media-skills"},
-    stars: 25,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7510,7 +7510,7 @@ export const plugins = [
     description: {"en":"DSH 生态中最好的工作台基座插件：VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）+ ctx.workbench 开放注册表，功能插件即插即用；推荐搭配 dock-files/dock-editor/dock-git | The best workbench base plugin for DSH: VSCode-style layout shell with the open ctx.workbench...","zh":"DSH 生态中最好的工作台基座插件：VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）+ ctx.workbench 开放注册表，功能插件即插即用；推荐搭配 dock-files/dock-editor/dock-git | The best workbench base plugin for DSH: VSCode-style layout shell with the open ctx.workbench..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AKS1st/dock"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7654,7 +7654,7 @@ export const plugins = [
     description: {"en":"在 DSH Web 会话中把 Mermaid 代码围栏渲染为 SVG 图表 \\ Render Mermaid code fences as SVG diagrams in DSH Web messages","zh":"在 DSH Web 会话中把 Mermaid 代码围栏渲染为 SVG 图表 \\ Render Mermaid code fences as SVG diagrams in DSH Web messages"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AKS1st/dsh-mermaid"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7766,7 +7766,7 @@ export const plugins = [
     description: {"en":"📖 Cross-agent research paper toolkit for Claude Code, Codex, OpenCode, and DeepSeek Harness-quick summaries, deep study materials, code demos, and a local web viewer.","zh":"📖 Cross-agent research paper toolkit for Claude Code, Codex, OpenCode, and DeepSeek Harness-quick summaries, deep study materials, code demos, and a local web viewer."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alaliqing/claude-paper"},
-    stars: 358,
+    stars: 360,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7782,7 +7782,7 @@ export const plugins = [
     description: {"en":"一种能让你的harness开口说话的方案/Make your AI harness speak - a verified voice-announcement solution","zh":"一种能让你的harness开口说话的方案/Make your AI harness speak - a verified voice-announcement solution"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Alan2Z/dsh-speak"},
-    stars: 19,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -7862,7 +7862,7 @@ export const plugins = [
     description: {"en":"Display subagent provider, model, and reasoning effort badges in DeepSeek Harness","zh":"Display subagent provider, model, and reasoning effort badges in DeepSeek Harness"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alaxrpg/dsh-subagent-route-badges"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8406,7 +8406,7 @@ export const plugins = [
     description: {"en":"ANOLISA (Agentic Nexus Operating Layer & Interface System Architecture) \\ Agentic OS with runtime, security, observability, and Tokenless response compression for lower token usage and cost.","zh":"ANOLISA (Agentic Nexus Operating Layer & Interface System Architecture) \\ Agentic OS with runtime, security, observability, and Tokenless response compression for lower token usage and cost."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alibaba/anolisa"},
-    stars: 663,
+    stars: 666,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8454,7 +8454,7 @@ export const plugins = [
     description: {"en":"A phone shell for the DeepSeek Harness (dsh) web GUI - sidebar becomes an overlay drawer, settings goes full-screen single column. Zero hardcoded host class hashes.","zh":"A phone shell for the DeepSeek Harness (dsh) web GUI - sidebar becomes an overlay drawer, settings goes full-screen single column. Zero hardcoded host class hashes."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AliceLJY/dsh-thumb"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8502,7 +8502,7 @@ export const plugins = [
     description: {"en":"Customize the \"deep diving\" thinking status label to anything you like.","zh":"把鲸鱼娘思考时的 \"deep diving\" 状态文案自定义成任意你想要的样子。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alingalingling/ui-status-label"},
-    stars: 51,
+    stars: 52,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8518,7 +8518,7 @@ export const plugins = [
     description: {"en":"Turn one topic into a finished Vox-style paper-collage explainer/ad video - automated end to end on Atlas Cloud + ffmpeg. An agent skill.","zh":"Turn one topic into a finished Vox-style paper-collage explainer/ad video - automated end to end on Atlas Cloud + ffmpeg. An agent skill."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Alisa0808/vox-director"},
-    stars: 2769,
+    stars: 2916,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8758,7 +8758,7 @@ export const plugins = [
     description: {"en":"A shared kanban board for people and AI agents in DeepSeek Harness.","zh":"A shared kanban board for people and AI agents in DeepSeek Harness."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alpacachen/dsh-kanban"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -8966,7 +8966,7 @@ export const plugins = [
     description: {"en":"A formal workflow protocol that keeps AI coding agents on track through machine-enforced invariants, verified evidence, and structured context. Designed to keep deep, long-running projects coherent across sessions,...","zh":"A formal workflow protocol that keeps AI coding agents on track through machine-enforced invariants, verified evidence, and structured context. Designed to keep deep, long-running projects coherent across sessions,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:alxshelepenok/grove"},
-    stars: 31,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9062,7 +9062,7 @@ export const plugins = [
     description: {"en":"Embedded C/C++ AI engineering plugin - firmware skills (FreeRTOS, Keil, HardFault, state machines) + 1% Rule / Plan Verification Gate discipline | 嵌入式 C/C++ 工程 AI 插件:固件技能与 agent 纪律。 For Claude Code, Codex, Cursor,...","zh":"Embedded C/C++ AI engineering plugin - firmware skills (FreeRTOS, Keil, HardFault, state machines) + 1% Rule / Plan Verification Gate discipline | 嵌入式 C/C++ 工程 AI 插件:固件技能与 agent 纪律。 For Claude Code, Codex, Cursor,..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AmethystLuna/embedded-workbench"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9094,7 +9094,7 @@ export const plugins = [
     description: {"en":"Google Antigravity (agy CLI) models for DeepSeek Harness - streaming chat, thinking, tool activity, usage, in-GUI Google OAuth login","zh":"Google Antigravity (agy CLI) models for DeepSeek Harness - streaming chat, thinking, tool activity, usage, in-GUI Google OAuth login"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:amlyczz/dsh-agy-link"},
-    stars: 166,
+    stars: 190,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9158,7 +9158,7 @@ export const plugins = [
     description: {"en":"A curated distribution of DeepSeek Harness. Overlay, not a fork.","zh":"A curated distribution of DeepSeek Harness. Overlay, not a fork."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:amplifthq/oh-my-dsh"},
-    stars: 18,
+    stars: 19,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9174,7 +9174,7 @@ export const plugins = [
     description: {"en":"A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-origin and free forever. Try it out today!","zh":"A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-origin and free forever. Try it out today!"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:amruthpillai/reactive-resume"},
-    stars: 45624,
+    stars: 45849,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9254,7 +9254,7 @@ export const plugins = [
     description: {"en":"Fixes the bug where your account can't lose money while you code.","zh":"有效解决了写代码的时候账户不能同时亏钱的 BUG。"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AnacondaKC/dsh-stock-market"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9334,7 +9334,7 @@ export const plugins = [
     description: {"en":"Exports current Markdown to standalone HTML with Mermaid inlined or PDF","zh":"Exports current Markdown to standalone HTML with Mermaid inlined or PDF"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AnakinCao/dsh-md-export"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9398,7 +9398,7 @@ export const plugins = [
     description: {"en":"UltraMath 数学建模竞赛多 Agent 求解 DSH 插件: 5 角色预设 + 33 篇模型库 + 论文模板/审稿脚本随包 + 进度可视化","zh":"UltraMath 数学建模竞赛多 Agent 求解 DSH 插件: 5 角色预设 + 33 篇模型库 + 论文模板/审稿脚本随包 + 进度可视化"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Andiii208/dsh-ultramath"},
-    stars: 40,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9574,7 +9574,7 @@ export const plugins = [
     description: {"en":"DSH bundle that bridges the Codebase Memory MCP code knowledge graph into DSH via the official @deepseek-ai/dsh-mcp-client.","zh":"DSH bundle that bridges the Codebase Memory MCP code knowledge graph into DSH via the official @deepseek-ai/dsh-mcp-client."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:andyfan1094/dsh-codebase-memory"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9702,7 +9702,7 @@ export const plugins = [
     description: {"en":"Turn the official DeepSeek Harness WebUI into a natural desktop experience.","zh":"Turn the official DeepSeek Harness WebUI into a natural desktop experience."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anestis271/dsh-desktop"},
-    stars: 7,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9750,7 +9750,7 @@ export const plugins = [
     description: {"en":"💗 一套给 DeepSeek Harness 的粉色 Hello Kitty 主题皮肤 + 任务完成/提问提醒插件（Sweetheart Workspace Expressive skin & Hello Kitty Task-Done Notifier）","zh":"💗 一套给 DeepSeek Harness 的粉色 Hello Kitty 主题皮肤 + 任务完成/提问提醒插件（Sweetheart Workspace Expressive skin & Hello Kitty Task-Done Notifier）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Angel2518975237/deepseek-harness-hello-kitty-suite"},
-    stars: 22,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9862,7 +9862,7 @@ export const plugins = [
     description: {"en":"A curated list of plugins for DeepSeek Harness (dsh) - DeepSeek Harness plugin ecosystem","zh":"A curated list of plugins for DeepSeek Harness (dsh) - DeepSeek Harness plugin ecosystem"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anil-matcha/awesome-dsh-plugin"},
-    stars: 16,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9878,7 +9878,7 @@ export const plugins = [
     description: {"en":"为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms - image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation,...","zh":"为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms - image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation,..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:anionex/agent-vision-toolkit"},
-    stars: 1256,
+    stars: 1262,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9894,7 +9894,7 @@ export const plugins = [
     description: {"en":"Accessibility-first macOS computer use: fresh observations, stale-state rejection, scoped permissions, and safe input.","zh":"macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anionex/dsh-computer-use"},
-    stars: 98,
+    stars: 106,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9942,7 +9942,7 @@ export const plugins = [
     description: {"en":"Rewind conversation and workspace state, powered by a persistent Change Ledger.","zh":"对话回退：基于持久 Change Ledger 回滚会话与工作区状态。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anionex/dsh-turn-rewind"},
-    stars: 146,
+    stars: 150,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -9958,7 +9958,7 @@ export const plugins = [
     description: {"en":"Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.","zh":"让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anionex/dsh-vision-toolkit"},
-    stars: 937,
+    stars: 946,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10134,7 +10134,7 @@ export const plugins = [
     description: {"en":"香港保险数据 MCP：260+ 真实产品、17 家保司、分红实现率，行业经验逐条校准。供 Hermes / dsh / Claude Code 等 AI 工具接入。","zh":"香港保险数据 MCP：260+ 真实产品、17 家保司、分红实现率，行业经验逐条校准。供 Hermes / dsh / Claude Code 等 AI 工具接入。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Anlushu/hkinsure"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10326,7 +10326,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 提供类似 Codex Auto Reviewer / \"approve for me\" 的权限模式。A permission mode for DeepSeek Harness similar to Codex Auto Reviewer / \"approve for me\"","zh":"为 DeepSeek Harness 提供类似 Codex Auto Reviewer / \"approve for me\" 的权限模式。A permission mode for DeepSeek Harness similar to Codex Auto Reviewer / \"approve for me\""},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AntaresCorn/dsh-auto-reviewer"},
-    stars: 1,
+    stars: 0,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10358,7 +10358,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin: give your agent a browser with a persistent identity - engine-level fingerprint spoofing, unlimited free local profiles, Android device emulation, passkeys that survive, and residential proxy...","zh":"DeepSeek Harness plugin: give your agent a browser with a persistent identity - engine-level fingerprint spoofing, unlimited free local profiles, Android device emulation, passkeys that survive, and residential proxy..."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:antibrow/dsh-antibrow"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10454,7 +10454,7 @@ export const plugins = [
     description: {"en":"Enhanced, persistent web search plugin for DeepSeek Harness (multi-engine search, SQLite+LRU cache, platform backends, Playwright rendering)","zh":"Enhanced, persistent web search plugin for DeepSeek Harness (multi-engine search, SQLite+LRU cache, platform backends, Playwright rendering)"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:anweat/dsh-web-search-pro"},
-    stars: 87,
+    stars: 88,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10502,7 +10502,7 @@ export const plugins = [
     description: {"en":"AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)","zh":"AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:anysearch-team/anysearch-dsh"},
-    stars: 692,
+    stars: 700,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10582,7 +10582,7 @@ export const plugins = [
     description: {"en":"基于官方 DeepSeek Harness 打造的 Electron 桌面端，深度适配 macOS 和 Windows，提供最佳的，开箱即用的体验。","zh":"基于官方 DeepSeek Harness 打造的 Electron 桌面端，深度适配 macOS 和 Windows，提供最佳的，开箱即用的体验。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:anywhere-labs/deepseek-harness-desktop"},
-    stars: 35708,
+    stars: 36229,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10598,7 +10598,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。","zh":"为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:anywhere-labs/dsh-desktop"},
-    stars: 35708,
+    stars: 36229,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -10950,7 +10950,7 @@ export const plugins = [
     description: {"en":"Remote DeepSeek Harness from a paired mobile device through an outbound-only Relay","zh":"Remote DeepSeek Harness from a paired mobile device through an outbound-only Relay"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:april-jk/dsh-mobile-suite"},
-    stars: 18,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -11014,7 +11014,7 @@ export const plugins = [
     description: {"en":"Devin Connect 反代为 OpenAI Chat Completions 兼容协议的 dsh 插件，服务 glm-5.2 / swe-1.7","zh":"Devin Connect 反代为 OpenAI Chat Completions 兼容协议的 dsh 插件，服务 glm-5.2 / swe-1.7"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Arborsm/dsh-plugin-devin-bridge"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -11046,7 +11046,7 @@ export const plugins = [
     description: {"en":"Generalized development-specification skills distilled from DeepSeek Harness's engineering conventions - defensive patterns, code conventions, testing tiers, prose standards, decision records, review and PR discipline.","zh":"Generalized development-specification skills distilled from DeepSeek Harness's engineering conventions - defensive patterns, code conventions, testing tiers, prose standards, decision records, review and PR discipline."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:arch3rPro/dsh-skills"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -11286,7 +11286,7 @@ export const plugins = [
     description: {"en":"A unified agent memory workspace for human and agent","zh":"A unified agent memory workspace for human and agent"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ariestar/sivtr"},
-    stars: 257,
+    stars: 259,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -11510,7 +11510,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 的 MCP 服务器管理插件：可视化界面管理 + 按需热注入，OAuth 鉴权支持，环境变量配置。","zh":"DeepSeek Harness 的 MCP 服务器管理插件：可视化界面管理 + 按需热注入，OAuth 鉴权支持，环境变量配置。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ArvinQi/dsh-mcp"},
-    stars: 36,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12390,7 +12390,7 @@ export const plugins = [
     description: {"en":"AI skills大全 mcp ai知识库 Agent 全维度 AI 资源百科，DSH插件 收录大模型、智能 Agent、RAG 检索增强、多模态、MLOps、AI 应用工具、AI面试集、Vibe coding 大全、零基础学习路线，持续更新前沿 AI 开源项目，开发者一站式 AI 导航库","zh":"AI skills大全 mcp ai知识库 Agent 全维度 AI 资源百科，DSH插件 收录大模型、智能 Agent、RAG 检索增强、多模态、MLOps、AI 应用工具、AI面试集、Vibe coding 大全、零基础学习路线，持续更新前沿 AI 开源项目，开发者一站式 AI 导航库"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Awesome-AI-Pedia/Awesome-AI-Pedia"},
-    stars: 684,
+    stars: 723,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12454,7 +12454,7 @@ export const plugins = [
     description: {"en":"Awesome DeepSeek Harness (dsh) - curated awesome list of plugins, tools, skills & resources. Everything is a plugin.","zh":"Awesome DeepSeek Harness (dsh) - curated awesome list of plugins, tools, skills & resources. Everything is a plugin."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:awesome-deepseekharness/awesome-deepseek-harness"},
-    stars: 41,
+    stars: 44,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12470,7 +12470,7 @@ export const plugins = [
     description: {"en":"A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表","zh":"A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:awesome-dsh-plugin/awesome-dsh-plugin"},
-    stars: 24281,
+    stars: 24971,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12486,7 +12486,7 @@ export const plugins = [
     description: {"en":"Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.","zh":"会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin"},
-    stars: 230,
+    stars: 236,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12566,7 +12566,7 @@ export const plugins = [
     description: {"en":"A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗","zh":"A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Awu12277/dsh-stock-watch"},
-    stars: 86,
+    stars: 87,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12582,7 +12582,7 @@ export const plugins = [
     description: {"en":"飞书/Lark 机器人桥接，同时支持 Pi 和 DeepSeek Harness（DSH）双平台，随时随地远程与你的编程助手对话","zh":"飞书/Lark 机器人桥接，同时支持 Pi 和 DeepSeek Harness（DSH）双平台，随时随地远程与你的编程助手对话"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:AX1202/ax-feishu-bridge"},
-    stars: 59,
+    stars: 60,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12694,7 +12694,7 @@ export const plugins = [
     description: {"en":"把dsh会话界面切换成galgame游戏界面的插件","zh":"把dsh会话界面切换成galgame游戏界面的插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ayase34/gal-view"},
-    stars: 218,
+    stars: 219,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -12726,7 +12726,7 @@ export const plugins = [
     description: {"en":"DSH 独立管理插件：全局人设注入 + Skill 管理 + MCP 动态管理（修改自 dsh-vscode-layout）","zh":"DSH 独立管理插件：全局人设注入 + Skill 管理 + MCP 动态管理（修改自 dsh-vscode-layout）"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ayato233/dsh-agent-manage"},
-    stars: 2,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -13078,7 +13078,7 @@ export const plugins = [
     description: {"en":"Expose DeepSeek Harness (dsh) as an OpenAI-compatible API server - /v1/chat/completions + /v1/models, backed by real agent sessions with tools and workspaces. 把 DeepSeek Harness 暴露为 OpenAI 兼容 API 服务端。","zh":"Expose DeepSeek Harness (dsh) as an OpenAI-compatible API server - /v1/chat/completions + /v1/models, backed by real agent sessions with tools and workspaces. 把 DeepSeek Harness 暴露为 OpenAI 兼容 API 服务端。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:backrooms-yrc/dsh-openai-gateway"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -13126,7 +13126,7 @@ export const plugins = [
     description: {"en":"在 DeepSeek Harness Web 设置面板中编辑 /.dsh/AGENTS.md 全局规则的插件","zh":"在 DeepSeek Harness Web 设置面板中编辑 /.dsh/AGENTS.md 全局规则的插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:badai147/dsh-global-rules"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -13510,7 +13510,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 的 Galgame 生成器：提供一份剧本文档 + 立绘/背景/音乐素材，即可生成一个可玩的视觉小说（Galgame）网页。 新增一个GalGame生成模式，在这个模式的工作区下提供一份剧本文档 + 立绘/CG/背景/音乐素材等，即可生成Galgame网页。","zh":"DeepSeek Harness (DSH) 的 Galgame 生成器：提供一份剧本文档 + 立绘/背景/音乐素材，即可生成一个可玩的视觉小说（Galgame）网页。 新增一个GalGame生成模式，在这个模式的工作区下提供一份剧本文档 + 立绘/CG/背景/音乐素材等，即可生成Galgame网页。"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:baisama-cloud/dsh-galgame-generator"},
-    stars: 19,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -14214,7 +14214,7 @@ export const plugins = [
     description: {"en":"Awesome DeepSeek Harness (DSH) Plugin","zh":"Awesome DeepSeek Harness (DSH) Plugin"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:beancookie/awesome-dsh-plugin"},
-    stars: 193,
+    stars: 194,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -14326,7 +14326,7 @@ export const plugins = [
     description: {"en":"Bring ChatGPT’s reasoning to your local codebase. Work directly, or delegate larger tasks to DSH.","zh":"Bring ChatGPT’s reasoning to your local codebase. Work directly, or delegate larger tasks to DSH."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:BeforeWave/dsh-with-chatgpt"},
-    stars: 64,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -14374,7 +14374,7 @@ export const plugins = [
     description: {"en":"Native Jupyter-style notebook for DeepSeek Harness: real ipykernel sidecar + VS Code-aligned cell UI, tqdm progress, inline figures, per-cell AI revision.","zh":"Native Jupyter-style notebook for DeepSeek Harness: real ipykernel sidecar + VS Code-aligned cell UI, tqdm progress, inline figures, per-cell AI revision."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:beihzb/dsh-notebook"},
-    stars: 6,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -14550,7 +14550,7 @@ export const plugins = [
     description: {"en":"语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。","zh":"语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:beiyege-01/dsh-voice-ai-girlfriend"},
-    stars: 1035,
+    stars: 1074,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -15030,7 +15030,7 @@ export const plugins = [
     description: {"en":"dsh·实时 Token 统计·溺水检测插件","zh":"dsh·实时 Token 统计·溺水检测插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:better-er/dsh-live-token-stats"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -15510,7 +15510,7 @@ export const plugins = [
     description: {"en":"Share any excerpt of a conversation.","zh":"分享任意段落的对话。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bill9109/dsh-conversation-share"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -15590,7 +15590,7 @@ export const plugins = [
     description: {"en":"A curated list of plugins for DeepSeek Harness (dsh) - 精选 DeepSeek Harness 插件列表","zh":"A curated list of plugins for DeepSeek Harness (dsh) - 精选 DeepSeek Harness 插件列表"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:billLiao/awesome-dsh-plugin"},
-    stars: 22,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -15734,7 +15734,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:biociao/dsh-science"},
-    stars: 49,
+    stars: 52,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -16166,7 +16166,7 @@ export const plugins = [
     description: {"en":"DSH Remote · 口袋里的 DSH 控制台 会话 · 审批 · 提问 · 文件传输，局域网 / Tailscale 直连 多服务器自动选优，聊天记录离线可看 带 Token 鉴权，数据只在你的设备之间流动 Sessions · approvals · questions · file transfer over LAN / Tailscale. Automatic fastest-server selection....","zh":"DSH Remote · 口袋里的 DSH 控制台 会话 · 审批 · 提问 · 文件传输，局域网 / Tailscale 直连 多服务器自动选优，聊天记录离线可看 带 Token 鉴权，数据只在你的设备之间流动 Sessions · approvals · questions · file transfer over LAN / Tailscale. Automatic fastest-server selection...."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Blank-not-black/dsh-Remote"},
-    stars: 80,
+    stars: 88,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17094,7 +17094,7 @@ export const plugins = [
     description: {"en":"The best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the...","zh":"The best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the..."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bowenliang123/dsh-context"},
-    stars: 4935,
+    stars: 5228,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17126,7 +17126,7 @@ export const plugins = [
     description: {"en":"DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime.","zh":"DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:boxeryao/deepseek-harness-tui"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17142,7 +17142,7 @@ export const plugins = [
     description: {"en":"DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime.","zh":"DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:boxeryao/dsh-mini-tui"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17302,7 +17302,7 @@ export const plugins = [
     description: {"en":"dsh-wxauto-plugin - DSH 微信汇报与监听插件","zh":"dsh-wxauto-plugin - DSH 微信汇报与监听插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:br1nosense/dsh-wxauto-plugin"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17318,7 +17318,7 @@ export const plugins = [
     description: {"en":"DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 \\ browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI","zh":"DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 \\ browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bradeGithub/DSH-Plugins-Marketplace"},
-    stars: 203,
+    stars: 206,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17430,7 +17430,7 @@ export const plugins = [
     description: {"en":"本地优先的文献知识库 RAG(DeepSeek Harness 插件):混合检索正文与图注,把模糊记忆定位到具体段落与图表,DOI 一键直达原文。Local-first literature RAG for DSH - turn a fuzzy memory into an exact passage/figure, one-click DOI to origin.","zh":"本地优先的文献知识库 RAG(DeepSeek Harness 插件):混合检索正文与图注,把模糊记忆定位到具体段落与图表,DOI 一键直达原文。Local-first literature RAG for DSH - turn a fuzzy memory into an exact passage/figure, one-click DOI to origin."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Breeze136/dsh-kb-rag"},
-    stars: 19,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17622,7 +17622,7 @@ export const plugins = [
     description: {"en":"黄金实时监控看板 (Gold Live Monitor) - XAU/USD 实时金价、人民币/克折算、会话走势、价格提醒与历史走势；附带 DSH Web 插件 (dsh-gold-monitor)","zh":"黄金实时监控看板 (Gold Live Monitor) - XAU/USD 实时金价、人民币/克折算、会话走势、价格提醒与历史走势；附带 DSH Web 插件 (dsh-gold-monitor)"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:brokge/gold-monitor"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17670,7 +17670,7 @@ export const plugins = [
     description: {"en":"30 秒找到真正适合你的 DeepSeek Harness插件。每天自动抓取 GitHub 上的 dsh-plugin 项目并逐个复核：真实插件分类收录，蹭标签项目剔除。通过场景化分类、精选推荐、热度排行和图文导览，帮你快速看懂每个插件能做什么、适合谁，以及如何开始使用。欢迎 Star ，让好用的插件更快被发现。","zh":"30 秒找到真正适合你的 DeepSeek Harness插件。每天自动抓取 GitHub 上的 dsh-plugin 项目并逐个复核：真实插件分类收录，蹭标签项目剔除。通过场景化分类、精选推荐、热度排行和图文导览，帮你快速看懂每个插件能做什么、适合谁，以及如何开始使用。欢迎 Star ，让好用的插件更快被发现。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bruc3van/awesome-dsh-plugin"},
-    stars: 512,
+    stars: 523,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17686,7 +17686,7 @@ export const plugins = [
     description: {"en":"让 Agent 安全常驻桌面的独立 dsh 客户端：官方 Web UI 原封不动，长任务常驻托盘，精选插件先审查、再安装。Independent dsh desktop client: the official Web UI untouched, long tasks alive in the tray, curated plugins reviewed before install.","zh":"让 Agent 安全常驻桌面的独立 dsh 客户端：官方 Web UI 原封不动，长任务常驻托盘，精选插件先审查、再安装。Independent dsh desktop client: the official Web UI untouched, long tasks alive in the tray, curated plugins reviewed before install."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bruc3van/dsh-desktop"},
-    stars: 98,
+    stars: 97,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17718,7 +17718,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:BruceLanLan/dsh-tier-router"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17926,7 +17926,7 @@ export const plugins = [
     description: {"en":"An omni-plugin for harness engineering workflows with multi-agents, programmatic gates and skills.","zh":"An omni-plugin for harness engineering workflows with multi-agents, programmatic gates and skills."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:btspoony/mstar-harness"},
-    stars: 69,
+    stars: 70,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -17990,7 +17990,7 @@ export const plugins = [
     description: {"en":"Template for deepseek-harness plugin development.","zh":"Template for deepseek-harness plugin development."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bugmaker2/dsh-plugin-template"},
-    stars: 102,
+    stars: 104,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18198,7 +18198,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness native plugin: Settings UI for the Roblox Studio MCP bridge - list connected Studio instances, pick the active one, and expose the selection to agents as runtime context.","zh":"DeepSeek Harness native plugin: Settings UI for the Roblox Studio MCP bridge - list connected Studio instances, pick the active one, and expose the selection to agents as runtime context."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:bxsexc/dsh-roblox-studio"},
-    stars: 3,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18262,7 +18262,7 @@ export const plugins = [
     description: {"en":"Matter-aware legal workspace dashboard and document agent tools for DeepSeek Harness","zh":"Matter-aware legal workspace dashboard and document agent tools for DeepSeek Harness"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ByronLeeeee/dsh-legal-dashboard"},
-    stars: 6,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18294,7 +18294,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 黄金实时看板插件：Au99.99/XAU 实时报价、可拖拽浮窗、招行积存金估算与日内买卖参考。","zh":"DeepSeek Harness 黄金实时看板插件：Au99.99/XAU 实时报价、可拖拽浮窗、招行积存金估算与日内买卖参考。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:c-ling/dsh-plugin-goldboard"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18326,7 +18326,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 消息提醒插件：回合结束或等待确认时向浏览器、系统、飞书/钉钉/企业微信/通用 Webhook 发送通知","zh":"DeepSeek Harness 消息提醒插件：回合结束或等待确认时向浏览器、系统、飞书/钉钉/企业微信/通用 Webhook 发送通知"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:c-ling/dsh-plugin-notify"},
-    stars: 9,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18486,7 +18486,7 @@ export const plugins = [
     description: {"en":"Toy Control Protocol for DSH","zh":"Toy Control Protocol for DSH"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:c3ll256/dsh-toy"},
-    stars: 75,
+    stars: 78,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18598,7 +18598,7 @@ export const plugins = [
     description: {"en":"AG-UI protocol gateway plugin for DeepSeek Harness","zh":"AG-UI protocol gateway plugin for DeepSeek Harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CaiZongyuan/dsh-ag-ui"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18710,7 +18710,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。","zh":"DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:canglongcl/dsh-web-review"},
-    stars: 31,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -18742,7 +18742,7 @@ export const plugins = [
     description: {"en":"Chrome 浏览器扩展 + DeepSeek Harness 插件，让 AI Agent 直接操控你的真实浏览器。","zh":"Chrome 浏览器扩展 + DeepSeek Harness 插件，让 AI Agent 直接操控你的真实浏览器。"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:caob23/dsh-browser-control"},
-    stars: 64,
+    stars: 72,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19046,7 +19046,7 @@ export const plugins = [
     description: {"en":"DeepSeek 额度与用量仪表盘 - DSH (DeepSeek Harness) 动态 Cordis 插件","zh":"DeepSeek 额度与用量仪表盘 - DSH (DeepSeek Harness) 动态 Cordis 插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Cassius0924/dsh-usage-dashboard"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19110,7 +19110,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web 番茄钟插件：可配置专注与休息时长，提供侧栏入口和可拖动浮动面板","zh":"DeepSeek Harness Web 番茄钟插件：可配置专注与休息时长，提供侧栏入口和可拖动浮动面板"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:causebefore/dsh-pomodoro"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19174,7 +19174,7 @@ export const plugins = [
     description: {"en":"Structural code intelligence for DeepSeek Harness (dsh) - gives the agent codegraph and codegraphindex tools to find where a symbol is declared, what calls it, and what a change reaches, from a tree-sitter index it...","zh":"Structural code intelligence for DeepSeek Harness (dsh) - gives the agent codegraph and codegraphindex tools to find where a symbol is declared, what calls it, and what a change reaches, from a tree-sitter index it..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CC19990113/dsh-plugin-codegraph"},
-    stars: 16,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19206,7 +19206,7 @@ export const plugins = [
     description: {"en":"A curated, evidence-led directory of DeepSeek Harness (DSH) plugins: verified loadable extensions, skills, and permission-aware installation guidance.","zh":"A curated, evidence-led directory of DeepSeek Harness (DSH) plugins: verified loadable extensions, skills, and permission-aware installation guidance."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cccakeee/awesome-dsh-plugins"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19222,7 +19222,7 @@ export const plugins = [
     description: {"en":"DSH 官方尚无终端 TUI 的补位之作：Claude Code 风格全屏交互终端插件--像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。","zh":"DSH 官方尚无终端 TUI 的补位之作：Claude Code 风格全屏交互终端插件--像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ccch1mneyyy/dsh-cc-tui"},
-    stars: 7490,
+    stars: 7838,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19238,7 +19238,7 @@ export const plugins = [
     description: {"en":"Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.","zh":"Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI"},
-    stars: 7490,
+    stars: 7838,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19254,7 +19254,7 @@ export const plugins = [
     description: {"en":"Lively Working-line extension for pi CLI and DSH","zh":"Lively Working-line extension for pi CLI and DSH"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ccch1mneyyy/working-activity"},
-    stars: 668,
+    stars: 669,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19446,7 +19446,7 @@ export const plugins = [
     description: {"en":"Open-origin DSH plugins for DeepSeek Harness, clutch-dsh-worktree.","zh":"Open-origin DSH plugins for DeepSeek Harness, clutch-dsh-worktree."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Cerbur/clutch-dsh"},
-    stars: 45,
+    stars: 46,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -19830,7 +19830,7 @@ export const plugins = [
     description: {"en":"Connect your AI agent to the world - Web search, Social media, Crypto & On-chain data. One plugin, zero extra config.","zh":"Connect your AI agent to the world - Web search, Social media, Crypto & On-chain data. One plugin, zero extra config."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chainbase-labs/Agentkey"},
-    stars: 655,
+    stars: 656,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20086,7 +20086,7 @@ export const plugins = [
     description: {"en":"Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CLI and web login.","zh":"Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CLI and web login."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chaos-03x/dsh-agy"},
-    stars: 68,
+    stars: 70,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20102,7 +20102,7 @@ export const plugins = [
     description: {"en":"Econometrics Research Assistant - A DSH plugin with 6 tools for econometrics analysis","zh":"Econometrics Research Assistant - A DSH plugin with 6 tools for econometrics analysis"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Chaos-Hyper/dsh-econ-tools"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20470,7 +20470,7 @@ export const plugins = [
     description: {"en":"DSH Native MUV Engine - tavern companion: regex script execution, variable state tracking, iframe status bar rendering, PolyForm-Noncommercial-Copyleft-1.0.0","zh":"DSH Native MUV Engine - tavern companion: regex script execution, variable state tracking, iframe status bar rendering, PolyForm-Noncommercial-Copyleft-1.0.0"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chen731215-dev/dsh-muv-engine"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20486,7 +20486,7 @@ export const plugins = [
     description: {"en":"MUV Variable Table Editor - tavern companion plugin for DeepSeek Harness: structured table editing for UpdateVariable blocks, PolyForm-Noncommercial-Copyleft-1.0.0","zh":"MUV Variable Table Editor - tavern companion plugin for DeepSeek Harness: structured table editing for UpdateVariable blocks, PolyForm-Noncommercial-Copyleft-1.0.0"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chen731215-dev/dsh-muv-table"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20518,7 +20518,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Tavern Plugin - character card roleplay, worldbook management, preset switching, dark theme, memory summary, relationship graph, PolyForm-Noncommercial-Copyleft-1.0.0","zh":"DeepSeek Harness Tavern Plugin - character card roleplay, worldbook management, preset switching, dark theme, memory summary, relationship graph, PolyForm-Noncommercial-Copyleft-1.0.0"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chen731215-dev/dsh-tavern-v2"},
-    stars: 18,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -20902,7 +20902,7 @@ export const plugins = [
     description: {"en":"在 Web GUI 里可视化管理项目的全部能力--Skills、MCP 服务器、快捷消息， 全部支持项目级 / 全局级双作用域，全部可以不离开浏览器完成安装、启停与分发","zh":"在 Web GUI 里可视化管理项目的全部能力--Skills、MCP 服务器、快捷消息， 全部支持项目级 / 全局级双作用域，全部可以不离开浏览器完成安装、启停与分发"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chengdb/dsh-plugin-capability-panel"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21014,7 +21014,7 @@ export const plugins = [
     description: {"en":"可以禁止DeepSeek-Harness执行任务的时候弹出烦人的黑色弹窗","zh":"可以禁止DeepSeek-Harness执行任务的时候弹出烦人的黑色弹窗"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chengyimingvb/dsh-silent-pwsh"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21174,7 +21174,7 @@ export const plugins = [
     description: {"en":"dsh daemon: register the DeepSeek Harness web server (dsh web) as an auto-start, self-healing background service (LaunchAgent / systemd / cron + watchdog)","zh":"dsh daemon: register the DeepSeek Harness web server (dsh web) as an auto-start, self-healing background service (LaunchAgent / systemd / cron + watchdog)"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chenkai2/dsh-daemon"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21334,7 +21334,7 @@ export const plugins = [
     description: {"en":"一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能","zh":"一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ChenRuoT/dsh-sidebar-qa"},
-    stars: 65,
+    stars: 67,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21558,7 +21558,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（DSH）插件：基于 GitHub 开源项目 ui-ux-pro-max-skill 修改优化的 UI/UX 设计智能库--内置 67 种设计风格、161 个调色板、57 组字体搭配、99 条 UX 规范、25 种图表类型与 22 个技术栈，提供 designrecommend / designreview / designsearch 模型工具，离线可用、中文优先、零网络依赖。","zh":"DeepSeek Harness（DSH）插件：基于 GitHub 开源项目 ui-ux-pro-max-skill 修改优化的 UI/UX 设计智能库--内置 67 种设计风格、161 个调色板、57 组字体搭配、99 条 UX 规范、25 种图表类型与 22 个技术栈，提供 designrecommend / designreview / designsearch 模型工具，离线可用、中文优先、零网络依赖。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ChenYiming-aaa/dsh-ui-ux-pro-max"},
-    stars: 30,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21686,7 +21686,7 @@ export const plugins = [
     description: {"en":"Self-evolving memory + skill lifecycle for DeepSeek Harness - durable cross-session memory with zero-token deterministic recall, tiered approval, reinforcement learning from repetition, and anti-bloat convergence for...","zh":"Self-evolving memory + skill lifecycle for DeepSeek Harness - durable cross-session memory with zero-token deterministic recall, tiered approval, reinforcement learning from repetition, and anti-bloat convergence for..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chenzheshushi-commits/dsh-evolve"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21814,7 +21814,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（dsh）Web GUI 技能中枢：浏览/搜索完整本地技能目录、启用/禁用、查看正文、排查诊断、新建技能，基于官方 ctx.skills 注册表。 In-GUI skill hub for dsh: browse, search, enable/disable, inspect, diagnose and scaffold local skills from the official...","zh":"DeepSeek Harness（dsh）Web GUI 技能中枢：浏览/搜索完整本地技能目录、启用/禁用、查看正文、排查诊断、新建技能，基于官方 ctx.skills 注册表。 In-GUI skill hub for dsh: browse, search, enable/disable, inspect, diagnose and scaffold local skills from the official..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cheshireez/dsh-skill-hub"},
-    stars: 39,
+    stars: 44,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -21830,7 +21830,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for complete Blender 3D modeling, reconstruction, rendering, validation, and export workflows","zh":"DeepSeek Harness plugin for complete Blender 3D modeling, reconstruction, rendering, validation, and export workflows"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CheshireJCat/blender"},
-    stars: 76,
+    stars: 81,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22038,7 +22038,7 @@ export const plugins = [
     description: {"en":"Cross-instance message and event handoff between DSH instances via an interconnect server.","zh":"跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Chinesezjc/dsh-interconnect"},
-    stars: 40,
+    stars: 42,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22070,7 +22070,7 @@ export const plugins = [
     description: {"en":"Nested (tree-shaped) todowrite tool plugin for DeepSeek Harness (DSH) - the mutually-exclusive alternative to the flat dsh-tool-todo","zh":"Nested (tree-shaped) todowrite tool plugin for DeepSeek Harness (DSH) - the mutually-exclusive alternative to the flat dsh-tool-todo"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Chinesezjc/dsh-tool-todo-tree"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22134,7 +22134,7 @@ export const plugins = [
     description: {"en":"DSH桌面端，支持主题和背景图等多种个性化配置。Electron desktop shell for DeepSeek Harness web UI","zh":"DSH桌面端，支持主题和背景图等多种个性化配置。Electron desktop shell for DeepSeek Harness web UI"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chisaalter/deepseek-harness-desktop"},
-    stars: 202,
+    stars: 205,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22342,7 +22342,7 @@ export const plugins = [
     description: {"en":"Vibe Mathematics -- 多代理数学问题求解与形式化验证框架","zh":"Vibe Mathematics -- 多代理数学问题求解与形式化验证框架"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ChongCyrus/Vibe-Mathematics"},
-    stars: 45,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22550,7 +22550,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness (DSH) agent preset that teaches while coding - concrete scenario-grounded explanations, Socratic guidance, and TODO(你) practice blanks, modeled on Claude Code's Learning output style. 学习模式","zh":"A DeepSeek Harness (DSH) agent preset that teaches while coding - concrete scenario-grounded explanations, Socratic guidance, and TODO(你) practice blanks, modeled on Claude Code's Learning output style. 学习模式"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CHplus0/dsh-learning-mode"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22646,7 +22646,7 @@ export const plugins = [
     description: {"en":"玩机器(6657直播间)烂梗 Skill：22771条真实弹幕烂梗蒸馏成AI Skill，生成玩机器式弹幕/解说吐槽/CS×DOTA双料梗","zh":"玩机器(6657直播间)烂梗 Skill：22771条真实弹幕烂梗蒸馏成AI Skill，生成玩机器式弹幕/解说吐槽/CS×DOTA双料梗"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Chu-Xin-r/wanjiqi-meme"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22790,7 +22790,7 @@ export const plugins = [
     description: {"en":"Visual AI workflow orchestrator for DeepSeek Harness (dsh): multi-agent DAGs, live execution, recovery, and Feishu integration.","zh":"Visual AI workflow orchestrator for DeepSeek Harness (dsh): multi-agent DAGs, live execution, recovery, and Feishu integration."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chumingjun/harness-one"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22838,7 +22838,7 @@ export const plugins = [
     description: {"en":"Expose DeepSeek Harness agent capabilities as an MCP server (brain=Hermes, arms=Harness)","zh":"Expose DeepSeek Harness agent capabilities as an MCP server (brain=Hermes, arms=Harness)"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chushixixin/dsh-harness-mcp-server"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22854,7 +22854,7 @@ export const plugins = [
     description: {"en":"DSH profile-bundle: 归档会话浏览/恢复/物理删除（FTS 全文搜索）","zh":"DSH profile-bundle: 归档会话浏览/恢复/物理删除（FTS 全文搜索）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ChuShiZ/dsh-archive-manager"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -22870,7 +22870,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:chuspeeism/dashi-taskboard"},
-    stars: 3477,
+    stars: 3501,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23142,7 +23142,7 @@ export const plugins = [
     description: {"en":"🌐 Multi-provider web search plugin for DeepSeek Harness: Zero-key Bing/Baidu direct search, free-tier APIs (Tavily/Brave/Serper/Bocha), SearXNG token auth, auto-fallback, and a built-in Web Settings GUI.","zh":"🌐 Multi-provider web search plugin for DeepSeek Harness: Zero-key Bing/Baidu direct search, free-tier APIs (Tavily/Brave/Serper/Bocha), SearXNG token auth, auto-fallback, and a built-in Web Settings GUI."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cinob/dsh-web-search-multi"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23206,7 +23206,7 @@ export const plugins = [
     description: {"en":"Deepseek Harness Telegram Bot","zh":"Deepseek Harness Telegram Bot"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:citedy/dsh-telegram-bot"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23446,7 +23446,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生 iOS 客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言","zh":"DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生 iOS 客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Clarklevis1995/dsh-mobile"},
-    stars: 759,
+    stars: 808,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23462,7 +23462,7 @@ export const plugins = [
     description: {"en":"以websocket为通信方式的dsh网关插件，支持在同一网域内移动端的接入，实现移动端的dsh app","zh":"以websocket为通信方式的dsh网关插件，支持在同一网域内移动端的接入，实现移动端的dsh app"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Clarklevis1995/dsh-plugin-mobile-gateway"},
-    stars: 156,
+    stars: 160,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23526,7 +23526,7 @@ export const plugins = [
     description: {"en":"DSH execution-discipline plugin suite: 11 plugins + 6 skills, zero dependencies, 426 tests. 让 DeepSeek Harness 变聪明的插件套件。","zh":"DSH execution-discipline plugin suite: 11 plugins + 6 skills, zero dependencies, 426 tests. 让 DeepSeek Harness 变聪明的插件套件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Classicoke/cleverer-dsh"},
-    stars: 19,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23670,7 +23670,7 @@ export const plugins = [
     description: {"en":"Playwright browser automation for DeepSeek Harness｜面向 DeepSeek Harness 的 Playwright 浏览器自动化插件","zh":"Playwright browser automation for DeepSeek Harness｜面向 DeepSeek Harness 的 Playwright 浏览器自动化插件"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:clizo1209/dsh-playwright-browser"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -23702,7 +23702,7 @@ export const plugins = [
     description: {"en":"deepseekharness 任务看板插件","zh":"deepseekharness 任务看板插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cloader/dsh-taskboard"},
-    stars: 83,
+    stars: 87,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24198,7 +24198,7 @@ export const plugins = [
     description: {"en":"Best ready-to-run DeepSeek Harness distribution: DSH desktop GUI, DSH terminal TUI, and harness integration.","zh":"Best ready-to-run DeepSeek Harness distribution: DSH desktop GUI, DSH terminal TUI, and harness integration."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cocode-agency/cocode"},
-    stars: 166,
+    stars: 165,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24214,7 +24214,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 搜番插件：对话内多源搜索番剧，卡片展示 Bangumi 评分与详情，支持复制磁力。","zh":"DeepSeek Harness 搜番插件：对话内多源搜索番剧，卡片展示 Bangumi 评分与详情，支持复制磁力。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cocofhu/anime-find"},
-    stars: 173,
+    stars: 176,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24246,7 +24246,7 @@ export const plugins = [
     description: {"en":"skillhub of deepseek-harness","zh":"skillhub of deepseek-harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cocofhu/skillhub"},
-    stars: 13,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24630,7 +24630,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 插件市场导航站","zh":"DeepSeek Harness 插件市场导航站"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:coeasy/dsh-go"},
-    stars: 23,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24710,7 +24710,7 @@ export const plugins = [
     description: {"en":"A TypeScript and React/Ink terminal frontend for DeepSeek Harness.","zh":"A TypeScript and React/Ink terminal frontend for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cofy-x/dsh-console"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -24982,7 +24982,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ConsoleSun/Gemini-Eyes"},
-    stars: 13,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -25222,7 +25222,7 @@ export const plugins = [
     description: {"en":"给 DeepSeek Harness 加能照着走的旅行攻略：小红书/抖音发现 POI，核验后再按天排程","zh":"给 DeepSeek Harness 加能照着走的旅行攻略：小红书/抖音发现 POI，核验后再按天排程"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:cosmic-snail/dsh-travel-plan"},
-    stars: 4,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -25398,7 +25398,7 @@ export const plugins = [
     description: {"en":"A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI, and more.","zh":"A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI, and more."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:crafter-station/petdex"},
-    stars: 4353,
+    stars: 4373,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -25542,7 +25542,7 @@ export const plugins = [
     description: {"en":"SSH remote workspaces for DeepSeek Harness: browse/read/write remote files, run remote commands, with connection status dots.","zh":"SSH remote workspaces for DeepSeek Harness: browse/read/write remote files, run remote commands, with connection status dots."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CrazyShout/dsh-ssh-remote"},
-    stars: 19,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -25558,7 +25558,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness balance plugin for the Settings page","zh":"DeepSeek Harness balance plugin for the Settings page"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:crazywoola/dsh-balance"},
-    stars: 27,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26102,7 +26102,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签--零核心修改、零运行时依赖，随装随用、卸载即净。","zh":"为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签--零核心修改、零运行时依赖，随装随用、卸载即净。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:csyangwen/dsh-memory-evolve"},
-    stars: 779,
+    stars: 841,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26438,7 +26438,7 @@ export const plugins = [
     description: {"en":"DSH 远程访问插件：内网二维码 / cloudflared 隧道 / frp+自有服务器（含登录门户）","zh":"DSH 远程访问插件：内网二维码 / cloudflared 隧道 / frp+自有服务器（含登录门户）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:CWNU-Open-Source-Community/dsh-webgate"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26838,7 +26838,7 @@ export const plugins = [
     description: {"en":"DSH 插件：简体中文行为规范三层注入（常驻层 + prompt 技能 + anchored preset 锚定注入）+ Web UI 编辑 prompt.md","zh":"DSH 插件：简体中文行为规范三层注入（常驻层 + prompt 技能 + anchored preset 锚定注入）+ Web UI 编辑 prompt.md"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Czerror/dsh-plugin-prompt-tool"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26902,7 +26902,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:czx2244/dsh-bilibili"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26934,7 +26934,7 @@ export const plugins = [
     description: {"en":"deepseek-harness-desktop / deepseek-harness桌面端","zh":"deepseek-harness-desktop / deepseek-harness桌面端"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:czzzlq/deepseek-harness-desktop"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26950,7 +26950,7 @@ export const plugins = [
     description: {"en":"WebGPU ocean skin for DeepSeek Harness - DSH plugin, Harness-only Chrome/Edge extension, static installer, and native integration.","zh":"WebGPU ocean skin for DeepSeek Harness - DSH plugin, Harness-only Chrome/Edge extension, static installer, and native integration."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:d-dev0101/open-sea-skin"},
-    stars: 392,
+    stars: 398,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -26998,7 +26998,7 @@ export const plugins = [
     description: {"en":"OpenTerminal support for DeepSeek Harness","zh":"OpenTerminal support for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:d3cker/dsh-open-terminal"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -27158,7 +27158,7 @@ export const plugins = [
     description: {"en":"Multi-window wall for DeepSeek Harness: run & monitor N DSH conversations side-by-side in one screen, plus an authenticated LAN gateway for phone/tablet access. npx dsh-multi-chat install","zh":"Multi-window wall for DeepSeek Harness: run & monitor N DSH conversations side-by-side in one screen, plus an authenticated LAN gateway for phone/tablet access. npx dsh-multi-chat install"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:daetz-coder/dsh-multi-chat"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -27174,7 +27174,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲、数百项素材库、随机开局可预锁、时间推进、全维 YAML 存档。","zh":"DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲、数百项素材库、随机开局可预锁、时间推进、全维 YAML 存档。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:daha1216/dsh-adult-tension"},
-    stars: 551,
+    stars: 590,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -27206,7 +27206,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲与张力引擎、随机开局可预锁、时间推进、全维 YAML 存档。仅限虚构成年人。","zh":"DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲与张力引擎、随机开局可预锁、时间推进、全维 YAML 存档。仅限虚构成年人。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:daha1216/dsh-skill-adult-tension-narrative"},
-    stars: 551,
+    stars: 590,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -27654,7 +27654,7 @@ export const plugins = [
     description: {"en":"Kiro provider for DeepSeek Harness with Builder ID login, live model discovery, and reasoning effort controls","zh":"Kiro provider for DeepSeek Harness with Builder ID login, live model discovery, and reasoning effort controls"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dat-lequoc/dsh-kiro"},
-    stars: 18,
+    stars: 19,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -28278,7 +28278,7 @@ export const plugins = [
     description: {"en":"Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed","zh":"Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DDDMUC/dsh-free-search"},
-    stars: 1063,
+    stars: 1324,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -28534,7 +28534,7 @@ export const plugins = [
     description: {"en":"Portrait & mobile adaptation for the DeepSeek Harness Web UI - overlay drawer, full-width conversation, sheet dialogs, safe-area handling. Below 1024px it adapts; at ≥1024px it is a no-op.","zh":"Portrait & mobile adaptation for the DeepSeek Harness Web UI - overlay drawer, full-width conversation, sheet dialogs, safe-area handling. Below 1024px it adapts; at ≥1024px it is a no-op."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ddtcorex/dsh-maestro-mobile"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -28806,7 +28806,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness: Everything is a Plugin.","zh":"DeepSeek Harness: Everything is a Plugin."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:deepseek-ai/deepseek-harness"},
-    stars: 278646,
+    stars: 282744,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -28870,7 +28870,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness bash executor plugin that routes eligible commands through rtk (Rust Token Killer) to compress tool output and save tokens.","zh":"DeepSeek Harness bash executor plugin that routes eligible commands through rtk (Rust Token Killer) to compress tool output and save tokens."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DeepTrial/dsh-bash-rtk"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29238,7 +29238,7 @@ export const plugins = [
     description: {"en":"为 DSH 默认沙箱增加可配置的「沙箱授权目录」，允许工作区外的受信修改。","zh":"为 DSH 默认沙箱增加可配置的「沙箱授权目录」，允许工作区外的受信修改。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:developerdh/dsh-sandbox-allowlist"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29270,7 +29270,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness.","zh":"DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Devin-AXIS/deepseek-design"},
-    stars: 1804,
+    stars: 1868,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29286,7 +29286,7 @@ export const plugins = [
     description: {"en":"A next-generation, origin-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video-a Codex alternative that integrates DeepSeek Harness for subagent...","zh":"A next-generation, origin-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video-a Codex alternative that integrates DeepSeek Harness for subagent..."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:devin-axis/ipollowork"},
-    stars: 7451,
+    stars: 7497,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29670,7 +29670,7 @@ export const plugins = [
     description: {"en":"Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin - reverse engineering, authorized pentesting and security research skill pack.","zh":"完整的逆向技能包（85 个 SKILL.md），作为 DeepSeek Harness (dsh) Cordis 插件 - 逆向工程、授权渗透测试和安全研究技能包。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dhicoc/dsh-reverse-skill"},
-    stars: 346,
+    stars: 352,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29766,7 +29766,7 @@ export const plugins = [
     description: {"en":"BetterInput是一套输入增强套件：从语音识别、AI 润色、提示词优化，到把各类文件转成结构清晰的Md，再到交互体验优化等--把每一种喂给智能体的输入都变得更好。BetterInput is an input-enhancement suite for DSH: voice recognition, AI polishing, prompt optimization, turning files into...","zh":"BetterInput是一套输入增强套件：从语音识别、AI 润色、提示词优化，到把各类文件转成结构清晰的Md，再到交互体验优化等--把每一种喂给智能体的输入都变得更好。BetterInput is an input-enhancement suite for DSH: voice recognition, AI polishing, prompt optimization, turning files into..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DIAG5/dsh-better-input"},
-    stars: 25,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -29814,7 +29814,7 @@ export const plugins = [
     description: {"en":"DSH (DeepSeek Harness) Web GUI AI image generation plugin: text-to-image & image-to-image via OpenAI-compatible endpoints (gpt-image-2), with shared cross-device history.","zh":"DSH (DeepSeek Harness) Web GUI AI image generation plugin: text-to-image & image-to-image via OpenAI-compatible endpoints (gpt-image-2), with shared cross-device history."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dickpy/dsh-imagegen"},
-    stars: 185,
+    stars: 197,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30022,7 +30022,7 @@ export const plugins = [
     description: {"en":"Configurable default model for subagent delegations via settings.yaml, with single-model and multi-model round-robin/random strategies.","zh":"Configurable default model for subagent delegations via settings.yaml, with single-model and multi-model round-robin/random strategies."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dingminhua/dsh-subagent-default-model"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30070,7 +30070,7 @@ export const plugins = [
     description: {"en":"Official DingTalk connector for DeepSeek Harness","zh":"Official DingTalk connector for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DingTalk-Real-AI/dsh-dingtalk"},
-    stars: 28,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30118,7 +30118,7 @@ export const plugins = [
     description: {"en":"Notifications for four session states, with browser alerts and prompts.","zh":"会话完成等四种状态的通知响应，支持浏览器提示。"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dingyi222666/dsh-session-notification"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30230,7 +30230,7 @@ export const plugins = [
     description: {"en":"Local-first cross-session memory for DeepSeek Harness (DSH): automatic capture, Event/Element cards, evidence-gated recall, origin tracing. 本地跨会话长期记忆。","zh":"Local-first cross-session memory for DeepSeek Harness (DSH): automatic capture, Event/Element cards, evidence-gated recall, origin tracing. 本地跨会话长期记忆。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:diqierjia/StrataGate-AgentMemory"},
-    stars: 115,
+    stars: 119,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30390,7 +30390,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 提供 QQ 官方机器人的接入能力","zh":"为 DeepSeek Harness 提供 QQ 官方机器人的接入能力"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DLive/dsh-qqbot-community"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30966,7 +30966,7 @@ export const plugins = [
     description: {"en":"A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh","zh":"A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Dominic789654/awesome-deepseek-harness"},
-    stars: 430,
+    stars: 433,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -30982,7 +30982,7 @@ export const plugins = [
     description: {"en":"OLED burn-in care plugin for the DeepSeek Harness Web GUI: true-black nap screensaver, pure-black surfaces, gamma-aware dimming, hue rotation","zh":"OLED burn-in care plugin for the DeepSeek Harness Web GUI: true-black nap screensaver, pure-black surfaces, gamma-aware dimming, hue rotation"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:domparent/OLEDCare"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -31590,7 +31590,7 @@ export const plugins = [
     description: {"en":"Persistent interactive terminal mode for DeepSeek Harness","zh":"Persistent interactive terminal mode for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dongsheng123132/dsh-terminal"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -31878,7 +31878,7 @@ export const plugins = [
     description: {"en":"该程序是一个独立的 Capacitor Android 应用，用于管理本机 DeepSeek Harness Ubuntu 用户空间。它提供运行时安装与重置、Ubuntu 终端、可选的 Shizuku 设备 Shell 访问、设置，以及仅限回环地址的内嵌 Harness Web 界面。","zh":"该程序是一个独立的 Capacitor Android 应用，用于管理本机 DeepSeek Harness Ubuntu 用户空间。它提供运行时安装与重置、Ubuntu 终端、可选的 Shizuku 设备 Shell 访问、设置，以及仅限回环地址的内嵌 Harness Web 界面。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dphmoblie/deepseek-harness-android"},
-    stars: 114,
+    stars: 135,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -31974,7 +31974,7 @@ export const plugins = [
     description: {"en":"Modern C++20 MVVM framework - cross-platform, layered, coroutine-first. Reactive DAG (Property/Computed/Effect), Task, and pluggable adapters (Qt6, AppKit, ...).","zh":"Modern C++20 MVVM framework - cross-platform, layered, coroutine-first. Reactive DAG (Property/Computed/Effect), Task, and pluggable adapters (Qt6, AppKit, ...)."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dqsjqian/aria"},
-    stars: 132,
+    stars: 134,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32038,7 +32038,7 @@ export const plugins = [
     description: {"en":"Preview, create, edit office spreadsheets, docs & slides inside DeepSeek Harness. Power by Univer.","zh":"Preview, create, edit office spreadsheets, docs & slides inside DeepSeek Harness. Power by Univer."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dream-num/dsh-univer-office"},
-    stars: 706,
+    stars: 732,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32054,7 +32054,7 @@ export const plugins = [
     description: {"en":"Delete DSH conversation sessions from a Settings panel/在设置面板中增加删除会话管理以便删除无用会话","zh":"Delete DSH conversation sessions from a Settings panel/在设置面板中增加删除会话管理以便删除无用会话"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dream12347/dsh-delete-session"},
-    stars: 114,
+    stars: 116,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32070,7 +32070,7 @@ export const plugins = [
     description: {"en":"DSH 会话管理插件：删除（回收站恢复/彻底清除）、统计、继续/暂停、打开日志目录、对话顶部抽屉、工作区分组与排序、上下文压缩阈值设置。DSH session manager: delete with trash/restore/purge, stats, continue/pause, log folder, header drawer, workspace grouping, context compaction...","zh":"DSH 会话管理插件：删除（回收站恢复/彻底清除）、统计、继续/暂停、打开日志目录、对话顶部抽屉、工作区分组与排序、上下文压缩阈值设置。DSH session manager: delete with trash/restore/purge, stats, continue/pause, log folder, header drawer, workspace grouping, context compaction..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dream12347/dsh-session-manager"},
-    stars: 114,
+    stars: 116,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32198,7 +32198,7 @@ export const plugins = [
     description: {"en":"One macOS app for Claude Code, Codex, and every agent runtime you use - scheduled runs, global hotkey launcher, per-run git worktrees, one review board.","zh":"One macOS app for Claude Code, Codex, and every agent runtime you use - scheduled runs, global hotkey launcher, per-run git worktrees, one review board."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:drewnekota/cetus"},
-    stars: 150,
+    stars: 151,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32246,7 +32246,7 @@ export const plugins = [
     description: {"en":"A Nachoneko (甘城猫猫) themed skin for the DeepSeek Harness web GUI.","zh":"A Nachoneko (甘城猫猫) themed skin for the DeepSeek Harness web GUI."},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:drfccv/dsh-theme-neko"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32326,7 +32326,7 @@ export const plugins = [
     description: {"en":"Busy-time input queue for the DeepSeek Harness web GUI: three-tier (now/next/later) planning, queue editing with drag-to-reorder and concurrency protection, interject (steer) and interrupt, batch clear with confirm,...","zh":"Busy-time input queue for the DeepSeek Harness web GUI: three-tier (now/next/later) planning, queue editing with drag-to-reorder and concurrency protection, interject (steer) and interrupt, batch clear with confirm,..."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:drscrewdriver/dsh-input-traffic"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32358,7 +32358,7 @@ export const plugins = [
     description: {"en":"给 DeepSeek Harness 侧边栏加一个会话内容检索--标题/内容一键切换，还能按用户/回复/工具筛选","zh":"给 DeepSeek Harness 侧边栏加一个会话内容检索--标题/内容一键切换，还能按用户/回复/工具筛选"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:drscrewdriver/dsh-session-search-toggle"},
-    stars: 7,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32374,7 +32374,7 @@ export const plugins = [
     description: {"en":"deepseek-harness dsh thinging levels 调整 reasoning强度调整","zh":"deepseek-harness dsh thinging levels 调整 reasoning强度调整"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:drscrewdriver/dsh-thinking-levels"},
-    stars: 17,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32390,7 +32390,7 @@ export const plugins = [
     description: {"en":"📈 Daily-updated DeepSeek Harness plugin rankings · 每日更新的 DSH 插件榜单 - powered by dsh-ai.org","zh":"📈 Daily-updated DeepSeek Harness plugin rankings · 每日更新的 DSH 插件榜单 - powered by dsh-ai.org"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-ai-org/top-dsh-plugins"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32662,7 +32662,7 @@ export const plugins = [
     description: {"en":"DSH Web UI 广告层：2005 中文站风格侧栏广告/信息流/角落弹窗 + 关闭叉热区远小于视觉（素材全虚构整活插件）","zh":"DSH Web UI 广告层：2005 中文站风格侧栏广告/信息流/角落弹窗 + 关闭叉热区远小于视觉（素材全虚构整活插件）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-ads"},
-    stars: 718,
+    stars: 730,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32790,7 +32790,7 @@ export const plugins = [
     description: {"en":"Web 选中批注插件：选文字→批注→回车随消息发送；回复按 Annotation N 逐条对照","zh":"Web 选中批注插件：选文字→批注→回车随消息发送；回复按 Annotation N 逐条对照"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-annotation"},
-    stars: 168,
+    stars: 169,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32902,7 +32902,7 @@ export const plugins = [
     description: {"en":"右侧侧边栏增强：文件预览/终端/Git，可拖拽自定义位置","zh":"右侧侧边栏增强：文件预览/终端/Git，可拖拽自定义位置"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-better-sidebar"},
-    stars: 5075,
+    stars: 5206,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32918,7 +32918,7 @@ export const plugins = [
     description: {"en":"better-sidebar 的 office 插件","zh":"better-sidebar 的 office 插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-better-sidebar-plugin-office"},
-    stars: 66,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -32934,7 +32934,7 @@ export const plugins = [
     description: {"en":"Chrome 侧边栏拓展：直接操作浏览器","zh":"Chrome 侧边栏拓展：直接操作浏览器"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-browser"},
-    stars: 1044,
+    stars: 1087,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -33094,7 +33094,7 @@ export const plugins = [
     description: {"en":"空仓库（待填充后复核）","zh":"空仓库（待填充后复核）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-code"},
-    stars: 302,
+    stars: 312,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -33302,7 +33302,7 @@ export const plugins = [
     description: {"en":"让 AI 连数据库、写 SQL 的 DSH 插件","zh":"让 AI 连数据库、写 SQL 的 DSH 插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-data-agent"},
-    stars: 222,
+    stars: 226,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34118,7 +34118,7 @@ export const plugins = [
     description: {"en":"分层记忆（用户/项目/每日）+ 自我进化（经验沉淀 + 技能自动创建）","zh":"分层记忆（用户/项目/每日）+ 自我进化（经验沉淀 + 技能自动创建）"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-memory-evolve"},
-    stars: 779,
+    stars: 841,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34134,7 +34134,7 @@ export const plugins = [
     description: {"en":"分支式消息编辑：reroll / retry / 版本时间线","zh":"分支式消息编辑：reroll / retry / 版本时间线"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-message-edit"},
-    stars: 54,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34182,7 +34182,7 @@ export const plugins = [
     description: {"en":"Mnemonic 记忆层（integration with mnemon-dev/mnemon，分类推断）","zh":"Mnemonic 记忆层（integration with mnemon-dev/mnemon，分类推断）"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-mnemon"},
-    stars: 964,
+    stars: 1024,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34230,7 +34230,7 @@ export const plugins = [
     description: {"en":"支持在 Multica 上使用 DSH 作为 runtime（cordis 插件）","zh":"支持在 Multica 上使用 DSH 作为 runtime（cordis 插件）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-multica-runtime"},
-    stars: 80,
+    stars: 82,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34422,7 +34422,7 @@ export const plugins = [
     description: {"en":"OpenPencil 设计预览与编辑插件","zh":"OpenPencil 设计预览与编辑插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-openpencil"},
-    stars: 253,
+    stars: 263,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34550,7 +34550,7 @@ export const plugins = [
     description: {"en":"插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录","zh":"插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-plugin-dev"},
-    stars: 17,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -34646,7 +34646,7 @@ export const plugins = [
     description: {"en":"提示词编辑器（Prompt Studio）：编辑用户与内置 system-prompt 段落，实时预览","zh":"提示词编辑器（Prompt Studio）：编辑用户与内置 system-prompt 段落，实时预览"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-prompt-studio"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -35238,7 +35238,7 @@ export const plugins = [
     description: {"en":"股票行情插件（写代码时账户不能同时亏钱）","zh":"股票行情插件（写代码时账户不能同时亏钱）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-stock-market"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -35606,7 +35606,7 @@ export const plugins = [
     description: {"en":"DSH Track Bridge 插件：嵌入式任务管理引擎--决策点协议、念头捕获墙、Linear 形 issue 存储（bundle）","zh":"DSH Track Bridge 插件：嵌入式任务管理引擎--决策点协议、念头捕获墙、Linear 形 issue 存储（bundle）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-track"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -35926,7 +35926,7 @@ export const plugins = [
     description: {"en":"DSH Web UI 皮肤集合（skins/qq98、ths，热插拔客户端插件包）","zh":"DSH Web UI 皮肤集合（skins/qq98、ths，热插拔客户端插件包）"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh-web-ui"},
-    stars: 10343,
+    stars: 10476,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36070,7 +36070,7 @@ export const plugins = [
     description: {"en":"Dynamic Workflow for dsh（占位，待填充后复核）","zh":"Dynamic Workflow for dsh（占位，待填充后复核）"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/dsh_workflow"},
-    stars: 158,
+    stars: 159,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36118,7 +36118,7 @@ export const plugins = [
     description: {"en":"ego-lite 浏览器接入 HARNESS：13 个结构化 ego 工具（语义快照/定位点击/表单/截图/CDP/任务空间隔离），内置 ego 运行时","zh":"ego-lite 浏览器接入 HARNESS：13 个结构化 ego 工具（语义快照/定位点击/表单/截图/CDP/任务空间隔离），内置 ego 运行时"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/ego-browser"},
-    stars: 480,
+    stars: 534,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36294,7 +36294,7 @@ export const plugins = [
     description: {"en":"薄控制台（0 patch）：浏览器管理官方 repository 插件（.dsh-plugin 源增删/更新）与 bundle 插件（loader 树运行时启停/安装/更新）；旧 dsh.plugin.json 机制已移除（2026-08）","zh":"薄控制台（0 patch）：浏览器管理官方 repository 插件（.dsh-plugin 源增删/更新）与 bundle 插件（loader 树运行时启停/安装/更新）；旧 dsh.plugin.json 机制已移除（2026-08）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/plugin-registry"},
-    stars: 60,
+    stars: 59,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36614,7 +36614,7 @@ export const plugins = [
     description: {"en":"把鲸鱼娘思考时的 deep diving 自定义成任意状态标签（cordis）","zh":"把鲸鱼娘思考时的 deep diving 自定义成任意状态标签（cordis）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/ui-status-label"},
-    stars: 51,
+    stars: 52,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36646,7 +36646,7 @@ export const plugins = [
     description: {"en":"桌面宠物插件（官方 0809 repository 插件）：.dsh-plugin 包 + 自渲染 UI（tapIndex 注入），config.yaml github: 源安装","zh":"桌面宠物插件（官方 0809 repository 插件）：.dsh-plugin 包 + 自渲染 UI（tapIndex 注入），config.yaml github: 源安装"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/whale-girl"},
-    stars: 407,
+    stars: 412,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36710,7 +36710,7 @@ export const plugins = [
     description: {"en":"Zotero 文献采集入库插件：多源检索（OpenAlex/arXiv/Crossref/Europe PMC/Semantic Scholar）+ OA 下载解析（Unpaywall）+ 充分性审计 + 入库本地 Zotero + 触发 zotero-wave-rag 重建","zh":"Zotero 文献采集入库插件：多源检索（OpenAlex/arXiv/Crossref/Europe PMC/Semantic Scholar）+ OA 下载解析（Unpaywall）+ 充分性审计 + 入库本地 Zotero + 触发 zotero-wave-rag 重建"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-external/zotero-harvest"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -36790,7 +36790,7 @@ export const plugins = [
     description: {"en":"The plugin market inside DeepSeek Harness - browse, search, one-click install · DSH 可视化插件市场","zh":"The plugin market inside DeepSeek Harness - browse, search, one-click install · DSH 可视化插件市场"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-market/dsh-market"},
-    stars: 11939,
+    stars: 12736,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37158,7 +37158,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Tauri 桌面版 \\ Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux.","zh":"DeepSeek Harness Tauri 桌面版 \\ Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-tauri-desk/deepseek-harness-desktop"},
-    stars: 3580,
+    stars: 3652,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37174,7 +37174,7 @@ export const plugins = [
     description: {"en":"Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle","zh":"Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dsh-tui/dsh-tui"},
-    stars: 45,
+    stars: 48,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37190,7 +37190,7 @@ export const plugins = [
     description: {"en":"Runtime-agnostic Rust port of Cordis, the plugin framework at the core of DeepSeek Harness - scoped dependency injection, lifecycle-owned effects, events, structured logging. Zero dependencies.","zh":"Runtime-agnostic Rust port of Cordis, the plugin framework at the core of DeepSeek Harness - scoped dependency injection, lifecycle-owned effects, events, structured logging. Zero dependencies."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dshbox/cordis-rs"},
-    stars: 74,
+    stars: 75,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37286,7 +37286,7 @@ export const plugins = [
     description: {"en":"Browse and install DSH plugins from inside DeepSeek Harness. /store, a settings tab, and agent tools - bilingual.","zh":"Browse and install DSH plugins from inside DeepSeek Harness. /store, a settings tab, and agent tools - bilingual."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:DshMarketPlace/dsh-plugins-store"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37414,7 +37414,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 社区内置插件市场（dsh-plugin）- 搜索插件、下载并安装 4000+ 人工精选社区插件，每日更新、完全免费。内置在 Harness「设置 → 插件中心」，无需离开应用即可浏览、搜索、安装各类 AI 插件。","zh":"DeepSeek Harness 社区内置插件市场（dsh-plugin）- 搜索插件、下载并安装 4000+ 人工精选社区插件，每日更新、完全免费。内置在 Harness「设置 → 插件中心」，无需离开应用即可浏览、搜索、安装各类 AI 插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:dshplugin/dsh-plugin-hub"},
-    stars: 510,
+    stars: 535,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -37606,7 +37606,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 通用 MCP连接器、连接管理与扩展市场：连接 MCP Server，发现工具与 Prompt，扩展 AI 技能；支持 OAuth/PKCE、API Key、JSON 导入。由企查查（Qichacha/QCC）团队发起维护。General-purpose MCP connector, connection manager, plugin, extension and integration...","zh":"DeepSeek Harness 通用 MCP连接器、连接管理与扩展市场：连接 MCP Server，发现工具与 Prompt，扩展 AI 技能；支持 OAuth/PKCE、API Key、JSON 导入。由企查查（Qichacha/QCC）团队发起维护。General-purpose MCP connector, connection manager, plugin, extension and integration..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:duhu2000/dsh-mcp-connector"},
-    stars: 121,
+    stars: 136,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38246,7 +38246,7 @@ export const plugins = [
     description: {"en":"A plugin for DSH to optimize session loading speed and reduce disk read/write consumption.","zh":"A plugin for DSH to optimize session loading speed and reduce disk read/write consumption."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:echo-xianyu/dsh-better-chat-history"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38406,7 +38406,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness bridge plugin for Better DeepSeek Chrome extension.","zh":"DeepSeek Harness bridge plugin for Better DeepSeek Chrome extension."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:EdgeTypE/dsh-better-deepseek"},
-    stars: 42,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38422,7 +38422,7 @@ export const plugins = [
     description: {"en":"One-click install + model switch:Claude Code,Codex CLI (OpenAI), Grok Build (xAI), DeepSeek Harness, Kimi Code (Moonshot) ,Qwen Code,Aider,OpenCode,MiMo Code (Xiaomi),ZCode...","zh":"One-click install + model switch:Claude Code,Codex CLI (OpenAI), Grok Build (xAI), DeepSeek Harness, Kimi Code (Moonshot) ,Qwen Code,Aider,OpenCode,MiMo Code (Xiaomi),ZCode..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:edison7009/EchoBird"},
-    stars: 3536,
+    stars: 3567,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38454,7 +38454,7 @@ export const plugins = [
     description: {"en":"Know if your agent skill actually works. A lightweight evaluation harness that tracks a success rate across Claude Code, Codex, Pi, and Hermes.","zh":"Know if your agent skill actually works. A lightweight evaluation harness that tracks a success rate across Claude Code, Codex, Pi, and Hermes."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:edonadei/caliper"},
-    stars: 231,
+    stars: 235,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38774,7 +38774,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）","zh":"DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:electricitysheep/dsh-handbook"},
-    stars: 965,
+    stars: 981,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -38790,7 +38790,7 @@ export const plugins = [
     description: {"en":"Per-round reasoningeffort optimizer for DeepSeek Harness (dsh): auto-downgrades tool-call reasoning for simple tool chains, lifting back for heavy work. Cuts thinking time between tool calls.","zh":"Per-round reasoningeffort optimizer for DeepSeek Harness (dsh): auto-downgrades tool-call reasoning for simple tool chains, lifting back for heavy work. Cuts thinking time between tool calls."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:electricitysheep/dsh-tool-turbo"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39110,7 +39110,7 @@ export const plugins = [
     description: {"en":"把本机 Wallpaper Engine 的壁纸变成 DSH 网页界面的背景：Video 动态播放、Web 以 iframe 加载、Scene 壁纸提取主纹理作为静态帧；iOS 液态玻璃设置窗口（配色 / 玻璃颜色 / 透明度）、内容分级与类型过滤、自定义壁纸上传、紧凑 CD 架布局、黑胶唱片展示、隐藏 / 恢复、倍速 / 翻转与自动轮播。感谢 Jerry 维护 macOS 版。","zh":"把本机 Wallpaper Engine 的壁纸变成 DSH 网页界面的背景：Video 动态播放、Web 以 iframe 加载、Scene 壁纸提取主纹理作为静态帧；iOS 液态玻璃设置窗口（配色 / 玻璃颜色 / 透明度）、内容分级与类型过滤、自定义壁纸上传、紧凑 CD 架布局、黑胶唱片展示、隐藏 / 恢复、倍速 / 翻转与自动轮播。感谢 Jerry 维护 macOS 版。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:elysia395/dsh-wallpaper-engine"},
-    stars: 6437,
+    stars: 7282,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39158,7 +39158,7 @@ export const plugins = [
     description: {"en":"Hermes ↔ DeepSeek Harness MCP bridge: drive dsh agents (tasks, sessions, files, presets, stats) from any MCP client. Hermes = brain, Harness = arms.","zh":"Hermes ↔ DeepSeek Harness MCP bridge: drive dsh agents (tasks, sessions, files, presets, stats) from any MCP client. Hermes = brain, Harness = arms."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Emilia-awa/hermes-dsh-bridge"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39350,7 +39350,7 @@ export const plugins = [
     description: {"en":"DSH Harmony 客户端 搭配 dsh-pocket 使用","zh":"DSH Harmony 客户端 搭配 dsh-pocket 使用"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:enoughpower/dsh-harmony"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39670,7 +39670,7 @@ export const plugins = [
     description: {"en":"在 Termux(An droid)上运行 DeepSeek Harness(dsh)。Run DeepSeek Harness(dsh) on Termux (Android).","zh":"在 Termux(An droid)上运行 DeepSeek Harness(dsh)。Run DeepSeek Harness(dsh) on Termux (Android)."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ErEbusE/dsh-termux"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39686,7 +39686,7 @@ export const plugins = [
     description: {"en":"DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web","zh":"DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:eri64/dsh-claude-ux"},
-    stars: 76,
+    stars: 77,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -39798,7 +39798,7 @@ export const plugins = [
     description: {"en":"Pixel-perfect clones of any webpage. Paste a URL, get a measured Vite + React replica.","zh":"Pixel-perfect clones of any webpage. Paste a URL, get a measured Vite + React replica."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ericshang98/Perfect-Web-Clone"},
-    stars: 283,
+    stars: 285,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40006,7 +40006,7 @@ export const plugins = [
     description: {"en":"DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability - leave it running.","zh":"DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability - leave it running."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:esengine/DeepSeek-Reasonix"},
-    stars: 36156,
+    stars: 36105,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40086,7 +40086,7 @@ export const plugins = [
     description: {"en":"DSH ??????:?????? + ??????? + ????","zh":"DSH ??????:?????? + ??????? + ????"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ESxyzbil/dsh-official-document-mode"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40230,7 +40230,7 @@ export const plugins = [
     description: {"en":"本地优先 AI 小说创作工作台，提供 Windows/macOS 桌面版与 DeepSeek Harness 插件开发预览，支持角色、大纲、章节蓝图、审稿修稿和本地模型。","zh":"本地优先 AI 小说创作工作台，提供 Windows/macOS 桌面版与 DeepSeek Harness 插件开发预览，支持角色、大纲、章节蓝图、审稿修稿和本地模型。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:EthanYoQ/AI-Novel-Writer"},
-    stars: 2574,
+    stars: 2679,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40246,7 +40246,7 @@ export const plugins = [
     description: {"en":"InvoiceFlowAI：Windows 与 macOS 发票助手，自动下载邮箱电子发票、OCR 识别、分类归档并生成 Excel 报销汇总；可安装为 DeepSeek Harness 插件。","zh":"InvoiceFlowAI：Windows 与 macOS 发票助手，自动下载邮箱电子发票、OCR 识别、分类归档并生成 Excel 报销汇总；可安装为 DeepSeek Harness 插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:EthanYoQ/Invoice-Downloader"},
-    stars: 547,
+    stars: 549,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40454,7 +40454,7 @@ export const plugins = [
     description: {"en":"One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-evolving across apps, tools, and workflows.","zh":"One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-evolving across apps, tools, and workflows."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:EverMind-AI/EverOS"},
-    stars: 13882,
+    stars: 13928,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40470,7 +40470,7 @@ export const plugins = [
     description: {"en":"Open-origin infrastructure that turns scattered SKILL.md files into curated, retrieval-ready agent-skill corpora-with retrieval and evaluation tooling included.","zh":"Open-origin infrastructure that turns scattered SKILL.md files into curated, retrieval-ready agent-skill corpora-with retrieval and evaluation tooling included."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:EverMind-AI/SkillCorpus"},
-    stars: 701,
+    stars: 705,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40598,7 +40598,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web GUI 皮肤 · 鸣潮·达妮娅(Denia)主题「虚无之泡」。双形态亮/暗、侧边立绘、可修改的玻璃卡片、浮动泡泡粒子、锁链边框。","zh":"DeepSeek Harness Web GUI 皮肤 · 鸣潮·达妮娅(Denia)主题「虚无之泡」。双形态亮/暗、侧边立绘、可修改的玻璃卡片、浮动泡泡粒子、锁链边框。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ewnscat-ya/dsh-client-ui-skin-denia"},
-    stars: 55,
+    stars: 57,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40614,7 +40614,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ExElectron/dsh-gov-portal"},
-    stars: 56,
+    stars: 57,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -40934,7 +40934,7 @@ export const plugins = [
     description: {"en":"Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.","zh":"嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fakechris/dsh-track"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41062,7 +41062,7 @@ export const plugins = [
     description: {"en":"pi-style terminal UI for DeepSeek Harness (dsh) - pi-tui look & feel, dsh slash commands, GitHub light/dark themes, powerline footer","zh":"pi-style terminal UI for DeepSeek Harness (dsh) - pi-tui look & feel, dsh slash commands, GitHub light/dark themes, powerline footer"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fan56/dsh-tui-pi"},
-    stars: 15,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41174,7 +41174,7 @@ export const plugins = [
     description: {"en":"一个基于DeepSeek-Harness的ComfyUI插件","zh":"一个基于DeepSeek-Harness的ComfyUI插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fandc520/dsh-comfyui"},
-    stars: 184,
+    stars: 189,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41190,7 +41190,7 @@ export const plugins = [
     description: {"en":"DSH插件，以Observational Memory方式管理上下文","zh":"DSH插件，以Observational Memory方式管理上下文"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FanetheDivine/dsh-plugin-om"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41270,7 +41270,7 @@ export const plugins = [
     description: {"en":"DSH Origin Plugin: drive Origin scientific plotting from DeepSeek Harness AI chat via MCP. Write data, plot line/scatter/column, export PNG/SVG DeepSeek Harness Origin","zh":"DSH Origin Plugin: drive Origin scientific plotting from DeepSeek Harness AI chat via MCP. Write data, plot line/scatter/column, export PNG/SVG DeepSeek Harness Origin"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Fantasality/dsh-origin-plugin"},
-    stars: 45,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41286,7 +41286,7 @@ export const plugins = [
     description: {"en":"为了解决使用opencode go接入deepseek harness会无法搜索，而诞生的插件。将deepseek harness的搜索逻辑改为opencode。","zh":"为了解决使用opencode go接入deepseek harness会无法搜索，而诞生的插件。将deepseek harness的搜索逻辑改为opencode。"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FANXING-0710/dsh-web-search-opencode"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41462,7 +41462,7 @@ export const plugins = [
     description: {"en":"Reuse your own logged-in Chrome in dsh (DeepSeek Harness): scrape login-walled sites, fill forms, and click through pages with native wc3 tools - no re-login, no anti-bot friction.","zh":"Reuse your own logged-in Chrome in dsh (DeepSeek Harness): scrape login-walled sites, fill forms, and click through pages with native wc3 tools - no re-login, no anti-bot friction."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fatmind/dsh-plugin-browser-use"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41590,7 +41590,7 @@ export const plugins = [
     description: {"en":"让 DSH 原生支持中文技能名 · Make DSH discover Chinese skill names without renaming - /私 → 私家大厨 · More by @FeatherHunter: 🎨 dsh-opencode-palette · ⚡ dsh-prompt","zh":"让 DSH 原生支持中文技能名 · Make DSH discover Chinese skill names without renaming - /私 → 私家大厨 · More by @FeatherHunter: 🎨 dsh-opencode-palette · ⚡ dsh-prompt"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FeatherHunter/dsh-chinese-skill-patch"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41606,7 +41606,7 @@ export const plugins = [
     description: {"en":"拨开迷雾看见终点，剩下的交给任务栏。Part the fog, see the end - the task bar handles the rest. 🎮 mattpocock/skills 的 DSH 游戏任务系统：map 拨迷雾，任务栏推进一步。A game-like mission system for Matt Pocock skills in DeepSeek Harness. More by...","zh":"拨开迷雾看见终点，剩下的交给任务栏。Part the fog, see the end - the task bar handles the rest. 🎮 mattpocock/skills 的 DSH 游戏任务系统：map 拨迷雾，任务栏推进一步。A game-like mission system for Matt Pocock skills in DeepSeek Harness. More by..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FeatherHunter/dsh-mattpocock-skills-deck"},
-    stars: 342,
+    stars: 376,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41622,7 +41622,7 @@ export const plugins = [
     description: {"en":"🎨 看腻了 DSH 默认皮肤？34 款 opencode 经典配色一键换上--tokyonight、dracula、gruvbox、matrix、rose-pine……即点即换，重启不丢。34 opencode themes for DeepSeek Harness, one click, persisted. More by @FeatherHunter: ⚡ dsh-prompt · 🧠...","zh":"🎨 看腻了 DSH 默认皮肤？34 款 opencode 经典配色一键换上--tokyonight、dracula、gruvbox、matrix、rose-pine……即点即换，重启不丢。34 opencode themes for DeepSeek Harness, one click, persisted. More by @FeatherHunter: ⚡ dsh-prompt · 🧠..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FeatherHunter/dsh-opencode-palette"},
-    stars: 104,
+    stars: 106,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41654,7 +41654,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 的 Prompt 工具箱：别再复制粘贴--24 条深度模板随手点，/prompt 与智能推荐主动兜底，装好即用、可自定义。 | The Prompt toolbox for DeepSeek Harness: stop copy-pasting - 24 deep templates at a click, /prompt & smart suggestions as backup; out...","zh":"DeepSeek Harness 的 Prompt 工具箱：别再复制粘贴--24 条深度模板随手点，/prompt 与智能推荐主动兜底，装好即用、可自定义。 | The Prompt toolbox for DeepSeek Harness: stop copy-pasting - 24 deep templates at a click, /prompt & smart suggestions as backup; out..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FeatherHunter/dsh-prompt"},
-    stars: 148,
+    stars: 161,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41734,7 +41734,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness control center for balance, usage, peak/off-peak pricing, encrypted multi-account switching, health checks, reminders, recharge, and session controls. / 余额、用量、峰谷计费、加密多账户、健康检查、提醒、充值与会话控制","zh":"DeepSeek Harness control center for balance, usage, peak/off-peak pricing, encrypted multi-account switching, health checks, reminders, recharge, and session controls. / 余额、用量、峰谷计费、加密多账户、健康检查、提醒、充值与会话控制"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:feibi-mochi/deepseek-harness-control-center"},
-    stars: 78,
+    stars: 77,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41750,7 +41750,7 @@ export const plugins = [
     description: {"en":"Balance monitoring, per-session spend & token tracking, low-balance alerts, and an official recharge shortcut for DeepSeek Harness. / 余额监控和充值插件","zh":"Balance monitoring, per-session spend & token tracking, low-balance alerts, and an official recharge shortcut for DeepSeek Harness. / 余额监控和充值插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet"},
-    stars: 78,
+    stars: 77,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41862,7 +41862,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 用量与消耗插件（dsh-usage-plugin）-- 每次调用的 token 用量/缓存命中统计、峰谷计费、余额查询、CSV/JSON/PNG 导出，可经桌面端一键安装或命令行 dsh plugin add 安装。","zh":"DeepSeek Harness 用量与消耗插件（dsh-usage-plugin）-- 每次调用的 token 用量/缓存命中统计、峰谷计费、余额查询、CSV/JSON/PNG 导出，可经桌面端一键安装或命令行 dsh plugin add 安装。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:feiyang-dev/dsh-usage-plugin"},
-    stars: 37,
+    stars: 38,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -41926,7 +41926,7 @@ export const plugins = [
     description: {"en":"An Electron-based desktop wrapper for deepseek-harness.","zh":"An Electron-based desktop wrapper for deepseek-harness."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fellow99/deepseek-harness-desktop"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42150,7 +42150,7 @@ export const plugins = [
     description: {"en":"AI short-video creation workspace for DeepSeek Harness","zh":"AI short-video creation workspace for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fengyungithub/dsh-short-video-studio"},
-    stars: 40,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42214,7 +42214,7 @@ export const plugins = [
     description: {"en":"Performance-oriented backend/runtime modernization layer for DeepSeek Harness.","zh":"Performance-oriented backend/runtime modernization layer for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fentz26/dsh-next"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42534,7 +42534,7 @@ export const plugins = [
     description: {"en":"Firecrawl-backed websearch and webfetch providers for the DeepSeek Harness web capability seam (ctx.web)","zh":"Firecrawl-backed websearch and webfetch providers for the DeepSeek Harness web capability seam (ctx.web)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:firecrawl/dsh-firecrawl"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42566,7 +42566,7 @@ export const plugins = [
     description: {"en":"让 DeepSeek Harness (DSH) 通过原生工具直接操控本机 Abaqus/CAE 的 Cordis 插件。21 个 DSH 原生工具覆盖完整建模链（几何/材料/网格/接触/分析步/载荷/边界/作业/ODB），TypeScript 编写，socket bridge 直连本机（不走 MCP）。","zh":"让 DeepSeek Harness (DSH) 通过原生工具直接操控本机 Abaqus/CAE 的 Cordis 插件。21 个 DSH 原生工具覆盖完整建模链（几何/材料/网格/接触/分析步/载荷/边界/作业/ODB），TypeScript 编写，socket bridge 直连本机（不走 MCP）。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Fisfzy/dsh-cae-agent"},
-    stars: 5,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42598,7 +42598,7 @@ export const plugins = [
     description: {"en":"DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS--13 个结构化 ego 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。","zh":"DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS--13 个结构化 ego 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Fisfzy/dsh-ego-browser"},
-    stars: 480,
+    stars: 534,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42614,7 +42614,7 @@ export const plugins = [
     description: {"en":"DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS--13 个结构化 ego 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。","zh":"DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS--13 个结构化 ego 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fisfzy/ego-browser"},
-    stars: 480,
+    stars: 534,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42630,7 +42630,7 @@ export const plugins = [
     description: {"en":"Zotero 文献采集入库插件（DSH external plugin）：多源检索（OpenAlex/arXiv/Crossref/Europe PMC/Semantic Scholar）+ OA 下载链接解析（Unpaywall）+ 充分性审计 + 入库本地 Zotero + 触发 zotero-wave-rag 重建","zh":"Zotero 文献采集入库插件（DSH external plugin）：多源检索（OpenAlex/arXiv/Crossref/Europe PMC/Semantic Scholar）+ OA 下载链接解析（Unpaywall）+ 充分性审计 + 入库本地 Zotero + 触发 zotero-wave-rag 重建"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fisfzy/zotero-harvest"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42710,7 +42710,7 @@ export const plugins = [
     description: {"en":"DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）","zh":"DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Fishquito7/dsh-skill-mcp-panel"},
-    stars: 271,
+    stars: 280,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42726,7 +42726,7 @@ export const plugins = [
     description: {"en":"DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add（Web界面的skill管理工具）","zh":"DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add（Web界面的skill管理工具）"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fishquito7/dsh-skill-viewer"},
-    stars: 271,
+    stars: 280,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42742,7 +42742,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 💬 语音识别（说完自动停·云端/本地双引擎）· 附 🔁 服务异常一键重启","zh":"DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 💬 语音识别（说完自动停·云端/本地双引擎）· 附 🔁 服务异常一键重启"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer"},
-    stars: 125,
+    stars: 130,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42774,7 +42774,7 @@ export const plugins = [
     description: {"en":"让 AI 像资深测试工程师一样工作：全生命周期 QA Agent Skills 框架--方法论 + 10 Skills + 可复现 Benchmark（Claude Code 等 Agent 可用）","zh":"让 AI 像资深测试工程师一样工作：全生命周期 QA Agent Skills 框架--方法论 + 10 Skills + 可复现 Benchmark（Claude Code 等 Agent 可用）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fishzjp/qa-skills"},
-    stars: 63,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -42966,7 +42966,7 @@ export const plugins = [
     description: {"en":"CodeBuddy CLI ACP 子代理插件:dsh subagent provider + subagentcodebuddy 工具","zh":"CodeBuddy CLI ACP 子代理插件:dsh subagent provider + subagentcodebuddy 工具"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:flg1217/dsh-subagent-codebuddy"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43014,7 +43014,7 @@ export const plugins = [
     description: {"en":"基于 DeepSeek Harness（DSH）的 SillyTavern 类文字游戏 Agent，支持候选项生成、对话式人物卡编辑、剧本模式与素材抽取。","zh":"基于 DeepSeek Harness（DSH）的 SillyTavern 类文字游戏 Agent，支持候选项生成、对话式人物卡编辑、剧本模式与素材抽取。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:flizzywine/dsh-tavern"},
-    stars: 1569,
+    stars: 1648,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43366,7 +43366,7 @@ export const plugins = [
     description: {"en":"Remote-work assistant for DeepSeek Harness (DSH): connect via SSH (key or password), pick a remote workspace, operate with rw tools, and SFTP-mirror it into a real local DSH workspace.","zh":"Remote-work assistant for DeepSeek Harness (DSH): connect via SSH (key or password), pick a remote workspace, operate with rw tools, and SFTP-mirror it into a real local DSH workspace."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:flymysql/dsh-remote"},
-    stars: 276,
+    stars: 305,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43526,7 +43526,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 多平台直播插件：摄像头/屏幕/画中画，视频号/抖音/快手/斗鱼/B站/YY/虎牙/CC 多选同步推流，ffmpeg 引擎真实 RTMP 推流 (dsh-plugin)","zh":"DeepSeek Harness 多平台直播插件：摄像头/屏幕/画中画，视频号/抖音/快手/斗鱼/B站/YY/虎牙/CC 多选同步推流，ffmpeg 引擎真实 RTMP 推流 (dsh-plugin)"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fore-vip/dsh-live"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43590,7 +43590,7 @@ export const plugins = [
     description: {"en":"Support dsh runtime on Multica.","zh":"Support dsh runtime on Multica."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:forrestchang/dsh-multica-runtime"},
-    stars: 80,
+    stars: 82,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43622,7 +43622,7 @@ export const plugins = [
     description: {"en":"VibeSkills is a general-purpose Skill that automatically routes local Skills and intelligently orchestrates harness workflows.","zh":"VibeSkills is a general-purpose Skill that automatically routes local Skills and intelligently orchestrates harness workflows."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:foryourhealth111-pixel/vibe-skills"},
-    stars: 3815,
+    stars: 3827,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -43766,7 +43766,7 @@ export const plugins = [
     description: {"en":"Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness.","zh":"Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:franksong2702/dsh-codex-connect"},
-    stars: 181,
+    stars: 184,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44006,7 +44006,7 @@ export const plugins = [
     description: {"en":"Prompt as Code \\ GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中","zh":"Prompt as Code \\ GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:freestylefly/awesome-gpt-image-2"},
-    stars: 35704,
+    stars: 35896,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44022,7 +44022,7 @@ export const plugins = [
     description: {"en":"Open-origin desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent setup and custom LLM model routing.","zh":"Open-origin desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent setup and custom LLM model routing."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:freestylefly/wesight"},
-    stars: 972,
+    stars: 976,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44246,7 +44246,7 @@ export const plugins = [
     description: {"en":"Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.","zh":"Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FSMargoo/dsh-at-file"},
-    stars: 568,
+    stars: 572,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44310,7 +44310,7 @@ export const plugins = [
     description: {"en":"面向 DeepSeek Harness 的交互式 K 线分析插件，支持多市场行情、技术指标、支撑压力位、新闻与基本面分析，并在原生侧栏中直接展示。","zh":"面向 DeepSeek Harness 的交互式 K 线分析插件，支持多市场行情、技术指标、支撑压力位、新闻与基本面分析，并在原生侧栏中直接展示。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FTShare-Lab/dsh_kline"},
-    stars: 36,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44358,7 +44358,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 零代码桌面端｜一键启动，支持 Windows 与 macOS；内置插件发现、热点插件推送、一键安装与管理、AI 智能推荐和视觉增强。","zh":"DeepSeek Harness 零代码桌面端｜一键启动，支持 Windows 与 macOS；内置插件发现、热点插件推送、一键安装与管理、AI 智能推荐和视觉增强。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fufankeji/deepseek-harness-studio"},
-    stars: 718,
+    stars: 723,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44422,7 +44422,7 @@ export const plugins = [
     description: {"en":"Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.","zh":"条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fuhefei/dsh-sentinel"},
-    stars: 21,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44550,7 +44550,7 @@ export const plugins = [
     description: {"en":"Common Trust Protocol (CTP) 共同信任协议 \\ Intelligentics 智能论，研究智能系统存续的底层结构条件","zh":"Common Trust Protocol (CTP) 共同信任协议 \\ Intelligentics 智能论，研究智能系统存续的底层结构条件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FuRongJun-1999/CommonTrustProtocol"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44566,7 +44566,7 @@ export const plugins = [
     description: {"en":"AGI 的长期记忆基础设施。让 AI Agent 拥有不可遗忘的自我。跨会话记忆 · 持续学习 · 可审计信任（智能论 v3.2）","zh":"AGI 的长期记忆基础设施。让 AI Agent 拥有不可遗忘的自我。跨会话记忆 · 持续学习 · 可审计信任（智能论 v3.2）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:FuRongJun-1999/dsh-memory"},
-    stars: 653,
+    stars: 701,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44630,7 +44630,7 @@ export const plugins = [
     description: {"en":"Browser-only build of DeepSeek Harness","zh":"Browser-only build of DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:futrime/webdsh"},
-    stars: 36,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -44886,7 +44886,7 @@ export const plugins = [
     description: {"en":"机械技术工程师福音！！！专为SW和CAD设计的插件！现在，内置DeepSeek Harness“工程模式”，让DeepSeek Harness以“完成工图”作为第一目标，避免分心，此插件还可以以SW一键转化为CAD图纸，无需任何操作。现在，你只需要说一句命令，就可以去睡觉了，让此插件帮你完成任务吧！","zh":"机械技术工程师福音！！！专为SW和CAD设计的插件！现在，内置DeepSeek Harness“工程模式”，让DeepSeek Harness以“完成工图”作为第一目标，避免分心，此插件还可以以SW一键转化为CAD图纸，无需任何操作。现在，你只需要说一句命令，就可以去睡觉了，让此插件帮你完成任务吧！"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:fyjgtddco/DSH-SW-and-CAD"},
-    stars: 53,
+    stars: 59,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45046,7 +45046,7 @@ export const plugins = [
     description: {"en":"Codex-style side chat & selection annotations for DeepSeek Harness (DSH) web - fork the session into a persistent side panel; quote selections into context. Thin consumer of dsh-better-sidebar.","zh":"Codex-style side chat & selection annotations for DeepSeek Harness (DSH) web - fork the session into a persistent side panel; quote selections into context. Thin consumer of dsh-better-sidebar."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:g-yixuan/dsh-sidechat"},
-    stars: 41,
+    stars: 49,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45350,7 +45350,7 @@ export const plugins = [
     description: {"en":"Make AI coding agents architecture-aware: baseline-first, evidence-verified, drift-checked, and safe across long tasks.","zh":"Make AI coding agents architecture-aware: baseline-first, evidence-verified, drift-checked, and safe across long tasks."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GanyuanRan/Aegis"},
-    stars: 1432,
+    stars: 1443,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45382,7 +45382,7 @@ export const plugins = [
     description: {"en":"Native DSH HTTP request plugin with configurable credential whitelist and usage skill","zh":"Native DSH HTTP request plugin with configurable credential whitelist and usage skill"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:gao-gao-zai/http-request-dsh-plugin"},
-    stars: 2,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45638,7 +45638,7 @@ export const plugins = [
     description: {"en":"BitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with open, general-purpose capabilities for work beyond software development.","zh":"BitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with open, general-purpose capabilities for work beyond software development."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GCWing/BitFun"},
-    stars: 4010,
+    stars: 4044,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45670,7 +45670,7 @@ export const plugins = [
     description: {"en":"DSH（DeepSeek Harness）远程 Web 启动 + 用户名/密码认证插件。 \\ DeepSeek Harness Remote‑Web‑Launch Plugin with Username/Password Auth","zh":"DSH（DeepSeek Harness）远程 Web 启动 + 用户名/密码认证插件。 \\ DeepSeek Harness Remote‑Web‑Launch Plugin with Username/Password Auth"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GDWhisper/dsh-web-startup-auth"},
-    stars: 68,
+    stars: 74,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -45926,7 +45926,7 @@ export const plugins = [
     description: {"en":"跨会话 Agent 通信：让 DeepSeek Harness 里不同的 Agent 会话互相收发消息。","zh":"跨会话 Agent 通信：让 DeepSeek Harness 里不同的 Agent 会话互相收发消息。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GengDaPeng/dsh-agent-message"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -46038,7 +46038,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:gezi-wen/sage-mem"},
-    stars: 30,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -46454,7 +46454,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Gin-7/dsh-pet-remielle"},
-    stars: 63,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -46918,7 +46918,7 @@ export const plugins = [
     description: {"en":"Durable DAG workflows for DeepSeek Harness: Agent-guided templates, SQLite recovery, plugin nodes, and XYFlow Canvas.","zh":"Durable DAG workflows for DeepSeek Harness: Agent-guided templates, SQLite recovery, plugin nodes, and XYFlow Canvas."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GM-HZ/dsh-dag-workflow"},
-    stars: 7,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -46934,7 +46934,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness long-run mission suite: mission control, Long-Run Captain preset, patched LLM-as-a-Verifier, self-wake timer","zh":"DeepSeek Harness long-run mission suite: mission control, Long-Run Captain preset, patched LLM-as-a-Verifier, self-wake timer"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GMH13552/dsh-longrun-suite"},
-    stars: 3,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47030,7 +47030,7 @@ export const plugins = [
     description: {"en":"从规划到发布的全流程 DeepSeek Harness 插件开发 skill，支持 pure、bundle、bundle-client 三种形态，自动生成脚手架、构建脚本、门禁与验证流程。","zh":"从规划到发布的全流程 DeepSeek Harness 插件开发 skill，支持 pure、bundle、bundle-client 三种形态，自动生成脚手架、构建脚本、门禁与验证流程。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:goatbroai/dsh-plugin-scaffold"},
-    stars: 12,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47046,7 +47046,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness web background settings plugin with solid color, image, and opacity controls.","zh":"DeepSeek Harness web background settings plugin with solid color, image, and opacity controls."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:goatbroai/web-background"},
-    stars: 10,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47062,7 +47062,7 @@ export const plugins = [
     description: {"en":"DSH 手机/外网远程访问插件：Cloudflare Quick Tunnel 公网隧道 + token 鉴权 + gzip 压缩 + 局域网 HTTPS 直连 + 手机图标面板 + QQ 机器人取链接","zh":"DSH 手机/外网远程访问插件：Cloudflare Quick Tunnel 公网隧道 + token 鉴权 + gzip 压缩 + 局域网 HTTPS 直连 + 手机图标面板 + QQ 机器人取链接"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:godchen520/dsh-web-remote"},
-    stars: 21,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47286,7 +47286,7 @@ export const plugins = [
     description: {"en":"Ponytail, lazy senior dev mode, for DeepSeek Harness: 6 skills adapted from DietrichGebert/ponytail (MIT)","zh":"Ponytail, lazy senior dev mode, for DeepSeek Harness: 6 skills adapted from DietrichGebert/ponytail (MIT)"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:gongyijie85/dsh-ponytail"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47318,7 +47318,7 @@ export const plugins = [
     description: {"en":"Matt Pocock's skills for DeepSeek Harness (DSH): grilling, writing-for-agents, wait-what, TDD and more - 25 skills adapted from mattpocock/skills (MIT)","zh":"Matt Pocock's skills for DeepSeek Harness (DSH): grilling, writing-for-agents, wait-what, TDD and more - 25 skills adapted from mattpocock/skills (MIT)"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:gongyijie85/mattpocock-skills-dsh"},
-    stars: 28,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47366,7 +47366,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 插件：用 JSON 规格生成可验证的架构图、流程图、时序图、数据流图与生命周期图（移植自 tt-a1i/archify）","zh":"DeepSeek Harness 插件：用 JSON 规格生成可验证的架构图、流程图、时序图、数据流图与生命周期图（移植自 tt-a1i/archify）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GongYuanCaiJi/dsh-archify"},
-    stars: 24,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47382,7 +47382,7 @@ export const plugins = [
     description: {"en":"宝玉技能库（移植自 JimLiu/baoyu-skills）","zh":"宝玉技能库（移植自 JimLiu/baoyu-skills）"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GongYuanCaiJi/dsh-baoyu-skills"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47734,7 +47734,7 @@ export const plugins = [
     description: {"en":"Per-provider API key rotation for DeepSeek Harness: key pool, auto failover, cooldown & recovery, Settings UI","zh":"Per-provider API key rotation for DeepSeek Harness: key pool, auto failover, cooldown & recovery, Settings UI"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-key-rotation"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47766,7 +47766,7 @@ export const plugins = [
     description: {"en":"Telegram messenger bridge for DeepSeek Harness (sessions, steer, homes, TTS voice notes)","zh":"Telegram messenger bridge for DeepSeek Harness (sessions, steer, homes, TTS voice notes)"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-messenger-gateway"},
-    stars: 5,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47782,7 +47782,7 @@ export const plugins = [
     description: {"en":"Automatic model catalog synchronization for API-key DeepSeek Harness providers: refreshes the model list from the provider instead of hand-editing it","zh":"Automatic model catalog synchronization for API-key DeepSeek Harness providers: refreshes the model list from the provider instead of hand-editing it"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-model-sync"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47798,7 +47798,7 @@ export const plugins = [
     description: {"en":"Russian localization for the DeepSeek Harness web UI: ru dictionaries for core namespaces and a third option in the native language list (Settings - General - Language).","zh":"Russian localization for the DeepSeek Harness web UI: ru dictionaries for core namespaces and a third option in the native language list (Settings - General - Language)."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-russian-lang"},
-    stars: 68,
+    stars: 74,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47814,7 +47814,7 @@ export const plugins = [
     description: {"en":"OAuth subscription LLM providers for DeepSeek Harness (Codex, Claude, Grok, Antigravity)","zh":"OAuth subscription LLM providers for DeepSeek Harness (Codex, Claude, Grok, Antigravity)"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-subscriptions"},
-    stars: 23,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -47878,7 +47878,7 @@ export const plugins = [
     description: {"en":"Voice input for DeepSeek Harness: dictation chunked by pauses and voice messages, each with its own provider fallback chain (Deepgram, Groq, HuggingFace, local whisper.cpp)","zh":"Voice input for DeepSeek Harness: dictation chunked by pauses and voice messages, each with its own provider fallback chain (Deepgram, Groq, HuggingFace, local whisper.cpp)"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GooDAnDReaDY/dsh-voice"},
-    stars: 14,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48102,7 +48102,7 @@ export const plugins = [
     description: {"en":"让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable task controls and isolated, human-reviewed self-evolution.","zh":"让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable task controls and isolated, human-reviewed self-evolution."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GraySilver/dsh-evolve-modes"},
-    stars: 200,
+    stars: 201,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48150,7 +48150,7 @@ export const plugins = [
     description: {"en":"A skill pack that enables any agent to develop DeepSeek Harness (DSH) plugins correctly, efficiently, and in accordance with the official conventions.","zh":"A skill pack that enables any agent to develop DeepSeek Harness (DSH) plugins correctly, efficiently, and in accordance with the official conventions."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:green-dalii/dsh-plugin-dev-skill"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48230,7 +48230,7 @@ export const plugins = [
     description: {"en":"Enhanced ACP (Agent Client Protocol) server for DeepSeek Harness (dsh) - drop-in bridge for the Zed editor: block-level streaming, usage/stat telemetry, model & reasoning-effort switching, permission presets, session...","zh":"Enhanced ACP (Agent Client Protocol) server for DeepSeek Harness (dsh) - drop-in bridge for the Zed editor: block-level streaming, usage/stat telemetry, model & reasoning-effort switching, permission presets, session..."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:grunmin/dsh-acp-enhanced"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48326,7 +48326,7 @@ export const plugins = [
     description: {"en":"电商经营驾驶舱 · Ecommerce Business Cockpit - DeepSeek Harness 演示插件。演示界面与数据校验层开源；客户数据映射、指标口径与诊断服务私有。","zh":"电商经营驾驶舱 · Ecommerce Business Cockpit - DeepSeek Harness 演示插件。演示界面与数据校验层开源；客户数据映射、指标口径与诊断服务私有。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:guannan1031/dsh-commerce-cockpit"},
-    stars: 0,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48550,7 +48550,7 @@ export const plugins = [
     description: {"en":"Give your DSH agent hands: drive a real browser (Edge/Chrome over CDP) from the chat - ref-driven clicking, per-session browsers, and a live cockpit panel. Zero runtime deps, no API key.","zh":"Give your DSH agent hands: drive a real browser (Edge/Chrome over CDP) from the chat - ref-driven clicking, per-session browsers, and a live cockpit panel. Zero runtime deps, no API key."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:guo6x/dsh-pilot"},
-    stars: 24,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -48694,7 +48694,7 @@ export const plugins = [
     description: {"en":"Multi-tenant SaaS extension for DeepSeek Harness (DSH): tenant identity, session isolation, authorization, tenant-aware MCP, and audit.","zh":"Multi-tenant SaaS extension for DeepSeek Harness (DSH): tenant identity, session isolation, authorization, tenant-aware MCP, and audit."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:GuoMonth/dsh-multi-tenant"},
-    stars: 27,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49158,7 +49158,7 @@ export const plugins = [
     description: {"en":"DSH 插件：本地 rembg GPU 抠图工具（removebackground）- DeepSeek Harness plugin for background removal with local rembg GPU service","zh":"DSH 插件：本地 rembg GPU 抠图工具（removebackground）- DeepSeek Harness plugin for background removal with local rembg GPU service"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:H-table/dsh-bg-tool"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49318,7 +49318,7 @@ export const plugins = [
     description: {"en":"爱弥斯主题皮肤 + 像素桌宠（鸣潮 Aemeath / Wuthering Waves），用于 DeepSeek Harness Web GUI。","zh":"爱弥斯主题皮肤 + 像素桌宠（鸣潮 Aemeath / Wuthering Waves），用于 DeepSeek Harness Web GUI。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hachimi-ai/dsh-aemeath"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49366,7 +49366,7 @@ export const plugins = [
     description: {"en":"鲸影 DSH Video Studio：DeepSeek Harness 原生视频/漫剧生成插件--六段导演流水线、多供应商免费额度调度、四层提示词自优化，质量优先省钱第二","zh":"鲸影 DSH Video Studio：DeepSeek Harness 原生视频/漫剧生成插件--六段导演流水线、多供应商免费额度调度、四层提示词自优化，质量优先省钱第二"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hackerFish/dsh-video-studio"},
-    stars: 19,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49398,7 +49398,7 @@ export const plugins = [
     description: {"en":"A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH).","zh":"A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hacksing/dsh-plugins"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49686,7 +49686,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Tauri 桌面版 \\ Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux.","zh":"DeepSeek Harness Tauri 桌面版 \\ Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hairyf/deepseek-harness-desktop"},
-    stars: 3580,
+    stars: 3652,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49718,7 +49718,7 @@ export const plugins = [
     description: {"en":"Codex-like persistent memory plugin for DeepSeek Harness: auto-injected memory summary, memory tools, per-session rollout summaries, and a localized Web settings card.","zh":"Codex-like persistent memory plugin for DeepSeek Harness: auto-injected memory summary, memory tools, per-session rollout summaries, and a localized Web settings card."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:haitang1/dsh-memory"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49846,7 +49846,7 @@ export const plugins = [
     description: {"en":"一款专为 DeepSeek Harness 设计的原生 Android 客户端，支持聊天、审批、工作区、文件及模型管理。A native Android client for DeepSeek Harness with chat, approvals, workspace, file, and model management.","zh":"一款专为 DeepSeek Harness 设计的原生 Android 客户端，支持聊天、审批、工作区、文件及模型管理。A native Android client for DeepSeek Harness with chat, approvals, workspace, file, and model management."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hakunm/dsh-android-app"},
-    stars: 35,
+    stars: 36,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49926,7 +49926,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness session cost meter plugin: session/daily cost, budget, history, OpenCode Go quota, official & custom-provider balance, Codex-like token heatmap, peak/off-peak pricing with pre-switch popup &...","zh":"DeepSeek Harness session cost meter plugin: session/daily cost, budget, history, OpenCode Go quota, official & custom-provider balance, Codex-like token heatmap, peak/off-peak pricing with pre-switch popup &..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:han-1413141/dsh-cost-meter"},
-    stars: 674,
+    stars: 715,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -49974,7 +49974,7 @@ export const plugins = [
     description: {"en":"DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness","zh":"DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:HanaAyane/dsh-reasoning-effort"},
-    stars: 271,
+    stars: 279,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -50310,7 +50310,7 @@ export const plugins = [
     description: {"en":"内容工坊 - topic, title, post and content-calendar generation tools for DeepSeek Harness.","zh":"内容工坊 - topic, title, post and content-calendar generation tools for DeepSeek Harness."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hanyi7867069-create/dsh-content-lab"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -50438,7 +50438,7 @@ export const plugins = [
     description: {"en":"Full-duplex voice plugin for DeepSeek Harness: mic → SenseVoice ASR (sherpa-onnx) → LLM → Edge TTS with true barge-in. 全双工语音插件：麦克风语音输入，SenseVoice 本地识别（简体中文+标点+ITN），流式 TTS 朗读，支持语音打断。Zero API key.","zh":"Full-duplex voice plugin for DeepSeek Harness: mic → SenseVoice ASR (sherpa-onnx) → LLM → Edge TTS with true barge-in. 全双工语音插件：麦克风语音输入，SenseVoice 本地识别（简体中文+标点+ITN），流式 TTS 朗读，支持语音打断。Zero API key."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:haoku123/dsh-voice"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -50534,7 +50534,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness Web GUI 添加自定义背景图片：上传本地图片或粘贴图片链接，可调不透明度、遮罩、面板透明与毛玻璃模糊，带实时预览，5% 阻尼滑块松手即存，遮罩自动适配明暗主题。","zh":"为 DeepSeek Harness Web GUI 添加自定义背景图片：上传本地图片或粘贴图片链接，可调不透明度、遮罩、面板透明与毛玻璃模糊，带实时预览，5% 阻尼滑块松手即存，遮罩自动适配明暗主题。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:HaoyueQin/deepseek-harness-background"},
-    stars: 11,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -50566,7 +50566,7 @@ export const plugins = [
     description: {"en":"Reasoning-effort editing for third-party models in DeepSeek Harness: per-model thinking levels with a knowledge base + protocol inference, edited inside the official Models page card.","zh":"Reasoning-effort editing for third-party models in DeepSeek Harness: per-model thinking levels with a knowledge base + protocol inference, edited inside the official Models page card."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:HaoyueQin/dsh-better-reasoning-effort"},
-    stars: 67,
+    stars: 68,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51030,7 +51030,7 @@ export const plugins = [
     description: {"en":"Open-origin antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.","zh":"Open-origin antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hashgraph-online/hol-guard"},
-    stars: 1088,
+    stars: 1110,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51110,7 +51110,7 @@ export const plugins = [
     description: {"en":"dsh用来进行数学计算的工具整合包，内含多个数学工具","zh":"dsh用来进行数学计算的工具整合包，内含多个数学工具"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hatter123/dsh-math-suite"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51270,7 +51270,7 @@ export const plugins = [
     description: {"en":"听雨的声音 一滴滴清晰， 你的呼吸像雨滴渗入我的爱里， 真希望 雨能下不停， 让想念继续 让爱变透明， 我爱上 给我 勇气的 Rainie Love， 窗外的雨滴 一滴滴 累积， 屋内的湿气 像储存爱你的记忆， 真希望 雨能下不停， 雨爱的秘密 能一直延续， 我相信我将会看到彩虹的美丽。","zh":"听雨的声音 一滴滴清晰， 你的呼吸像雨滴渗入我的爱里， 真希望 雨能下不停， 让想念继续 让爱变透明， 我爱上 给我 勇气的 Rainie Love， 窗外的雨滴 一滴滴 累积， 屋内的湿气 像储存爱你的记忆， 真希望 雨能下不停， 雨爱的秘密 能一直延续， 我相信我将会看到彩虹的美丽。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:haxi8/dsh-JujutsuKaisen-rainlove"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51286,7 +51286,7 @@ export const plugins = [
     description: {"en":"Right-to-left text direction for the DeepSeek Harness Web client","zh":"Right-to-left text direction for the DeepSeek Harness Web client"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:haythamat/dsh-client-ui-rtl"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51350,7 +51350,7 @@ export const plugins = [
     description: {"en":"dsh-excel-chat - talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation (cells, formulas, styles, filters, tables, charts); every edit is auto-validated.","zh":"dsh-excel-chat - talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation (cells, formulas, styles, filters, tables, charts); every edit is auto-validated."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hccccc01333/dsh-excel-chat"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51366,7 +51366,7 @@ export const plugins = [
     description: {"en":"Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.","zh":"检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -51686,7 +51686,7 @@ export const plugins = [
     description: {"en":"DSH plugin: deletesubagent tool + UI - release or permanently remove subagent sessions from the DeepSeek Harness web UI","zh":"DSH plugin: deletesubagent tool + UI - release or permanently remove subagent sessions from the DeepSeek Harness web UI"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:heiheiha798/dsh-plugin-subagent-delete"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -52022,7 +52022,7 @@ export const plugins = [
     description: {"en":"一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。","zh":"一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hellowind777/helloagents"},
-    stars: 710,
+    stars: 711,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -52630,7 +52630,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 插件：在模型读取前撤回已发送的文字消息，支持单条与全部撤回。A DeepSeek Harness plugin that recalls sent-but-unread text messages before the model reads them - one-by-one or all at once.","zh":"DeepSeek Harness (DSH) 插件：在模型读取前撤回已发送的文字消息，支持单条与全部撤回。A DeepSeek Harness plugin that recalls sent-but-unread text messages before the model reads them - one-by-one or all at once."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hg1048596-pixel/dsh-recall-unread"},
-    stars: 126,
+    stars: 127,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -52646,7 +52646,7 @@ export const plugins = [
     description: {"en":"smart charts","zh":"smart charts"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hherosoul/dsh-smart-charts"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -52854,7 +52854,7 @@ export const plugins = [
     description: {"en":"DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices","zh":"DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hikariming/dshfind"},
-    stars: 384,
+    stars: 399,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -52902,7 +52902,7 @@ export const plugins = [
     description: {"en":"Pluggable DeepSeek-colored TUI for DeepSeek Harness","zh":"Pluggable DeepSeek-colored TUI for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hilbert-beinghappy/seektty"},
-    stars: 192,
+    stars: 193,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53142,7 +53142,7 @@ export const plugins = [
     description: {"en":"Session manager for DeepSeek Harness: delete conversations with confirmation and manage archives.","zh":"Session manager for DeepSeek Harness: delete conversations with confirmation and manage archives."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hkkz9522/dsh-session-manager"},
-    stars: 111,
+    stars: 124,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53302,7 +53302,7 @@ export const plugins = [
     description: {"en":"Overleaf tab for DSH better-sidebar: direct-CDP login, project mirrors under /overleaf/, git/API sync, sidebar file preview","zh":"Overleaf tab for DSH better-sidebar: direct-CDP login, project mirrors under /overleaf/, git/API sync, sidebar file preview"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hoemr/dsh-better-overleaf"},
-    stars: 2,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53430,7 +53430,7 @@ export const plugins = [
     description: {"en":"Zotero tools for DeepSeek Harness: search library, read metadata/fulltext, list attachments, download PDFs, manage notes via the Zotero local API","zh":"Zotero tools for DeepSeek Harness: search library, read metadata/fulltext, list attachments, download PDFs, manage notes via the Zotero local API"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hongcheng-LI/dsh-zotero"},
-    stars: 25,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53462,7 +53462,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) file-message plugin: Claude-style drag-and-drop / paperclip upload, content sniffing, document-to-Markdown via Microsoft MarkItDown (with built-in JS fallback), text inlining, readdocument tool...","zh":"DeepSeek Harness (dsh) file-message plugin: Claude-style drag-and-drop / paperclip upload, content sniffing, document-to-Markdown via Microsoft MarkItDown (with built-in JS fallback), text inlining, readdocument tool..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:HongMing-Huang/dsh-file-upload"},
-    stars: 28,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53526,7 +53526,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 批量并行子 Agent 调度插件：swarmbatch 工具（Kimi Code Swarm 模式移植）+ /swarm 命令 + 聊天内实时进度条","zh":"DeepSeek Harness 批量并行子 Agent 调度插件：swarmbatch 工具（Kimi Code Swarm 模式移植）+ /swarm 命令 + 聊天内实时进度条"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hongyue0721/dsh-kimicode-swarm"},
-    stars: 5,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53622,7 +53622,7 @@ export const plugins = [
     description: {"en":"Caller-side bridge from Codex and other agent frameworks to DeepSeek Harness, with observable sessions, follow-up, cancellation, and human-gated approvals.","zh":"Caller-side bridge from Codex and other agent frameworks to DeepSeek Harness, with observable sessions, follow-up, cancellation, and human-gated approvals."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hootandy321/dsh-agentlink"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53766,7 +53766,7 @@ export const plugins = [
     description: {"en":"ChatGPT & Gemini：Add Folders, Timeline & Prompts. - 为 ChatGPT & Gemini 添加文件夹、提示词库和时间轴。","zh":"ChatGPT & Gemini：Add Folders, Timeline & Prompts. - 为 ChatGPT & Gemini 添加文件夹、提示词库和时间轴。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:houyanchao/chatgpt-gemini-timeline"},
-    stars: 473,
+    stars: 476,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53782,7 +53782,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness（DSH）打造的会话效率插件，时间轴导航、收藏文件夹、对话导出、提示词库、闪记。","zh":"为 DeepSeek Harness（DSH）打造的会话效率插件，时间轴导航、收藏文件夹、对话导出、提示词库、闪记。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:houyanchao/dsh-timeline"},
-    stars: 56,
+    stars: 60,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53878,7 +53878,7 @@ export const plugins = [
     description: {"en":"面向 DeepSeek Harness（dsh）的渗透测试模式 @CloverSecLabs","zh":"面向 DeepSeek Harness（dsh）的渗透测试模式 @CloverSecLabs"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:howmp/dsh-pentest"},
-    stars: 619,
+    stars: 622,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -53990,7 +53990,7 @@ export const plugins = [
     description: {"en":"DSH Web UI plugin: auto-sends 「继续」 to resume requests interrupted by network errors or other non-human causes - error classification, adaptive backoff, templated continue text, browser notifications, all configurable...","zh":"DSH Web UI plugin: auto-sends 「继续」 to resume requests interrupted by network errors or other non-human causes - error classification, adaptive backoff, templated continue text, browser notifications, all configurable..."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hsiangnianian/dsh-auto-continue"},
-    stars: 191,
+    stars: 202,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -54134,7 +54134,7 @@ export const plugins = [
     description: {"en":"OpenAI Codex provider for DeepSeek Harness with device-code OAuth, Codex CLI import, token refresh, and a web settings panel.","zh":"OpenAI Codex provider for DeepSeek Harness with device-code OAuth, Codex CLI import, token refresh, and a web settings panel."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hu9956/dsh-codex-provider"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -54502,7 +54502,7 @@ export const plugins = [
     description: {"en":"DSH web plugin: Office file previewers (.docx/.xlsx/.pptx) for the better-sidebar editor. Registers the docx/xlsx/pptx file viewers through ctx.betterSidebar.registerFileViewer, keeping the heavy Office render...","zh":"DSH web plugin: Office file previewers (.docx/.xlsx/.pptx) for the better-sidebar editor. Registers the docx/xlsx/pptx file viewers through ctx.betterSidebar.registerFileViewer, keeping the heavy Office render..."},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-better-sidebar-plugin-office"},
-    stars: 66,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55030,7 +55030,7 @@ export const plugins = [
     description: {"en":"Recursive Self-Improvement engine for DeepSeek Harness - DSH maintains DSH: bounded perceive→integrate→verify→parity→repair→propose loop enforcing 1:1 upstream feature parity","zh":"Recursive Self-Improvement engine for DeepSeek Harness - DSH maintains DSH: bounded perceive→integrate→verify→parity→repair→propose loop enforcing 1:1 upstream feature parity"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:huchunlinnk/deepseek-desk-rsi"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55254,7 +55254,7 @@ export const plugins = [
     description: {"en":"A terminal UI (TUI) for DeepSeek Harness.","zh":"DeepSeek Harness 的终端 UI（TUI）。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui"},
-    stars: 302,
+    stars: 312,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55334,7 +55334,7 @@ export const plugins = [
     description: {"en":"Open-origin macOS record-and-replay workflow recorder for computer use agents. Captures mouse, keyboard, and UI events as structured traces so agents can learn, replay, and automate real desktop tasks.","zh":"Open-origin macOS record-and-replay workflow recorder for computer use agents. Captures mouse, keyboard, and UI events as structured traces so agents can learn, replay, and automate real desktop tasks."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:humblebanana/open-record-replay"},
-    stars: 149,
+    stars: 151,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55734,7 +55734,7 @@ export const plugins = [
     description: {"en":"AI code reviews grounded in 12 classic engineering books - decay risk diagnostics with book citations, severity labels, and 6 analysis modes including full-sweep auto-fix","zh":"AI code reviews grounded in 12 classic engineering books - decay risk diagnostics with book citations, severity labels, and 6 analysis modes including full-sweep auto-fix"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyhmrright/brooks-lint"},
-    stars: 1571,
+    stars: 1579,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55814,7 +55814,7 @@ export const plugins = [
     description: {"en":"DSH Remote 手机遥控端：把电脑上的 DeepSeek Harness 装进口袋。手机连上就能给 AI 派活、看实时回复、批审批；支持局域网/内网穿透、扫码连接、审批通知、会话管理、多主题换装，还能解锁加密保险库。第三方社区作品，开源免费。","zh":"DSH Remote 手机遥控端：把电脑上的 DeepSeek Harness 装进口袋。手机连上就能给 AI 派活、看实时回复、批审批；支持局域网/内网穿透、扫码连接、审批通知、会话管理、多主题换装，还能解锁加密保险库。第三方社区作品，开源免费。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hyna-hla/dsh-remote"},
-    stars: 21,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55830,7 +55830,7 @@ export const plugins = [
     description: {"en":"第三方 DeepSeek Harness 手机遥控端：局域网/cpolar 连接、扫码自动连接、流式聊天、审批横幅与后台推送","zh":"第三方 DeepSeek Harness 手机遥控端：局域网/cpolar 连接、扫码自动连接、流式聊天、审批横幅与后台推送"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Hyna-hla/harness-remote"},
-    stars: 21,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55862,7 +55862,7 @@ export const plugins = [
     description: {"en":"Arbitrary file upload, reading, OCR, and rendering for DeepSeek Harness","zh":"Arbitrary file upload, reading, OCR, and rendering for DeepSeek Harness"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyper-dsh-plugins/dsh-open-file"},
-    stars: 4,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -55990,7 +55990,7 @@ export const plugins = [
     description: {"en":"MCP server manager plugin for DeepSeek Harness: Settings → MCP page, OAuth (PKCE + dynamic client registration) or static-token auth, tools registered as mcp","zh":"MCP server manager plugin for DeepSeek Harness: Settings → MCP page, OAuth (PKCE + dynamic client registration) or static-token auth, tools registered as mcp"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyqhyq3/dsh-mcp-manager"},
-    stars: 29,
+    stars: 31,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56006,7 +56006,7 @@ export const plugins = [
     description: {"en":"幻银量化A股阿法狗AlphaHYQi，100%由ai自主驱动的实盘交易机器。接入自产龙虾iClaw，手机端一句话控制四大模型同时干活。获取方法：前往 购服务卡即可获得软件，详情README.md。 A股Ai炒股大赛历史排行（模拟基金）： A股Ai炒股大赛历史排行（全市场）： 实时播报：","zh":"幻银量化A股阿法狗AlphaHYQi，100%由ai自主驱动的实盘交易机器。接入自产龙虾iClaw，手机端一句话控制四大模型同时干活。获取方法：前往 购服务卡即可获得软件，详情README.md。 A股Ai炒股大赛历史排行（模拟基金）： A股Ai炒股大赛历史排行（全市场）： 实时播报："},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyqibot/A-share-Ai"},
-    stars: 134,
+    stars: 135,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56022,7 +56022,7 @@ export const plugins = [
     description: {"en":"A token-free desktop client for the DeepSeek Harness，enjoy！为 DeepSeek Harness (DSH) 生态打造的全免Token费的桌面端 ，极简极易。内置多模态+顶尖工具链能力的大模型 HYQi（Flash / Pro / Image / Video）：生图+生视频均免token费，无需API， 有疑问可二维码进社区交流","zh":"A token-free desktop client for the DeepSeek Harness，enjoy！为 DeepSeek Harness (DSH) 生态打造的全免Token费的桌面端 ，极简极易。内置多模态+顶尖工具链能力的大模型 HYQi（Flash / Pro / Image / Video）：生图+生视频均免token费，无需API， 有疑问可二维码进社区交流"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyqibot/DeepSeek-Harness-Token-Free"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56086,7 +56086,7 @@ export const plugins = [
     description: {"en":"Configurable reasoning levels for hand-declared DSH llm-pi-ai models, with bilingual settings and subagent defaults.","zh":"Configurable reasoning levels for hand-declared DSH llm-pi-ai models, with bilingual settings and subagent defaults."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hytime/dsh-thinking-effort"},
-    stars: 60,
+    stars: 61,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56134,7 +56134,7 @@ export const plugins = [
     description: {"en":"dsh-plugin-kit is a general-purpose plugin collection for the DeepSeek Harness (DSH) Web GUI: environment variable / secret management, MCP server configuration, Prompt management, Profile management, RSS / news...","zh":"dsh-plugin-kit is a general-purpose plugin collection for the DeepSeek Harness (DSH) Web GUI: environment variable / secret management, MCP server configuration, Prompt management, Profile management, RSS / news..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:hyzyn/dsh-plugin-kit"},
-    stars: 65,
+    stars: 68,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56438,7 +56438,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 远程与移动端安全网关插件：零修改 DSH 底层代码安全开放局域网与 Tailscale 连接 | DeepSeek Harness (DSH) Remote & Mobile Security Guard: safely opens Tailscale/LAN with zero core modifications, QR scan auth, RSA encryption &...","zh":"DeepSeek Harness 远程与移动端安全网关插件：零修改 DSH 底层代码安全开放局域网与 Tailscale 连接 | DeepSeek Harness (DSH) Remote & Mobile Security Guard: safely opens Tailscale/LAN with zero core modifications, QR scan auth, RSA encryption &..."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:IceApriler/dsh-remote-mobile"},
-    stars: 49,
+    stars: 53,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56550,7 +56550,7 @@ export const plugins = [
     description: {"en":"UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.","zh":"把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:icetomoyo/dsh_workflow"},
-    stars: 158,
+    stars: 159,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -56774,7 +56774,7 @@ export const plugins = [
     description: {"en":"📚 A zero-dependency, git-backed micro-lesson library for AI Agents to asynchronously share and search verified debugging experience. Python stdlib only. \\","zh":"📚 A zero-dependency, git-backed micro-lesson library for AI Agents to asynchronously share and search verified debugging experience. Python stdlib only. \\"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ikalus1988/MisakaNet"},
-    stars: 558,
+    stars: 564,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57206,7 +57206,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin store, marketplace and hub - 3,100+ dsh plugins with search, rankings, install commands and a free public API. DeepSeek Harness 插件市场 / 插件商店：自动收集与格式校验，免费搜索 API。deepseek1024.com","zh":"DeepSeek Harness plugin store, marketplace and hub - 3,100+ dsh plugins with search, rankings, install commands and a free public API. DeepSeek Harness 插件市场 / 插件商店：自动收集与格式校验，免费搜索 API。deepseek1024.com"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:imsai-sh/awesome-deepseek-harness-plugins"},
-    stars: 387,
+    stars: 399,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57222,7 +57222,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin store, marketplace and hub - 11,000+ dsh plugins with search, rankings, install commands and a free public API. DeepSeek Harness 插件市场 / 插件商店：自动收集与格式校验，免费搜索 API。deepseek1024.com","zh":"DeepSeek Harness plugin store, marketplace and hub - 11,000+ dsh plugins with search, rankings, install commands and a free public API. DeepSeek Harness 插件市场 / 插件商店：自动收集与格式校验，免费搜索 API。deepseek1024.com"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:imsai-sh/dsh-1024store"},
-    stars: 40,
+    stars: 41,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57254,7 +57254,7 @@ export const plugins = [
     description: {"en":"MCP server management UI for DeepSeek Harness Web - floating panel, JSON import, and profile-backed persistence.","zh":"MCP server management UI for DeepSeek Harness Web - floating panel, JSON import, and profile-backed persistence."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Imzl-zl/dsh-mcp-manager-ui"},
-    stars: 46,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57494,7 +57494,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 增加一个直接续跑按钮。当会话异常结束时，可以从现有上下文继续执行，不会引入其他提示词。","zh":"为 DeepSeek Harness 增加一个直接续跑按钮。当会话异常结束时，可以从现有上下文继续执行，不会引入其他提示词。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:inmny/dsh-continue"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57766,7 +57766,7 @@ export const plugins = [
     description: {"en":"Hermes-style persistent memory (MEMORY.md / USER.md) for DeepSeek Harness (DSH) - a faithful port of hermes-agent MemoryStore: bounded, file-backed, model-curated, frozen-snapshot injection.","zh":"Hermes-style persistent memory (MEMORY.md / USER.md) for DeepSeek Harness (DSH) - a faithful port of hermes-agent MemoryStore: bounded, file-backed, model-curated, frozen-snapshot injection."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:isheng-eqi/dsh-hermes-memory"},
-    stars: 13,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -57910,7 +57910,7 @@ export const plugins = [
     description: {"en":"Multi-user login gateway plugin for the DeepSeek Harness Web GUI: login wall, per-user conversation isolation, in-GUI user management","zh":"Multi-user login gateway plugin for the DeepSeek Harness Web GUI: login wall, per-user conversation isolation, in-GUI user management"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:islibaodong/dsh-login"},
-    stars: 23,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58358,7 +58358,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web UI plugin for daily API token usage, cost estimates, and balance monitoring","zh":"DeepSeek Harness Web UI plugin for daily API token usage, cost estimates, and balance monitoring"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:izz-BLUE/dsh-deepseek-usage-dashboard"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58390,7 +58390,7 @@ export const plugins = [
     description: {"en":"Per-session billing plugin for DeepSeek Harness: token buckets, cache hit rate, and peak-aware cost in the session header + a price-table settings page","zh":"Per-session billing plugin for DeepSeek Harness: token buckets, cache hit rate, and peak-aware cost in the session header + a price-table settings page"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:J-Chien/dsh-meter"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58566,7 +58566,7 @@ export const plugins = [
     description: {"en":"Edit or undo your sent messages in DeepSeek Harness's Web GUI - hides everything after from chat view and model context.","zh":"Edit or undo your sent messages in DeepSeek Harness's Web GUI - hides everything after from chat view and model context."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jackuh105/dsh-message-edit"},
-    stars: 2,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58662,7 +58662,7 @@ export const plugins = [
     description: {"en":"Jacky Creator：面向内容创作者的 DeepSeek Harness 本地内容与运营工作台","zh":"Jacky Creator：面向内容创作者的 DeepSeek Harness 本地内容与运营工作台"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jackywxsz/DSH-Creator"},
-    stars: 127,
+    stars: 130,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58758,7 +58758,7 @@ export const plugins = [
     description: {"en":"工作推gal两不误面向DeepSeek Harness的跨会话事件感知Galgame引擎与界面插件，支持鲸鱼娘/GPT/Claude/Grok/Gemini/Kimi多位模型娘角色","zh":"工作推gal两不误面向DeepSeek Harness的跨会话事件感知Galgame引擎与界面插件，支持鲸鱼娘/GPT/Claude/Grok/Gemini/Kimi多位模型娘角色"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:JAdpp/dsh-whale-galgame"},
-    stars: 43,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -58902,7 +58902,7 @@ export const plugins = [
     description: {"en":"目标驱动的多 Agent 编排：有界 DAG 调度、嵌套委派、类型化证据和持久轨迹界面","zh":"目标驱动的多 Agent 编排：有界 DAG 调度、嵌套委派、类型化证据和持久轨迹界面"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jarad-z/dsh-goalmesh"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59110,7 +59110,7 @@ export const plugins = [
     description: {"en":"Archived-session manager for DSH Web UI: reopen an archived session and keep chatting, unarchive it back in place, or hard-delete a session - grouped panel with message search and native view sync.","zh":"Archived-session manager for DSH Web UI: reopen an archived session and keep chatting, unarchive it back in place, or hard-delete a session - grouped panel with message search and native view sync."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jasonrale/dsh-archive-manager"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59398,7 +59398,7 @@ export const plugins = [
     description: {"en":"把 DeepSeek Harness 完整搬进 JetBrains IDE：智能体对话、工具审批、目标与计划、子智能体与 Workflow。装插件、配一次 API Key，即可对话。DeepSeek Harness - agent chat, tool approvals, goals, subagents & workflows - embedded in your JetBrains IDE. Install, set...","zh":"把 DeepSeek Harness 完整搬进 JetBrains IDE：智能体对话、工具审批、目标与计划、子智能体与 Workflow。装插件、配一次 API Key，即可对话。DeepSeek Harness - agent chat, tool approvals, goals, subagents & workflows - embedded in your JetBrains IDE. Install, set..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:JayZz210l/deepseek-harness-for-ide"},
-    stars: 10,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59558,7 +59558,7 @@ export const plugins = [
     description: {"en":"DSH drawio 插件：AI 驱动画图（validate/render/edit/template 工具）+ 侧栏实时 SVG 画板，内嵌 diagrams.net 官方编辑器","zh":"DSH drawio 插件：AI 驱动画图（validate/render/edit/template 工具）+ 侧栏实时 SVG 画板，内嵌 diagrams.net 官方编辑器"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jean3690/dsh-drawio"},
-    stars: 9,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59622,7 +59622,7 @@ export const plugins = [
     description: {"en":"dsh预设热切换","zh":"dsh预设热切换"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jeffcwj/dsh-preset-switcher"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59766,7 +59766,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 安卓通用控制端：Termux 引导、一键部署、内置浏览器与存储管理（dsh-plugin 生态）","zh":"DeepSeek Harness 安卓通用控制端：Termux 引导、一键部署、内置浏览器与存储管理（dsh-plugin 生态）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jensen-Yao/deepseek-harness-android-app"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -59942,7 +59942,7 @@ export const plugins = [
     description: {"en":"微信公众号 AI 写作插件，跑在 DeepSeek Harness 里：一条命令装上完整写作管线（选题→写作→质量门禁→排版→配图→草稿箱），定时默认只进草稿箱，群发永远人工。MIT 开源。","zh":"微信公众号 AI 写作插件，跑在 DeepSeek Harness 里：一条命令装上完整写作管线（选题→写作→质量门禁→排版→配图→草稿箱），定时默认只进草稿箱，群发永远人工。MIT 开源。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jerryjiao/dsh-wewrite"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -60230,7 +60230,7 @@ export const plugins = [
     description: {"en":"last30days-cn 是一个 AI Agent 技能（Skill），能够自动搜索中国互联网 8 大主流平台最近 30 天的内容，综合分析后生成有据可查的研究报告。","zh":"last30days-cn 是一个 AI Agent 技能（Skill），能够自动搜索中国互联网 8 大主流平台最近 30 天的内容，综合分析后生成有据可查的研究报告。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jesseovo/last30days-skill-cn"},
-    stars: 2097,
+    stars: 2136,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -60646,7 +60646,7 @@ export const plugins = [
     description: {"en":"DSH web UI 增强插件 + 无边框 Electron 桌面壳","zh":"DSH web UI 增强插件 + 无边框 Electron 桌面壳"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jiangnanquan/dsh-ux"},
-    stars: 10,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -60806,7 +60806,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 增加介于 Workspace Write 与 Full access 之间的自动批准权限档，危险或不确定操作仍转人工审批。An auto-approval permission preset between workspace-write and full access for DeepSeek Harness.","zh":"为 DeepSeek Harness 增加介于 Workspace Write 与 Full access 之间的自动批准权限档，危险或不确定操作仍转人工审批。An auto-approval permission preset between workspace-write and full access for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jiao-XXX/dsh-auto-approve"},
-    stars: 21,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -61062,7 +61062,7 @@ export const plugins = [
     description: {"en":"Command Code Go API provider for dsh. Command Code 订阅 + DeekSeek Harness 兼容层","zh":"Command Code Go API provider for dsh. Command Code 订阅 + DeekSeek Harness 兼容层"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jiesou/dsh-commandcode-go-provider"},
-    stars: 23,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -61158,7 +61158,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin: drive Jiey Browser over MCP","zh":"DeepSeek Harness plugin: drive Jiey Browser over MCP"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jiewaigongxing/dsh-jiey-browser"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -61574,7 +61574,7 @@ export const plugins = [
     description: {"en":"Causal memory layer for AI agents - MCP server that records decision→outcome relationships. Survives compaction.","zh":"Causal memory layer for AI agents - MCP server that records decision→outcome relationships. Survives compaction."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:JingxuanC/causal-memory"},
-    stars: 106,
+    stars: 107,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -61590,7 +61590,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) plugin that turns the iterate skill into an autonomous closed-loop code iteration - parallel reviews, deterministic dedup convergence, atomic fix + verify auto-stop, meta-review consistency...","zh":"DeepSeek Harness (dsh) plugin that turns the iterate skill into an autonomous closed-loop code iteration - parallel reviews, deterministic dedup convergence, atomic fix + verify auto-stop, meta-review consistency..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jingzhao-l/iterate-plugin"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -62006,7 +62006,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 工作区文件资源管理器:右侧目录树面板,点击/拖拽文件引用进输入框,UI 对齐 DSH 原生风格 \\ Workspace file explorer plugin for DeepSeek Harness: right-side file tree panel, click or drag file references into the composer, native DSH look","zh":"DeepSeek Harness 工作区文件资源管理器:右侧目录树面板,点击/拖拽文件引用进输入框,UI 对齐 DSH 原生风格 \\ Workspace file explorer plugin for DeepSeek Harness: right-side file tree panel, click or drag file references into the composer, native DSH look"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jiyr0119/dsh-workspace-explorer"},
-    stars: 51,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -62022,7 +62022,7 @@ export const plugins = [
     description: {"en":"1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Harness (DSH) plugin","zh":"1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Harness (DSH) plugin"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jjxjjjjiik-bot/dsh-chat-timeline"},
-    stars: 31,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -63270,7 +63270,7 @@ export const plugins = [
     description: {"en":"我的数字生命爱丽丝 - DSH 自研插件合集中心（16 个插件仓库相互引流）","zh":"我的数字生命爱丽丝 - DSH 自研插件合集中心（16 个插件仓库相互引流）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jonah791/alice-digital-life"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -63302,7 +63302,7 @@ export const plugins = [
     description: {"en":"DSH self-built plugin","zh":"DSH self-built plugin"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jonah791/dsh-agent-browser"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -63318,7 +63318,7 @@ export const plugins = [
     description: {"en":"Agent-driven compaction for DeepSeek Harness: the agent summarizes its own conversation (KV-cache friendly, no giant replay). Verified in production at 460k-token sessions.","zh":"Agent-driven compaction for DeepSeek Harness: the agent summarizes its own conversation (KV-cache friendly, no giant replay). Verified in production at 460k-token sessions."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:jonah791/dsh-agent-compact"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -63814,7 +63814,7 @@ export const plugins = [
     description: {"en":"dsh + ModLens 视觉能力一键安装包：给 DeepSeek Harness 装上看图能力（Windows EXE 安装器 + 智谱 GLM-4V-Flash 免费视觉引擎）","zh":"dsh + ModLens 视觉能力一键安装包：给 DeepSeek Harness 装上看图能力（Windows EXE 安装器 + 智谱 GLM-4V-Flash 免费视觉引擎）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:JR-JR07/dsh-modlens-installer"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -64182,7 +64182,7 @@ export const plugins = [
     description: {"en":"DSH Web 语音朗读插件：每轮输出口语化转写后朗读（代码/表格自动跳过）；免费浏览器 TTS + 可选豆包云 TTS。Read-aloud plugin for DeepSeek Harness web.","zh":"DSH Web 语音朗读插件：每轮输出口语化转写后朗读（代码/表格自动跳过）；免费浏览器 TTS + 可选豆包云 TTS。Read-aloud plugin for DeepSeek Harness web."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:junarch/voice_for_dsh"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -64550,7 +64550,7 @@ export const plugins = [
     description: {"en":"Session-aware sandbox escalation compatibility plugin for DeepSeek Harness/DSH第三方模型会话沙箱升级兼容插件","zh":"Session-aware sandbox escalation compatibility plugin for DeepSeek Harness/DSH第三方模型会话沙箱升级兼容插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:JUSTMONIKA2022/dsh-sandbox-escalation-fix"},
-    stars: 56,
+    stars: 58,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -64774,7 +64774,7 @@ export const plugins = [
     description: {"en":"Windows Git Bash fix for DeepSeek Harness (dsh): MSYS sandbox conflict + terminal inspector, with the minimal-win collective-thinking preset (we/let's chain)","zh":"Windows Git Bash fix for DeepSeek Harness (dsh): MSYS sandbox conflict + terminal inspector, with the minimal-win collective-thinking preset (we/let's chain)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Jyleaves/dsh-win-bash-fix"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -64966,7 +64966,7 @@ export const plugins = [
     description: {"en":"dsh community plugin: turn any markdown/folder/GitHub learning repo into a guided AI-tutor course (gated skill tree, BKT mastery, SM-2 reviews) inside DeepSeek Harness","zh":"dsh community plugin: turn any markdown/folder/GitHub learning repo into a guided AI-tutor course (gated skill tree, BKT mastery, SM-2 reviews) inside DeepSeek Harness"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Kaiji-Z/dsh-plugin-lookatstudy"},
-    stars: 23,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -64982,7 +64982,7 @@ export const plugins = [
     description: {"en":"创建、开发、调试、打包 DeepSeek Harness（DSH）插件的 AI 技能。覆盖插件开发的完整流程：最小可加载插件、工具（tool）、事件监听、服务（service）、LLM 适配器（adapter）、插件配置，以及 cordis.yml / cordis.patch.yml 覆盖层编写、dsh web --patch 本地调试和 bundle 打包发布。基于官方文档编写，附可运行的示例与踩坑记录。","zh":"创建、开发、调试、打包 DeepSeek Harness（DSH）插件的 AI 技能。覆盖插件开发的完整流程：最小可加载插件、工具（tool）、事件监听、服务（service）、LLM 适配器（adapter）、插件配置，以及 cordis.yml / cordis.patch.yml 覆盖层编写、dsh web --patch 本地调试和 bundle 打包发布。基于官方文档编写，附可运行的示例与踩坑记录。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kaijia323/create-dsh-plugin"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65270,7 +65270,7 @@ export const plugins = [
     description: {"en":"Unofficial: drive your own DeepSeek Harness (dsh) as a native VS Code chat agent, beside Claude Code and Codex.","zh":"Unofficial: drive your own DeepSeek Harness (dsh) as a native VS Code chat agent, beside Claude Code and Codex."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kalynnka/vscode-deepseek-harness"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65398,7 +65398,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kanghelyu/dsh-deepseek-flow"},
-    stars: 89,
+    stars: 93,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65462,7 +65462,7 @@ export const plugins = [
     description: {"en":"DSH plugin: Git Bash shell for all agent modes on Windows (replaces pwsh executor)","zh":"DSH plugin: Git Bash shell for all agent modes on Windows (replaces pwsh executor)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KannaKuron/dsh-gitbash-shell"},
-    stars: 50,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65718,7 +65718,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) 的 GitHub 连接器：一键授权，对话内创建/AI 审查/合并 PR \\ GitHub connector for dsh: one-click connect, create/review/merge PRs from the conversation","zh":"DeepSeek Harness (dsh) 的 GitHub 连接器：一键授权，对话内创建/AI 审查/合并 PR \\ GitHub connector for dsh: one-click connect, create/review/merge PRs from the conversation"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kaziii/dsh-github-connector"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65782,7 +65782,7 @@ export const plugins = [
     description: {"en":"AI argues. Code settles. The losses stay on the page. A real HK + US brokerage account run by agents that must debate every call, settled by code the model never touches. Install the same decision workflow into your...","zh":"AI argues. Code settles. The losses stay on the page. A real HK + US brokerage account run by agents that must debate every call, settled by code the model never touches. Install the same decision workflow into your..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KCNyu/clawock"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65798,7 +65798,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness preset: first round uses the official Minimal tools, then unlocks full Standard. 复现 Project2 评测中更高分的 We/Let's 思维链（Minimal 99/96 vs Standard 91/92），改善 Windows 上 DeepSeek V4 Pro 的 Let me 现象。","zh":"DeepSeek Harness preset: first round uses the official Minimal tools, then unlocks full Standard. 复现 Project2 评测中更高分的 We/Let's 思维链（Minimal 99/96 vs Standard 91/92），改善 Windows 上 DeepSeek V4 Pro 的 Let me 现象。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KDB-Wind/dsh-minimal-anchored"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -65910,7 +65910,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 插件精选目录 - 14 类 280+ 个社区插件，覆盖 MCP / Skill / TUI / 多 Agent / 上下文记忆 / UI 皮肤，点链接直达仓库。Curated directory of dsh plugins for DeepSeek Harness.","zh":"DeepSeek Harness (DSH) 插件精选目录 - 14 类 280+ 个社区插件，覆盖 MCP / Skill / TUI / 多 Agent / 上下文记忆 / UI 皮肤，点链接直达仓库。Curated directory of dsh plugins for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kejixiaoliang/awesome-dsh-plugins"},
-    stars: 79,
+    stars: 84,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -66038,7 +66038,7 @@ export const plugins = [
     description: {"en":"dsh 安卓壳 APK--WebView UI + 内嵌 Termux 运行时快照（解压即跑）、SAF 目录桥、保活服务、看门狗、运行时在线更新。","zh":"dsh 安卓壳 APK--WebView UI + 内嵌 Termux 运行时快照（解压即跑）、SAF 目录桥、保活服务、看门狗、运行时在线更新。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kelai141/dsh-mobile-apk"},
-    stars: 1075,
+    stars: 1106,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -66086,7 +66086,7 @@ export const plugins = [
     description: {"en":"Time-shifting task delegation for DeepSeek Harness (dsh): plan tasks at leisure, they run unattended off-peak, come back to a report. Human-adjudicated, desktop + web.","zh":"Time-shifting task delegation for DeepSeek Harness (dsh): plan tasks at leisure, they run unattended off-peak, come back to a report. Human-adjudicated, desktop + web."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KelaoHu/dsh-lowtide"},
-    stars: 178,
+    stars: 180,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -66246,7 +66246,7 @@ export const plugins = [
     description: {"en":"music player plugin for deepseek harness","zh":"music player plugin for deepseek harness"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kendu76/dsh-music-player"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -66294,7 +66294,7 @@ export const plugins = [
     description: {"en":"Usage billing dashboard plugin for DeepSeek Harness: sidebar cost metrics, real usage aggregation from session logs, current multi-provider pricing catalog","zh":"Usage billing dashboard plugin for DeepSeek Harness: sidebar cost metrics, real usage aggregation from session logs, current multi-provider pricing catalog"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kenz1117/dsh-ui-usage-billing"},
-    stars: 99,
+    stars: 105,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -66438,7 +66438,7 @@ export const plugins = [
     description: {"en":"deepseek harness 纯牛马 -- 多智能体数字员工指挥台插件","zh":"deepseek harness 纯牛马 -- 多智能体数字员工指挥台插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kevin-luo/dsh-org-panel"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -67366,7 +67366,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 滑动变阻器皮肤","zh":"DeepSeek Harness 滑动变阻器皮肤"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kingOfSoySauce/dsh-liang-skin"},
-    stars: 381,
+    stars: 396,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -67382,7 +67382,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness skin market 皮肤市场 已收录100+DSH 皮肤 完善评分系统加人工审核，有便捷的社区收录入口；有在线页面方便在线浏览，也有插件方便管理本地皮肤","zh":"DeepSeek Harness skin market 皮肤市场 已收录100+DSH 皮肤 完善评分系统加人工审核，有便捷的社区收录入口；有在线页面方便在线浏览，也有插件方便管理本地皮肤"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kingOfSoySauce/dsh-skin-market"},
-    stars: 325,
+    stars: 332,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -67558,7 +67558,7 @@ export const plugins = [
     description: {"en":"Verifiable, origin-bound, read-only investigations for DSH responses-without interrupting the main task.","zh":"Verifiable, origin-bound, read-only investigations for DSH responses-without interrupting the main task."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kirkchinese/CiteCiter"},
-    stars: 44,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -67958,7 +67958,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin, Skill, CLI and MCP for Zhihu search, Zhida ask, and official open-platform APIs","zh":"DeepSeek Harness plugin, Skill, CLI and MCP for Zhihu search, Zhida ask, and official open-platform APIs"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:klarkxy/zhihu-search"},
-    stars: 25,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -68230,7 +68230,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness config migration plugin: one-click export/import of DSHHOME settings, credentials, profiles and external plugins. Cross-platform (Windows/macOS/Linux).","zh":"DeepSeek Harness config migration plugin: one-click export/import of DSHHOME settings, credentials, profiles and external plugins. Cross-platform (Windows/macOS/Linux)."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kol-mm/dsh-config-migrate"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -68390,7 +68390,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 状态灯插件：角色表情状态灯 + 聊天框气泡，完成任务/出错/提问时自动弹出（dsh-plugin）","zh":"DeepSeek Harness 状态灯插件：角色表情状态灯 + 聊天框气泡，完成任务/出错/提问时自动弹出（dsh-plugin）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kongchengavg/dsh-pet-StatusLight"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -68550,7 +68550,7 @@ export const plugins = [
     description: {"en":"TUI of DeepSeek Harness with Neovim","zh":"TUI of DeepSeek Harness with Neovim"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kovey/dsh-nvim-tui"},
-    stars: 5,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -68838,7 +68838,7 @@ export const plugins = [
     description: {"en":"Codex Switch 是一个 macOS 工具，一键配置 Codex 的自定义 API，同时保留官方 OpenAI 登录。保存后 Codex 的模型选择器里只会出现你选的那个 provider 的模型。也支持 Claude Code 的官方 / 自定义 API 切换。Codex Switch is a lightweight helper for configuring multiple coding-agent API...","zh":"Codex Switch 是一个 macOS 工具，一键配置 Codex 的自定义 API，同时保留官方 OpenAI 登录。保存后 Codex 的模型选择器里只会出现你选的那个 provider 的模型。也支持 Claude Code 的官方 / 自定义 API 切换。Codex Switch is a lightweight helper for configuring multiple coding-agent API..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kuangre123/codex-switch"},
-    stars: 75,
+    stars: 76,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -68870,7 +68870,7 @@ export const plugins = [
     description: {"en":"ios app 开发 skill","zh":"ios app 开发 skill"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kuangre123/iosdev"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69030,7 +69030,7 @@ export const plugins = [
     description: {"en":"一个Agent。让DeepSeek Herness变成AI写小说的工作区。这个项目也是DSH写的。","zh":"一个Agent。让DeepSeek Herness变成AI写小说的工作区。这个项目也是DSH写的。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KurohaneKaoruko/DSH-Novel"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69126,7 +69126,7 @@ export const plugins = [
     description: {"en":"Model-facing Office tools for DeepSeek Harness: Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) create/read/update with workspace-safe paths and PPT image embedding.","zh":"Model-facing Office tools for DeepSeek Harness: Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) create/read/update with workspace-safe paths and PPT image embedding."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kw78/dsh-office-tools"},
-    stars: 45,
+    stars: 46,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69190,7 +69190,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) 插件热管理器：装一次、重启一次，之后装插件、卸插件、升级插件全部即时生效，不用再重启。 | A plugin that makes installing, removing and upgrading DeepSeek Harness (dsh) plugins take effect instantly - restart once, then never again.","zh":"DeepSeek Harness (dsh) 插件热管理器：装一次、重启一次，之后装插件、卸插件、升级插件全部即时生效，不用再重启。 | A plugin that makes installing, removing and upgrading DeepSeek Harness (dsh) plugins take effect instantly - restart once, then never again."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:KYinCode/dsh-hot-installer"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69286,7 +69286,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin: real-time DeepSeek API balance in the sidebar","zh":"DeepSeek Harness plugin: real-time DeepSeek API balance in the sidebar"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:kyya/dsh-deepseek-balance"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69478,7 +69478,7 @@ export const plugins = [
     description: {"en":"AI agent skills for Sealos - deploy any project, provision databases, object storage & more with one command. Works with Claude Code, Gemini CLI, Codex.","zh":"AI agent skills for Sealos - deploy any project, provision databases, object storage & more with one command. Works with Claude Code, Gemini CLI, Codex."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:labring/sealos-skills"},
-    stars: 83,
+    stars: 84,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69558,7 +69558,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 的执行迷宫--看 Agent 真实怎么干活：迷宫时间轴 · 数据轨道 · 确定性执行分析 · 多会话对比 \\ The execution maze for DSH agents: maze timeline, per-step data tracks, deterministic execution analysis, multi-session comparison. Formerly...","zh":"DeepSeek Harness 的执行迷宫--看 Agent 真实怎么干活：迷宫时间轴 · 数据轨道 · 确定性执行分析 · 多会话对比 \\ The execution maze for DSH agents: maze timeline, per-step data tracks, deterministic execution analysis, multi-session comparison. Formerly..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lamost423/dsh-maze"},
-    stars: 90,
+    stars: 95,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69590,7 +69590,7 @@ export const plugins = [
     description: {"en":"Trace Compare & Live Maze for DeepSeek Harness: visualize agent exploration (main path, detours, backtracks) from session logs or live sessions","zh":"Trace Compare & Live Maze for DeepSeek Harness: visualize agent exploration (main path, detours, backtracks) from session logs or live sessions"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lamost423/dsh-trace-compare"},
-    stars: 90,
+    stars: 95,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -69622,7 +69622,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Windows 默认 Shell 策略：探测 git-bash/MSYS2，配置面板一键切换 bash/pwsh，动态注册 bash 工具并裁剪提示词工具面 · DSH 组合插件。","zh":"DeepSeek Harness Windows 默认 Shell 策略：探测 git-bash/MSYS2，配置面板一键切换 bash/pwsh，动态注册 bash 工具并裁剪提示词工具面 · DSH 组合插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LAN-TINA-WS/dsh-windows-shell-policy"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70022,7 +70022,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web UI plugin for fluid streaming rendering and silky scrolling. 流畅流式渲染与丝滑滚动。","zh":"DeepSeek Harness Web UI plugin for fluid streaming rendering and silky scrolling. 流畅流式渲染与丝滑滚动。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Laplace-bit/dsh-smooth-stream"},
-    stars: 95,
+    stars: 98,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70038,7 +70038,7 @@ export const plugins = [
     description: {"en":"DirectorX as a DeepSeek Harness plugin: AI video/image/audio skills, knowledge corpus, and configurable vision/image/video/audio model tools.","zh":"DirectorX as a DeepSeek Harness plugin: AI video/image/audio skills, knowledge corpus, and configurable vision/image/video/audio model tools."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LaplaceYoung/dsh-directorx"},
-    stars: 48,
+    stars: 50,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70102,7 +70102,7 @@ export const plugins = [
     description: {"en":"oh-my-dsh：面向 DSH (DeepSeek Harness) 的插件生态--700+ 插件，只通过扩展接缝注册，不修改 agent-loop 骨架","zh":"oh-my-dsh：面向 DSH (DeepSeek Harness) 的插件生态--700+ 插件，只通过扩展接缝注册，不修改 agent-loop 骨架"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:laplaceyoung/oh-my-dsh"},
-    stars: 58,
+    stars: 59,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70230,7 +70230,7 @@ export const plugins = [
     description: {"en":"deepseek harness 2D and 3D CAD plugin","zh":"deepseek harness 2D and 3D CAD plugin"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LAU-MARS/dsh-cad"},
-    stars: 39,
+    stars: 42,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70326,7 +70326,7 @@ export const plugins = [
     description: {"en":"Superpowers skills for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers","zh":"Superpowers skills for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:laynechai/superpowers-dsh"},
-    stars: 156,
+    stars: 168,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70630,7 +70630,7 @@ export const plugins = [
     description: {"en":"Repository-installed CI repair bot that keeps DeepSeek Harness plugins compatible with new DSH releases","zh":"Repository-installed CI repair bot that keeps DeepSeek Harness plugins compatible with new DSH releases"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LCYLYM/dsh-plugin-compat-guardian"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70758,7 +70758,7 @@ export const plugins = [
     description: {"en":"Lazy on-demand MCP bridge for DeepSeek Harness","zh":"Lazy on-demand MCP bridge for DeepSeek Harness"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:leaforbook/dsh-mcp-lazy"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -70870,7 +70870,7 @@ export const plugins = [
     description: {"en":"基于 MinerU 的 DeepSeek Harness 多模态文档解析插件：PDF/Word/PPT/Excel/HTML/图片 → 结构化 Markdown（免 Token 的 Agent 轻量解析 / 精准解析双 API 模式）","zh":"基于 MinerU 的 DeepSeek Harness 多模态文档解析插件：PDF/Word/PPT/Excel/HTML/图片 → 结构化 Markdown（免 Token 的 Agent 轻量解析 / 精准解析双 API 模式）"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Lee-Hilex/dsh-mineru"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71078,7 +71078,7 @@ export const plugins = [
     description: {"en":"Persistent live DAG visualization for DeepSeek Harness subagents and workflows","zh":"Persistent live DAG visualization for DeepSeek Harness subagents and workflows"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LeemanCheung/dsh-task-dag"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71190,7 +71190,7 @@ export const plugins = [
     description: {"en":"dsh插件 - 立刻审查agent对文件的修改，查看diff。a dsh plugin - review files that an agent just changed,you can see the diff","zh":"dsh插件 - 立刻审查agent对文件的修改，查看diff。a dsh plugin - review files that an agent just changed,you can see the diff"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:left0ver/dsh-file-review"},
-    stars: 43,
+    stars: 44,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71366,7 +71366,7 @@ export const plugins = [
     description: {"en":"Installable DeepSeek Harness knowledge base plugin","zh":"Installable DeepSeek Harness knowledge base plugin"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lemoncat7/dsh-knowledge"},
-    stars: 22,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71414,7 +71414,7 @@ export const plugins = [
     description: {"en":"Configurable and secure multi-provider web search","zh":"Configurable and secure multi-provider web search"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lemoncat7/dsh-web-search"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71478,7 +71478,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 默认的思考语言为英文，这不利于中文使用者阅读推理过程与复核结论。本插件通过在每次请求的 system prompt 中注入一条精简的强制语言指令，使: 思考过程强制简体中文，无论用户用什么语言提问。","zh":"DeepSeek Harness 默认的思考语言为英文，这不利于中文使用者阅读推理过程与复核结论。本插件通过在每次请求的 system prompt 中注入一条精简的强制语言指令，使: 思考过程强制简体中文，无论用户用什么语言提问。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Len7183/DSH-Think-zh"},
-    stars: 49,
+    stars: 50,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -71574,7 +71574,7 @@ export const plugins = [
     description: {"en":"deepseek-harness","zh":"deepseek-harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Lenonss/DSH_VsCodeMode"},
-    stars: 29,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72006,7 +72006,7 @@ export const plugins = [
     description: {"en":"极简实用的微信小程序反编译 Web 工具","zh":"极简实用的微信小程序反编译 Web 工具"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Leslie-SSS/seeWxapkg"},
-    stars: 135,
+    stars: 136,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72166,7 +72166,7 @@ export const plugins = [
     description: {"en":"Advanced cross-session full-text search for DeepSeek Harness - search past and current DSH sessions using the built-in sessionQuery service","zh":"Advanced cross-session full-text search for DeepSeek Harness - search past and current DSH sessions using the built-in sessionQuery service"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LeslieWylie/dsh-session-search-pro"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72278,7 +72278,7 @@ export const plugins = [
     description: {"en":"Tool search & slimming for DeepSeek Harness: Hermes-style progressive disclosure - search, describe, and call long-tail tools on demand","zh":"Tool search & slimming for DeepSeek Harness: Hermes-style progressive disclosure - search, describe, and call long-tail tools on demand"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Letter2025/dsh-tool-search"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72582,7 +72582,7 @@ export const plugins = [
     description: {"en":"【求⭐】🐋DSH Web UI 全手绘像素鲸鱼伙伴插件：会话标题栏常驻，平时眨眼/偶尔摆尾/动胸鳍，思考运行时持续动起来，回合完成头顶喷水，点击还会冒爱心，不工作时还会偷懒睡觉，零核心改动。 【喜欢的话就点点star⭐吧】","zh":"【求⭐】🐋DSH Web UI 全手绘像素鲸鱼伙伴插件：会话标题栏常驻，平时眨眼/偶尔摆尾/动胸鳍，思考运行时持续动起来，回合完成头顶喷水，点击还会冒爱心，不工作时还会偷懒睡觉，零核心改动。 【喜欢的话就点点star⭐吧】"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lhh010/dsh-ui-whale"},
-    stars: 46,
+    stars: 48,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72598,7 +72598,7 @@ export const plugins = [
     description: {"en":"Fix DSH Desktop copy buttons by bridging clipboard writes to the Electron main process.","zh":"Fix DSH Desktop copy buttons by bridging clipboard writes to the Electron main process."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lhh666-6/dsh-copy-fix"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -72838,7 +72838,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web 的轻拟物与磨砂玻璃主题插件，提供浅色/深色主题、环境光、材质纹理和细腻微交互。Neumorphism + glassmorphism theme plugin for DeepSeek Harness Web with warm light/dark palettes, ambient lighting, grain texture, and subtle micro-interactions.","zh":"DeepSeek Harness Web 的轻拟物与磨砂玻璃主题插件，提供浅色/深色主题、环境光、材质纹理和细腻微交互。Neumorphism + glassmorphism theme plugin for DeepSeek Harness Web with warm light/dark palettes, ambient lighting, grain texture, and subtle micro-interactions."},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Lhy723/dsh-neu-theme"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73030,7 +73030,7 @@ export const plugins = [
     description: {"en":"A visual, non-linear conversation workspace plugin for DeepSeek Harness ; A canvas-based session explorer and branching workspace for DeepSeek Harness.","zh":"A visual, non-linear conversation workspace plugin for DeepSeek Harness ; A canvas-based session explorer and branching workspace for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liangmianya/dsh-synapse"},
-    stars: 697,
+    stars: 726,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73254,7 +73254,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 终极指南：快速入门、资源推荐、精选插件与实用工具 ｜The Ultimate Guide to DeepSeek Harness: QuickStart, Resources, Plugins&Toolkit","zh":"DeepSeek Harness 终极指南：快速入门、资源推荐、精选插件与实用工具 ｜The Ultimate Guide to DeepSeek Harness: QuickStart, Resources, Plugins&Toolkit"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:libukai/awesome-deepseek-harness"},
-    stars: 372,
+    stars: 379,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73526,7 +73526,7 @@ export const plugins = [
     description: {"en":"Toggle individual agent capabilities (skills, MCP, tools, prompt, approval, guards) from the DSH WebUI composer - session / project / global. DSH 各种能力（mcp/skill/tool等）多层级开关灵活控制","zh":"Toggle individual agent capabilities (skills, MCP, tools, prompt, approval, guards) from the DSH WebUI composer - session / project / global. DSH 各种能力（mcp/skill/tool等）多层级开关灵活控制"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lifeopsgo/dsh-capability-toggle-plugin"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73606,7 +73606,7 @@ export const plugins = [
     description: {"en":"基于 DeepSeek Harness 插件机制的多端远程访问方案，让桌面端与 Android 端安全连接并操作远程 Harness。（A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling desktop and Android clients to securely connect to and...","zh":"基于 DeepSeek Harness 插件机制的多端远程访问方案，让桌面端与 Android 端安全连接并操作远程 Harness。（A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling desktop and Android clients to securely connect to and..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liguobao/deepseek-harness-remote"},
-    stars: 2594,
+    stars: 3144,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73910,7 +73910,7 @@ export const plugins = [
     description: {"en":"🐳 DeepSeek Harness 插件聚合社区 - 自动同步 dsh-plugin 生态 · 精选目录 · 每 8 小时自动维护 \\| Oh-My-DSH: a community-maintained catalog of DeepSeek Harness plugins, auto-synced from the dsh-plugin topic","zh":"🐳 DeepSeek Harness 插件聚合社区 - 自动同步 dsh-plugin 生态 · 精选目录 · 每 8 小时自动维护 \\| Oh-My-DSH: a community-maintained catalog of DeepSeek Harness plugins, auto-synced from the dsh-plugin topic"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:like-study1/oh-my-dsh"},
-    stars: 103,
+    stars: 102,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -73926,7 +73926,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for Garmin Connect - AI-powered fitness data access","zh":"DeepSeek Harness plugin for Garmin Connect - AI-powered fitness data access"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Likenttt/garmin-connect-plugin-for-dsh"},
-    stars: 55,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74038,7 +74038,7 @@ export const plugins = [
     description: {"en":"琉璃 UI 增强 -- DSH 主题插件:M3 动态取色、壁纸磨砂材质、声纹可视化、dock shell、嵌入式浏览器","zh":"琉璃 UI 增强 -- DSH 主题插件:M3 动态取色、壁纸磨砂材质、声纹可视化、dock shell、嵌入式浏览器"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LilycleHeart/dsh-liuli-ui-enhance"},
-    stars: 22,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74166,7 +74166,7 @@ export const plugins = [
     description: {"en":"Multi-agent team collaboration for DeepSeek Harness, with independent models, skills, MCP tools, contexts, and a shared workspace.","zh":"Multi-agent team collaboration for DeepSeek Harness, with independent models, skills, MCP tools, contexts, and a shared workspace."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:limuyang2/agent-team"},
-    stars: 51,
+    stars: 52,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74470,7 +74470,7 @@ export const plugins = [
     description: {"en":"🚀 Expert guidance for HarmonyOS NEXT (API 12+) development. Covers IDE operations, performance tuning, architecture (HAP/HAR/HSP), and automation testing.","zh":"🚀 Expert guidance for HarmonyOS NEXT (API 12+) development. Covers IDE operations, performance tuning, architecture (HAP/HAR/HSP), and automation testing."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:linhay/harmony-next.skills"},
-    stars: 368,
+    stars: 372,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74518,7 +74518,7 @@ export const plugins = [
     description: {"en":"中文公文全流程处理工具--基于 GB/T 9704《党政机关公文格式》 国家标准，面向公文写作、企事业单位材料编制场景，支持 格式检查与修复、内容优化（Word 原生修订+批注/差异对比版）、模板生成、Markdown 转公文、版头版记页码注入、事实核验、风格增强 等完整能力。原生支持 DeepSeek Harness (DSH) 技能系统，打包为可被 AI Agent 直接调用的 Skill，完全自包含，克隆即用。","zh":"中文公文全流程处理工具--基于 GB/T 9704《党政机关公文格式》 国家标准，面向公文写作、企事业单位材料编制场景，支持 格式检查与修复、内容优化（Word 原生修订+批注/差异对比版）、模板生成、Markdown 转公文、版头版记页码注入、事实核验、风格增强 等完整能力。原生支持 DeepSeek Harness (DSH) 技能系统，打包为可被 AI Agent 直接调用的 Skill，完全自包含，克隆即用。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:linhut/gongwen-skill"},
-    stars: 106,
+    stars: 112,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74566,7 +74566,7 @@ export const plugins = [
     description: {"en":"Remote Host Tunnel Manager for dsh: remote port allocation + registry + resilient SSH tunnel","zh":"Remote Host Tunnel Manager for dsh: remote port allocation + registry + resilient SSH tunnel"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Linjiangxian0203/dsh-remote-tunnel"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74630,7 +74630,7 @@ export const plugins = [
     description: {"en":"Windows 桌面版 DeepSeek Harness 发行版，支持原生通知、流畅的窗口控制、捆绑运行时和自动更新。追踪官方主分支。针对官方版本进行了桌面美化和功能补充","zh":"Windows 桌面版 DeepSeek Harness 发行版，支持原生通知、流畅的窗口控制、捆绑运行时和自动更新。追踪官方主分支。针对官方版本进行了桌面美化和功能补充"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Links2008/DeepSeek-Harness-Desktop"},
-    stars: 45,
+    stars: 46,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74742,7 +74742,7 @@ export const plugins = [
     description: {"en":"Adds capability to Deepseek harness to do rigorous quant finance work","zh":"Adds capability to Deepseek harness to do rigorous quant finance work"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:linxichen/dsh-rigorquant"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -74790,7 +74790,7 @@ export const plugins = [
     description: {"en":"Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP endpoint","zh":"Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP endpoint"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:linyp/dsh-plugin-langfuse"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75046,7 +75046,7 @@ export const plugins = [
     description: {"en":"DSH plugin: snapshot & rollback your DSH configs AND user-plugin code files. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard shortcuts, plus an offline PowerShell CLI & GUI (one-click desktop...","zh":"DSH plugin: snapshot & rollback your DSH configs AND user-plugin code files. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard shortcuts, plus an offline PowerShell CLI & GUI (one-click desktop..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lire1131/dsh-undo-plugin"},
-    stars: 202,
+    stars: 207,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75062,7 +75062,7 @@ export const plugins = [
     description: {"en":"DSH crash-rescue plugin: undo config & plugin-code changes, secret-safe snapshots, one-click SAFE MODE, plus offline CLI/GUI that work even when DSH won't boot.","zh":"DSH crash-rescue plugin: undo config & plugin-code changes, secret-safe snapshots, one-click SAFE MODE, plus offline CLI/GUI that work even when DSH won't boot."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lire1131/dsh-undo-savepoint"},
-    stars: 202,
+    stars: 207,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75142,7 +75142,7 @@ export const plugins = [
     description: {"en":"A self-evolving plugin for DeepSeek Harness (dsh). It observes how the agent runs, proposes improvements to its own assets via the LLM, validates each proposal inside a sandboxed trial agent, and applies only...","zh":"A self-evolving plugin for DeepSeek Harness (dsh). It observes how the agent runs, proposes improvements to its own assets via the LLM, validates each proposal inside a sandboxed trial agent, and applies only..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lispking/dsh-auto-evolve"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75254,7 +75254,7 @@ export const plugins = [
     description: {"en":"AI4Scholar for DeepSeek Harness (dsh): 38 native academic tools - Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medRxiv, DOI, full text, auto-cite, figures, unified search. Powered by ai4scholar.net","zh":"AI4Scholar for DeepSeek Harness (dsh): 38 native academic tools - Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medRxiv, DOI, full text, auto-cite, figures, unified search. Powered by ai4scholar.net"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:literaf/dsh-ai4scholar"},
-    stars: 45,
+    stars: 49,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75606,7 +75606,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness绿色整合版，一键启动，不污染C盘，一个文件夹里管理。DeepSeek Harness Green All-in-One Launcher - double-click to run, all-localized","zh":"DeepSeek Harness绿色整合版，一键启动，不污染C盘，一个文件夹里管理。DeepSeek Harness Green All-in-One Launcher - double-click to run, all-localized"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LiuJunheng/DeepSeekHarnessGreen"},
-    stars: 28,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75702,7 +75702,7 @@ export const plugins = [
     description: {"en":"Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).","zh":"为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liustack/modlens"},
-    stars: 4902,
+    stars: 5014,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75718,7 +75718,7 @@ export const plugins = [
     description: {"en":"🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. \\ 🥇 全网最强的...","zh":"🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. \\ 🥇 全网最强的..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liustack/modsearch"},
-    stars: 971,
+    stars: 1005,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75734,7 +75734,7 @@ export const plugins = [
     description: {"en":"Stable, editable PPTX generation for AI agents - semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。","zh":"Stable, editable PPTX generation for AI agents - semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liustack/pptfast"},
-    stars: 27,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75750,7 +75750,7 @@ export const plugins = [
     description: {"en":"Stable, editable PPTX generation for AI agents - semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。","zh":"Stable, editable PPTX generation for AI agents - semantic IR in, native DrawingML out. DSH plugin + Claude Code plugin + CLI. \\ 给 AI agent 的稳定可编辑 PPTX 生成：语义 IR 进，原生 DrawingML 出。DSH 插件 / Claude Code 插件 / CLI。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liustack/pptpress"},
-    stars: 27,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75766,7 +75766,7 @@ export const plugins = [
     description: {"en":"A real PowerPoint, not a picture or HTML. Tell your AI what to cover and pptwise builds an editable deck on your own machine. Agent skill + DSH plugin, no account and no API key to render. \\ 真正的 PPT，不是图片也不是 HTML。跟 AI...","zh":"A real PowerPoint, not a picture or HTML. Tell your AI what to cover and pptwise builds an editable deck on your own machine. Agent skill + DSH plugin, no account and no API key to render. \\ 真正的 PPT，不是图片也不是 HTML。跟 AI..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:liustack/pptwise"},
-    stars: 27,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -75942,7 +75942,7 @@ export const plugins = [
     description: {"en":"Community GitHub Action for DeepSeek Harness - AI Code Review · CI Diagnosis · Auto Fix · Issue → PR","zh":"Community GitHub Action for DeepSeek Harness - AI Code Review · CI Diagnosis · Auto Fix · Issue → PR"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lixiaoyiao/deepseek-harness-action"},
-    stars: 64,
+    stars: 63,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -76118,7 +76118,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness (DSH) 打造的 Google Antigravity 模型提供者插件/Google Antigravity LLM provider for DeepSeek Harness with native Web OAuth, real-time quota tracking, and dynamic reasoning effort routing.","zh":"为 DeepSeek Harness (DSH) 打造的 Google Antigravity 模型提供者插件/Google Antigravity LLM provider for DeepSeek Harness with native Web OAuth, real-time quota tracking, and dynamic reasoning effort routing."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LiZhenNet/dsh-antigravity"},
-    stars: 32,
+    stars: 34,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -76582,7 +76582,7 @@ export const plugins = [
     description: {"en":"Hermes-inspired agent self-evolution plugin family, purpose-built for DeepSeek Harness","zh":"Hermes-inspired agent self-evolution plugin family, purpose-built for DeepSeek Harness"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lmzhen/dsh-evolution"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -77126,7 +77126,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 插件工具包--一条命令安装三个常用插件：mcp管理、Skill管理 与 Git 分支徽标。装完即用，设置页自动出现 mcp管理 与 Skill管理 两个分区，会话头部与新会话欢迎页显示 Git 分支徽标。","zh":"DeepSeek Harness (DSH) 插件工具包--一条命令安装三个常用插件：mcp管理、Skill管理 与 Git 分支徽标。装完即用，设置页自动出现 mcp管理 与 Skill管理 两个分区，会话头部与新会话欢迎页显示 Git 分支徽标。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:LongSir0419/dsh-toolkit"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -77350,7 +77350,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugins market｜DSH 插件市场","zh":"DeepSeek Harness plugins market｜DSH 插件市场"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:losebird/dsh-plugin-market"},
-    stars: 27,
+    stars: 31,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -77558,7 +77558,7 @@ export const plugins = [
     description: {"en":"基于DeepSeek-Balance-Whale-Widget开发，新增了三版不同的表情，需要那个版本的表情可以自己让agent帮你换，增加了火山coding plan额度查询，新增加台词自定义切换增加，增加了表情与台词手动切换","zh":"基于DeepSeek-Balance-Whale-Widget开发，新增了三版不同的表情，需要那个版本的表情可以自己让agent帮你换，增加了火山coding plan额度查询，新增加台词自定义切换增加，增加了表情与台词手动切换"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:louke6572/dsh-whale-widget-plus"},
-    stars: 94,
+    stars: 101,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -77702,7 +77702,7 @@ export const plugins = [
     description: {"en":"把 WorkBuddy 的文件式记忆系统移植进 DeepSeek Harness -- 为 Harness 提供跨会话持久化、人类可直接编辑的 Markdown 记忆。","zh":"把 WorkBuddy 的文件式记忆系统移植进 DeepSeek Harness -- 为 Harness 提供跨会话持久化、人类可直接编辑的 Markdown 记忆。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lovezi0/dsh-memory-palace"},
-    stars: 26,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -77830,7 +77830,7 @@ export const plugins = [
     description: {"en":"DIY 你的 DSH 界面：按区域自定义字体/字号/颜色 | DIY your DSH UI fonts & colors","zh":"DIY 你的 DSH 界面：按区域自定义字体/字号/颜色 | DIY your DSH UI fonts & colors"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:loyalchiiina/dsh-font-enhancer"},
-    stars: 5,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78118,7 +78118,7 @@ export const plugins = [
     description: {"en":"Read-only Windows device info tools for DeepSeek Harness: 12 win tools (time, system, CPU, memory, disk, GPU, network/WiFi, battery, processes, USB, audio, printers) via Node os + WMI/CIM. Bundle-form dsh plugin.","zh":"Read-only Windows device info tools for DeepSeek Harness: 12 win tools (time, system, CPU, memory, disk, GPU, network/WiFi, battery, processes, USB, audio, printers) via Node os + WMI/CIM. Bundle-form dsh plugin."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lsz-asd/dsh-plugin-device-info"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78134,7 +78134,7 @@ export const plugins = [
     description: {"en":"Delete DeepSeek Harness sessions from the UI: header danger button + sidebar session-row menu item (no conversation jump), risk-consent dialog with session name/id, stops running agents first, in-place list refresh...","zh":"Delete DeepSeek Harness sessions from the UI: header danger button + sidebar session-row menu item (no conversation jump), risk-consent dialog with session name/id, stops running agents first, in-place list refresh..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lsz-asd/dsh-plugin-session-delete"},
-    stars: 55,
+    stars: 54,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78198,7 +78198,7 @@ export const plugins = [
     description: {"en":"会话管理菜单、归档管理、轮次级删除、重新生成，话题快捷导航。Add a management menu for conversations, archive conversation management, delete by round, regenerate, and a quick topic navigation on the right.","zh":"会话管理菜单、归档管理、轮次级删除、重新生成，话题快捷导航。Add a management menu for conversations, archive conversation management, delete by round, regenerate, and a quick topic navigation on the right."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ltxlong/dsh-session-kit"},
-    stars: 11,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78534,7 +78534,7 @@ export const plugins = [
     description: {"en":"Multi-pane main window for viewing multiple sessions and their states","zh":"Multi-pane main window for viewing multiple sessions and their states"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:luckybilly/dsh-split-view"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78678,7 +78678,7 @@ export const plugins = [
     description: {"en":"dsh plugin: Chrome sidebar extension that lets DeepSeek Harness operate your browser directly, no vision capabilities required. 一款 Chrome 侧边栏扩展程序，可让 DeepSeek Harness 直接操控您的浏览器，无需视觉能力。","zh":"dsh plugin: Chrome sidebar extension that lets DeepSeek Harness operate your browser directly, no vision capabilities required. 一款 Chrome 侧边栏扩展程序，可让 DeepSeek Harness 直接操控您的浏览器，无需视觉能力。"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lum1104/dsh-browser"},
-    stars: 1044,
+    stars: 1087,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -78998,7 +78998,7 @@ export const plugins = [
     description: {"en":"以原版 Rocket.Chat 为内核、集成 Codex App Server、Deepseek Harness、Azure DevOps、体验对标飞书的团队协作客户端。","zh":"以原版 Rocket.Chat 为内核、集成 Codex App Server、Deepseek Harness、Azure DevOps、体验对标飞书的团队协作客户端。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lusipad/RocketX"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80038,7 +80038,7 @@ export const plugins = [
     description: {"en":"输入框右侧会话成本芯片：按官方价表（含 2026-08-17 峰谷价）逐消息计价当前会话的 DeepSeek API 花费，悬停查看计价明细、今日(DSH) 消耗与账户余额；仅 DeepSeek 模型计价，其他模型不计价不显示。","zh":"输入框右侧会话成本芯片：按官方价表（含 2026-08-17 峰谷价）逐消息计价当前会话的 DeepSeek API 花费，悬停查看计价明细、今日(DSH) 消耗与账户余额；仅 DeepSeek 模型计价，其他模型不计价不显示。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Lzh3070/dsh-session-cost"},
-    stars: 19,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80102,7 +80102,7 @@ export const plugins = [
     description: {"en":"Academic assistant plugin.","zh":"学术助手插件。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:lzszq/dsh-scholar"},
-    stars: 57,
+    stars: 58,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80358,7 +80358,7 @@ export const plugins = [
     description: {"en":"Notification sound + Chinese voice alerts for the DeepSeek Harness web GUI (approval / answer / completion / error), with a settings page.","zh":"Notification sound + Chinese voice alerts for the DeepSeek Harness web GUI (approval / answer / completion / error), with a settings page."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Machine-126/dsh-alert-sound"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80390,7 +80390,7 @@ export const plugins = [
     description: {"en":"Trading research workbench for DeepSeek Harness (dsh): typed market-data seam, deterministic indicators, interactive chart cards ｜ 交易研究工作台插件：数据接缝 · 确定性指标 · 交互式K线卡","zh":"Trading research workbench for DeepSeek Harness (dsh): typed market-data seam, deterministic indicators, interactive chart cards ｜ 交易研究工作台插件：数据接缝 · 确定性指标 · 交互式K线卡"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:maddogfinance/dsh-trading"},
-    stars: 41,
+    stars: 42,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80406,7 +80406,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mafeis/dsh-net-proxy"},
-    stars: 20,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80598,7 +80598,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 插件：GitHub 风格用量热力图 + Token / 缓存命中 / 账户余额看板 + 工作区别名管理。","zh":"DeepSeek Harness 插件：GitHub 风格用量热力图 + Token / 缓存命中 / 账户余额看板 + 工作区别名管理。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Make0209/dsh-usage-stats"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80838,7 +80838,7 @@ export const plugins = [
     description: {"en":"Overleaf-style paper revision workbench powered by a DeepSeek Harness plugin (dsh-plugin)","zh":"Overleaf-style paper revision workbench powered by a DeepSeek Harness plugin (dsh-plugin)"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:maple-pwn/paperlab"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -80870,7 +80870,7 @@ export const plugins = [
     description: {"en":"DSH 系统级 cron 定时任务插件:规则存为 Cron 表达式,由用户 crontab 在进程外执行 headless 任务,Web 端管理规则与运行结果","zh":"DSH 系统级 cron 定时任务插件:规则存为 Cron 表达式,由用户 crontab 在进程外执行 headless 任务,Web 端管理规则与运行结果"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Mappedinfo/dsh-cron-scheduler"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81030,7 +81030,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 具名子代理库插件：settings 驱动的角色名册，listsubagents / delegate 工具与设置页。Named subagent roster plugin for DeepSeek Harness.","zh":"DeepSeek Harness 具名子代理库插件：settings 驱动的角色名册，listsubagents / delegate 工具与设置页。Named subagent roster plugin for DeepSeek Harness."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MaRi23333/dsh-subagent-library"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81350,7 +81350,7 @@ export const plugins = [
     description: {"en":"Agent 等待响应通知插件（支持Claude Code、CodeX、DeepSeek Harness、Reasonix） - 11 个渠道，短通知即时触达，长通知异步兜底。人可以闲着，Agent 不可以。","zh":"Agent 等待响应通知插件（支持Claude Code、CodeX、DeepSeek Harness、Reasonix） - 11 个渠道，短通知即时触达，长通知异步兜底。人可以闲着，Agent 不可以。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MarioZZJ/cc-notify-hooks"},
-    stars: 21,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81414,7 +81414,7 @@ export const plugins = [
     description: {"en":"One-click DSH background switcher backed by local Wallpaper Engine images/videos","zh":"One-click DSH background switcher backed by local Wallpaper Engine images/videos"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:marlonLau/dsh-wallpaper-engine"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81430,7 +81430,7 @@ export const plugins = [
     description: {"en":"Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported from pi-commandcode-provider (MIT).","zh":"Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported from pi-commandcode-provider (MIT)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Mars-Sea/dsh-commandcode-provider"},
-    stars: 473,
+    stars: 487,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81446,7 +81446,7 @@ export const plugins = [
     description: {"en":"Native iPhone companion plugin for DeepSeek Harness - sessions, approvals, questions, notifications, and secure remote access.","zh":"Native iPhone companion plugin for DeepSeek Harness - sessions, approvals, questions, notifications, and secure remote access."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Mars-Sea/dsh-deeppilot"},
-    stars: 15,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81542,7 +81542,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for Timeline Studio deterministic project inspection, editing, and rendering","zh":"DeepSeek Harness plugin for Timeline Studio deterministic project inspection, editing, and rendering"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MartinDelophy/dsh-timeline-studio-plugin"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81654,7 +81654,7 @@ export const plugins = [
     description: {"en":"DSH（DeepSeek Harness）Web 插件：在 composer 工具栏注入一个「提示词库」按钮，管理可复用的 prompt 片段，点击即可插入当前输入框。支持自动学习：输入复杂 prompt 文案时，插件会自动识别并保存到提示词库。","zh":"DSH（DeepSeek Harness）Web 插件：在 composer 工具栏注入一个「提示词库」按钮，管理可复用的 prompt 片段，点击即可插入当前输入框。支持自动学习：输入复杂 prompt 文案时，插件会自动识别并保存到提示词库。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:master1Sun/dsh-prompt-library"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81814,7 +81814,7 @@ export const plugins = [
     description: {"en":"One-line fix: inject a fixed system-prompt section so the agent always thinks and replies in Chinese, whatever the user's language · 中文思考：注入固定提示词，让 agent 始终用中文思考与回复（无论用户语言）","zh":"One-line fix: inject a fixed system-prompt section so the agent always thinks and replies in Chinese, whatever the user's language · 中文思考：注入固定提示词，让 agent 始终用中文思考与回复（无论用户语言）"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Max-Null/dsh-chinese-thinking"},
-    stars: 13,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81894,7 +81894,7 @@ export const plugins = [
     description: {"en":"Conversation node appearance for DeepSeek Harness Web GUI: colorize nodes by type/tool (configurable palette) + thinking visibility toggle · 会话节点外观：按节点类型/工具名着色（可配置配色）+ 思考过程显示开关","zh":"Conversation node appearance for DeepSeek Harness Web GUI: colorize nodes by type/tool (configurable palette) + thinking visibility toggle · 会话节点外观：按节点类型/工具名着色（可配置配色）+ 思考过程显示开关"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Max-Null/dsh-node-appearance"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -81926,7 +81926,7 @@ export const plugins = [
     description: {"en":"Skill & MCP center for DeepSeek Harness: manage skills and MCP servers in Settings, live MCP status in the sidebar · Skill 与 MCP 管理中心：设置里管理技能与 MCP 服务器，侧边栏实时状态","zh":"Skill & MCP center for DeepSeek Harness: manage skills and MCP servers in Settings, live MCP status in the sidebar · Skill 与 MCP 管理中心：设置里管理技能与 MCP 服务器，侧边栏实时状态"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Max-Null/dsh-skill-mcp-center"},
-    stars: 1,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -82806,7 +82806,7 @@ export const plugins = [
     description: {"en":"🍙 A personal AI agent & local memory hub for all AI agents, gives every AI one shared, fully controlled memory and persistent context - all AI remember the same you. Now supports Claude Code, Codex, OpenClaw and...","zh":"🍙 A personal AI agent & local memory hub for all AI agents, gives every AI one shared, fully controlled memory and persistent context - all AI remember the same you. Now supports Claude Code, Codex, OpenClaw and..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MemTensor/memmy-agent"},
-    stars: 2211,
+    stars: 2219,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -82822,7 +82822,7 @@ export const plugins = [
     description: {"en":"Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support.","zh":"Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MemTensor/MemOS"},
-    stars: 12358,
+    stars: 12429,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -82950,7 +82950,7 @@ export const plugins = [
     description: {"en":"Lazy senior dev mode for DeepSeek Harness - ponytail port (always-on minimal-code ruleset, /ponytail-review/audit/debt/gain/help)","zh":"Lazy senior dev mode for DeepSeek Harness - ponytail port (always-on minimal-code ruleset, /ponytail-review/audit/debt/gain/help)"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MengYuil/dsh-ponytail"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83110,7 +83110,7 @@ export const plugins = [
     description: {"en":"左下角便签：随手记点子/感想/TODO，实时保存到归档目录，清单+悬浮归档","zh":"左下角便签：随手记点子/感想/TODO，实时保存到归档目录，清单+悬浮归档"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:meredith2328/dsh-sticky-note"},
-    stars: 46,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83238,7 +83238,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装","zh":"DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget"},
-    stars: 7141,
+    stars: 7292,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83270,7 +83270,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web UI 移动端适配插件:窄屏下侧边栏变为 overlay 抽屉,会话独占全宽。","zh":"DeepSeek Harness Web UI 移动端适配插件:窄屏下侧边栏变为 overlay 抽屉,会话独占全宽。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mexiaosqwq/dsh-web-mobile"},
-    stars: 184,
+    stars: 193,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83462,7 +83462,7 @@ export const plugins = [
     description: {"en":"把法律画出来 · Make the Law Visible -- 给法律人的诉讼可视化工具集：把凌乱的诉讼图重画成能进材料的图，或直接读案件材料画准一张时间轴。Claude Skill / DeepSeek Harness 通用。","zh":"把法律画出来 · Make the Law Visible -- 给法律人的诉讼可视化工具集：把凌乱的诉讼图重画成能进材料的图，或直接读案件材料画准一张时间轴。Claude Skill / DeepSeek Harness 通用。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MiaoQichuan/new-litigation-visualization"},
-    stars: 157,
+    stars: 168,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83478,7 +83478,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness host plugin that makes the agent tolerate OpenAI-compatible providers whose streaming responses end without a finishreason. The canonical case is the Snowflake Cortex REST API gateway.","zh":"A DeepSeek Harness host plugin that makes the agent tolerate OpenAI-compatible providers whose streaming responses end without a finishreason. The canonical case is the Snowflake Cortex REST API gateway."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:michael-han-il/dsh-llm-finish-reason-tolerance"},
-    stars: 3,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83526,7 +83526,7 @@ export const plugins = [
     description: {"en":"dsh plugin teamflow","zh":"dsh plugin teamflow"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichaelShii/dsh-plugin-teamflow"},
-    stars: 20,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83542,7 +83542,7 @@ export const plugins = [
     description: {"en":"DSH agency agents 基于 DeepSeek Harness 的全行业智能体","zh":"DSH agency agents 基于 DeepSeek Harness 的全行业智能体"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-agency-agents"},
-    stars: 237,
+    stars: 258,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83558,7 +83558,7 @@ export const plugins = [
     description: {"en":"DSH Archive Manager 基于 DeepSeek Harness 的归档会话管理插件","zh":"DSH Archive Manager 基于 DeepSeek Harness 的归档会话管理插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-archive-manager"},
-    stars: 331,
+    stars: 370,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83574,7 +83574,7 @@ export const plugins = [
     description: {"en":"DSH Automation 基于 DeepSeek Harness 的定时任务、自动化任务插件","zh":"DSH Automation 基于 DeepSeek Harness 的定时任务、自动化任务插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-automation"},
-    stars: 40,
+    stars: 41,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83590,7 +83590,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Codex 跨平台桌面版，无需提前安装任何环境，开箱即用","zh":"DeepSeek Harness Codex 跨平台桌面版，无需提前安装任何环境，开箱即用"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-codex-desktop"},
-    stars: 129,
+    stars: 131,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83622,7 +83622,7 @@ export const plugins = [
     description: {"en":"DSH Codex UI 基于 DeepSeek Harness 的 Codex UI 插件，还原度90%，小细节拉满","zh":"DSH Codex UI 基于 DeepSeek Harness 的 Codex UI 插件，还原度90%，小细节拉满"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-codex-ui"},
-    stars: 286,
+    stars: 302,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83638,7 +83638,7 @@ export const plugins = [
     description: {"en":"DSH IM Connect - 将主流即时通讯平台接入本机 DeepSeek Harness · Connect major messaging platforms to local DeepSeek Harness agents","zh":"DSH IM Connect - 将主流即时通讯平台接入本机 DeepSeek Harness · Connect major messaging platforms to local DeepSeek Harness agents"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-im-connect"},
-    stars: 135,
+    stars: 139,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83654,7 +83654,7 @@ export const plugins = [
     description: {"en":"DSH Skills Manager 基于 DeepSeek Harness 的Skills管理插件","zh":"DSH Skills Manager 基于 DeepSeek Harness 的Skills管理插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MichengAI/dsh-skills-manager"},
-    stars: 536,
+    stars: 580,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -83990,7 +83990,7 @@ export const plugins = [
     description: {"en":"The skills for trading, to make your agent earn for you.","zh":"The skills for trading, to make your agent earn for you."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Minara-AI/minara-skills"},
-    stars: 377,
+    stars: 381,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84038,7 +84038,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mindscale-noah/MindMemOS"},
-    stars: 931,
+    stars: 932,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84150,7 +84150,7 @@ export const plugins = [
     description: {"en":"DeepSeek 专用破甲插件「无限二代」dsh-infinite-gen-2 - armor-breaking plugin for DeepSeek稳定化破甲提示词，求 Star 收藏 ⭐","zh":"DeepSeek 专用破甲插件「无限二代」dsh-infinite-gen-2 - armor-breaking plugin for DeepSeek稳定化破甲提示词，求 Star 收藏 ⭐"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Minglink/dsh-infinite-gen-2"},
-    stars: 4133,
+    stars: 4451,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84214,7 +84214,7 @@ export const plugins = [
     description: {"en":"Agent 会话的时光机。 一个 DeepSeek Harness 插件,把 append-only 会话日志变成可交互的回放:可播放的时间线 + 逐步 token 账单、安全审计视图、fork 血缘树、双会话对比 -- 全部内嵌在 Harness 的 Web UI 里。","zh":"Agent 会话的时光机。 一个 DeepSeek Harness 插件,把 append-only 会话日志变成可交互的回放:可播放的时间线 + 逐步 token 账单、安全审计视图、fork 血缘树、双会话对比 -- 全部内嵌在 Harness 的 Web UI 里。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MingoZhou/dsh-replay"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84262,7 +84262,7 @@ export const plugins = [
     description: {"en":"Connect DeepSeek Harness (dsh) to Notion via the official Notion MCP - OAuth 2.0 + PKCE, one-time login, silent token refresh.","zh":"Connect DeepSeek Harness (dsh) to Notion via the official Notion MCP - OAuth 2.0 + PKCE, one-time login, silent token refresh."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mingzeng21/dsh-notion"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84278,7 +84278,7 @@ export const plugins = [
     description: {"en":"Connect DeepSeek Harness (dsh) to a local Obsidian vault: search, read, write, move, and trash notes.","zh":"Connect DeepSeek Harness (dsh) to a local Obsidian vault: search, read, write, move, and trash notes."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mingzeng21/dsh-obsidian"},
-    stars: 49,
+    stars: 53,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84502,7 +84502,7 @@ export const plugins = [
     description: {"en":"Visual plugin marketplace for DeepSeek Harness - browse, search and install community plugins","zh":"Visual plugin marketplace for DeepSeek Harness - browse, search and install community plugins"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mishibeikejie/zat-dsh-engine"},
-    stars: 77,
+    stars: 76,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84550,7 +84550,7 @@ export const plugins = [
     description: {"en":"dsh-at-file.","zh":"dsh-at-file."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MisRightW/dsh-at-file"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84566,7 +84566,7 @@ export const plugins = [
     description: {"en":"dsh-mcp-servers","zh":"dsh-mcp-servers"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MisRightW/dsh-mcp-servers"},
-    stars: 1,
+    stars: 0,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84854,7 +84854,7 @@ export const plugins = [
     description: {"en":"⚡ DSH 指挥家 / Conductor for DeepSeek Harness - in-session dispatch to 11 external agent CLIs (Codex, Claude Code, TraeCode, OpenCode, Gemini, Cursor, Kimi, Qwen, Copilot, WorkBuddy, Grok). Zero-dep skill + host-only...","zh":"⚡ DSH 指挥家 / Conductor for DeepSeek Harness - in-session dispatch to 11 external agent CLIs (Codex, Claude Code, TraeCode, OpenCode, Gemini, Cursor, Kimi, Qwen, Copilot, WorkBuddy, Grok). Zero-dep skill + host-only..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MJorgin/dsh-agent-conductor"},
-    stars: 15,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -84870,7 +84870,7 @@ export const plugins = [
     description: {"en":"Free image reading & generation for DeepSeek Harness (rc.7 / rc.8 / v0.1.1-rc.1 / rc.2) - paste-image reading with auto vision transcription, DeepSeek-V4-Flash-Vision-Exp / GLM-4V-Flash / SenseNova / Gemini failover,...","zh":"Free image reading & generation for DeepSeek Harness (rc.7 / rc.8 / v0.1.1-rc.1 / rc.2) - paste-image reading with auto vision transcription, DeepSeek-V4-Flash-Vision-Exp / GLM-4V-Flash / SenseNova / Gemini failover,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MJorgin/dsh-media-skills"},
-    stars: 25,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85270,7 +85270,7 @@ export const plugins = [
     description: {"en":"DSH WebUI 里的「随身手册」：全局 Markdown 笔记，任何工作区随时可读。","zh":"DSH WebUI 里的「随身手册」：全局 Markdown 笔记，任何工作区随时可读。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mlosun/dsh-docs-panel"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85366,7 +85366,7 @@ export const plugins = [
     description: {"en":"LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime.","zh":"LLM-supervised persistent memory for AI agents - graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mnemon-dev/mnemon"},
-    stars: 715,
+    stars: 720,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85494,7 +85494,7 @@ export const plugins = [
     description: {"en":"Cross-platform desktop client for DeepSeek Harness (dsh web), built with Tauri - the CLI's web UI in a native window, sharing the same session data.","zh":"Cross-platform desktop client for DeepSeek Harness (dsh web), built with Tauri - the CLI's web UI in a native window, sharing the same session data."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MochiNek0/dsh-desktop"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85526,7 +85526,7 @@ export const plugins = [
     description: {"en":"面向 DeepSeek Harness 的多引擎免费 Web Search 插件，支持 Tavily / Firecrawl / Exa / Jina / Brave 自动 fallback","zh":"面向 DeepSeek Harness 的多引擎免费 Web Search 插件，支持 Tavily / Firecrawl / Exa / Jina / Brave 自动 fallback"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MochiNek0/dsh-web-search-free"},
-    stars: 63,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85814,7 +85814,7 @@ export const plugins = [
     description: {"en":"Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.","zh":"跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:modusensus/dsh-mneme"},
-    stars: 220,
+    stars: 236,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85846,7 +85846,7 @@ export const plugins = [
     description: {"en":"Branch-based message editing, reroll, retry, and a version timeline.","zh":"基于分支的消息编辑、reroll、重试与版本时间线。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Moeblack/dsh-message-edit"},
-    stars: 54,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85910,7 +85910,7 @@ export const plugins = [
     description: {"en":"Edit user and built-in system-prompt sections with live preview.","zh":"带实时预览的用户/内置 system prompt 分节编辑器。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Moeblack/dsh-prompt-studio"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -85958,7 +85958,7 @@ export const plugins = [
     description: {"en":"Tavily-powered optional search tool for DeepSeek Harness (rc.7 plugin management): multi-key rotation/failover, usage gauge, settings card in Plugins → configuration; the built-in websearch is never replaced. \\ DSH...","zh":"Tavily-powered optional search tool for DeepSeek Harness (rc.7 plugin management): multi-key rotation/failover, usage gauge, settings card in Plugins → configuration; the built-in websearch is never replaced. \\ DSH..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:moguiyu/dsh-tavily"},
-    stars: 13,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86006,7 +86006,7 @@ export const plugins = [
     description: {"en":":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done.","zh":":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Molunerfinn/PicGo"},
-    stars: 27481,
+    stars: 27504,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86022,7 +86022,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Mombrane/dsh-subagent-monitor"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86278,7 +86278,7 @@ export const plugins = [
     description: {"en":"考研英语阅读命题助手，一个运行在 DeepSeek Harness（DSH）中的动态 Cordis 插件：自动抓取《卫报》《今日心理学》《经济学人》等外刊文章|Postgraduate Entrance Exam English Reading Proposition Assistant, a dynamic Cordis plugin running in DeepSeek Harness (DSH):...","zh":"考研英语阅读命题助手，一个运行在 DeepSeek Harness（DSH）中的动态 Cordis 插件：自动抓取《卫报》《今日心理学》《经济学人》等外刊文章|Postgraduate Entrance Exam English Reading Proposition Assistant, a dynamic Cordis plugin running in DeepSeek Harness (DSH):..."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Monokuna-Hugo/dsh-kaoyan-english"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86310,7 +86310,7 @@ export const plugins = [
     description: {"en":"Foveated repository intelligence for DeepSeek Harness: token-budgeted code graphs, focus, impact, and continuous sync.","zh":"Foveated repository intelligence for DeepSeek Harness: token-budgeted code graphs, focus, impact, and continuous sync."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:monotykamary/dsh-fovea"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86342,7 +86342,7 @@ export const plugins = [
     description: {"en":"Bun 1.3.14 上运行 DeepSeek Harness 的 Node API 兼容层","zh":"Bun 1.3.14 上运行 DeepSeek Harness 的 Node API 兼容层"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MonshinYu/dsh-bun-compat-patch"},
-    stars: 5,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86406,7 +86406,7 @@ export const plugins = [
     description: {"en":"便携式 GitHub 连接插件 for DeepSeek Harness (DSH)：composer 左下角一键授权，AI 可通过 githubapi 工具操作你的 GitHub。Portable GitHub connection plugin: OAuth device flow / PAT, proxy & system-CA aware.","zh":"便携式 GitHub 连接插件 for DeepSeek Harness (DSH)：composer 左下角一键授权，AI 可通过 githubapi 工具操作你的 GitHub。Portable GitHub connection plugin: OAuth device flow / PAT, proxy & system-CA aware."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Moon-shiyue/dsh-github-connect"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86422,7 +86422,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 自动审批门控：Flash 预判不可回补操作，安全自动批准、危险转人工（fail-safe）","zh":"DeepSeek Harness 自动审批门控：Flash 预判不可回补操作，安全自动批准、危险转人工（fail-safe）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:moon09300731/dsh-approval-gate"},
-    stars: 111,
+    stars: 113,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86470,7 +86470,7 @@ export const plugins = [
     description: {"en":"A pouch of practical plugins for DeepSeek Harness · DSH 实用小插件工具箱","zh":"A pouch of practical plugins for DeepSeek Harness · DSH 实用小插件工具箱"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:moon16u/dsh-pouch"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86486,7 +86486,7 @@ export const plugins = [
     description: {"en":"生物信息学「许愿式分析」dsh 插件：48 个语义化工具 + biopython 执行器（Biopython 全功能 · 出版级绘图 · 代谢建模/FBA · 合成生物学设计）+ 46 个 skill；零安装自举私有 Python 环境，中国网络自动镜像适配。","zh":"生物信息学「许愿式分析」dsh 插件：48 个语义化工具 + biopython 执行器（Biopython 全功能 · 出版级绘图 · 代谢建模/FBA · 合成生物学设计）+ 46 个 skill；零安装自举私有 Python 环境，中国网络自动镜像适配。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:moonbowterfly/dsh-bio-genie"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86534,7 +86534,7 @@ export const plugins = [
     description: {"en":"DSH 的自动审批权限插件","zh":"DSH 的自动审批权限插件"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MoonlitDropOfBlood/dsh-agent-approval"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86710,7 +86710,7 @@ export const plugins = [
     description: {"en":"DSH plugin: draggable widget panel (balance, tokens, stats, commands, goal, cost) for DeepSeek Harness","zh":"DSH plugin: draggable widget panel (balance, tokens, stats, commands, goal, cost) for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morgogh/widget-dock"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86742,7 +86742,7 @@ export const plugins = [
     description: {"en":"Runtime evidence that helps agents trace, profile, and burn down hotspots in application and native code, GPU kernels, and inference stacks.","zh":"Runtime evidence that helps agents trace, profile, and burn down hotspots in application and native code, GPU kernels, and inference stacks."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/flameox"},
-    stars: 238,
+    stars: 243,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86758,7 +86758,7 @@ export const plugins = [
     description: {"en":"Contribution research for agents: check repository guidance, related work, code context, and validation before writing a patch.","zh":"Contribution research for agents: check repository guidance, related work, code context, and validation before writing a patch."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/gitcontribute"},
-    stars: 33,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86790,7 +86790,7 @@ export const plugins = [
     description: {"en":"Pure mathematics for agents: search for examples and counterexamples, compute exactly, and independently check what a result proves.","zh":"Pure mathematics for agents: search for examples and counterexamples, compute exactly, and independently check what a result proves."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/jacobian"},
-    stars: 367,
+    stars: 372,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86806,7 +86806,7 @@ export const plugins = [
     description: {"en":"Code intelligence for agents: find the code that matters and keep your context window and tokens lean.","zh":"Code intelligence for agents: find the code that matters and keep your context window and tokens lean."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/leantoken"},
-    stars: 157,
+    stars: 169,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86822,7 +86822,7 @@ export const plugins = [
     description: {"en":"Reverse engineer anything with agents, from app behavior down to native binaries.","zh":"Reverse engineer anything with agents, from app behavior down to native binaries."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/rea"},
-    stars: 451340,
+    stars: 465262,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -86838,7 +86838,7 @@ export const plugins = [
     description: {"en":"Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find complexity hotspots.","zh":"Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find complexity hotspots."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:morluto/smokinggun"},
-    stars: 65,
+    stars: 71,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87094,7 +87094,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Plugin Home.","zh":"DeepSeek Harness Plugin Home."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Moveharder/dsh_plugins"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87446,7 +87446,7 @@ export const plugins = [
     description: {"en":"Remote control for DeepSeek Harness (dsh web) from any phone browser - secure gateway, mobile web client, full feature coverage (incl. privileged methods). 手机远程控制 DeepSeek Harness","zh":"Remote control for DeepSeek Harness (dsh web) from any phone browser - secure gateway, mobile web client, full feature coverage (incl. privileged methods). 手机远程控制 DeepSeek Harness"},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mrgaoang/dsh-remote"},
-    stars: 61,
+    stars: 62,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87510,7 +87510,7 @@ export const plugins = [
     description: {"en":"Render Mermaid code blocks as SVG diagrams in DeepSeek Harness Web, with diagram/code switching, streaming support, dark mode, strict security, and npm/GitHub installation.","zh":"Render Mermaid code blocks as SVG diagrams in DeepSeek Harness Web, with diagram/code switching, streaming support, dark mode, strict security, and npm/GitHub installation."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MrmoLabs/dsh-mermaid"},
-    stars: 17,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87542,7 +87542,7 @@ export const plugins = [
     description: {"en":"为DeepSeek harness开启局域网访问及移动端页面的插件，移动端界面适配","zh":"为DeepSeek harness开启局域网访问及移动端页面的插件，移动端界面适配"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MrMu666/dsh-LAN"},
-    stars: 14,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87638,7 +87638,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness（DSH）提供的细粒度权限控制插件","zh":"为 DeepSeek Harness（DSH）提供的细粒度权限控制插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:MrWeiCodes/dsh-permgate"},
-    stars: 19,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87702,7 +87702,7 @@ export const plugins = [
     description: {"en":"DSH 会话生命周期管理插件：one-shot 子代理自动清理 + 容量保底 + 连带清理 projcache，从源头杜绝缓存膨胀卡顿","zh":"DSH 会话生命周期管理插件：one-shot 子代理自动清理 + 容量保底 + 连带清理 projcache，从源头杜绝缓存膨胀卡顿"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mrzhangkris/dsh-session-pruner"},
-    stars: 4,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87910,7 +87910,7 @@ export const plugins = [
     description: {"en":"中文电影与剧集长剧本写作 skill","zh":"中文电影与剧集长剧本写作 skill"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:mudden2380078550-creator/write-chinese-long-screenplay"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -87942,7 +87942,7 @@ export const plugins = [
     description: {"en":"Support dsh runtime on Multica.","zh":"Support dsh runtime on Multica."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:multica-ai/dsh-multica-runtime"},
-    stars: 80,
+    stars: 82,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88182,7 +88182,7 @@ export const plugins = [
     description: {"en":"A session-bound agent-native REPL for DeepSeek Harness PTC mode.","zh":"A session-bound agent-native REPL for DeepSeek Harness PTC mode."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:muyuanjin/dsh-ptc-plus"},
-    stars: 25,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88518,7 +88518,7 @@ export const plugins = [
     description: {"en":"origin reconstruction of 東方永夜抄 ～ Imperishable Night 1.00d","zh":"origin reconstruction of 東方永夜抄 ～ Imperishable Night 1.00d"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:n0zom1z0/th08"},
-    stars: 56,
+    stars: 57,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88630,7 +88630,7 @@ export const plugins = [
     description: {"en":"Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.","zh":"2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nagi-ovo/dsh-ads"},
-    stars: 718,
+    stars: 730,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88646,7 +88646,7 @@ export const plugins = [
     description: {"en":"帮 DSH 搜索、安装并验证插件的 Skill｜A DSH skill that finds, installs, and verifies GitHub plugins","zh":"帮 DSH 搜索、安装并验证插件的 Skill｜A DSH skill that finds, installs, and verifies GitHub plugins"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nagi-ovo/dsh-find-plugins"},
-    stars: 183,
+    stars: 184,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88662,7 +88662,7 @@ export const plugins = [
     description: {"en":"In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.","zh":"对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nagi-ovo/dsh-visualize"},
-    stars: 343,
+    stars: 346,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88678,7 +88678,7 @@ export const plugins = [
     description: {"en":"Enhancement suite for Gemini, AI Studio, Claude & ChatGPT - plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。","zh":"Enhancement suite for Gemini, AI Studio, Claude & ChatGPT - plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nagi-ovo/voyager"},
-    stars: 20596,
+    stars: 20648,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -88998,7 +88998,7 @@ export const plugins = [
     description: {"en":"AgentTeams multi-agent teams.","zh":"AgentTeams 多智能体团队。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams"},
-    stars: 2864,
+    stars: 2992,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -89142,7 +89142,7 @@ export const plugins = [
     description: {"en":"dsh-qa · QA Workbench - A local software testing workbench plugin for DeepSeek Harness. Zero-dependency test project & iteration management with AI-assisted requirements, test cases, defects, milestones, reports,...","zh":"dsh-qa · QA Workbench - A local software testing workbench plugin for DeepSeek Harness. Zero-dependency test project & iteration management with AI-assisted requirements, test cases, defects, milestones, reports,..."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:naodeng/dsh-qa"},
-    stars: 34,
+    stars: 35,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -89670,7 +89670,7 @@ export const plugins = [
     description: {"en":"NekroNXT：基于 DeepSeek Harness（DSH）的多平台群聊智能体系统｜A DSH-powered multi-platform group-chat agent system","zh":"NekroNXT：基于 DeepSeek Harness（DSH）的多平台群聊智能体系统｜A DSH-powered multi-platform group-chat agent system"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NekroAI/nekro-nxt"},
-    stars: 45,
+    stars: 46,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -89878,7 +89878,7 @@ export const plugins = [
     description: {"en":"DSH 审批模式插件，在 DSH 窗口的权限下拉框（Read Only / Workspace Write / Full Access）旁边加一个「审批模式」按钮，在 Workspace Write 模式下工具调用自动放行","zh":"DSH 审批模式插件，在 DSH 窗口的权限下拉框（Read Only / Workspace Write / Full Access）旁边加一个「审批模式」按钮，在 Workspace Write 模式下工具调用自动放行"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NEVSTOP-LAB/dsh-approval-mode"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -89974,7 +89974,7 @@ export const plugins = [
     description: {"en":"A full-screen interactive terminal UI for the DeepSeek Harness agent runtime - the web UI, reimagined for the terminal.","zh":"A full-screen interactive terminal UI for the DeepSeek Harness agent runtime - the web UI, reimagined for the terminal."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:nexlineai/dsh-tui"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -90070,7 +90070,7 @@ export const plugins = [
     description: {"en":"🎨 Best DeepSeek Harness Design Plugin. The open-origin Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images &...","zh":"🎨 Best DeepSeek Harness Design Plugin. The open-origin Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images &..."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:nexu-io/open-design"},
-    stars: 107132,
+    stars: 108035,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -90566,7 +90566,7 @@ export const plugins = [
     description: {"en":"Edit videos with AI inside DeepSeek Harness - 50 ChatCut MCP tools, one-time OAuth, auto token refresh","zh":"Edit videos with AI inside DeepSeek Harness - 50 ChatCut MCP tools, one-time OAuth, auto token refresh"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:nigedazhima/dsh-plugin-chatcut"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -90758,7 +90758,7 @@ export const plugins = [
     description: {"en":"Open-origin Windows desktop client and GUI for DeepSeek Harness - zero-setup installer with Codex, plugins, skills, SSH, mobile remote access, and 11 skins.","zh":"Open-origin Windows desktop client and GUI for DeepSeek Harness - zero-setup installer with Codex, plugins, skills, SSH, mobile remote access, and 11 skins."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ningbainb/deepseek-harness-desktop"},
-    stars: 927,
+    stars: 936,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -91446,7 +91446,7 @@ export const plugins = [
     description: {"en":"NocoBase is an open-origin AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface,...","zh":"NocoBase is an open-origin AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:nocobase/nocobase"},
-    stars: 24893,
+    stars: 24950,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -91750,7 +91750,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种风味一键切换","zh":"DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种风味一键切换"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NoNameLeGo/dsh-catppuccin"},
-    stars: 84,
+    stars: 88,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -91766,7 +91766,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种主题一键切换，内置可开关的玻璃质感（Glassmorphism）","zh":"DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种主题一键切换，内置可开关的玻璃质感（Glassmorphism）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NoNameLeGo/dsh-catppuccin-theme"},
-    stars: 84,
+    stars: 88,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -91942,7 +91942,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 插件管理面板：一键启用/停用插件 + GitHub dsh-plugin 插件市场，带插件详情与一键安装 \\ Plugin manager & marketplace for DeepSeek Harness","zh":"DeepSeek Harness (DSH) 插件管理面板：一键启用/停用插件 + GitHub dsh-plugin 插件市场，带插件详情与一键安装 \\ Plugin manager & marketplace for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub"},
-    stars: 127,
+    stars: 131,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -92006,7 +92006,7 @@ export const plugins = [
     description: {"en":"DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅已发送消息","zh":"DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅已发送消息"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:NormanFxxkingRockwell/dsh-keyboard-history"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -92182,7 +92182,7 @@ export const plugins = [
     description: {"en":"在DeepSeek Harness网页中控制鸿蒙手机并让AI识别内容","zh":"在DeepSeek Harness网页中控制鸿蒙手机并让AI识别内容"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ns-zzj/dsh-hos-scrcpy"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -92326,7 +92326,7 @@ export const plugins = [
     description: {"en":"Import Claude Code / Codex / ChatGPT / Cursor chat histories as resumable DeepSeek Harness sessions.","zh":"把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nwflower/dsh-chat-import"},
-    stars: 308,
+    stars: 317,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -92438,7 +92438,7 @@ export const plugins = [
     description: {"en":"DSH for Hanako","zh":"DSH for Hanako"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Nyasers/dsh-hanako"},
-    stars: 58,
+    stars: 57,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -92742,7 +92742,7 @@ export const plugins = [
     description: {"en":"AI-assisted local creator workbench for DeepSeek Harness","zh":"AI-assisted local creator workbench for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:oil-oil/dsh-oil-creator"},
-    stars: 213,
+    stars: 215,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93014,7 +93014,7 @@ export const plugins = [
     description: {"en":"Select text → annotate → send with your message; replies map back to each annotation.","zh":"选中文字→批注→随消息发送，回复按批注逐条对照。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-annotation"},
-    stars: 168,
+    stars: 169,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93030,7 +93030,7 @@ export const plugins = [
     description: {"en":"Codex-style @file mentions: search workspace files in the composer and attach their contents to prompts.","zh":"Codex 风格的 @file 文件引用，输入框里直接搜索并引用工作区文件。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-at-file"},
-    stars: 568,
+    stars: 572,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93078,7 +93078,7 @@ export const plugins = [
     description: {"en":"Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.","zh":"侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar"},
-    stars: 5075,
+    stars: 5206,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93190,7 +93190,7 @@ export const plugins = [
     description: {"en":"Let the AI connect to databases and write SQL for you.","zh":"让 AI 帮你连数据库、写 SQL。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-data-agent"},
-    stars: 222,
+    stars: 226,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93318,7 +93318,7 @@ export const plugins = [
     description: {"en":"将多个 DeepSeek Harness 对话融合为一个可继续的会话，支持 Agent 智能剪枝、话题分组、内容排序和界面操作","zh":"将多个 DeepSeek Harness 对话融合为一个可继续的会话，支持 Agent 智能剪枝、话题分组、内容排序和界面操作"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-fusion"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93334,7 +93334,7 @@ export const plugins = [
     description: {"en":"Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.","zh":"助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-genui"},
-    stars: 970,
+    stars: 1010,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93446,7 +93446,7 @@ export const plugins = [
     description: {"en":"Lark/Feishu IM bot channel for DeepSeek Harness: chats drive agents, replies and approvals return as messages and cards \\| 飞书 DeepSeek Harness 插件","zh":"Lark/Feishu IM bot channel for DeepSeek Harness: chats drive agents, replies and approvals return as messages and cards \\| 飞书 DeepSeek Harness 插件"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-lark"},
-    stars: 60,
+    stars: 61,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93510,7 +93510,7 @@ export const plugins = [
     description: {"en":"Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).","zh":"Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-mnemon"},
-    stars: 964,
+    stars: 1024,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93558,7 +93558,7 @@ export const plugins = [
     description: {"en":"办公三件套！Office document tools for DeepSeek Harness (dsh): generate, read, and edit spreadsheets (.xlsx), PDFs, and presentations (.pptx).","zh":"办公三件套！Office document tools for DeepSeek Harness (dsh): generate, read, and edit spreadsheets (.xlsx), PDFs, and presentations (.pptx)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-office"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -93654,7 +93654,7 @@ export const plugins = [
     description: {"en":"DSH 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录","zh":"DSH 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh-plugin-dev"},
-    stars: 17,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94054,7 +94054,7 @@ export const plugins = [
     description: {"en":"把Claude Code的UltraCode模式带给DSH，把 DSH 的一次性多 Agent 调度，升级为可生成、可保存、可治理、可观察、可恢复的 Workflow 层","zh":"把Claude Code的UltraCode模式带给DSH，把 DSH 的一次性多 Agent 调度，升级为可生成、可保存、可治理、可观察、可恢复的 Workflow 层"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:omdsh-dev/dsh_workflow"},
-    stars: 158,
+    stars: 159,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94630,7 +94630,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（dsh）的 桌面安装包：Windows exe 和 macOS dmg。本仓库只包含打包用的 Electron 壳和 CI 配置，不包含上游源码--构建时直接安装 npm 发布版 @deepseek-ai/dsh。","zh":"DeepSeek Harness（dsh）的 桌面安装包：Windows exe 和 macOS dmg。本仓库只包含打包用的 Electron 壳和 CI 配置，不包含上游源码--构建时直接安装 npm 发布版 @deepseek-ai/dsh。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Onenightcarnival/deepseek-harness-desktop"},
-    stars: 10,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94838,7 +94838,7 @@ export const plugins = [
     description: {"en":"Pilot Harness - a CodePilot-inspired desktop client and plugin suite for DeepSeek Harness on macOS, Windows, and Linux.","zh":"Pilot Harness - a CodePilot-inspired desktop client and plugin suite for DeepSeek Harness on macOS, Windows, and Linux."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:op7418/pilot-harness"},
-    stars: 282,
+    stars: 281,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94950,7 +94950,7 @@ export const plugins = [
     description: {"en":"Turn any text field into a two-way LLM channel: it reads what you write and fills what you ask. Flags a slip as you type, answers anything you end with . Claude Code, OpenCode, Gemini CLI, shell, Chrome, DeepSeek...","zh":"Turn any text field into a two-way LLM channel: it reads what you write and fills what you ask. Flags a slip as you type, answers anything you end with . Claude Code, OpenCode, Gemini CLI, shell, Chrome, DeepSeek..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:opencues/opencues"},
-    stars: 71,
+    stars: 72,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94982,7 +94982,7 @@ export const plugins = [
     description: {"en":"Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle","zh":"Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openguardrails/dsh-tui"},
-    stars: 45,
+    stars: 48,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -94998,7 +94998,7 @@ export const plugins = [
     description: {"en":"The vendor-neutral protocol for AI agent safety & security - and the neutral benchmark that ranks the vendors.","zh":"The vendor-neutral protocol for AI agent safety & security - and the neutral benchmark that ranks the vendors."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openguardrails/openguardrails"},
-    stars: 364,
+    stars: 369,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95046,7 +95046,7 @@ export const plugins = [
     description: {"en":"ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.","zh":"ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openma-ai/deepseek-harness-acp"},
-    stars: 64,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95062,7 +95062,7 @@ export const plugins = [
     description: {"en":"A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.","zh":"Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openma-ai/deepseek-harness-tui"},
-    stars: 82,
+    stars: 83,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95110,7 +95110,7 @@ export const plugins = [
     description: {"en":"deepseek-harness-tui（dsh-tui） before. Self-Improvement TUI Plugin of DeepSeek Harness. Everything Here Is Also A Plugin. Martty is a ACP client.","zh":"deepseek-harness-tui（dsh-tui） before. Self-Improvement TUI Plugin of DeepSeek Harness. Everything Here Is Also A Plugin. Martty is a ACP client."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openma-ai/Martty"},
-    stars: 82,
+    stars: 83,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95126,7 +95126,7 @@ export const plugins = [
     description: {"en":"Open-origin Claude Managed Agents API implementation and self-hosted Claude Tag-style agent runtime. Drop-in compatible; runs on Cloudflare Workers/Durable Objects or Node.js. Apache 2.0.","zh":"Open-origin Claude Managed Agents API implementation and self-hosted Claude Tag-style agent runtime. Drop-in compatible; runs on Cloudflare Workers/Durable Objects or Node.js. Apache 2.0."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:openma-ai/open-managed-agents"},
-    stars: 355,
+    stars: 361,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95478,7 +95478,7 @@ export const plugins = [
     description: {"en":"DSH /fresh command: summarize conversation, start new session, archive old one","zh":"DSH /fresh command: summarize conversation, start new session, archive old one"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:orangeofcarl0-sys/dsh-fresh-start"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95494,7 +95494,7 @@ export const plugins = [
     description: {"en":"DSH large-session performance plugin: zero-copy fork + projection warmup + chunked materialize","zh":"DSH large-session performance plugin: zero-copy fork + projection warmup + chunked materialize"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:orangeofcarl0-sys/dsh-large-proj-perf"},
-    stars: 3,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95526,7 +95526,7 @@ export const plugins = [
     description: {"en":"MCP Apps Host plugin for DeepSeek Harness: renders interactive HTML cards from MCP meta.ui in sandboxed iframes, bridges postMessage to MCP tools/call and resources/read","zh":"MCP Apps Host plugin for DeepSeek Harness: renders interactive HTML cards from MCP meta.ui in sandboxed iframes, bridges postMessage to MCP tools/call and resources/read"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:oriliz/dsh-mcp-apps-host"},
-    stars: 191,
+    stars: 214,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -95654,7 +95654,7 @@ export const plugins = [
     description: {"en":"AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning, orchestration, and verified delivery.","zh":"AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning, orchestration, and verified delivery."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:orziz/odai"},
-    stars: 132,
+    stars: 133,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96118,7 +96118,7 @@ export const plugins = [
     description: {"en":"Encrypted credential vault for DeepSeek Harness - AES-256-GCM + TOTP, model tools + Settings UI","zh":"Encrypted credential vault for DeepSeek Harness - AES-256-GCM + TOTP, model tools + Settings UI"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ox0400/dsh-vault"},
-    stars: 12,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96182,7 +96182,7 @@ export const plugins = [
     description: {"en":"dsh model health status check","zh":"dsh model health status check"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:oxlyn/dsh-model-health"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96246,7 +96246,7 @@ export const plugins = [
     description: {"en":"在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。","zh":"在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:p2coder/dsh-task-control"},
-    stars: 10,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96422,7 +96422,7 @@ export const plugins = [
     description: {"en":"计算机类本科毕业设计全流程 DSH 插件项目。","zh":"计算机类本科毕业设计全流程 DSH 插件项目。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Paloma966/dsh-paper"},
-    stars: 10,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96470,7 +96470,7 @@ export const plugins = [
     description: {"en":"DSH插件，将微信私聊消息桥接到DSH，支持文本、图片、文件、音视频的双向传输。目标是在微信端还原DSH的原生体验","zh":"DSH插件，将微信私聊消息桥接到DSH，支持文本、图片、文件、音视频的双向传输。目标是在微信端还原DSH的原生体验"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pan17/dsh-wechat"},
-    stars: 53,
+    stars: 60,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -96966,7 +96966,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) 插件开发知识库：官方文档完整镜像 + 主题导航与检索。Plugin development knowledge base for dsh.","zh":"DeepSeek Harness (dsh) 插件开发知识库：官方文档完整镜像 + 主题导航与检索。Plugin development knowledge base for dsh."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Pasumao/dsh-plugin-dev-kb"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97030,7 +97030,7 @@ export const plugins = [
     description: {"en":"Data-only Windows environment guidance for encoding, paths, processes, and terminal pitfalls","zh":"Data-only Windows environment guidance for encoding, paths, processes, and terminal pitfalls"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Pasumao/dsh-plugin-windows-guard"},
-    stars: 0,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97174,7 +97174,7 @@ export const plugins = [
     description: {"en":"DSH 桌面宠物：一行命令安装现成宠物（28 个透明动画，即装即用），或内置素材链从 AI 视频自造专属宠物 \\ One-line install desktop pet for DeepSeek Harness + DIY asset pipeline","zh":"DSH 桌面宠物：一行命令安装现成宠物（28 个透明动画，即装即用），或内置素材链从 AI 视频自造专属宠物 \\ One-line install desktop pet for DeepSeek Harness + DIY asset pipeline"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PC2005-cloud/dsh-pet"},
-    stars: 6090,
+    stars: 6410,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97526,7 +97526,7 @@ export const plugins = [
     description: {"en":"\"🐳 Dsh-Quant: The Everything-Plugin Ai native Quant OS \"","zh":"\"🐳 Dsh-Quant: The Everything-Plugin Ai native Quant OS \""},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pengpengyi92/dsh-quant"},
-    stars: 68,
+    stars: 72,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97670,7 +97670,7 @@ export const plugins = [
     description: {"en":"Task-specific React apps for DeepSeek Harness with state carried into the next Agent turn","zh":"Task-specific React apps for DeepSeek Harness with state carried into the next Agent turn"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pengyue-polaron/deepseek-harness-genui"},
-    stars: 126,
+    stars: 127,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97718,7 +97718,7 @@ export const plugins = [
     description: {"en":"Deep reading & summarization workflow for books/papers/videos/web - plugin parsers, MapReduce deep-read, JSON Schema output, Obsidian-ready (DSH)","zh":"Deep reading & summarization workflow for books/papers/videos/web - plugin parsers, MapReduce deep-read, JSON Schema output, Obsidian-ready (DSH)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PensiveFei/deep-read-summarize"},
-    stars: 43,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97830,7 +97830,7 @@ export const plugins = [
     description: {"en":"Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default, fully auditable from the session log...","zh":"Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default, fully auditable from the session log..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-auto-review"},
-    stars: 247,
+    stars: 251,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97926,7 +97926,7 @@ export const plugins = [
     description: {"en":"Terminal-style input history for the DeepSeek Harness web composer: edge-first arrows with exact draft/caret restore, browser-local persisted history, Ctrl+R reverse search, workspace recall - and sliding-context...","zh":"Terminal-style input history for the DeepSeek Harness web composer: edge-first arrows with exact draft/caret restore, browser-local persisted history, Ctrl+R reverse search, workspace recall - and sliding-context..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:perrylink/dsh-composer-history"},
-    stars: 18,
+    stars: 19,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -97958,7 +97958,7 @@ export const plugins = [
     description: {"en":"Injection-attack, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events","zh":"Injection-attack, jailbreak, and secret-leak defense for DeepSeek Harness: Aho-Corasick detection with allow/ask/block interception and sanitized audit events"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-defend"},
-    stars: 27,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98022,7 +98022,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin: deterministic research pipeline for Chinese public mutual funds - collects fund data from public sites (Tiantian Fund, Eastmoney), computes deterministic metrics (manager profile, holdings...","zh":"DeepSeek Harness plugin: deterministic research pipeline for Chinese public mutual funds - collects fund data from public sites (Tiantian Fund, Eastmoney), computes deterministic metrics (manager profile, holdings..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-fund-research"},
-    stars: 67,
+    stars: 68,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98038,7 +98038,7 @@ export const plugins = [
     description: {"en":"GitHub CI and PR tooling for DeepSeek Harness: composite action.yml, PR review bot with idempotent inline comments and a status-check gate, plus approval-gated PR/issue/repo/file tools for git workflows.","zh":"GitHub CI and PR tooling for DeepSeek Harness: composite action.yml, PR review bot with idempotent inline comments and a status-check gate, plus approval-gated PR/issue/repo/file tools for git workflows."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-github"},
-    stars: 29,
+    stars: 31,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98054,7 +98054,7 @@ export const plugins = [
     description: {"en":"Industry and company research domain pack for DeepSeek Harness: research methodologies, an industry-chain structure model, policy/news tracking, company scan cards, and auditable research reports. Research only - not...","zh":"Industry and company research domain pack for DeepSeek Harness: research methodologies, an industry-chain structure model, policy/news tracking, company scan cards, and auditable research reports. Research only - not..."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-industry-research"},
-    stars: 218,
+    stars: 221,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98086,7 +98086,7 @@ export const plugins = [
     description: {"en":"Local document knowledge base for DeepSeek Harness: libraryadd/remove/list, hybrid semantic+keyword librarysearch, citation-aware injection, and librarycitecheck - SQLite-backed index with local embedding.","zh":"Local document knowledge base for DeepSeek Harness: libraryadd/remove/list, hybrid semantic+keyword librarysearch, citation-aware injection, and librarycitecheck - SQLite-backed index with local embedding."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-library"},
-    stars: 26,
+    stars: 28,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98150,7 +98150,7 @@ export const plugins = [
     description: {"en":"MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a...","zh":"MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:perrylink/dsh-mcp-panel"},
-    stars: 93,
+    stars: 94,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98182,7 +98182,7 @@ export const plugins = [
     description: {"en":"Observability exporter for DeepSeek Harness (OpenTelemetry, Langfuse): turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with...","zh":"Observability exporter for DeepSeek Harness (OpenTelemetry, Langfuse): turn/step/tool/LLM spans, token and cost metrics, sanitized prompt/completion capture, async batching, bounded offline buffering, retry with..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-observe"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98214,7 +98214,7 @@ export const plugins = [
     description: {"en":"Claude Code-style declarative permission rules for DeepSeek Harness: ordered allow/deny/ask rules with tool-name, argument (glob/regex), and workspace-path matching on the tools/pre-execute waterfall, session-log...","zh":"Claude Code-style declarative permission rules for DeepSeek Harness: ordered allow/deny/ask rules with tool-name, argument (glob/regex), and workspace-path matching on the tools/pre-execute waterfall, session-log..."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:perrylink/dsh-permission-rules"},
-    stars: 136,
+    stars: 137,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98246,7 +98246,7 @@ export const plugins = [
     description: {"en":"Verifiable research-report engine for DeepSeek Harness: content-addressed evidence ledger (claim-snapshot binding, tamper-evident) plus versioned sealed reports with per-claim verification verdicts and a...","zh":"Verifiable research-report engine for DeepSeek Harness: content-addressed evidence ledger (claim-snapshot binding, tamper-evident) plus versioned sealed reports with per-claim verification verdicts and a..."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-research-report"},
-    stars: 213,
+    stars: 216,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98294,7 +98294,7 @@ export const plugins = [
     description: {"en":"Cross-device DeepSeek Harness session sync: a dedicated git mirror with append-only keep-both conflict resolution (fork files, never silently overwritten), /sync command and sync tools","zh":"Cross-device DeepSeek Harness session sync: a dedicated git mirror with append-only keep-both conflict resolution (fork files, never silently overwritten), /sync command and sync tools"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PerryLink/dsh-session-sync"},
-    stars: 29,
+    stars: 35,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98374,7 +98374,7 @@ export const plugins = [
     description: {"en":"Local offline integrity checks for duplicated, transformed, copy-move, and cross-figure scientific images","zh":"Local offline integrity checks for duplicated, transformed, copy-move, and cross-figure scientific images"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PetCT/dsh-Bio-image-dup-check"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98406,7 +98406,7 @@ export const plugins = [
     description: {"en":"Config-driven lifecycle hooks plugin for DeepSeek Harness","zh":"Config-driven lifecycle hooks plugin for DeepSeek Harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PeterBon/dsh-hooks"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98582,7 +98582,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow"},
-    stars: 384,
+    stars: 397,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98614,7 +98614,7 @@ export const plugins = [
     description: {"en":"Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fact/lesson/topic/rules), BM25 retrieval, per-window dream consolidation. 跨会话七层长期记忆插件。","zh":"Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fact/lesson/topic/rules), BM25 retrieval, per-window dream consolidation. 跨会话七层长期记忆插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory"},
-    stars: 384,
+    stars: 397,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98694,7 +98694,7 @@ export const plugins = [
     description: {"en":"deepseek harness manim数学插件","zh":"deepseek harness manim数学插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:phelpsyacht/dshmath-manim"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98790,7 +98790,7 @@ export const plugins = [
     description: {"en":"让 Agent 高效又守纪律 - 不止省 token：ZeroToken 压缩无效上下文/推理/输出；尉缭子十原则约束权限边界、单一指令、先谋后动、验证先于结束；附 Unicode 编码规范、搜索规范、六种任务模式。More than token savings: ZeroToken efficiency + AI coding discipline for Reasonix / Codex / OpenCode / Hermes","zh":"让 Agent 高效又守纪律 - 不止省 token：ZeroToken 压缩无效上下文/推理/输出；尉缭子十原则约束权限边界、单一指令、先谋后动、验证先于结束；附 Unicode 编码规范、搜索规范、六种任务模式。More than token savings: ZeroToken efficiency + AI coding discipline for Reasonix / Codex / OpenCode / Hermes"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:phoenixlucky/zerotoken-skill"},
-    stars: 22,
+    stars: 21,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98822,7 +98822,7 @@ export const plugins = [
     description: {"en":"Photon-hosted iMessage transport and settings UI for DeepSeek Harness","zh":"Photon-hosted iMessage transport and settings UI for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:photon-hq/dsh-imessage"},
-    stars: 26,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -98950,7 +98950,7 @@ export const plugins = [
     description: {"en":":zap:The ultimate image uploading engine. Both CLI & API supports.","zh":":zap:The ultimate image uploading engine. Both CLI & API supports."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:picgo/picgo-core"},
-    stars: 995,
+    stars: 998,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99190,7 +99190,7 @@ export const plugins = [
     description: {"en":"从零开始，看懂 DeepSeek Harness 的「万物皆可插件」- 零基础插件开发教程（含 22 个中文技能实例）\\| Zero-to-plugin tutorial for DeepSeek Harness","zh":"从零开始，看懂 DeepSeek Harness 的「万物皆可插件」- 零基础插件开发教程（含 22 个中文技能实例）\\| Zero-to-plugin tutorial for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pingfanfan/hello-dsh"},
-    stars: 108,
+    stars: 109,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99398,7 +99398,7 @@ export const plugins = [
     description: {"en":"Unified capability menu for DeepSeek Harness: manage exposure level (context footprint) and execution mode of MCP tools & skills via Exposed/Progressive/Blocked tiers.","zh":"Unified capability menu for DeepSeek Harness: manage exposure level (context footprint) and execution mode of MCP tools & skills via Exposed/Progressive/Blocked tiers."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:PKUfudawei/dsh-capability-menu"},
-    stars: 122,
+    stars: 160,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99462,7 +99462,7 @@ export const plugins = [
     description: {"en":"A plugin which makes dsh compatible with SillyTavern artifacts.","zh":"A plugin which makes dsh compatible with SillyTavern artifacts."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Player-MINEPIG/dsh-tavern"},
-    stars: 33,
+    stars: 34,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99510,7 +99510,7 @@ export const plugins = [
     description: {"en":"VCP visual-synesthesia protocol plugin for DeepSeek Harness: render agent HTML output as real UI (cards / KaTeX math / Mermaid diagrams / built-in calligraphy fonts / zero-JS interactions), plug-and-play on any DSH...","zh":"VCP visual-synesthesia protocol plugin for DeepSeek Harness: render agent HTML output as real UI (cards / KaTeX math / Mermaid diagrams / built-in calligraphy fonts / zero-JS interactions), plug-and-play on any DSH..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:plolpl789/dsh-raw-html"},
-    stars: 95,
+    stars: 97,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99574,7 +99574,7 @@ export const plugins = [
     description: {"en":"dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，扫码即用：流式卡片、项目工作区、并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理与安全网守护（dsh 崩溃后飞书仍可自救）。A scan-to-connect bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark: streaming...","zh":"dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，扫码即用：流式卡片、项目工作区、并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理与安全网守护（dsh 崩溃后飞书仍可自救）。A scan-to-connect bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark: streaming..."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:plutokeating/dsh-lark-bot"},
-    stars: 41,
+    stars: 44,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99590,7 +99590,7 @@ export const plugins = [
     description: {"en":"Open-origin alternative to Claude Cowork - a local-first AI agent desktop app · multi-model · self-evolving skills · privacy-first · multi-Harness roadmap · DeepSeek Harness integration in progress","zh":"Open-origin alternative to Claude Cowork - a local-first AI agent desktop app · multi-model · self-evolving skills · privacy-first · multi-Harness roadmap · DeepSeek Harness integration in progress"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pm-shawn/abu-cowork"},
-    stars: 422,
+    stars: 421,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99734,7 +99734,7 @@ export const plugins = [
     description: {"en":"Migrate Codex CLI conversations / MCP servers / memories into DeepSeek Harness ｜ 把 Codex CLI 的对话、MCP、记忆迁移到 DeepSeek Harness","zh":"Migrate Codex CLI conversations / MCP servers / memories into DeepSeek Harness ｜ 把 Codex CLI 的对话、MCP、记忆迁移到 DeepSeek Harness"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:polarskicpl/dsh-codex-migrate"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -99974,7 +99974,7 @@ export const plugins = [
     description: {"en":"DSH 办公文件插件：阅读 PDF/DOCX/XLSX/PPTX，生成 DOCX/XLSX/PPTX/PDF/CSV。A DSH plugin for reading and generating common office files.","zh":"DSH 办公文件插件：阅读 PDF/DOCX/XLSX/PPTX，生成 DOCX/XLSX/PPTX/PDF/CSV。A DSH plugin for reading and generating common office files."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pqkisvery666/dsh-basic-office"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -100150,7 +100150,7 @@ export const plugins = [
     description: {"en":"a coding Agent from pi. ∞ providers, sub-agents, hashline edits, and a permission gate","zh":"a coding Agent from pi. ∞ providers, sub-agents, hashline edits, and a permission gate"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:pulseaiclub/phi"},
-    stars: 1002,
+    stars: 1005,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -100486,7 +100486,7 @@ export const plugins = [
     description: {"en":"Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged evaluation, budgeted evolution...","zh":"Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged evaluation, budgeted evolution..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Q00/ouroboros"},
-    stars: 6350,
+    stars: 6373,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -100582,7 +100582,7 @@ export const plugins = [
     description: {"en":"Desktop-native BigFish companion for DeepSeek Harness - real Agent status, always on top on Windows.","zh":"Desktop-native BigFish companion for DeepSeek Harness - real Agent status, always on top on Windows."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:QCYTSN/dsh-dafeiyu"},
-    stars: 611,
+    stars: 626,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -100614,7 +100614,7 @@ export const plugins = [
     description: {"en":"Full session management plugin for DeepSeek Harness (DSH) web UI: delete/trash/restore, workspace grouping, move sessions between workspaces, unread markers, context compaction threshold. Fully local, bilingual zh/en.","zh":"Full session management plugin for DeepSeek Harness (DSH) web UI: delete/trash/restore, workspace grouping, move sessions between workspaces, unread markers, context compaction threshold. Fully local, bilingual zh/en."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:qewregrfhnm/dsh-session-manager"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -101062,7 +101062,7 @@ export const plugins = [
     description: {"en":"多智能体总指挥插件（DeepSeek Harness 原生版） --让 DeepSeek 高效打开并指挥一个 claude / opencode / codex 智能体团队，实时看到每个智能体在做什么，通过共享记忆与任务看板编排多人协作。","zh":"多智能体总指挥插件（DeepSeek Harness 原生版） --让 DeepSeek 高效打开并指挥一个 claude / opencode / codex 智能体团队，实时看到每个智能体在做什么，通过共享记忆与任务看板编排多人协作。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:qinglang8609/deepseek_herdr"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -101430,7 +101430,7 @@ export const plugins = [
     description: {"en":"DSH 语音双工对话模式：流式 zipformer2 识别入可编辑草稿，可选唤醒词，Edge TTS 按句朗读 + 实时字幕，开口即打断（barge-in），无需 API Key。Full-duplex voice mode for DeepSeek Harness, no API key.","zh":"DSH 语音双工对话模式：流式 zipformer2 识别入可编辑草稿，可选唤醒词，Edge TTS 按句朗读 + 实时字幕，开口即打断（barge-in），无需 API Key。Full-duplex voice mode for DeepSeek Harness, no API key."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:qishuilalala/dsh-voice-mode"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -102422,7 +102422,7 @@ export const plugins = [
     description: {"en":"本地模型触及输出 token 上限时自动发送 continue，让回复持续输出","zh":"本地模型触及输出 token 上限时自动发送 continue，让回复持续输出"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:qwert702/dsh-continue-on-limit"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -102790,7 +102790,7 @@ export const plugins = [
     description: {"en":"让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK","zh":"让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:railgun0325/dsh-phone"},
-    stars: 47,
+    stars: 48,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -102822,7 +102822,7 @@ export const plugins = [
     description: {"en":"DSH 预设编辑器插件, 支持一键破甲.","zh":"DSH 预设编辑器插件, 支持一键破甲."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Rain-kl/dsh-preset-plus"},
-    stars: 248,
+    stars: 264,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -102902,7 +102902,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness - 液态玻璃与动态壁纸主题 (WebGL 物理透镜、动态壁纸与多层毛玻璃) #dsh-plugin","zh":"DeepSeek Harness - 液态玻璃与动态壁纸主题 (WebGL 物理透镜、动态壁纸与多层毛玻璃) #dsh-plugin"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Rainpomelo/deepseek-harness-liquid-glass-theme"},
-    stars: 10,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -103318,7 +103318,7 @@ export const plugins = [
     description: {"en":"Controls which tool schemas enter model context through settings and persisted filters","zh":"Controls which tool schemas enter model context through settings and persisted filters"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:rayfalling/dsh-tool-visibility"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -103638,7 +103638,7 @@ export const plugins = [
     description: {"en":"Render Mermaid fenced code blocks as diagrams in DeepSeek Harness (dsh) web - a dynamic Cordis client plugin, no shell changes needed.","zh":"Render Mermaid fenced code blocks as diagrams in DeepSeek Harness (dsh) web - a dynamic Cordis client plugin, no shell changes needed."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:realguan/dsh-mermaid-preview"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -104086,7 +104086,7 @@ export const plugins = [
     description: {"en":"DSH plugin + MATLAB daemon bridging AI and MATLAB R2025b via file IPC - 20 matlab tools for editor code and Simulink models. No COM, no network.基于文件 IPC 的 AI ↔ MATLAB R2025b 深度交互：读写编辑器代码、创建/修改/运行 Simulink 模型，无 COM、无网络。","zh":"DSH plugin + MATLAB daemon bridging AI and MATLAB R2025b via file IPC - 20 matlab tools for editor code and Simulink models. No COM, no network.基于文件 IPC 的 AI ↔ MATLAB R2025b 深度交互：读写编辑器代码、创建/修改/运行 Simulink 模型，无 COM、无网络。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:rencl3/dsh-matlab-bridge"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -104150,7 +104150,7 @@ export const plugins = [
     description: {"en":"DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web - native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI....","zh":"DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web - native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI...."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Renzic-Stone/DSH-EasyRewrite"},
-    stars: 131,
+    stars: 133,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -104438,7 +104438,7 @@ export const plugins = [
     description: {"en":"Hash-anchored read/edit/batchedit/undolastedit tools for DeepSeek Harness (dsh) - dsh port of pi-hashline-edit-lsz","zh":"Hash-anchored read/edit/batchedit/undolastedit tools for DeepSeek Harness (dsh) - dsh port of pi-hashline-edit-lsz"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Rianico/dsh-better-edit"},
-    stars: 42,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -104598,7 +104598,7 @@ export const plugins = [
     description: {"en":"The terminal-native frontend for the DeepSeek Harness plugin ecosystem.","zh":"The terminal-native frontend for the DeepSeek Harness plugin ecosystem."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:riesbri/dshline"},
-    stars: 26,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -104758,7 +104758,7 @@ export const plugins = [
     description: {"en":"Endfield-inspired industrial UI shell for DeepSeek Harness (dsh) - non-official fan theme. Install: dsh plugin --profile web add @rison/dsh-endfield-ui","zh":"Endfield-inspired industrial UI shell for DeepSeek Harness (dsh) - non-official fan theme. Install: dsh plugin --profile web add @rison/dsh-endfield-ui"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:rison114514/dsh-endfield-ui"},
-    stars: 98,
+    stars: 99,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105062,7 +105062,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:rongzi5/dsh-whale-pet"},
-    stars: 22,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105446,7 +105446,7 @@ export const plugins = [
     description: {"en":"A agentic factor mining plugin for DSH, suitable for small llm like qwen.Its core package could also work independently.","zh":"A agentic factor mining plugin for DSH, suitable for small llm like qwen.Its core package could also work independently."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Rtyyy233/dsh-factor-mining-plugin"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105654,7 +105654,7 @@ export const plugins = [
     description: {"en":"Inline, batchable comments for DeepSeek Harness assistant replies","zh":"Inline, batchable comments for DeepSeek Harness assistant replies"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ruisenbai/dsh-annotation"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105702,7 +105702,7 @@ export const plugins = [
     description: {"en":"Anchored-standard agent preset for DeepSeek Harness: Minimal-aligned first request, low-injection post-promotion, indirect AGENTS.md loading - anchored intelligence without the IQ drop. （DeepSeek Harness 的锚定标准预设：首轮...","zh":"Anchored-standard agent preset for DeepSeek Harness: Minimal-aligned first request, low-injection post-promotion, indirect AGENTS.md loading - anchored intelligence without the IQ drop. （DeepSeek Harness 的锚定标准预设：首轮..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ruler770525/dsh-anchored-flash"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105830,7 +105830,7 @@ export const plugins = [
     description: {"en":"为 dsh 打造的自动技能策展插件：每 N 轮真实对话，后台起一个评审子代理阅读会话摘要，主动把值得沉淀的经验提炼为 /.dsh/skills//SKILL.md - 把 Hermes 的「后台评审自我改进」闭环移植到 DSH，零侵入 bundle 插件，不改 dsh 源码。","zh":"为 dsh 打造的自动技能策展插件：每 N 轮真实对话，后台起一个评审子代理阅读会话摘要，主动把值得沉淀的经验提炼为 /.dsh/skills//SKILL.md - 把 Hermes 的「后台评审自我改进」闭环移植到 DSH，零侵入 bundle 插件，不改 dsh 源码。"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:runfali/dsh-skill-curator"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105910,7 +105910,7 @@ export const plugins = [
     description: {"en":"Community Docker and Kubernetes packaging for DeepSeek Harness (@deepseek-ai/dsh), with a hardened image, Compose stack, Helm chart, Web UI, and headless CLI.","zh":"Community Docker and Kubernetes packaging for DeepSeek Harness (@deepseek-ai/dsh), with a hardened image, Compose stack, Helm chart, Web UI, and headless CLI."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:runzhliu/deepseek-harness-docker"},
-    stars: 163,
+    stars: 177,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -105974,7 +105974,7 @@ export const plugins = [
     description: {"en":"🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration,...","zh":"🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ruvnet/ruflo"},
-    stars: 81466,
+    stars: 81924,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106006,7 +106006,7 @@ export const plugins = [
     description: {"en":"面向 DeepSeek Harness 的 OpenViking 检索、资源管理、自动召回与会话记忆插件","zh":"面向 DeepSeek Harness 的 OpenViking 检索、资源管理、自动召回与会话记忆插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Rxiain/dsh-openviking"},
-    stars: 21,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106118,7 +106118,7 @@ export const plugins = [
     description: {"en":"🧠 Cross-session memory for DeepSeek Harness backed by Hindsight. Self-contained dsh-plugin: /hindsight commands + hindsightrecall/remember/status/list/forget agent tools. Lightweight, no dsh-mnemon, no orchestrator.","zh":"🧠 Cross-session memory for DeepSeek Harness backed by Hindsight. Self-contained dsh-plugin: /hindsight commands + hindsightrecall/remember/status/list/forget agent tools. Lightweight, no dsh-mnemon, no orchestrator."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ryu6Zero/dsh-hindsight"},
-    stars: 7,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106134,7 +106134,7 @@ export const plugins = [
     description: {"en":"DSH 的 A2A v1.0 双端插件:Client 发现远程 Agent 并映射为工具,Server 对外提供 JSON-RPC/SSE 端点与连接面板 ｜ A2A v1.0 dual-mode DSH plugin: A2A client (skills as tools) + A2A server (JSON-RPC/SSE) with dashboard.","zh":"DSH 的 A2A v1.0 双端插件:Client 发现远程 Agent 并映射为工具,Server 对外提供 JSON-RPC/SSE 端点与连接面板 ｜ A2A v1.0 dual-mode DSH plugin: A2A client (skills as tools) + A2A server (JSON-RPC/SSE) with dashboard."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ryubyte/dsh-a2a"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106438,7 +106438,7 @@ export const plugins = [
     description: {"en":"小说创作模式：一个统筹队长统领全局，5 个专职子代理各司其职--架构世界、策划剧情、管理人物、执笔写文、质检复核--协同写作。","zh":"小说创作模式：一个统筹队长统领全局，5 个专职子代理各司其职--架构世界、策划剧情、管理人物、执笔写文、质检复核--协同写作。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sailoumili/novel-writer"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106470,7 +106470,7 @@ export const plugins = [
     description: {"en":"Session-level multi-prompt library and system prompt injector for DeepSeek Harness Web","zh":"Session-level multi-prompt library and system prompt injector for DeepSeek Harness Web"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SaiSenBox/dsh-prompt-manager"},
-    stars: 10,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106630,7 +106630,7 @@ export const plugins = [
     description: {"en":"dsh-gmail: Gmail plugin suite for DeepSeek Harness - 61 model-facing tools + 2 polling triggers over the Gmail & People APIs (OAuth2)","zh":"dsh-gmail: Gmail plugin suite for DeepSeek Harness - 61 model-facing tools + 2 polling triggers over the Gmail & People APIs (OAuth2)"},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sakthiveltofficial/dsh-gmail-plugins"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106678,7 +106678,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness plugin that auto-saves large pasted text as attachment files","zh":"A DeepSeek Harness plugin that auto-saves large pasted text as attachment files"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sakuraqqq/dsh-auto-paste"},
-    stars: 6,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106710,7 +106710,7 @@ export const plugins = [
     description: {"en":"Inspired By Calude design, A Deepseek harness Design Plugin!, Select elements, Use Open Router Vision agents, upload images and much more!! You can make quick changes with deepseek or invoke the Vision model with a...","zh":"Inspired By Calude design, A Deepseek harness Design Plugin!, Select elements, Use Open Router Vision agents, upload images and much more!! You can make quick changes with deepseek or invoke the Vision model with a..."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Sal7one/DSH-Design-Studio"},
-    stars: 3,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -106950,7 +106950,7 @@ export const plugins = [
     description: {"en":"88 installable open-origin Agent Skills for research, social intelligence, marketing, and business workflows-compatible with Codex, Claude Code, Cursor, Gemini CLI, and DeepSeek Harness.","zh":"88 installable open-origin Agent Skills for research, social intelligence, marketing, and business workflows-compatible with Codex, Claude Code, Cursor, Gemini CLI, and DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sandbaseai/sandbase-skills"},
-    stars: 210,
+    stars: 212,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107030,7 +107030,7 @@ export const plugins = [
     description: {"en":"dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.","zh":"dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin"},
-    stars: 103,
+    stars: 104,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107094,7 +107094,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 小游戏制作插件 - 帮助 AI 快速创建 HTML5 小游戏，支持 Canvas、Phaser.js、Three.js 等引擎","zh":"DeepSeek Harness 小游戏制作插件 - 帮助 AI 快速创建 HTML5 小游戏，支持 Canvas、Phaser.js、Three.js 等引擎"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sasajun2345/dsh-minigame-plugin"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107206,7 +107206,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 移动端适配与安全访问插件，支持局域网、远程连接、Android App 和手机浏览器。","zh":"DeepSeek Harness 移动端适配与安全访问插件，支持局域网、远程连接、Android App 和手机浏览器。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:saya-ch/dsh-mobile"},
-    stars: 821,
+    stars: 873,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107286,7 +107286,7 @@ export const plugins = [
     description: {"en":"A project memory for your DeepSeek Harness agent - constrain / observe / remember / verify, built on DSH native primitives.","zh":"A project memory for your DeepSeek Harness agent - constrain / observe / remember / verify, built on DSH native primitives."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:scd13150/dsh-cognition"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107430,7 +107430,7 @@ export const plugins = [
     description: {"en":"Agent memory for DeepSeek Harness \\| DeepSeek Harness 记忆插件","zh":"Agent memory for DeepSeek Harness \\| DeepSeek Harness 记忆插件"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:scorp1o117/dsh-tdai-memory"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107798,7 +107798,7 @@ export const plugins = [
     description: {"en":"基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自己熟练的才好用，好的方法论=好的生态）","zh":"基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自己熟练的才好用，好的方法论=好的生态）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SeaOf0/dsh-redteam-model"},
-    stars: 865,
+    stars: 895,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107926,7 +107926,7 @@ export const plugins = [
     description: {"en":"Cmd/Ctrl+F-style find bar for the desktop Electron shell","zh":"Cmd/Ctrl+F-style find bar for the desktop Electron shell"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:secyborg/dsh-find-bar"},
-    stars: 1,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107958,7 +107958,7 @@ export const plugins = [
     description: {"en":"一个非官方的基于dsh的GUI。An unofficial Windows desktop workbench for DeepSeek Harness.","zh":"一个非官方的基于dsh的GUI。An unofficial Windows desktop workbench for DeepSeek Harness."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:See-Sol-Lab/DeepSeekGUI"},
-    stars: 275,
+    stars: 282,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -107974,7 +107974,7 @@ export const plugins = [
     description: {"en":"Package manager for AI agent assets - 42 skills, 5 CLIs, 1 plugin. Skills for AI/LLM agent engineering, eval-driven dev, spec-driven dev, database (MySQL/PG/Redis/Kafka/Mongo/Oracle/NL2SQL), K8s/Docker diagnostics,...","zh":"Package manager for AI agent assets - 42 skills, 5 CLIs, 1 plugin. Skills for AI/LLM agent engineering, eval-driven dev, spec-driven dev, database (MySQL/PG/Redis/Kafka/Mongo/Oracle/NL2SQL), K8s/Docker diagnostics,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:seed-forge/harness-ai-kit"},
-    stars: 25,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108054,7 +108054,7 @@ export const plugins = [
     description: {"en":"Deepseek Harness 删除会话","zh":"Deepseek Harness 删除会话"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Seetraum/harness-session-delete"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108134,7 +108134,7 @@ export const plugins = [
     description: {"en":"DSH plugin: model sampling sliders (temperature/maxTokens) with hot & persist modes, for all providers","zh":"DSH plugin: model sampling sliders (temperature/maxTokens) with hot & persist modes, for all providers"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Semidia/dsh-sampling-sliders"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108246,7 +108246,7 @@ export const plugins = [
     description: {"en":"A MCP server for Stata to integrate Stata into your agent.","zh":"A MCP server for Stata to integrate Stata into your agent."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sepinetam/mcp-for-stata"},
-    stars: 276,
+    stars: 279,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108342,7 +108342,7 @@ export const plugins = [
     description: {"en":"用于优化 DeepSeek harness提示词优化器，提升 AI 输出质量","zh":"用于优化 DeepSeek harness提示词优化器，提升 AI 输出质量"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:seven282/oss-prompt-optimizer"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108742,7 +108742,7 @@ export const plugins = [
     description: {"en":"Generate images directly in DeepSeek Harness chats","zh":"Generate images directly in DeepSeek Harness chats"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:shanliuling/dsh-image-gen"},
-    stars: 1289,
+    stars: 1589,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -108806,7 +108806,7 @@ export const plugins = [
     description: {"en":"把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）Put DeepSeek Harness in your pocket: run dsh web on your computer and access it synchronously by scanning a QR code on your phone (LAN + public network,...","zh":"把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）Put DeepSeek Harness in your pocket: run dsh web on your computer and access it synchronously by scanning a QR code on your phone (LAN + public network,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:shaobeichen/dsh-pocket"},
-    stars: 2906,
+    stars: 3012,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -109062,7 +109062,7 @@ export const plugins = [
     description: {"en":"Tencent CodeBuddy plugin for DeepSeek Harness (dsh).","zh":"Tencent CodeBuddy plugin for DeepSeek Harness (dsh)."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:shatyuka/dsh-llm-codebuddy"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -109190,7 +109190,7 @@ export const plugins = [
     description: {"en":"A nano re-implementation of Cordis and DeepSeek Harness, an AI agent runtime built out of plugins, small enough to read in an afternoon.","zh":"A nano re-implementation of Cordis and DeepSeek Harness, an AI agent runtime built out of plugins, small enough to read in an afternoon."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SheltonLiu-N/nano-cordis"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -109238,7 +109238,7 @@ export const plugins = [
     description: {"en":"Native local Taskboard plugin for DeepSeek Harness. SQLite-backed projects, Agent claim/review, and a native Web UI - no iframe, no second chat runtime.","zh":"Native local Taskboard plugin for DeepSeek Harness. SQLite-backed projects, Agent claim/review, and a native Web UI - no iframe, no second chat runtime."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:shengsheng90/DSH-taskboard"},
-    stars: 327,
+    stars: 328,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -109302,7 +109302,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 的 ACP 客户端 LLM 适配器 + ACP 服务设置界面。通过外部 Agent Client Protocol 服务器作为模型提供方接入 harness 的 LLM 层，并提供一个 Web 设置页面用于浏览 ACP 注册表和管理已配置的服务器。","zh":"DeepSeek Harness 的 ACP 客户端 LLM 适配器 + ACP 服务设置界面。通过外部 Agent Client Protocol 服务器作为模型提供方接入 harness 的 LLM 层，并提供一个 Web 设置页面用于浏览 ACP 注册表和管理已配置的服务器。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:shenkonghui/dsh-llm-acp"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -110582,7 +110582,7 @@ export const plugins = [
     description: {"en":"Literature research for DeepSeek Harness - dblp + arXiv search, authoritative BibTeX, and full-text download.","zh":"Literature research for DeepSeek Harness - dblp + arXiv search, authoritative BibTeX, and full-text download."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SihanLv/dsh-literature"},
-    stars: 9,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -110646,7 +110646,7 @@ export const plugins = [
     description: {"en":"Minecraft development plugin for DeepSeek Harness: skills & tools for Paper/Spigot plugins and Fabric/Forge/NeoForge mods, MC 1.7.10-26.x","zh":"Minecraft development plugin for DeepSeek Harness: skills & tools for Paper/Spigot plugins and Fabric/Forge/NeoForge mods, MC 1.7.10-26.x"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sikadi233-hub/minecraft-dev"},
-    stars: 41,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111030,7 +111030,7 @@ export const plugins = [
     description: {"en":"Per-edit approval gate for DeepSeek Harness - red/green line diff review before write/edit/stream operations · DSH 插件：逐操作审批门，write/edit/stream 执行前进行红绿行级 diff 审查","zh":"Per-edit approval gate for DeepSeek Harness - red/green line diff review before write/edit/stream operations · DSH 插件：逐操作审批门，write/edit/stream 执行前进行红绿行级 diff 审查"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SiriLee/dsh-edit-approval"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111046,7 +111046,7 @@ export const plugins = [
     description: {"en":"DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind - never forking a new session; ships a lightweight workspace backup that...","zh":"DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind - never forking a new session; ships a lightweight workspace backup that..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SiriLee/dsh-rewind"},
-    stars: 256,
+    stars: 281,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111142,7 +111142,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) plugin marketplace: install & inject Claude Code / Codex / Cursor agent plugins - skills, MCP servers, hooks & slash commands - from git marketplace repos, with a Web GUI market page.","zh":"DeepSeek Harness (DSH) plugin marketplace: install & inject Claude Code / Codex / Cursor agent plugins - skills, MCP servers, hooks & slash commands - from git marketplace repos, with a Web GUI market page."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Sivan757/dsh-agent-plugins-market"},
-    stars: 21,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111238,7 +111238,7 @@ export const plugins = [
     description: {"en":"DSH / DeepSeek Harness 小说写作助手插件：章节库管理、句式模式分析（九类句式/情感曲线/风格指纹）、风格自检、伏笔登记、批量导入、续写辅助。Novel writing assistant plugin for DeepSeek Harness: chapter library, sentence pattern analysis, style check, plot tracking, batch...","zh":"DSH / DeepSeek Harness 小说写作助手插件：章节库管理、句式模式分析（九类句式/情感曲线/风格指纹）、风格自检、伏笔登记、批量导入、续写辅助。Novel writing assistant plugin for DeepSeek Harness: chapter library, sentence pattern analysis, style check, plot tracking, batch..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:siweina/dsh-novel-writer"},
-    stars: 27,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111446,7 +111446,7 @@ export const plugins = [
     description: {"en":"First-class Windows for DeepSeek Harness: persistent Git Bash Minimal mode, doctor for install traps, one-command setup \\ 让 DSH 在 Windows 上成为一等公民","zh":"First-class Windows for DeepSeek Harness: persistent Git Bash Minimal mode, doctor for install traps, one-command setup \\ 让 DSH 在 Windows 上成为一等公民"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sjh9714/dsh-win32"},
-    stars: 166,
+    stars: 169,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111654,7 +111654,7 @@ export const plugins = [
     description: {"en":"dsh-codex-pet · DSH 桌面宠物插件 - 导入精灵图序列帧宠物，悬浮浮层渲染 + Agent 状态联动","zh":"dsh-codex-pet · DSH 桌面宠物插件 - 导入精灵图序列帧宠物，悬浮浮层渲染 + Agent 状态联动"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:skr311/dsh-codex-pet"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -111862,7 +111862,7 @@ export const plugins = [
     description: {"en":"deepseek-harness for vscode .A native VS Code coding-agent extension for DeepSeek Harness. Streamlined workbench with session management, streaming Markdown, slash commands, plugin center, and zero-deployment runtime...","zh":"deepseek-harness for vscode .A native VS Code coding-agent extension for DeepSeek Harness. Streamlined workbench with session management, streaming Markdown, slash commands, plugin center, and zero-deployment runtime..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:skymecode/deepseek-harness-for-vscode"},
-    stars: 167,
+    stars: 173,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112054,7 +112054,7 @@ export const plugins = [
     description: {"en":"DSH自定义壁纸/皮肤插件--Custom wallpapers and translucent skins for DeepSeek Harness Web","zh":"DSH自定义壁纸/皮肤插件--Custom wallpapers and translucent skins for DeepSeek Harness Web"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SLin-code/dsh-custom-skin"},
-    stars: 92,
+    stars: 91,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112230,7 +112230,7 @@ export const plugins = [
     description: {"en":"Ask a follow-up on any past answer in an isolated branch, keeping your main conversation clean. 针对任意历史回答发起追问，新问题在独立分支中展开，主对话保持干净。A conversation-tree plugin for DeepSeek Harness / DeepSeek Harness 会话树插件。","zh":"Ask a follow-up on any past answer in an isolated branch, keeping your main conversation clean. 针对任意历史回答发起追问，新问题在独立分支中展开，主对话保持干净。A conversation-tree plugin for DeepSeek Harness / DeepSeek Harness 会话树插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sluminositys/dsh-nested-followups"},
-    stars: 51,
+    stars: 54,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112262,7 +112262,7 @@ export const plugins = [
     description: {"en":"Server-grade gateway that turns DeepSeek Harness into a multi-tenant platform: remote access + auto HTTPS, subuser permissions & quotas, sandbox enforcement, encrypted auth, audit log.","zh":"Server-grade gateway that turns DeepSeek Harness into a multi-tenant platform: remote access + auto HTTPS, subuser permissions & quotas, sandbox enforcement, encrypted auth, audit log."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:slywalker2006/dsh-passwords"},
-    stars: 90,
+    stars: 94,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112294,7 +112294,7 @@ export const plugins = [
     description: {"en":"Whale Girl skin series for DeepSeek Harness. 适用于 DeepSeek Harness 的，鲸鱼娘系列皮肤。","zh":"Whale Girl skin series for DeepSeek Harness. 适用于 DeepSeek Harness 的，鲸鱼娘系列皮肤。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:small-tailqwq/dsh-deep-whale"},
-    stars: 3090,
+    stars: 3123,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112342,7 +112342,7 @@ export const plugins = [
     description: {"en":"DSH (DeepSeek Harness) plugin that launches and drives a running Godot 4.x game through its in-game TCP interaction server - replaces the godot-mcp MCP server with native agent tools.","zh":"DSH (DeepSeek Harness) plugin that launches and drives a running Godot 4.x game through its in-game TCP interaction server - replaces the godot-mcp MCP server with native agent tools."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Smalldy/godot-bridge"},
-    stars: 53,
+    stars: 58,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112582,7 +112582,7 @@ export const plugins = [
     description: {"en":"Right-side dot-timeline rail: jump between user messages.","zh":"右侧圆点时间轴导航条，点击跳转到任意用户消息。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone"},
-    stars: 24,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112694,7 +112694,7 @@ export const plugins = [
     description: {"en":"Community DSH plugin: OpenAI-compatible gateway adapter and dialect fixes (not an official DeepSeek package)","zh":"Community DSH plugin: OpenAI-compatible gateway adapter and dialect fixes (not an official DeepSeek package)"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:snowshadow/dsh-llm-gateway-compat"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112902,7 +112902,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness bundle for one-shot Claude Code and GitHub Copilot Gemini delegation through native subscription logins.","zh":"DeepSeek Harness bundle for one-shot Claude Code and GitHub Copilot Gemini delegation through native subscription logins."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:softspark/dsh-orchestrator"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112918,7 +112918,7 @@ export const plugins = [
     description: {"en":"deepseek harnes HarmonyOS PC client","zh":"deepseek harnes HarmonyOS PC client"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sol5766/dshm"},
-    stars: 88,
+    stars: 101,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -112966,7 +112966,7 @@ export const plugins = [
     description: {"en":"Swift Cycle governance skill adapter for DeepSeek Harness; user-invoked, version-pinned, and offline-verifiable.","zh":"Swift Cycle governance skill adapter for DeepSeek Harness; user-invoked, version-pinned, and offline-verifiable."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Solismuchengxue/dsh_plugin_swift_cycle"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113094,7 +113094,7 @@ export const plugins = [
     description: {"en":"Bottom Info Bar - an information bar plugin for DeepSeek Harness: provider/model, live balance, peak/off-peak pricing with countdown, and real persisted per-session spend in a single line.","zh":"Bottom Info Bar - an information bar plugin for DeepSeek Harness: provider/model, live balance, peak/off-peak pricing with countdown, and real persisted per-session spend in a single line."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:songoao25/dsh-bottom-info-bar"},
-    stars: 59,
+    stars: 62,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113110,7 +113110,7 @@ export const plugins = [
     description: {"en":"ChatGPT Subscription - a DeepSeek Harness plugin: bind your ChatGPT account via official OAuth and chat with ChatGPT models inside DSH, using your Plus/Pro subscription quota","zh":"ChatGPT Subscription - a DeepSeek Harness plugin: bind your ChatGPT account via official OAuth and chat with ChatGPT models inside DSH, using your Plus/Pro subscription quota"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:songoao25/dsh-chatgpt-subscription"},
-    stars: 46,
+    stars: 50,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113302,7 +113302,7 @@ export const plugins = [
     description: {"en":"Interactive terminal agent (fork of DeepSeek Harness): Claude Code-style REPL - full-screen UI, markdown rendering, session stats, permission cycling, custom OpenAI-compatible providers.","zh":"Interactive terminal agent (fork of DeepSeek Harness): Claude Code-style REPL - full-screen UI, markdown rendering, session stats, permission cycling, custom OpenAI-compatible providers."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:soolaugust/deepseek-harness-cli"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113318,7 +113318,7 @@ export const plugins = [
     description: {"en":"AI-native engineering environment management that makes your codebase agent-ready.","zh":"AI-native engineering environment management that makes your codebase agent-ready."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sopaco/terrain"},
-    stars: 284,
+    stars: 288,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113334,7 +113334,7 @@ export const plugins = [
     description: {"en":"Knowledge base & RAG plugin for DeepSeek Harness (DSH): chunking, local embeddings, hybrid search, management panel","zh":"Knowledge base & RAG plugin for DeepSeek Harness (DSH): chunking, local embeddings, hybrid search, management panel"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Soren-ABT/dsh-knowledge"},
-    stars: 99,
+    stars: 105,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113382,7 +113382,7 @@ export const plugins = [
     description: {"en":"Android companion for DeepSeek Harness \\ chat, goals, approvals & notifications from your phone, over your LAN. Kotlin + Jetpack Compose.","zh":"Android companion for DeepSeek Harness \\ chat, goals, approvals & notifications from your phone, over your LAN. Kotlin + Jetpack Compose."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sorsama/deepseek-harness-mobile"},
-    stars: 295,
+    stars: 330,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113398,7 +113398,7 @@ export const plugins = [
     description: {"en":"Authenticated remote access for a DeepSeek Harness web profile: TLS, QR/passcode device pairing, password sign-in, and per-device revocation in front of an untouched loopback harness.","zh":"Authenticated remote access for a DeepSeek Harness web profile: TLS, QR/passcode device pairing, password sign-in, and per-device revocation in front of an untouched loopback harness."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sorsama/deepseek-harness-relay"},
-    stars: 13,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113750,7 +113750,7 @@ export const plugins = [
     description: {"en":"Editable, session-isolated personalization memory for DeepSeek Harness","zh":"Editable, session-isolated personalization memory for DeepSeek Harness"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Spirtxiaoqi7/mindspace-dsh-session-memory"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113814,7 +113814,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin: paragraph-batched streaming reveals with 8 designed animations, smooth scroll-follow and a settings panel. DSH 流式渲染插件：按段落分批呈现、8 种入场动画、平滑滚动、设置面板。","zh":"DeepSeek Harness plugin: paragraph-batched streaming reveals with 8 designed animations, smooth scroll-follow and a settings panel. DSH 流式渲染插件：按段落分批呈现、8 种入场动画、平滑滚动、设置面板。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SpookySandwich/dsh-plugin-smooth-stream"},
-    stars: 12,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -113830,7 +113830,7 @@ export const plugins = [
     description: {"en":"Better streaming text animation for DeepSeek Harness 给DSH加入更好文字动画","zh":"Better streaming text animation for DeepSeek Harness 给DSH加入更好文字动画"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SpookySandwich/dsh-smooth-stream"},
-    stars: 12,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114102,7 +114102,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 免安装便携版（Windows）：官方 npm 包 + 内置 Node.js，双击 exe 即用，拷贝到任意 64 位 Windows 电脑独立运行","zh":"DeepSeek Harness 免安装便携版（Windows）：官方 npm 包 + 内置 Node.js，双击 exe 即用，拷贝到任意 64 位 Windows 电脑独立运行"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sqs404/dsh-portable"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114198,7 +114198,7 @@ export const plugins = [
     description: {"en":"Elbow-proof PowerShell for DeepSeek Harness: pwshsafe tool runs scripts via base64 -EncodedCommand, immune to quoting/escaping pain, sandbox-seam based","zh":"Elbow-proof PowerShell for DeepSeek Harness: pwshsafe tool runs scripts via base64 -EncodedCommand, immune to quoting/escaping pain, sandbox-seam based"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sryimnoob123/dsh-tool-pwsh-safe"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114294,7 +114294,7 @@ export const plugins = [
     description: {"en":"DSH 实时思维导图插件：Agent 与你共编同一棵树，改动即时互相同步，支持停靠分屏与全屏专注两种视图","zh":"DSH 实时思维导图插件：Agent 与你共编同一棵树，改动即时互相同步，支持停靠分屏与全屏专注两种视图"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SSShooter/dsh-mindmap-live"},
-    stars: 5,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114630,7 +114630,7 @@ export const plugins = [
     description: {"en":"Session replay, reflection, and dream-journal memory consolidation with zstd session reading","zh":"Session replay, reflection, and dream-journal memory consolidation with zstd session reading"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-dream"},
-    stars: 15,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114646,7 +114646,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 邮件插件：emaillist/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。· IMAP/SMTP email tools for DeepSeek Harness agents.","zh":"DeepSeek Harness 邮件插件：emaillist/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。· IMAP/SMTP email tools for DeepSeek Harness agents."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:stardustlc666/dsh-email"},
-    stars: 41,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114662,7 +114662,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 视频处理插件：ffmpegprobe/cut/concat/encode/subtitle/extract/gif 七工具，走官方 subprocess 服务、argv 数组无 shell 注入、零运行时依赖；纯 Node 全平台。· Video processing tools for DeepSeek Harness agents.","zh":"DeepSeek Harness 视频处理插件：ffmpegprobe/cut/concat/encode/subtitle/extract/gif 七工具，走官方 subprocess 服务、argv 数组无 shell 注入、零运行时依赖；纯 Node 全平台。· Video processing tools for DeepSeek Harness agents."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-ffmpeg"},
-    stars: 13,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114694,7 +114694,7 @@ export const plugins = [
     description: {"en":"DSH 视频创作技能插件：注册 HyperFrames by HeyGen 官方移植技能五件套（HTML 写视频/CLI/注册表/网址转视频/GSAP），安装即用。· HyperFrames skill plugin for DeepSeek Harness.","zh":"DSH 视频创作技能插件：注册 HyperFrames by HeyGen 官方移植技能五件套（HTML 写视频/CLI/注册表/网址转视频/GSAP），安装即用。· HyperFrames skill plugin for DeepSeek Harness."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-hyperframes"},
-    stars: 32,
+    stars: 35,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114726,7 +114726,7 @@ export const plugins = [
     description: {"en":"DSH 技能插件：一句话生成完整演示文稿（HTML 放映 + PPTX 导出 + manifest），5 套视觉主题，中英双语，零运行时依赖。· One prompt to a full presentation for DeepSeek Harness.","zh":"DSH 技能插件：一句话生成完整演示文稿（HTML 放映 + PPTX 导出 + manifest），5 套视觉主题，中英双语，零运行时依赖。· One prompt to a full presentation for DeepSeek Harness."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-ppt"},
-    stars: 34,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114742,7 +114742,7 @@ export const plugins = [
     description: {"en":"DSH 视频创作技能插件：注册 Remotion 官方移植技能（React 编程式视频，38 个规则文件），安装即用。· Remotion skill plugin for DeepSeek Harness.","zh":"DSH 视频创作技能插件：注册 Remotion 官方移植技能（React 编程式视频，38 个规则文件），安装即用。· Remotion skill plugin for DeepSeek Harness."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-remotion"},
-    stars: 36,
+    stars: 38,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114806,7 +114806,7 @@ export const plugins = [
     description: {"en":"STARDUSTLC 插件全家桶：一条命令装入 18 个 DSH 插件（办公流/媒体工坊/DevOps/做梦）。The STARDUSTLC plugin suite: 18 DSH plugins, one command.","zh":"STARDUSTLC 插件全家桶：一条命令装入 18 个 DSH 插件（办公流/媒体工坊/DevOps/做梦）。The STARDUSTLC plugin suite: 18 DSH plugins, one command."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-suite"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114822,7 +114822,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 语音双件套插件：voicetts（edge-tts 协议免费微软神经语音合成，Sec-MS-GEC 本地 DRM 生成）/ voicestt（OpenAI 兼容 ASR）/ voicelist。· TTS + STT for DeepSeek Harness agents.","zh":"DeepSeek Harness 语音双件套插件：voicetts（edge-tts 协议免费微软神经语音合成，Sec-MS-GEC 本地 DRM 生成）/ voicestt（OpenAI 兼容 ASR）/ voicelist。· TTS + STT for DeepSeek Harness agents."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:STARDUSTLC666/dsh-voice"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -114998,7 +114998,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 全局自动记忆插件：会话开始注入记忆、memorysearch 检索工具、压缩检查点归档提醒（零写入提醒制）。Global auto-memory plugin for DSH.","zh":"DeepSeek Harness (DSH) 全局自动记忆插件：会话开始注入记忆、memorysearch 检索工具、压缩检查点归档提醒（零写入提醒制）。Global auto-memory plugin for DSH."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Starry0214/dsh-memory"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -115094,7 +115094,7 @@ export const plugins = [
     description: {"en":"面向 AI 编程客户端的动态、可响应环境--视频背景、氛围场景与主题，适用于 DeepSeek Harness 与 Codex Desktop。","zh":"面向 AI 编程客户端的动态、可响应环境--视频背景、氛围场景与主题，适用于 DeepSeek Harness 与 Codex Desktop。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:starsstreaming/beautiCode"},
-    stars: 110,
+    stars: 112,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -115574,7 +115574,7 @@ export const plugins = [
     description: {"en":"The World's First Unified Virtual Filesystem For AI Agents","zh":"The World's First Unified Virtual Filesystem For AI Agents"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:strukto-ai/mirage"},
-    stars: 3783,
+    stars: 3790,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -115654,7 +115654,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) browser companion: Chrome side panel embedding the full dsh web UI + host plugins for page reading, HTTP capture, and browser control.","zh":"DeepSeek Harness (dsh) browser companion: Chrome side panel embedding the full dsh web UI + host plugins for page reading, HTTP capture, and browser control."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:stuarthu/dsh-chrome"},
-    stars: 11,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -115910,7 +115910,7 @@ export const plugins = [
     description: {"en":"韭菜盒子 LeekBox - A股看盘助手 · DeepSeek Harness (DSH) web 插件","zh":"韭菜盒子 LeekBox - A股看盘助手 · DeepSeek Harness (DSH) web 插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SuCriss/dsh-leekbox"},
-    stars: 8,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -115926,7 +115926,7 @@ export const plugins = [
     description: {"en":"Version update menu for the DeepSeek Harness Web GUI settings panel: check @deepseek-ai/dsh releases, install one with a click, then restart the host and reload the page automatically.","zh":"Version update menu for the DeepSeek Harness Web GUI settings panel: check @deepseek-ai/dsh releases, install one with a click, then restart the host and reload the page automatically."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:SuCriss/dsh-version-update"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116022,7 +116022,7 @@ export const plugins = [
     description: {"en":"DeepSeek Plugin that supports MCP Apps","zh":"DeepSeek Plugin that supports MCP Apps"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sugarforever/dsh-mcp-apps"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116310,7 +116310,7 @@ export const plugins = [
     description: {"en":"手机平板远程 DeepSeek Harness：扫码即可继续使用电脑上的 DSH，无需远程桌面 / SSH / 公网 IP，支持一次性配对、Github授权加密登录，独立设备授权与随时撤销，实现远程连接很简单，但安全才是我们所想要的。","zh":"手机平板远程 DeepSeek Harness：扫码即可继续使用电脑上的 DSH，无需远程桌面 / SSH / 公网 IP，支持一次性配对、Github授权加密登录，独立设备授权与随时撤销，实现远程连接很简单，但安全才是我们所想要的。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:summer1238/dsh-remote-web-gateway"},
-    stars: 168,
+    stars: 170,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116406,7 +116406,7 @@ export const plugins = [
     description: {"en":"Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, and fully editable PPTX. 面向专业演示设计场景，帮助用户从需求分析、视觉方向选择到原生可编辑 PPTX 交付，打造高质量、可持续修改的演示文稿。","zh":"Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, and fully editable PPTX. 面向专业演示设计场景，帮助用户从需求分析、视觉方向选择到原生可编辑 PPTX 交付，打造高质量、可持续修改的演示文稿。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sunchaokun/PPT-Design-Skill"},
-    stars: 500,
+    stars: 510,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116582,7 +116582,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Plugin and Agent Profile Package Index - Install dsh-plugin with just one command","zh":"DeepSeek Harness Plugin and Agent Profile Package Index - Install dsh-plugin with just one command"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Sunrisepeak/dsh-index"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116678,7 +116678,7 @@ export const plugins = [
     description: {"en":"Weather tool for DeepSeek Harness: current conditions and multi-day forecasts via Open-Meteo (free, no API key)","zh":"Weather tool for DeepSeek Harness: current conditions and multi-day forecasts via Open-Meteo (free, no API key)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:sunshine-lang/dsh-weather"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116710,7 +116710,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for Antigravity OAuth login and native Antigravity Auth capability bundle","zh":"DeepSeek Harness plugin for Antigravity OAuth login and native Antigravity Auth capability bundle"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:suntianc/dsh-antigravity-auth"},
-    stars: 28,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116886,7 +116886,7 @@ export const plugins = [
     description: {"en":"The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev","zh":"The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:superdesigndev/superdesign-skill"},
-    stars: 978,
+    stars: 1019,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -116902,7 +116902,7 @@ export const plugins = [
     description: {"en":"OpenRouter for agent tools. Join community here:","zh":"OpenRouter for agent tools. Join community here:"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:superdesigndev/treg"},
-    stars: 7802,
+    stars: 8201,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117254,7 +117254,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 桌宠插件：元气鲸鱼娘陪你写代码 🐋","zh":"DeepSeek Harness 桌宠插件：元气鲸鱼娘陪你写代码 🐋"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Sutera-Diffusus/dsh-whale-musume"},
-    stars: 211,
+    stars: 215,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117398,7 +117398,7 @@ export const plugins = [
     description: {"en":"Send files from your DeepSeek Harness agent straight to your phone, and reference what your phone sent back - no account, no public IP, end-to-end encrypted.","zh":"Send files from your DeepSeek Harness agent straight to your phone, and reference what your phone sent back - no account, no public IP, end-to-end encrypted."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:swarm-apps/dsh-swarmdrop"},
-    stars: 4,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117590,7 +117590,7 @@ export const plugins = [
     description: {"en":"Locked read-only sessions for DeepSeek Harness - start without choosing a workspace; once chosen, the session stays read-only forever (approval-gated file reads, no shell).","zh":"Locked read-only sessions for DeepSeek Harness - start without choosing a workspace; once chosen, the session stays read-only forever (approval-gated file reads, no shell)."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Syhz-666/dsh-no-workspace"},
-    stars: 1,
+    stars: 0,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117862,7 +117862,7 @@ export const plugins = [
     description: {"en":"DSH Game Studio: AI-native Game Development Runtime for DeepSeek Harness - 可安装/卸载/升级的游戏开发插件（/game 子命令、动态 Agent Pool、引擎适配器、Verifier + Quality Gate）","zh":"DSH Game Studio: AI-native Game Development Runtime for DeepSeek Harness - 可安装/卸载/升级的游戏开发插件（/game 子命令、动态 Agent Pool、引擎适配器、Verifier + Quality Gate）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:T-Markus-Liang/dsh-game-studio"},
-    stars: 5,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117894,7 +117894,7 @@ export const plugins = [
     description: {"en":"Tabbit Broser plugins for Deepseek Harness","zh":"Tabbit Broser plugins for Deepseek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tabbit-Browser/dsh-plugin"},
-    stars: 126,
+    stars: 127,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -117910,7 +117910,7 @@ export const plugins = [
     description: {"en":"Tabbit Browser plugins for Deepseek Harness","zh":"Tabbit Browser plugins for Deepseek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tabbit-Browser/dsh-tabbit"},
-    stars: 126,
+    stars: 127,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -118054,7 +118054,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness auth插件","zh":"DeepSeek Harness auth插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:taichuy/deepseek-harness-auth"},
-    stars: 26,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -118582,7 +118582,7 @@ export const plugins = [
     description: {"en":"TapTap 小游戏开放能力 mcp","zh":"TapTap 小游戏开放能力 mcp"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:taptap/instant-games-open-mcp"},
-    stars: 58,
+    stars: 62,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -118758,7 +118758,7 @@ export const plugins = [
     description: {"en":"专门为 agent 打造的 agent 搜索工具，具备多语言搜索能力，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。","zh":"专门为 agent 打造的 agent 搜索工具，具备多语言搜索能力，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:taxueseek/argo"},
-    stars: 250,
+    stars: 269,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119014,7 +119014,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 - 本地常驻服务, 官方统一网关接入","zh":"DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 - 本地常驻服务, 官方统一网关接入"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:techysy/deepseek-harness-fnos"},
-    stars: 89,
+    stars: 93,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119158,7 +119158,7 @@ export const plugins = [
     description: {"en":"让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件","zh":"让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tencent-connect/dsh-qqbot"},
-    stars: 573,
+    stars: 603,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119190,7 +119190,7 @@ export const plugins = [
     description: {"en":"Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.","zh":"Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tencent/BrowserSkill"},
-    stars: 10313,
+    stars: 10496,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119206,7 +119206,7 @@ export const plugins = [
     description: {"en":"Open-origin LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.","zh":"Open-origin LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tencent/WeKnora"},
-    stars: 37181,
+    stars: 37642,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119238,7 +119238,7 @@ export const plugins = [
     description: {"en":"腾讯会议命令行工具（CLI），基于腾讯会议开放平台 OAuth2 授权，支持会议管理、录制管理、参会报告等功能。","zh":"腾讯会议命令行工具（CLI），基于腾讯会议开放平台 OAuth2 授权，支持会议管理、录制管理、参会报告等功能。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tencentcloud/tencentmeeting-cli"},
-    stars: 250,
+    stars: 251,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119254,7 +119254,7 @@ export const plugins = [
     description: {"en":"Tencent Cloud ADP plugin for DeepSeek Harness","zh":"Tencent Cloud ADP plugin for DeepSeek Harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TencentCloudADP/Tencent-ADP-dsh-plugin"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119270,7 +119270,7 @@ export const plugins = [
     description: {"en":"Backend for AI coding agents on CloudBase - database, auth, functions via Plugin, Skills & MCP.","zh":"Backend for AI coding agents on CloudBase - database, auth, functions via Plugin, Skills & MCP."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TencentCloudBase/CloudBase-AI-Toolkit"},
-    stars: 1164,
+    stars: 1166,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119462,7 +119462,7 @@ export const plugins = [
     description: {"en":"Notes for you, Memory for your agents. / 内置 Deepseek harness Agent / 适用 办公 & 写作 & Coding","zh":"Notes for you, Memory for your agents. / 内置 Deepseek harness Agent / 适用 办公 & 写作 & Coding"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:text2future/flowix"},
-    stars: 501,
+    stars: 517,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119510,7 +119510,7 @@ export const plugins = [
     description: {"en":"Generic DeepSeek Harness (dsh) plugins: A2A protocol server, session storage mirror, and Langfuse observability.","zh":"Generic DeepSeek Harness (dsh) plugins: A2A protocol server, session storage mirror, and Langfuse observability."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TGYD-helige/dsh-plugins"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119574,7 +119574,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Mobile 是 DeepSeek Harness 的 Android 原生应用，将原本仅支持 PC 浏览器的 AI Agent 框架完整迁移至移动端。采用 Kotlin + Jetpack Compose 开发，内置 Node.js ARM64 二进制和 dsh CLI，实现零依赖安装--下载 APK 即可运行，无需 Root、Termux...","zh":"DeepSeek Harness Mobile 是 DeepSeek Harness 的 Android 原生应用，将原本仅支持 PC 浏览器的 AI Agent 框架完整迁移至移动端。采用 Kotlin + Jetpack Compose 开发，内置 Node.js ARM64 二进制和 dsh CLI，实现零依赖安装--下载 APK 即可运行，无需 Root、Termux..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Thanksgiver233/dsh-mobile"},
-    stars: 33,
+    stars: 34,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -119606,7 +119606,7 @@ export const plugins = [
     description: {"en":"🐋 The meme side of DeepSeek Harness - 贪玩蓝鲸/QQ2006/whale girls/mini-games · A curated tour of the wildest dsh plugins","zh":"🐋 The meme side of DeepSeek Harness - 贪玩蓝鲸/QQ2006/whale girls/mini-games · A curated tour of the wildest dsh plugins"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:the-beating-light-of-the-nail/dsh-meme-hub"},
-    stars: 41,
+    stars: 43,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120006,7 +120006,7 @@ export const plugins = [
     description: {"en":"Unified notification push plugin for DeepSeek Harness (DSH): one minimal notify() API, 8 channel adapters (telegram/dingtalk/feishu/wxpusher/pushplus/serverchan/bark/webhook), dual trigger (auto session events +...","zh":"Unified notification push plugin for DeepSeek Harness (DSH): one minimal notify() API, 8 channel adapters (telegram/dingtalk/feishu/wxpusher/pushplus/serverchan/bark/webhook), dual trigger (auto session events +..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:THEWOLFWALKER/dsh-notifier"},
-    stars: 64,
+    stars: 65,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120246,7 +120246,7 @@ export const plugins = [
     description: {"en":"OpenMAIC: classrooms, slides, interactive widgets, and Socratic teaching.","zh":"OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:THU-MAIC/dsh-openmaic"},
-    stars: 123,
+    stars: 126,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120310,7 +120310,7 @@ export const plugins = [
     description: {"en":"Bidirectional bridge between Hermes Agent and DeepSeek Harness (DSH). v0.2.4 - single-bundle Cordis plugin replacing the archived hermes-foundation/-oneshot-arbitrate/-dispatch-bridge triad.","zh":"Bidirectional bridge between Hermes Agent and DeepSeek Harness (DSH). v0.2.4 - single-bundle Cordis plugin replacing the archived hermes-foundation/-oneshot-arbitrate/-dispatch-bridge triad."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tianbuyu-wwx/dsh-hermes-link"},
-    stars: 9,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120806,7 +120806,7 @@ export const plugins = [
     description: {"en":"DeepSeek V4 × J-Space capability realization report - benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4 (Flash/Pro).","zh":"DeepSeek V4 × J-Space capability realization report - benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4 (Flash/Pro)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report"},
-    stars: 1016,
+    stars: 1017,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120822,7 +120822,7 @@ export const plugins = [
     description: {"en":"J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) -","zh":"J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) -"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tiger3807861189/J-Space-Cognition-Suite-V3.6"},
-    stars: 2956,
+    stars: 2955,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120838,7 +120838,7 @@ export const plugins = [
     description: {"en":"J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) -","zh":"J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. \\ 哔哩哔哩：Tiger380 (UID 3494375382321675) -"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tiger3807861189/J-Space-Cognition-Suite-V3.7"},
-    stars: 2956,
+    stars: 2955,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120854,7 +120854,7 @@ export const plugins = [
     description: {"en":"为所有非官方（自定义）提供商的模型自动填充推理级别，数据来自 models.dev。 / Automatically fills in reasoning-effort levels for models from unofficial (custom) providers, with data sourced from models.dev.","zh":"为所有非官方（自定义）提供商的模型自动填充推理级别，数据来自 models.dev。 / Automatically fills in reasoning-effort levels for models from unofficial (custom) providers, with data sourced from models.dev."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TikaFlow/dsh-model-reasoning"},
-    stars: 24,
+    stars: 25,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -120902,7 +120902,7 @@ export const plugins = [
     description: {"en":"Interactive multi-agent collaboration, meetings, group chats, and task execution for DeepSeek Harness.","zh":"Interactive multi-agent collaboration, meetings, group chats, and task execution for DeepSeek Harness."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tikzen/dsh-agent-arena"},
-    stars: 8,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121014,7 +121014,7 @@ export const plugins = [
     description: {"en":"DSH plugin bridging DeepSeek Harness agents to Cheat Engine: dynamic debugging, memory scanning, pointer analysis, breakpoints, and game memory hacking via ce tools.","zh":"DSH plugin bridging DeepSeek Harness agents to Cheat Engine: dynamic debugging, memory scanning, pointer analysis, breakpoints, and game memory hacking via ce tools."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TindalosKorone/dsh-cheatengine"},
-    stars: 13,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121030,7 +121030,7 @@ export const plugins = [
     description: {"en":"在 DeepSeek Harness 中叠加 VS Code 风格的本地开发工作台。","zh":"在 DeepSeek Harness 中叠加 VS Code 风格的本地开发工作台。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tingfeng347/dsh-vscode-workbench"},
-    stars: 17,
+    stars: 20,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121046,7 +121046,7 @@ export const plugins = [
     description: {"en":"Your Intelligence, Orchestrated. Every builder. Every team. Every agent. For Everyone.","zh":"Your Intelligence, Orchestrated. Every builder. Every team. Every agent. For Everyone."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tingly-dev/tingly-box"},
-    stars: 381,
+    stars: 382,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121110,7 +121110,7 @@ export const plugins = [
     description: {"en":"A portable memory protocol for AI agents - load it as standing rules; a curation discipline + reference spec + optional cap hook.","zh":"A portable memory protocol for AI agents - load it as standing rules; a curation discipline + reference spec + optional cap hook."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tinqiao-oss/engramory"},
-    stars: 204,
+    stars: 207,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121190,7 +121190,7 @@ export const plugins = [
     description: {"en":"将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶","zh":"将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:titanwings/colleague-skill"},
-    stars: 26516,
+    stars: 26623,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121206,7 +121206,7 @@ export const plugins = [
     description: {"en":"Distilly - Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.","zh":"Distilly - Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:titanwings/distilly"},
-    stars: 26516,
+    stars: 26623,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121222,7 +121222,7 @@ export const plugins = [
     description: {"en":"Scheduled coding runs in fresh agent sessions with auditable history.","zh":"定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:titanwings/dsh-automation"},
-    stars: 103,
+    stars: 102,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121654,7 +121654,7 @@ export const plugins = [
     description: {"en":"Local security audit for AI API relays and LLM proxies: detects prompt injection, model substitution, tool-call rewriting, SSE anomalies, error leakage, and Web3 wallet risks.","zh":"Local security audit for AI API relays and LLM proxies: detects prompt injection, model substitution, tool-call rewriting, SSE anomalies, error leakage, and Web3 wallet risks."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:toby-bridges/api-relay-audit"},
-    stars: 911,
+    stars: 918,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121798,7 +121798,7 @@ export const plugins = [
     description: {"en":"Cyberpunk 2077 / Night City theme for the DeepSeek Harness Web UI - CRT scanlines, Kiroshi lock-on, typewriter SFX, Relic glitch & easter eggs","zh":"Cyberpunk 2077 / Night City theme for the DeepSeek Harness Web UI - CRT scanlines, Kiroshi lock-on, typewriter SFX, Relic glitch & easter eggs"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Tommy00748/dsh-theme-cyberpunk2077"},
-    stars: 38,
+    stars: 40,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121814,7 +121814,7 @@ export const plugins = [
     description: {"en":"官方 DeepSeek Harness（dsh）原生桌面壳：Tauri 2 把官方 WebUI 变成原生桌面窗口，保留会话/工作区/插件/技能。内置 SenseVoice 离线语音输入、插件市场、视觉模型配置；锚定模式解决 DeepSeek 思考模式问题","zh":"官方 DeepSeek Harness（dsh）原生桌面壳：Tauri 2 把官方 WebUI 变成原生桌面窗口，保留会话/工作区/插件/技能。内置 SenseVoice 离线语音输入、插件市场、视觉模型配置；锚定模式解决 DeepSeek 思考模式问题"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TommyFang2077/dsh-easy-desktop"},
-    stars: 6,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121910,7 +121910,7 @@ export const plugins = [
     description: {"en":"An in-app browser pane for DeepSeek Harness - real Chrome over CDP, plus rendered previews of local files, markdown and PDFs.","zh":"An in-app browser pane for DeepSeek Harness - real Chrome over CDP, plus rendered previews of local files, markdown and PDFs."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tonyd2wild/DeepSeek-Harness-Browser"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121926,7 +121926,7 @@ export const plugins = [
     description: {"en":"Zero-config Exa web search provider for DeepSeek Harness (dsh): keyless anonymous MCP fallback (mcp.exa.ai/mcp) + keyed REST path, with a configurable providerId switch.","zh":"Zero-config Exa web search provider for DeepSeek Harness (dsh): keyless anonymous MCP fallback (mcp.exa.ai/mcp) + keyed REST path, with a configurable providerId switch."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TonyDua/dsh-web-search-exa"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -121990,7 +121990,7 @@ export const plugins = [
     description: {"en":"可复用 Agent 小队：每个成员独立配置 provider/model 路由与工具策略，支持串行/并行派单、spawn/fork/chain 上下文模式和 Web 管理面板","zh":"可复用 Agent 小队：每个成员独立配置 provider/model 路由与工具策略，支持串行/并行派单、spawn/fork/chain 上下文模式和 Web 管理面板"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:toolclub/agent_team_gui"},
-    stars: 287,
+    stars: 288,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122006,7 +122006,7 @@ export const plugins = [
     description: {"en":"Persistent multi-model workflow teams for DeepSeek Harness - dynamic lead planning, bounded DAGs, per-agent model/tools, Run Center and Token insights.","zh":"Persistent multi-model workflow teams for DeepSeek Harness - dynamic lead planning, bounded DAGs, per-agent model/tools, Run Center and Token insights."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:toolclub/dsh-agent-team-gui"},
-    stars: 287,
+    stars: 288,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122038,7 +122038,7 @@ export const plugins = [
     description: {"en":"deepseek harness 财务分析插件。从网络公开源查询财报并做分析 dsh-plugin deepseed harness-plugin","zh":"deepseek harness 财务分析插件。从网络公开源查询财报并做分析 dsh-plugin deepseed harness-plugin"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:toplchx/dsh-financial-analysis"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122102,7 +122102,7 @@ export const plugins = [
     description: {"en":"Cross-preset session migration for DeepSeek Harness: fixed-schema handoff summaries instead of bypassing the preset lock. 26-run benchmark + A/B evidence. 跨 preset 会话迁移插件（固定 schema 交接摘要），含实测 benchmark 与 A/B 对照。","zh":"Cross-preset session migration for DeepSeek Harness: fixed-schema handoff summaries instead of bypassing the preset lock. 26-run benchmark + A/B evidence. 跨 preset 会话迁移插件（固定 schema 交接摘要），含实测 benchmark 与 A/B 对照。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Totoro-qaq/dsh-plugin-bridge"},
-    stars: 167,
+    stars: 168,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122118,7 +122118,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness plugin that allows you to change the reasoning effort of custom models in WebUI.","zh":"A DeepSeek Harness plugin that allows you to change the reasoning effort of custom models in WebUI."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:toukaiteio/dsh-effort-tweak"},
-    stars: 4,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122246,7 +122246,7 @@ export const plugins = [
     description: {"en":"轴伊 Joi 双衣装主题 for DeepSeek Harness - unofficial, non-commercial fan theme plugin 🍊","zh":"轴伊 Joi 双衣装主题 for DeepSeek Harness - unofficial, non-commercial fan theme plugin 🍊"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tpmoonchefryan/dsh-joi-channel-theme"},
-    stars: 21,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122262,7 +122262,7 @@ export const plugins = [
     description: {"en":"Appearance customization plugin for DeepSeek Harness: theme color palette, background image, opacity/blur, glass effect","zh":"Appearance customization plugin for DeepSeek Harness: theme color palette, background image, opacity/blur, glass effect"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tqsy114514/dsh-ui-appearance"},
-    stars: 29,
+    stars: 32,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122870,7 +122870,7 @@ export const plugins = [
     description: {"en":"A runnable TypeScript tutorial that builds a minimal DeepSeek-style agent harness from scratch.","zh":"A runnable TypeScript tutorial that builds a minimal DeepSeek-style agent harness from scratch."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tsrigo/dsh-from-scratch"},
-    stars: 14,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -122902,7 +122902,7 @@ export const plugins = [
     description: {"en":"Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams-self-contained HTML with motion and crisp export.","zh":"Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams-self-contained HTML with motion and crisp export."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tt-a1i/archify"},
-    stars: 95515,
+    stars: 97327,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -123270,7 +123270,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 技能管理器：扫描/删除/撤回/检查更新技能，支持 GitHub/Gitee Release（host + client 一体包）","zh":"DeepSeek Harness 技能管理器：扫描/删除/撤回/检查更新技能，支持 GitHub/Gitee Release（host + client 一体包）"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tuogusa/dsh-skill-manager"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -123494,7 +123494,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness plugin for real-time token tracking and highly accurate session cost estimation, featuring dynamic peak/off-peak pricing support.","zh":"A DeepSeek Harness plugin for real-time token tracking and highly accurate session cost estimation, featuring dynamic peak/off-peak pricing support."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:TwotwoPiggy/dsh-balance"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -123574,7 +123574,7 @@ export const plugins = [
     description: {"en":"Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness - the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim....","zh":"Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness - the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim...."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:tyan66666/billion-context-dsh"},
-    stars: 167,
+    stars: 170,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -136678,7 +136678,7 @@ export const plugins = [
     description: {"en":"伦敦市","zh":"伦敦市"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:uckkk/dsh-london-city"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -144838,7 +144838,7 @@ export const plugins = [
     description: {"en":"会话档案 / Session Archive for DeepSeek Harness：按工作区浏览和全文搜索归档聊天，原生只读预览消息、工具活动与已存储图片，管理标签备注、历史版本恢复为副本与 ZIP 备份恢复；提供带保护快照的可撤销回收站、空间分账、保留策略及来源与分支。所有数据留在本机。 Session Archive: full-text search, read-only preview, History...","zh":"会话档案 / Session Archive for DeepSeek Harness：按工作区浏览和全文搜索归档聊天，原生只读预览消息、工具活动与已存储图片，管理标签备注、历史版本恢复为副本与 ZIP 备份恢复；提供带保护快照的可撤销回收站、空间分账、保留策略及来源与分支。所有数据留在本机。 Session Archive: full-text search, read-only preview, History..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Ultronen/dsh-archived-chats"},
-    stars: 28,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -144950,7 +144950,7 @@ export const plugins = [
     description: {"en":"DeepSec - AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in real time. Spear automates authorized penetration testing with...","zh":"DeepSec - AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in real time. Spear automates authorized penetration testing with..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Unclecheng-li/DeepSec"},
-    stars: 513,
+    stars: 518,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -144982,7 +144982,7 @@ export const plugins = [
     description: {"en":"Thinking-chain UI translation for DeepSeek Harness: 8 target languages, local Ollama model primary with in-panel download, Google/Bing fallback","zh":"Thinking-chain UI translation for DeepSeek Harness: 8 target languages, local Ollama model primary with in-panel download, Google/Bing fallback"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:UncleK/dsh-think-translate"},
-    stars: 80,
+    stars: 85,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145126,7 +145126,7 @@ export const plugins = [
     description: {"en":"量子计算最佳实践 Quantum Algorithms Best Practices","zh":"量子计算最佳实践 Quantum Algorithms Best Practices"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:unitarylab/quantum-practices"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145286,7 +145286,7 @@ export const plugins = [
     description: {"en":"X-ray for DeepSeek Harness plugins: declared capabilities vs actual behavior. Registry + static scanner + badges.","zh":"X-ray for DeepSeek Harness plugins: declared capabilities vs actual behavior. Registry + static scanner + badges."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:unStone/dsh-xray"},
-    stars: 7,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145350,7 +145350,7 @@ export const plugins = [
     description: {"en":"Collection of skills for Upstash","zh":"Collection of skills for Upstash"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:upstash/skills"},
-    stars: 34,
+    stars: 37,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145414,7 +145414,7 @@ export const plugins = [
     description: {"en":"A DSH Web plugin that keeps a real-time outline in sync with the conversation.","zh":"为 DSH Web 实时同步对话大纲的插件。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"npx @deepseek-ai/dsh plugin --profile web add dsh-outline"},
-    stars: 19,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145494,7 +145494,7 @@ export const plugins = [
     description: {"en":"Evidence-grounded bilingual academic research plugin for DeepSeek Harness and OnPeople","zh":"Evidence-grounded bilingual academic research plugin for DeepSeek Harness and OnPeople"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:userInner/dsh-academic-research"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145606,7 +145606,7 @@ export const plugins = [
     description: {"en":"SSH remote-execution plugin for DeepSeek Harness: ProxyJump chain, SFTP filesystem, subprocess and PTY over ssh2","zh":"SSH remote-execution plugin for DeepSeek Harness: ProxyJump chain, SFTP filesystem, subprocess and PTY over ssh2"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:uynajgi/dsh-ssh"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145670,7 +145670,7 @@ export const plugins = [
     description: {"en":"使用DeepSeekHarness进行学习和笔记","zh":"使用DeepSeekHarness进行学习和笔记"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:V-Reason/dsh-study-buddy"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -145702,7 +145702,7 @@ export const plugins = [
     description: {"en":"Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers - OAuth login in the web UI, no API keys","zh":"Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers - OAuth login in the web UI, no API keys"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:V1ki/dsh-plugin-subscriptions"},
-    stars: 592,
+    stars: 619,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146054,7 +146054,7 @@ export const plugins = [
     description: {"en":"A DeepSeek Harness (dsh) dynamic plugin that cuts token cost without cutting model intelligence","zh":"A DeepSeek Harness (dsh) dynamic plugin that cuts token cost without cutting model intelligence"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vibe-any/dsh-plugin-save-token"},
-    stars: 80,
+    stars: 85,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146070,7 +146070,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.","zh":"DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vibeinging/deepseek-harness-desktop-app"},
-    stars: 492,
+    stars: 494,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146102,7 +146102,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.","zh":"DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vibeinging/dsh-desktop"},
-    stars: 492,
+    stars: 494,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146182,7 +146182,7 @@ export const plugins = [
     description: {"en":"Local-first AI workbench for DSH Plugins, combining Agent sessions, project files, data analysis, web research, MCP, and Office artifacts in an Electron desktop app.","zh":"Local-first AI workbench for DSH Plugins, combining Agent sessions, project files, data analysis, web research, MCP, and Office artifacts in an Electron desktop app."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vibeinging/dsh-work"},
-    stars: 492,
+    stars: 494,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146326,7 +146326,7 @@ export const plugins = [
     description: {"en":"Design taste your agent can be held to - a design-system skill plus designaudit, which measures the rendered page (type scale, contrast, spacing grid, palette drift) instead of trusting it looked right.","zh":"Design taste your agent can be held to - a design-system skill plus designaudit, which measures the rendered page (type scale, contrast, spacing grid, palette drift) instead of trusting it looked right."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Viger1/dsh-design"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146758,7 +146758,7 @@ export const plugins = [
     description: {"en":"Deepseek Harness for VS Code","zh":"Deepseek Harness for VS Code"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Vithrive/Deepseek-Harness-for-VS-Code"},
-    stars: 61,
+    stars: 63,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146806,7 +146806,7 @@ export const plugins = [
     description: {"en":"给 HR / 猎头的 AI 招聘工作流：岗位标准梳理、Boss直聘 + 猎聘双通道寻源初筛、市场人才盘点、简历评估、约面试、候选人台账与日报。可装成 Claude Code 插件或 DeepSeek Harness (dsh) 插件--后者自带可直接上手操作的「招聘浏览器」面板；也能配合任意读 AGENTS.md 的 AI 编程助手使用。","zh":"给 HR / 猎头的 AI 招聘工作流：岗位标准梳理、Boss直聘 + 猎聘双通道寻源初筛、市场人才盘点、简历评估、约面试、候选人台账与日报。可装成 Claude Code 插件或 DeepSeek Harness (dsh) 插件--后者自带可直接上手操作的「招聘浏览器」面板；也能配合任意读 AGENTS.md 的 AI 编程助手使用。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Viy1204/recruiting-copilot"},
-    stars: 113,
+    stars: 126,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146822,7 +146822,7 @@ export const plugins = [
     description: {"en":"Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста. 38 паттернов, 39 regex-маркеров с реестром доказательств, слепые парные прогоны, файловый слой снятия C2PA/EXIF/XMP. Пакет на PyPI...","zh":"Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста. 38 паттернов, 39 regex-маркеров с реестром доказательств, слепые парные прогоны, файловый слой снятия C2PA/EXIF/XMP. Пакет на PyPI..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Vladimir-Human/humanizer-ru"},
-    stars: 147,
+    stars: 151,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146838,7 +146838,7 @@ export const plugins = [
     description: {"en":"Девять российских маркетплейсов и китайский Taobao как MCP-серверы: Wildberries, Ozon, Яндекс Маркет, Детский мир, Авито, Мегамаркет, Lamoda, DNS, Ситилинк. Плюс сравнение цен по всем сразу. Только чтение, ключи не...","zh":"Девять российских маркетплейсов и китайский Taobao как MCP-серверы: Wildberries, Ozon, Яндекс Маркет, Детский мир, Авито, Мегамаркет, Lamoda, DNS, Ситилинк. Плюс сравнение цен по всем сразу. Только чтение, ключи не..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Vladimir-Human/ru-marketplace-mcp"},
-    stars: 187,
+    stars: 191,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146950,7 +146950,7 @@ export const plugins = [
     description: {"en":"DSH 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件，0 patch）+ make-dsh-plugin skill 官方插件开发引导","zh":"DSH 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件，0 patch）+ make-dsh-plugin skill 官方插件开发引导"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vlln/plugin-registry"},
-    stars: 60,
+    stars: 59,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146966,7 +146966,7 @@ export const plugins = [
     description: {"en":"Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.","zh":"桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。"},
     category: "fun-experiments",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vlln/whale-girl"},
-    stars: 407,
+    stars: 412,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -146982,7 +146982,7 @@ export const plugins = [
     description: {"en":"Let agents search, read, and cite your local Zotero library: find papers, browse notes and annotations, pull evidence by question, open the origin document, generate citations.","zh":"Let agents search, read, and cite your local Zotero library: find papers, browse notes and annotations, pull evidence by question, open the origin document, generate citations."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Vncntvx/dsh-zotero"},
-    stars: 71,
+    stars: 78,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147062,7 +147062,7 @@ export const plugins = [
     description: {"en":"The fastest way to put Volcengine Ark in your terminal and your AI agent - go from prompt to generated media, multimodal answer, or deployed endpoint in a single command, no API glue code.","zh":"The fastest way to put Volcengine Ark in your terminal and your AI agent - go from prompt to generated media, multimodal answer, or deployed endpoint in a single command, no API glue code."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:volcengine/ark-cli"},
-    stars: 149,
+    stars: 151,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147078,7 +147078,7 @@ export const plugins = [
     description: {"en":"Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.","zh":"Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:volcengine/OpenViking"},
-    stars: 41999,
+    stars: 42356,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147142,7 +147142,7 @@ export const plugins = [
     description: {"en":"Open-origin self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions...","zh":"Open-origin self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vostride/agent-qa"},
-    stars: 853,
+    stars: 858,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147158,7 +147158,7 @@ export const plugins = [
     description: {"en":"An Emacs client for DeepSeek Harness","zh":"An Emacs client for DeepSeek Harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vritser/dsh-emacs"},
-    stars: 49,
+    stars: 51,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147174,7 +147174,7 @@ export const plugins = [
     description: {"en":"Search your past AI coding sessions - Claude Code, Codex, Cursor and 17 more. Indexes the session history they already wrote to disk, including months from before you installed it, and recalls it in any of them. No...","zh":"Search your past AI coding sessions - Claude Code, Codex, Cursor and 17 more. Indexes the session history they already wrote to disk, including months from before you installed it, and recalls it in any of them. No..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:vshulcz/deja-vu"},
-    stars: 1508,
+    stars: 1585,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147526,7 +147526,7 @@ export const plugins = [
     description: {"en":"A curated, bilingual list of verified plugins, tools, design workflows, and learning resources for DeepSeek Harness (DSH).","zh":"A curated, bilingual list of verified plugins, tools, design workflows, and learning resources for DeepSeek Harness (DSH)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:walkinglabs/awesome-deepseek-harness-plugins"},
-    stars: 54,
+    stars: 56,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147542,7 +147542,7 @@ export const plugins = [
     description: {"en":"Harness engineering beginner tutorial, from 0 to 1","zh":"Harness engineering beginner tutorial, from 0 to 1"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:walkinglabs/learn-harness-engineering"},
-    stars: 24247,
+    stars: 25226,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147622,7 +147622,7 @@ export const plugins = [
     description: {"en":"The ultimate 2-way bridge between OpenAI Codex and DSH: bidirectional chat sync, live Skills mount & auto MCP mirroring.","zh":"The ultimate 2-way bridge between OpenAI Codex and DSH: bidirectional chat sync, live Skills mount & auto MCP mirroring."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Walvez/dsh-codex-sync"},
-    stars: 30,
+    stars: 31,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147782,7 +147782,7 @@ export const plugins = [
     description: {"en":"让 DeepSeek Harness（DSH）住进 QQ：基于腾讯官方 Bot API，支持私聊白名单、持久会话、模型切换与远程权限审批。","zh":"让 DeepSeek Harness（DSH）住进 QQ：基于腾讯官方 Bot API，支持私聊白名单、持久会话、模型切换与远程权限审批。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wang-22-code/dsh-qqbot-bridge"},
-    stars: 15,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -147798,7 +147798,7 @@ export const plugins = [
     description: {"en":"dsh 插件，可以支持图像上传，图像识别。将ds的使用体验变为多模态","zh":"dsh 插件，可以支持图像上传，图像识别。将ds的使用体验变为多模态"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wang-bool/visual-review"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -148598,7 +148598,7 @@ export const plugins = [
     description: {"en":"GEO生成式引擎优化智能体 - 7类关键词+七层架构+EE-A-T权威框架+8维度降痕改写","zh":"GEO生成式引擎优化智能体 - 7类关键词+七层架构+EE-A-T权威框架+8维度降痕改写"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wangzhuo-coding/geo-content-optimizer"},
-    stars: 7,
+    stars: 8,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -148918,7 +148918,7 @@ export const plugins = [
     description: {"en":"A Cordis plugin for DeepSeek Harness that suspends the entire conversation state and resumes it after restart.","zh":"A Cordis plugin for DeepSeek Harness that suspends the entire conversation state and resumes it after restart."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:watericetangcw/dsh-session-pause"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149078,7 +149078,7 @@ export const plugins = [
     description: {"en":"Stock analysis extension for Pi Agent - lightweight market data tools + strategy skills","zh":"Stock analysis extension for Pi Agent - lightweight market data tools + strategy skills"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Weaxs/stock-analysis-plugin"},
-    stars: 65,
+    stars: 97,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149158,7 +149158,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA","zh":"DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:webkubor/dsh-bloom-theme"},
-    stars: 246,
+    stars: 291,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149286,7 +149286,7 @@ export const plugins = [
     description: {"en":"Auto-resume for interrupted agent sessions: an ordered rule table routes failures by type (rate limit, quota, auth, context overflow, crashed orphan) into backoff retry, model switch, resume after compaction, or...","zh":"自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由到退避重试、换模型、压缩上下文后继续或止损通知。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:weibaohui/dsh-continue"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149350,7 +149350,7 @@ export const plugins = [
     description: {"en":"Automatic retrospective after agent sessions: distills useful experience into reusable skills in the skill library, with approval mode and archive/restore governance that never deletes directly.","zh":"自动复盘：会话收尾后自动把有价值经验蒸馏成可复用技能存入技能库，支持审批模式与归档/恢复治理，不直接删除技能。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:weibaohui/hermes-loop"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149430,7 +149430,7 @@ export const plugins = [
     description: {"en":"Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生态。","zh":"Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生态。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:weijiafu14/pi2dsh"},
-    stars: 219,
+    stars: 221,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149526,7 +149526,7 @@ export const plugins = [
     description: {"en":"Use this cross-platform skill in Codex or Claude Code to establish repository-local continuity memory so a future agent can recover objective, status, decisions, validation, risks, and next actions without relying on...","zh":"Use this cross-platform skill in Codex or Claude Code to establish repository-local continuity memory so a future agent can recover objective, status, decisions, validation, risks, and next actions without relying on..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WeirdSky924/agent-handoff-skill"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149574,7 +149574,7 @@ export const plugins = [
     description: {"en":"Hand your long DSH session over to a clean one: /handoff summarizes the conversation with an LLM, creates a new session+agent in the same workspace, injects the handoff document, and auto-opens it.","zh":"Hand your long DSH session over to a clean one: /handoff summarizes the conversation with an LLM, creates a new session+agent in the same workspace, injects the handoff document, and auto-opens it."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WeiYe6/dsh-session-handoff"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149734,7 +149734,7 @@ export const plugins = [
     description: {"en":"100% AI-native product delivery workflow plugin for DeepSeek Harness: full product-to-release pipeline (research → PRD → OpenSpec → parallel multi-agent → review loops → tests → release audit) with loop closure....","zh":"100% AI-native product delivery workflow plugin for DeepSeek Harness: full product-to-release pipeline (research → PRD → OpenSpec → parallel multi-agent → review loops → tests → release audit) with loop closure...."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wellorbetter/dsh-product-delivery-workflow"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149798,7 +149798,7 @@ export const plugins = [
     description: {"en":"DSH 完整移植版 DietrichGebert/ponytail - 懒惰 senior 模式，hook注入","zh":"DSH 完整移植版 DietrichGebert/ponytail - 懒惰 senior 模式，hook注入"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Wenaixi/dsh-ponytail"},
-    stars: 42,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149814,7 +149814,7 @@ export const plugins = [
     description: {"en":"DSH port of obra/superpowers - 完整移植、中文化、DSH 原生","zh":"DSH port of obra/superpowers - 完整移植、中文化、DSH 原生"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Wenaixi/dsh-superpower"},
-    stars: 29,
+    stars: 30,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -149830,7 +149830,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 多通道远程访问插件 \\ 手机扫码秒连本地 AI、微信/QQ 直接对话、流式输出、按钮交互、多工作区切换、会话持久化 \\ 无需公网服务器，支持局域网直连、Cloudflare 隧道、自建隧道 \\ QQ Bot + 微信 ClawBot","zh":"DeepSeek Harness 多通道远程访问插件 \\ 手机扫码秒连本地 AI、微信/QQ 直接对话、流式输出、按钮交互、多工作区切换、会话持久化 \\ 无需公网服务器，支持局域网直连、Cloudflare 隧道、自建隧道 \\ QQ Bot + 微信 ClawBot"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wenbin-wb/dsh-bridge"},
-    stars: 256,
+    stars: 262,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150118,7 +150118,7 @@ export const plugins = [
     description: {"en":"Native WeShop Cordis plugin for DeepSeek Harness. Allow you to use infinite canvas with infinite creative skills.","zh":"Native WeShop Cordis plugin for DeepSeek Harness. Allow you to use infinite canvas with infinite creative skills."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:weshopai/weshop-dsh-plugin"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150150,7 +150150,7 @@ export const plugins = [
     description: {"en":"深法：DeepSeek Harness 本地法律工作台插件，提供法律模式原生对话、案件看板、日程期限、可调分栏与多套法律主题","zh":"深法：DeepSeek Harness 本地法律工作台插件，提供法律模式原生对话、案件看板、日程期限、可调分栏与多套法律主题"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wesky820/dsh-law"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150166,7 +150166,7 @@ export const plugins = [
     description: {"en":"DeepSeekHarness桌面端打包","zh":"DeepSeekHarness桌面端打包"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wess09/deepseekharnessdesktop"},
-    stars: 132,
+    stars: 135,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150230,7 +150230,7 @@ export const plugins = [
     description: {"en":"Awesome dsh plugin list - automated DeepSeek Harness plugin directory. Daily GitHub Actions crawl of topic:dsh-plugin / topic:deepseek-harness, bilingual README + machine-readable JSON/CSV","zh":"Awesome dsh plugin list - automated DeepSeek Harness plugin directory. Daily GitHub Actions crawl of topic:dsh-plugin / topic:deepseek-harness, bilingual README + machine-readable JSON/CSV"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wgd753/awesome-dsh-plugin"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150470,7 +150470,7 @@ export const plugins = [
     description: {"en":"OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。","zh":"OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:whiteguo233/dsh-openbiliclaw"},
-    stars: 74,
+    stars: 75,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150486,7 +150486,7 @@ export const plugins = [
     description: {"en":"本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） \\| Local-first open-origin cross-platform AI content discovery agent: understands you, then proactively...","zh":"本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） \\| Local-first open-origin cross-platform AI content discovery agent: understands you, then proactively..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:whiteguo233/openbiliclaw"},
-    stars: 3738,
+    stars: 3777,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150550,7 +150550,7 @@ export const plugins = [
     description: {"en":"Read-only Git Graph view for the DeepSeek Harness web interface. Inspect commit topology, branches, tags, remotes, HEAD, and working-tree status in a dedicated view beside Chat and Trajectory.","zh":"Read-only Git Graph view for the DeepSeek Harness web interface. Inspect commit topology, branches, tags, remotes, HEAD, and working-tree status in a dedicated view beside Chat and Trajectory."},
     category: "notifications-integrations",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WhitePlusMS/dsh-git-graph"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -150742,7 +150742,7 @@ export const plugins = [
     description: {"en":"The living DeepSeek Harness plugin directory - refreshed hourly, compat-tested daily, with an in-app plugin store and scaffolder. DSH 插件活目录：每小时刷新，每日兼容实测，内置插件商店与脚手架。","zh":"The living DeepSeek Harness plugin directory - refreshed hourly, compat-tested daily, with an in-app plugin store and scaffolder. DSH 插件活目录：每小时刷新，每日兼容实测，内置插件商店与脚手架。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:whyihaveyou/dsh-suite"},
-    stars: 65,
+    stars: 68,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -151158,7 +151158,7 @@ export const plugins = [
     description: {"en":"像素化的 DeepSeek 小鲸鱼，浮在 dsh web 右下角，跟着你的 Harness 会话状态做反应。A DSH plugin: the DeepSeek whale as a pixel-animated desktop pet.","zh":"像素化的 DeepSeek 小鲸鱼，浮在 dsh web 右下角，跟着你的 Harness 会话状态做反应。A DSH plugin: the DeepSeek whale as a pixel-animated desktop pet."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Win-Hao/seek-on-dsh"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -151606,7 +151606,7 @@ export const plugins = [
     description: {"en":"dsh-idea 是一个面向外部机会、市场变化和真实需求发现的 DeepSeek Harness 插件包。 dsh-idea is a DeepSeek Harness bundle for evidence-backed external opportunity discovery and product discovery.","zh":"dsh-idea 是一个面向外部机会、市场变化和真实需求发现的 DeepSeek Harness 插件包。 dsh-idea is a DeepSeek Harness bundle for evidence-backed external opportunity discovery and product discovery."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:winyh/dsh-idea"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -151670,7 +151670,7 @@ export const plugins = [
     description: {"en":"A voice-input plugin for DeepSeek Harness that supports multiple ASR backends and polishing through dsh's own LLM route.","zh":"A voice-input plugin for DeepSeek Harness that supports multiple ASR backends and polishing through dsh's own LLM route."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WizisCool/dsh-ears"},
-    stars: 30,
+    stars: 31,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -151974,7 +151974,7 @@ export const plugins = [
     description: {"en":"Git worktree Session Targets for DeepSeek Harness with isolated task sessions, reversible Local Preview, human-confirmed delivery, recovery, and same-session iteration.","zh":"Git worktree Session Targets for DeepSeek Harness with isolated task sessions, reversible Local Preview, human-confirmed delivery, recovery, and same-session iteration."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wloops/dsh-git-worktree"},
-    stars: 23,
+    stars: 22,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152038,7 +152038,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for insert custom prompt","zh":"DeepSeek Harness plugin for insert custom prompt"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WM-CODER/custom-first-control-prompt"},
-    stars: 79,
+    stars: 80,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152598,7 +152598,7 @@ export const plugins = [
     description: {"en":"A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.","zh":"A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:worldwonderer/oh-story-dsh"},
-    stars: 726,
+    stars: 768,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152678,7 +152678,7 @@ export const plugins = [
     description: {"en":"Help humans organize tasks and let agents collaborate: durable Workspaces, Channels, Tasks, and managed Agent members for DeepSeek Harness","zh":"Help humans organize tasks and let agents collaborate: durable Workspaces, Channels, Tasks, and managed Agent members for DeepSeek Harness"},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wowyuarm/dsh-agent-team"},
-    stars: 92,
+    stars: 101,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152726,7 +152726,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:woyeshishen/dsh-vision-plugin"},
-    stars: 3,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152774,7 +152774,7 @@ export const plugins = [
     description: {"en":"Shared real browser plugin for DeepSeek Harness","zh":"Shared real browser plugin for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wqty123/dsh-browser"},
-    stars: 180,
+    stars: 193,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152902,7 +152902,7 @@ export const plugins = [
     description: {"en":"Run DeepSeek Harness on Android - a layered runtime (Debian + Node.js + DSH) inside a rootless PRoot sandbox, with an embedded WebView UI, file manager, persistent terminal, and one-tap runtime/DSH updates. Install...","zh":"Run DeepSeek Harness on Android - a layered runtime (Debian + Node.js + DSH) inside a rootless PRoot sandbox, with an embedded WebView UI, file manager, persistent terminal, and one-tap runtime/DSH updates. Install..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WSK-build/DSHBox"},
-    stars: 614,
+    stars: 703,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152918,7 +152918,7 @@ export const plugins = [
     description: {"en":"Search archived conversations, restore sessions, and safely manage DeepSeek Harness chat history.","zh":"Search archived conversations, restore sessions, and safely manage DeepSeek Harness chat history."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WSL043/dsh-chat-manager"},
-    stars: 44,
+    stars: 45,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152934,7 +152934,7 @@ export const plugins = [
     description: {"en":"在 DeepSeek Harness 中直接使用 ChatGPT/Codex 订阅，无需 OpenAI API Key 或 Codex CLI，支持 OAuth 登录、订阅搜索与额度显示 \\ ChatGPT/Codex subscription plugin for DSH","zh":"在 DeepSeek Harness 中直接使用 ChatGPT/Codex 订阅，无需 OpenAI API Key 或 Codex CLI，支持 OAuth 登录、订阅搜索与额度显示 \\ ChatGPT/Codex subscription plugin for DSH"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WSL043/dsh-codex-subscription"},
-    stars: 432,
+    stars: 497,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -152998,7 +152998,7 @@ export const plugins = [
     description: {"en":"Cross-platform one-folder DSH distribution with bundled runtime, plugin market, and portable data","zh":"Cross-platform one-folder DSH distribution with bundled runtime, plugin market, and portable data"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WSL043/DSH-Portable"},
-    stars: 97,
+    stars: 101,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -153814,7 +153814,7 @@ export const plugins = [
     description: {"en":"在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。","zh":"在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wxkingstar/SpecFusion"},
-    stars: 77,
+    stars: 80,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -153926,7 +153926,7 @@ export const plugins = [
     description: {"en":"是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页端。顶栏、侧边栏、输入框、统计行、轨迹视图都成了磨砂玻璃片。玻璃模糊度、磨砂度、背景（流体或自定义壁纸，壁纸还能单独调模糊和磨砂）全都能在设置卡片里自由调节。关掉开关就回到原生界面，不改 DSH 任何一行源码。","zh":"是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页端。顶栏、侧边栏、输入框、统计行、轨迹视图都成了磨砂玻璃片。玻璃模糊度、磨砂度、背景（流体或自定义壁纸，壁纸还能单独调模糊和磨砂）全都能在设置卡片里自由调节。关掉开关就回到原生界面，不改 DSH 任何一行源码。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:WYH66666666/DSH-Transparent-UI-Plugin"},
-    stars: 436,
+    stars: 439,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -153990,7 +153990,7 @@ export const plugins = [
     description: {"en":"Fail-closed Feishu (Lark) channel bridge for DeepSeek Harness (dsh) - chat with a bot, get agent turns back. Opt-in human-in-the-loop bash approval (Allow/Deny cards, fail-closed timeout), one-message /pair...","zh":"Fail-closed Feishu (Lark) channel bridge for DeepSeek Harness (dsh) - chat with a bot, get agent turns back. Opt-in human-in-the-loop bash approval (Allow/Deny cards, fail-closed timeout), one-message /pair..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:wz-heng/dsh-feishu-bridge"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -154230,7 +154230,7 @@ export const plugins = [
     description: {"en":"Writing engine for DeepSeek Harness: long-form web-novel orchestration with a separate DeepSeek key, lore management, semantic retrieval, and a corpus library.","zh":"Writing engine for DeepSeek Harness: long-form web-novel orchestration with a separate DeepSeek key, lore management, semantic retrieval, and a corpus library."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:x2802490130-prog/dsh-tool-writing"},
-    stars: 11,
+    stars: 12,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -154326,7 +154326,7 @@ export const plugins = [
     description: {"en":"DSH plugin: semantic UI sound effects powered by uisfx dsh 语义化音效插件：任务开始/成功/失败、按钮反馈，设置页即时试听，12 种音色包，支持其他插件调用。","zh":"DSH plugin: semantic UI sound effects powered by uisfx dsh 语义化音效插件：任务开始/成功/失败、按钮反馈，设置页即时试听，12 种音色包，支持其他插件调用。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:XanthanL/dsh-plugin-uisfx"},
-    stars: 5,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -154390,7 +154390,7 @@ export const plugins = [
     description: {"en":"为 DeepSeek Harness 增加远程访问能力，并通过密码和 OTP 进行安全加固。 Adds secure remote access to DeepSeek Harness with password auth and TOTP two-factor authentication (2FA).","zh":"为 DeepSeek Harness 增加远程访问能力，并通过密码和 OTP 进行安全加固。 Adds secure remote access to DeepSeek Harness with password auth and TOTP two-factor authentication (2FA)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xbzbing/dsh-auth-gateway"},
-    stars: 22,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -154582,7 +154582,7 @@ export const plugins = [
     description: {"en":"Remote access for DeepSeek Harness: account/password auth + MFA (TOTP) login gate, signed session cookies, role-based access, in-browser directory picker, and a Settings page for account management.","zh":"Remote access for DeepSeek Harness: account/password auth + MFA (TOTP) login gate, signed session cookies, role-based access, in-browser directory picker, and a Settings page for account management."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xgone/dsh-remote"},
-    stars: 45,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -154790,7 +154790,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) backup & restore plugin - export, import, migrate and sync your complete DSH configuration, plugins, MCP servers, skills and workspace. One-click migration to another machine.","zh":"DeepSeek Harness (DSH) backup & restore plugin - export, import, migrate and sync your complete DSH configuration, plugins, MCP servers, skills and workspace. One-click migration to another machine."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiajiajun516/dsh-config-manager"},
-    stars: 326,
+    stars: 359,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -155014,7 +155014,7 @@ export const plugins = [
     description: {"en":"Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)","zh":"Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaobright/dsh-anchored-standard"},
-    stars: 3718,
+    stars: 3714,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -155062,7 +155062,7 @@ export const plugins = [
     description: {"en":"k8e.sh - OpenSource Agentic AI Sandbox Matrix","zh":"k8e.sh - OpenSource Agentic AI Sandbox Matrix"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaods/k8e"},
-    stars: 515,
+    stars: 516,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -155238,7 +155238,7 @@ export const plugins = [
     description: {"en":"Magic Context - community port to DeepSeek Harness (DSH). Shared SQLite memory across harnesses, harness='dsh' row isolation.","zh":"Magic Context - community port to DeepSeek Harness (DSH). Shared SQLite memory across harnesses, harness='dsh' row isolation."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaohj233/dsh-magic-context"},
-    stars: 7,
+    stars: 6,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -156006,7 +156006,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web GUI 的高峰时段指示灯。在会话头部右上角（原生 conversation.session.header.utilities 工具位）显示一个融入界面的小胶囊，实时告诉你当前北京时间是否处于 DeepSeek API 的高峰时段，带秒级时钟、下一转折倒计时和价格提示。","zh":"DeepSeek Harness Web GUI 的高峰时段指示灯。在会话头部右上角（原生 conversation.session.header.utilities 工具位）显示一个融入界面的小胶囊，实时告诉你当前北京时间是否处于 DeepSeek API 的高峰时段，带秒级时钟、下一转折倒计时和价格提示。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaoyi-xx/dsh-peak-status"},
-    stars: 1,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -156118,7 +156118,7 @@ export const plugins = [
     description: {"en":"One command backs up & restores all of /.dsh for DeepSeek Harness: /backup, scheduled auto-backup, upgrade snapshots, session-log doctor & repair, out-of-process rescue console, credential redaction, GitHub sync....","zh":"One command backs up & restores all of /.dsh for DeepSeek Harness: /backup, scheduled auto-backup, upgrade snapshots, session-log doctor & repair, out-of-process rescue console, credential redaction, GitHub sync...."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaoyuyu6420/dsh-backup"},
-    stars: 40,
+    stars: 44,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -156134,7 +156134,7 @@ export const plugins = [
     description: {"en":"API Key rotation pool for DeepSeek Harness: multi-key round-robin, failover on 401/403/429, cooldown & recovery, Web UI management panel","zh":"API Key rotation pool for DeepSeek Harness: multi-key round-robin, failover on 401/403/429, cooldown & recovery, Web UI management panel"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiaozhe7772222/dsh-api-key-pool"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -156534,7 +156534,7 @@ export const plugins = [
     description: {"en":"Evidence-first deep reading for AI agents - trace claims, evidence, confidence and knowledge maps across articles, books and PDFs.","zh":"Evidence-first deep reading for AI agents - trace claims, evidence, confidence and knowledge maps across articles, books and PDFs."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xiehuan123/dsh-deepread"},
-    stars: 69,
+    stars: 71,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -156646,7 +156646,7 @@ export const plugins = [
     description: {"en":"DSH plugin: edit the system prompt (deployment persona) from the Settings page, with live preview.","zh":"DSH plugin: edit the system prompt (deployment persona) from the Settings page, with live preview."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Xilin3/dsh-prompt-persona"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157670,7 +157670,7 @@ export const plugins = [
     description: {"en":"使用 DeepSeek 官方多模态视觉模型让你的 Agent 不再眼瞎（支持 DSH、Zed、OpenCode、Codex、Claude Code、Cursor、Claude Desktop）","zh":"使用 DeepSeek 官方多模态视觉模型让你的 Agent 不再眼瞎（支持 DSH、Zed、OpenCode、Codex、Claude Code、Cursor、Claude Desktop）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xlight/deepseek-visionary"},
-    stars: 16,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157734,7 +157734,7 @@ export const plugins = [
     description: {"en":"通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect IM bots to DeepSeek Harness via QR code or credentials (9 channels).","zh":"通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect IM bots to DeepSeek Harness via QR code or credentials (9 channels)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xmanrui/dsh-im"},
-    stars: 3489,
+    stars: 3671,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157782,7 +157782,7 @@ export const plugins = [
     description: {"en":"A third-party TUI mode for DeepSeek Harness (dsh), built on a vendored fork of pi-tui","zh":"A third-party TUI mode for DeepSeek Harness (dsh), built on a vendored fork of pi-tui"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:XMoon/dsh-pi-tui"},
-    stars: 21,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157814,7 +157814,7 @@ export const plugins = [
     description: {"en":"Dynamic model routing for DSH subagents, with continuable spawn sessions and one-shot fork support.","zh":"Dynamic model routing for DSH subagents, with continuable spawn sessions and one-shot fork support."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:XMoon/dsh-subagent-router"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157830,7 +157830,7 @@ export const plugins = [
     description: {"en":"DSH 论文写作守卫（去 AI 味 / AI 痕迹检测与修改残留检查）- DeepSeek Harness academic writing guard: detects AI-writing style, revision residue & defensive writing in manuscripts; humanize guidance included. writingaudit + writingrules...","zh":"DSH 论文写作守卫（去 AI 味 / AI 痕迹检测与修改残留检查）- DeepSeek Harness academic writing guard: detects AI-writing style, revision residue & defensive writing in manuscripts; humanize guidance included. writingaudit + writingrules..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xmutfyh/dsh-plugin-writing-guard"},
-    stars: 46,
+    stars: 48,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -157926,7 +157926,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 会话删除插件：设置页管理归档会话，真正删除磁盘日志（回收站可还原）+ 批量清理--官方归档只隐藏不删盘，这里补上。","zh":"DeepSeek Harness 会话删除插件：设置页管理归档会话，真正删除磁盘日志（回收站可还原）+ 批量清理--官方归档只隐藏不删盘，这里补上。"},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xohmai/dsh-session-delete"},
-    stars: 47,
+    stars: 46,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -158518,7 +158518,7 @@ export const plugins = [
     description: {"en":"dsh-web-artifact-designer 把「帮我做个海报 / 网页 / 信息图 / 图表」变成一份可直接双击打开、视觉上真正像样的自包含 HTML / SVG 设计稿。 A DeepSeek Harness (DSH) skill that turns visual/frontend design requests into polished, self-contained HTML/SVG artifacts -...","zh":"dsh-web-artifact-designer 把「帮我做个海报 / 网页 / 信息图 / 图表」变成一份可直接双击打开、视觉上真正像样的自包含 HTML / SVG 设计稿。 A DeepSeek Harness (DSH) skill that turns visual/frontend design requests into polished, self-contained HTML/SVG artifacts -..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xulelenlp/dsh-web-artifact-designer"},
-    stars: 4,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -158918,7 +158918,7 @@ export const plugins = [
     description: {"en":"DSH durable MCP server manager plugin - Settings UI + HTTP API + mcpmanager model tools, cross-platform installers","zh":"DSH durable MCP server manager plugin - Settings UI + HTTP API + mcpmanager model tools, cross-platform installers"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xxxyz/DeepSeekHarness-MCP-Manager"},
-    stars: 25,
+    stars: 26,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -158966,7 +158966,7 @@ export const plugins = [
     description: {"en":"Give any AI agent the ability to code","zh":"Give any AI agent the ability to code"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:xytom/coding-tools-mcp"},
-    stars: 1225,
+    stars: 1224,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -159126,7 +159126,7 @@ export const plugins = [
     description: {"en":"针对Deepseek Harness开发的提示词优化插件","zh":"针对Deepseek Harness开发的提示词优化插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Y1X1n/dsh-prompt-optimizer"},
-    stars: 32,
+    stars: 33,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -159350,7 +159350,7 @@ export const plugins = [
     description: {"en":"Use your ChatGPT subscription in DeepSeek Harness through OpenAI's Codex sign-in flow","zh":"Use your ChatGPT subscription in DeepSeek Harness through OpenAI's Codex sign-in flow"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Yan-Zero/dsh-codex"},
-    stars: 97,
+    stars: 99,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -159398,7 +159398,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Yan-Zero/dsh-std"},
-    stars: 164,
+    stars: 163,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -159830,7 +159830,7 @@ export const plugins = [
     description: {"en":"dsh-plugin，use to manager an enable skills","zh":"dsh-plugin，use to manager an enable skills"},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yanglaofish/dsh-skill-manager"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -160054,7 +160054,7 @@ export const plugins = [
     description: {"en":"时事热点采集工具 for DeepSeek Harness: 百度热搜 / 头条热榜 / 抖音热点 / 微博热搜（可选 cookie），一次调用聚合热门话题，供内容创作借势。","zh":"时事热点采集工具 for DeepSeek Harness: 百度热搜 / 头条热榜 / 抖音热点 / 微博热搜（可选 cookie），一次调用聚合热门话题，供内容创作借势。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yangyunsong023/dsh-sxs-news-collector"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -160230,7 +160230,7 @@ export const plugins = [
     description: {"en":"🐋 DeepSeek 娘桌宠：住进 DeepSeek Harness Web 界面的蓝发鲸鱼女仆。工作链路、任务完成统计（用时/消耗/花费）、睡眠系统、时间感知、余额/天气/喂食按钮、完整设置面板。","zh":"🐋 DeepSeek 娘桌宠：住进 DeepSeek Harness Web 界面的蓝发鲸鱼女仆。工作链路、任务完成统计（用时/消耗/花费）、睡眠系统、时间感知、余额/天气/喂食按钮、完整设置面板。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yanzwzz/dsh-whale-girl-pet"},
-    stars: 47,
+    stars: 51,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -160246,7 +160246,7 @@ export const plugins = [
     description: {"en":"✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.","zh":"✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:YaoApp/yao"},
-    stars: 8290,
+    stars: 8314,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -160694,7 +160694,7 @@ export const plugins = [
     description: {"en":"Token usage heatmap, per-model breakdowns, and DeepSeek account balance for the DeepSeek Harness Web GUI (dsh web).","zh":"Token usage heatmap, per-model breakdowns, and DeepSeek account balance for the DeepSeek Harness Web GUI (dsh web)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ychris12138/dsh-usage-stats"},
-    stars: 188,
+    stars: 191,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -160918,7 +160918,7 @@ export const plugins = [
     description: {"en":"创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）","zh":"创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yejiming/museai"},
-    stars: 700,
+    stars: 713,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -161046,7 +161046,7 @@ export const plugins = [
     description: {"en":"DSH 插件:直接复用 Codex CLI 本地登录订阅凭证,在 DeepSeek Harness 中使用 ChatGPT 订阅模型,无需 API Key \\| DSH plugin: reuse your Codex CLI local subscription login to use ChatGPT subscription models in DeepSeek Harness, no API key required","zh":"DSH 插件:直接复用 Codex CLI 本地登录订阅凭证,在 DeepSeek Harness 中使用 ChatGPT 订阅模型,无需 API Key \\| DSH plugin: reuse your Codex CLI local subscription login to use ChatGPT subscription models in DeepSeek Harness, no API key required"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yequ172672/dsh-codex-subscription"},
-    stars: 27,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -161750,7 +161750,7 @@ export const plugins = [
     description: {"en":"Multi-session agent status monitor for DeepSeek Harness.","zh":"Multi-session agent status monitor for DeepSeek Harness."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yimeng-dev/dsh-traffic-light"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162022,7 +162022,7 @@ export const plugins = [
     description: {"en":"允许显示工作区的文件树、浏览文件内容、并且允许对话中嵌入引用的文件内容、自由切换思维分支视图，目标是和VSCode相类似的开发体验","zh":"允许显示工作区的文件树、浏览文件内容、并且允许对话中嵌入引用的文件内容、自由切换思维分支视图，目标是和VSCode相类似的开发体验"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yishengjun8/dsh-workspace-studio"},
-    stars: 5,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162102,7 +162102,7 @@ export const plugins = [
     description: {"en":"Task-aware reasoning-mode router for DeepSeek Harness: three measured behavior bands (spec/mixed/react) with phase-transition evidence, persona + first-turn tool injection, agent-visible tuning. Dual-attractor policy...","zh":"Task-aware reasoning-mode router for DeepSeek Harness: three measured behavior bands (spec/mixed/react) with phase-transition evidence, persona + first-turn tool injection, agent-visible tuning. Dual-attractor policy..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yjh051108/dsh-router-standard"},
-    stars: 348,
+    stars: 347,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162118,7 +162118,7 @@ export const plugins = [
     description: {"en":"dsh-routing-suite - injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).","zh":"dsh-routing-suite - injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yjh051108/dsh-routing-suite"},
-    stars: 7015,
+    stars: 7028,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162134,7 +162134,7 @@ export const plugins = [
     description: {"en":"超级模组注入器：运行时注入任意本地 DSH 插件包（junction 链接 + loader.create，不碰 patch/package.json/不重启），热重载全家桶 + 开发侧挂区一键转正 + 一键卸载 + 路由自愈，清单持久化重启自动恢复--DSH 生态的 BepInEx 式模组注入入口","zh":"超级模组注入器：运行时注入任意本地 DSH 插件包（junction 链接 + loader.create，不碰 patch/package.json/不重启），热重载全家桶 + 开发侧挂区一键转正 + 一键卸载 + 路由自愈，清单持久化重启自动恢复--DSH 生态的 BepInEx 式模组注入入口"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yjh051108/dsh-super-injector"},
-    stars: 167,
+    stars: 166,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162486,7 +162486,7 @@ export const plugins = [
     description: {"en":"终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。","zh":"终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield"},
-    stars: 168,
+    stars: 172,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162662,7 +162662,7 @@ export const plugins = [
     description: {"en":"DSH plugins","zh":"DSH plugins"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yoiizesdev-crypto/DSH-Balance-display"},
-    stars: 8,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -162838,7 +162838,7 @@ export const plugins = [
     description: {"en":"ADHD-friendly output shaping for DeepSeek Harness: one system-prompt section with adhdon/adhdoff/adhdstatus tools, persisted across restarts. Inspired by ayghri/i-have-adhd (MIT).","zh":"ADHD-friendly output shaping for DeepSeek Harness: one system-prompt section with adhdon/adhdoff/adhdstatus tools, persisted across restarts. Inspired by ayghri/i-have-adhd (MIT)."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yongshuai0314/dsh-i-have-adhd"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163270,7 +163270,7 @@ export const plugins = [
     description: {"en":"Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no...","zh":"Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no..."},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ysr666/dsh-vision-router"},
-    stars: 1259,
+    stars: 1285,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163350,7 +163350,7 @@ export const plugins = [
     description: {"en":"给 DeepSeek 补上「眼睛和耳朵」的多模态视觉插件：看图 / OCR / 物体检测 / 视频理解 / 语音转写 / 截图直读，一键安装（DSH 插件）。","zh":"给 DeepSeek 补上「眼睛和耳朵」的多模态视觉插件：看图 / OCR / 物体检测 / 视频理解 / 语音转写 / 截图直读，一键安装（DSH 插件）。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Yts1919/dsh-vision-complete"},
-    stars: 59,
+    stars: 60,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163398,7 +163398,7 @@ export const plugins = [
     description: {"en":"Windows computer use for DeepSeek Harness (dsh): MCP stdio server + PowerShell UIA backend, 22 desktop tools","zh":"Windows computer use for DeepSeek Harness (dsh): MCP stdio server + PowerShell UIA backend, 22 desktop tools"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Yu-tao-Li/dsh-computer-use-win"},
-    stars: 657,
+    stars: 775,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163478,7 +163478,7 @@ export const plugins = [
     description: {"en":"Free-model ranking sidebar with model details and custom-provider configuration","zh":"Free-model ranking sidebar with model details and custom-provider configuration"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yu-wenchao/dsh-free-models-hub"},
-    stars: 36,
+    stars: 40,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163542,7 +163542,7 @@ export const plugins = [
     description: {"en":"DSH Web GUI 壁纸背景插件：从本机 Wallpaper Engine 壁纸库加载背景，wasm 渲染 scene 壁纸","zh":"DSH Web GUI 壁纸背景插件：从本机 Wallpaper Engine 壁纸库加载背景，wasm 渲染 scene 壁纸"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yu502950715yang/dsh-use-wallpaper"},
-    stars: 11,
+    stars: 14,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -163718,7 +163718,7 @@ export const plugins = [
     description: {"en":"专利侵权分析系统 -- 输入专利公开号，产出竞品侵权分析报告；同时打包成 skill，可被任意 agent（codex，claude code 等） 调用。","zh":"专利侵权分析系统 -- 输入专利公开号，产出竞品侵权分析报告；同时打包成 skill，可被任意 agent（codex，claude code 等） 调用。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yuc16/PatentRadar"},
-    stars: 69,
+    stars: 71,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -164214,7 +164214,7 @@ export const plugins = [
     description: {"en":"Plugin Store for DeepSeek Harness (DSH): a graphical app-store inside the Harness Web UI - browse, search and one-click install GitHub dsh-plugins (topic:dsh-plugin / #dsh-plugin repos), with local ratings,...","zh":"Plugin Store for DeepSeek Harness (DSH): a graphical app-store inside the Harness Web UI - browse, search and one-click install GitHub dsh-plugins (topic:dsh-plugin / #dsh-plugin repos), with local ratings,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yunhuantian/dsh-plugin-hub"},
-    stars: 8,
+    stars: 9,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -164246,7 +164246,7 @@ export const plugins = [
     description: {"en":"Illusion-Agent: Where fantasy meets functionality - an AI agent platform for terminal, browser, any model, any OS.","zh":"Illusion-Agent: Where fantasy meets functionality - an AI agent platform for terminal, browser, any model, any OS."},
     category: "browser-search",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yuntaihua/illusion-agent"},
-    stars: 84,
+    stars: 83,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -164278,7 +164278,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness Web UI 鲸鱼女仆主题插件","zh":"DeepSeek Harness Web UI 鲸鱼女仆主题插件"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yunxiiQwQ/dsh-maid-whale-webUI"},
-    stars: 48,
+    stars: 47,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -164550,7 +164550,7 @@ export const plugins = [
     description: {"en":"WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。","zh":"WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yuuz12/dsh-webui-auth"},
-    stars: 14,
+    stars: 15,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -165030,7 +165030,7 @@ export const plugins = [
     description: {"en":"找得到、发得出 -- DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道","zh":"找得到、发得出 -- DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yyh-001/dsh-expression"},
-    stars: 554,
+    stars: 581,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -165046,7 +165046,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 的表情包插件--找得到、发得出、学得会，纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包 、多种风格随意切换。","zh":"DeepSeek Harness 的表情包插件--找得到、发得出、学得会，纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包 、多种风格随意切换。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yyh-001/dsh-meme"},
-    stars: 554,
+    stars: 581,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -165238,7 +165238,7 @@ export const plugins = [
     description: {"en":"Local knowledge base RAG for DeepSeek Harness","zh":"Local knowledge base RAG for DeepSeek Harness"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:YYTbit/dsh-plugin-rag"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -165302,7 +165302,7 @@ export const plugins = [
     description: {"en":"Amadeus (AI assistant from Steins;Gate 0) for DeepSeek Harness","zh":"Amadeus (AI assistant from Steins;Gate 0) for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:yyxcnasd/amadeus-for-dsh"},
-    stars: 47,
+    stars: 49,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -165846,7 +165846,7 @@ export const plugins = [
     description: {"en":"原生 DSH (DeepSeek Harness) 插件：PPT 演示文稿专家，内置 PPTD DSL 引擎、55173 所见即所得可视化编辑器、Python-PPTX 高保真离线编译内核与一键导出 PPTX。 \\ Native DSH plugin: PPT presentation expert with PPTD DSL engine, 55173 WYSIWYG editor, Python-PPTX offline...","zh":"原生 DSH (DeepSeek Harness) 插件：PPT 演示文稿专家，内置 PPTD DSL 引擎、55173 所见即所得可视化编辑器、Python-PPTX 高保真离线编译内核与一键导出 PPTX。 \\ Native DSH plugin: PPT presentation expert with PPTD DSL engine, 55173 WYSIWYG editor, Python-PPTX offline..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:z953218350/dsh-np-ppt"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166038,7 +166038,7 @@ export const plugins = [
     description: {"en":"自动分类、收录和验证 GitHub dsh-plugin Topic 项目的静态 DSH 插件市场。 A static DSH plugin marketplace that automatically categorizes, curates, and verifies GitHub dsh-plugin Topic projects.","zh":"自动分类、收录和验证 GitHub dsh-plugin Topic 项目的静态 DSH 插件市场。 A static DSH plugin marketplace that automatically categorizes, curates, and verifies GitHub dsh-plugin Topic projects."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zasenjc/dsh-plugins-store"},
-    stars: 74,
+    stars: 73,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166102,7 +166102,7 @@ export const plugins = [
     description: {"en":"DeepSeek 峰谷定价提示插件（DSH Web 客户端插件，纯前端，无后端依赖）","zh":"DeepSeek 峰谷定价提示插件（DSH Web 客户端插件，纯前端，无后端依赖）"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zbxzbx98/dsh-peak-alert"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166150,7 +166150,7 @@ export const plugins = [
     description: {"en":"DSH web plugin: Codex-style /side side conversations - a temporary fork of the current chat in a floating panel, without interrupting the main task.","zh":"DSH web plugin: Codex-style /side side conversations - a temporary fork of the current chat in a floating panel, without interrupting the main task."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zclDragon/dsh-side-chat"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166502,7 +166502,7 @@ export const plugins = [
     description: {"en":"面向 DeepSeek Harness Web GUI 的正式插件包：在设置页的「Web UI 插件」分组中新增一张「技能与 MCP」卡片，用于在浏览器里管理技能（skills）与 MCP 服务器。","zh":"面向 DeepSeek Harness Web GUI 的正式插件包：在设置页的「Web UI 插件」分组中新增一张「技能与 MCP」卡片，用于在浏览器里管理技能（skills）与 MCP 服务器。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zebbkira/dsh-skills-mcp-manager"},
-    stars: 23,
+    stars: 24,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166614,7 +166614,7 @@ export const plugins = [
     description: {"en":"A cosplay plugin for DeepSeek Harness.","zh":"A cosplay plugin for DeepSeek Harness."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZelinW1/dsh-cosplay"},
-    stars: 16,
+    stars: 17,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166646,7 +166646,7 @@ export const plugins = [
     description: {"en":"dsh-better-sidebar 的视频文件预览插件： 在侧边栏打开 .mp4 .webm .mov .mkv .avi 等视频文件时，内联渲染一个可播放、可拖拽进度条的 播放器。","zh":"dsh-better-sidebar 的视频文件预览插件： 在侧边栏打开 .mp4 .webm .mov .mkv .avi 等视频文件时，内联渲染一个可播放、可拖拽进度条的 播放器。"},
     category: "multimodal-vision",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zemul/dsh-video-preview"},
-    stars: 9,
+    stars: 11,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -166902,7 +166902,7 @@ export const plugins = [
     description: {"en":"A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.","zh":"A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zenstory-ai/oh-story-dsh"},
-    stars: 726,
+    stars: 768,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167270,7 +167270,7 @@ export const plugins = [
     description: {"en":"专为 WordPress 建站调试打造的 Skill 集合 · 包含 DeepSeek Harness (DSH) Plugin 开发 Skill + WordPress 插件开发 AI 工具包（5 Agents + 18 命令，规划→执行→审查→质量验证完整工作流） / WordPress site-building & debugging Skill collection - includes DeepSeek...","zh":"专为 WordPress 建站调试打造的 Skill 集合 · 包含 DeepSeek Harness (DSH) Plugin 开发 Skill + WordPress 插件开发 AI 工具包（5 Agents + 18 命令，规划→执行→审查→质量验证完整工作流） / WordPress site-building & debugging Skill collection - includes DeepSeek..."},
     category: "mcp-skills",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Zerozhao314/dsh-everything-wp"},
-    stars: 0,
+    stars: 1,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167334,7 +167334,7 @@ export const plugins = [
     description: {"en":"Mobile client for the DeepSeek Harness - use the dsh on your dev machine from your Android or iOS phone, remotely across networks, peer-to-peer with no server in between (iroh)","zh":"Mobile client for the DeepSeek Harness - use the dsh on your dev machine from your Android or iOS phone, remotely across networks, peer-to-peer with no server in between (iroh)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zexadev/dsh-tether"},
-    stars: 99,
+    stars: 104,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167430,7 +167430,7 @@ export const plugins = [
     description: {"en":"Token usage accounting for DeepSeek Harness, reconciled against New API and Sub2API relay-site billing","zh":"Token usage accounting for DeepSeek Harness, reconciled against New API and Sub2API relay-site billing"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zh667/TokenLedger"},
-    stars: 204,
+    stars: 205,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167478,7 +167478,7 @@ export const plugins = [
     description: {"en":"Design aesthetics skill pack for DeepSeek Harness (DSH) - keeps vibe-coded websites away from the AI look. 6 styles: dark-saas, apple-minimal, neo-neumorphism, brutalism, glassmorphism, japanese-minimal.","zh":"Design aesthetics skill pack for DeepSeek Harness (DSH) - keeps vibe-coded websites away from the AI look. 6 styles: dark-saas, apple-minimal, neo-neumorphism, brutalism, glassmorphism, japanese-minimal."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhaiyateng/dsh-design-skills"},
-    stars: 26,
+    stars: 27,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167606,7 +167606,7 @@ export const plugins = [
     description: {"en":"Composer mic for DeepSeek Harness Web: tap-to-monitor live transcription and hold-to-talk, with host Edge TTS reply reading that streams while the model generates, echo-pause during reading, and tap-to-stop.","zh":"Composer mic for DeepSeek Harness Web: tap-to-monitor live transcription and hold-to-talk, with host Edge TTS reply reading that streams while the model generates, echo-pause during reading, and tap-to-stop."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Zhangbo-cn/dsh-voice-input-plugin"},
-    stars: 6,
+    stars: 7,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -167670,7 +167670,7 @@ export const plugins = [
     description: {"en":"DSH web plugin: VSCode Remote-SSH-like remote development (SSH, remote workspace, file explorer, integrated terminal)","zh":"DSH web plugin: VSCode Remote-SSH-like remote development (SSH, remote workspace, file explorer, integrated terminal)"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZhangFengshun/dsh-remote-ssh"},
-    stars: 62,
+    stars: 64,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -168102,7 +168102,7 @@ export const plugins = [
     description: {"en":"开源版锤子便签，复刻锤科美学，一键Docker私有化部署，支持skill调用，支持dsh plugin，支持多租户，一键生成公众号格式，支持导出便签为图片","zh":"开源版锤子便签，复刻锤科美学，一键Docker私有化部署，支持skill调用，支持dsh plugin，支持多租户，一键生成公众号格式，支持导出便签为图片"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhaoolee/notes"},
-    stars: 332,
+    stars: 334,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -168614,7 +168614,7 @@ export const plugins = [
     description: {"en":"Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.","zh":"上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor"},
-    stars: 69,
+    stars: 71,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -168902,7 +168902,7 @@ export const plugins = [
     description: {"en":"🐱 Soothing pastel theme for DeepSeek Harness","zh":"🐱 Soothing pastel theme for DeepSeek Harness"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhijun-dai/Catppuccin-dsh-theme"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -168966,7 +168966,7 @@ export const plugins = [
     description: {"en":"Read-only market data for DeepSeek Harness. Ask about a stock, and let DSH call the data tools directly. | 为 DeepSeek Harness 提供只读金融市场数据。让 DSH 直接调用工具查询行情。","zh":"Read-only market data for DeepSeek Harness. Ask about a stock, and let DSH call the data tools directly. | 为 DeepSeek Harness 提供只读金融市场数据。让 DSH 直接调用工具查询行情。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhiyaoli0221/dsh-finance-db"},
-    stars: 2,
+    stars: 3,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -168998,7 +168998,7 @@ export const plugins = [
     description: {"en":"Curated DeepSeek Harness (DSH) plugins, extensions, tools, skills, clients, runtimes, integrations, and verified references - English and Chinese.","zh":"Curated DeepSeek Harness (DSH) plugins, extensions, tools, skills, clients, runtimes, integrations, and verified references - English and Chinese."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins"},
-    stars: 567,
+    stars: 570,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169174,7 +169174,7 @@ export const plugins = [
     description: {"en":"嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」-- 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 \\ EasyEDA Pro automation: the hands of your AI harness - typed schematic/PCB...","zh":"嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」-- 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 \\ EasyEDA Pro automation: the hands of your AI harness - typed schematic/PCB..."},
     category: "workflow-agents",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhoushoujianwork/easyeda-agent"},
-    stars: 1021,
+    stars: 1098,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169286,7 +169286,7 @@ export const plugins = [
     description: {"en":"PDF parsing toolkit for DeepSeek Harness: pdfinfo, pdfextracttext, pdfrenderpage with hybrid pdfjs/built-in engines and system-font rendering for non-embedded CJK PDFs.","zh":"PDF parsing toolkit for DeepSeek Harness: pdfinfo, pdfextracttext, pdfrenderpage with hybrid pdfjs/built-in engines and system-font rendering for non-embedded CJK PDFs."},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhtx2024/dsh-pdf"},
-    stars: 8,
+    stars: 10,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169318,7 +169318,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（DSH）Web 插件聚合生态包 · 一切皆插件，创意工坊分发（dsh-market.com）","zh":"DeepSeek Harness（DSH）Web 插件聚合生态包 · 一切皆插件，创意工坊分发（dsh-market.com）"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhu1090093659/dsh-web"},
-    stars: 10343,
+    stars: 10476,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169334,7 +169334,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness（DSH）Web GUI 插件与皮肤生态：一切皆插件。任务看板、移动端远程与 SSH 运维构筑开发工作台；皮肤经 WebGL 深度优化，更支持 Wallpaper Engine 壁纸；皮肤、宠物、插件由 DSH 大市场一键安装，正迈向 DSH 创意工坊。A pluggable plugin-skin ecosystem for the DSH Web GUI - Task board,...","zh":"DeepSeek Harness（DSH）Web GUI 插件与皮肤生态：一切皆插件。任务看板、移动端远程与 SSH 运维构筑开发工作台；皮肤经 WebGL 深度优化，更支持 Wallpaper Engine 壁纸；皮肤、宠物、插件由 DSH 大市场一键安装，正迈向 DSH 创意工坊。A pluggable plugin-skin ecosystem for the DSH Web GUI - Task board,..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhu1090093659/dsh-web-ui"},
-    stars: 10343,
+    stars: 10476,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169350,7 +169350,7 @@ export const plugins = [
     description: {"en":"Save-money plugin for DSH (DeepSeek Harness) - define your own \"pause / resume\" time windows; at pause time running long tasks are paused (not stopped) automatically, and they resume when the window ends.","zh":"Save-money plugin for DSH (DeepSeek Harness) - define your own \"pause / resume\" time windows; at pause time running long tasks are paused (not stopped) automatically, and they resume when the window ends."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhu168/dsh-save-money"},
-    stars: 37,
+    stars: 38,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169382,7 +169382,7 @@ export const plugins = [
     description: {"en":"Prevents Qwen 3.8 context compaction from consuming output budget on reasoning","zh":"Prevents Qwen 3.8 context compaction from consuming output budget on reasoning"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zhubaohi/dsh-qwen38-compaction-fix"},
-    stars: 4,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169846,7 +169846,7 @@ export const plugins = [
     description: {"en":"暂无描述","zh":"暂无描述"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZichengGurrr/dsh-window"},
-    stars: 6,
+    stars: 5,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169862,7 +169862,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness 编程模式组合包：标准模式之上强制执行 Superpowers 工程纪律(TDD、系统化调试、先计划后编码、完成前验证、代码审查)，内置全套 superpowers 技能，dsh plugin add 一键安装。","zh":"DeepSeek Harness 编程模式组合包：标准模式之上强制执行 Superpowers 工程纪律(TDD、系统化调试、先计划后编码、完成前验证、代码审查)，内置全套 superpowers 技能，dsh plugin add 一键安装。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ziduup/dsh-programming-mode"},
-    stars: 14,
+    stars: 16,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -169926,7 +169926,7 @@ export const plugins = [
     description: {"en":"A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed by Markdown and Milvus.","zh":"A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed by Markdown and Milvus."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zilliztech/memsearch"},
-    stars: 2859,
+    stars: 2893,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -170054,7 +170054,7 @@ export const plugins = [
     description: {"en":"An Agent Skills skill for developing DeepSeek Harness (DSH) plugins（开发 DSH 插件的 Agent Skill）--插件/服务/事件/工具/LLM 适配器/打包安装的标准。Works with Claude Code, Codex, DSH, VS Code Copilot & any compatible agent.","zh":"An Agent Skills skill for developing DeepSeek Harness (DSH) plugins（开发 DSH 插件的 Agent Skill）--插件/服务/事件/工具/LLM 适配器/打包安装的标准。Works with Claude Code, Codex, DSH, VS Code Copilot & any compatible agent."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zimodzh/dsh-plugin-dev-skills"},
-    stars: 17,
+    stars: 18,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -170086,7 +170086,7 @@ export const plugins = [
     description: {"en":"在 Windows 环境中为 DeepSeek Harness 提供 Git Bash 与 WSL 2 bash 工具,含 bwrap 沙箱、审批模式、后台任务","zh":"在 Windows 环境中为 DeepSeek Harness 提供 Git Bash 与 WSL 2 bash 工具,含 bwrap 沙箱、审批模式、后台任务"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zimzaza4/dsh-bash-win"},
-    stars: 12,
+    stars: 13,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -170262,7 +170262,7 @@ export const plugins = [
     description: {"en":"An LLM-powered multi-agent framework for simulating interactive, evolving story worlds.","zh":"An LLM-powered multi-agent framework for simulating interactive, evolving story worlds."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZJU-LLMs/OpenStory"},
-    stars: 441,
+    stars: 445,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -170278,7 +170278,7 @@ export const plugins = [
     description: {"en":"Toward Autonomous Scientific Discovery","zh":"Toward Autonomous Scientific Discovery"},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZJU-REAL/Polaris"},
-    stars: 265,
+    stars: 267,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -170374,7 +170374,7 @@ export const plugins = [
     description: {"en":"Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.","zh":"持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve"},
-    stars: 24,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171334,7 +171334,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (dsh) plugin for machine-wide token usage statistics - a Settings page with totals, a GitHub-style contribution heatmap, streaks, and a per-model breakdown. Folds session logs from every dsh home; no...","zh":"DeepSeek Harness (dsh) plugin for machine-wide token usage statistics - a Settings page with totals, a GitHub-style contribution heatmap, streaks, and a per-model breakdown. Folds session logs from every dsh home; no..."},
     category: "sessions-memory",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zoyluoblue/deepseek-harness-token"},
-    stars: 1,
+    stars: 2,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171366,7 +171366,7 @@ export const plugins = [
     description: {"en":"Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.","zh":"DSH 插件透明排行与推荐：每日自动抓取 dsh-plugin 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zp-home/dsh-recommend"},
-    stars: 22,
+    stars: 23,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171398,7 +171398,7 @@ export const plugins = [
     description: {"en":"Phone-to-DSH control through Tencent's official Weixin ClawBot/iLink channel | 基于腾讯官方微信 ClawBot/iLink 的 DSH 手机远程控制插件","zh":"Phone-to-DSH control through Tencent's official Weixin ClawBot/iLink channel | 基于腾讯官方微信 ClawBot/iLink 的 DSH 手机远程控制插件"},
     category: "tools-capabilities",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zp-home/dsh-weixin-clawbot"},
-    stars: 3,
+    stars: 4,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171638,7 +171638,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness plugin for Android - build, run, and interact with a live emulator or USB device stream inside a conversation, driven entirely through adb.","zh":"DeepSeek Harness plugin for Android - build, run, and interact with a live emulator or USB device stream inside a conversation, driven entirely through adb."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-android"},
-    stars: 348,
+    stars: 356,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171654,7 +171654,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex - native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness...","zh":"DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex - native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-crew"},
-    stars: 210,
+    stars: 217,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171670,7 +171670,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) plugin: a read-only ledger for the plugins you already have installed - a capability inventory with file:line evidence, declared-vs-detected reconciliation, cross-profile version drift, and a...","zh":"DeepSeek Harness (DSH) plugin: a read-only ledger for the plugins you already have installed - a capability inventory with file:line evidence, declared-vs-detected reconciliation, cross-profile version drift, and a..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-harbor"},
-    stars: 27,
+    stars: 29,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171686,7 +171686,7 @@ export const plugins = [
     description: {"en":"DeepSeek Harness (DSH) plugin: a live iOS Simulator - and a USB-connected iPhone - inside the conversation. 21 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus...","zh":"DeepSeek Harness (DSH) plugin: a live iOS Simulator - and a USB-connected iPhone - inside the conversation. 21 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus..."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-ios"},
-    stars: 458,
+    stars: 471,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171702,7 +171702,7 @@ export const plugins = [
     description: {"en":"Noema long-term memory plugin for DSH: durable, inspectable agent memory with recall tools and a settings page.","zh":"Noema long-term memory plugin for DSH: durable, inspectable agent memory with recall tools and a settings page."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-noema"},
-    stars: 140,
+    stars: 147,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171718,7 +171718,7 @@ export const plugins = [
     description: {"en":"OpenPencil design preview and editing plugin.","zh":"OpenPencil 设计预览与编辑插件。"},
     category: "ui-themes",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/dsh-openpencil"},
-    stars: 253,
+    stars: 263,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -171734,7 +171734,7 @@ export const plugins = [
     description: {"en":"The world's first open-origin AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil.","zh":"The world's first open-origin AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:ZSeven-W/openpencil"},
-    stars: 7205,
+    stars: 7257,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
@@ -172054,7 +172054,7 @@ export const plugins = [
     description: {"en":"Let Your Ideas Flow - Tydora is a modern desktop Markdown editor combining WYSIWYG editing, bidirectional links, mind maps, and an infinite canvas - empowering deep thinking and effortless expression.","zh":"Let Your Ideas Flow - Tydora is a modern desktop Markdown editor combining WYSIWYG editing, bidirectional links, mind maps, and an infinite canvas - empowering deep thinking and effortless expression."},
     category: "development-runtime",
     primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:zuorn/Tydora"},
-    stars: 230,
+    stars: 241,
     verification: {
       state: "community-discovered",
       detail: communityDiscoveredDetail,
