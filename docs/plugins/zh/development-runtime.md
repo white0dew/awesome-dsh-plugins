@@ -2,7 +2,7 @@
 
 开发工具、Shell、容器、测试与运行时支持。
 
-**2441 个目录条目** · [返回全部分类](index.md)
+**2442 个目录条目** · [返回全部分类](index.md)
 
 ### [dsh-status-rotator](https://github.com/01virex/dsh-status-rotator)
 
@@ -14107,6 +14107,14 @@ Repository: `skyf0xx/hedgehog`
 HEDGEHOG codes Cleaner, Faster and with Fewer Tokens. Hedgehog's AI-driven development builds a task dependency graph from your spec-driven, BMAD-METHOD plan, so Claude Code, Cursor & Gemini CLI stay locked to it. A...
 
 Install: `dsh plugin --profile web add github:skyf0xx/hedgehog`
+
+### [dsh-version-guard](https://github.com/skyjjgw/dsh-version-guard)
+
+Repository: `skyjjgw/dsh-version-guard`
+
+记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。
+
+Install: `dsh plugin --profile web add github:skyjjgw/dsh-version-guard`
 
 ### [dsh-wechat-maid](https://github.com/skylar-fei/dsh-wechat-maid)
 

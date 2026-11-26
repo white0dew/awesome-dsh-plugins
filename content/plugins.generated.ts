@@ -111743,6 +111743,22 @@ export const plugins = [
     latest: false,
   },
   {
+    id: "skyjjgw-dsh-version-guard",
+    name: "dsh-version-guard",
+    repoUrl: "https://github.com/skyjjgw/dsh-version-guard",
+    repository: "skyjjgw/dsh-version-guard",
+    description: {"en":"Snapshots plugin versions and profile configuration, with an independent recovery page to restore a known-good configuration when DSH cannot start.","zh":"记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。"},
+    category: "development-runtime",
+    primaryAction: {"type":"copy-install","command":"dsh plugin --profile web add github:skyjjgw/dsh-version-guard"},
+    stars: 1,
+    verification: {
+      state: "community-discovered",
+      detail: communityDiscoveredDetail,
+    },
+    featured: false,
+    latest: false,
+  },
+  {
     id: "skylar-fei-dsh-wechat-maid",
     name: "dsh-wechat-maid",
     repoUrl: "https://github.com/skylar-fei/dsh-wechat-maid",
