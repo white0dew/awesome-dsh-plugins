@@ -143,7 +143,7 @@
         "zh": "自动复盘：会话收尾后自动把有价值经验蒸馏成可复用技能存入技能库，支持审批模式与归档/恢复治理，不直接删除技能。"
       },
       "category": "sessions-memory",
-      "stars": 14,
+      "stars": 15,
       "primaryAction": {
         "type": "copy-install",
         "command": "dsh plugin --profile web add github:weibaohui/hermes-loop"
